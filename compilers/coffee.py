@@ -1,6 +1,7 @@
 """Coffeescript mite compiler."""
 import logging
 import os
+import subprocess
 
 from mite.compilers import Javascript
 
