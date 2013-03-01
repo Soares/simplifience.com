@@ -1,0 +1,37 @@
+@import theme
+
+html, body, div.cap
+	background pure_red
+
+::selection, ::-moz-selection
+	background pale_red
+
+div.cap h1 a
+	color dark_red
+
+div.cap .definition
+	color light_red
+
+	.pronunciation
+		color dark_red
+
+div.nav
+	aside
+		background pure_red
+
+		a
+			color pale_red
+			&:visited
+				color dark_red
+			&:hover
+				color pure_gold
+
+	footer
+		a.author, .logo a
+			color pale_red
+			&:visited
+				color dark_red
+			&:active
+				color pure_green
+
+note('info', wrong, wrong_light, wrong_dark, pure_green)

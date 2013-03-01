@@ -1,0 +1,52 @@
+#main
+	article
+		width auto
+		float auto
+
+	div.navigator
+		a
+			text-decoration none
+
+		ul
+			list-style none
+
+		li
+			text-align left
+
+#following
+	float left
+	li:before
+		content "« "
+
+#followers
+	float right
+	li:after
+		content " »"
+
+#fin
+	display block
+	font-size 2em
+	margin 0 auto
+	opacity .6
+	text-align center
+
+@media only screen and (min-width: 768px) {
+	#main > article > :not(aside),
+	#main > article > aside.inline {
+		box-sizing: border-box;
+		clear: left;
+		display: inline-block;
+		float: left;
+		width: 57%;
+	}
+
+	#main > article > hr.mark {
+		clear: both;
+	}
+
+	#main > article > aside:not(.inline) {
+		float: right;
+		clear: right;
+		width: 28%;
+	}
+}

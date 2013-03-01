@@ -11,9 +11,9 @@ class Compiler(CSS):
 	# We ignore the context but don't want to break if the interface changes.
 	# pylint: disable-msg=unused-argument
 	def write(self, *args, **kwargs):
-		self.mkdir(os.path.dirname(self.destination))
-		logging.info('Styling %s', self.destination)
+		logging.info('Styling %s', self.url)
 		logging.debug('from %s', self.source)
+		self.mkdir(os.path.dirname(self.destination))
 		subprocess.call([
 				'stylus',
 				'-o', os.path.dirname(self.destination),

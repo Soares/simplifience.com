@@ -1,0 +1,38 @@
+@import theme
+// TODO: Link this to science, not magenta.
+// Abstract these out of the main theme and into a function.
+// Provide ways to do this for every type without all the extra stylesheets.
+
+html, body, div.cap
+	background pure_magenta
+
+::selection, ::-moz-selection
+	background pale_magenta
+
+div.cap h1 a
+	color dark_magenta
+
+div.cap .definition
+	color light_magenta
+
+	.pronunciation
+		color dark_magenta
+
+div.nav
+	aside
+		background pure_magenta
+
+		a
+			color pale_magenta
+			&:visited
+				color dark_magenta
+			&:hover
+				color pure_orange
+
+	footer
+		a.author, .logo a
+			color pale_magenta
+			&:visited
+				color dark_magenta
+			&:active
+				color pure_green

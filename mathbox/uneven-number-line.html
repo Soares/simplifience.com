@@ -1,0 +1,94 @@
+---
+layout: mathbox
+title: Number Line
+---
+
+// TODO: revisit when labeling can be done on non-axes.
+
+var mathbox = window.mathbox = mathBox({
+	cameraControls: false,
+	cursor:			false,
+	elementResize:	true,
+	fullscreen:		true,
+	screenshot:		true,
+	stats:			false,
+	scale:			1,
+}).start();
+
+
+mathbox
+	.viewport({
+		type: 'polar',
+		polar: 0,
+		range: [[0, 10.5], [-2, 2]],
+		scale: [1.6, 1.6, 1],
+	})
+	.camera({
+		orbit: 3.5,
+		phi: τ/4,
+		theta: 0,
+	})
+	.axis({
+		id: 'a0',
+		axis: 0,
+		color: 0xa0a0a0,
+		lineWidth: 2,
+		size: .1,
+		labels: false,
+		ticks: 0,
+	})
+	.curve({
+		id: 'tick',
+		n: 2,
+		data: [[0, .05], [0, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 'tick',
+		n: 2,
+		data: [[1, .05], [1, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 'tick',
+		n: 2,
+		data: [[2.5, .05], [2.5, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 'tick',
+		n: 2,
+		data: [[3.3, .05], [3.3, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 'tick',
+		n: 2,
+		data: [[6.1, .05], [6.1, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 'tick',
+		n: 2,
+		data: [[7.9, .05], [7.9, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+;
