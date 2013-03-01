@@ -1,0 +1,25 @@
+div.nav aside {
+  color: #fff;
+  background: main;
+  font-family: exciting;
+  padding-top: 0;
+}
+div.nav aside ul,
+div.nav aside ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div.nav aside a {
+  color: main_pale;
+  text-decoration: none;
+}
+div.nav aside a:active {
+  color: complement_pale;
+}
+div.nav aside a:visited {
+  color: complement_light;
+}
+div.nav aside a:hover {
+  color: complement;
+}

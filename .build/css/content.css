@@ -1,0 +1,34 @@
+div.content {
+  color: #000;
+  background: #fff;
+}
+div.content article {
+  margin-bottom: line-size;
+}
+div.content article h1 {
+  font-size: 2em;
+}
+div.content aside {
+  margin-bottom: line-margin;
+}
+div.content a {
+  color: main;
+  text-decoration: underline;
+}
+div.content a:active {
+  color: main_light;
+}
+div.content a:visited {
+  color: main_dark;
+}
+div.content a:hover {
+  color: main;
+  text-decoration: none;
+}
+div.content a[href="/stub.html"] {
+  color: dark_red !important;
+}
+aside.define em:first-of-type:after {
+  content: "\a";
+  white-space: pre;
+}

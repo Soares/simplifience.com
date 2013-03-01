@@ -1,0 +1,50 @@
+#main article {
+  width: auto;
+  float: auto;
+}
+#main div.navigator a {
+  text-decoration: none;
+}
+#main div.navigator ul {
+  list-style: none;
+}
+#main div.navigator li {
+  text-align: left;
+}
+#following {
+  float: left;
+}
+#following li:before {
+  content: "« ";
+}
+#followers {
+  float: right;
+}
+#followers li:after {
+  content: " »";
+}
+#fin {
+  display: block;
+  font-size: 2em;
+  margin: 0 auto;
+  opacity: 0.6;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  #main > article > :not(aside),
+  #main > article > aside.inline {
+    box-sizing: border-box;
+    clear: left;
+    display: inline-block;
+    float: left;
+    width: 57%;
+  }
+  #main > article > hr.mark {
+    clear: both;
+  }
+  #main > article > aside:not(.inline) {
+    float: right;
+    clear: right;
+    width: 28%;
+  }
+}

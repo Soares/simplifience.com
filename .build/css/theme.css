@@ -1,0 +1,207 @@
+span.info,
+strong.info,
+em.info {
+  color: #099;
+}
+#main aside.info {
+  background: #3cc;
+  border: 2px solid #006363;
+  color: #000;
+}
+#main aside.info a {
+  color: #006363;
+  opacity: 1;
+}
+#main aside.info a:hover {
+  text-decoration: none;
+}
+#main aside.info a[href="/stub.html"] {
+  color: #a64b00 !important;
+}
+#main aside.info .MathJax {
+  color: #000 !important;
+}
+span.maths,
+strong.maths,
+em.maths {
+  color: #1240ab;
+}
+#main aside.maths {
+  background: #4671d5;
+  border: 2px solid #06266f;
+  color: #fff;
+}
+#main aside.maths a {
+  color: #06266f;
+  opacity: 1;
+}
+#main aside.maths a:hover {
+  text-decoration: none;
+}
+#main aside.maths a[href="/stub.html"] {
+  color: #fa0 !important;
+}
+#main aside.maths .MathJax {
+  color: #fff !important;
+}
+span.rigor,
+strong.rigor,
+em.rigor {
+  color: #3914af;
+}
+#main aside.rigor {
+  background: #6a48d7;
+  border: 2px solid #200772;
+  color: #fff;
+}
+#main aside.rigor a {
+  color: #200772;
+  opacity: 1;
+}
+#main aside.rigor a:hover {
+  text-decoration: none;
+}
+#main aside.rigor a[href="/stub.html"] {
+  color: #ffd300 !important;
+}
+#main aside.rigor .MathJax {
+  color: #fff !important;
+}
+span.simplifience,
+strong.simplifience,
+em.simplifience {
+  color: #7109aa;
+}
+#main aside.simplifience {
+  background: #9f3ed5;
+  border: 2px solid #48036f;
+  color: #fff;
+}
+#main aside.simplifience a {
+  color: #48036f;
+  opacity: 1;
+}
+#main aside.simplifience a:hover {
+  text-decoration: none;
+}
+#main aside.simplifience a[href="/stub.html"] {
+  color: #ff0 !important;
+}
+#main aside.simplifience .MathJax {
+  color: #fff !important;
+}
+span.science,
+strong.science,
+em.science {
+  color: #cd0074;
+}
+#main aside.science {
+  background: #e6399b;
+  border: 2px solid #85004b;
+  color: #fff;
+}
+#main aside.science a {
+  color: #85004b;
+  opacity: 1;
+}
+#main aside.science a:hover {
+  text-decoration: none;
+}
+#main aside.science a[href="/stub.html"] {
+  color: #9fee00 !important;
+}
+#main aside.science .MathJax {
+  color: #fff !important;
+}
+span.wrong,
+strong.wrong,
+em.wrong {
+  color: #f00;
+}
+#main aside.wrong {
+  background: #ff4040;
+  border: 2px solid #a60000;
+  color: #fff;
+}
+#main aside.wrong a {
+  color: #a60000;
+  opacity: 1;
+}
+#main aside.wrong a:hover {
+  text-decoration: none;
+}
+#main aside.wrong a[href="/stub.html"] {
+  color: #0c0 !important;
+}
+#main aside.wrong .MathJax {
+  color: #fff !important;
+}
+span.caution,
+strong.caution,
+em.caution {
+  color: #bfbf30;
+}
+#main aside.caution {
+  background: #ffff40;
+  border: 2px solid #a6a600;
+  color: #000;
+}
+#main aside.caution a {
+  color: #a6a600;
+  opacity: 1;
+}
+#main aside.caution a:hover {
+  text-decoration: none;
+}
+#main aside.caution a[href="/stub.html"] {
+  color: #7109aa !important;
+}
+#main aside.caution .MathJax {
+  color: #000 !important;
+}
+span.other,
+strong.other,
+em.other {
+  color: #bf7130;
+}
+#main aside.other {
+  background: #ff9640;
+  border: 2px solid #a64b00;
+  color: #000;
+}
+#main aside.other a {
+  color: #a64b00;
+  opacity: 1;
+}
+#main aside.other a:hover {
+  text-decoration: none;
+}
+#main aside.other a[href="/stub.html"] {
+  color: #099 !important;
+}
+#main aside.other .MathJax {
+  color: #000 !important;
+}
+span.define,
+strong.define,
+em.define {
+  color: #0c0;
+}
+#main aside.define {
+  background: #39e639;
+  border: 2px solid #008500;
+  color: #000;
+}
+#main aside.define a {
+  color: #008500;
+  opacity: 1;
+}
+#main aside.define a:hover {
+  text-decoration: none;
+}
+#main aside.define a[href="/stub.html"] {
+  color: #f00 !important;
+}
+#main aside.define .MathJax {
+  color: #000 !important;
+}

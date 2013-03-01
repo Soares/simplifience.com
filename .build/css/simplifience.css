@@ -1,0 +1,581 @@
+/* Many thanks to Jonathan Verrecchia & initializr's template.
+ * http://verekia.com/initializr/responsive-template */
+@font-face {
+  font-family: 'Sonsie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sonsie One'), url("fonts/sonsie-one.woff") format('woff');
+}
+@font-face {
+  font-family: 'Marko One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Marko One'), url("fonts/marko-one.woff") format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Regular'), url("fonts/roboto.woff") format('woff');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), url("fonts/roboto-bold.woff") format('woff');
+}
+span.info,
+strong.info,
+em.info {
+  color: #099;
+}
+#main aside.info {
+  background: #3cc;
+  border: 2px solid #006363;
+  color: #000;
+}
+#main aside.info a {
+  color: #006363;
+  opacity: 1;
+}
+#main aside.info a:hover {
+  text-decoration: none;
+}
+#main aside.info a[href="/stub.html"] {
+  color: #a64b00 !important;
+}
+#main aside.info .MathJax {
+  color: #000 !important;
+}
+span.maths,
+strong.maths,
+em.maths {
+  color: #1240ab;
+}
+#main aside.maths {
+  background: #4671d5;
+  border: 2px solid #06266f;
+  color: #fff;
+}
+#main aside.maths a {
+  color: #06266f;
+  opacity: 1;
+}
+#main aside.maths a:hover {
+  text-decoration: none;
+}
+#main aside.maths a[href="/stub.html"] {
+  color: #fa0 !important;
+}
+#main aside.maths .MathJax {
+  color: #fff !important;
+}
+span.rigor,
+strong.rigor,
+em.rigor {
+  color: #3914af;
+}
+#main aside.rigor {
+  background: #6a48d7;
+  border: 2px solid #200772;
+  color: #fff;
+}
+#main aside.rigor a {
+  color: #200772;
+  opacity: 1;
+}
+#main aside.rigor a:hover {
+  text-decoration: none;
+}
+#main aside.rigor a[href="/stub.html"] {
+  color: #ffd300 !important;
+}
+#main aside.rigor .MathJax {
+  color: #fff !important;
+}
+span.simplifience,
+strong.simplifience,
+em.simplifience {
+  color: #7109aa;
+}
+#main aside.simplifience {
+  background: #9f3ed5;
+  border: 2px solid #48036f;
+  color: #fff;
+}
+#main aside.simplifience a {
+  color: #48036f;
+  opacity: 1;
+}
+#main aside.simplifience a:hover {
+  text-decoration: none;
+}
+#main aside.simplifience a[href="/stub.html"] {
+  color: #ff0 !important;
+}
+#main aside.simplifience .MathJax {
+  color: #fff !important;
+}
+span.science,
+strong.science,
+em.science {
+  color: #cd0074;
+}
+#main aside.science {
+  background: #e6399b;
+  border: 2px solid #85004b;
+  color: #fff;
+}
+#main aside.science a {
+  color: #85004b;
+  opacity: 1;
+}
+#main aside.science a:hover {
+  text-decoration: none;
+}
+#main aside.science a[href="/stub.html"] {
+  color: #9fee00 !important;
+}
+#main aside.science .MathJax {
+  color: #fff !important;
+}
+span.wrong,
+strong.wrong,
+em.wrong {
+  color: #f00;
+}
+#main aside.wrong {
+  background: #ff4040;
+  border: 2px solid #a60000;
+  color: #fff;
+}
+#main aside.wrong a {
+  color: #a60000;
+  opacity: 1;
+}
+#main aside.wrong a:hover {
+  text-decoration: none;
+}
+#main aside.wrong a[href="/stub.html"] {
+  color: #0c0 !important;
+}
+#main aside.wrong .MathJax {
+  color: #fff !important;
+}
+span.caution,
+strong.caution,
+em.caution {
+  color: #bfbf30;
+}
+#main aside.caution {
+  background: #ffff40;
+  border: 2px solid #a6a600;
+  color: #000;
+}
+#main aside.caution a {
+  color: #a6a600;
+  opacity: 1;
+}
+#main aside.caution a:hover {
+  text-decoration: none;
+}
+#main aside.caution a[href="/stub.html"] {
+  color: #7109aa !important;
+}
+#main aside.caution .MathJax {
+  color: #000 !important;
+}
+span.other,
+strong.other,
+em.other {
+  color: #bf7130;
+}
+#main aside.other {
+  background: #ff9640;
+  border: 2px solid #a64b00;
+  color: #000;
+}
+#main aside.other a {
+  color: #a64b00;
+  opacity: 1;
+}
+#main aside.other a:hover {
+  text-decoration: none;
+}
+#main aside.other a[href="/stub.html"] {
+  color: #099 !important;
+}
+#main aside.other .MathJax {
+  color: #000 !important;
+}
+span.define,
+strong.define,
+em.define {
+  color: #0c0;
+}
+#main aside.define {
+  background: #39e639;
+  border: 2px solid #008500;
+  color: #000;
+}
+#main aside.define a {
+  color: #008500;
+  opacity: 1;
+}
+#main aside.define a:hover {
+  text-decoration: none;
+}
+#main aside.define a[href="/stub.html"] {
+  color: #f00 !important;
+}
+#main aside.define .MathJax {
+  color: #000 !important;
+}
+.ie7 #title {
+  padding-top: 20px;
+}
+.ir {
+  display: block;
+  border: 0;
+  text-indent: -999em;
+  overflow: hidden;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+.ir br {
+  display: none;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+.invisible {
+  visibility: hidden;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+div.cap {
+  text-align: center;
+}
+div.cap h1 {
+  font-family: 'Sonsie One', serif;
+  font-weight: normal;
+  color: #fff;
+}
+div.cap h1.title {
+  float: left;
+}
+div.cap h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+div.cap h1 avisited,
+div.cap h1 aactive,
+div.cap h1 ahover {
+  color: #fff;
+}
+div.cap .definition {
+  color: #3cc;
+  display: inline-block;
+  padding-bottom: 28px;
+  text-align: left;
+}
+div.cap .definition .pronunciation {
+  color: #006363;
+  font-family: 'Raleway', sans-serif;
+  padding-left: 1ex;
+}
+div.cap .definition ol {
+  margin: 0;
+  padding: 0;
+  padding-left: 1ex;
+  display: inline;
+}
+div.cap .definition li {
+  display: inline;
+  color: #fff;
+}
+div.cap footer {
+  overflow: auto;
+  text-align: left;
+  box-sizing: border-box;
+}
+div.cap footer aside {
+  float: left;
+}
+div.cap footer a.author,
+div.cap footer .logo a {
+  clear: right;
+  color: #5ccccc;
+  float: right;
+  opacity: 0.4;
+  text-decoration: none;
+}
+div.cap footer a.author:visited,
+div.cap footer .logo a:visited {
+  color: #006363;
+}
+div.cap footer a.author:active,
+div.cap footer .logo a:active {
+  color: #ff7400;
+}
+div.cap footer a.author:hover,
+div.cap footer .logo a:hover {
+  opacity: 1;
+}
+div.nav aside {
+  color: #fff;
+  background: #099;
+  font-family: 'Marko One', serif;
+  padding-top: 0;
+}
+div.nav aside ul,
+div.nav aside ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+div.nav aside a {
+  color: #5ccccc;
+  text-decoration: none;
+}
+div.nav aside a:active {
+  color: #ffb273;
+}
+div.nav aside a:visited {
+  color: #ff9640;
+}
+div.nav aside a:hover {
+  color: #ff7400;
+}
+div.content {
+  color: #000;
+  background: #fff;
+}
+div.content article {
+  margin-bottom: 28px;
+}
+div.content article h1 {
+  font-size: 2em;
+}
+div.content aside {
+  margin-bottom: 14px;
+}
+div.content a {
+  color: #099;
+  text-decoration: underline;
+}
+div.content a:active {
+  color: #3cc;
+}
+div.content a:visited {
+  color: #006363;
+}
+div.content a:hover {
+  color: #099;
+  text-decoration: none;
+}
+div.content a[href="/stub.html"] {
+  color: #a60000 !important;
+}
+aside.define em:first-of-type:after {
+  content: "\a";
+  white-space: pre;
+}
+html,
+body {
+  font: 16px/28px 'Raleway', sans-serif;
+  background: #099;
+}
+::selection,
+::-moz-selection {
+  background: #5ccccc;
+  color: #fff;
+  text-shadow: none;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+#main {
+  padding: 30px 0;
+}
+#main article {
+  clear: both;
+}
+#main article ul,
+#main article ol {
+  margin: 0;
+  margin-bottom: 28px;
+  padding-left: 2.5em;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+#main article blockquote {
+  box-sizing: border-box;
+  font-style: italic;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+#main article p.number {
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center;
+}
+#main article p.stylized {
+  font-family: 'Marko One', serif;
+  font-size: 10em;
+  line-height: 2em;
+  text-align: center;
+}
+#main img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+iframe {
+  border: 0;
+  margin-bottom: 28px;
+}
+p {
+  line-height: 28px;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+aside {
+  padding: 20px 5%;
+  overflow: auto;
+}
+aside p:last-child {
+  margin-bottom: 0;
+}
+aside ul,
+aside ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+hr.mark {
+  clear: both;
+  background: none;
+  border: none;
+}
+@media only screen {
+  div.cap .definition {
+    display: none;
+  }
+  div.side-reference {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480px) {
+  #main img {
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  div.cap .definition {
+    display: inline-block;
+  }
+  #main > article {
+    float: left;
+    width: 57%;
+  }
+  #aside-container {
+    float: right;
+    width: 28%;
+  }
+  div.side-reference {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 1026px;
+/* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
