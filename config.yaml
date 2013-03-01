@@ -2,6 +2,7 @@ site:
     compiler: kramer
 
 root: copy to .
+fonts: copy to css/fonts
 stylus: css
 coffee: js
 posts: .
