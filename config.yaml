@@ -1,0 +1,31 @@
+# Everything in the root/ directory will be copied to the root of the site.
+# module: <compiler> to <destination> syntax is the easiest way to get started.
+root: copy to .
+# All possible module configurations (usually you only need 'compile' and 'to'):
+#   from: DIR               # Source directory, module name by default.
+#   to: DIR                 # Destination directory, module name by default.
+#   compiler: NAME          # Compiler used to move from source to destination.
+#   ignore: '^.'            # Regex of files to ignore.
+#   layout: NAME            # Default layout for jinja compilers.
+#   context: {...}          # Configuration dictionary for to jinja compilers.
+#   stub: stub.html         # Destination-relative override of site's stub.
+#   delay: 0.5              # Module-specific override of site's delay.
+
+# Compile stylus/ to css/ using the stylus compiler.
+# stylus: css
+
+# Compile coffee/ to js/ using the coffescript compiler.
+# coffee: js
+
+# Compile posts/ to posts/ using the default compiler.
+# posts: true
+
+site:
+    compiler: flowdown      # Use flow + markdown as the default compiler.
+# All possible site configurations (and their defaults):
+#   build: .build           # The destination site.
+#   layouts: layouts        # The directory for jinja layout templates.
+#   compilers: compilers    # The directory for mite compiler .py files.
+#   refresh: true           # Local server tries to refresh browser pages.
+#   delay: 0.5              # Local server checks for updates every ½ second.
+#   stub: /stub.html        # The jinja url filter response for missing pages.
