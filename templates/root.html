@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block body %}
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		{% block header %}
+		<h1 class="logo">
+			<a href="/">Simplifience</a>
+		</h1>
+		<div class="definition" title="from English, 'Simplified Science'">
+			<strong><em>noun</em></strong>
+			<span class="pronunciation">\ˈsim-plə-ˌfīən(t)s\</span>
+			<ol>
+				<li>
+					Math &amp; science less the accumulated cruft of history.
+				</li>
+			</ol>
+		</div>
+		{% endblock header %}
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		{% block main %}
+		{% set readfirst = [
+			'ground-rules'|posts,
+			'mathematics'|posts,
+			'science'|posts,
+			'simplifience'|posts,
+		] %}
+		{% set sequences = [
+			'number'|posts,
+		] %}
+		{% set whys = [
+			'divide-by-zero'|posts,
+			'triangle-rule'|posts,
+		] %}
+		<div id="article-container">
+			<article>
+				{% block content %}
+				{% endblock content %}
+			</article>
+		</div>
+		<div id="aside-container" class="nav">
+			<aside>
+				<h3>Read these first:</h3>
+				<ul>
+					{% for post in readfirst %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</aside>
+			<aside>
+				<h3>A few good <em>Why</em>s:</h3>
+				<ul>
+					{% for post in whys %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</aside>
+
+			<aside>
+				<h3>Sequences</h3>
+				<ul>
+					{% for start in sequences %}
+					<li><a href="{{ start.url }}">{{ start.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</aside>
+		</div>
+		{% endblock main %}
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		{% block footer %}
+		{% endblock footer %}
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+{% endblock body %}

@@ -1,10 +1,8 @@
-site:
-    compiler: kramer
-
-root: copy to .
-fonts: copy to css/fonts
+root: kramer to .
+posts: kramer to .
+mathbox:
+  compiler: flow
+images: copy to images
 stylus: css
 coffee: js
-posts: .
-mathbox:
-    compiler: flow
+static: copy to .

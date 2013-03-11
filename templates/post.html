@@ -1,0 +1,93 @@
+---
+layout: base
+links:
+- post
+---
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		<h1 class="title" title="Simplifience">
+			<a href="/">{{ page.title }}</a>
+		</h1>
+	</header>
+</div>
+
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content {{ page.main-class }}">
+		<article>
+			{{ content }}
+		</article>
+		<hr class="mark">
+
+		{% assign following = page | following %}
+		{% if following != empty %}
+		<div id="following" class="navigator">
+			<ul>
+				{% for predecessor in following %}
+				<li><a href="{{ predecessor.url }}">{{ predecessor.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% endif %}
+
+
+		{% if page.fin %}
+		<span id="fin">๛</span>
+		{% endif %}
+
+		{% assign followers = page | followers %}
+		{% if followers != empty %}
+		<div id="followers" class="navigator">
+			<ul>
+				{% for follower in followers %}
+				<li><a href="{{ follower.url }}">{{ follower.title }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+		{% endif %}
+	</div>
+</div>
+
+<div id="footer-container" class="nav cap">
+	<footer class="wrapper">
+		{% assign tags = page.tags | sort %}
+		{% if tags != empty %}
+			<aside class="tags">
+				<h3>Tags:</h3>
+				<ul>
+					{% for tag in tags %}
+					<li>
+						<a href="/tag/{{ tag }}.html" class="{{ tag }}">
+							{{ tag | capitalize }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</aside>
+		{% endif %}
+		{% assign incoming = page | incoming %}
+		{% if incoming != empty %}
+			<aside class="incoming">
+				<h3>Incoming links:</h3>
+				<ul>
+					{% for linker in incoming %}
+					<li>
+						<a href="{{ linker.url }}">{{ linker.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</aside>
+		{% endif %}
+		<aside class="featured">
+			<h3>Featured articles:</h3>
+			<ul>
+				<li><a href="{{ "Number" | page }}">Number: More and Less</a></li>
+				<li><a href="{{ "Circles" | page }}">The 2<sup>nd</sup> most important shape</a></li>
+				<li><a href="{{ "Triangle Theorem" | page }}">Why does a²+b²=c²?</a></li>
+			</ul>
+		</aside>
+		<h1 class="logo" title="Simplifience n. \ˈsim-plə-ˌfīən(t)s\ Math & science less the accumulated cruft of history.">
+			<a href="/">Simplifience</a>
+		</h1>
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>

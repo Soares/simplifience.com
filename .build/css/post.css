@@ -30,21 +30,3 @@
   opacity: 0.6;
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
-  #main > article > :not(aside),
-  #main > article > aside.inline {
-    box-sizing: border-box;
-    clear: left;
-    display: inline-block;
-    float: left;
-    width: 57%;
-  }
-  #main > article > hr.mark {
-    clear: both;
-  }
-  #main > article > aside:not(.inline) {
-    float: right;
-    clear: right;
-    width: 28%;
-  }
-}

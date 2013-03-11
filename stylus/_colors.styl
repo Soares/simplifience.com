@@ -1,0 +1,47 @@
+$pure(colorlist)
+	colorlist[0]
+$flat(colorlist)
+	colorlist[1]
+$dark(colorlist)
+	colorlist[2]
+$light(colorlist)
+	colorlist[3]
+$pale(colorlist)
+	colorlist[4]
+$text(colorlist)
+	if length(colorlist) >= 7
+		colorlist[6]
+	else if $isdark(colorlist)
+		white
+	else
+		black
+$contrast(colorlist)
+	if $isdark(colorlist)
+		$pale(colorlist)
+	else
+		$dark(colorlist)
+$isdark(colorlist)
+	if length(colorlist) >= 6
+		colorlist[5]
+	else
+		dark($pure(colorlist))
+
+// The primary colors from http://colorschemedesigner.com/
+// pure, flat, dark, light, pale
+$teal = #009999, #1D7373, #006363, #33CCCC, #5CCCCC
+$blue = #1240AB, #2A4480, #06266F, #4671D5, #6C8CD5
+$navy = #3914AF, #412C84, #200772, #6A48D7, #876ED7
+$violet = #7109AA, #5F2580, #48036F, #9F3ED5, #AD66D5
+$magenta = #CD0074, #992667, #85004B, #E6399B, #E667AF
+$red = #FF0000, #BF3030, #A60000, #FF4040, #FF7373
+$orange = #FF7400, #BF7130, #A64B00, #FF9640, #FFB273
+$gold = #FFAA00, #BF8F30, #A66F00, #FFBF40, #FFD073
+$amber = #FFD300, #BFA730, #A68900, #FFDE40, #FFE773
+$yellow = #FFFF00, #BFBF30, #A6A600, #FFFF40, #FFFF73
+$celadon = #9FEE00, #86B32D, #679B00, #B9F73E, #C9F76F
+$green = #00CC00, #269926, #008500, #39E639, #67E667, false
+// background nothing border active visited isdark text
+// base03 green base01 cyan magenta true base0
+$solarized = #002b36, #859900, #586e75, #2aa198, #d33682, true, #839496
+// blue red base1 red red false base00
+$solarized-hi = #268bd2, #dc322f, #93a1a1, #dc322f, #dc322f, false, #657b83

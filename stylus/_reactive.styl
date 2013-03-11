@@ -1,0 +1,46 @@
+@media only screen {
+	div.cap .definition {
+		display: none;
+	}
+
+	div.side-reference {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	#main img {
+		max-width: 90%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	div.cap .definition {
+		display: inline-block;
+	}
+
+	#main > #article-container, #main > article > :not(aside) {
+		box-sizing: border-box;
+		clear: left;
+		display: inline-block;
+		float: left;
+		width: 57%;
+	}
+
+	#aside-container, #main > article > aside {
+		float: right;
+    clear: right;
+		width: 28%;
+	}
+
+	div.side-reference {
+		display: block;
+	}
+}
+
+@media only screen and (min-width: 1140px) {
+	.wrapper {
+		width: 1026px; /* 1140px - 10% for margins */
+		margin: 0 auto;
+	}
+}

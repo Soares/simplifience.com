@@ -1,0 +1,112 @@
+@import '_colors'
+
+commentary(class, color, complement)
+	body.{class}
+		background $pure(color)
+		color $text(color)
+
+		div.cap, div.nav aside
+			background $pure(color)
+			color $text(color)
+
+		::selection
+			background-color $pale(color)
+			color $text(color)
+
+		#header
+			h1 a
+				color white
+				&:visited, &:active, &:hover
+					color white
+			.definition
+				color $contrast(color)
+				li
+					color $text(color)
+			.pronunciation
+				color $dark(color)
+
+		div.content a
+			color $pure(color)
+			&:active
+				color $light(color)
+			&:visited
+				color $dark(color)
+			&:hover
+				color $pure(color)
+
+		div.nav aside a
+			color $contrast(color)
+			&:active
+				color $contrast(complement)
+			&:visited
+				color $dark(color)
+
+		footer h1.logo a, footer a.author
+			color $dark(color)
+
+		div.nav aside
+			h1, h2, h3, h4, h5, h6
+				color $contrast(complement)
+
+	span.{class}, strong.{class}, em.{class}
+		color $pure(color)
+	body.{class}
+		span.info, strong.info, em.info
+			color $pure(color)
+
+	#main aside.{class},
+	#main div.commentary.{class},
+	body.{class} #main aside.info,
+	body.{class} div.commentary.info,
+	body.{class} div.nav aside
+		background $pure(color)
+		border-color $dark(color)
+		color $text(color)
+		h1, h2, h3, h4, h5, h6
+			color $pure(complement)
+		a
+			color $pure(complement)
+			&:visited
+				color $contrast(color)
+		.MathJax
+			color $text(color) !important
+
+main = $teal
+complement = $orange
+
+// Color themes
+commentary('main', $teal, $orange)
+commentary('rules', $blue, $gold)
+commentary('rigor', $navy, $amber)
+commentary('simplifience', $violet, $yellow)
+commentary('knowledge', $magenta, $amber)
+commentary('rant', $red, $amber)
+commentary('caution', $yellow, $navy)
+commentary('define', $green, $violet)
+commentary('computer', $solarized, $solarized-hi)
+
+// Yellow is too light.
+span.caution, strong.caution, em.caution
+	color $flat($yellow)
+body.caution
+	span.info, strong.info, em.info
+		color $flat($yellow)
+
+// Computer is monospaced.
+span.computer, strong.computer, em.computer,
+body.computer span.info,
+body.computer strong.info,
+body.computer em.info,
+#main aside.computer,
+#main div.commentary.computer,
+body.computer #main aside.info,
+body.computer div.commentary.info,
+body.computer div.nav aside,
+body.computer #main article > p a
+	font-family 'PT Mono', monospace
+
+// Special rules
+aside.define
+	em:first-of-type:after
+		content "\a"
+		white-space pre
