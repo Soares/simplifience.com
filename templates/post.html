@@ -14,28 +14,25 @@
 
 		<hr class="mark">
 
-		{% assign following = page | following %}
-		{% if following != empty %}
+		{% if following %}
 		<div id="following" class="navigator">
 			<ul>
-				{% for predecessor in following %}
-				<li><a href="{{ predecessor.url }}">{{ predecessor.title }}</a></li>
+				{% for title, url in following.items %}
+				<li><a href="{{ url }}">{{ title }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
 		{% endif %}
 
-
-		{% if page.fin %}
+		{% if fin %}
 		<span id="fin">๛</span>
 		{% endif %}
 
-		{% assign followers = page | followers %}
-		{% if followers != empty %}
+		{% if followers %}
 		<div id="followers" class="navigator">
 			<ul>
-				{% for follower in followers %}
-				<li><a href="{{ follower.url }}">{{ follower.title }}</a></li>
+				{% for title, url in following.items %}
+				<li><a href="{{ url }}">{{ title }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
