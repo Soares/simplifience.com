@@ -3,13 +3,14 @@
 
 {% block header %}
 <h1 class="title" title="Simplifience">
-  <a href="/">{{ page.title }}</a>
+  <a href="/">{{ title }}</a>
 </h1>
 {% endblock header %}
 
 {% block main %}
 		<article>
-			{{ content }}
+			{% block content %}
+			{% endblock %}
 		</article>
 
 		<hr class="mark">

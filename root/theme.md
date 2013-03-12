@@ -2,7 +2,11 @@
 title: Color Scheme Test
 ---
 [Unvisited body link](/nowhere)<br/>
-[Visited body link](http://google.com)
+[Visited body link](http://google.com)<br/>
+@post[Unvisited stub]newstub<br/>
+@post[Visited stub]stub<br/>
+<br/>
+@post[Missing stub]missing
 
 {% for type in [
   "main",
@@ -23,8 +27,14 @@ title: Color Scheme Test
 <aside class="{{ type }} inline" markdown="block">
 Commentary text. <br/>
 $2 + 2 = 4$<br/>
-[Visited link](http://google.com). <br/>
-[Unvisited (?) link](/nothing). <br/>
+Fusce eu nunc leo, id volutpat nibh [Visited link](http://google.com). In sit
+amet nibh leo. [Unvisited](unvisited). Curabitur nec dui lacus. Aenean
+porttitor, ligula vel euismod rutrum, eros est bibendum eros @post[Visited
+stub]stub, in sagittis tortor nisl non erat. Suspendisse pulvinar blandit nisl
+sed gravida. @post[Unvisited
+stub]newstub.
+
+@post[Missing stub]missing.
 </aside>
 
 {% endfor %}

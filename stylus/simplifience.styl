@@ -100,7 +100,7 @@ div.cap
 		display block
 		margin 0 auto
 		max-width 100%
-	a
+	article a
 		text-decoration underline
 		&:hover
 			text-decoration none
@@ -127,11 +127,23 @@ aside
 		margin 0
 		padding 0
 
-div.nav aside
-	font-family $exciting
-	padding-top 0
+div.nav
+	text-align right
+	h3
+		margin 0
+		font-size: $text-size
+		opacity 0.2
+	div.block:hover h3
+		opacity 1
+	ul, ol
+		font-family $exciting
+		text-align left
 	a
+		font-size $text-size * 1.2
+		line-height $line-size * 1.2
 		text-decoration none
+		&:hover
+			text-decoration underline
 
 hr.mark
 	clear both

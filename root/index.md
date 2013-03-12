@@ -1,7 +1,7 @@
 ---
 title: Simplifience
 ---
-Behold the deepest question ever asked: [*Why?*](@posts/why)
+Behold the deepest question ever asked: *@link[Why?]why*
 
 Why is the sky blue? Why does the world spin? Why are we here? *Why?*
 

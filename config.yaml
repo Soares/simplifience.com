@@ -1,5 +1,5 @@
 root: kramer to .
-posts: kramer to .
+post: kramer to .
 mathbox:
   compiler: flow
 images: copy to images

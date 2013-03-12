@@ -21,19 +21,11 @@
 <div id="main-container" class="content">
 	<div id="main" class="wrapper clearfix content">
 		{% block main %}
-		{% set readfirst = [
-			'ground-rules'|posts,
-			'mathematics'|posts,
-			'science'|posts,
-			'simplifience'|posts,
-		] %}
-		{% set sequences = [
-			'number'|posts,
-		] %}
-		{% set whys = [
-			'divide-by-zero'|posts,
-			'triangle-rule'|posts,
-		] %}
+		<!-- ground-rules, mathematics, science, simplifience -->
+		{% set readfirst = [] %}
+		<!-- Zero, Triangles, Gravity -->
+		{% set whys = [] %}
+		{% set sequences = [] %}
 		<div id="article-container">
 			<article>
 				{% block content %}
@@ -41,31 +33,42 @@
 			</article>
 		</div>
 		<div id="aside-container" class="nav">
-			<aside>
-				<h3>Read these first:</h3>
-				<ul>
-					{% for post in readfirst %}
-					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-					{% endfor %}
-				</ul>
-			</aside>
-			<aside>
-				<h3>A few good <em>Why</em>s:</h3>
-				<ul>
-					{% for post in whys %}
-					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-					{% endfor %}
-				</ul>
-			</aside>
-
-			<aside>
+			{% if readfirst %}
+			<div class="block">
+				<h3>Read these first</h3>
+				<aside>
+					<ul>
+						{% for post in readfirst %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</aside>
+			</div>
+			{% endif %}
+			{% if whys %}
+			<div class="block">
+				<h3>A few good <em>Why</em>s</h3>
+				<aside>
+					<ul>
+						{% for post in whys %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</aside>
+			</div>
+			{% endif %}
+			{% if sequences %}
+			<div class="block">
 				<h3>Sequences</h3>
-				<ul>
-					{% for start in sequences %}
-					<li><a href="{{ start.url }}">{{ start.title }}</a></li>
-					{% endfor %}
-				</ul>
-			</aside>
+				<aside>
+					<ul>
+						{% for start in sequences %}
+						<li><a href="{{ start.url }}">{{ start.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</aside>
+			</div>
+			{% endif %}
 		</div>
 		{% endblock main %}
 	</div>

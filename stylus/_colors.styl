@@ -15,11 +15,16 @@ $text(colorlist)
 		white
 	else
 		black
-$contrast(colorlist)
-	if $isdark(colorlist)
+$contrast(control, colorlist=control)
+	if $isdark(control)
 		$pale(colorlist)
 	else
 		$dark(colorlist)
+$contrast-alt(control, colorlist=control)
+	if $isdark(control)
+		$light(colorlist)
+	else
+		$flat(colorlist)
 $isdark(colorlist)
 	if length(colorlist) >= 6
 		colorlist[5]
@@ -42,6 +47,6 @@ $celadon = #9FEE00, #86B32D, #679B00, #B9F73E, #C9F76F
 $green = #00CC00, #269926, #008500, #39E639, #67E667, false
 // background nothing border active visited isdark text
 // base03 green base01 cyan magenta true base0
-$solarized = #002b36, #859900, #586e75, #2aa198, #d33682, true, #839496
-// blue red base1 red red false base00
-$solarized-hi = #268bd2, #dc322f, #93a1a1, #dc322f, #dc322f, false, #657b83
+$solarized = #002b36, #859900, #586e75, #2aa198, #268bd2, true, #839496
+// red blue base1 magenta cyan false base00
+$solarized-hi = #dc322f, #268bd2, #93a1a1, #d33682, #2aa198, false, #657b83

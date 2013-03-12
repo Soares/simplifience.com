@@ -5,19 +5,19 @@ commentary(class, color, complement)
 		background $pure(color)
 		color $text(color)
 
-		div.cap, div.nav aside
-			background $pure(color)
-			color $text(color)
-
 		::selection
 			background-color $pale(color)
 			color $text(color)
 
+		div.cap
+			background $pure(color)
+			color $text(color)
+
 		#header
 			h1 a
-				color white
+				color $text(color)
 				&:visited, &:active, &:hover
-					color white
+					color $text(color)
 			.definition
 				color $contrast(color)
 				li
@@ -25,7 +25,7 @@ commentary(class, color, complement)
 			.pronunciation
 				color $dark(color)
 
-		div.content a
+		div.content article a
 			color $pure(color)
 			&:active
 				color $light(color)
@@ -33,20 +33,30 @@ commentary(class, color, complement)
 				color $dark(color)
 			&:hover
 				color $pure(color)
+			&.stub
+				color $pure(complement)
+				&:visited
+					color $dark(complement)
+				&.missing
+					background $pure(complement)
+					color $pure(color)
 
-		div.nav aside a
-			color $contrast(color)
-			&:active
-				color $contrast(complement)
-			&:visited
+		div.nav
+			h1, h2, h3, h4, h5, h6
 				color $dark(color)
+			aside
+				background $pure(color)
+				border-color $dark(color)
+				color $text(color)
+			a
+				color $contrast(color, complement)
+				&:active
+					color $pure(complement)
+				&:visited
+					color $contrast(color)
 
 		footer h1.logo a, footer a.author
 			color $dark(color)
-
-		div.nav aside
-			h1, h2, h3, h4, h5, h6
-				color $contrast(complement)
 
 	span.{class}, strong.{class}, em.{class}
 		color $pure(color)
@@ -55,19 +65,27 @@ commentary(class, color, complement)
 			color $pure(color)
 
 	#main aside.{class},
-	#main div.commentary.{class},
+	#main div.{class},
 	body.{class} #main aside.info,
-	body.{class} div.commentary.info,
-	body.{class} div.nav aside
+	body.{class} div.info
 		background $pure(color)
 		border-color $dark(color)
 		color $text(color)
 		h1, h2, h3, h4, h5, h6
-			color $pure(complement)
+			color $contrast(color, complement)
 		a
 			color $pure(complement)
+			if $isdark(color)
+				text-shadow 1px 1px 1px $dark(color)
+			else
+				text-shadow 1px 1px 1px $light(color)
 			&:visited
+				color $text(color)
+			&.stub
 				color $contrast(color)
+				&.missing
+					background $pure(complement)
+					color $pure(color)
 		.MathJax
 			color $text(color) !important
 
@@ -85,10 +103,13 @@ commentary('caution', $yellow, $navy)
 commentary('define', $green, $violet)
 commentary('computer', $solarized, $solarized-hi)
 
+
 // Yellow is too light.
 span.caution, strong.caution, em.caution
 	color $flat($yellow)
 body.caution
+	div.content article a
+		color $flat($yellow)
 	span.info, strong.info, em.info
 		color $flat($yellow)
 
@@ -98,14 +119,16 @@ body.computer span.info,
 body.computer strong.info,
 body.computer em.info,
 #main aside.computer,
-#main div.commentary.computer,
+#main div.computer,
 body.computer #main aside.info,
-body.computer div.commentary.info,
-body.computer div.nav aside,
+body.computer div.info,
+body.computer div.nav aside a,
+body.computer div.nav h3,
+body.computer #header .definition,
 body.computer #main article > p a
 	font-family 'PT Mono', monospace
 
-// Special rules
+// Define has a line break after the first <em>.
 aside.define
 	em:first-of-type:after
 		content "\a"
