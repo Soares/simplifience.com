@@ -99,19 +99,19 @@ commentary('rigor', $navy, $amber)
 commentary('simplifience', $violet, $yellow)
 commentary('knowledge', $magenta, $amber)
 commentary('rant', $red, $amber)
+commentary('stub', $orange, $teal)
 commentary('caution', $yellow, $navy)
 commentary('define', $green, $violet)
 commentary('computer', $solarized, $solarized-hi)
 
+// Red logo is white.
+body.rant #header h1.title a
+	color white
+
 
 // Yellow is too light.
 span.caution, strong.caution, em.caution
-	color $flat($yellow)
-body.caution
-	div.content article a
-		color $flat($yellow)
-	span.info, strong.info, em.info
-		color $flat($yellow)
+	color $dark($yellow)
 
 // Computer is monospaced.
 span.computer, strong.computer, em.computer,
@@ -127,6 +127,26 @@ body.computer div.nav h3,
 body.computer #header .definition,
 body.computer #main article > p a
 	font-family 'PT Mono', monospace
+body.computer #main article > p a
+	color $pale($solarized-hi)
+	&.stub
+		color $pure($solarized-hi)
+		&:visited
+			color $light($solarized-hi)
+	&:visited
+		color $pale($solarized)
+body #main aside.computer,
+body #main div.computer,
+html body.computer #main aside.info,
+html body.computer div.info
+	a
+		text-shadow 1px 1px 1px $pure($solarized)
+
+
+// Simplifience unvisited stub is too light.
+body.simplifience div.content article a.stub
+		color $dark(complement)
+
 
 // Define has a line break after the first <em>.
 aside.define

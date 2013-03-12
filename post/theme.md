@@ -1,12 +1,22 @@
 ---
 title: Color Scheme Test
+stub: |
+  This is an internal tool that I use for some simplifience.com tests.
+  I test all of the possible themes here (existing and new), hence the name.
+  I also test the stub framework, which you're seeing now.
+  <br/>
+  <br/>
+  Internally, I see the post that I'm working on.
+  Externally, you see only this.
+type: stub
+scripts:
+- js/jquery.js
+- '@coffee/theme'
 ---
 [Unvisited body link](/nowhere)<br/>
 [Visited body link](http://google.com)<br/>
-@post[Unvisited stub]newstub<br/>
-@post[Visited stub]stub<br/>
-<br/>
-@post[Missing stub]missing
+@post[Unvisited stub]unvisited<br/>
+@post[Visited stub]theme<br/>
 
 {% for type in [
   "main",
@@ -15,6 +25,7 @@ title: Color Scheme Test
   "simplifience",
   "knowledge",
   "rant",
+  "stub",
   "caution",
   "define",
   "computer",
@@ -24,18 +35,22 @@ title: Color Scheme Test
 <em class="{{ type }}">Emphasized.</em>
 <strong class="{{ type }}">Strong.</strong>
 
-<aside class="{{ type }} inline" markdown="block">
-Commentary text. <br/>
-$2 + 2 = 4$<br/>
-Fusce eu nunc leo, id volutpat nibh [Visited link](http://google.com). In sit
-amet nibh leo. [Unvisited](unvisited). Curabitur nec dui lacus. Aenean
-porttitor, ligula vel euismod rutrum, eros est bibendum eros @post[Visited
-stub]stub, in sagittis tortor nisl non erat. Suspendisse pulvinar blandit nisl
-sed gravida. @post[Unvisited
-stub]newstub.
+<div>
+  <button style="float: right" onclick="setTheme('{{ type }}')">
+    Try {{ type }}
+  </button>
+</div>
 
-@post[Missing stub]missing.
-</aside>
+<div class="{{ type }}" markdown="block">
+  Commentary text.<br/>
+  $2 + 2 = 4$<br/>
+  Fusce eu nunc leo, id volutpat nibh
+  [Visited link](http://google.com). In sit amet nibh leo.
+  [Unvisited](unvisited). Curabitur nec dui lacus. Aenean porttitor, ligula vel
+  euismod rutrum, eros est bibendum eros @post[Visited stub]theme, in sagittis
+  tortor nisl non erat. Suspendisse pulvinar blandit nisl sed gravida.
+  @post[Unvisited stub]unvisited.
+</div>
 
 {% endfor %}
 

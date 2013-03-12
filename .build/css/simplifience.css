@@ -13,34 +13,16 @@
   src: local('Marko One'), url("fonts/marko-one.woff") format('woff');
 }
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto Regular'), url("fonts/roboto.woff") format('woff');
+  src: local('Ubuntu'), url("fonts/ubuntu.woff") format('woff');
 }
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
+  font-family: 'Ubuntu';
+  font-style: bold;
   font-weight: 700;
-  src: local('Roboto Bold'), url("fonts/roboto-bold.woff") format('woff');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway Regular'), url("fonts/raleway.woff") format('woff');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Raleway Bold'), url("fonts/raleway-bold.woff") format('woff');
-}
-@font-face {
-  font-family: 'PT Mono';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Mono'), url("fonts/pt-mono.woff") format('woff');
+  src: local('Ubuntu Bold'), url("fonts/ubuntu-bold.woff") format('woff');
 }
 body.main {
   background: #099;
@@ -960,6 +942,159 @@ body.rant #main aside.info .MathJax,
 body.rant div.info .MathJax {
   color: #000 !important;
 }
+body.stub {
+  background: #ff7400;
+  color: #000;
+}
+body.stub ::selection {
+  background-color: #ffb273;
+  color: #000;
+}
+body.stub div.cap {
+  background: #ff7400;
+  color: #000;
+}
+body.stub #header h1 a {
+  color: #000;
+}
+body.stub #header h1 a:visited,
+body.stub #header h1 a:active,
+body.stub #header h1 a:hover {
+  color: #000;
+}
+body.stub #header .definition {
+  color: #a64b00;
+}
+body.stub #header .definition li {
+  color: #000;
+}
+body.stub #header .pronunciation {
+  color: #a64b00;
+}
+body.stub div.content article a {
+  color: #ff7400;
+}
+body.stub div.content article a:active {
+  color: #ff9640;
+}
+body.stub div.content article a:visited {
+  color: #a64b00;
+}
+body.stub div.content article a:hover {
+  color: #ff7400;
+}
+body.stub div.content article a.stub {
+  color: #099;
+}
+body.stub div.content article a.stub:visited {
+  color: #006363;
+}
+body.stub div.content article a.stub.missing {
+  background: #099;
+  color: #ff7400;
+}
+body.stub div.nav h1,
+body.stub div.nav h2,
+body.stub div.nav h3,
+body.stub div.nav h4,
+body.stub div.nav h5,
+body.stub div.nav h6 {
+  color: #a64b00;
+}
+body.stub div.nav aside {
+  background: #ff7400;
+  border-color: #a64b00;
+  color: #000;
+}
+body.stub div.nav a {
+  color: #006363;
+}
+body.stub div.nav a:active {
+  color: #099;
+}
+body.stub div.nav a:visited {
+  color: #a64b00;
+}
+body.stub footer h1.logo a,
+body.stub footer a.author {
+  color: #a64b00;
+}
+span.stub,
+strong.stub,
+em.stub {
+  color: #ff7400;
+}
+body.stub span.info,
+body.stub strong.info,
+body.stub em.info {
+  color: #ff7400;
+}
+#main aside.stub,
+#main div.stub,
+body.stub #main aside.info,
+body.stub div.info {
+  background: #ff7400;
+  border-color: #a64b00;
+  color: #000;
+}
+#main aside.stub h1,
+#main div.stub h1,
+body.stub #main aside.info h1,
+body.stub div.info h1,
+#main aside.stub h2,
+#main div.stub h2,
+body.stub #main aside.info h2,
+body.stub div.info h2,
+#main aside.stub h3,
+#main div.stub h3,
+body.stub #main aside.info h3,
+body.stub div.info h3,
+#main aside.stub h4,
+#main div.stub h4,
+body.stub #main aside.info h4,
+body.stub div.info h4,
+#main aside.stub h5,
+#main div.stub h5,
+body.stub #main aside.info h5,
+body.stub div.info h5,
+#main aside.stub h6,
+#main div.stub h6,
+body.stub #main aside.info h6,
+body.stub div.info h6 {
+  color: #006363;
+}
+#main aside.stub a,
+#main div.stub a,
+body.stub #main aside.info a,
+body.stub div.info a {
+  color: #099;
+  text-shadow: 1px 1px 1px #ff9640;
+}
+#main aside.stub a:visited,
+#main div.stub a:visited,
+body.stub #main aside.info a:visited,
+body.stub div.info a:visited {
+  color: #000;
+}
+#main aside.stub a.stub,
+#main div.stub a.stub,
+body.stub #main aside.info a.stub,
+body.stub div.info a.stub {
+  color: #a64b00;
+}
+#main aside.stub a.stub.missing,
+#main div.stub a.stub.missing,
+body.stub #main aside.info a.stub.missing,
+body.stub div.info a.stub.missing {
+  background: #099;
+  color: #ff7400;
+}
+#main aside.stub .MathJax,
+#main div.stub .MathJax,
+body.stub #main aside.info .MathJax,
+body.stub div.info .MathJax {
+  color: #000 !important;
+}
 body.caution {
   background: #ff0;
   color: #000;
@@ -1419,18 +1554,13 @@ body.computer #main aside.info .MathJax,
 body.computer div.info .MathJax {
   color: #839496 !important;
 }
+body.rant #header h1.title a {
+  color: #fff;
+}
 span.caution,
 strong.caution,
 em.caution {
-  color: #bfbf30;
-}
-body.caution div.content article a {
-  color: #bfbf30;
-}
-body.caution span.info,
-body.caution strong.info,
-body.caution em.info {
-  color: #bfbf30;
+  color: #a6a600;
 }
 span.computer,
 strong.computer,
@@ -1447,6 +1577,27 @@ body.computer div.nav h3,
 body.computer #header .definition,
 body.computer #main article > p a {
   font-family: 'PT Mono', monospace;
+}
+body.computer #main article > p a {
+  color: #2aa198;
+}
+body.computer #main article > p a.stub {
+  color: #dc322f;
+}
+body.computer #main article > p a.stub:visited {
+  color: #d33682;
+}
+body.computer #main article > p a:visited {
+  color: #268bd2;
+}
+body #main aside.computer a,
+body #main div.computer a,
+html body.computer #main aside.info a,
+html body.computer div.info a {
+  text-shadow: 1px 1px 1px #002b36;
+}
+body.simplifience div.content article a.stub {
+  color: #a64b00;
 }
 aside.define em:first-of-type:after {
   content: "\a";
@@ -1559,7 +1710,7 @@ aside.define em:first-of-type:after {
 }
 html,
 body {
-  font: 14px/20px 'Raleway', arial, sans-serif;
+  font: 14px/20px 'Ubuntu', arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -1693,18 +1844,58 @@ p {
   margin-bottom: 20px;
   margin-top: 0;
 }
-aside {
-  padding: 10px 5%;
+aside,
+div.main,
+div.rules,
+div.rigor,
+div.simplifience,
+div.knowledge,
+div.stub,
+div.rant,
+div.caution,
+div.define,
+div.computer {
+  padding: 10px 20px;
   border-style: solid;
   border-width: 2px;
   margin-bottom: 20px;
   overflow: auto;
 }
-aside p:last-child {
+aside p:last-child,
+div.main p:last-child,
+div.rules p:last-child,
+div.rigor p:last-child,
+div.simplifience p:last-child,
+div.knowledge p:last-child,
+div.stub p:last-child,
+div.rant p:last-child,
+div.caution p:last-child,
+div.define p:last-child,
+div.computer p:last-child {
   margin-bottom: 0;
 }
 aside ul,
-aside ol {
+div.main ul,
+div.rules ul,
+div.rigor ul,
+div.simplifience ul,
+div.knowledge ul,
+div.stub ul,
+div.rant ul,
+div.caution ul,
+div.define ul,
+div.computer ul,
+aside ol,
+div.main ol,
+div.rules ol,
+div.rigor ol,
+div.simplifience ol,
+div.knowledge ol,
+div.stub ol,
+div.rant ol,
+div.caution ol,
+div.define ol,
+div.computer ol {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -1737,6 +1928,9 @@ hr.mark {
   clear: both;
   background: none;
   border: none;
+}
+#stub {
+  margin-bottom: 20px;
 }
 @media only screen {
   div.cap .definition {

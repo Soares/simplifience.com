@@ -1,5 +1,6 @@
 {% extends "root.html" %}
 {% set styles = ['post'] %}
+{% if stub %}{% set type = 'stub' %}{% endif %}
 
 {% block header %}
 <h1 class="title" title="Simplifience">
@@ -9,8 +10,18 @@
 
 {% block main %}
 		<article>
-			{% block content %}
-			{% endblock %}
+			{% if stub %}
+				<section id="stub">
+					{{ stub }}
+				</section>
+				<aside class="stub">
+					This page is a stub!<br>Check back later for more conent.
+				</aside>
+			{% endif %}
+			{% if developing or (not stub) %}
+				{% block content %}
+				{% endblock %}
+			{% endif %}
 		</article>
 
 		<hr class="mark">

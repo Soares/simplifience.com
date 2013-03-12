@@ -114,7 +114,13 @@ p
 	margin-bottom $line-margin
 	margin-top 0
 
-aside
+// Don't want to add a common class here, because I type these divs by hand
+// pretty frequently and would rather save the typing those many times than
+// this once.
+aside,
+div.main, div.rules, div.rigor,
+div.simplifience, div.knowledge, div.stub
+div.rant, div.caution, div.define, div.computer
 	padding $commentary-padding
 	border-style solid
 	border-width 2px
@@ -149,5 +155,8 @@ hr.mark
 	clear both
 	background none
 	border none
+
+#stub
+	margin-bottom $line-margin
 
 @import '_reactive'

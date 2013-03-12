@@ -1,5 +1,9 @@
 root: kramer to .
-post: kramer to .
+post:
+  compiler: kramer
+  to: .
+  context:
+    developing: true
 mathbox:
   compiler: flow
 images: copy to images

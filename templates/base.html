@@ -19,7 +19,7 @@
 	{% endfor %}
 
 	{% set type = type|default('main') %}
-	<link rel="icon" type="image/png" href="/icons/{{ type }}.png">
+	<link id="favicon" rel="icon" type="image/png" href="/icons/{{ type }}.png">
 </head>
 <body class="{{ type }}">
 	{% block body %}
@@ -40,7 +40,7 @@
 		});
 	</script>
 	{% for script in scripts %}
-	<script type="text/javascript" src="/js/{{ script }}.js"></script>
+	<script type="text/javascript" src="{{ script }}"></script>
 	{% endfor %}
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
