@@ -18,6 +18,10 @@ scripts:
 @post[Unvisited stub]unvisited<br/>
 @post[Visited stub]theme<br/>
 
+<aside class="info" markdown="block">
+Impartial commentary.
+</aside>
+
 {% for type in [
   "main",
   "rules",

@@ -13,16 +13,16 @@
   src: local('Marko One'), url("fonts/marko-one.woff") format('woff');
 }
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Enriqueta';
   font-style: normal;
   font-weight: 400;
-  src: local('Ubuntu'), url("fonts/ubuntu.woff") format('woff');
+  src: local('Enriqueta'), url("fonts/enriqueta.woff") format('woff');
 }
 @font-face {
-  font-family: 'Ubuntu';
+  font-family: 'Enriqueta';
   font-style: bold;
   font-weight: 700;
-  src: local('Ubuntu Bold'), url("fonts/ubuntu-bold.woff") format('woff');
+  src: local('Enriqueta Bold'), url("fonts/enriqueta-bold.woff") format('woff');
 }
 body.main {
   background: #099;
@@ -1710,7 +1710,7 @@ aside.define em:first-of-type:after {
 }
 html,
 body {
-  font: 14px/20px 'Ubuntu', arial, sans-serif;
+  font: 14px/20px 'Enriqueta', arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -1761,7 +1761,7 @@ div.cap footer {
   overflow: auto;
   text-align: left;
   box-sizing: border-box;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 div.cap footer aside {
   float: left;
@@ -1841,7 +1841,7 @@ iframe {
 }
 p {
   line-height: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 0;
 }
 aside,
@@ -1858,7 +1858,7 @@ div.computer {
   padding: 10px 20px;
   border-style: solid;
   border-width: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   overflow: auto;
 }
 aside p:last-child,
@@ -1930,7 +1930,7 @@ hr.mark {
   border: none;
 }
 #stub {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 @media only screen {
   div.cap .definition {
@@ -1961,7 +1961,7 @@ hr.mark {
   #main > article > aside {
     float: right;
     clear: right;
-    width: 28%;
+    width: 35%;
   }
   div.side-reference {
     display: block;
