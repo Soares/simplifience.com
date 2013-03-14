@@ -1710,7 +1710,7 @@ aside.define em:first-of-type:after {
 }
 html,
 body {
-  font: 14px/20px 'Enriqueta', arial, sans-serif;
+  font: 16px/1.5em 'Enriqueta', arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -1731,7 +1731,7 @@ div.cap {
 div.cap h1 {
   font-family: 'Sonsie One', serif;
   font-weight: normal;
-  font-size: 30.800000000000004px;
+  font-size: 35.2px;
 }
 div.cap h1.title {
   float: left;
@@ -1741,7 +1741,7 @@ div.cap h1 a {
 }
 div.cap .definition {
   display: inline-block;
-  padding-bottom: 20px;
+  padding-bottom: 1.5em;
   text-align: left;
 }
 div.cap .definition .pronunciation {
@@ -1761,7 +1761,7 @@ div.cap footer {
   overflow: auto;
   text-align: left;
   box-sizing: border-box;
-  padding-bottom: 10px;
+  padding-bottom: 0.75em;
 }
 div.cap footer aside {
   float: left;
@@ -1772,12 +1772,12 @@ div.cap footer a.author {
   clear: right;
 }
 div.cap footer h1.logo {
-  font-size: 35px;
+  font-size: 40px;
   margin-bottom: 0;
 }
 div.cap footer a.author {
   display: block;
-  margin-top: 7px;
+  margin-top: 8px;
 }
 div.cap footer a.author,
 div.cap footer .logo a {
@@ -1793,15 +1793,15 @@ div.cap footer .logo a:hover {
 }
 #main article {
   clear: both;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 #main article h1 {
-  font-size: 28px;
+  font-size: 32px;
 }
 #main article ul,
 #main article ol {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
   padding-left: 2.5em;
   padding-right: 1em;
   box-sizing: border-box;
@@ -1837,11 +1837,11 @@ div.cap footer .logo a:hover {
 }
 iframe {
   border: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
 }
 p {
-  line-height: 20px;
-  margin-bottom: 10px;
+  line-height: 1.5em;
+  margin-bottom: 0.75em;
   margin-top: 0;
 }
 aside,
@@ -1855,10 +1855,10 @@ div.rant,
 div.caution,
 div.define,
 div.computer {
-  padding: 10px 20px;
+  padding: 0.75em 1.5em;
   border-style: solid;
   border-width: 2px;
-  margin-bottom: 10px;
+  margin-bottom: 0.75em;
   overflow: auto;
 }
 aside p:last-child,
@@ -1905,7 +1905,7 @@ div.nav {
 }
 div.nav h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.2;
 }
 div.nav div.block:hover h3 {
@@ -1917,8 +1917,8 @@ div.nav ol {
   text-align: left;
 }
 div.nav a {
-  font-size: 16.8px;
-  line-height: 24px;
+  font-size: 19.2px;
+  line-height: 1.7999999999999998em;
   text-decoration: none;
 }
 div.nav a:hover {
@@ -1930,7 +1930,7 @@ hr.mark {
   border: none;
 }
 #stub {
-  margin-bottom: 10px;
+  margin-bottom: 0.75em;
 }
 @media only screen {
   div.cap .definition {
@@ -1955,13 +1955,13 @@ hr.mark {
     clear: left;
     display: inline-block;
     float: left;
-    width: 57%;
+    width: 56%;
   }
   #aside-container,
   #main > article > aside {
     float: right;
     clear: right;
-    width: 35%;
+    width: 33%;
   }
   div.side-reference {
     display: block;
