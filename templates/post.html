@@ -9,46 +9,47 @@
 {% endblock header %}
 
 {% block main %}
-		<article>
-			{% if stub %}
-				<section id="stub">
-					{{ stub }}
-				</section>
-				<aside class="stub">
-					This page is a stub!<br>Check back later for more conent.
-				</aside>
-			{% endif %}
-			{% if developing or (not stub) %}
-				{% block content %}
-				{% endblock %}
-			{% endif %}
-		</article>
-
-		<hr class="mark">
-
-		{% if following %}
-		<div id="following" class="navigator">
-			<ul>
-				{% for title, url in following.items %}
-				<li><a href="{{ url }}">{{ title }}</a></li>
-				{% endfor %}
-			</ul>
-		</div>
+<div id="meditating"></div>
+	<article>
+		{% if stub %}
+			<section id="stub">
+				{{ stub }}
+			</section>
+			<aside class="stub">
+				This page is a stub!<br>Check back later for more conent.
+			</aside>
 		{% endif %}
-
-		{% if fin %}
-		<span id="fin">๛</span>
+		{% if developing or (not stub) %}
+			{% block content %}
+			{% endblock %}
 		{% endif %}
+	</article>
 
-		{% if followers %}
-		<div id="followers" class="navigator">
-			<ul>
-				{% for title, url in following.items %}
-				<li><a href="{{ url }}">{{ title }}</a></li>
-				{% endfor %}
-			</ul>
-		</div>
-		{% endif %}
+	<hr class="mark">
+
+	{% if following %}
+	<div id="following" class="navigator">
+		<ul>
+			{% for title, url in following.items %}
+			<li><a href="{{ url }}">{{ title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
+
+	{% if fin %}
+	<span id="fin">๛</span>
+	{% endif %}
+
+	{% if followers %}
+	<div id="followers" class="navigator">
+		<ul>
+			{% for title, url in following.items %}
+			<li><a href="{{ url }}">{{ title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
 {% endblock main %}
 
 {% block footer %}

@@ -41,6 +41,30 @@ commentary(class, color, complement)
 					background $pure(complement)
 					color $pure(color)
 
+		#meditating
+			background-color white
+		#main article form.meditate
+			background-color white
+
+		#main article p a.meditation, #main article form.meditate button.proceed
+			background $pure(color)
+			border-color $dark(color)
+			color $text(color)
+			&:hover
+				background $dark(color)
+				border-color $pure(color)
+				color $contrast(color)
+			&:active
+				border-color $pure(color)
+				color $pure(color)
+
+		#main article form.meditate
+			textarea
+				border-color #EEE
+			textarea, button
+				&:focus
+					outline-color $pure(color)
+
 		div.nav
 			h1, h2, h3, h4, h5, h6
 				color $dark(color)

@@ -1,0 +1,21 @@
+{% macro meditation(url, name) %}
+
+<p>
+  <a class="meditation" id="{{ name }}">
+    Meditation <em>click to open</em>
+  </a>
+</p>
+
+<form class="meditate" method="post" action="http://meditate.simplifience.com/meditate">
+  <input type="hidden" name="u" value="{{ url }}#{{ name }}">
+  <a href="#{{ name }}" class="close"></a>
+  <div class="text">
+    <a class="meditation stub" href="post/meditate.html">Meditation</a>:
+    {{ caller() }}
+  </div>
+  <textarea name="m" placeholder="Type your thoughts."></textarea>
+  <span class="disclaimer">Click Done to anonymize and save your response. Click X to exit.</span>
+  <button type="submit" class="proceed">Done</button>
+</form>
+
+{% endmacro %}

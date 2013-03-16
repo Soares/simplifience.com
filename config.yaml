@@ -4,6 +4,11 @@ post:
   to: .
   context:
     developing: true
+    macros:
+    - 'post.macros'
+    scripts:
+    - 'js/jquery.js'
+    - '@coffee/post'
 mathbox:
   compiler: flow
 images: copy to images

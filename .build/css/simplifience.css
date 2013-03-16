@@ -75,6 +75,36 @@ body.main div.content article a.stub.missing {
   background: #ff7400;
   color: #099;
 }
+body.main #meditating {
+  background-color: #fff;
+}
+body.main #main article form.meditate {
+  background-color: #fff;
+}
+body.main #main article p a.meditation,
+body.main #main article form.meditate button.proceed {
+  background: #099;
+  border-color: #006363;
+  color: #fff;
+}
+body.main #main article p a.meditation:hover,
+body.main #main article form.meditate button.proceed:hover {
+  background: #006363;
+  border-color: #099;
+  color: #5ccccc;
+}
+body.main #main article p a.meditation:active,
+body.main #main article form.meditate button.proceed:active {
+  border-color: #099;
+  color: #099;
+}
+body.main #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.main #main article form.meditate textarea:focus,
+body.main #main article form.meditate button:focus {
+  outline-color: #099;
+}
 body.main div.nav h1,
 body.main div.nav h2,
 body.main div.nav h3,
@@ -227,6 +257,36 @@ body.rules div.content article a.stub:visited {
 body.rules div.content article a.stub.missing {
   background: #fa0;
   color: #1240ab;
+}
+body.rules #meditating {
+  background-color: #fff;
+}
+body.rules #main article form.meditate {
+  background-color: #fff;
+}
+body.rules #main article p a.meditation,
+body.rules #main article form.meditate button.proceed {
+  background: #1240ab;
+  border-color: #06266f;
+  color: #fff;
+}
+body.rules #main article p a.meditation:hover,
+body.rules #main article form.meditate button.proceed:hover {
+  background: #06266f;
+  border-color: #1240ab;
+  color: #6c8cd5;
+}
+body.rules #main article p a.meditation:active,
+body.rules #main article form.meditate button.proceed:active {
+  border-color: #1240ab;
+  color: #1240ab;
+}
+body.rules #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.rules #main article form.meditate textarea:focus,
+body.rules #main article form.meditate button:focus {
+  outline-color: #1240ab;
 }
 body.rules div.nav h1,
 body.rules div.nav h2,
@@ -381,6 +441,36 @@ body.rigor div.content article a.stub.missing {
   background: #ffd300;
   color: #3914af;
 }
+body.rigor #meditating {
+  background-color: #fff;
+}
+body.rigor #main article form.meditate {
+  background-color: #fff;
+}
+body.rigor #main article p a.meditation,
+body.rigor #main article form.meditate button.proceed {
+  background: #3914af;
+  border-color: #200772;
+  color: #fff;
+}
+body.rigor #main article p a.meditation:hover,
+body.rigor #main article form.meditate button.proceed:hover {
+  background: #200772;
+  border-color: #3914af;
+  color: #876ed7;
+}
+body.rigor #main article p a.meditation:active,
+body.rigor #main article form.meditate button.proceed:active {
+  border-color: #3914af;
+  color: #3914af;
+}
+body.rigor #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.rigor #main article form.meditate textarea:focus,
+body.rigor #main article form.meditate button:focus {
+  outline-color: #3914af;
+}
 body.rigor div.nav h1,
 body.rigor div.nav h2,
 body.rigor div.nav h3,
@@ -533,6 +623,36 @@ body.simplifience div.content article a.stub:visited {
 body.simplifience div.content article a.stub.missing {
   background: #ff0;
   color: #7109aa;
+}
+body.simplifience #meditating {
+  background-color: #fff;
+}
+body.simplifience #main article form.meditate {
+  background-color: #fff;
+}
+body.simplifience #main article p a.meditation,
+body.simplifience #main article form.meditate button.proceed {
+  background: #7109aa;
+  border-color: #48036f;
+  color: #fff;
+}
+body.simplifience #main article p a.meditation:hover,
+body.simplifience #main article form.meditate button.proceed:hover {
+  background: #48036f;
+  border-color: #7109aa;
+  color: #ad66d5;
+}
+body.simplifience #main article p a.meditation:active,
+body.simplifience #main article form.meditate button.proceed:active {
+  border-color: #7109aa;
+  color: #7109aa;
+}
+body.simplifience #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.simplifience #main article form.meditate textarea:focus,
+body.simplifience #main article form.meditate button:focus {
+  outline-color: #7109aa;
 }
 body.simplifience div.nav h1,
 body.simplifience div.nav h2,
@@ -687,6 +807,36 @@ body.knowledge div.content article a.stub.missing {
   background: #ffd300;
   color: #cd0074;
 }
+body.knowledge #meditating {
+  background-color: #fff;
+}
+body.knowledge #main article form.meditate {
+  background-color: #fff;
+}
+body.knowledge #main article p a.meditation,
+body.knowledge #main article form.meditate button.proceed {
+  background: #cd0074;
+  border-color: #85004b;
+  color: #fff;
+}
+body.knowledge #main article p a.meditation:hover,
+body.knowledge #main article form.meditate button.proceed:hover {
+  background: #85004b;
+  border-color: #cd0074;
+  color: #e667af;
+}
+body.knowledge #main article p a.meditation:active,
+body.knowledge #main article form.meditate button.proceed:active {
+  border-color: #cd0074;
+  color: #cd0074;
+}
+body.knowledge #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.knowledge #main article form.meditate textarea:focus,
+body.knowledge #main article form.meditate button:focus {
+  outline-color: #cd0074;
+}
 body.knowledge div.nav h1,
 body.knowledge div.nav h2,
 body.knowledge div.nav h3,
@@ -839,6 +989,36 @@ body.rant div.content article a.stub:visited {
 body.rant div.content article a.stub.missing {
   background: #ffd300;
   color: #f00;
+}
+body.rant #meditating {
+  background-color: #fff;
+}
+body.rant #main article form.meditate {
+  background-color: #fff;
+}
+body.rant #main article p a.meditation,
+body.rant #main article form.meditate button.proceed {
+  background: #f00;
+  border-color: #a60000;
+  color: #000;
+}
+body.rant #main article p a.meditation:hover,
+body.rant #main article form.meditate button.proceed:hover {
+  background: #a60000;
+  border-color: #f00;
+  color: #a60000;
+}
+body.rant #main article p a.meditation:active,
+body.rant #main article form.meditate button.proceed:active {
+  border-color: #f00;
+  color: #f00;
+}
+body.rant #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.rant #main article form.meditate textarea:focus,
+body.rant #main article form.meditate button:focus {
+  outline-color: #f00;
 }
 body.rant div.nav h1,
 body.rant div.nav h2,
@@ -993,6 +1173,36 @@ body.stub div.content article a.stub.missing {
   background: #099;
   color: #ff7400;
 }
+body.stub #meditating {
+  background-color: #fff;
+}
+body.stub #main article form.meditate {
+  background-color: #fff;
+}
+body.stub #main article p a.meditation,
+body.stub #main article form.meditate button.proceed {
+  background: #ff7400;
+  border-color: #a64b00;
+  color: #000;
+}
+body.stub #main article p a.meditation:hover,
+body.stub #main article form.meditate button.proceed:hover {
+  background: #a64b00;
+  border-color: #ff7400;
+  color: #a64b00;
+}
+body.stub #main article p a.meditation:active,
+body.stub #main article form.meditate button.proceed:active {
+  border-color: #ff7400;
+  color: #ff7400;
+}
+body.stub #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.stub #main article form.meditate textarea:focus,
+body.stub #main article form.meditate button:focus {
+  outline-color: #ff7400;
+}
 body.stub div.nav h1,
 body.stub div.nav h2,
 body.stub div.nav h3,
@@ -1145,6 +1355,36 @@ body.caution div.content article a.stub:visited {
 body.caution div.content article a.stub.missing {
   background: #3914af;
   color: #ff0;
+}
+body.caution #meditating {
+  background-color: #fff;
+}
+body.caution #main article form.meditate {
+  background-color: #fff;
+}
+body.caution #main article p a.meditation,
+body.caution #main article form.meditate button.proceed {
+  background: #ff0;
+  border-color: #a6a600;
+  color: #000;
+}
+body.caution #main article p a.meditation:hover,
+body.caution #main article form.meditate button.proceed:hover {
+  background: #a6a600;
+  border-color: #ff0;
+  color: #a6a600;
+}
+body.caution #main article p a.meditation:active,
+body.caution #main article form.meditate button.proceed:active {
+  border-color: #ff0;
+  color: #ff0;
+}
+body.caution #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.caution #main article form.meditate textarea:focus,
+body.caution #main article form.meditate button:focus {
+  outline-color: #ff0;
 }
 body.caution div.nav h1,
 body.caution div.nav h2,
@@ -1299,6 +1539,36 @@ body.define div.content article a.stub.missing {
   background: #7109aa;
   color: #0c0;
 }
+body.define #meditating {
+  background-color: #fff;
+}
+body.define #main article form.meditate {
+  background-color: #fff;
+}
+body.define #main article p a.meditation,
+body.define #main article form.meditate button.proceed {
+  background: #0c0;
+  border-color: #008500;
+  color: #000;
+}
+body.define #main article p a.meditation:hover,
+body.define #main article form.meditate button.proceed:hover {
+  background: #008500;
+  border-color: #0c0;
+  color: #008500;
+}
+body.define #main article p a.meditation:active,
+body.define #main article form.meditate button.proceed:active {
+  border-color: #0c0;
+  color: #0c0;
+}
+body.define #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.define #main article form.meditate textarea:focus,
+body.define #main article form.meditate button:focus {
+  outline-color: #0c0;
+}
 body.define div.nav h1,
 body.define div.nav h2,
 body.define div.nav h3,
@@ -1451,6 +1721,36 @@ body.computer div.content article a.stub:visited {
 body.computer div.content article a.stub.missing {
   background: #dc322f;
   color: #002b36;
+}
+body.computer #meditating {
+  background-color: #fff;
+}
+body.computer #main article form.meditate {
+  background-color: #fff;
+}
+body.computer #main article p a.meditation,
+body.computer #main article form.meditate button.proceed {
+  background: #002b36;
+  border-color: #586e75;
+  color: #839496;
+}
+body.computer #main article p a.meditation:hover,
+body.computer #main article form.meditate button.proceed:hover {
+  background: #586e75;
+  border-color: #002b36;
+  color: #268bd2;
+}
+body.computer #main article p a.meditation:active,
+body.computer #main article form.meditate button.proceed:active {
+  border-color: #002b36;
+  color: #002b36;
+}
+body.computer #main article form.meditate textarea {
+  border-color: #eee;
+}
+body.computer #main article form.meditate textarea:focus,
+body.computer #main article form.meditate button:focus {
+  outline-color: #002b36;
 }
 body.computer div.nav h1,
 body.computer div.nav h2,
@@ -1973,4 +2273,87 @@ hr.mark {
 /* 1140px - 10% for margins */
     margin: 0 auto;
   }
+}
+#meditating {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: none;
+}
+body.meditating #meditating {
+  display: block;
+}
+body #main > article p a.meditation {
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  text-align: left;
+  padding: 0.5em 1em;
+  box-sizing: border-box;
+}
+body #main > article p a.meditation em {
+  float: right;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  opacity: 0.5;
+}
+body #main > article form.meditate {
+  position: relative;
+  z-index: 2;
+  padding-top: 1em;
+  margin-top: -3.5em;
+  display: none;
+}
+body #main > article form.meditate a.close {
+  float: right;
+  width: 11px;
+  height: 11px;
+  margin-left: 6px;
+  border: none;
+  background: none;
+  background-image: url("/icons/lightx.png");
+  margin-top: 8px;
+}
+body #main > article form.meditate a.close:hover {
+  background-image: url("/icons/darkx.png");
+}
+body #main > article form.meditate .text {
+  box-sizing: border-box;
+  padding: 1em;
+  padding-top: 0;
+  font-style: italic;
+}
+body #main > article form.meditate .text a {
+  font-style: normal;
+}
+body #main > article form.meditate textarea {
+  margin-top: 2em;
+  padding: 0.5em;
+  width: 100%;
+  height: 8em;
+  box-sizing: border-box;
+}
+body #main > article form.meditate .disclaimer {
+  opacity: 0.2;
+  font-size: 0.75em;
+  line-height: 0.75em;
+}
+body #main > article form.meditate .proceed {
+  float: right;
+  background: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 2px;
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 0.5em;
+  padding: 0.2em 1em;
 }
