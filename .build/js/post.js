@@ -21,7 +21,6 @@
         return false;
       };
       meditation.on('submit', function() {
-        $.post(meditation.attr('action'), meditation.serialize());
         close();
         return false;
       });

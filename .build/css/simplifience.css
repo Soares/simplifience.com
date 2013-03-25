@@ -131,6 +131,12 @@ body.main footer h1.logo a,
 body.main footer a.author {
   color: #006363;
 }
+body.main footer aside h3 {
+  color: #ff7400;
+}
+body.main footer aside a {
+  color: #5ccccc;
+}
 span.main,
 strong.main,
 em.main {
@@ -179,7 +185,7 @@ body.main div.info h6 {
 #main div.main a,
 body.main #main aside.info a,
 body.main div.info a {
-  color: #ff7400;
+  color: #5ccccc;
   text-shadow: 1px 1px 1px #006363;
 }
 #main aside.main a:visited,
@@ -192,7 +198,7 @@ body.main div.info a:visited {
 #main div.main a.stub,
 body.main #main aside.info a.stub,
 body.main div.info a.stub {
-  color: #5ccccc;
+  color: #ff7400;
 }
 #main aside.main a.stub.missing,
 #main div.main a.stub.missing,
@@ -314,6 +320,12 @@ body.rules footer h1.logo a,
 body.rules footer a.author {
   color: #06266f;
 }
+body.rules footer aside h3 {
+  color: #fa0;
+}
+body.rules footer aside a {
+  color: #6c8cd5;
+}
 span.rules,
 strong.rules,
 em.rules {
@@ -362,7 +374,7 @@ body.rules div.info h6 {
 #main div.rules a,
 body.rules #main aside.info a,
 body.rules div.info a {
-  color: #fa0;
+  color: #6c8cd5;
   text-shadow: 1px 1px 1px #06266f;
 }
 #main aside.rules a:visited,
@@ -375,7 +387,7 @@ body.rules div.info a:visited {
 #main div.rules a.stub,
 body.rules #main aside.info a.stub,
 body.rules div.info a.stub {
-  color: #6c8cd5;
+  color: #fa0;
 }
 #main aside.rules a.stub.missing,
 #main div.rules a.stub.missing,
@@ -497,6 +509,12 @@ body.rigor footer h1.logo a,
 body.rigor footer a.author {
   color: #200772;
 }
+body.rigor footer aside h3 {
+  color: #ffd300;
+}
+body.rigor footer aside a {
+  color: #876ed7;
+}
 span.rigor,
 strong.rigor,
 em.rigor {
@@ -545,7 +563,7 @@ body.rigor div.info h6 {
 #main div.rigor a,
 body.rigor #main aside.info a,
 body.rigor div.info a {
-  color: #ffd300;
+  color: #876ed7;
   text-shadow: 1px 1px 1px #200772;
 }
 #main aside.rigor a:visited,
@@ -558,7 +576,7 @@ body.rigor div.info a:visited {
 #main div.rigor a.stub,
 body.rigor #main aside.info a.stub,
 body.rigor div.info a.stub {
-  color: #876ed7;
+  color: #ffd300;
 }
 #main aside.rigor a.stub.missing,
 #main div.rigor a.stub.missing,
@@ -680,6 +698,12 @@ body.simplifience footer h1.logo a,
 body.simplifience footer a.author {
   color: #48036f;
 }
+body.simplifience footer aside h3 {
+  color: #ff0;
+}
+body.simplifience footer aside a {
+  color: #ad66d5;
+}
 span.simplifience,
 strong.simplifience,
 em.simplifience {
@@ -728,7 +752,7 @@ body.simplifience div.info h6 {
 #main div.simplifience a,
 body.simplifience #main aside.info a,
 body.simplifience div.info a {
-  color: #ff0;
+  color: #ad66d5;
   text-shadow: 1px 1px 1px #48036f;
 }
 #main aside.simplifience a:visited,
@@ -741,7 +765,7 @@ body.simplifience div.info a:visited {
 #main div.simplifience a.stub,
 body.simplifience #main aside.info a.stub,
 body.simplifience div.info a.stub {
-  color: #ad66d5;
+  color: #ff0;
 }
 #main aside.simplifience a.stub.missing,
 #main div.simplifience a.stub.missing,
@@ -863,6 +887,12 @@ body.knowledge footer h1.logo a,
 body.knowledge footer a.author {
   color: #85004b;
 }
+body.knowledge footer aside h3 {
+  color: #ffd300;
+}
+body.knowledge footer aside a {
+  color: #e667af;
+}
 span.knowledge,
 strong.knowledge,
 em.knowledge {
@@ -911,7 +941,7 @@ body.knowledge div.info h6 {
 #main div.knowledge a,
 body.knowledge #main aside.info a,
 body.knowledge div.info a {
-  color: #ffd300;
+  color: #e667af;
   text-shadow: 1px 1px 1px #85004b;
 }
 #main aside.knowledge a:visited,
@@ -924,7 +954,7 @@ body.knowledge div.info a:visited {
 #main div.knowledge a.stub,
 body.knowledge #main aside.info a.stub,
 body.knowledge div.info a.stub {
-  color: #e667af;
+  color: #ffd300;
 }
 #main aside.knowledge a.stub.missing,
 #main div.knowledge a.stub.missing,
@@ -1046,6 +1076,12 @@ body.rant footer h1.logo a,
 body.rant footer a.author {
   color: #a60000;
 }
+body.rant footer aside h3 {
+  color: #ffd300;
+}
+body.rant footer aside a {
+  color: #a60000;
+}
 span.rant,
 strong.rant,
 em.rant {
@@ -1094,7 +1130,7 @@ body.rant div.info h6 {
 #main div.rant a,
 body.rant #main aside.info a,
 body.rant div.info a {
-  color: #ffd300;
+  color: #a60000;
   text-shadow: 1px 1px 1px #ff4040;
 }
 #main aside.rant a:visited,
@@ -1107,7 +1143,7 @@ body.rant div.info a:visited {
 #main div.rant a.stub,
 body.rant #main aside.info a.stub,
 body.rant div.info a.stub {
-  color: #a60000;
+  color: #ffd300;
 }
 #main aside.rant a.stub.missing,
 #main div.rant a.stub.missing,
@@ -1229,6 +1265,12 @@ body.stub footer h1.logo a,
 body.stub footer a.author {
   color: #a64b00;
 }
+body.stub footer aside h3 {
+  color: #099;
+}
+body.stub footer aside a {
+  color: #a64b00;
+}
 span.stub,
 strong.stub,
 em.stub {
@@ -1277,7 +1319,7 @@ body.stub div.info h6 {
 #main div.stub a,
 body.stub #main aside.info a,
 body.stub div.info a {
-  color: #099;
+  color: #a64b00;
   text-shadow: 1px 1px 1px #ff9640;
 }
 #main aside.stub a:visited,
@@ -1290,7 +1332,7 @@ body.stub div.info a:visited {
 #main div.stub a.stub,
 body.stub #main aside.info a.stub,
 body.stub div.info a.stub {
-  color: #a64b00;
+  color: #099;
 }
 #main aside.stub a.stub.missing,
 #main div.stub a.stub.missing,
@@ -1412,6 +1454,12 @@ body.caution footer h1.logo a,
 body.caution footer a.author {
   color: #a6a600;
 }
+body.caution footer aside h3 {
+  color: #3914af;
+}
+body.caution footer aside a {
+  color: #a6a600;
+}
 span.caution,
 strong.caution,
 em.caution {
@@ -1460,7 +1508,7 @@ body.caution div.info h6 {
 #main div.caution a,
 body.caution #main aside.info a,
 body.caution div.info a {
-  color: #3914af;
+  color: #a6a600;
   text-shadow: 1px 1px 1px #ffff40;
 }
 #main aside.caution a:visited,
@@ -1473,7 +1521,7 @@ body.caution div.info a:visited {
 #main div.caution a.stub,
 body.caution #main aside.info a.stub,
 body.caution div.info a.stub {
-  color: #a6a600;
+  color: #3914af;
 }
 #main aside.caution a.stub.missing,
 #main div.caution a.stub.missing,
@@ -1595,6 +1643,12 @@ body.define footer h1.logo a,
 body.define footer a.author {
   color: #008500;
 }
+body.define footer aside h3 {
+  color: #7109aa;
+}
+body.define footer aside a {
+  color: #008500;
+}
 span.define,
 strong.define,
 em.define {
@@ -1643,7 +1697,7 @@ body.define div.info h6 {
 #main div.define a,
 body.define #main aside.info a,
 body.define div.info a {
-  color: #7109aa;
+  color: #008500;
   text-shadow: 1px 1px 1px #39e639;
 }
 #main aside.define a:visited,
@@ -1656,7 +1710,7 @@ body.define div.info a:visited {
 #main div.define a.stub,
 body.define #main aside.info a.stub,
 body.define div.info a.stub {
-  color: #008500;
+  color: #7109aa;
 }
 #main aside.define a.stub.missing,
 #main div.define a.stub.missing,
@@ -1778,6 +1832,12 @@ body.computer footer h1.logo a,
 body.computer footer a.author {
   color: #586e75;
 }
+body.computer footer aside h3 {
+  color: #dc322f;
+}
+body.computer footer aside a {
+  color: #268bd2;
+}
 span.computer,
 strong.computer,
 em.computer {
@@ -1826,7 +1886,7 @@ body.computer div.info h6 {
 #main div.computer a,
 body.computer #main aside.info a,
 body.computer div.info a {
-  color: #dc322f;
+  color: #268bd2;
   text-shadow: 1px 1px 1px #586e75;
 }
 #main aside.computer a:visited,
@@ -1839,7 +1899,7 @@ body.computer div.info a:visited {
 #main div.computer a.stub,
 body.computer #main aside.info a.stub,
 body.computer div.info a.stub {
-  color: #268bd2;
+  color: #dc322f;
 }
 #main aside.computer a.stub.missing,
 #main div.computer a.stub.missing,
@@ -1859,8 +1919,19 @@ body.rant #header h1.title a {
 }
 span.caution,
 strong.caution,
-em.caution {
+em.caution,
+body.caution span.info,
+body.caution strong.info,
+body.caution em.info {
   color: #a6a600;
+}
+span.rules,
+strong.rules,
+em.rules,
+body.rules span.info,
+body.rules strong.info,
+body.rules em.info {
+  color: #4671d5;
 }
 span.computer,
 strong.computer,
@@ -1897,7 +1968,13 @@ html body.computer div.info a {
   text-shadow: 1px 1px 1px #002b36;
 }
 body.simplifience div.content article a.stub {
-  color: #a64b00;
+  color: #bfbf30;
+}
+body.knowledge div.content article a.stub {
+  color: #fa0;
+}
+body.knowledge div.content article a.stub:visited {
+  color: #a66f00;
 }
 aside.define em:first-of-type:after {
   content: "\a";
@@ -2062,9 +2139,17 @@ div.cap footer {
   text-align: left;
   box-sizing: border-box;
   padding-bottom: 0.75em;
+  margin-bottom: 12em;
 }
 div.cap footer aside {
   float: left;
+  border-width: 0;
+}
+div.cap footer aside h3 {
+  margin-bottom: 0.5em;
+}
+div.cap footer aside ul {
+  text-align: left;
 }
 div.cap footer h1.logo,
 div.cap footer a.author {
@@ -2114,9 +2199,10 @@ div.cap footer .logo a:hover {
   padding-right: 1em;
 }
 #main article p.number {
-  font-size: 10em;
+  font-size: 6em;
   line-height: 2em;
   text-align: center;
+  margin-bottom: 24px;
 }
 #main article p.stylized {
   font-family: exciting;
@@ -2224,6 +2310,12 @@ div.nav a {
 div.nav a:hover {
   text-decoration: underline;
 }
+#main > article > div.asides > aside {
+  width: 100%;
+}
+#main * {
+  box-sizing: border-box;
+}
 hr.mark {
   clear: both;
   background: none;
@@ -2251,17 +2343,17 @@ hr.mark {
   }
   #main > #article-container,
   #main > article > :not(aside) {
-    box-sizing: border-box;
     clear: left;
     display: inline-block;
     float: left;
-    width: 56%;
+    width: 57%;
   }
   #aside-container,
-  #main > article > aside {
+  #main > article > aside,
+  #main > article > div.asides {
     float: right;
     clear: right;
-    width: 33%;
+    width: 38%;
   }
   div.side-reference {
     display: block;
@@ -2312,6 +2404,9 @@ body #main > article form.meditate {
   margin-top: -3.5em;
   display: none;
 }
+body #main > article form.meditate a.meditation {
+  margin-right: 1ex;
+}
 body #main > article form.meditate a.close {
   float: right;
   width: 11px;
@@ -2327,15 +2422,15 @@ body #main > article form.meditate a.close:hover {
 }
 body #main > article form.meditate .text {
   box-sizing: border-box;
-  padding: 1em;
-  padding-top: 0;
-  font-style: italic;
+  padding: 0 1em;
 }
-body #main > article form.meditate .text a {
-  font-style: normal;
+body #main > article form.meditate .question {
+  font-style: italic;
+  margin-bottom: 1em;
+  display: inline-block;
 }
 body #main > article form.meditate textarea {
-  margin-top: 2em;
+  margin-top: 1.5em;
   padding: 0.5em;
   width: 100%;
   height: 8em;
@@ -2344,7 +2439,6 @@ body #main > article form.meditate textarea {
 body #main > article form.meditate .disclaimer {
   opacity: 0.2;
   font-size: 0.75em;
-  line-height: 0.75em;
 }
 body #main > article form.meditate .proceed {
   float: right;

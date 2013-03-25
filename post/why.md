@@ -21,4 +21,4 @@ You can say "because all objects attract each other", which leads you to another
 We can do quite a bit better than "all objects attract each other", but that's a story for another day.
 </aside>
 
-When you ask about physical things, you find yourself stuck in a @post[bottomless chain]bottomless-why of whys. You've seen kids do this:
+When you ask about physical things, you find yourself stuck in a @post[bottomless chain]reality/unanswerables of whys. You've seen kids do this:

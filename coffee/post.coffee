@@ -13,7 +13,7 @@ $ ->
       meditation.hide()
       return false
     meditation.on 'submit', ->
-      $.post(meditation.attr('action'), meditation.serialize())
+      # $.post(meditation.attr('action'), meditation.serialize())
       close()
       return false
     $('a.close', meditation).on 'click', close

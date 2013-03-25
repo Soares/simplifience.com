@@ -7,7 +7,7 @@ post:
     macros:
     - 'post.macros'
     scripts:
-    - 'js/jquery.js'
+    - '/js/jquery.js'
     - '@coffee/post'
 mathbox:
   compiler: flow

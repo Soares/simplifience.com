@@ -25,34 +25,39 @@
 		{% endif %}
 	</article>
 
-	<hr class="mark">
-
-	{% if following %}
-	<div id="following" class="navigator">
-		<ul>
-			{% for title, url in following.items %}
-			<li><a href="{{ url }}">{{ title }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
-	{% endif %}
-
 	{% if fin %}
 	<span id="fin">๛</span>
-	{% endif %}
-
-	{% if followers %}
-	<div id="followers" class="navigator">
-		<ul>
-			{% for title, url in following.items %}
-			<li><a href="{{ url }}">{{ title }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
 	{% endif %}
 {% endblock main %}
 
 {% block footer %}
+{% for name, members in sequences.items() %}
+  <aside class="sequence">
+    <h3>{{ name }}</h3>
+    <ul>
+      {% for member in members %}
+        <li>
+          {% if member|post_is(url) %}
+            <span class="this">{{ title }}</span>
+          {% else %}
+            {{ member|post_anchor }}
+          {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+{% endfor %}
+
+{% if related %}
+  <aside class="related">
+    <h3>Related</h3>
+    <ul>
+      {% for link in related %}
+      <li>{{ link|post_anchor }}</li>
+      {% endfor %}
+    </ul>
+  </aside>
+{% endif %}
+
 <h1 class="logo" title="Simplifience n. \ˈsim-plə-ˌfīən(t)s\ Math & science less the accumulated cruft of history.">
   <a href="/">Simplifience</a>
 </h1>

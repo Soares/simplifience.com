@@ -82,6 +82,12 @@ commentary(class, color, complement)
 		footer h1.logo a, footer a.author
 			color $dark(color)
 
+		footer aside
+			h3
+				color $pure(complement)
+			a
+				color $contrast(color)
+
 	span.{class}, strong.{class}, em.{class}
 		color $pure(color)
 	body.{class}
@@ -98,7 +104,7 @@ commentary(class, color, complement)
 		h1, h2, h3, h4, h5, h6
 			color $contrast(color, complement)
 		a
-			color $pure(complement)
+			color $contrast(color)
 			if $isdark(color)
 				text-shadow 1px 1px 1px $dark(color)
 			else
@@ -106,7 +112,7 @@ commentary(class, color, complement)
 			&:visited
 				color $text(color)
 			&.stub
-				color $contrast(color)
+				color $pure(complement)
 				&.missing
 					background $pure(complement)
 					color $pure(color)
@@ -135,7 +141,14 @@ body.rant #header h1.title a
 
 // Yellow is too light.
 span.caution, strong.caution, em.caution
+body.caution span.info, body.caution strong.info, body.caution em.info
 	color $dark($yellow)
+
+
+// Blue is too dark.
+span.rules, strong.rules, em.rules,
+body.rules span.info, body.rules strong.info, body.rules em.info
+	color $light($blue)
 
 // Computer is monospaced.
 span.computer, strong.computer, em.computer,
@@ -169,7 +182,14 @@ html body.computer div.info
 
 // Simplifience unvisited stub is too light.
 body.simplifience div.content article a.stub
-		color $dark(complement)
+	color $flat($yellow)
+
+
+// Science unvisited stub is too light.
+body.knowledge div.content article a.stub
+	color $pure($gold)
+	&:visited
+		color $dark($gold)
 
 
 // Define has a line break after the first <em>.
