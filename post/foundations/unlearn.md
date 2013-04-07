@@ -1,5 +1,5 @@
 ---
-title: Unlearn your confusions
+title: Correct your confusions
 sequence: Foundations
 members:
 - mathematics

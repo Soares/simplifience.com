@@ -86,6 +86,10 @@ theme-footer(color, complement)
 				color $contrast(color)
 			&:hover
 				text-decoration underline
+			&.stub
+				color $pure(complement)
+				&:visited
+					color $contrast(color, complement)
 
 theme-meditation(color, complement)
 	#meditating

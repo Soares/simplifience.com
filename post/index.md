@@ -30,11 +30,12 @@ blocks:
     <h3>Start here</h3>
     <aside class="info">
       <ul>
-        <li>{{ 'intro/motivation'|post_anchor }}</li>
+        <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
+        <li>{{ 'foundations/unlearn'|post_anchor }}</li>
       </ul>
     </aside>
   </div>
-  <div class="block">
+  <div class="block" style="display: none">
     <h3>What's new</h3>
     <aside class="info">
       <ul>
@@ -46,18 +47,17 @@ blocks:
   </div>
 </div>
 
-Behold the deepest question ever asked: *Why?*
+*Why?*
+{:.big}
 
-Why is the sky blue? Why do things fall? Why are we here? *Why?*
+Why is the sky blue? Why do objects fall? Why are we here? *Why?*
 
-This question has been asked since the dawn of thought, and it will haunt us until the end of time.
-
-Humankind has made incredible progress in their quest to find out why. We know more about the nature of existence now than ever before. Yet this knowledge is not readily taught.
+This question has been asked since the dawn of thought, and it will haunt us until the end of time. Humankind has made incredible progress in the quest to figure out why. We know more about the nature of existence now than ever before. Yet this knowledge is not readily taught.
 
 It's hidden deep inside textbooks obscured by an ancient and @post[archaic]math/archaic language. Students are dragged through the @post[historical mire]science/wrong, subjected to the same confusion that our forebearers faced.
 
-It doesn't have to be like this. Existence is a strange and beautiful place.
+It doesn't have to be like this.
 
-This is simplifience. It is not math, it is not science. It is both more and less. It is an attempt to explain what we know of reality in simple terms.
+This is simplifience. It is not math, it is not science. It is more and it is less.
 
-It is a quest to understand the universe.
+It is an attempt to explain what we know of reality in simple terms. It is a quest to understand the universe.

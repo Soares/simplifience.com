@@ -126,6 +126,12 @@ body.main footer aside a:visited {
 body.main footer aside a:hover {
   text-decoration: underline;
 }
+body.main footer aside a.stub {
+  color: #ff7400;
+}
+body.main footer aside a.stub:visited {
+  color: #ffb273;
+}
 body #main aside.main,
 body.main #main aside.info,
 body #main div.main,
@@ -321,6 +327,12 @@ body.rules footer aside a:visited {
 }
 body.rules footer aside a:hover {
   text-decoration: underline;
+}
+body.rules footer aside a.stub {
+  color: #fa0;
+}
+body.rules footer aside a.stub:visited {
+  color: #ffd073;
 }
 body #main aside.rules,
 body.rules #main aside.info,
@@ -518,6 +530,12 @@ body.rigor footer aside a:visited {
 body.rigor footer aside a:hover {
   text-decoration: underline;
 }
+body.rigor footer aside a.stub {
+  color: #ffd300;
+}
+body.rigor footer aside a.stub:visited {
+  color: #ffe773;
+}
 body #main aside.rigor,
 body.rigor #main aside.info,
 body #main div.rigor,
@@ -713,6 +731,12 @@ body.simplifience footer aside a:visited {
 }
 body.simplifience footer aside a:hover {
   text-decoration: underline;
+}
+body.simplifience footer aside a.stub {
+  color: #ff0;
+}
+body.simplifience footer aside a.stub:visited {
+  color: #ffff73;
 }
 body #main aside.simplifience,
 body.simplifience #main aside.info,
@@ -910,6 +934,12 @@ body.knowledge footer aside a:visited {
 body.knowledge footer aside a:hover {
   text-decoration: underline;
 }
+body.knowledge footer aside a.stub {
+  color: #ffd300;
+}
+body.knowledge footer aside a.stub:visited {
+  color: #ffe773;
+}
 body #main aside.knowledge,
 body.knowledge #main aside.info,
 body #main div.knowledge,
@@ -1105,6 +1135,12 @@ body.rant footer aside a:visited {
 }
 body.rant footer aside a:hover {
   text-decoration: underline;
+}
+body.rant footer aside a.stub {
+  color: #ffd300;
+}
+body.rant footer aside a.stub:visited {
+  color: #a68900;
 }
 body #main aside.rant,
 body.rant #main aside.info,
@@ -1302,6 +1338,12 @@ body.stub footer aside a:visited {
 body.stub footer aside a:hover {
   text-decoration: underline;
 }
+body.stub footer aside a.stub {
+  color: #099;
+}
+body.stub footer aside a.stub:visited {
+  color: #006363;
+}
 body #main aside.stub,
 body.stub #main aside.info,
 body #main div.stub,
@@ -1497,6 +1539,12 @@ body.caution footer aside a:visited {
 }
 body.caution footer aside a:hover {
   text-decoration: underline;
+}
+body.caution footer aside a.stub {
+  color: #3914af;
+}
+body.caution footer aside a.stub:visited {
+  color: #200772;
 }
 body #main aside.caution,
 body.caution #main aside.info,
@@ -1694,6 +1742,12 @@ body.define footer aside a:visited {
 body.define footer aside a:hover {
   text-decoration: underline;
 }
+body.define footer aside a.stub {
+  color: #7109aa;
+}
+body.define footer aside a.stub:visited {
+  color: #48036f;
+}
 body #main aside.define,
 body.define #main aside.info,
 body #main div.define,
@@ -1889,6 +1943,12 @@ body.computer footer aside a:visited {
 }
 body.computer footer aside a:hover {
   text-decoration: underline;
+}
+body.computer footer aside a.stub {
+  color: #dc322f;
+}
+body.computer footer aside a.stub:visited {
+  color: #2aa198;
 }
 body #main aside.computer,
 body.computer #main aside.info,
@@ -2233,6 +2293,7 @@ div.cap footer {
 div.cap footer aside {
   float: left;
   border-width: 0;
+  padding-right: 3em;
 }
 div.cap footer aside h3 {
   margin-top: 1em;
@@ -2295,17 +2356,18 @@ div.cap footer .logo a:hover {
   padding-left: 1em;
   padding-right: 1em;
 }
+#main article p.big,
 #main article p.number {
-  font-size: 6em;
   line-height: 2em;
   text-align: center;
   margin-bottom: 24px;
 }
-#main article p.stylized {
-  font-family: exciting;
-  font-size: 10em;
-  line-height: 2em;
-  text-align: center;
+#main article p.number {
+  font-size: 6em;
+}
+#main article p.big {
+  font-size: 4em;
+  font-family: 'Sonsie One', serif;
 }
 #main img {
   display: block;
