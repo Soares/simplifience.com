@@ -2,15 +2,17 @@
 title: What is Math?
 type: rules
 ---
-"Mathematics" is trying to be too many things. It is a loaded term. It has no real definition. As such, we'll be leaving it behind.
+I don't know what "Mathematics" is.
 
-Many claim to hate mathematics. Such people know only the superficial face of mathematics: the @post[strange and confusing]math/archaic symbols and notation. They think that the language of math *is* math, and they're not wrong: the word "math" encompasses both the language and <span class="info" markdown="inline">what the language says</span>.
+What I do know is that it's trying to mean too many things. It is a loaded term. As far as I can tell, the word "Mathematics" hides at least three distinct meanings.
+
+Many claim to hate mathematics. Such people know only the first face of mathematics, the @post[strange and confusing]math/archaic symbols and notation. These people think that the language of math *is* math, and they're not wrong: the word "math" encompasses both the language and <span class="info" markdown="inline">what the language says</span>.
 
 <aside class="info" markdown="block">
 @post[Symbols are not what they symbolize!]reality/symbology
 </aside>
 
-Others see past the superficial face. They understand that mathematics is the formal description of any rule. They look beyond the notation. These people realize the @post[true power of rules]reality/rules. They realize that beauty is patterns. They feel the beauty in symmetry. They see the mathematics in fractals and flowers and sunsets, and they cannot understand how any could hate mathematics.
+Others see past this superficial face. They look beyond the notation. These people realize that math is just another word for the @post[power of rules]reality/rules. They realize that beauty is patterns. They feel the beauty in symmetry. They see the mathematics in fractals and flowers and sunsets, and they cannot understand how any could hate mathematics.
 
 ![Blue Flower](/images/blue-flower.jpg)
 
@@ -38,6 +40,6 @@ Despite the fact that simplifience will not partake, exploring the unplumbed cor
 Here are some @post[resources]math/resources for the adventurous.
 </aside>
 
-
-
 ![Fractal](/images/julia.png)
+
+Despite this, simplifience will be leaving the term "Mathematics" behind.

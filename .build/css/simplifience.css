@@ -32,9 +32,38 @@ body.main ::selection {
   background-color: #5ccccc;
   color: #fff;
 }
-body.main div.cap {
+body.main #main-container {
+  border-color: #006363;
+}
+body.main #meditating {
+  background-color: #fff;
+}
+body.main #main form.meditate {
+  background-color: #fff;
+}
+body.main #main p a.meditation,
+body.main #main form.meditate button.proceed {
   background: #099;
+  border-color: #006363;
   color: #fff;
+}
+body.main #main p a.meditation:hover,
+body.main #main form.meditate button.proceed:hover {
+  background: #006363;
+  border-color: #099;
+  color: #5ccccc;
+}
+body.main #main p a.meditation:active,
+body.main #main form.meditate button.proceed:active {
+  border-color: #099;
+  color: #099;
+}
+body.main #main form.meditate textarea {
+  border-color: #eee;
+}
+body.main #main form.meditate textarea:focus,
+body.main #main form.meditate button:focus {
+  outline-color: #099;
 }
 body.main #header h1 a {
   color: #fff;
@@ -53,79 +82,28 @@ body.main #header .definition li {
 body.main #header .pronunciation {
   color: #006363;
 }
-body.main div.content article a {
-  color: #099;
-}
-body.main div.content article a:active {
-  color: #3cc;
-}
-body.main div.content article a:visited {
-  color: #006363;
-}
-body.main div.content article a:hover {
-  color: #099;
-}
-body.main div.content article a.stub {
+body.main #main a.stub {
   color: #ff7400;
 }
-body.main div.content article a.stub:visited {
+body.main #main a.stub:visited {
   color: #a64b00;
 }
-body.main div.content article a.stub.missing {
+body.main #main a.stub.missing {
   background: #ff7400;
   color: #099;
 }
-body.main #meditating {
-  background-color: #fff;
-}
-body.main #main article form.meditate {
-  background-color: #fff;
-}
-body.main #main article p a.meditation,
-body.main #main article form.meditate button.proceed {
-  background: #099;
-  border-color: #006363;
-  color: #fff;
-}
-body.main #main article p a.meditation:hover,
-body.main #main article form.meditate button.proceed:hover {
-  background: #006363;
-  border-color: #099;
-  color: #5ccccc;
-}
-body.main #main article p a.meditation:active,
-body.main #main article form.meditate button.proceed:active {
-  border-color: #099;
-  color: #099;
-}
-body.main #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.main #main article form.meditate textarea:focus,
-body.main #main article form.meditate button:focus {
-  outline-color: #099;
-}
-body.main div.nav h1,
-body.main div.nav h2,
-body.main div.nav h3,
-body.main div.nav h4,
-body.main div.nav h5,
-body.main div.nav h6 {
-  color: #006363;
-}
-body.main div.nav aside {
-  background: #099;
-  border-color: #006363;
-  color: #fff;
-}
-body.main div.nav a {
-  color: #ffb273;
-}
-body.main div.nav a:active {
+body.main #main div.nav h3 {
   color: #ff7400;
 }
-body.main div.nav a:visited {
+body.main #main div.nav aside.info a {
+  color: #fff;
+  text-decoration: none;
+}
+body.main #main div.nav aside.info a:visited {
   color: #5ccccc;
+}
+body.main #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.main footer h1.logo a,
 body.main footer a.author {
@@ -133,85 +111,114 @@ body.main footer a.author {
 }
 body.main footer aside h3 {
   color: #ff7400;
+  text-shadow: 1px 1px 1px #006363;
 }
-body.main footer aside a {
+body.main footer aside li {
   color: #5ccccc;
 }
-span.main,
-strong.main,
-em.main {
-  color: #099;
+body.main footer aside a {
+  color: #fff;
+  text-decoration: none;
 }
-body.main span.info,
-body.main strong.info,
-body.main em.info {
-  color: #099;
+body.main footer aside a:visited {
+  color: #5ccccc;
 }
-#main aside.main,
-#main div.main,
+body.main footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.main,
 body.main #main aside.info,
+body #main div.main,
 body.main div.info {
   background: #099;
   border-color: #006363;
   color: #fff;
 }
-#main aside.main h1,
-#main div.main h1,
+body #main aside.main h1,
 body.main #main aside.info h1,
+body #main div.main h1,
 body.main div.info h1,
-#main aside.main h2,
-#main div.main h2,
+body #main aside.main h2,
 body.main #main aside.info h2,
+body #main div.main h2,
 body.main div.info h2,
-#main aside.main h3,
-#main div.main h3,
+body #main aside.main h3,
 body.main #main aside.info h3,
+body #main div.main h3,
 body.main div.info h3,
-#main aside.main h4,
-#main div.main h4,
+body #main aside.main h4,
 body.main #main aside.info h4,
+body #main div.main h4,
 body.main div.info h4,
-#main aside.main h5,
-#main div.main h5,
+body #main aside.main h5,
 body.main #main aside.info h5,
+body #main div.main h5,
 body.main div.info h5,
-#main aside.main h6,
-#main div.main h6,
+body #main aside.main h6,
 body.main #main aside.info h6,
+body #main div.main h6,
 body.main div.info h6 {
   color: #ffb273;
 }
-#main aside.main a,
-#main div.main a,
+body #main aside.main .MathJax,
+body.main #main aside.info .MathJax,
+body #main div.main .MathJax,
+body.main div.info .MathJax {
+  color: #fff !important;
+}
+body #main aside.main a,
 body.main #main aside.info a,
+body #main div.main a,
 body.main div.info a {
-  color: #5ccccc;
+  color: #fff;
   text-shadow: 1px 1px 1px #006363;
 }
-#main aside.main a:visited,
-#main div.main a:visited,
-body.main #main aside.info a:visited,
-body.main div.info a:visited {
+body #main aside.main a:hover,
+body.main #main aside.info a:hover,
+body #main div.main a:hover,
+body.main div.info a:hover {
   color: #fff;
 }
-#main aside.main a.stub,
-#main div.main a.stub,
+body #main aside.main a:visited,
+body.main #main aside.info a:visited,
+body #main div.main a:visited,
+body.main div.info a:visited,
+body #main aside.main a:visited:hover,
+body.main #main aside.info a:visited:hover,
+body #main div.main a:visited:hover,
+body.main div.info a:visited:hover {
+  color: #5ccccc;
+}
+body #main aside.main a.stub,
 body.main #main aside.info a.stub,
+body #main div.main a.stub,
 body.main div.info a.stub {
   color: #ff7400;
 }
-#main aside.main a.stub.missing,
-#main div.main a.stub.missing,
+body #main aside.main a.stub.missing,
 body.main #main aside.info a.stub.missing,
+body #main div.main a.stub.missing,
 body.main div.info a.stub.missing {
   background: #ff7400;
   color: #099;
 }
-#main aside.main .MathJax,
-#main div.main .MathJax,
-body.main #main aside.info .MathJax,
-body.main div.info .MathJax {
-  color: #fff !important;
+body #main aside.main a.stub:visited,
+body.main #main aside.info a.stub:visited,
+body #main div.main a.stub:visited,
+body.main div.info a.stub:visited,
+body #main aside.main a.stub:visited:hover,
+body.main #main aside.info a.stub:visited:hover,
+body #main div.main a.stub:visited:hover,
+body.main div.info a.stub:visited:hover {
+  color: #ffb273;
+}
+body span.main,
+body.main span.info,
+body strong.main,
+body.main strong.info,
+body em.main,
+body.main em.info {
+  color: #099;
 }
 body.rules {
   background: #1240ab;
@@ -221,9 +228,38 @@ body.rules ::selection {
   background-color: #6c8cd5;
   color: #fff;
 }
-body.rules div.cap {
+body.rules #main-container {
+  border-color: #06266f;
+}
+body.rules #meditating {
+  background-color: #fff;
+}
+body.rules #main form.meditate {
+  background-color: #fff;
+}
+body.rules #main p a.meditation,
+body.rules #main form.meditate button.proceed {
   background: #1240ab;
+  border-color: #06266f;
   color: #fff;
+}
+body.rules #main p a.meditation:hover,
+body.rules #main form.meditate button.proceed:hover {
+  background: #06266f;
+  border-color: #1240ab;
+  color: #6c8cd5;
+}
+body.rules #main p a.meditation:active,
+body.rules #main form.meditate button.proceed:active {
+  border-color: #1240ab;
+  color: #1240ab;
+}
+body.rules #main form.meditate textarea {
+  border-color: #eee;
+}
+body.rules #main form.meditate textarea:focus,
+body.rules #main form.meditate button:focus {
+  outline-color: #1240ab;
 }
 body.rules #header h1 a {
   color: #fff;
@@ -242,79 +278,28 @@ body.rules #header .definition li {
 body.rules #header .pronunciation {
   color: #06266f;
 }
-body.rules div.content article a {
-  color: #1240ab;
-}
-body.rules div.content article a:active {
-  color: #4671d5;
-}
-body.rules div.content article a:visited {
-  color: #06266f;
-}
-body.rules div.content article a:hover {
-  color: #1240ab;
-}
-body.rules div.content article a.stub {
+body.rules #main a.stub {
   color: #fa0;
 }
-body.rules div.content article a.stub:visited {
+body.rules #main a.stub:visited {
   color: #a66f00;
 }
-body.rules div.content article a.stub.missing {
+body.rules #main a.stub.missing {
   background: #fa0;
   color: #1240ab;
 }
-body.rules #meditating {
-  background-color: #fff;
-}
-body.rules #main article form.meditate {
-  background-color: #fff;
-}
-body.rules #main article p a.meditation,
-body.rules #main article form.meditate button.proceed {
-  background: #1240ab;
-  border-color: #06266f;
-  color: #fff;
-}
-body.rules #main article p a.meditation:hover,
-body.rules #main article form.meditate button.proceed:hover {
-  background: #06266f;
-  border-color: #1240ab;
-  color: #6c8cd5;
-}
-body.rules #main article p a.meditation:active,
-body.rules #main article form.meditate button.proceed:active {
-  border-color: #1240ab;
-  color: #1240ab;
-}
-body.rules #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.rules #main article form.meditate textarea:focus,
-body.rules #main article form.meditate button:focus {
-  outline-color: #1240ab;
-}
-body.rules div.nav h1,
-body.rules div.nav h2,
-body.rules div.nav h3,
-body.rules div.nav h4,
-body.rules div.nav h5,
-body.rules div.nav h6 {
-  color: #06266f;
-}
-body.rules div.nav aside {
-  background: #1240ab;
-  border-color: #06266f;
-  color: #fff;
-}
-body.rules div.nav a {
-  color: #ffd073;
-}
-body.rules div.nav a:active {
+body.rules #main div.nav h3 {
   color: #fa0;
 }
-body.rules div.nav a:visited {
+body.rules #main div.nav aside.info a {
+  color: #fff;
+  text-decoration: none;
+}
+body.rules #main div.nav aside.info a:visited {
   color: #6c8cd5;
+}
+body.rules #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.rules footer h1.logo a,
 body.rules footer a.author {
@@ -322,85 +307,114 @@ body.rules footer a.author {
 }
 body.rules footer aside h3 {
   color: #fa0;
+  text-shadow: 1px 1px 1px #06266f;
 }
-body.rules footer aside a {
+body.rules footer aside li {
   color: #6c8cd5;
 }
-span.rules,
-strong.rules,
-em.rules {
-  color: #1240ab;
+body.rules footer aside a {
+  color: #fff;
+  text-decoration: none;
 }
-body.rules span.info,
-body.rules strong.info,
-body.rules em.info {
-  color: #1240ab;
+body.rules footer aside a:visited {
+  color: #6c8cd5;
 }
-#main aside.rules,
-#main div.rules,
+body.rules footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.rules,
 body.rules #main aside.info,
+body #main div.rules,
 body.rules div.info {
   background: #1240ab;
   border-color: #06266f;
   color: #fff;
 }
-#main aside.rules h1,
-#main div.rules h1,
+body #main aside.rules h1,
 body.rules #main aside.info h1,
+body #main div.rules h1,
 body.rules div.info h1,
-#main aside.rules h2,
-#main div.rules h2,
+body #main aside.rules h2,
 body.rules #main aside.info h2,
+body #main div.rules h2,
 body.rules div.info h2,
-#main aside.rules h3,
-#main div.rules h3,
+body #main aside.rules h3,
 body.rules #main aside.info h3,
+body #main div.rules h3,
 body.rules div.info h3,
-#main aside.rules h4,
-#main div.rules h4,
+body #main aside.rules h4,
 body.rules #main aside.info h4,
+body #main div.rules h4,
 body.rules div.info h4,
-#main aside.rules h5,
-#main div.rules h5,
+body #main aside.rules h5,
 body.rules #main aside.info h5,
+body #main div.rules h5,
 body.rules div.info h5,
-#main aside.rules h6,
-#main div.rules h6,
+body #main aside.rules h6,
 body.rules #main aside.info h6,
+body #main div.rules h6,
 body.rules div.info h6 {
   color: #ffd073;
 }
-#main aside.rules a,
-#main div.rules a,
+body #main aside.rules .MathJax,
+body.rules #main aside.info .MathJax,
+body #main div.rules .MathJax,
+body.rules div.info .MathJax {
+  color: #fff !important;
+}
+body #main aside.rules a,
 body.rules #main aside.info a,
+body #main div.rules a,
 body.rules div.info a {
-  color: #6c8cd5;
+  color: #fff;
   text-shadow: 1px 1px 1px #06266f;
 }
-#main aside.rules a:visited,
-#main div.rules a:visited,
-body.rules #main aside.info a:visited,
-body.rules div.info a:visited {
+body #main aside.rules a:hover,
+body.rules #main aside.info a:hover,
+body #main div.rules a:hover,
+body.rules div.info a:hover {
   color: #fff;
 }
-#main aside.rules a.stub,
-#main div.rules a.stub,
+body #main aside.rules a:visited,
+body.rules #main aside.info a:visited,
+body #main div.rules a:visited,
+body.rules div.info a:visited,
+body #main aside.rules a:visited:hover,
+body.rules #main aside.info a:visited:hover,
+body #main div.rules a:visited:hover,
+body.rules div.info a:visited:hover {
+  color: #6c8cd5;
+}
+body #main aside.rules a.stub,
 body.rules #main aside.info a.stub,
+body #main div.rules a.stub,
 body.rules div.info a.stub {
   color: #fa0;
 }
-#main aside.rules a.stub.missing,
-#main div.rules a.stub.missing,
+body #main aside.rules a.stub.missing,
 body.rules #main aside.info a.stub.missing,
+body #main div.rules a.stub.missing,
 body.rules div.info a.stub.missing {
   background: #fa0;
   color: #1240ab;
 }
-#main aside.rules .MathJax,
-#main div.rules .MathJax,
-body.rules #main aside.info .MathJax,
-body.rules div.info .MathJax {
-  color: #fff !important;
+body #main aside.rules a.stub:visited,
+body.rules #main aside.info a.stub:visited,
+body #main div.rules a.stub:visited,
+body.rules div.info a.stub:visited,
+body #main aside.rules a.stub:visited:hover,
+body.rules #main aside.info a.stub:visited:hover,
+body #main div.rules a.stub:visited:hover,
+body.rules div.info a.stub:visited:hover {
+  color: #ffd073;
+}
+body span.rules,
+body.rules span.info,
+body strong.rules,
+body.rules strong.info,
+body em.rules,
+body.rules em.info {
+  color: #1240ab;
 }
 body.rigor {
   background: #3914af;
@@ -410,9 +424,38 @@ body.rigor ::selection {
   background-color: #876ed7;
   color: #fff;
 }
-body.rigor div.cap {
+body.rigor #main-container {
+  border-color: #200772;
+}
+body.rigor #meditating {
+  background-color: #fff;
+}
+body.rigor #main form.meditate {
+  background-color: #fff;
+}
+body.rigor #main p a.meditation,
+body.rigor #main form.meditate button.proceed {
   background: #3914af;
+  border-color: #200772;
   color: #fff;
+}
+body.rigor #main p a.meditation:hover,
+body.rigor #main form.meditate button.proceed:hover {
+  background: #200772;
+  border-color: #3914af;
+  color: #876ed7;
+}
+body.rigor #main p a.meditation:active,
+body.rigor #main form.meditate button.proceed:active {
+  border-color: #3914af;
+  color: #3914af;
+}
+body.rigor #main form.meditate textarea {
+  border-color: #eee;
+}
+body.rigor #main form.meditate textarea:focus,
+body.rigor #main form.meditate button:focus {
+  outline-color: #3914af;
 }
 body.rigor #header h1 a {
   color: #fff;
@@ -431,79 +474,28 @@ body.rigor #header .definition li {
 body.rigor #header .pronunciation {
   color: #200772;
 }
-body.rigor div.content article a {
-  color: #3914af;
-}
-body.rigor div.content article a:active {
-  color: #6a48d7;
-}
-body.rigor div.content article a:visited {
-  color: #200772;
-}
-body.rigor div.content article a:hover {
-  color: #3914af;
-}
-body.rigor div.content article a.stub {
+body.rigor #main a.stub {
   color: #ffd300;
 }
-body.rigor div.content article a.stub:visited {
+body.rigor #main a.stub:visited {
   color: #a68900;
 }
-body.rigor div.content article a.stub.missing {
+body.rigor #main a.stub.missing {
   background: #ffd300;
   color: #3914af;
 }
-body.rigor #meditating {
-  background-color: #fff;
-}
-body.rigor #main article form.meditate {
-  background-color: #fff;
-}
-body.rigor #main article p a.meditation,
-body.rigor #main article form.meditate button.proceed {
-  background: #3914af;
-  border-color: #200772;
-  color: #fff;
-}
-body.rigor #main article p a.meditation:hover,
-body.rigor #main article form.meditate button.proceed:hover {
-  background: #200772;
-  border-color: #3914af;
-  color: #876ed7;
-}
-body.rigor #main article p a.meditation:active,
-body.rigor #main article form.meditate button.proceed:active {
-  border-color: #3914af;
-  color: #3914af;
-}
-body.rigor #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.rigor #main article form.meditate textarea:focus,
-body.rigor #main article form.meditate button:focus {
-  outline-color: #3914af;
-}
-body.rigor div.nav h1,
-body.rigor div.nav h2,
-body.rigor div.nav h3,
-body.rigor div.nav h4,
-body.rigor div.nav h5,
-body.rigor div.nav h6 {
-  color: #200772;
-}
-body.rigor div.nav aside {
-  background: #3914af;
-  border-color: #200772;
-  color: #fff;
-}
-body.rigor div.nav a {
-  color: #ffe773;
-}
-body.rigor div.nav a:active {
+body.rigor #main div.nav h3 {
   color: #ffd300;
 }
-body.rigor div.nav a:visited {
+body.rigor #main div.nav aside.info a {
+  color: #fff;
+  text-decoration: none;
+}
+body.rigor #main div.nav aside.info a:visited {
   color: #876ed7;
+}
+body.rigor #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.rigor footer h1.logo a,
 body.rigor footer a.author {
@@ -511,85 +503,114 @@ body.rigor footer a.author {
 }
 body.rigor footer aside h3 {
   color: #ffd300;
+  text-shadow: 1px 1px 1px #200772;
 }
-body.rigor footer aside a {
+body.rigor footer aside li {
   color: #876ed7;
 }
-span.rigor,
-strong.rigor,
-em.rigor {
-  color: #3914af;
+body.rigor footer aside a {
+  color: #fff;
+  text-decoration: none;
 }
-body.rigor span.info,
-body.rigor strong.info,
-body.rigor em.info {
-  color: #3914af;
+body.rigor footer aside a:visited {
+  color: #876ed7;
 }
-#main aside.rigor,
-#main div.rigor,
+body.rigor footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.rigor,
 body.rigor #main aside.info,
+body #main div.rigor,
 body.rigor div.info {
   background: #3914af;
   border-color: #200772;
   color: #fff;
 }
-#main aside.rigor h1,
-#main div.rigor h1,
+body #main aside.rigor h1,
 body.rigor #main aside.info h1,
+body #main div.rigor h1,
 body.rigor div.info h1,
-#main aside.rigor h2,
-#main div.rigor h2,
+body #main aside.rigor h2,
 body.rigor #main aside.info h2,
+body #main div.rigor h2,
 body.rigor div.info h2,
-#main aside.rigor h3,
-#main div.rigor h3,
+body #main aside.rigor h3,
 body.rigor #main aside.info h3,
+body #main div.rigor h3,
 body.rigor div.info h3,
-#main aside.rigor h4,
-#main div.rigor h4,
+body #main aside.rigor h4,
 body.rigor #main aside.info h4,
+body #main div.rigor h4,
 body.rigor div.info h4,
-#main aside.rigor h5,
-#main div.rigor h5,
+body #main aside.rigor h5,
 body.rigor #main aside.info h5,
+body #main div.rigor h5,
 body.rigor div.info h5,
-#main aside.rigor h6,
-#main div.rigor h6,
+body #main aside.rigor h6,
 body.rigor #main aside.info h6,
+body #main div.rigor h6,
 body.rigor div.info h6 {
   color: #ffe773;
 }
-#main aside.rigor a,
-#main div.rigor a,
+body #main aside.rigor .MathJax,
+body.rigor #main aside.info .MathJax,
+body #main div.rigor .MathJax,
+body.rigor div.info .MathJax {
+  color: #fff !important;
+}
+body #main aside.rigor a,
 body.rigor #main aside.info a,
+body #main div.rigor a,
 body.rigor div.info a {
-  color: #876ed7;
+  color: #fff;
   text-shadow: 1px 1px 1px #200772;
 }
-#main aside.rigor a:visited,
-#main div.rigor a:visited,
-body.rigor #main aside.info a:visited,
-body.rigor div.info a:visited {
+body #main aside.rigor a:hover,
+body.rigor #main aside.info a:hover,
+body #main div.rigor a:hover,
+body.rigor div.info a:hover {
   color: #fff;
 }
-#main aside.rigor a.stub,
-#main div.rigor a.stub,
+body #main aside.rigor a:visited,
+body.rigor #main aside.info a:visited,
+body #main div.rigor a:visited,
+body.rigor div.info a:visited,
+body #main aside.rigor a:visited:hover,
+body.rigor #main aside.info a:visited:hover,
+body #main div.rigor a:visited:hover,
+body.rigor div.info a:visited:hover {
+  color: #876ed7;
+}
+body #main aside.rigor a.stub,
 body.rigor #main aside.info a.stub,
+body #main div.rigor a.stub,
 body.rigor div.info a.stub {
   color: #ffd300;
 }
-#main aside.rigor a.stub.missing,
-#main div.rigor a.stub.missing,
+body #main aside.rigor a.stub.missing,
 body.rigor #main aside.info a.stub.missing,
+body #main div.rigor a.stub.missing,
 body.rigor div.info a.stub.missing {
   background: #ffd300;
   color: #3914af;
 }
-#main aside.rigor .MathJax,
-#main div.rigor .MathJax,
-body.rigor #main aside.info .MathJax,
-body.rigor div.info .MathJax {
-  color: #fff !important;
+body #main aside.rigor a.stub:visited,
+body.rigor #main aside.info a.stub:visited,
+body #main div.rigor a.stub:visited,
+body.rigor div.info a.stub:visited,
+body #main aside.rigor a.stub:visited:hover,
+body.rigor #main aside.info a.stub:visited:hover,
+body #main div.rigor a.stub:visited:hover,
+body.rigor div.info a.stub:visited:hover {
+  color: #ffe773;
+}
+body span.rigor,
+body.rigor span.info,
+body strong.rigor,
+body.rigor strong.info,
+body em.rigor,
+body.rigor em.info {
+  color: #3914af;
 }
 body.simplifience {
   background: #7109aa;
@@ -599,9 +620,38 @@ body.simplifience ::selection {
   background-color: #ad66d5;
   color: #fff;
 }
-body.simplifience div.cap {
+body.simplifience #main-container {
+  border-color: #48036f;
+}
+body.simplifience #meditating {
+  background-color: #fff;
+}
+body.simplifience #main form.meditate {
+  background-color: #fff;
+}
+body.simplifience #main p a.meditation,
+body.simplifience #main form.meditate button.proceed {
   background: #7109aa;
+  border-color: #48036f;
   color: #fff;
+}
+body.simplifience #main p a.meditation:hover,
+body.simplifience #main form.meditate button.proceed:hover {
+  background: #48036f;
+  border-color: #7109aa;
+  color: #ad66d5;
+}
+body.simplifience #main p a.meditation:active,
+body.simplifience #main form.meditate button.proceed:active {
+  border-color: #7109aa;
+  color: #7109aa;
+}
+body.simplifience #main form.meditate textarea {
+  border-color: #eee;
+}
+body.simplifience #main form.meditate textarea:focus,
+body.simplifience #main form.meditate button:focus {
+  outline-color: #7109aa;
 }
 body.simplifience #header h1 a {
   color: #fff;
@@ -620,79 +670,28 @@ body.simplifience #header .definition li {
 body.simplifience #header .pronunciation {
   color: #48036f;
 }
-body.simplifience div.content article a {
-  color: #7109aa;
-}
-body.simplifience div.content article a:active {
-  color: #9f3ed5;
-}
-body.simplifience div.content article a:visited {
-  color: #48036f;
-}
-body.simplifience div.content article a:hover {
-  color: #7109aa;
-}
-body.simplifience div.content article a.stub {
+body.simplifience #main a.stub {
   color: #ff0;
 }
-body.simplifience div.content article a.stub:visited {
+body.simplifience #main a.stub:visited {
   color: #a6a600;
 }
-body.simplifience div.content article a.stub.missing {
+body.simplifience #main a.stub.missing {
   background: #ff0;
   color: #7109aa;
 }
-body.simplifience #meditating {
-  background-color: #fff;
-}
-body.simplifience #main article form.meditate {
-  background-color: #fff;
-}
-body.simplifience #main article p a.meditation,
-body.simplifience #main article form.meditate button.proceed {
-  background: #7109aa;
-  border-color: #48036f;
-  color: #fff;
-}
-body.simplifience #main article p a.meditation:hover,
-body.simplifience #main article form.meditate button.proceed:hover {
-  background: #48036f;
-  border-color: #7109aa;
-  color: #ad66d5;
-}
-body.simplifience #main article p a.meditation:active,
-body.simplifience #main article form.meditate button.proceed:active {
-  border-color: #7109aa;
-  color: #7109aa;
-}
-body.simplifience #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.simplifience #main article form.meditate textarea:focus,
-body.simplifience #main article form.meditate button:focus {
-  outline-color: #7109aa;
-}
-body.simplifience div.nav h1,
-body.simplifience div.nav h2,
-body.simplifience div.nav h3,
-body.simplifience div.nav h4,
-body.simplifience div.nav h5,
-body.simplifience div.nav h6 {
-  color: #48036f;
-}
-body.simplifience div.nav aside {
-  background: #7109aa;
-  border-color: #48036f;
-  color: #fff;
-}
-body.simplifience div.nav a {
-  color: #ffff73;
-}
-body.simplifience div.nav a:active {
+body.simplifience #main div.nav h3 {
   color: #ff0;
 }
-body.simplifience div.nav a:visited {
+body.simplifience #main div.nav aside.info a {
+  color: #fff;
+  text-decoration: none;
+}
+body.simplifience #main div.nav aside.info a:visited {
   color: #ad66d5;
+}
+body.simplifience #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.simplifience footer h1.logo a,
 body.simplifience footer a.author {
@@ -700,85 +699,114 @@ body.simplifience footer a.author {
 }
 body.simplifience footer aside h3 {
   color: #ff0;
+  text-shadow: 1px 1px 1px #48036f;
 }
-body.simplifience footer aside a {
+body.simplifience footer aside li {
   color: #ad66d5;
 }
-span.simplifience,
-strong.simplifience,
-em.simplifience {
-  color: #7109aa;
+body.simplifience footer aside a {
+  color: #fff;
+  text-decoration: none;
 }
-body.simplifience span.info,
-body.simplifience strong.info,
-body.simplifience em.info {
-  color: #7109aa;
+body.simplifience footer aside a:visited {
+  color: #ad66d5;
 }
-#main aside.simplifience,
-#main div.simplifience,
+body.simplifience footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.simplifience,
 body.simplifience #main aside.info,
+body #main div.simplifience,
 body.simplifience div.info {
   background: #7109aa;
   border-color: #48036f;
   color: #fff;
 }
-#main aside.simplifience h1,
-#main div.simplifience h1,
+body #main aside.simplifience h1,
 body.simplifience #main aside.info h1,
+body #main div.simplifience h1,
 body.simplifience div.info h1,
-#main aside.simplifience h2,
-#main div.simplifience h2,
+body #main aside.simplifience h2,
 body.simplifience #main aside.info h2,
+body #main div.simplifience h2,
 body.simplifience div.info h2,
-#main aside.simplifience h3,
-#main div.simplifience h3,
+body #main aside.simplifience h3,
 body.simplifience #main aside.info h3,
+body #main div.simplifience h3,
 body.simplifience div.info h3,
-#main aside.simplifience h4,
-#main div.simplifience h4,
+body #main aside.simplifience h4,
 body.simplifience #main aside.info h4,
+body #main div.simplifience h4,
 body.simplifience div.info h4,
-#main aside.simplifience h5,
-#main div.simplifience h5,
+body #main aside.simplifience h5,
 body.simplifience #main aside.info h5,
+body #main div.simplifience h5,
 body.simplifience div.info h5,
-#main aside.simplifience h6,
-#main div.simplifience h6,
+body #main aside.simplifience h6,
 body.simplifience #main aside.info h6,
+body #main div.simplifience h6,
 body.simplifience div.info h6 {
   color: #ffff73;
 }
-#main aside.simplifience a,
-#main div.simplifience a,
+body #main aside.simplifience .MathJax,
+body.simplifience #main aside.info .MathJax,
+body #main div.simplifience .MathJax,
+body.simplifience div.info .MathJax {
+  color: #fff !important;
+}
+body #main aside.simplifience a,
 body.simplifience #main aside.info a,
+body #main div.simplifience a,
 body.simplifience div.info a {
-  color: #ad66d5;
+  color: #fff;
   text-shadow: 1px 1px 1px #48036f;
 }
-#main aside.simplifience a:visited,
-#main div.simplifience a:visited,
-body.simplifience #main aside.info a:visited,
-body.simplifience div.info a:visited {
+body #main aside.simplifience a:hover,
+body.simplifience #main aside.info a:hover,
+body #main div.simplifience a:hover,
+body.simplifience div.info a:hover {
   color: #fff;
 }
-#main aside.simplifience a.stub,
-#main div.simplifience a.stub,
+body #main aside.simplifience a:visited,
+body.simplifience #main aside.info a:visited,
+body #main div.simplifience a:visited,
+body.simplifience div.info a:visited,
+body #main aside.simplifience a:visited:hover,
+body.simplifience #main aside.info a:visited:hover,
+body #main div.simplifience a:visited:hover,
+body.simplifience div.info a:visited:hover {
+  color: #ad66d5;
+}
+body #main aside.simplifience a.stub,
 body.simplifience #main aside.info a.stub,
+body #main div.simplifience a.stub,
 body.simplifience div.info a.stub {
   color: #ff0;
 }
-#main aside.simplifience a.stub.missing,
-#main div.simplifience a.stub.missing,
+body #main aside.simplifience a.stub.missing,
 body.simplifience #main aside.info a.stub.missing,
+body #main div.simplifience a.stub.missing,
 body.simplifience div.info a.stub.missing {
   background: #ff0;
   color: #7109aa;
 }
-#main aside.simplifience .MathJax,
-#main div.simplifience .MathJax,
-body.simplifience #main aside.info .MathJax,
-body.simplifience div.info .MathJax {
-  color: #fff !important;
+body #main aside.simplifience a.stub:visited,
+body.simplifience #main aside.info a.stub:visited,
+body #main div.simplifience a.stub:visited,
+body.simplifience div.info a.stub:visited,
+body #main aside.simplifience a.stub:visited:hover,
+body.simplifience #main aside.info a.stub:visited:hover,
+body #main div.simplifience a.stub:visited:hover,
+body.simplifience div.info a.stub:visited:hover {
+  color: #ffff73;
+}
+body span.simplifience,
+body.simplifience span.info,
+body strong.simplifience,
+body.simplifience strong.info,
+body em.simplifience,
+body.simplifience em.info {
+  color: #7109aa;
 }
 body.knowledge {
   background: #cd0074;
@@ -788,9 +816,38 @@ body.knowledge ::selection {
   background-color: #e667af;
   color: #fff;
 }
-body.knowledge div.cap {
+body.knowledge #main-container {
+  border-color: #85004b;
+}
+body.knowledge #meditating {
+  background-color: #fff;
+}
+body.knowledge #main form.meditate {
+  background-color: #fff;
+}
+body.knowledge #main p a.meditation,
+body.knowledge #main form.meditate button.proceed {
   background: #cd0074;
+  border-color: #85004b;
   color: #fff;
+}
+body.knowledge #main p a.meditation:hover,
+body.knowledge #main form.meditate button.proceed:hover {
+  background: #85004b;
+  border-color: #cd0074;
+  color: #e667af;
+}
+body.knowledge #main p a.meditation:active,
+body.knowledge #main form.meditate button.proceed:active {
+  border-color: #cd0074;
+  color: #cd0074;
+}
+body.knowledge #main form.meditate textarea {
+  border-color: #eee;
+}
+body.knowledge #main form.meditate textarea:focus,
+body.knowledge #main form.meditate button:focus {
+  outline-color: #cd0074;
 }
 body.knowledge #header h1 a {
   color: #fff;
@@ -809,79 +866,28 @@ body.knowledge #header .definition li {
 body.knowledge #header .pronunciation {
   color: #85004b;
 }
-body.knowledge div.content article a {
-  color: #cd0074;
-}
-body.knowledge div.content article a:active {
-  color: #e6399b;
-}
-body.knowledge div.content article a:visited {
-  color: #85004b;
-}
-body.knowledge div.content article a:hover {
-  color: #cd0074;
-}
-body.knowledge div.content article a.stub {
+body.knowledge #main a.stub {
   color: #ffd300;
 }
-body.knowledge div.content article a.stub:visited {
+body.knowledge #main a.stub:visited {
   color: #a68900;
 }
-body.knowledge div.content article a.stub.missing {
+body.knowledge #main a.stub.missing {
   background: #ffd300;
   color: #cd0074;
 }
-body.knowledge #meditating {
-  background-color: #fff;
-}
-body.knowledge #main article form.meditate {
-  background-color: #fff;
-}
-body.knowledge #main article p a.meditation,
-body.knowledge #main article form.meditate button.proceed {
-  background: #cd0074;
-  border-color: #85004b;
-  color: #fff;
-}
-body.knowledge #main article p a.meditation:hover,
-body.knowledge #main article form.meditate button.proceed:hover {
-  background: #85004b;
-  border-color: #cd0074;
-  color: #e667af;
-}
-body.knowledge #main article p a.meditation:active,
-body.knowledge #main article form.meditate button.proceed:active {
-  border-color: #cd0074;
-  color: #cd0074;
-}
-body.knowledge #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.knowledge #main article form.meditate textarea:focus,
-body.knowledge #main article form.meditate button:focus {
-  outline-color: #cd0074;
-}
-body.knowledge div.nav h1,
-body.knowledge div.nav h2,
-body.knowledge div.nav h3,
-body.knowledge div.nav h4,
-body.knowledge div.nav h5,
-body.knowledge div.nav h6 {
-  color: #85004b;
-}
-body.knowledge div.nav aside {
-  background: #cd0074;
-  border-color: #85004b;
-  color: #fff;
-}
-body.knowledge div.nav a {
-  color: #ffe773;
-}
-body.knowledge div.nav a:active {
+body.knowledge #main div.nav h3 {
   color: #ffd300;
 }
-body.knowledge div.nav a:visited {
+body.knowledge #main div.nav aside.info a {
+  color: #fff;
+  text-decoration: none;
+}
+body.knowledge #main div.nav aside.info a:visited {
   color: #e667af;
+}
+body.knowledge #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.knowledge footer h1.logo a,
 body.knowledge footer a.author {
@@ -889,85 +895,114 @@ body.knowledge footer a.author {
 }
 body.knowledge footer aside h3 {
   color: #ffd300;
+  text-shadow: 1px 1px 1px #85004b;
 }
-body.knowledge footer aside a {
+body.knowledge footer aside li {
   color: #e667af;
 }
-span.knowledge,
-strong.knowledge,
-em.knowledge {
-  color: #cd0074;
+body.knowledge footer aside a {
+  color: #fff;
+  text-decoration: none;
 }
-body.knowledge span.info,
-body.knowledge strong.info,
-body.knowledge em.info {
-  color: #cd0074;
+body.knowledge footer aside a:visited {
+  color: #e667af;
 }
-#main aside.knowledge,
-#main div.knowledge,
+body.knowledge footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.knowledge,
 body.knowledge #main aside.info,
+body #main div.knowledge,
 body.knowledge div.info {
   background: #cd0074;
   border-color: #85004b;
   color: #fff;
 }
-#main aside.knowledge h1,
-#main div.knowledge h1,
+body #main aside.knowledge h1,
 body.knowledge #main aside.info h1,
+body #main div.knowledge h1,
 body.knowledge div.info h1,
-#main aside.knowledge h2,
-#main div.knowledge h2,
+body #main aside.knowledge h2,
 body.knowledge #main aside.info h2,
+body #main div.knowledge h2,
 body.knowledge div.info h2,
-#main aside.knowledge h3,
-#main div.knowledge h3,
+body #main aside.knowledge h3,
 body.knowledge #main aside.info h3,
+body #main div.knowledge h3,
 body.knowledge div.info h3,
-#main aside.knowledge h4,
-#main div.knowledge h4,
+body #main aside.knowledge h4,
 body.knowledge #main aside.info h4,
+body #main div.knowledge h4,
 body.knowledge div.info h4,
-#main aside.knowledge h5,
-#main div.knowledge h5,
+body #main aside.knowledge h5,
 body.knowledge #main aside.info h5,
+body #main div.knowledge h5,
 body.knowledge div.info h5,
-#main aside.knowledge h6,
-#main div.knowledge h6,
+body #main aside.knowledge h6,
 body.knowledge #main aside.info h6,
+body #main div.knowledge h6,
 body.knowledge div.info h6 {
   color: #ffe773;
 }
-#main aside.knowledge a,
-#main div.knowledge a,
+body #main aside.knowledge .MathJax,
+body.knowledge #main aside.info .MathJax,
+body #main div.knowledge .MathJax,
+body.knowledge div.info .MathJax {
+  color: #fff !important;
+}
+body #main aside.knowledge a,
 body.knowledge #main aside.info a,
+body #main div.knowledge a,
 body.knowledge div.info a {
-  color: #e667af;
+  color: #fff;
   text-shadow: 1px 1px 1px #85004b;
 }
-#main aside.knowledge a:visited,
-#main div.knowledge a:visited,
-body.knowledge #main aside.info a:visited,
-body.knowledge div.info a:visited {
+body #main aside.knowledge a:hover,
+body.knowledge #main aside.info a:hover,
+body #main div.knowledge a:hover,
+body.knowledge div.info a:hover {
   color: #fff;
 }
-#main aside.knowledge a.stub,
-#main div.knowledge a.stub,
+body #main aside.knowledge a:visited,
+body.knowledge #main aside.info a:visited,
+body #main div.knowledge a:visited,
+body.knowledge div.info a:visited,
+body #main aside.knowledge a:visited:hover,
+body.knowledge #main aside.info a:visited:hover,
+body #main div.knowledge a:visited:hover,
+body.knowledge div.info a:visited:hover {
+  color: #e667af;
+}
+body #main aside.knowledge a.stub,
 body.knowledge #main aside.info a.stub,
+body #main div.knowledge a.stub,
 body.knowledge div.info a.stub {
   color: #ffd300;
 }
-#main aside.knowledge a.stub.missing,
-#main div.knowledge a.stub.missing,
+body #main aside.knowledge a.stub.missing,
 body.knowledge #main aside.info a.stub.missing,
+body #main div.knowledge a.stub.missing,
 body.knowledge div.info a.stub.missing {
   background: #ffd300;
   color: #cd0074;
 }
-#main aside.knowledge .MathJax,
-#main div.knowledge .MathJax,
-body.knowledge #main aside.info .MathJax,
-body.knowledge div.info .MathJax {
-  color: #fff !important;
+body #main aside.knowledge a.stub:visited,
+body.knowledge #main aside.info a.stub:visited,
+body #main div.knowledge a.stub:visited,
+body.knowledge div.info a.stub:visited,
+body #main aside.knowledge a.stub:visited:hover,
+body.knowledge #main aside.info a.stub:visited:hover,
+body #main div.knowledge a.stub:visited:hover,
+body.knowledge div.info a.stub:visited:hover {
+  color: #ffe773;
+}
+body span.knowledge,
+body.knowledge span.info,
+body strong.knowledge,
+body.knowledge strong.info,
+body em.knowledge,
+body.knowledge em.info {
+  color: #cd0074;
 }
 body.rant {
   background: #f00;
@@ -977,9 +1012,38 @@ body.rant ::selection {
   background-color: #ff7373;
   color: #000;
 }
-body.rant div.cap {
+body.rant #main-container {
+  border-color: #a60000;
+}
+body.rant #meditating {
+  background-color: #fff;
+}
+body.rant #main form.meditate {
+  background-color: #fff;
+}
+body.rant #main p a.meditation,
+body.rant #main form.meditate button.proceed {
   background: #f00;
+  border-color: #a60000;
   color: #000;
+}
+body.rant #main p a.meditation:hover,
+body.rant #main form.meditate button.proceed:hover {
+  background: #a60000;
+  border-color: #f00;
+  color: #a60000;
+}
+body.rant #main p a.meditation:active,
+body.rant #main form.meditate button.proceed:active {
+  border-color: #f00;
+  color: #f00;
+}
+body.rant #main form.meditate textarea {
+  border-color: #eee;
+}
+body.rant #main form.meditate textarea:focus,
+body.rant #main form.meditate button:focus {
+  outline-color: #f00;
 }
 body.rant #header h1 a {
   color: #000;
@@ -998,79 +1062,28 @@ body.rant #header .definition li {
 body.rant #header .pronunciation {
   color: #a60000;
 }
-body.rant div.content article a {
-  color: #f00;
-}
-body.rant div.content article a:active {
-  color: #ff4040;
-}
-body.rant div.content article a:visited {
-  color: #a60000;
-}
-body.rant div.content article a:hover {
-  color: #f00;
-}
-body.rant div.content article a.stub {
+body.rant #main a.stub {
   color: #ffd300;
 }
-body.rant div.content article a.stub:visited {
+body.rant #main a.stub:visited {
   color: #a68900;
 }
-body.rant div.content article a.stub.missing {
+body.rant #main a.stub.missing {
   background: #ffd300;
   color: #f00;
 }
-body.rant #meditating {
-  background-color: #fff;
-}
-body.rant #main article form.meditate {
-  background-color: #fff;
-}
-body.rant #main article p a.meditation,
-body.rant #main article form.meditate button.proceed {
-  background: #f00;
-  border-color: #a60000;
-  color: #000;
-}
-body.rant #main article p a.meditation:hover,
-body.rant #main article form.meditate button.proceed:hover {
-  background: #a60000;
-  border-color: #f00;
-  color: #a60000;
-}
-body.rant #main article p a.meditation:active,
-body.rant #main article form.meditate button.proceed:active {
-  border-color: #f00;
-  color: #f00;
-}
-body.rant #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.rant #main article form.meditate textarea:focus,
-body.rant #main article form.meditate button:focus {
-  outline-color: #f00;
-}
-body.rant div.nav h1,
-body.rant div.nav h2,
-body.rant div.nav h3,
-body.rant div.nav h4,
-body.rant div.nav h5,
-body.rant div.nav h6 {
-  color: #a60000;
-}
-body.rant div.nav aside {
-  background: #f00;
-  border-color: #a60000;
-  color: #000;
-}
-body.rant div.nav a {
-  color: #a68900;
-}
-body.rant div.nav a:active {
+body.rant #main div.nav h3 {
   color: #ffd300;
 }
-body.rant div.nav a:visited {
+body.rant #main div.nav aside.info a {
+  color: #000;
+  text-decoration: none;
+}
+body.rant #main div.nav aside.info a:visited {
   color: #a60000;
+}
+body.rant #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.rant footer h1.logo a,
 body.rant footer a.author {
@@ -1078,85 +1091,114 @@ body.rant footer a.author {
 }
 body.rant footer aside h3 {
   color: #ffd300;
+  text-shadow: 1px 1px 1px #a60000;
 }
-body.rant footer aside a {
+body.rant footer aside li {
   color: #a60000;
 }
-span.rant,
-strong.rant,
-em.rant {
-  color: #f00;
+body.rant footer aside a {
+  color: #000;
+  text-decoration: none;
 }
-body.rant span.info,
-body.rant strong.info,
-body.rant em.info {
-  color: #f00;
+body.rant footer aside a:visited {
+  color: #a60000;
 }
-#main aside.rant,
-#main div.rant,
+body.rant footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.rant,
 body.rant #main aside.info,
+body #main div.rant,
 body.rant div.info {
   background: #f00;
   border-color: #a60000;
   color: #000;
 }
-#main aside.rant h1,
-#main div.rant h1,
+body #main aside.rant h1,
 body.rant #main aside.info h1,
+body #main div.rant h1,
 body.rant div.info h1,
-#main aside.rant h2,
-#main div.rant h2,
+body #main aside.rant h2,
 body.rant #main aside.info h2,
+body #main div.rant h2,
 body.rant div.info h2,
-#main aside.rant h3,
-#main div.rant h3,
+body #main aside.rant h3,
 body.rant #main aside.info h3,
+body #main div.rant h3,
 body.rant div.info h3,
-#main aside.rant h4,
-#main div.rant h4,
+body #main aside.rant h4,
 body.rant #main aside.info h4,
+body #main div.rant h4,
 body.rant div.info h4,
-#main aside.rant h5,
-#main div.rant h5,
+body #main aside.rant h5,
 body.rant #main aside.info h5,
+body #main div.rant h5,
 body.rant div.info h5,
-#main aside.rant h6,
-#main div.rant h6,
+body #main aside.rant h6,
 body.rant #main aside.info h6,
+body #main div.rant h6,
 body.rant div.info h6 {
   color: #a68900;
 }
-#main aside.rant a,
-#main div.rant a,
+body #main aside.rant .MathJax,
+body.rant #main aside.info .MathJax,
+body #main div.rant .MathJax,
+body.rant div.info .MathJax {
+  color: #000 !important;
+}
+body #main aside.rant a,
 body.rant #main aside.info a,
+body #main div.rant a,
 body.rant div.info a {
-  color: #a60000;
+  color: #000;
   text-shadow: 1px 1px 1px #ff4040;
 }
-#main aside.rant a:visited,
-#main div.rant a:visited,
-body.rant #main aside.info a:visited,
-body.rant div.info a:visited {
+body #main aside.rant a:hover,
+body.rant #main aside.info a:hover,
+body #main div.rant a:hover,
+body.rant div.info a:hover {
   color: #000;
 }
-#main aside.rant a.stub,
-#main div.rant a.stub,
+body #main aside.rant a:visited,
+body.rant #main aside.info a:visited,
+body #main div.rant a:visited,
+body.rant div.info a:visited,
+body #main aside.rant a:visited:hover,
+body.rant #main aside.info a:visited:hover,
+body #main div.rant a:visited:hover,
+body.rant div.info a:visited:hover {
+  color: #a60000;
+}
+body #main aside.rant a.stub,
 body.rant #main aside.info a.stub,
+body #main div.rant a.stub,
 body.rant div.info a.stub {
   color: #ffd300;
 }
-#main aside.rant a.stub.missing,
-#main div.rant a.stub.missing,
+body #main aside.rant a.stub.missing,
 body.rant #main aside.info a.stub.missing,
+body #main div.rant a.stub.missing,
 body.rant div.info a.stub.missing {
   background: #ffd300;
   color: #f00;
 }
-#main aside.rant .MathJax,
-#main div.rant .MathJax,
-body.rant #main aside.info .MathJax,
-body.rant div.info .MathJax {
-  color: #000 !important;
+body #main aside.rant a.stub:visited,
+body.rant #main aside.info a.stub:visited,
+body #main div.rant a.stub:visited,
+body.rant div.info a.stub:visited,
+body #main aside.rant a.stub:visited:hover,
+body.rant #main aside.info a.stub:visited:hover,
+body #main div.rant a.stub:visited:hover,
+body.rant div.info a.stub:visited:hover {
+  color: #a68900;
+}
+body span.rant,
+body.rant span.info,
+body strong.rant,
+body.rant strong.info,
+body em.rant,
+body.rant em.info {
+  color: #f00;
 }
 body.stub {
   background: #ff7400;
@@ -1166,9 +1208,38 @@ body.stub ::selection {
   background-color: #ffb273;
   color: #000;
 }
-body.stub div.cap {
+body.stub #main-container {
+  border-color: #a64b00;
+}
+body.stub #meditating {
+  background-color: #fff;
+}
+body.stub #main form.meditate {
+  background-color: #fff;
+}
+body.stub #main p a.meditation,
+body.stub #main form.meditate button.proceed {
   background: #ff7400;
+  border-color: #a64b00;
   color: #000;
+}
+body.stub #main p a.meditation:hover,
+body.stub #main form.meditate button.proceed:hover {
+  background: #a64b00;
+  border-color: #ff7400;
+  color: #a64b00;
+}
+body.stub #main p a.meditation:active,
+body.stub #main form.meditate button.proceed:active {
+  border-color: #ff7400;
+  color: #ff7400;
+}
+body.stub #main form.meditate textarea {
+  border-color: #eee;
+}
+body.stub #main form.meditate textarea:focus,
+body.stub #main form.meditate button:focus {
+  outline-color: #ff7400;
 }
 body.stub #header h1 a {
   color: #000;
@@ -1187,79 +1258,28 @@ body.stub #header .definition li {
 body.stub #header .pronunciation {
   color: #a64b00;
 }
-body.stub div.content article a {
-  color: #ff7400;
-}
-body.stub div.content article a:active {
-  color: #ff9640;
-}
-body.stub div.content article a:visited {
-  color: #a64b00;
-}
-body.stub div.content article a:hover {
-  color: #ff7400;
-}
-body.stub div.content article a.stub {
+body.stub #main a.stub {
   color: #099;
 }
-body.stub div.content article a.stub:visited {
+body.stub #main a.stub:visited {
   color: #006363;
 }
-body.stub div.content article a.stub.missing {
+body.stub #main a.stub.missing {
   background: #099;
   color: #ff7400;
 }
-body.stub #meditating {
-  background-color: #fff;
-}
-body.stub #main article form.meditate {
-  background-color: #fff;
-}
-body.stub #main article p a.meditation,
-body.stub #main article form.meditate button.proceed {
-  background: #ff7400;
-  border-color: #a64b00;
-  color: #000;
-}
-body.stub #main article p a.meditation:hover,
-body.stub #main article form.meditate button.proceed:hover {
-  background: #a64b00;
-  border-color: #ff7400;
-  color: #a64b00;
-}
-body.stub #main article p a.meditation:active,
-body.stub #main article form.meditate button.proceed:active {
-  border-color: #ff7400;
-  color: #ff7400;
-}
-body.stub #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.stub #main article form.meditate textarea:focus,
-body.stub #main article form.meditate button:focus {
-  outline-color: #ff7400;
-}
-body.stub div.nav h1,
-body.stub div.nav h2,
-body.stub div.nav h3,
-body.stub div.nav h4,
-body.stub div.nav h5,
-body.stub div.nav h6 {
-  color: #a64b00;
-}
-body.stub div.nav aside {
-  background: #ff7400;
-  border-color: #a64b00;
-  color: #000;
-}
-body.stub div.nav a {
-  color: #006363;
-}
-body.stub div.nav a:active {
+body.stub #main div.nav h3 {
   color: #099;
 }
-body.stub div.nav a:visited {
+body.stub #main div.nav aside.info a {
+  color: #000;
+  text-decoration: none;
+}
+body.stub #main div.nav aside.info a:visited {
   color: #a64b00;
+}
+body.stub #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.stub footer h1.logo a,
 body.stub footer a.author {
@@ -1267,85 +1287,114 @@ body.stub footer a.author {
 }
 body.stub footer aside h3 {
   color: #099;
+  text-shadow: 1px 1px 1px #a64b00;
 }
-body.stub footer aside a {
+body.stub footer aside li {
   color: #a64b00;
 }
-span.stub,
-strong.stub,
-em.stub {
-  color: #ff7400;
+body.stub footer aside a {
+  color: #000;
+  text-decoration: none;
 }
-body.stub span.info,
-body.stub strong.info,
-body.stub em.info {
-  color: #ff7400;
+body.stub footer aside a:visited {
+  color: #a64b00;
 }
-#main aside.stub,
-#main div.stub,
+body.stub footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.stub,
 body.stub #main aside.info,
+body #main div.stub,
 body.stub div.info {
   background: #ff7400;
   border-color: #a64b00;
   color: #000;
 }
-#main aside.stub h1,
-#main div.stub h1,
+body #main aside.stub h1,
 body.stub #main aside.info h1,
+body #main div.stub h1,
 body.stub div.info h1,
-#main aside.stub h2,
-#main div.stub h2,
+body #main aside.stub h2,
 body.stub #main aside.info h2,
+body #main div.stub h2,
 body.stub div.info h2,
-#main aside.stub h3,
-#main div.stub h3,
+body #main aside.stub h3,
 body.stub #main aside.info h3,
+body #main div.stub h3,
 body.stub div.info h3,
-#main aside.stub h4,
-#main div.stub h4,
+body #main aside.stub h4,
 body.stub #main aside.info h4,
+body #main div.stub h4,
 body.stub div.info h4,
-#main aside.stub h5,
-#main div.stub h5,
+body #main aside.stub h5,
 body.stub #main aside.info h5,
+body #main div.stub h5,
 body.stub div.info h5,
-#main aside.stub h6,
-#main div.stub h6,
+body #main aside.stub h6,
 body.stub #main aside.info h6,
+body #main div.stub h6,
 body.stub div.info h6 {
   color: #006363;
 }
-#main aside.stub a,
-#main div.stub a,
+body #main aside.stub .MathJax,
+body.stub #main aside.info .MathJax,
+body #main div.stub .MathJax,
+body.stub div.info .MathJax {
+  color: #000 !important;
+}
+body #main aside.stub a,
 body.stub #main aside.info a,
+body #main div.stub a,
 body.stub div.info a {
-  color: #a64b00;
+  color: #000;
   text-shadow: 1px 1px 1px #ff9640;
 }
-#main aside.stub a:visited,
-#main div.stub a:visited,
-body.stub #main aside.info a:visited,
-body.stub div.info a:visited {
+body #main aside.stub a:hover,
+body.stub #main aside.info a:hover,
+body #main div.stub a:hover,
+body.stub div.info a:hover {
   color: #000;
 }
-#main aside.stub a.stub,
-#main div.stub a.stub,
+body #main aside.stub a:visited,
+body.stub #main aside.info a:visited,
+body #main div.stub a:visited,
+body.stub div.info a:visited,
+body #main aside.stub a:visited:hover,
+body.stub #main aside.info a:visited:hover,
+body #main div.stub a:visited:hover,
+body.stub div.info a:visited:hover {
+  color: #a64b00;
+}
+body #main aside.stub a.stub,
 body.stub #main aside.info a.stub,
+body #main div.stub a.stub,
 body.stub div.info a.stub {
   color: #099;
 }
-#main aside.stub a.stub.missing,
-#main div.stub a.stub.missing,
+body #main aside.stub a.stub.missing,
 body.stub #main aside.info a.stub.missing,
+body #main div.stub a.stub.missing,
 body.stub div.info a.stub.missing {
   background: #099;
   color: #ff7400;
 }
-#main aside.stub .MathJax,
-#main div.stub .MathJax,
-body.stub #main aside.info .MathJax,
-body.stub div.info .MathJax {
-  color: #000 !important;
+body #main aside.stub a.stub:visited,
+body.stub #main aside.info a.stub:visited,
+body #main div.stub a.stub:visited,
+body.stub div.info a.stub:visited,
+body #main aside.stub a.stub:visited:hover,
+body.stub #main aside.info a.stub:visited:hover,
+body #main div.stub a.stub:visited:hover,
+body.stub div.info a.stub:visited:hover {
+  color: #006363;
+}
+body span.stub,
+body.stub span.info,
+body strong.stub,
+body.stub strong.info,
+body em.stub,
+body.stub em.info {
+  color: #ff7400;
 }
 body.caution {
   background: #ff0;
@@ -1355,9 +1404,38 @@ body.caution ::selection {
   background-color: #ffff73;
   color: #000;
 }
-body.caution div.cap {
+body.caution #main-container {
+  border-color: #a6a600;
+}
+body.caution #meditating {
+  background-color: #fff;
+}
+body.caution #main form.meditate {
+  background-color: #fff;
+}
+body.caution #main p a.meditation,
+body.caution #main form.meditate button.proceed {
   background: #ff0;
+  border-color: #a6a600;
   color: #000;
+}
+body.caution #main p a.meditation:hover,
+body.caution #main form.meditate button.proceed:hover {
+  background: #a6a600;
+  border-color: #ff0;
+  color: #a6a600;
+}
+body.caution #main p a.meditation:active,
+body.caution #main form.meditate button.proceed:active {
+  border-color: #ff0;
+  color: #ff0;
+}
+body.caution #main form.meditate textarea {
+  border-color: #eee;
+}
+body.caution #main form.meditate textarea:focus,
+body.caution #main form.meditate button:focus {
+  outline-color: #ff0;
 }
 body.caution #header h1 a {
   color: #000;
@@ -1376,79 +1454,28 @@ body.caution #header .definition li {
 body.caution #header .pronunciation {
   color: #a6a600;
 }
-body.caution div.content article a {
-  color: #ff0;
-}
-body.caution div.content article a:active {
-  color: #ffff40;
-}
-body.caution div.content article a:visited {
-  color: #a6a600;
-}
-body.caution div.content article a:hover {
-  color: #ff0;
-}
-body.caution div.content article a.stub {
+body.caution #main a.stub {
   color: #3914af;
 }
-body.caution div.content article a.stub:visited {
+body.caution #main a.stub:visited {
   color: #200772;
 }
-body.caution div.content article a.stub.missing {
+body.caution #main a.stub.missing {
   background: #3914af;
   color: #ff0;
 }
-body.caution #meditating {
-  background-color: #fff;
-}
-body.caution #main article form.meditate {
-  background-color: #fff;
-}
-body.caution #main article p a.meditation,
-body.caution #main article form.meditate button.proceed {
-  background: #ff0;
-  border-color: #a6a600;
-  color: #000;
-}
-body.caution #main article p a.meditation:hover,
-body.caution #main article form.meditate button.proceed:hover {
-  background: #a6a600;
-  border-color: #ff0;
-  color: #a6a600;
-}
-body.caution #main article p a.meditation:active,
-body.caution #main article form.meditate button.proceed:active {
-  border-color: #ff0;
-  color: #ff0;
-}
-body.caution #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.caution #main article form.meditate textarea:focus,
-body.caution #main article form.meditate button:focus {
-  outline-color: #ff0;
-}
-body.caution div.nav h1,
-body.caution div.nav h2,
-body.caution div.nav h3,
-body.caution div.nav h4,
-body.caution div.nav h5,
-body.caution div.nav h6 {
-  color: #a6a600;
-}
-body.caution div.nav aside {
-  background: #ff0;
-  border-color: #a6a600;
-  color: #000;
-}
-body.caution div.nav a {
-  color: #200772;
-}
-body.caution div.nav a:active {
+body.caution #main div.nav h3 {
   color: #3914af;
 }
-body.caution div.nav a:visited {
+body.caution #main div.nav aside.info a {
+  color: #000;
+  text-decoration: none;
+}
+body.caution #main div.nav aside.info a:visited {
   color: #a6a600;
+}
+body.caution #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.caution footer h1.logo a,
 body.caution footer a.author {
@@ -1456,85 +1483,114 @@ body.caution footer a.author {
 }
 body.caution footer aside h3 {
   color: #3914af;
+  text-shadow: 1px 1px 1px #a6a600;
 }
-body.caution footer aside a {
+body.caution footer aside li {
   color: #a6a600;
 }
-span.caution,
-strong.caution,
-em.caution {
-  color: #ff0;
+body.caution footer aside a {
+  color: #000;
+  text-decoration: none;
 }
-body.caution span.info,
-body.caution strong.info,
-body.caution em.info {
-  color: #ff0;
+body.caution footer aside a:visited {
+  color: #a6a600;
 }
-#main aside.caution,
-#main div.caution,
+body.caution footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.caution,
 body.caution #main aside.info,
+body #main div.caution,
 body.caution div.info {
   background: #ff0;
   border-color: #a6a600;
   color: #000;
 }
-#main aside.caution h1,
-#main div.caution h1,
+body #main aside.caution h1,
 body.caution #main aside.info h1,
+body #main div.caution h1,
 body.caution div.info h1,
-#main aside.caution h2,
-#main div.caution h2,
+body #main aside.caution h2,
 body.caution #main aside.info h2,
+body #main div.caution h2,
 body.caution div.info h2,
-#main aside.caution h3,
-#main div.caution h3,
+body #main aside.caution h3,
 body.caution #main aside.info h3,
+body #main div.caution h3,
 body.caution div.info h3,
-#main aside.caution h4,
-#main div.caution h4,
+body #main aside.caution h4,
 body.caution #main aside.info h4,
+body #main div.caution h4,
 body.caution div.info h4,
-#main aside.caution h5,
-#main div.caution h5,
+body #main aside.caution h5,
 body.caution #main aside.info h5,
+body #main div.caution h5,
 body.caution div.info h5,
-#main aside.caution h6,
-#main div.caution h6,
+body #main aside.caution h6,
 body.caution #main aside.info h6,
+body #main div.caution h6,
 body.caution div.info h6 {
   color: #200772;
 }
-#main aside.caution a,
-#main div.caution a,
+body #main aside.caution .MathJax,
+body.caution #main aside.info .MathJax,
+body #main div.caution .MathJax,
+body.caution div.info .MathJax {
+  color: #000 !important;
+}
+body #main aside.caution a,
 body.caution #main aside.info a,
+body #main div.caution a,
 body.caution div.info a {
-  color: #a6a600;
+  color: #000;
   text-shadow: 1px 1px 1px #ffff40;
 }
-#main aside.caution a:visited,
-#main div.caution a:visited,
-body.caution #main aside.info a:visited,
-body.caution div.info a:visited {
+body #main aside.caution a:hover,
+body.caution #main aside.info a:hover,
+body #main div.caution a:hover,
+body.caution div.info a:hover {
   color: #000;
 }
-#main aside.caution a.stub,
-#main div.caution a.stub,
+body #main aside.caution a:visited,
+body.caution #main aside.info a:visited,
+body #main div.caution a:visited,
+body.caution div.info a:visited,
+body #main aside.caution a:visited:hover,
+body.caution #main aside.info a:visited:hover,
+body #main div.caution a:visited:hover,
+body.caution div.info a:visited:hover {
+  color: #a6a600;
+}
+body #main aside.caution a.stub,
 body.caution #main aside.info a.stub,
+body #main div.caution a.stub,
 body.caution div.info a.stub {
   color: #3914af;
 }
-#main aside.caution a.stub.missing,
-#main div.caution a.stub.missing,
+body #main aside.caution a.stub.missing,
 body.caution #main aside.info a.stub.missing,
+body #main div.caution a.stub.missing,
 body.caution div.info a.stub.missing {
   background: #3914af;
   color: #ff0;
 }
-#main aside.caution .MathJax,
-#main div.caution .MathJax,
-body.caution #main aside.info .MathJax,
-body.caution div.info .MathJax {
-  color: #000 !important;
+body #main aside.caution a.stub:visited,
+body.caution #main aside.info a.stub:visited,
+body #main div.caution a.stub:visited,
+body.caution div.info a.stub:visited,
+body #main aside.caution a.stub:visited:hover,
+body.caution #main aside.info a.stub:visited:hover,
+body #main div.caution a.stub:visited:hover,
+body.caution div.info a.stub:visited:hover {
+  color: #200772;
+}
+body span.caution,
+body.caution span.info,
+body strong.caution,
+body.caution strong.info,
+body em.caution,
+body.caution em.info {
+  color: #ff0;
 }
 body.define {
   background: #0c0;
@@ -1544,9 +1600,38 @@ body.define ::selection {
   background-color: #67e667;
   color: #000;
 }
-body.define div.cap {
+body.define #main-container {
+  border-color: #008500;
+}
+body.define #meditating {
+  background-color: #fff;
+}
+body.define #main form.meditate {
+  background-color: #fff;
+}
+body.define #main p a.meditation,
+body.define #main form.meditate button.proceed {
   background: #0c0;
+  border-color: #008500;
   color: #000;
+}
+body.define #main p a.meditation:hover,
+body.define #main form.meditate button.proceed:hover {
+  background: #008500;
+  border-color: #0c0;
+  color: #008500;
+}
+body.define #main p a.meditation:active,
+body.define #main form.meditate button.proceed:active {
+  border-color: #0c0;
+  color: #0c0;
+}
+body.define #main form.meditate textarea {
+  border-color: #eee;
+}
+body.define #main form.meditate textarea:focus,
+body.define #main form.meditate button:focus {
+  outline-color: #0c0;
 }
 body.define #header h1 a {
   color: #000;
@@ -1565,79 +1650,28 @@ body.define #header .definition li {
 body.define #header .pronunciation {
   color: #008500;
 }
-body.define div.content article a {
-  color: #0c0;
-}
-body.define div.content article a:active {
-  color: #39e639;
-}
-body.define div.content article a:visited {
-  color: #008500;
-}
-body.define div.content article a:hover {
-  color: #0c0;
-}
-body.define div.content article a.stub {
+body.define #main a.stub {
   color: #7109aa;
 }
-body.define div.content article a.stub:visited {
+body.define #main a.stub:visited {
   color: #48036f;
 }
-body.define div.content article a.stub.missing {
+body.define #main a.stub.missing {
   background: #7109aa;
   color: #0c0;
 }
-body.define #meditating {
-  background-color: #fff;
-}
-body.define #main article form.meditate {
-  background-color: #fff;
-}
-body.define #main article p a.meditation,
-body.define #main article form.meditate button.proceed {
-  background: #0c0;
-  border-color: #008500;
-  color: #000;
-}
-body.define #main article p a.meditation:hover,
-body.define #main article form.meditate button.proceed:hover {
-  background: #008500;
-  border-color: #0c0;
-  color: #008500;
-}
-body.define #main article p a.meditation:active,
-body.define #main article form.meditate button.proceed:active {
-  border-color: #0c0;
-  color: #0c0;
-}
-body.define #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.define #main article form.meditate textarea:focus,
-body.define #main article form.meditate button:focus {
-  outline-color: #0c0;
-}
-body.define div.nav h1,
-body.define div.nav h2,
-body.define div.nav h3,
-body.define div.nav h4,
-body.define div.nav h5,
-body.define div.nav h6 {
-  color: #008500;
-}
-body.define div.nav aside {
-  background: #0c0;
-  border-color: #008500;
-  color: #000;
-}
-body.define div.nav a {
-  color: #48036f;
-}
-body.define div.nav a:active {
+body.define #main div.nav h3 {
   color: #7109aa;
 }
-body.define div.nav a:visited {
+body.define #main div.nav aside.info a {
+  color: #000;
+  text-decoration: none;
+}
+body.define #main div.nav aside.info a:visited {
   color: #008500;
+}
+body.define #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.define footer h1.logo a,
 body.define footer a.author {
@@ -1645,85 +1679,114 @@ body.define footer a.author {
 }
 body.define footer aside h3 {
   color: #7109aa;
+  text-shadow: 1px 1px 1px #008500;
 }
-body.define footer aside a {
+body.define footer aside li {
   color: #008500;
 }
-span.define,
-strong.define,
-em.define {
-  color: #0c0;
+body.define footer aside a {
+  color: #000;
+  text-decoration: none;
 }
-body.define span.info,
-body.define strong.info,
-body.define em.info {
-  color: #0c0;
+body.define footer aside a:visited {
+  color: #008500;
 }
-#main aside.define,
-#main div.define,
+body.define footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.define,
 body.define #main aside.info,
+body #main div.define,
 body.define div.info {
   background: #0c0;
   border-color: #008500;
   color: #000;
 }
-#main aside.define h1,
-#main div.define h1,
+body #main aside.define h1,
 body.define #main aside.info h1,
+body #main div.define h1,
 body.define div.info h1,
-#main aside.define h2,
-#main div.define h2,
+body #main aside.define h2,
 body.define #main aside.info h2,
+body #main div.define h2,
 body.define div.info h2,
-#main aside.define h3,
-#main div.define h3,
+body #main aside.define h3,
 body.define #main aside.info h3,
+body #main div.define h3,
 body.define div.info h3,
-#main aside.define h4,
-#main div.define h4,
+body #main aside.define h4,
 body.define #main aside.info h4,
+body #main div.define h4,
 body.define div.info h4,
-#main aside.define h5,
-#main div.define h5,
+body #main aside.define h5,
 body.define #main aside.info h5,
+body #main div.define h5,
 body.define div.info h5,
-#main aside.define h6,
-#main div.define h6,
+body #main aside.define h6,
 body.define #main aside.info h6,
+body #main div.define h6,
 body.define div.info h6 {
   color: #48036f;
 }
-#main aside.define a,
-#main div.define a,
+body #main aside.define .MathJax,
+body.define #main aside.info .MathJax,
+body #main div.define .MathJax,
+body.define div.info .MathJax {
+  color: #000 !important;
+}
+body #main aside.define a,
 body.define #main aside.info a,
+body #main div.define a,
 body.define div.info a {
-  color: #008500;
+  color: #000;
   text-shadow: 1px 1px 1px #39e639;
 }
-#main aside.define a:visited,
-#main div.define a:visited,
-body.define #main aside.info a:visited,
-body.define div.info a:visited {
+body #main aside.define a:hover,
+body.define #main aside.info a:hover,
+body #main div.define a:hover,
+body.define div.info a:hover {
   color: #000;
 }
-#main aside.define a.stub,
-#main div.define a.stub,
+body #main aside.define a:visited,
+body.define #main aside.info a:visited,
+body #main div.define a:visited,
+body.define div.info a:visited,
+body #main aside.define a:visited:hover,
+body.define #main aside.info a:visited:hover,
+body #main div.define a:visited:hover,
+body.define div.info a:visited:hover {
+  color: #008500;
+}
+body #main aside.define a.stub,
 body.define #main aside.info a.stub,
+body #main div.define a.stub,
 body.define div.info a.stub {
   color: #7109aa;
 }
-#main aside.define a.stub.missing,
-#main div.define a.stub.missing,
+body #main aside.define a.stub.missing,
 body.define #main aside.info a.stub.missing,
+body #main div.define a.stub.missing,
 body.define div.info a.stub.missing {
   background: #7109aa;
   color: #0c0;
 }
-#main aside.define .MathJax,
-#main div.define .MathJax,
-body.define #main aside.info .MathJax,
-body.define div.info .MathJax {
-  color: #000 !important;
+body #main aside.define a.stub:visited,
+body.define #main aside.info a.stub:visited,
+body #main div.define a.stub:visited,
+body.define div.info a.stub:visited,
+body #main aside.define a.stub:visited:hover,
+body.define #main aside.info a.stub:visited:hover,
+body #main div.define a.stub:visited:hover,
+body.define div.info a.stub:visited:hover {
+  color: #48036f;
+}
+body span.define,
+body.define span.info,
+body strong.define,
+body.define strong.info,
+body em.define,
+body.define em.info {
+  color: #0c0;
 }
 body.computer {
   background: #002b36;
@@ -1733,9 +1796,38 @@ body.computer ::selection {
   background-color: #268bd2;
   color: #839496;
 }
-body.computer div.cap {
+body.computer #main-container {
+  border-color: #586e75;
+}
+body.computer #meditating {
+  background-color: #fff;
+}
+body.computer #main form.meditate {
+  background-color: #fff;
+}
+body.computer #main p a.meditation,
+body.computer #main form.meditate button.proceed {
   background: #002b36;
+  border-color: #586e75;
   color: #839496;
+}
+body.computer #main p a.meditation:hover,
+body.computer #main form.meditate button.proceed:hover {
+  background: #586e75;
+  border-color: #002b36;
+  color: #268bd2;
+}
+body.computer #main p a.meditation:active,
+body.computer #main form.meditate button.proceed:active {
+  border-color: #002b36;
+  color: #002b36;
+}
+body.computer #main form.meditate textarea {
+  border-color: #eee;
+}
+body.computer #main form.meditate textarea:focus,
+body.computer #main form.meditate button:focus {
+  outline-color: #002b36;
 }
 body.computer #header h1 a {
   color: #839496;
@@ -1754,79 +1846,28 @@ body.computer #header .definition li {
 body.computer #header .pronunciation {
   color: #586e75;
 }
-body.computer div.content article a {
-  color: #002b36;
-}
-body.computer div.content article a:active {
-  color: #2aa198;
-}
-body.computer div.content article a:visited {
-  color: #586e75;
-}
-body.computer div.content article a:hover {
-  color: #002b36;
-}
-body.computer div.content article a.stub {
+body.computer #main a.stub {
   color: #dc322f;
 }
-body.computer div.content article a.stub:visited {
+body.computer #main a.stub:visited {
   color: #93a1a1;
 }
-body.computer div.content article a.stub.missing {
+body.computer #main a.stub.missing {
   background: #dc322f;
   color: #002b36;
 }
-body.computer #meditating {
-  background-color: #fff;
-}
-body.computer #main article form.meditate {
-  background-color: #fff;
-}
-body.computer #main article p a.meditation,
-body.computer #main article form.meditate button.proceed {
-  background: #002b36;
-  border-color: #586e75;
-  color: #839496;
-}
-body.computer #main article p a.meditation:hover,
-body.computer #main article form.meditate button.proceed:hover {
-  background: #586e75;
-  border-color: #002b36;
-  color: #268bd2;
-}
-body.computer #main article p a.meditation:active,
-body.computer #main article form.meditate button.proceed:active {
-  border-color: #002b36;
-  color: #002b36;
-}
-body.computer #main article form.meditate textarea {
-  border-color: #eee;
-}
-body.computer #main article form.meditate textarea:focus,
-body.computer #main article form.meditate button:focus {
-  outline-color: #002b36;
-}
-body.computer div.nav h1,
-body.computer div.nav h2,
-body.computer div.nav h3,
-body.computer div.nav h4,
-body.computer div.nav h5,
-body.computer div.nav h6 {
-  color: #586e75;
-}
-body.computer div.nav aside {
-  background: #002b36;
-  border-color: #586e75;
-  color: #839496;
-}
-body.computer div.nav a {
-  color: #2aa198;
-}
-body.computer div.nav a:active {
+body.computer #main div.nav h3 {
   color: #dc322f;
 }
-body.computer div.nav a:visited {
+body.computer #main div.nav aside.info a {
+  color: #839496;
+  text-decoration: none;
+}
+body.computer #main div.nav aside.info a:visited {
   color: #268bd2;
+}
+body.computer #main div.nav aside.info a:hover {
+  text-decoration: underline;
 }
 body.computer footer h1.logo a,
 body.computer footer a.author {
@@ -1834,117 +1875,158 @@ body.computer footer a.author {
 }
 body.computer footer aside h3 {
   color: #dc322f;
+  text-shadow: 1px 1px 1px #586e75;
 }
-body.computer footer aside a {
+body.computer footer aside li {
   color: #268bd2;
 }
-span.computer,
-strong.computer,
-em.computer {
-  color: #002b36;
+body.computer footer aside a {
+  color: #839496;
+  text-decoration: none;
 }
-body.computer span.info,
-body.computer strong.info,
-body.computer em.info {
-  color: #002b36;
+body.computer footer aside a:visited {
+  color: #268bd2;
 }
-#main aside.computer,
-#main div.computer,
+body.computer footer aside a:hover {
+  text-decoration: underline;
+}
+body #main aside.computer,
 body.computer #main aside.info,
+body #main div.computer,
 body.computer div.info {
   background: #002b36;
   border-color: #586e75;
   color: #839496;
 }
-#main aside.computer h1,
-#main div.computer h1,
+body #main aside.computer h1,
 body.computer #main aside.info h1,
+body #main div.computer h1,
 body.computer div.info h1,
-#main aside.computer h2,
-#main div.computer h2,
+body #main aside.computer h2,
 body.computer #main aside.info h2,
+body #main div.computer h2,
 body.computer div.info h2,
-#main aside.computer h3,
-#main div.computer h3,
+body #main aside.computer h3,
 body.computer #main aside.info h3,
+body #main div.computer h3,
 body.computer div.info h3,
-#main aside.computer h4,
-#main div.computer h4,
+body #main aside.computer h4,
 body.computer #main aside.info h4,
+body #main div.computer h4,
 body.computer div.info h4,
-#main aside.computer h5,
-#main div.computer h5,
+body #main aside.computer h5,
 body.computer #main aside.info h5,
+body #main div.computer h5,
 body.computer div.info h5,
-#main aside.computer h6,
-#main div.computer h6,
+body #main aside.computer h6,
 body.computer #main aside.info h6,
+body #main div.computer h6,
 body.computer div.info h6 {
   color: #2aa198;
 }
-#main aside.computer a,
-#main div.computer a,
+body #main aside.computer .MathJax,
+body.computer #main aside.info .MathJax,
+body #main div.computer .MathJax,
+body.computer div.info .MathJax {
+  color: #839496 !important;
+}
+body #main aside.computer a,
 body.computer #main aside.info a,
+body #main div.computer a,
 body.computer div.info a {
-  color: #268bd2;
+  color: #839496;
   text-shadow: 1px 1px 1px #586e75;
 }
-#main aside.computer a:visited,
-#main div.computer a:visited,
-body.computer #main aside.info a:visited,
-body.computer div.info a:visited {
+body #main aside.computer a:hover,
+body.computer #main aside.info a:hover,
+body #main div.computer a:hover,
+body.computer div.info a:hover {
   color: #839496;
 }
-#main aside.computer a.stub,
-#main div.computer a.stub,
+body #main aside.computer a:visited,
+body.computer #main aside.info a:visited,
+body #main div.computer a:visited,
+body.computer div.info a:visited,
+body #main aside.computer a:visited:hover,
+body.computer #main aside.info a:visited:hover,
+body #main div.computer a:visited:hover,
+body.computer div.info a:visited:hover {
+  color: #268bd2;
+}
+body #main aside.computer a.stub,
 body.computer #main aside.info a.stub,
+body #main div.computer a.stub,
 body.computer div.info a.stub {
   color: #dc322f;
 }
-#main aside.computer a.stub.missing,
-#main div.computer a.stub.missing,
+body #main aside.computer a.stub.missing,
 body.computer #main aside.info a.stub.missing,
+body #main div.computer a.stub.missing,
 body.computer div.info a.stub.missing {
   background: #dc322f;
   color: #002b36;
 }
-#main aside.computer .MathJax,
-#main div.computer .MathJax,
-body.computer #main aside.info .MathJax,
-body.computer div.info .MathJax {
-  color: #839496 !important;
+body #main aside.computer a.stub:visited,
+body.computer #main aside.info a.stub:visited,
+body #main div.computer a.stub:visited,
+body.computer div.info a.stub:visited,
+body #main aside.computer a.stub:visited:hover,
+body.computer #main aside.info a.stub:visited:hover,
+body #main div.computer a.stub:visited:hover,
+body.computer div.info a.stub:visited:hover {
+  color: #2aa198;
+}
+body span.computer,
+body.computer span.info,
+body strong.computer,
+body.computer strong.info,
+body em.computer,
+body.computer em.info {
+  color: #002b36;
 }
 body.rant #header h1.title a {
   color: #fff;
 }
+body.rant #main a.stub,
+body.rant #main aside.info a.stub,
+body.rant #main div.info a.stub,
+body #main aside.rant a.stub,
+body #main div.rant a.stub {
+  color: #fa0;
+}
+body.rant #main a.stub:visited,
+body.rant #main aside.info a.stub:visited,
+body.rant #main div.info a.stub:visited,
+body #main aside.rant a.stub:visited,
+body #main div.rant a.stub:visited {
+  color: #ffd073;
+}
 span.caution,
-strong.caution,
-em.caution,
 body.caution span.info,
+strong.caution,
 body.caution strong.info,
+em.caution,
 body.caution em.info {
   color: #a6a600;
 }
 span.rules,
-strong.rules,
-em.rules,
 body.rules span.info,
+strong.rules,
 body.rules strong.info,
+em.rules,
 body.rules em.info {
   color: #4671d5;
 }
 span.computer,
-strong.computer,
-em.computer,
 body.computer span.info,
+strong.computer,
 body.computer strong.info,
+em.computer,
 body.computer em.info,
 #main aside.computer,
-#main div.computer,
 body.computer #main aside.info,
+#main div.computer,
 body.computer div.info,
-body.computer div.nav aside a,
-body.computer div.nav h3,
 body.computer #header .definition,
 body.computer #main article > p a {
   font-family: 'PT Mono', monospace;
@@ -1962,18 +2044,21 @@ body.computer #main article > p a:visited {
   color: #268bd2;
 }
 body #main aside.computer a,
-body #main div.computer a,
 html body.computer #main aside.info a,
+body #main div.computer a,
 html body.computer div.info a {
   text-shadow: 1px 1px 1px #002b36;
 }
-body.simplifience div.content article a.stub {
-  color: #bfbf30;
-}
-body.knowledge div.content article a.stub {
+body.simplifience #main a.stub {
   color: #fa0;
 }
-body.knowledge div.content article a.stub:visited {
+body.simplifience #main a.stub:visited {
+  color: #a66f00;
+}
+body.knowledge #main a.stub {
+  color: #fa0;
+}
+body.knowledge #main a.stub:visited {
   color: #a66f00;
 }
 aside.define em:first-of-type:after {
@@ -2098,9 +2183,13 @@ body {
   width: 90%;
   margin: 0 5%;
 }
-div.content {
+#main-container {
   color: #000;
   background: #fff;
+  border-width: 0;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-style: solid;
 }
 div.cap {
   text-align: center;
@@ -2146,10 +2235,18 @@ div.cap footer aside {
   border-width: 0;
 }
 div.cap footer aside h3 {
+  margin-top: 1em;
   margin-bottom: 0.5em;
 }
-div.cap footer aside ul {
+div.cap footer aside ul,
+div.cap footer aside ol {
   text-align: left;
+}
+div.cap footer aside ol {
+  list-style: none;
+}
+div.cap footer aside ol li.current {
+  list-style-type: disc;
 }
 div.cap footer h1.logo,
 div.cap footer a.author {
@@ -2215,10 +2312,10 @@ div.cap footer .logo a:hover {
   margin: 0 auto;
   max-width: 100%;
 }
-#main article a {
+#main a {
   text-decoration: underline;
 }
-#main article a:hover {
+#main a:hover {
   text-decoration: none;
 }
 iframe {
@@ -2243,7 +2340,7 @@ div.define,
 div.computer {
   padding: 0.75em 1.5em;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   margin-bottom: 0.75em;
   overflow: auto;
 }
@@ -2286,28 +2383,25 @@ div.computer ol {
   margin: 0;
   padding: 0;
 }
-div.nav {
+#main div.nav {
   text-align: right;
 }
-div.nav h3 {
+#main div.nav h3 {
   margin: 0;
   font-size: 16px;
-  opacity: 0.2;
+  cursor: default;
 }
-div.nav div.block:hover h3 {
-  opacity: 1;
-}
-div.nav ul,
-div.nav ol {
+#main div.nav aside ul {
   font-family: 'Marko One', serif;
   text-align: left;
+  margin: 0;
 }
-div.nav a {
+#main div.nav a {
   font-size: 19.2px;
   line-height: 1.7999999999999998em;
   text-decoration: none;
 }
-div.nav a:hover {
+#main div.nav a:hover {
   text-decoration: underline;
 }
 #main > article > div.asides > aside {

@@ -1,169 +1,189 @@
 @import '_colors'
 
-commentary(class, color, complement)
-	body.{class}
-		background $pure(color)
-		color $text(color)
-
-		::selection
+theme-body(color, complement)
+	background $pure(color)
+	color $text(color)
+	::selection
 			background-color $pale(color)
 			color $text(color)
+	#main-container
+		border-color $dark(color)
 
-		div.cap
-			background $pure(color)
+theme-header(color, complement)
+	h1 a
+		color $text(color)
+		&:visited, &:active, &:hover
 			color $text(color)
+	.definition
+		color $contrast(color)
+		li
+			color $text(color)
+	.pronunciation
+		color $dark(color)
 
-		#header
-			h1 a
-				color $text(color)
-				&:visited, &:active, &:hover
-					color $text(color)
-			.definition
-				color $contrast(color)
-				li
-					color $text(color)
-			.pronunciation
-				color $dark(color)
-
-		div.content article a
+theme-links(color, complement)
+	&.stub
+		color $pure(complement)
+		&:visited
+			color $dark(complement)
+		&.missing
+			background $pure(complement)
 			color $pure(color)
-			&:active
-				color $light(color)
-			&:visited
-				color $dark(color)
-			&:hover
-				color $pure(color)
-			&.stub
-				color $pure(complement)
-				&:visited
-					color $dark(complement)
-				&.missing
-					background $pure(complement)
-					color $pure(color)
 
-		#meditating
-			background-color white
-		#main article form.meditate
-			background-color white
+theme-nav(color, complement)
+	h3
+		color $pure(complement)
+	aside.info a
+		color $text(color)
+		text-decoration none
+		&:visited
+			color $contrast(color)
+		&:hover
+			text-decoration underline
 
-		#main article p a.meditation, #main article form.meditate button.proceed
-			background $pure(color)
-			border-color $dark(color)
+theme-notice(color, complement)
+	color $pure(color)
+
+theme-commentary(color, complement)
+	background $pure(color)
+	border-color $dark(color)
+	color $text(color)
+	h1, h2, h3, h4, h5, h6
+		color $contrast(color, complement)
+	.MathJax
+		color $text(color) !important
+	a
+		color $text(color)
+		&:hover
 			color $text(color)
-			&:hover
-				background $dark(color)
-				border-color $pure(color)
-				color $contrast(color)
-			&:active
-				border-color $pure(color)
+		if $isdark(color)
+			text-shadow 1px 1px 1px $dark(color)
+		else
+			text-shadow 1px 1px 1px $light(color)
+		&:visited, &:visited:hover
+			color $contrast(color)
+		&.stub
+			color $pure(complement)
+			&.missing
+				background $pure(complement)
 				color $pure(color)
-
-		#main article form.meditate
-			textarea
-				border-color #EEE
-			textarea, button
-				&:focus
-					outline-color $pure(color)
-
-		div.nav
-			h1, h2, h3, h4, h5, h6
-				color $dark(color)
-			aside
-				background $pure(color)
-				border-color $dark(color)
-				color $text(color)
-			a
+			&:visited, &:visited:hover
 				color $contrast(color, complement)
-				&:active
-					color $pure(complement)
-				&:visited
-					color $contrast(color)
 
-		footer h1.logo a, footer a.author
-			color $dark(color)
-
-		footer aside
-			h3
-				color $pure(complement)
-			a
+theme-footer(color, complement)
+	h1.logo a, a.author
+		color $dark(color)
+	aside
+		h3
+			color $pure(complement)
+			text-shadow 1px 1px 1px $dark(color, complement)
+		li
+			color $contrast(color)
+		a
+			color $text(color)
+			text-decoration none
+			&:visited
 				color $contrast(color)
+			&:hover
+				text-decoration underline
 
-	span.{class}, strong.{class}, em.{class}
-		color $pure(color)
-	body.{class}
-		span.info, strong.info, em.info
-			color $pure(color)
-
-	#main aside.{class},
-	#main div.{class},
-	body.{class} #main aside.info,
-	body.{class} div.info
+theme-meditation(color, complement)
+	#meditating
+		background-color white
+	#main form.meditate
+		background-color white
+	#main p a.meditation, #main form.meditate button.proceed
 		background $pure(color)
 		border-color $dark(color)
 		color $text(color)
-		h1, h2, h3, h4, h5, h6
-			color $contrast(color, complement)
-		a
+		&:hover
+			background $dark(color)
+			border-color $pure(color)
 			color $contrast(color)
-			if $isdark(color)
-				text-shadow 1px 1px 1px $dark(color)
-			else
-				text-shadow 1px 1px 1px $light(color)
-			&:visited
-				color $text(color)
-			&.stub
-				color $pure(complement)
-				&.missing
-					background $pure(complement)
-					color $pure(color)
-		.MathJax
-			color $text(color) !important
+		&:active
+			border-color $pure(color)
+			color $pure(color)
+	#main form.meditate
+		textarea
+			border-color #EEE
+		textarea, button
+			&:focus
+				outline-color $pure(color)
+
+theme(class, color, complement)
+	body.{class}
+		theme-body(color, complement)
+		theme-meditation(color, complement)
+		#header
+			theme-header(color, complement)
+		#main a
+			theme-links(color, complement)
+		#main div.nav
+			theme-nav(color, complement)
+		footer
+			theme-footer(color, complement)
+	body #main aside.{class}, body.{class} #main aside.info,
+	body #main div.{class}, body.{class} div.info
+		theme-commentary(color, complement)
+	body span.{class}, body.{class} span.info,
+	body strong.{class}, body.{class} strong.info,
+	body em.{class}, body.{class} em.info
+		theme-notice(color, complement)
 
 main = $teal
 complement = $orange
 
 // Color themes
-commentary('main', $teal, $orange)
-commentary('rules', $blue, $gold)
-commentary('rigor', $navy, $amber)
-commentary('simplifience', $violet, $yellow)
-commentary('knowledge', $magenta, $amber)
-commentary('rant', $red, $amber)
-commentary('stub', $orange, $teal)
-commentary('caution', $yellow, $navy)
-commentary('define', $green, $violet)
-commentary('computer', $solarized, $solarized-hi)
+theme('main', $teal, $orange)
+theme('rules', $blue, $gold)
+theme('rigor', $navy, $amber)
+theme('simplifience', $violet, $yellow)
+theme('knowledge', $magenta, $amber)
+theme('rant', $red, $amber)
+theme('stub', $orange, $teal)
+theme('caution', $yellow, $navy)
+theme('define', $green, $violet)
+theme('computer', $solarized, $solarized-hi)
 
 // Red logo is white.
 body.rant #header h1.title a
 	color white
 
+// Red stubs look bad.
+body.rant #main a.stub
+body.rant #main aside.info a.stub
+body.rant #main div.info a.stub
+body #main aside.rant a.stub
+body #main div.rant a.stub
+	color $pure($gold)
+	&:visited
+		color $pale($gold)
 
-// Yellow is too light.
-span.caution, strong.caution, em.caution
-body.caution span.info, body.caution strong.info, body.caution em.info
+
+// Yellow text is too light.
+span.caution, body.caution span.info,
+strong.caution, body.caution strong.info,
+em.caution, body.caution em.info
 	color $dark($yellow)
 
 
-// Blue is too dark.
-span.rules, strong.rules, em.rules,
-body.rules span.info, body.rules strong.info, body.rules em.info
+// Blue text is too dark.
+span.rules, body.rules span.info,
+strong.rules, body.rules strong.info,
+em.rules, body.rules em.info
 	color $light($blue)
 
-// Computer is monospaced.
-span.computer, strong.computer, em.computer,
-body.computer span.info,
-body.computer strong.info,
-body.computer em.info,
-#main aside.computer,
-#main div.computer,
-body.computer #main aside.info,
-body.computer div.info,
-body.computer div.nav aside a,
-body.computer div.nav h3,
+// Computer text is monospaced.
+span.computer, body.computer span.info,
+strong.computer, body.computer strong.info,
+em.computer, body.computer em.info
+#main aside.computer, body.computer #main aside.info,
+#main div.computer, body.computer div.info,
 body.computer #header .definition,
 body.computer #main article > p a
 	font-family 'PT Mono', monospace
+
+// Computer stubs are red.
 body.computer #main article > p a
 	color $pale($solarized-hi)
 	&.stub
@@ -172,27 +192,26 @@ body.computer #main article > p a
 			color $light($solarized-hi)
 	&:visited
 		color $pale($solarized)
-body #main aside.computer,
-body #main div.computer,
-html body.computer #main aside.info,
-html body.computer div.info
+
+// Computer text shadow is gray.
+body #main aside.computer, html body.computer #main aside.info,
+body #main div.computer, html body.computer div.info
 	a
 		text-shadow 1px 1px 1px $pure($solarized)
 
-
-// Simplifience unvisited stub is too light.
-body.simplifience div.content article a.stub
-	color $flat($yellow)
-
-
-// Science unvisited stub is too light.
-body.knowledge div.content article a.stub
+// Simplifience unvisited stubs are too light.
+body.simplifience #main a.stub
 	color $pure($gold)
 	&:visited
 		color $dark($gold)
 
+// Science unvisited stubs are too light.
+body.knowledge #main a.stub
+	color $pure($gold)
+	&:visited
+		color $dark($gold)
 
-// Define has a line break after the first <em>.
+// Definitions have a line break after the first <em>.
 aside.define
 	em:first-of-type:after
 		content "\a"

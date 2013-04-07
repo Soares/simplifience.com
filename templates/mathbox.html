@@ -12,7 +12,7 @@
 		DomReady.ready(function() {
 			ThreeBox.preload(
 				[ '/shaders/snippets.glsl.html' ],
-				function () { {{ content }} }
+				function () { {% block content %}{% endblock %} }
 			);
 		});
 	  </script>

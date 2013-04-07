@@ -1,64 +1,72 @@
-{% extends "root.html" %}
+{% extends 'base.html' %}
 {% set styles = ['post'] %}
 {% if stub %}{% set type = 'stub' %}{% endif %}
 
-{% block header %}
-<h1 class="title" title="Simplifience">
-  <a href="/">{{ title }}</a>
-</h1>
-{% endblock header %}
+{% block body %}
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		{% block header %}
+		<h1 class="title" title="Simplifience">
+		  <a href="/">{{ title }}</a>
+		</h1>
+		{% endblock header %}
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		{% block main %}
+		<div id="meditating"></div>
+			<article>
+				{% if stub %}
+				<section id="stub">
+					{{ stub }}
+				</section>
+				<aside class="stub">
+					This page is a stub!<br>Check back later for more conent.
+				</aside>
+				{% endif %}
+				{% if developing or (not stub) %}
+				{% block content %}
+				{% endblock %}
+				{% endif %}
+			</article>
 
-{% block main %}
-<div id="meditating"></div>
-	<article>
-		{% if stub %}
-			<section id="stub">
-				{{ stub }}
-			</section>
-			<aside class="stub">
-				This page is a stub!<br>Check back later for more conent.
-			</aside>
+			{% if fin %}
+			<span id="fin">๛</span>
+			{% endif %}
+		{% endblock main %}
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		{% block footer %}
+		{% for name, members in sequences.items() %}
+		<aside class="sequence">
+			<h3>{{ name }}</h3>
+			<ol>
+				{% for member in members %}
+					{% if member|post_is(url) %}
+					<li class="current">{{ url|post_sequence_name(name) }}</li>
+					{% else %}
+					<li>{{ member|post_anchor(member|post_sequence_name(name), here=True) }}</li>
+					{% endif %}
+				{% endfor %}
+			</ol>
+		</aside>
+		{% endfor %}
+		{% if related %}
+		<aside class="related">
+			<h3>Related</h3>
+			<ul>
+				{% for link in related %}
+				<li>{{ link|post_anchor }}</li>
+				{% endfor %}
+			</ul>
+		</aside>
 		{% endif %}
-		{% if developing or (not stub) %}
-			{% block content %}
-			{% endblock %}
-		{% endif %}
-	</article>
-
-	{% if fin %}
-	<span id="fin">๛</span>
-	{% endif %}
-{% endblock main %}
-
-{% block footer %}
-{% for name, members in sequences.items() %}
-  <aside class="sequence">
-    <h3>{{ name }}</h3>
-    <ul>
-      {% for member in members %}
-        <li>
-          {% if member|post_is(url) %}
-            <span class="this">{{ title }}</span>
-          {% else %}
-            {{ member|post_anchor }}
-          {% endif %}
-      {% endfor %}
-    </ul>
-  </aside>
-{% endfor %}
-
-{% if related %}
-  <aside class="related">
-    <h3>Related</h3>
-    <ul>
-      {% for link in related %}
-      <li>{{ link|post_anchor }}</li>
-      {% endfor %}
-    </ul>
-  </aside>
-{% endif %}
-
-<h1 class="logo" title="Simplifience n. \ˈsim-plə-ˌfīən(t)s\ Math & science less the accumulated cruft of history.">
-  <a href="/">Simplifience</a>
-</h1>
-{% endblock footer %}
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		{% endblock footer %}
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+{% endblock body %}

@@ -18,9 +18,13 @@ html, body
 	width: 90%
 	margin: 0 5%
 
-div.content
+#main-container
 	color $text-color
 	background $background-color
+	border-width 0
+	border-top-width $border-width
+	border-bottom-width $border-width
+	border-style solid
 
 div.cap
 	text-align center
@@ -56,9 +60,14 @@ div.cap
 			float left
 			border-width 0
 			h3
+				margin-top 1em
 				margin-bottom .5em
-			ul
+			ul, ol
 				text-align left
+			ol
+				list-style none
+				li.current
+					list-style-type disc
 		h1.logo, a.author
 			float right
 			clear right
@@ -107,7 +116,7 @@ div.cap
 		display block
 		margin 0 auto
 		max-width 100%
-	article a
+	a
 		text-decoration underline
 		&:hover
 			text-decoration none
@@ -130,7 +139,7 @@ div.simplifience, div.knowledge, div.stub
 div.rant, div.caution, div.define, div.computer
 	padding $commentary-padding
 	border-style solid
-	border-width 2px
+	border-width $border-width
 	margin-bottom $line-margin
 	overflow auto
 	p:last-child
@@ -140,17 +149,16 @@ div.rant, div.caution, div.define, div.computer
 		margin 0
 		padding 0
 
-div.nav
+#main div.nav
 	text-align right
 	h3
 		margin 0
 		font-size: $text-size
-		opacity 0.2
-	div.block:hover h3
-		opacity 1
-	ul, ol
+		cursor default
+	aside ul
 		font-family $exciting
 		text-align left
+		margin 0
 	a
 		font-size $text-size * 1.2
 		line-height $line-size * 1.2

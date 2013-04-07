@@ -1,5 +1,6 @@
 ---
-title: Ground Rules
+title: Motivation
+sequence: Ground Rules
 ---
 
 Math and Science are wrong.

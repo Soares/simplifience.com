@@ -18,7 +18,7 @@ Instead of discussing "Mathematics" we'll break the term down into two primary c
 
 Take anything with patterns, anything with order, or anything with underlying structure. Figure out how it works. That's mathematics.
 
-@post[Fortunately for us]reality/totally-unpredictable, existence follows rules. There are properties of reality that are the same no matter where you're standing, no matter which way you're looking, and no matter what time it is.
+@post[Fortunately for us]reality/unordered, existence follows rules. There are properties of reality that are the same no matter where you're standing, no matter which way you're looking, and no matter what time it is.
 
 When we <span class="info" markdown="inline">write these things down</span>, when we tear aside the curtains and look at what actually makes reality tick: that's mathematics.
 
