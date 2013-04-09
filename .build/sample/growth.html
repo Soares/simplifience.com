@@ -1,0 +1,248 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Growth</title>
+	<script src="/js/modernizr.js"></script>
+	<meta name="author" content="So8res">
+	<meta name="description" content="Simplified science">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
+
+	
+	<link id="favicon" rel="icon" type="image/png" href="/icons/simplifience.png">
+</head>
+<body class="simplifience">
+	
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		
+		<h1 class="title" title="Simplifience">
+			<a href="/">Growth</a>
+		</h1>
+		
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		
+		<div id="meditating"></div>
+			<article>
+				
+				
+				<div class="caution">
+  <p>This is not a standard simplifience article. It provides minimal intuition for $e$ necessary to understand <a href="/sample/identity.html" target="_blank">Euler&#8217;s identity</a>. Both $e$ and Euler&#8217;s identity are <a href="/intro/contrives.html" target="_blank" class="stub">contrives</a>. As a <a href="/intro/taboo.html" target="_blank" class="stub">matter of policy</a> contrives are not mentioned.</p>
+
+  <p>This article is an exception to that rule. It&#8217;s part of an sequence designed to show how &#8220;difficult&#8221; math can be intuitive when taught from a different point of view. If you already have a good intuition for $e$ you&#8217;re encouraged to skip this article.</p>
+</div>
+
+<p>You&#8217;ve probably been taught that $e$ is $2.718&#8230;$ and you might know it has something to do with logarithms. This is a poor way to look at $e$. The true nature of $e$ is simple:</p>
+
+<aside class="info">
+  <p>We&#8217;ll move quickly through the derivation of $e$ This sequence is about $e^{\pi i}$, not $e$ itself. The topic of growth will be covered in much more detail in the <a href="/growth/intro.html" target="_blank" class="stub">Growth sequence</a>.</p>
+</aside>
+
+<blockquote>
+  <p>$e$ is growth.</p>
+</blockquote>
+
+<p>$p * e^x$ is math notation for figuring out how much stuff you get if you start with $p$ and grow it at rate $x$.</p>
+
+<p>Picture a colony of bacteria where each bacteria reproduces once a day. If you start with 100 bacteria and leave them for 10 days you&#8217;ll have $100 * e^{10} ≈$ <span class="info">$2,200,000$ bacteria</span>. That&#8217;s exponential growth for you.</p>
+
+<aside class="info">
+  <p>You&#8217;ll probably have fewer, actually: bacteria aren&#8217;t immortal and don&#8217;t really reproduce continuously.</p>
+</aside>
+
+<p>How do we calculate that growth? We start by imagining non-continuous growth. Consider, for example, your bank account. Say you get $5\%$ interest on your money, to keep things simple. This interest is paid out to you every year. If you start with $100$ dollars in the bank, at the end of the year you&#8217;ll have $105$ dollars.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Time</th>
+      <th style="text-align: right">$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">January 1st, Year 1</td>
+      <td style="text-align: right">$100$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">January 1st, Year 2</td>
+      <td style="text-align: right">$100 + (100 * 5\%) = 105$</td>
+    </tr>
+  </tbody>
+</table>
+
+<aside class="info">
+  <p>Notice that adding $5\%$ is the same as multiplying by $1.05$.</p>
+</aside>
+
+<p>Now imagine that the bank starts paying interest every six months instead of every year. What happens? Instead of adding 5% once, we add 2.5% twice throughout the year.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Time</th>
+      <th style="text-align: right">$</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">January 1st, Year 1</td>
+      <td style="text-align: right">$100$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">June 1st, Year 1</td>
+      <td style="text-align: right">$100 + (100 * 2.5\%) = 102.50$</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">January 1st, Year 2</td>
+      <td style="text-align: right">$102.50 + (102.50 * 2.5\%) = 105.06$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The second scenario makes more money. A <span class="info">whole 6¢</span>! We&#8217;re rich!</p>
+
+<aside class="info">
+  <p>6.25¢, if you count quarter-pennies.</p>
+</aside>
+
+<p>This happens because the second interest payment includes a little bit of interest on the 2.50$ added on June 1st.</p>
+
+<p>We can repeat this to get more money. If we pay out 1.25% interest four times a year we end up with $((((100 * 1.0125) * 1.0125) * 1.0125) * 1.0125) =$ <span class="info">$105.09$</span> dollars at the end of the year. That&#8217;s $100$ (the principle) multiplied by <span class="info">$1.0125$</span> four times (once for each quarter).</p>
+
+<aside class="info">
+  <p>Rounding down to the penny.</p>
+</aside>
+
+<aside class="info">
+  <p>$1.0125$ is $100\%$ of the principle $+ 1.25\%$ which is the quarterly interest.</p>
+
+  <p>$\displaystyle \frac{5\%\ per\ year}{4\ quarters\ per\ year} = 1.25\%\ per\ quarter$</p>
+</aside>
+
+<!--TODO: picture like the one in better explained.-->
+
+<p>If you generalize this to any principle and interest rate you can calculate the growth of your money with the formula $principle * (1 + \frac{rate}{n})^n$, where $n$ is the number of times you compound the money.</p>
+
+<p>$e$ is what happens when you compound your interest lots and lots of times (in other words, when you let $n$ get really really big). We denote this with the following formula:</p>
+
+<p>$\displaystyle p * e^x = \lim_{n \to \infty} p * (1 + \frac{x}{n})^n$</p>
+
+<p>In other words, you start with your principle $p$ and expand it by an <span class="info">$n^{th}$ fraction of your interest rate ($x$)</span>, $n$ times.</p>
+
+<p>$p * e^x$ is math shorthand for saying &#8220;start with $p$ and grow it for $x$&#8221;. To keep things clear, we&#8217;ll use the notation $(grow\ p\ x)$ instead. When you see $(grow\ p\ x)$ it means &#8220;however much stuff you have if you start with $p$ and grow it continuously <span class="info">for $x$</span>&#8221;.</p>
+
+<aside class="info">
+  <p>$x$ is of the form $rate * time$. If you grow 100 dollars continuously at $5\%$ a year then you&#8217;ll have $(grow\ 100\ 15\%) ≈ 116.18$ dollars after three years.</p>
+</aside>
+
+<p>Instead of writing $e^{\pi i}$ we write $e^{\pi i} = 1 * e^{\pi i} = (grow\ 1\ i)$, <a href="/sample/identity.html" target="_blank">whatever that means</a>.</p>
+				
+			</article>
+
+			
+		
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		
+		
+		<aside class="sequence">
+			<h3>Imaginary Powers</h3>
+			<ol>
+				
+					
+					<li>
+						<a href="/sample/identity.html">Euler's Identity</a>
+					</li>
+					
+				
+					
+					<li class="current">Growth</li>
+					
+				
+					
+					<li>
+						<a href="/sample/semicircle.html">Semi-circle</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/sample/imagine.html">Imagine</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/sample/aftermath.html">Aftermath</a>
+					</li>
+					
+				
+			</ol>
+		</aside>
+		
+		
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+
+
+	<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [
+					['$', '$'],
+					["\\(","\\)"]
+				]
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			}
+		});
+	</script>
+	
+	<script type="text/javascript" src="/js/raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/g.raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/util.js"></script>
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	
+	<script type="text/javascript" src="/js/post.js"></script>
+	
+	<script type="text/javascript" src="/js/waypoints.js"></script>
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30196171-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ?
+				'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>

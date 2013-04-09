@@ -10,7 +10,6 @@ stub: |
   Externally, you see only this.
 type: stub
 scripts:
-- js/jquery.js
 - '@coffee/theme'
 ---
 [Unvisited body link](/nowhere)<br/>

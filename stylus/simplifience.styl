@@ -118,8 +118,12 @@ div.cap
 		max-width 100%
 	a
 		text-decoration underline
+		.MathJax, .MathJax nobr, .MathJax span
+			text-decoration underline
 		&:hover
 			text-decoration none
+			.MathJax, .MathJax nobr, .MathJax span
+				text-decoration none
 
 iframe
 	border 0
@@ -134,7 +138,7 @@ p
 // pretty frequently and would rather save the typing those many times than
 // this once.
 aside,
-div.main, div.rules, div.rigor,
+div.info, div.rules, div.rigor,
 div.simplifience, div.knowledge, div.stub
 div.rant, div.caution, div.define, div.computer
 	padding $commentary-padding
@@ -177,7 +181,20 @@ hr.mark
 	background none
 	border none
 
+#main > article > table
+	td:first-child
+		border-right 1px solid black
+	td:not(:last-child), th:not(:last-child)
+		padding-right 1em
+	td:not(:first-child), th:not(:first-child)
+		padding-left 1em
+	margin-bottom $line-margin
+
 #stub
+	margin-bottom $line-margin
+
+#main svg
+	display block
 	margin-bottom $line-margin
 
 @import '_reactive'

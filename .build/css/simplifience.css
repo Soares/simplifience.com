@@ -82,13 +82,15 @@ body.main #header .definition li {
 body.main #header .pronunciation {
   color: #006363;
 }
-body.main #main a.stub {
+body.main #main a:active {
+  color: #006363;
+}
+body.main #main a.stub,
+body.main #main a.stub:visited {
   color: #ff7400;
 }
-body.main #main a.stub:visited {
-  color: #a64b00;
-}
-body.main #main a.stub.missing {
+body.main #main a.stub.missing,
+body.main #main a.stub:visited.missing {
   background: #ff7400;
   color: #099;
 }
@@ -132,6 +134,13 @@ body.main footer aside a.stub {
 body.main footer aside a.stub:visited {
   color: #ffb273;
 }
+body.main svg circle {
+  fill: #3cc;
+  stroke: #006363;
+}
+body.main svg circle.solid {
+  fill: #006363;
+}
 body #main aside.main,
 body.main #main aside.info,
 body #main div.main,
@@ -166,11 +175,11 @@ body #main div.main h6,
 body.main div.info h6 {
   color: #ffb273;
 }
-body #main aside.main .MathJax,
-body.main #main aside.info .MathJax,
-body #main div.main .MathJax,
-body.main div.info .MathJax {
-  color: #fff !important;
+body #main aside.main .MathJax span,
+body.main #main aside.info .MathJax span,
+body #main div.main .MathJax span,
+body.main div.info .MathJax span {
+  color: #fff;
 }
 body #main aside.main a,
 body.main #main aside.info a,
@@ -193,6 +202,16 @@ body #main aside.main a:visited:hover,
 body.main #main aside.info a:visited:hover,
 body #main div.main a:visited:hover,
 body.main div.info a:visited:hover {
+  color: #5ccccc;
+}
+body #main aside.main a:visited .MathJax span,
+body.main #main aside.info a:visited .MathJax span,
+body #main div.main a:visited .MathJax span,
+body.main div.info a:visited .MathJax span,
+body #main aside.main a:visited:hover .MathJax span,
+body.main #main aside.info a:visited:hover .MathJax span,
+body #main div.main a:visited:hover .MathJax span,
+body.main div.info a:visited:hover .MathJax span {
   color: #5ccccc;
 }
 body #main aside.main a.stub,
@@ -284,13 +303,15 @@ body.rules #header .definition li {
 body.rules #header .pronunciation {
   color: #06266f;
 }
-body.rules #main a.stub {
+body.rules #main a:active {
+  color: #06266f;
+}
+body.rules #main a.stub,
+body.rules #main a.stub:visited {
   color: #fa0;
 }
-body.rules #main a.stub:visited {
-  color: #a66f00;
-}
-body.rules #main a.stub.missing {
+body.rules #main a.stub.missing,
+body.rules #main a.stub:visited.missing {
   background: #fa0;
   color: #1240ab;
 }
@@ -334,6 +355,13 @@ body.rules footer aside a.stub {
 body.rules footer aside a.stub:visited {
   color: #ffd073;
 }
+body.rules svg circle {
+  fill: #4671d5;
+  stroke: #06266f;
+}
+body.rules svg circle.solid {
+  fill: #06266f;
+}
 body #main aside.rules,
 body.rules #main aside.info,
 body #main div.rules,
@@ -368,11 +396,11 @@ body #main div.rules h6,
 body.rules div.info h6 {
   color: #ffd073;
 }
-body #main aside.rules .MathJax,
-body.rules #main aside.info .MathJax,
-body #main div.rules .MathJax,
-body.rules div.info .MathJax {
-  color: #fff !important;
+body #main aside.rules .MathJax span,
+body.rules #main aside.info .MathJax span,
+body #main div.rules .MathJax span,
+body.rules div.info .MathJax span {
+  color: #fff;
 }
 body #main aside.rules a,
 body.rules #main aside.info a,
@@ -395,6 +423,16 @@ body #main aside.rules a:visited:hover,
 body.rules #main aside.info a:visited:hover,
 body #main div.rules a:visited:hover,
 body.rules div.info a:visited:hover {
+  color: #6c8cd5;
+}
+body #main aside.rules a:visited .MathJax span,
+body.rules #main aside.info a:visited .MathJax span,
+body #main div.rules a:visited .MathJax span,
+body.rules div.info a:visited .MathJax span,
+body #main aside.rules a:visited:hover .MathJax span,
+body.rules #main aside.info a:visited:hover .MathJax span,
+body #main div.rules a:visited:hover .MathJax span,
+body.rules div.info a:visited:hover .MathJax span {
   color: #6c8cd5;
 }
 body #main aside.rules a.stub,
@@ -486,13 +524,15 @@ body.rigor #header .definition li {
 body.rigor #header .pronunciation {
   color: #200772;
 }
-body.rigor #main a.stub {
+body.rigor #main a:active {
+  color: #200772;
+}
+body.rigor #main a.stub,
+body.rigor #main a.stub:visited {
   color: #ffd300;
 }
-body.rigor #main a.stub:visited {
-  color: #a68900;
-}
-body.rigor #main a.stub.missing {
+body.rigor #main a.stub.missing,
+body.rigor #main a.stub:visited.missing {
   background: #ffd300;
   color: #3914af;
 }
@@ -536,6 +576,13 @@ body.rigor footer aside a.stub {
 body.rigor footer aside a.stub:visited {
   color: #ffe773;
 }
+body.rigor svg circle {
+  fill: #6a48d7;
+  stroke: #200772;
+}
+body.rigor svg circle.solid {
+  fill: #200772;
+}
 body #main aside.rigor,
 body.rigor #main aside.info,
 body #main div.rigor,
@@ -570,11 +617,11 @@ body #main div.rigor h6,
 body.rigor div.info h6 {
   color: #ffe773;
 }
-body #main aside.rigor .MathJax,
-body.rigor #main aside.info .MathJax,
-body #main div.rigor .MathJax,
-body.rigor div.info .MathJax {
-  color: #fff !important;
+body #main aside.rigor .MathJax span,
+body.rigor #main aside.info .MathJax span,
+body #main div.rigor .MathJax span,
+body.rigor div.info .MathJax span {
+  color: #fff;
 }
 body #main aside.rigor a,
 body.rigor #main aside.info a,
@@ -597,6 +644,16 @@ body #main aside.rigor a:visited:hover,
 body.rigor #main aside.info a:visited:hover,
 body #main div.rigor a:visited:hover,
 body.rigor div.info a:visited:hover {
+  color: #876ed7;
+}
+body #main aside.rigor a:visited .MathJax span,
+body.rigor #main aside.info a:visited .MathJax span,
+body #main div.rigor a:visited .MathJax span,
+body.rigor div.info a:visited .MathJax span,
+body #main aside.rigor a:visited:hover .MathJax span,
+body.rigor #main aside.info a:visited:hover .MathJax span,
+body #main div.rigor a:visited:hover .MathJax span,
+body.rigor div.info a:visited:hover .MathJax span {
   color: #876ed7;
 }
 body #main aside.rigor a.stub,
@@ -688,13 +745,15 @@ body.simplifience #header .definition li {
 body.simplifience #header .pronunciation {
   color: #48036f;
 }
-body.simplifience #main a.stub {
+body.simplifience #main a:active {
+  color: #48036f;
+}
+body.simplifience #main a.stub,
+body.simplifience #main a.stub:visited {
   color: #ff0;
 }
-body.simplifience #main a.stub:visited {
-  color: #a6a600;
-}
-body.simplifience #main a.stub.missing {
+body.simplifience #main a.stub.missing,
+body.simplifience #main a.stub:visited.missing {
   background: #ff0;
   color: #7109aa;
 }
@@ -738,6 +797,13 @@ body.simplifience footer aside a.stub {
 body.simplifience footer aside a.stub:visited {
   color: #ffff73;
 }
+body.simplifience svg circle {
+  fill: #9f3ed5;
+  stroke: #48036f;
+}
+body.simplifience svg circle.solid {
+  fill: #48036f;
+}
 body #main aside.simplifience,
 body.simplifience #main aside.info,
 body #main div.simplifience,
@@ -772,11 +838,11 @@ body #main div.simplifience h6,
 body.simplifience div.info h6 {
   color: #ffff73;
 }
-body #main aside.simplifience .MathJax,
-body.simplifience #main aside.info .MathJax,
-body #main div.simplifience .MathJax,
-body.simplifience div.info .MathJax {
-  color: #fff !important;
+body #main aside.simplifience .MathJax span,
+body.simplifience #main aside.info .MathJax span,
+body #main div.simplifience .MathJax span,
+body.simplifience div.info .MathJax span {
+  color: #fff;
 }
 body #main aside.simplifience a,
 body.simplifience #main aside.info a,
@@ -799,6 +865,16 @@ body #main aside.simplifience a:visited:hover,
 body.simplifience #main aside.info a:visited:hover,
 body #main div.simplifience a:visited:hover,
 body.simplifience div.info a:visited:hover {
+  color: #ad66d5;
+}
+body #main aside.simplifience a:visited .MathJax span,
+body.simplifience #main aside.info a:visited .MathJax span,
+body #main div.simplifience a:visited .MathJax span,
+body.simplifience div.info a:visited .MathJax span,
+body #main aside.simplifience a:visited:hover .MathJax span,
+body.simplifience #main aside.info a:visited:hover .MathJax span,
+body #main div.simplifience a:visited:hover .MathJax span,
+body.simplifience div.info a:visited:hover .MathJax span {
   color: #ad66d5;
 }
 body #main aside.simplifience a.stub,
@@ -890,13 +966,15 @@ body.knowledge #header .definition li {
 body.knowledge #header .pronunciation {
   color: #85004b;
 }
-body.knowledge #main a.stub {
+body.knowledge #main a:active {
+  color: #85004b;
+}
+body.knowledge #main a.stub,
+body.knowledge #main a.stub:visited {
   color: #ffd300;
 }
-body.knowledge #main a.stub:visited {
-  color: #a68900;
-}
-body.knowledge #main a.stub.missing {
+body.knowledge #main a.stub.missing,
+body.knowledge #main a.stub:visited.missing {
   background: #ffd300;
   color: #cd0074;
 }
@@ -940,6 +1018,13 @@ body.knowledge footer aside a.stub {
 body.knowledge footer aside a.stub:visited {
   color: #ffe773;
 }
+body.knowledge svg circle {
+  fill: #e6399b;
+  stroke: #85004b;
+}
+body.knowledge svg circle.solid {
+  fill: #85004b;
+}
 body #main aside.knowledge,
 body.knowledge #main aside.info,
 body #main div.knowledge,
@@ -974,11 +1059,11 @@ body #main div.knowledge h6,
 body.knowledge div.info h6 {
   color: #ffe773;
 }
-body #main aside.knowledge .MathJax,
-body.knowledge #main aside.info .MathJax,
-body #main div.knowledge .MathJax,
-body.knowledge div.info .MathJax {
-  color: #fff !important;
+body #main aside.knowledge .MathJax span,
+body.knowledge #main aside.info .MathJax span,
+body #main div.knowledge .MathJax span,
+body.knowledge div.info .MathJax span {
+  color: #fff;
 }
 body #main aside.knowledge a,
 body.knowledge #main aside.info a,
@@ -1001,6 +1086,16 @@ body #main aside.knowledge a:visited:hover,
 body.knowledge #main aside.info a:visited:hover,
 body #main div.knowledge a:visited:hover,
 body.knowledge div.info a:visited:hover {
+  color: #e667af;
+}
+body #main aside.knowledge a:visited .MathJax span,
+body.knowledge #main aside.info a:visited .MathJax span,
+body #main div.knowledge a:visited .MathJax span,
+body.knowledge div.info a:visited .MathJax span,
+body #main aside.knowledge a:visited:hover .MathJax span,
+body.knowledge #main aside.info a:visited:hover .MathJax span,
+body #main div.knowledge a:visited:hover .MathJax span,
+body.knowledge div.info a:visited:hover .MathJax span {
   color: #e667af;
 }
 body #main aside.knowledge a.stub,
@@ -1092,13 +1187,15 @@ body.rant #header .definition li {
 body.rant #header .pronunciation {
   color: #a60000;
 }
-body.rant #main a.stub {
+body.rant #main a:active {
+  color: #a60000;
+}
+body.rant #main a.stub,
+body.rant #main a.stub:visited {
   color: #ffd300;
 }
-body.rant #main a.stub:visited {
-  color: #a68900;
-}
-body.rant #main a.stub.missing {
+body.rant #main a.stub.missing,
+body.rant #main a.stub:visited.missing {
   background: #ffd300;
   color: #f00;
 }
@@ -1142,6 +1239,13 @@ body.rant footer aside a.stub {
 body.rant footer aside a.stub:visited {
   color: #a68900;
 }
+body.rant svg circle {
+  fill: #ff4040;
+  stroke: #a60000;
+}
+body.rant svg circle.solid {
+  fill: #a60000;
+}
 body #main aside.rant,
 body.rant #main aside.info,
 body #main div.rant,
@@ -1176,11 +1280,11 @@ body #main div.rant h6,
 body.rant div.info h6 {
   color: #a68900;
 }
-body #main aside.rant .MathJax,
-body.rant #main aside.info .MathJax,
-body #main div.rant .MathJax,
-body.rant div.info .MathJax {
-  color: #000 !important;
+body #main aside.rant .MathJax span,
+body.rant #main aside.info .MathJax span,
+body #main div.rant .MathJax span,
+body.rant div.info .MathJax span {
+  color: #000;
 }
 body #main aside.rant a,
 body.rant #main aside.info a,
@@ -1203,6 +1307,16 @@ body #main aside.rant a:visited:hover,
 body.rant #main aside.info a:visited:hover,
 body #main div.rant a:visited:hover,
 body.rant div.info a:visited:hover {
+  color: #a60000;
+}
+body #main aside.rant a:visited .MathJax span,
+body.rant #main aside.info a:visited .MathJax span,
+body #main div.rant a:visited .MathJax span,
+body.rant div.info a:visited .MathJax span,
+body #main aside.rant a:visited:hover .MathJax span,
+body.rant #main aside.info a:visited:hover .MathJax span,
+body #main div.rant a:visited:hover .MathJax span,
+body.rant div.info a:visited:hover .MathJax span {
   color: #a60000;
 }
 body #main aside.rant a.stub,
@@ -1294,13 +1408,15 @@ body.stub #header .definition li {
 body.stub #header .pronunciation {
   color: #a64b00;
 }
-body.stub #main a.stub {
+body.stub #main a:active {
+  color: #a64b00;
+}
+body.stub #main a.stub,
+body.stub #main a.stub:visited {
   color: #099;
 }
-body.stub #main a.stub:visited {
-  color: #006363;
-}
-body.stub #main a.stub.missing {
+body.stub #main a.stub.missing,
+body.stub #main a.stub:visited.missing {
   background: #099;
   color: #ff7400;
 }
@@ -1344,6 +1460,13 @@ body.stub footer aside a.stub {
 body.stub footer aside a.stub:visited {
   color: #006363;
 }
+body.stub svg circle {
+  fill: #ff9640;
+  stroke: #a64b00;
+}
+body.stub svg circle.solid {
+  fill: #a64b00;
+}
 body #main aside.stub,
 body.stub #main aside.info,
 body #main div.stub,
@@ -1378,11 +1501,11 @@ body #main div.stub h6,
 body.stub div.info h6 {
   color: #006363;
 }
-body #main aside.stub .MathJax,
-body.stub #main aside.info .MathJax,
-body #main div.stub .MathJax,
-body.stub div.info .MathJax {
-  color: #000 !important;
+body #main aside.stub .MathJax span,
+body.stub #main aside.info .MathJax span,
+body #main div.stub .MathJax span,
+body.stub div.info .MathJax span {
+  color: #000;
 }
 body #main aside.stub a,
 body.stub #main aside.info a,
@@ -1405,6 +1528,16 @@ body #main aside.stub a:visited:hover,
 body.stub #main aside.info a:visited:hover,
 body #main div.stub a:visited:hover,
 body.stub div.info a:visited:hover {
+  color: #a64b00;
+}
+body #main aside.stub a:visited .MathJax span,
+body.stub #main aside.info a:visited .MathJax span,
+body #main div.stub a:visited .MathJax span,
+body.stub div.info a:visited .MathJax span,
+body #main aside.stub a:visited:hover .MathJax span,
+body.stub #main aside.info a:visited:hover .MathJax span,
+body #main div.stub a:visited:hover .MathJax span,
+body.stub div.info a:visited:hover .MathJax span {
   color: #a64b00;
 }
 body #main aside.stub a.stub,
@@ -1496,13 +1629,15 @@ body.caution #header .definition li {
 body.caution #header .pronunciation {
   color: #a6a600;
 }
-body.caution #main a.stub {
+body.caution #main a:active {
+  color: #a6a600;
+}
+body.caution #main a.stub,
+body.caution #main a.stub:visited {
   color: #3914af;
 }
-body.caution #main a.stub:visited {
-  color: #200772;
-}
-body.caution #main a.stub.missing {
+body.caution #main a.stub.missing,
+body.caution #main a.stub:visited.missing {
   background: #3914af;
   color: #ff0;
 }
@@ -1546,6 +1681,13 @@ body.caution footer aside a.stub {
 body.caution footer aside a.stub:visited {
   color: #200772;
 }
+body.caution svg circle {
+  fill: #ffff40;
+  stroke: #a6a600;
+}
+body.caution svg circle.solid {
+  fill: #a6a600;
+}
 body #main aside.caution,
 body.caution #main aside.info,
 body #main div.caution,
@@ -1580,11 +1722,11 @@ body #main div.caution h6,
 body.caution div.info h6 {
   color: #200772;
 }
-body #main aside.caution .MathJax,
-body.caution #main aside.info .MathJax,
-body #main div.caution .MathJax,
-body.caution div.info .MathJax {
-  color: #000 !important;
+body #main aside.caution .MathJax span,
+body.caution #main aside.info .MathJax span,
+body #main div.caution .MathJax span,
+body.caution div.info .MathJax span {
+  color: #000;
 }
 body #main aside.caution a,
 body.caution #main aside.info a,
@@ -1607,6 +1749,16 @@ body #main aside.caution a:visited:hover,
 body.caution #main aside.info a:visited:hover,
 body #main div.caution a:visited:hover,
 body.caution div.info a:visited:hover {
+  color: #a6a600;
+}
+body #main aside.caution a:visited .MathJax span,
+body.caution #main aside.info a:visited .MathJax span,
+body #main div.caution a:visited .MathJax span,
+body.caution div.info a:visited .MathJax span,
+body #main aside.caution a:visited:hover .MathJax span,
+body.caution #main aside.info a:visited:hover .MathJax span,
+body #main div.caution a:visited:hover .MathJax span,
+body.caution div.info a:visited:hover .MathJax span {
   color: #a6a600;
 }
 body #main aside.caution a.stub,
@@ -1698,13 +1850,15 @@ body.define #header .definition li {
 body.define #header .pronunciation {
   color: #008500;
 }
-body.define #main a.stub {
+body.define #main a:active {
+  color: #008500;
+}
+body.define #main a.stub,
+body.define #main a.stub:visited {
   color: #7109aa;
 }
-body.define #main a.stub:visited {
-  color: #48036f;
-}
-body.define #main a.stub.missing {
+body.define #main a.stub.missing,
+body.define #main a.stub:visited.missing {
   background: #7109aa;
   color: #0c0;
 }
@@ -1748,6 +1902,13 @@ body.define footer aside a.stub {
 body.define footer aside a.stub:visited {
   color: #48036f;
 }
+body.define svg circle {
+  fill: #39e639;
+  stroke: #008500;
+}
+body.define svg circle.solid {
+  fill: #008500;
+}
 body #main aside.define,
 body.define #main aside.info,
 body #main div.define,
@@ -1782,11 +1943,11 @@ body #main div.define h6,
 body.define div.info h6 {
   color: #48036f;
 }
-body #main aside.define .MathJax,
-body.define #main aside.info .MathJax,
-body #main div.define .MathJax,
-body.define div.info .MathJax {
-  color: #000 !important;
+body #main aside.define .MathJax span,
+body.define #main aside.info .MathJax span,
+body #main div.define .MathJax span,
+body.define div.info .MathJax span {
+  color: #000;
 }
 body #main aside.define a,
 body.define #main aside.info a,
@@ -1809,6 +1970,16 @@ body #main aside.define a:visited:hover,
 body.define #main aside.info a:visited:hover,
 body #main div.define a:visited:hover,
 body.define div.info a:visited:hover {
+  color: #008500;
+}
+body #main aside.define a:visited .MathJax span,
+body.define #main aside.info a:visited .MathJax span,
+body #main div.define a:visited .MathJax span,
+body.define div.info a:visited .MathJax span,
+body #main aside.define a:visited:hover .MathJax span,
+body.define #main aside.info a:visited:hover .MathJax span,
+body #main div.define a:visited:hover .MathJax span,
+body.define div.info a:visited:hover .MathJax span {
   color: #008500;
 }
 body #main aside.define a.stub,
@@ -1900,13 +2071,15 @@ body.computer #header .definition li {
 body.computer #header .pronunciation {
   color: #586e75;
 }
-body.computer #main a.stub {
+body.computer #main a:active {
+  color: #586e75;
+}
+body.computer #main a.stub,
+body.computer #main a.stub:visited {
   color: #dc322f;
 }
-body.computer #main a.stub:visited {
-  color: #93a1a1;
-}
-body.computer #main a.stub.missing {
+body.computer #main a.stub.missing,
+body.computer #main a.stub:visited.missing {
   background: #dc322f;
   color: #002b36;
 }
@@ -1950,6 +2123,13 @@ body.computer footer aside a.stub {
 body.computer footer aside a.stub:visited {
   color: #2aa198;
 }
+body.computer svg circle {
+  fill: #2aa198;
+  stroke: #586e75;
+}
+body.computer svg circle.solid {
+  fill: #586e75;
+}
 body #main aside.computer,
 body.computer #main aside.info,
 body #main div.computer,
@@ -1984,11 +2164,11 @@ body #main div.computer h6,
 body.computer div.info h6 {
   color: #2aa198;
 }
-body #main aside.computer .MathJax,
-body.computer #main aside.info .MathJax,
-body #main div.computer .MathJax,
-body.computer div.info .MathJax {
-  color: #839496 !important;
+body #main aside.computer .MathJax span,
+body.computer #main aside.info .MathJax span,
+body #main div.computer .MathJax span,
+body.computer div.info .MathJax span {
+  color: #839496;
 }
 body #main aside.computer a,
 body.computer #main aside.info a,
@@ -2011,6 +2191,16 @@ body #main aside.computer a:visited:hover,
 body.computer #main aside.info a:visited:hover,
 body #main div.computer a:visited:hover,
 body.computer div.info a:visited:hover {
+  color: #268bd2;
+}
+body #main aside.computer a:visited .MathJax span,
+body.computer #main aside.info a:visited .MathJax span,
+body #main div.computer a:visited .MathJax span,
+body.computer div.info a:visited .MathJax span,
+body #main aside.computer a:visited:hover .MathJax span,
+body.computer #main aside.info a:visited:hover .MathJax span,
+body #main div.computer a:visited:hover .MathJax span,
+body.computer div.info a:visited:hover .MathJax span {
   color: #268bd2;
 }
 body #main aside.computer a.stub,
@@ -2377,7 +2567,17 @@ div.cap footer .logo a:hover {
 #main a {
   text-decoration: underline;
 }
+#main a .MathJax,
+#main a .MathJax nobr,
+#main a .MathJax span {
+  text-decoration: underline;
+}
 #main a:hover {
+  text-decoration: none;
+}
+#main a:hover .MathJax,
+#main a:hover .MathJax nobr,
+#main a:hover .MathJax span {
   text-decoration: none;
 }
 iframe {
@@ -2390,7 +2590,7 @@ p {
   margin-top: 0;
 }
 aside,
-div.main,
+div.info,
 div.rules,
 div.rigor,
 div.simplifience,
@@ -2407,7 +2607,7 @@ div.computer {
   overflow: auto;
 }
 aside p:last-child,
-div.main p:last-child,
+div.info p:last-child,
 div.rules p:last-child,
 div.rigor p:last-child,
 div.simplifience p:last-child,
@@ -2420,7 +2620,7 @@ div.computer p:last-child {
   margin-bottom: 0;
 }
 aside ul,
-div.main ul,
+div.info ul,
 div.rules ul,
 div.rigor ul,
 div.simplifience ul,
@@ -2431,7 +2631,7 @@ div.caution ul,
 div.define ul,
 div.computer ul,
 aside ol,
-div.main ol,
+div.info ol,
 div.rules ol,
 div.rigor ol,
 div.simplifience ol,
@@ -2477,7 +2677,25 @@ hr.mark {
   background: none;
   border: none;
 }
+#main > article > table {
+  margin-bottom: 0.75em;
+}
+#main > article > table td:first-child {
+  border-right: 1px solid #000;
+}
+#main > article > table td:not(:last-child),
+#main > article > table th:not(:last-child) {
+  padding-right: 1em;
+}
+#main > article > table td:not(:first-child),
+#main > article > table th:not(:first-child) {
+  padding-left: 1em;
+}
 #stub {
+  margin-bottom: 0.75em;
+}
+#main svg {
+  display: block;
   margin-bottom: 0.75em;
 }
 @media only screen {

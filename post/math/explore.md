@@ -49,7 +49,7 @@ Mathematics is the art of studying the rules.
 
 Any time you write the rules down, that's mathematics. Here's the beautiful thing about mathematics:
 
-[Cool geometry problem]
+<!--TODO: Cool geometry problem-->
 
 The answer doesn't matter right now. The beauty of mathematics is that *there is an answer*.
 

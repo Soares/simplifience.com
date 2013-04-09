@@ -32,6 +32,7 @@ blocks:
       <ul>
         <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
         <li>{{ 'foundations/unlearn'|post_anchor }}</li>
+        <li>{{ 'reality/welcome'|post_anchor }}</li>
       </ul>
     </aside>
   </div>
@@ -47,10 +48,10 @@ blocks:
   </div>
 </div>
 
+Why is the sky blue? Why do objects fall? Why are we here?
+
 *Why?*
 {:.big}
-
-Why is the sky blue? Why do objects fall? Why are we here? *Why?*
 
 This question has been asked since the dawn of thought, and it will haunt us until the end of time. Humankind has made incredible progress in the quest to figure out why. We know more about the nature of existence now than ever before. Yet this knowledge is not readily taught.
 

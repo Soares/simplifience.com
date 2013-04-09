@@ -22,10 +22,10 @@ theme-header(color, complement)
 		color $dark(color)
 
 theme-links(color, complement)
-	&.stub
+	&:active
+		color $dark(color)
+	&.stub, &.stub:visited
 		color $pure(complement)
-		&:visited
-			color $dark(complement)
 		&.missing
 			background $pure(complement)
 			color $pure(color)
@@ -50,8 +50,8 @@ theme-commentary(color, complement)
 	color $text(color)
 	h1, h2, h3, h4, h5, h6
 		color $contrast(color, complement)
-	.MathJax
-		color $text(color) !important
+	.MathJax span
+		color $text(color)
 	a
 		color $text(color)
 		&:hover
@@ -61,6 +61,8 @@ theme-commentary(color, complement)
 		else
 			text-shadow 1px 1px 1px $light(color)
 		&:visited, &:visited:hover
+			.MathJax span
+				color $contrast(color)
 			color $contrast(color)
 		&.stub
 			color $pure(complement)
@@ -114,6 +116,12 @@ theme-meditation(color, complement)
 			&:focus
 				outline-color $pure(color)
 
+theme-diagram-element(color, complement)
+	fill $light(color)
+	stroke $dark(color)
+	&.solid
+		fill $dark(color)
+
 theme(class, color, complement)
 	body.{class}
 		theme-body(color, complement)
@@ -126,6 +134,9 @@ theme(class, color, complement)
 			theme-nav(color, complement)
 		footer
 			theme-footer(color, complement)
+		svg
+			circle
+				theme-diagram-element(color, complement)
 	body #main aside.{class}, body.{class} #main aside.info,
 	body #main div.{class}, body.{class} div.info
 		theme-commentary(color, complement)

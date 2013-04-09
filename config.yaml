@@ -11,6 +11,7 @@ post:
     - '@coffee/post'
 mathbox:
   compiler: flow
+raphael: coffee to js/diagram
 images: copy to images
 stylus: css
 coffee: js

@@ -18,7 +18,7 @@ But that's not very useful, out here in the real world. Sure, you can prove that
 But you can't prove that those assumptions <span class="info">apply to the real world</span>.
 
 <aside class="info" markdown="block">
-You can prove that $2+2=4$ but you can't prove that two apples + two apples = four apples because you can't prove that TODO[apples act like numbers]numbers.
+You can prove that $2+2=4$ but you can't prove that two apples + two apples = four apples because you can't prove that TODO: [apples act like numbers](numbers).
 </aside>
 
 No, seriously. You could wake up one morning and realize that [two plus two is three](http://lesswrong.com/lw/jr/how_to_convince_me_that_2_2_3/). It's not very *likely*, but it's possible.
@@ -66,7 +66,7 @@ With that in mind, know this: I will not refer to things as theories here. I wil
 <span class="info">*Everything* is uncertain</span>. Nothing can be proven.
 
 <aside class="info" markdown="block">
-Indeed, you should never treat anything that I say as true, but rather as TODO[evidence about the truth]intro/trust.
+Indeed, you should never treat anything that I say as true, but rather as TODO: [evidence about the truth](intro/trust).
 </aside>
 
 Even so, there are some things that are well established. I will discuss them as facts, because they are facts. Just keep in mind that all facts can be overturned in time.

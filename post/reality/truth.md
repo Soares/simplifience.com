@@ -11,7 +11,7 @@ Many have written extensively on this topic. I try not to repeat them. Follow th
 
 > "But how can you say what's really *true*? Your truth is no better than my truth!"
 
-A question asked far too often. This question is what you get when you combine the TODO[impossibility of certainty]prove-it with a TODO[philosophical death spiral]death-spiral.
+A question asked far too often. This question is what you get when you combine the TODO: [impossibility of certainty](prove-it) with a TODO: [philosophical death spiral](death-spiral).
 
 It is certain that <span class="info">you can never be certain of anything</span>. That does not mean that there's no such thing as "truth".
 

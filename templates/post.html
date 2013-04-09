@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
 {% set styles = ['post'] %}
+{% set scripts = [
+		'/js/raphael.js',
+		'/js/g.raphael.js',
+		'/js/util.js',
+		] + scripts|default([]) + [
+		'/js/waypoints.js',
+		] %}
 {% if stub %}{% set type = 'stub' %}{% endif %}
 
 {% block body %}
@@ -7,7 +14,7 @@
 	<header id="header" class="wrapper clearfix">
 		{% block header %}
 		<h1 class="title" title="Simplifience">
-		  <a href="/">{{ title }}</a>
+			<a href="/">{{ title }}</a>
 		</h1>
 		{% endblock header %}
 	</header>
@@ -48,7 +55,9 @@
 					{% if member|post_is(url) %}
 					<li class="current">{{ url|post_sequence_name(name) }}</li>
 					{% else %}
-					<li>{{ member|post_anchor(member|post_sequence_name(name), here=True) }}</li>
+					<li>
+						{{ member|post_anchor(member|post_sequence_name(name), here=True) }}
+					</li>
 					{% endif %}
 				{% endfor %}
 			</ol>
