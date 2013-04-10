@@ -142,11 +142,10 @@ body.main svg .colored {
 body.main svg path.solid {
   fill: #006363;
 }
-body.main svg path.axis-line {
+body.main svg path.axis {
   stroke: #000;
 }
-body.main svg path.axis-arrow {
-  stroke: #000;
+body.main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.main,
@@ -371,11 +370,10 @@ body.rules svg .colored {
 body.rules svg path.solid {
   fill: #06266f;
 }
-body.rules svg path.axis-line {
+body.rules svg path.axis {
   stroke: #000;
 }
-body.rules svg path.axis-arrow {
-  stroke: #000;
+body.rules svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.rules,
@@ -600,11 +598,10 @@ body.rigor svg .colored {
 body.rigor svg path.solid {
   fill: #200772;
 }
-body.rigor svg path.axis-line {
+body.rigor svg path.axis {
   stroke: #000;
 }
-body.rigor svg path.axis-arrow {
-  stroke: #000;
+body.rigor svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.rigor,
@@ -829,11 +826,10 @@ body.simplifience svg .colored {
 body.simplifience svg path.solid {
   fill: #48036f;
 }
-body.simplifience svg path.axis-line {
+body.simplifience svg path.axis {
   stroke: #000;
 }
-body.simplifience svg path.axis-arrow {
-  stroke: #000;
+body.simplifience svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.simplifience,
@@ -1058,11 +1054,10 @@ body.knowledge svg .colored {
 body.knowledge svg path.solid {
   fill: #85004b;
 }
-body.knowledge svg path.axis-line {
+body.knowledge svg path.axis {
   stroke: #000;
 }
-body.knowledge svg path.axis-arrow {
-  stroke: #000;
+body.knowledge svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.knowledge,
@@ -1287,11 +1282,10 @@ body.rant svg .colored {
 body.rant svg path.solid {
   fill: #a60000;
 }
-body.rant svg path.axis-line {
+body.rant svg path.axis {
   stroke: #000;
 }
-body.rant svg path.axis-arrow {
-  stroke: #000;
+body.rant svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.rant,
@@ -1516,11 +1510,10 @@ body.stub svg .colored {
 body.stub svg path.solid {
   fill: #a64b00;
 }
-body.stub svg path.axis-line {
+body.stub svg path.axis {
   stroke: #000;
 }
-body.stub svg path.axis-arrow {
-  stroke: #000;
+body.stub svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.stub,
@@ -1745,11 +1738,10 @@ body.caution svg .colored {
 body.caution svg path.solid {
   fill: #a6a600;
 }
-body.caution svg path.axis-line {
+body.caution svg path.axis {
   stroke: #000;
 }
-body.caution svg path.axis-arrow {
-  stroke: #000;
+body.caution svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.caution,
@@ -1974,11 +1966,10 @@ body.define svg .colored {
 body.define svg path.solid {
   fill: #008500;
 }
-body.define svg path.axis-line {
+body.define svg path.axis {
   stroke: #000;
 }
-body.define svg path.axis-arrow {
-  stroke: #000;
+body.define svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.define,
@@ -2203,11 +2194,10 @@ body.computer svg .colored {
 body.computer svg path.solid {
   fill: #586e75;
 }
-body.computer svg path.axis-line {
+body.computer svg path.axis {
   stroke: #000;
 }
-body.computer svg path.axis-arrow {
-  stroke: #000;
+body.computer svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.computer,
@@ -2778,7 +2768,7 @@ hr.mark {
   display: block;
   margin-bottom: 0.75em;
 }
-#main svg path.axis-line {
+#main svg path.axis.arrow {
   stroke-width: 1;
 }
 @media only screen {

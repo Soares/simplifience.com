@@ -49,29 +49,42 @@
     }
 
     Unroller.prototype.start = function() {
-      var capFraction, counter, tickCount;
+      var counter;
       this.isDiameterLine = this.elem.data('diameter') || false;
       this.stopEarly = this.elem.data('pistop') || false;
-      counter = this.elem.data('counter') || false;
       this.lineLength = this.isDiameterLine ? 2 * radius : radius;
-      tickCount = this.isDiameterLine ? 4 : 8;
-      capFraction = this.isDiameterLine ? 1 / 2 : 1;
-      this.axis(zx - 0.5, zy, this.lineLength, tickCount, {
-        capFraction: capFraction
+      counter = this.elem.data('counter') || false;
+      this.axis(zx, zy + 0.5, {
+        unit: this.lineLength,
+        to: this.isDiameterLine ? 4 : 8,
+        capLength: this.isDiameterLine ? 1 / 2 : 1
       });
       this.circle = this.paper.circle();
-      this.outline = this.paper.path().attr({
-        'stroke-width': 2
+      this.outline = this.path({
+        'stroke-width': 2,
+        "class": 'colored',
+        style: 'fill:none'
       });
-      $(this.outline.node).attr({
-        'class': 'colored',
-        'style': 'fill:none'
+      this.laid = this.path({
+        'stroke-width': 2,
+        "class": 'colored'
       });
-      this.laid = this.paper.path().attr('stroke-width', 2);
-      $(this.laid.node).attr('class', 'colored');
-      this.line = this.paper.path().attr('stroke-width', 1);
-      $(this.line.node).attr('class', 'colored');
+      this.line = this.path({
+        'stroke-width': 1,
+        "class": 'colored'
+      });
       this.counter = counter ? this.paper.text(tx, ty, 0..toFixed(6)) : false;
+      this.paper.customAttributes.drawX = function(x, y, distance) {
+        if (distance === 0) {
+          return {
+            path: ['M', x, y, 'l', 0.001, 0]
+          };
+        } else {
+          return {
+            path: ['M', x, y, 'l', distance, 0, 'l', 0.5, 0]
+          };
+        }
+      };
       this.reset();
       return setTimeout(this.begin, 3000);
     };
@@ -91,11 +104,11 @@
         opacity: 0
       });
       this.laid.attr({
-        path: new Path(zx, zy).draw(0.01, 0).string
+        drawX: [zx, zy, 0]
       });
       this.line.attr({
         opacity: 1,
-        path: new Path(zx + 0.5, zy).draw(this.lineLength, 0).string
+        path: new Path(zx, zy).draw(this.lineLength, 0).string
       });
       return (_ref = this.counter) != null ? typeof _ref.attr === "function" ? _ref.attr({
         turnText: 0,
@@ -106,7 +119,7 @@
     Unroller.prototype.begin = function() {
       this.reset();
       return this.line.animate({
-        transform: "r-90 " + (zx + 0.5) + " " + zy
+        transform: "r-90 " + zx + " " + zy
       }, 1000, '<>', this.fadeIn);
     };
 
@@ -149,13 +162,13 @@
         transform: "t" + distance + " 0"
       }, duration, ease, this.pause);
       this.line.animateWith(this.circle, a, {
-        turnRotate: [zx + distance, zy - radius, radius, uplen, -1 / 4 - turns]
+        turnRotate: [zx + distance, zy - radius, radius + 1, uplen, -1 / 4 - turns]
       }, duration, ease);
       this.outline.animateWith(this.circle, a, {
         partialCircle: [zx + distance, middle, radius, 1 - turns, -1 / 4]
       }, duration, ease);
       this.laid.animateWith(this.circle, a, {
-        path: new Path(zx, zy).draw(distance, 0).string
+        drawX: [zx, zy, distance]
       }, duration, ease);
       return (_ref = this.counter) != null ? typeof _ref.animateWith === "function" ? _ref.animateWith(this.circle, a, {
         turnText: turns
@@ -193,6 +206,8 @@
 
   })(Diagram);
 
-  diagram('unroll', Unroller, width, height);
+  $(function() {
+    return diagram('unroll', Unroller, width, height);
+  });
 
 }).call(this);

@@ -7,7 +7,11 @@ post:
     macros:
     - 'post.macros'
     scripts:
+    - '/js/underscore.js'
     - '/js/jquery.js'
+    - '/js/raphael.js'
+    - '/js/waypoints.js'
+    - '@coffee/util'
     - '@coffee/post'
 mathbox:
   compiler: flow

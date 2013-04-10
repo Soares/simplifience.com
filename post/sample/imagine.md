@@ -2,8 +2,6 @@
 title: Imagine
 type: simplifience
 scripts:
-- '@raphael/natural-ticks'
-- '@raphael/natural-line'
 - '@raphael/number-line'
 ---
 
@@ -21,7 +19,7 @@ Note that all numbers are imaginary. Have you ever seen a seven? You can search 
 
 Consider the number line. We've been filling it in for millennia. First there were only whole numbers. At that point it wasn't so much a number line as a collection of number dots.
 
-<div class="natural-ticks"></div>
+<div class="number-line"></div>
 <aside class="info" markdown="block">
 The number line in ancient times
 </aside>

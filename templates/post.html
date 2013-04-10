@@ -1,12 +1,5 @@
 {% extends 'base.html' %}
 {% set styles = ['post'] %}
-{% set scripts = [
-		'/js/raphael.js',
-		'/js/g.raphael.js',
-		'/js/util.js',
-		] + scripts|default([]) + [
-		'/js/waypoints.js',
-		] %}
 {% if stub %}{% set type = 'stub' %}{% endif %}
 
 {% block body %}
