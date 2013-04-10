@@ -116,11 +116,17 @@ theme-meditation(color, complement)
 			&:focus
 				outline-color $pure(color)
 
-theme-diagram-element(color, complement)
-	fill $light(color)
-	stroke $dark(color)
-	&.solid
+theme-diagram(color, complement)
+	circle, .colored
+		fill $light(color)
+		stroke $dark(color)
+	path.solid
 		fill $dark(color)
+	path.axis-line
+		stroke black
+	path.axis-arrow
+		stroke black
+		fill black
 
 theme(class, color, complement)
 	body.{class}
@@ -135,8 +141,7 @@ theme(class, color, complement)
 		footer
 			theme-footer(color, complement)
 		svg
-			circle
-				theme-diagram-element(color, complement)
+			theme-diagram(color, complement)
 	body #main aside.{class}, body.{class} #main aside.info,
 	body #main div.{class}, body.{class} div.info
 		theme-commentary(color, complement)

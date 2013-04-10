@@ -134,12 +134,20 @@ body.main footer aside a.stub {
 body.main footer aside a.stub:visited {
   color: #ffb273;
 }
-body.main svg circle {
+body.main svg circle,
+body.main svg .colored {
   fill: #3cc;
   stroke: #006363;
 }
-body.main svg circle.solid {
+body.main svg path.solid {
   fill: #006363;
+}
+body.main svg path.axis-line {
+  stroke: #000;
+}
+body.main svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.main,
 body.main #main aside.info,
@@ -355,12 +363,20 @@ body.rules footer aside a.stub {
 body.rules footer aside a.stub:visited {
   color: #ffd073;
 }
-body.rules svg circle {
+body.rules svg circle,
+body.rules svg .colored {
   fill: #4671d5;
   stroke: #06266f;
 }
-body.rules svg circle.solid {
+body.rules svg path.solid {
   fill: #06266f;
+}
+body.rules svg path.axis-line {
+  stroke: #000;
+}
+body.rules svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.rules,
 body.rules #main aside.info,
@@ -576,12 +592,20 @@ body.rigor footer aside a.stub {
 body.rigor footer aside a.stub:visited {
   color: #ffe773;
 }
-body.rigor svg circle {
+body.rigor svg circle,
+body.rigor svg .colored {
   fill: #6a48d7;
   stroke: #200772;
 }
-body.rigor svg circle.solid {
+body.rigor svg path.solid {
   fill: #200772;
+}
+body.rigor svg path.axis-line {
+  stroke: #000;
+}
+body.rigor svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.rigor,
 body.rigor #main aside.info,
@@ -797,12 +821,20 @@ body.simplifience footer aside a.stub {
 body.simplifience footer aside a.stub:visited {
   color: #ffff73;
 }
-body.simplifience svg circle {
+body.simplifience svg circle,
+body.simplifience svg .colored {
   fill: #9f3ed5;
   stroke: #48036f;
 }
-body.simplifience svg circle.solid {
+body.simplifience svg path.solid {
   fill: #48036f;
+}
+body.simplifience svg path.axis-line {
+  stroke: #000;
+}
+body.simplifience svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.simplifience,
 body.simplifience #main aside.info,
@@ -1018,12 +1050,20 @@ body.knowledge footer aside a.stub {
 body.knowledge footer aside a.stub:visited {
   color: #ffe773;
 }
-body.knowledge svg circle {
+body.knowledge svg circle,
+body.knowledge svg .colored {
   fill: #e6399b;
   stroke: #85004b;
 }
-body.knowledge svg circle.solid {
+body.knowledge svg path.solid {
   fill: #85004b;
+}
+body.knowledge svg path.axis-line {
+  stroke: #000;
+}
+body.knowledge svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.knowledge,
 body.knowledge #main aside.info,
@@ -1239,12 +1279,20 @@ body.rant footer aside a.stub {
 body.rant footer aside a.stub:visited {
   color: #a68900;
 }
-body.rant svg circle {
+body.rant svg circle,
+body.rant svg .colored {
   fill: #ff4040;
   stroke: #a60000;
 }
-body.rant svg circle.solid {
+body.rant svg path.solid {
   fill: #a60000;
+}
+body.rant svg path.axis-line {
+  stroke: #000;
+}
+body.rant svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.rant,
 body.rant #main aside.info,
@@ -1460,12 +1508,20 @@ body.stub footer aside a.stub {
 body.stub footer aside a.stub:visited {
   color: #006363;
 }
-body.stub svg circle {
+body.stub svg circle,
+body.stub svg .colored {
   fill: #ff9640;
   stroke: #a64b00;
 }
-body.stub svg circle.solid {
+body.stub svg path.solid {
   fill: #a64b00;
+}
+body.stub svg path.axis-line {
+  stroke: #000;
+}
+body.stub svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.stub,
 body.stub #main aside.info,
@@ -1681,12 +1737,20 @@ body.caution footer aside a.stub {
 body.caution footer aside a.stub:visited {
   color: #200772;
 }
-body.caution svg circle {
+body.caution svg circle,
+body.caution svg .colored {
   fill: #ffff40;
   stroke: #a6a600;
 }
-body.caution svg circle.solid {
+body.caution svg path.solid {
   fill: #a6a600;
+}
+body.caution svg path.axis-line {
+  stroke: #000;
+}
+body.caution svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.caution,
 body.caution #main aside.info,
@@ -1902,12 +1966,20 @@ body.define footer aside a.stub {
 body.define footer aside a.stub:visited {
   color: #48036f;
 }
-body.define svg circle {
+body.define svg circle,
+body.define svg .colored {
   fill: #39e639;
   stroke: #008500;
 }
-body.define svg circle.solid {
+body.define svg path.solid {
   fill: #008500;
+}
+body.define svg path.axis-line {
+  stroke: #000;
+}
+body.define svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.define,
 body.define #main aside.info,
@@ -2123,12 +2195,20 @@ body.computer footer aside a.stub {
 body.computer footer aside a.stub:visited {
   color: #2aa198;
 }
-body.computer svg circle {
+body.computer svg circle,
+body.computer svg .colored {
   fill: #2aa198;
   stroke: #586e75;
 }
-body.computer svg circle.solid {
+body.computer svg path.solid {
   fill: #586e75;
+}
+body.computer svg path.axis-line {
+  stroke: #000;
+}
+body.computer svg path.axis-arrow {
+  stroke: #000;
+  fill: #000;
 }
 body #main aside.computer,
 body.computer #main aside.info,
@@ -2697,6 +2777,9 @@ hr.mark {
 #main svg {
   display: block;
   margin-bottom: 0.75em;
+}
+#main svg path.axis-line {
+  stroke-width: 1;
 }
 @media only screen {
   div.cap .definition {

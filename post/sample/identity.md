@@ -130,7 +130,7 @@ You should now have a better understanding not only of Euler's identity but of $
 <aside class="info" markdown="block">
 Why is $\pi$ half a circle?
 
-Why don't we write $1↺\frac{1}{4}$ instead of $i$?
+Why don't we write $1\_{↺\frac{1}{4}}$ instead of $i$?
 </aside>
 
 For that, we'll need @post[simplifience]intro/motivation.

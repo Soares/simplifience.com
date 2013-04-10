@@ -2,9 +2,7 @@
 title: Semi-circle
 type: simplifience
 scripts:
-- '@raphael/unroll-diameter'
-- '@raphael/unroll-radius'
-- '@raphael/unroll-pi'
+- '@raphael/unroll'
 ---
 
 <div class="caution" markdown="block">
@@ -15,20 +13,20 @@ This article is an exception to that rule. It's part of an sequence designed to 
 
 You've probably been taught that $\pi ≈ 3.14$. You might know it has something to do with circles. More specifically, $\pi$ is the ratio of a circle's circumference to it's diameter. If you walk $\pi$ diameters around a circle you'll come all the way around.
 
-<div class="unroll-diameter"></div>
+<div class="unroll" data-diameter="on"></div>
 
 <aside class="info" markdown="block">
 Measuring the circumference of a circle on a ruler where the diameter of the circle is $1$.
 </aside>
 
 
-As it turns out, circles with *radius* $1$ are way more useful than circles with diameter $1$. Both reality and mathematics (Euler's identity included) are littered with circles where the radius is the natural unit. When we're using radius-based circles $\pi$ isn't a very important number. What we usually care about is the number of <span class="info" markdown="inline">radius lengths</span> in the circumference of a circle.
+As it turns out, circles with *radius* $1$ are way more useful than circles with diameter $1$. Both reality and mathematics (Euler's identity included) are littered with circles where the radius is the natural unit. In radius-based circles $\pi$ isn't an important number. What we actually care about is the number of <span class="info" markdown="inline">radius lengths</span> in the circumference of a circle.
 
 <aside class="info" markdown="block">
-A circle has $\tau ≈ 6.28$ radius lengths.
+A circle's circumference is $\tau ≈ 6.28$ radius lengths. A radius length is called a "radian".
 </aside>
 
-<div class="unroll-radius"></div>
+<div class="unroll" data-counter="on"></div>
 
 <aside class="info" markdown="block">
 Measuring the circumference of a circle on a ruler where the radius of the circle is $1$.
@@ -40,7 +38,7 @@ Ignore all that for now. In order to understand Euler's identity, all you need t
 
 > Walking $\pi$ radius-lengths takes you halfway around a circle.
 
-<div class="unroll-pi"></div>
+<div class="unroll" data-counter="on" data-pistop="on"></div>
 
 <aside class="info" markdown="block">
 When you unroll $\pi$ radius lengths you only unroll the circle halfway.
