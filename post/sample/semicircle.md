@@ -22,26 +22,19 @@ Measuring the circumference of a circle on a ruler where the diameter of the cir
 
 As it turns out, circles with *radius* $1$ are way more useful than circles with diameter $1$. Both reality and mathematics (Euler's identity included) are littered with circles where the radius is the natural unit. In radius-based circles $\pi$ isn't an important number. What we actually care about is the number of <span class="info" markdown="inline">radius lengths</span> in the circumference of a circle.
 
+<div class="unroll" data-counter="on"></div>
 <aside class="info" markdown="block">
 A circle's circumference is $\tau ≈ 6.28$ radius lengths. A radius length is called a "radian".
-</aside>
-
-<div class="unroll" data-counter="on"></div>
-
-<aside class="info" markdown="block">
-Measuring the circumference of a circle on a ruler where the radius of the circle is $1$.
 </aside>
 
 $\pi$ is one of the most popular @post[contrives]intro/contrives in mainstream mathematics. $\pi$ is the number of radius-lengths in a *half-turn*, not a full turn. This is a silly unit to pick as your measuring stick. A @post[quarter turn]sample/imagine (right angle) and a [full turn](http://tauday.com) ($\tau$) are the natural units when working with circles.
 
 Ignore all that for now. In order to understand Euler's identity, all you need to remember is this:
 
-> Walking $\pi$ radius-lengths takes you halfway around a circle.
-
 <div class="unroll" data-counter="on" data-pistop="on"></div>
 
 <aside class="info" markdown="block">
-When you unroll $\pi$ radius lengths you only unroll the circle halfway.
+Walking $\pi$ radius-lengths only takes you halfway around.
 </aside>
 
 

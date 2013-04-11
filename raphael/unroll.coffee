@@ -21,11 +21,12 @@ class Unroller extends Diagram
       unit: @lineLength,
       to: if @isDiameterLine then 4 else 8
       capLength: if @isDiameterLine then 1/2 else 1
-    @circle = @paper.circle()
+    @circle = @circle class: 'colored'
     @outline = @path 'stroke-width': 2, class: 'colored', style: 'fill:none'
     @laid = @path 'stroke-width': 2, class: 'colored'
     @line = @path 'stroke-width': 1, class: 'colored'
-    @counter = if counter then @paper.text(tx, ty, 0.toFixed 6) else false
+    @counter = if counter then @text(tx, ty, 0.toFixed 6) else false
+    # @laid doesn't quite match @outline. Add half a pixel to the end.
     @paper.customAttributes.drawX = (x, y, distance) ->
       if distance == 0
       then path: ['M', x, y, 'l', 0.001, 0]
@@ -72,8 +73,9 @@ class Unroller extends Diagram
     uplen = if @isDiameterLine then radius else 0
     turns = if @stopEarly then 1/2 else 1
     distance = turns * circumference
+    fader = callbackAfter(@fadeOut, if @stopEarly then 5500 else 3000)
 
-    a = @circle.animate transform: "t#{distance} 0", duration, ease, @pause
+    a = @circle.animate transform: "t#{distance} 0", duration, ease, fader
     @line.animateWith(
         @circle, a
         turnRotate: [zx + distance, zy - radius, radius + 1, uplen, -1/4 - turns]
@@ -85,8 +87,6 @@ class Unroller extends Diagram
     @laid.animateWith(
         @circle, a, drawX: [zx, zy, distance], duration, ease)
     @counter?.animateWith?(@circle, a, turnText: turns, duration, ease)
-
-  pause: => setTimeout @fadeOut, if @stopEarly then 5500 else 3000
 
   fadeOut: =>
     a = @circle.animate opacity: 0, 1000, '<', @wait

@@ -1,5 +1,7 @@
 @τ = 2 * Math.PI;
 
+@callbackAfter = (fn, delay) -> () -> setTimeout(fn, delay)
+
 
 class @Bound
   constructor: (@end, @open = true) ->
@@ -60,15 +62,40 @@ turnRotate = (cx, cy, uplen, downlen, turns) ->
 
 applyAttrs = (obj, attrs) ->
   node = $(obj.node)
-  if _.isArray(attrs?.class)
+  attrs ?= {}
+  if _.isArray(attrs.class)
     node.attr 'class', attrs.class.join(' ')
-  else if _.isString(attrs?.class)
+  else if _.isString(attrs.class)
     node.attr 'class', attrs.class
   delete attrs.class
-  if _.isString(attrs?.style)
+  if _.isString(attrs.style)
     node.attr 'style', attrs.style
   delete attrs.style
-  obj.attr attrs
+  if not _.isEmpty(attrs)
+    obj.attr attrs
+  obj
+
+
+tspan = (part) ->
+  node = document.createElementNS('http://www.w3.org/2000/svg', 'tspan')
+  if _.isObject(part)
+    node.appendChild(document.createTextNode(part.text))
+    delete part.text
+    for key, val of part
+      node.setAttribute(key, val)
+  else
+    node.appendChild(document.createTextNode(part))
+  node
+
+
+mathText = (paper, x, y, parts, attrs) ->
+  if _.isArray(parts)
+    elem = paper.text x, y, ''
+    _.each(parts, (part) -> elem.node.appendChild(tspan(part)))
+  else
+    elem = paper.text x, y, parts
+  elem.node.removeAttribute 'style'
+  applyAttrs(elem, attrs)
 
 
 axis = (paper, zx, zy, options) ->
@@ -78,7 +105,8 @@ axis = (paper, zx, zy, options) ->
     arrowLength: 2              # In terms of options.tickHeight
     capLength: 1                # In terms of options.unit
     classes: ['axis']           # Added to all elements.
-    from: new Bound(0, false)
+    doTick: true
+    from: null                  # From options.zero.
     labelClass: ''              # Inferred from text.axis
     labels: {}                  # Missing labels will use the tick number.
     lineClass: ''               # path.axis:not(.arrow):not(.tick) preferred.
@@ -95,6 +123,14 @@ axis = (paper, zx, zy, options) ->
     # For type L and T zeroTick is a bool which makes the zero tick cross the
     # axis. For type + and | it's a factor by which the zero tick is larger.
     zeroTick: true              # In terms of ticks (if it's a number).
+    zeroLabel: true             # Whether to label zero.
+
+  geometry = paper.set()
+  labels = paper.set()
+
+  # Set from to zero if it's unset.
+  options.zero = +(options.zero)
+  options.from = new Bound(options.zero, false) unless options.from?
 
   # Normalize the bounds
   if _.isNumber(options.from)
@@ -107,14 +143,13 @@ axis = (paper, zx, zy, options) ->
     options.classes = options.classes.join(' ')
 
   # Normalize the zero tick ratio
-  if (_.isBoolean(options.zeroTick) and
-      options.zeroTick and
-      options.tickType in ['|', '+'])
-    options.zeroTick = 1.5
+  if _.isBoolean(options.zeroTick) and options.tickType in ['|', '+']
+    options.zeroTick = if options.zeroTick then 1.5 else 1
 
   # Calculate the cap arrow dimensions.
   options.arrowBreadth = options.arrowBreadth * options.tickHeight
   options.arrowLength = options.arrowLength * options.tickHeight
+  stepWidth = options.unit * options.step
 
   # Determine what ticks to draw on each side of zero.
   # 1 2 |3| 4 5 6 7
@@ -144,19 +179,46 @@ axis = (paper, zx, zy, options) ->
   ey = zy - (poslength * uy)
 
   # Add the axis line.
-  hasPath = options.tickType in ['T', 'L', '+']
+  hasPath = options.tickType in ['T', 'L', '+', false]
   if hasPath
     path = paper.path(['M', sx, sy, 'L', ex, ey])
     $(path.node).attr 'class': "#{options.classes} #{options.lineClass}"
+    geometry.push(path)
 
   # Looks up the label for a tick.
-  label = (number) ->
-    if _.has(options.labels, number)
-    then options.labels[number]
-    else number
+  label = (tx, ty, number) ->
+    if options.labels == false
+      return
+    labelParts = if _.isFunction(options.labels)
+      options.labels(number)
+    else if _.has(options.labels, number)
+      options.labels[number]
+    else
+      number
+    if not labelParts?
+      return
+    elemAttrs = class: "#{options.classes} #{options.labelClass}"
+    elem = mathText(paper, tx, ty, labelParts, elemAttrs)
+    labels.push(elem)
+
 
   # Makes a flexible tick.
   tick = (cx, cy, number, zero = false) ->
+    # TODO: these are hacky.
+    if zero and options.zeroTick == 0
+      return
+    if _.isFunction(options.doTick) and not options.doTick(number)
+      return
+
+    if options.tickType == ' '
+      textx = cx + options.textOffset * uy
+      texty = cy + options.textOffset * ux
+      label(textx, texty, number) unless zero and not options.zeroLabel
+      return
+
+    if options.tickType == false
+      return
+
     full = options.tickType in ['|', '+']
     factor = 1
 
@@ -164,7 +226,7 @@ axis = (paper, zx, zy, options) ->
     if zero and full
       factor = options.zeroTick
     # Zero tick crosses the axs line when other ticks don't.
-    else if zero
+    else if zero and options.zeroTick
       full = true
       factor = 2
 
@@ -192,24 +254,20 @@ axis = (paper, zx, zy, options) ->
     textx = cx + (toff * uy)
     texty = cy + (toff * ux)
 
-    # Plant the label.
-    tickLabel = paper.text textx, texty, label(number)
-    $(tickLabel.node).attr class: "#{options.classes} #{options.labelClass}"
-
-    # Make the tick, if they're into that sort of thing.
-    if options.tickType != ' '
-      tickLine = paper.path ['M', topx, topy, 'L', botx, boty]
-      $(tickLine.node).attr class: "#{options.classes} #{options.tickClass}"
+    label(textx, texty, number) unless zero and not options.zeroLabel
+    tickLine = paper.path ['M', topx, topy, 'L', botx, boty]
+    $(tickLine.node).attr class: "#{options.classes} #{options.tickClass}"
+    geometry.push(tickLine)
 
   # Make all the ticks.
   for number, position in negticks
-    tx = zx - ((position + 1) * options.unit * ux)
-    ty = zy + ((position + 1) * options.unit * uy)
+    tx = zx - ((negticks.length - position) * stepWidth * ux)
+    ty = zy + ((negticks.length - position) * stepWidth * uy)
     tick(tx, ty, number)
   tick(zx, zy, options.zero, true)
   for number, position in posticks
-    tx = zx + ((position + 1) * options.unit * ux)
-    ty = zy - ((position + 1) * options.unit * uy)
+    tx = zx + ((position + 1) * stepWidth * ux)
+    ty = zy - ((position + 1) * stepWidth * uy)
     tick(tx, ty, number)
 
   # Makes cap arrows.
@@ -226,10 +284,12 @@ axis = (paper, zx, zy, options) ->
         cx + db * uy, cy + db * ux
         'z']
     $(arrow.node).attr class: "#{options.classes} #{options.arrowClass}"
+    geometry.push(arrow)
 
   # Add the cap arrows.
   cap(sx, sy, true) if options.from.open
   cap(ex, ey) if options.to.open
+  [geometry, labels]
 
 
 class @Diagram
@@ -248,11 +308,17 @@ class @Diagram
       text: (τ * turns).toFixed(6)
     @paper.setViewBox 0, 0, width, height
 
+  circle: (attrs) ->
+    applyAttrs(@paper.circle(), attrs)
+
   path: (attrs) ->
     applyAttrs(@paper.path(), attrs)
 
   axis: (zx, zy, options) =>
     axis(@paper, zx, zy, options)
+
+  text: (x, y, parts, attrs) =>
+    mathText(@paper, x, y, parts, attrs)
 
 
 @diagram = (codename, cls, w, h) ->

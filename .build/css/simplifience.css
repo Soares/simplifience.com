@@ -134,7 +134,6 @@ body.main footer aside a.stub {
 body.main footer aside a.stub:visited {
   color: #ffb273;
 }
-body.main svg circle,
 body.main svg .colored {
   fill: #3cc;
   stroke: #006363;
@@ -362,7 +361,6 @@ body.rules footer aside a.stub {
 body.rules footer aside a.stub:visited {
   color: #ffd073;
 }
-body.rules svg circle,
 body.rules svg .colored {
   fill: #4671d5;
   stroke: #06266f;
@@ -590,7 +588,6 @@ body.rigor footer aside a.stub {
 body.rigor footer aside a.stub:visited {
   color: #ffe773;
 }
-body.rigor svg circle,
 body.rigor svg .colored {
   fill: #6a48d7;
   stroke: #200772;
@@ -818,7 +815,6 @@ body.simplifience footer aside a.stub {
 body.simplifience footer aside a.stub:visited {
   color: #ffff73;
 }
-body.simplifience svg circle,
 body.simplifience svg .colored {
   fill: #9f3ed5;
   stroke: #48036f;
@@ -1046,7 +1042,6 @@ body.knowledge footer aside a.stub {
 body.knowledge footer aside a.stub:visited {
   color: #ffe773;
 }
-body.knowledge svg circle,
 body.knowledge svg .colored {
   fill: #e6399b;
   stroke: #85004b;
@@ -1274,7 +1269,6 @@ body.rant footer aside a.stub {
 body.rant footer aside a.stub:visited {
   color: #a68900;
 }
-body.rant svg circle,
 body.rant svg .colored {
   fill: #ff4040;
   stroke: #a60000;
@@ -1502,7 +1496,6 @@ body.stub footer aside a.stub {
 body.stub footer aside a.stub:visited {
   color: #006363;
 }
-body.stub svg circle,
 body.stub svg .colored {
   fill: #ff9640;
   stroke: #a64b00;
@@ -1730,7 +1723,6 @@ body.caution footer aside a.stub {
 body.caution footer aside a.stub:visited {
   color: #200772;
 }
-body.caution svg circle,
 body.caution svg .colored {
   fill: #ffff40;
   stroke: #a6a600;
@@ -1958,7 +1950,6 @@ body.define footer aside a.stub {
 body.define footer aside a.stub:visited {
   color: #48036f;
 }
-body.define svg circle,
 body.define svg .colored {
   fill: #39e639;
   stroke: #008500;
@@ -2186,7 +2177,6 @@ body.computer footer aside a.stub {
 body.computer footer aside a.stub:visited {
   color: #2aa198;
 }
-body.computer svg circle,
 body.computer svg .colored {
   fill: #2aa198;
   stroke: #586e75;
@@ -2770,6 +2760,63 @@ hr.mark {
 }
 #main svg path.axis.arrow {
   stroke-width: 1;
+}
+#main svg text {
+  text-anchor: middle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: normal;
+  font-family: MathJax_Math Arial;
+}
+#main svg .teal {
+  fill: #099;
+  stroke: #006363;
+}
+#main svg .blue {
+  fill: #1240ab;
+  stroke: #06266f;
+}
+#main svg .navy {
+  fill: #3914af;
+  stroke: #200772;
+}
+#main svg .violet {
+  fill: #7109aa;
+  stroke: #48036f;
+}
+#main svg .magenta {
+  fill: #cd0074;
+  stroke: #85004b;
+}
+#main svg .red {
+  fill: #f00;
+  stroke: #a60000;
+}
+#main svg .orange {
+  fill: #ff7400;
+  stroke: #a64b00;
+}
+#main svg .gold {
+  fill: #fa0;
+  stroke: #a66f00;
+}
+#main svg .amber {
+  fill: #ffd300;
+  stroke: #a68900;
+}
+#main svg .yellow {
+  fill: #f00;
+  stroke: #a60000;
+}
+#main svg .celadon {
+  fill: #9fee00;
+  stroke: #679b00;
+}
+#main svg .green {
+  fill: #0c0;
+  stroke: #008500;
 }
 @media only screen {
   div.cap .definition {

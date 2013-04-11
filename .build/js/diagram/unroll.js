@@ -34,8 +34,6 @@
 
       this.fadeOut = __bind(this.fadeOut, this);
 
-      this.pause = __bind(this.pause, this);
-
       this.roll = __bind(this.roll, this);
 
       this.fadeIn = __bind(this.fadeIn, this);
@@ -59,7 +57,9 @@
         to: this.isDiameterLine ? 4 : 8,
         capLength: this.isDiameterLine ? 1 / 2 : 1
       });
-      this.circle = this.paper.circle();
+      this.circle = this.circle({
+        "class": 'colored'
+      });
       this.outline = this.path({
         'stroke-width': 2,
         "class": 'colored',
@@ -73,7 +73,7 @@
         'stroke-width': 1,
         "class": 'colored'
       });
-      this.counter = counter ? this.paper.text(tx, ty, 0..toFixed(6)) : false;
+      this.counter = counter ? this.text(tx, ty, 0..toFixed(6)) : false;
       this.paper.customAttributes.drawX = function(x, y, distance) {
         if (distance === 0) {
           return {
@@ -143,7 +143,7 @@
     };
 
     Unroller.prototype.roll = function() {
-      var a, distance, duration, ease, turns, uplen, _ref;
+      var a, distance, duration, ease, fader, turns, uplen, _ref;
       this.circle.attr({
         'stroke-width': 0
       });
@@ -158,9 +158,10 @@
       uplen = this.isDiameterLine ? radius : 0;
       turns = this.stopEarly ? 1 / 2 : 1;
       distance = turns * circumference;
+      fader = callbackAfter(this.fadeOut, this.stopEarly ? 5500 : 3000);
       a = this.circle.animate({
         transform: "t" + distance + " 0"
-      }, duration, ease, this.pause);
+      }, duration, ease, fader);
       this.line.animateWith(this.circle, a, {
         turnRotate: [zx + distance, zy - radius, radius + 1, uplen, -1 / 4 - turns]
       }, duration, ease);
@@ -173,10 +174,6 @@
       return (_ref = this.counter) != null ? typeof _ref.animateWith === "function" ? _ref.animateWith(this.circle, a, {
         turnText: turns
       }, duration, ease) : void 0 : void 0;
-    };
-
-    Unroller.prototype.pause = function() {
-      return setTimeout(this.fadeOut, this.stopEarly ? 5500 : 3000);
     };
 
     Unroller.prototype.fadeOut = function() {
