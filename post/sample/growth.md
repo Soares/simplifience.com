@@ -1,6 +1,8 @@
 ---
 title: Growth
 type: simplifience
+scripts:
+- '@raphael/growth'
 ---
 
 <div class="caution" markdown="block">
@@ -66,7 +68,7 @@ $1.0125$ is $100\%$ of the principle $+ 1.25\%$ which is the quarterly interest.
 $\displaystyle \frac{5\%\ per\ year}{4\ quarters\ per\ year} = 1.25\%\ per\ quarter$
 </aside>
 
-<!--TODO: picture like the one in better explained.-->
+<div class="growth"></div>
 
 If you generalize this to any principle and interest rate you can calculate the growth of your money with the formula $principle * (1 + \frac{rate}{n})^n$, where $n$ is the number of times you compound the money.
 
