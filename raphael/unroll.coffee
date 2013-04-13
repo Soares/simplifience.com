@@ -48,17 +48,17 @@ class Unroller extends Uriel.Diagram
     stopEarly = @elem.data('pistop') || false
     unit = if isDiameterLine then 2 * radius else radius
 
-    @axis zx, zy + 0.5,
+    @axis [zx, zy + 0.5],
       unit: unit,
       to: if isDiameterLine then 4 else 8
       capLength: if isDiameterLine then 1/2 else 1
 
-    circle = @circle zx, zy - radius, radius, class: 'colored'
+    circle = @circle [zx, zy] - radius, radius, class: 'colored'
     outline = @path null, 'stroke-width': 2, class: 'colored line'
     laid = @path null, 'stroke-width': 2, class: 'colored'
     line = @path null, 'stroke-width': 1, class: 'colored'
     counter = if @elem.data('counter')
-    then @text(width - 2 * radius, radius, 0.toFixed 6)
+    then @text [width - 2 * radius, radius], 0.toFixed 6
     else false
 
     # Length of the inner-circle line beyond the centerpoint.

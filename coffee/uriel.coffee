@@ -64,7 +64,7 @@ class Uriel.Path extends Uriel.Element
 
 class Uriel.Circle extends Uriel.Element
   # Remove the shitty Raphael presets in favor of my own shitty CSS presets.
-  constructor: (paper, x, y, r, attrs={}) ->
+  constructor: (paper, [x, y], r, attrs={}) ->
     element = paper.circle(x, y, r)
     element.node.removeAttribute('style')
     element.node.removeAttribute('fill')
@@ -76,7 +76,7 @@ class Uriel.Text extends Uriel.Element
   # Raphael makes some stupid choices with its text elements.
   # SVG makes some stupid choices about text-anchoring in the middle.
   # As a result, make sure you change fonts-size with attrs instead of CSS!
-  constructor: (paper, x, y, text, attrs={}) ->
+  constructor: (paper, [x, y], text, attrs={}) ->
     element = paper.text x, y, ''
     # Destroy empty tspan. We'll make our own.
     element.node.removeChild(element.node.lastChild)
@@ -87,14 +87,14 @@ class Uriel.Text extends Uriel.Element
     attrs['font-size'] = 10 unless attrs['font-size']?
     fontSize = attrs['font-size']
     text = [text] unless _.isArray(text)
-    element.node.appendChild(@tspan(part, fontSize)) for part in text
+    element.node.appendChild(@tspan(part, fontSize, i)) for part, i in text
     # Apply font-size via element style. SVG is stupid.
     delete attrs['font-size']
     attrs['style'] = '' unless attrs['style']?
     attrs['style'] = "font-size:#{fontSize};#{attrs['style']}"
     super element, attrs
 
-  tspan: (text, fontSize) =>
+  tspan: (text, fontSize, index=0) =>
     tspan = document.createElementNS(SVG_DOCTYPE, 'tspan')
     if _.isObject(text)
       tspan.appendChild(document.createTextNode(text.text))
@@ -106,12 +106,12 @@ class Uriel.Text extends Uriel.Element
     # A magic value that centers the text a bit better.
     # Employed shittily by SVG using bounding-box magic.
     # See raphael issue #491.
-    tspan.setAttribute('dy', fontSize / 4)
+    tspan.setAttribute('dy', fontSize / 4) if index is 0
     return tspan
 
 
 class Uriel.Axis
-  constructor: (@paper, @x0, @y0, options={}) ->
+  constructor: (@paper, [@x0, @y0], options={}) ->
     options = _.defaults options,
       # Function to adjust specific ticks. tickType is one of 'top', 'bottom',
       # or 'full'.  The function should return [factor, type] where factor is
@@ -296,7 +296,7 @@ class Uriel.Axis
     x = point[0] + offset * @attitude
     y = point[1] + offset * @asmuth
     # Create the elements.
-    text = new Uriel.Text @paper, x, y, label
+    text = new Uriel.Text @paper, [x, y], label
     @classify text, 'label', n
     @elements.labels.push text
 
@@ -355,7 +355,6 @@ class Uriel.Animation
       repeat: @repeat
       master: null
     for [object, attributes] in @description
-      console.log 'running', object, attributes
       # object can be null/false in the case of optional objects.
       object.animate(attributes, controls) if object
     if callback and _.isEmpty(@description)
@@ -419,17 +418,65 @@ class Uriel.Diagram
   recipe: (initial, description, loopAfter=null) =>
     new Uriel.Recipe(initial, description, loopAfter, @elem)
 
-  circle: (x, y, r, attrs={}) =>
-    new Uriel.Circle(@paper, x, y, r, attrs)
+  circle: (center, r, attrs={}) =>
+    new Uriel.Circle(@paper, center, r, attrs)
 
   path: (description, attrs={}) =>
     new Uriel.Path(@paper, description, attrs)
 
-  axis: (x, y, attrs) =>
-    new Uriel.Axis(@paper, x, y, attrs)
+  axis: (origin, attrs) =>
+    new Uriel.Axis(@paper, origin, attrs)
 
-  text: (x, y, text, attrs) =>
-    new Uriel.Text(@paper, x, y, text, attrs)
+  text: (position, text, attrs) =>
+    new Uriel.Text(@paper, position, text, attrs)
 
   group: (objects, attrs) =>
     new Uriel.Group(@paper, objects, attrs)
+
+
+class Uriel.Plane extends Uriel.Diagram
+  constructor: (@elem, options={}) ->
+    @width = options.width ? 500
+    @height = options.height ? 500
+    @unit = options.unit ? 45
+    @origin = options.origin ? [@width / 2, @height / 2]
+    super @elem, @width, @height
+    @makeHorizontalAxis()
+    @makeVerticalAxis()
+    @labelZero()
+    @drawGuides()
+
+  labelZero: =>
+
+  makeHorizontalAxis: (options={}) =>
+    options.unit ?= @unit
+    options.from ?= -5
+    options.to ?= 5
+    options.labels ?= (num) -> if num isnt 0 then num else false
+    @axis @origin, options
+
+  makeVerticalAxis: (options={}) =>
+    options.unit ?= @unit
+    options.from ?= -5
+    options.to ?= 5
+    options.labels ?= (num) -> if num isnt 0 then num else false
+    options.turns ?= 1/4
+    options.tickType ?= 'top'
+    @axis @origin, options
+
+  drawGuides: =>
+
+  rule: (end, start=[0, 0]) =>
+    @path ['M'] + @pt(start) + ['L'] + @pt(end), class: 'guide'
+
+  guide: (radius, center=[0, 0]) =>
+    @circle @pt(center), radius, class: 'guide'
+
+  pt: ([x, y]) =>
+    # Assumes that x is horizontal and y is vertical.
+    # Override if you use weird axis.
+    return [@origin[0] + x * @unit, @origin[1] - y * @unit]
+
+  text: (pt, text, attrs) => super @pt(pt), text, attrs
+  circle: (pt, r, attrs) => super @pt(pt), r, attrs
+  line: (start, end, attrs) => @path ['M'] + @pt(start) + ['L'] + @pt(end), attrs

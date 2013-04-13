@@ -10,7 +10,7 @@ class NumberLine extends Uriel.Diagram
     positives = @elem.data('positives') || false
     x = if positives then PADDING + UNIT else width / 2
     y = height / 2
-    @axis x, y,
+    @axis [x, y],
       unit: UNIT
       tickType: if numberOnly then false else null
       drawLine: not numberOnly
@@ -24,13 +24,13 @@ class NumberPlane extends Uriel.Diagram
   constructor: (elem, width=LARGE, height=LARGE) ->
     super elem, width, height
     [zx, zy] = [width / 2, height / 2]
-    zero = @text zx, zy + 12, '0'
-    real = @axis zx, zy,
+    zero = @text [zx, zy + 12], '0'
+    real = @axis [zx, zy],
       unit: UNIT
       from: -5
       to: 5
       labels: (num) -> if num is 0 then false else num
-    imaginary = @axis zx, zy,
+    imaginary = @axis [zx, zy],
       unit: UNIT
       from: -5
       to: 5
@@ -52,45 +52,26 @@ class NumberPlane extends Uriel.Diagram
     close = @animate(initial, 750, '>')
     @recipe(initial, [1000, expand, 5000, close], 8000).triggerOnView(1000)
 
-class ComplexPlane extends Uriel.Diagram
-  constructor: (elem, width=LARGE, height=LARGE) ->
-    super elem, width, height
-    @x0 = width/2
-    @y0 = height/2
-    @unit = UNIT
-    @zero = @text(@x0 - 8, @y0 + 12, '0')
-    @real = @axis @x0, @y0,
-      unit: @unit
-      from: -5
-      to: 5
-      labels: (num) -> if num is 0 then false else num
-    @imaginary = @axis @x0, @y0,
-      unit: @unit
-      from: -5
-      to: 5
-      labels: (num) -> if num is 0 then false else [num, {text: 'i', 'font-style': 'italic'}]
-      turns: 1/4
-      tickType: 'top'
+class ComplexPlane extends Uriel.Plane
+  constructor: (elem) ->
+    super elem, width: LARGE, height: LARGE, unit: UNIT
+    @rule [2, 3], [0, 3]
+    @rule [2, 3], [2, 0]
+    @text [2.6, 3.2], ['2 + 3', {text: 'i', 'font-style': 'italic'}]
+    @point [2, 3], 'red'
+
+  labelZero: =>
+    @text [-0.33, -0.4], 0
+
+  makeVerticalAxis: =>
+    super
       textOffset: 10
-    @rule 0, 3, 2, 3
-    @rule 2, 0, 2, 3
-    @point 2, 3, 'red'
-    @text @x(3) - 8, @y(3) + 3, ['2 + 3', {text: 'i', 'font-style': 'italic'}]
+      labels: (num) ->
+        if num is 0 then false else [num, {text: 'i', 'font-style': 'italic'}]
 
-  x: (x) => @x0 + x * @unit
-  y: (y) => @y0 - y * @unit
-
-  rule: (x1, y1, x2, y2) =>
-    x1 = @x0 + x1 * @unit
-    y1 = @y0 - y1 * @unit
-    x2 = @x0 + x2 * @unit
-    y2 = @y0 - y2 * @unit
-    path = @path ['M', x1, y1, 'L', x2, y2], class: 'guide'
-
-  point: (x, y, color) =>
-    path = @path ['M', @x0, @y0, 'l', x * @unit, -y * @unit], class: color
-    dot = @circle @x0 + x * @unit, @y0 - y * @unit, 4, class: color
-    [path, dot]
+  point: (pt, color) =>
+    @line [0, 0], pt, class: color
+    @circle pt, 4, class: color
 
 class PolarPlane extends Uriel.Diagram
   constructor: (elem, width=LARGE, height=LARGE) ->
@@ -103,13 +84,13 @@ class PolarPlane extends Uriel.Diagram
     @guide(6)
     @guide(8)
     @guide(10)
-    @real = @axis @x0, @y0,
+    @real = @axis [@x0, @y0],
       unit: @unit
       from: -10
       to: 10
       step: 2
       labels: (num) -> if num is 0 then false else num
-    @imaginary = @axis @x0, @y0,
+    @imaginary = @axis [@x0, @y0],
       unit: @unit
       from: -10
       to: 10
@@ -122,7 +103,7 @@ class PolarPlane extends Uriel.Diagram
     @point(0, 2, 'blue')
 
     [rpath, rdot] = @point 3, 0, 'violet'
-    commentary = @text @x(9), @y(9), ''
+    commentary = @text [@x(9), @y(9)], ''
     result = @group([rpath, rdot])
 
     initial = [
@@ -161,7 +142,7 @@ class PolarPlane extends Uriel.Diagram
       [commentary, text: '']
     ]
     fallDown = @animate([
-      [result, transform: ['t', 0, 6 * @unit]]
+      [result, transform: ['t', 0, 6 * @unit], opacity: .8]
     ], 500, 'backOut')
     fadeOut = @animate([[result, opacity: 0]], 200)
     recipe = @recipe(initial, [
@@ -170,7 +151,7 @@ class PolarPlane extends Uriel.Diagram
     recipe.triggerOnView()
 
   guide: (len) =>
-    @circle @x0, @y0, len * @unit, class: 'guide'
+    @circle [@x0, @y0], len * @unit, class: 'guide'
 
   # TODO: factor these out. They're duplicated.
   x: (x) => @x0 + x * @unit
@@ -178,7 +159,7 @@ class PolarPlane extends Uriel.Diagram
 
   point: (x, y, color) =>
     path = @path ['M', @x0, @y0, 'l', x * @unit, -y * @unit], class: color
-    dot = @circle @x0 + x * @unit, @y0 - y * @unit, 4, class: color
+    dot = @circle [@x0 + x * @unit, @y0 - y * @unit], 4, class: color
     [path, dot]
 
 
@@ -190,17 +171,16 @@ class OnePlane extends Uriel.Diagram
     @unit = UNIT * 1.5
     @guide(2)
     @guide(3)
-    @real = @axis @x0, @y0,
+    @real = @axis [@x0, @y0],
       unit: @unit
       from: -3
       to: 3
       labels: (num) -> if num > 1 then num else false
-      adjustTick: (num) -> if num > 0 then true else false
-    @imaginary = @axis @x0, @y0,
+      adjustTick: (num) -> if num > 1 then true else false
+    @imaginary = @axis [@x0, @y0],
       unit: @unit
       from: -3
       to: 3
-      labels: (num) -> if num is 0 then false else [num, {text: 'i', 'font-style': 'italic'}]
       turns: 1/4
       labels: false
       tickType: false
@@ -217,22 +197,22 @@ class OnePlane extends Uriel.Diagram
           text: "1↺#{turns.toFixed(2)}"
         }
 
-    oneTurn = @text(@x(1.5), @y(0), '1↺0')
-    point = @circle(@x(1), @y(0), 2, class: 'colored')
+    oneTurn = @text [@x(1.3), @y(0)], '1↺0'
+    point = @circle [@x(1), @y(0)], 2, class: 'colored'
 
     initial = [[oneTurn, oneTurn: 0]]
     go = @animate([
       [oneTurn, oneTurn: 1]
       [point, transform: ['R', -360, @x0, @y0]]
     ], 10000, 'linear', Infinity)
-    @recipe(initial, [go]).triggerOnView()
+    @recipe(initial, [go]).trigger()
 
 
   magnitude: (len) =>
-    @circle @x0, @y0, len * @unit, class: 'colored line'
+    @circle [@x0, @y0], len * @unit, class: 'colored line'
 
   # TODO: Copied.
-  guide: (len) => @circle @x0, @y0, len * @unit, class: 'guide'
+  guide: (len) => @circle [@x0, @y0], len * @unit, class: 'guide'
   x: (x) => @x0 + x * @unit
   y: (y) => @y0 - y * @unit
 

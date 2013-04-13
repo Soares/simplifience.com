@@ -78,12 +78,12 @@
       isDiameterLine = this.elem.data('diameter') || false;
       stopEarly = this.elem.data('pistop') || false;
       unit = isDiameterLine ? 2 * radius : radius;
-      this.axis(zx, zy + 0.5, {
+      this.axis([zx, zy + 0.5], {
         unit: unit,
         to: isDiameterLine ? 4 : 8,
         capLength: isDiameterLine ? 1 / 2 : 1
       });
-      circle = this.circle(zx, zy - radius, radius, {
+      circle = this.circle([zx, zy] - radius, radius, {
         "class": 'colored'
       });
       outline = this.path(null, {
@@ -98,7 +98,7 @@
         'stroke-width': 1,
         "class": 'colored'
       });
-      counter = this.elem.data('counter') ? this.text(width - 2 * radius, radius, 0..toFixed(6)) : false;
+      counter = this.elem.data('counter') ? this.text([width - 2 * radius, radius], 0..toFixed(6)) : false;
       toplen = isDiameterLine ? radius : 0;
       rollEase = stopEarly ? '<' : '<>';
       rollDuration = stopEarly ? 2500 : 5000;

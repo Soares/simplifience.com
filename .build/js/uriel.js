@@ -124,8 +124,9 @@
 
     __extends(Circle, _super);
 
-    function Circle(paper, x, y, r, attrs) {
-      var element;
+    function Circle(paper, _arg, r, attrs) {
+      var element, x, y;
+      x = _arg[0], y = _arg[1];
       if (attrs == null) {
         attrs = {};
       }
@@ -144,8 +145,9 @@
 
     __extends(Text, _super);
 
-    function Text(paper, x, y, text, attrs) {
-      var element, fontSize, part, _i, _len;
+    function Text(paper, _arg, text, attrs) {
+      var element, fontSize, i, part, x, y, _i, _len;
+      x = _arg[0], y = _arg[1];
       if (attrs == null) {
         attrs = {};
       }
@@ -164,9 +166,9 @@
       if (!_.isArray(text)) {
         text = [text];
       }
-      for (_i = 0, _len = text.length; _i < _len; _i++) {
-        part = text[_i];
-        element.node.appendChild(this.tspan(part, fontSize));
+      for (i = _i = 0, _len = text.length; _i < _len; i = ++_i) {
+        part = text[i];
+        element.node.appendChild(this.tspan(part, fontSize, i));
       }
       delete attrs['font-size'];
       if (attrs['style'] == null) {
@@ -176,8 +178,11 @@
       Text.__super__.constructor.call(this, element, attrs);
     }
 
-    Text.prototype.tspan = function(text, fontSize) {
+    Text.prototype.tspan = function(text, fontSize, index) {
       var key, tspan, val;
+      if (index == null) {
+        index = 0;
+      }
       tspan = document.createElementNS(SVG_DOCTYPE, 'tspan');
       if (_.isObject(text)) {
         tspan.appendChild(document.createTextNode(text.text));
@@ -189,7 +194,9 @@
       } else {
         tspan.appendChild(document.createTextNode(text));
       }
-      tspan.setAttribute('dy', fontSize / 4);
+      if (index === 0) {
+        tspan.setAttribute('dy', fontSize / 4);
+      }
       return tspan;
     };
 
@@ -199,11 +206,10 @@
 
   Uriel.Axis = (function() {
 
-    function Axis(paper, x0, y0, options) {
+    function Axis(paper, _arg, options) {
       var extensionLength, n, neglength, negunits, poslength, posunits, _i, _len, _ref, _ref1;
       this.paper = paper;
-      this.x0 = x0;
-      this.y0 = y0;
+      this.x0 = _arg[0], this.y0 = _arg[1];
       if (options == null) {
         options = {};
       }
@@ -396,7 +402,7 @@
       }
       x = point[0] + offset * this.attitude;
       y = point[1] + offset * this.asmuth;
-      text = new Uriel.Text(this.paper, x, y, label);
+      text = new Uriel.Text(this.paper, [x, y], label);
       this.classify(text, 'label', n);
       return this.elements.labels.push(text);
     };
@@ -539,7 +545,6 @@
       _ref = this.description;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         _ref1 = _ref[_i], object = _ref1[0], attributes = _ref1[1];
-        console.log('running', object, attributes);
         if (object) {
           object.animate(attributes, controls);
         }
@@ -731,11 +736,11 @@
       return new Uriel.Recipe(initial, description, loopAfter, this.elem);
     };
 
-    Diagram.prototype.circle = function(x, y, r, attrs) {
+    Diagram.prototype.circle = function(center, r, attrs) {
       if (attrs == null) {
         attrs = {};
       }
-      return new Uriel.Circle(this.paper, x, y, r, attrs);
+      return new Uriel.Circle(this.paper, center, r, attrs);
     };
 
     Diagram.prototype.path = function(description, attrs) {
@@ -745,12 +750,12 @@
       return new Uriel.Path(this.paper, description, attrs);
     };
 
-    Diagram.prototype.axis = function(x, y, attrs) {
-      return new Uriel.Axis(this.paper, x, y, attrs);
+    Diagram.prototype.axis = function(origin, attrs) {
+      return new Uriel.Axis(this.paper, origin, attrs);
     };
 
-    Diagram.prototype.text = function(x, y, text, attrs) {
-      return new Uriel.Text(this.paper, x, y, text, attrs);
+    Diagram.prototype.text = function(position, text, attrs) {
+      return new Uriel.Text(this.paper, position, text, attrs);
     };
 
     Diagram.prototype.group = function(objects, attrs) {
@@ -760,5 +765,148 @@
     return Diagram;
 
   })();
+
+  Uriel.Plane = (function(_super) {
+
+    __extends(Plane, _super);
+
+    function Plane(elem, options) {
+      var _ref, _ref1, _ref2, _ref3;
+      this.elem = elem;
+      if (options == null) {
+        options = {};
+      }
+      this.line = __bind(this.line, this);
+
+      this.circle = __bind(this.circle, this);
+
+      this.text = __bind(this.text, this);
+
+      this.pt = __bind(this.pt, this);
+
+      this.guide = __bind(this.guide, this);
+
+      this.rule = __bind(this.rule, this);
+
+      this.drawGuides = __bind(this.drawGuides, this);
+
+      this.makeVerticalAxis = __bind(this.makeVerticalAxis, this);
+
+      this.makeHorizontalAxis = __bind(this.makeHorizontalAxis, this);
+
+      this.labelZero = __bind(this.labelZero, this);
+
+      this.width = (_ref = options.width) != null ? _ref : 500;
+      this.height = (_ref1 = options.height) != null ? _ref1 : 500;
+      this.unit = (_ref2 = options.unit) != null ? _ref2 : 45;
+      this.origin = (_ref3 = options.origin) != null ? _ref3 : [this.width / 2, this.height / 2];
+      Plane.__super__.constructor.call(this, this.elem, this.width, this.height);
+      this.makeHorizontalAxis();
+      this.makeVerticalAxis();
+      this.labelZero();
+      this.drawGuides();
+    }
+
+    Plane.prototype.labelZero = function() {};
+
+    Plane.prototype.makeHorizontalAxis = function(options) {
+      var _ref, _ref1, _ref2, _ref3;
+      if (options == null) {
+        options = {};
+      }
+      if ((_ref = options.unit) == null) {
+        options.unit = this.unit;
+      }
+      if ((_ref1 = options.from) == null) {
+        options.from = -5;
+      }
+      if ((_ref2 = options.to) == null) {
+        options.to = 5;
+      }
+      if ((_ref3 = options.labels) == null) {
+        options.labels = function(num) {
+          if (num !== 0) {
+            return num;
+          } else {
+            return false;
+          }
+        };
+      }
+      return this.axis(this.origin, options);
+    };
+
+    Plane.prototype.makeVerticalAxis = function(options) {
+      var _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
+      if (options == null) {
+        options = {};
+      }
+      if ((_ref = options.unit) == null) {
+        options.unit = this.unit;
+      }
+      if ((_ref1 = options.from) == null) {
+        options.from = -5;
+      }
+      if ((_ref2 = options.to) == null) {
+        options.to = 5;
+      }
+      if ((_ref3 = options.labels) == null) {
+        options.labels = function(num) {
+          if (num !== 0) {
+            return num;
+          } else {
+            return false;
+          }
+        };
+      }
+      if ((_ref4 = options.turns) == null) {
+        options.turns = 1 / 4;
+      }
+      if ((_ref5 = options.tickType) == null) {
+        options.tickType = 'top';
+      }
+      return this.axis(this.origin, options);
+    };
+
+    Plane.prototype.drawGuides = function() {};
+
+    Plane.prototype.rule = function(end, start) {
+      if (start == null) {
+        start = [0, 0];
+      }
+      return this.path(['M'] + this.pt(start) + ['L'] + this.pt(end), {
+        "class": 'guide'
+      });
+    };
+
+    Plane.prototype.guide = function(radius, center) {
+      if (center == null) {
+        center = [0, 0];
+      }
+      return this.circle(this.pt(center), radius, {
+        "class": 'guide'
+      });
+    };
+
+    Plane.prototype.pt = function(_arg) {
+      var x, y;
+      x = _arg[0], y = _arg[1];
+      return [this.origin[0] + x * this.unit, this.origin[1] - y * this.unit];
+    };
+
+    Plane.prototype.text = function(pt, text, attrs) {
+      return Plane.__super__.text.call(this, this.pt(pt), text, attrs);
+    };
+
+    Plane.prototype.circle = function(pt, r, attrs) {
+      return Plane.__super__.circle.call(this, this.pt(pt), r, attrs);
+    };
+
+    Plane.prototype.line = function(start, end, attrs) {
+      return this.path(['M'] + this.pt(start) + ['L'] + this.pt(end), attrs);
+    };
+
+    return Plane;
+
+  })(Uriel.Diagram);
 
 }).call(this);

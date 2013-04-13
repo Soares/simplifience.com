@@ -30,7 +30,7 @@
       positives = this.elem.data('positives') || false;
       x = positives ? PADDING + UNIT : width / 2;
       y = height / 2;
-      this.axis(x, y, {
+      this.axis([x, y], {
         unit: UNIT,
         tickType: numberOnly ? false : null,
         drawLine: !numberOnly,
@@ -59,8 +59,8 @@
       }
       NumberPlane.__super__.constructor.call(this, elem, width, height);
       _ref = [width / 2, height / 2], zx = _ref[0], zy = _ref[1];
-      zero = this.text(zx, zy + 12, '0');
-      real = this.axis(zx, zy, {
+      zero = this.text([zx, zy + 12], '0');
+      real = this.axis([zx, zy], {
         unit: UNIT,
         from: -5,
         to: 5,
@@ -72,7 +72,7 @@
           }
         }
       });
-      imaginary = this.axis(zx, zy, {
+      imaginary = this.axis([zx, zy], {
         unit: UNIT,
         from: -5,
         to: 5,
@@ -133,42 +133,35 @@
 
     __extends(ComplexPlane, _super);
 
-    function ComplexPlane(elem, width, height) {
-      if (width == null) {
-        width = LARGE;
-      }
-      if (height == null) {
-        height = LARGE;
-      }
+    function ComplexPlane(elem) {
       this.point = __bind(this.point, this);
 
-      this.rule = __bind(this.rule, this);
+      this.makeVerticalAxis = __bind(this.makeVerticalAxis, this);
 
-      this.y = __bind(this.y, this);
-
-      this.x = __bind(this.x, this);
-
-      ComplexPlane.__super__.constructor.call(this, elem, width, height);
-      this.x0 = width / 2;
-      this.y0 = height / 2;
-      this.unit = UNIT;
-      this.zero = this.text(this.x0 - 8, this.y0 + 12, '0');
-      this.real = this.axis(this.x0, this.y0, {
-        unit: this.unit,
-        from: -5,
-        to: 5,
-        labels: function(num) {
-          if (num === 0) {
-            return false;
-          } else {
-            return num;
-          }
-        }
+      this.labelZero = __bind(this.labelZero, this);
+      ComplexPlane.__super__.constructor.call(this, elem, {
+        width: LARGE,
+        height: LARGE,
+        unit: UNIT
       });
-      this.imaginary = this.axis(this.x0, this.y0, {
-        unit: this.unit,
-        from: -5,
-        to: 5,
+      this.rule([2, 3], [0, 3]);
+      this.rule([2, 3], [2, 0]);
+      this.text([2.6, 3.2], [
+        '2 + 3', {
+          text: 'i',
+          'font-style': 'italic'
+        }
+      ]);
+      this.point([2, 3], 'red');
+    }
+
+    ComplexPlane.prototype.labelZero = function() {
+      return this.text([-0.33, -0.4], 0);
+    };
+
+    ComplexPlane.prototype.makeVerticalAxis = function() {
+      return ComplexPlane.__super__.makeVerticalAxis.call(this, {
+        textOffset: 10,
         labels: function(num) {
           if (num === 0) {
             return false;
@@ -180,55 +173,22 @@
               }
             ];
           }
-        },
-        turns: 1 / 4,
-        tickType: 'top',
-        textOffset: 10
-      });
-      this.rule(0, 3, 2, 3);
-      this.rule(2, 0, 2, 3);
-      this.point(2, 3, 'red');
-      this.text(this.x(3) - 8, this.y(3) + 3, [
-        '2 + 3', {
-          text: 'i',
-          'font-style': 'italic'
         }
-      ]);
-    }
-
-    ComplexPlane.prototype.x = function(x) {
-      return this.x0 + x * this.unit;
-    };
-
-    ComplexPlane.prototype.y = function(y) {
-      return this.y0 - y * this.unit;
-    };
-
-    ComplexPlane.prototype.rule = function(x1, y1, x2, y2) {
-      var path;
-      x1 = this.x0 + x1 * this.unit;
-      y1 = this.y0 - y1 * this.unit;
-      x2 = this.x0 + x2 * this.unit;
-      y2 = this.y0 - y2 * this.unit;
-      return path = this.path(['M', x1, y1, 'L', x2, y2], {
-        "class": 'guide'
       });
     };
 
-    ComplexPlane.prototype.point = function(x, y, color) {
-      var dot, path;
-      path = this.path(['M', this.x0, this.y0, 'l', x * this.unit, -y * this.unit], {
+    ComplexPlane.prototype.point = function(pt, color) {
+      this.line([0, 0], pt, {
         "class": color
       });
-      dot = this.circle(this.x0 + x * this.unit, this.y0 - y * this.unit, 4, {
+      return this.circle(pt, 4, {
         "class": color
       });
-      return [path, dot];
     };
 
     return ComplexPlane;
 
-  })(Uriel.Diagram);
+  })(Uriel.Plane);
 
   PolarPlane = (function(_super) {
 
@@ -259,7 +219,7 @@
       this.guide(6);
       this.guide(8);
       this.guide(10);
-      this.real = this.axis(this.x0, this.y0, {
+      this.real = this.axis([this.x0, this.y0], {
         unit: this.unit,
         from: -10,
         to: 10,
@@ -272,7 +232,7 @@
           }
         }
       });
-      this.imaginary = this.axis(this.x0, this.y0, {
+      this.imaginary = this.axis([this.x0, this.y0], {
         unit: this.unit,
         from: -10,
         to: 10,
@@ -296,7 +256,7 @@
       this.point(3, 0, 'red');
       this.point(0, 2, 'blue');
       _ref = this.point(3, 0, 'violet'), rpath = _ref[0], rdot = _ref[1];
-      commentary = this.text(this.x(9), this.y(9), '');
+      commentary = this.text([this.x(9), this.y(9)], '');
       result = this.group([rpath, rdot]);
       initial = [
         [
@@ -400,7 +360,8 @@
       fallDown = this.animate([
         [
           result, {
-            transform: ['t', 0, 6 * this.unit]
+            transform: ['t', 0, 6 * this.unit],
+            opacity: .8
           }
         ]
       ], 500, 'backOut');
@@ -416,7 +377,7 @@
     }
 
     PolarPlane.prototype.guide = function(len) {
-      return this.circle(this.x0, this.y0, len * this.unit, {
+      return this.circle([this.x0, this.y0], len * this.unit, {
         "class": 'guide'
       });
     };
@@ -434,7 +395,7 @@
       path = this.path(['M', this.x0, this.y0, 'l', x * this.unit, -y * this.unit], {
         "class": color
       });
-      dot = this.circle(this.x0 + x * this.unit, this.y0 - y * this.unit, 4, {
+      dot = this.circle([this.x0 + x * this.unit, this.y0 - y * this.unit], 4, {
         "class": color
       });
       return [path, dot];
@@ -471,7 +432,7 @@
       this.unit = UNIT * 1.5;
       this.guide(2);
       this.guide(3);
-      this.real = this.axis(this.x0, this.y0, {
+      this.real = this.axis([this.x0, this.y0], {
         unit: this.unit,
         from: -3,
         to: 3,
@@ -483,29 +444,17 @@
           }
         },
         adjustTick: function(num) {
-          if (num > 0) {
+          if (num > 1) {
             return true;
           } else {
             return false;
           }
         }
       });
-      this.imaginary = this.axis(this.x0, this.y0, {
+      this.imaginary = this.axis([this.x0, this.y0], {
         unit: this.unit,
         from: -3,
         to: 3,
-        labels: function(num) {
-          if (num === 0) {
-            return false;
-          } else {
-            return [
-              num, {
-                text: 'i',
-                'font-style': 'italic'
-              }
-            ];
-          }
-        },
         turns: 1 / 4,
         labels: false,
         tickType: false
@@ -528,8 +477,8 @@
           };
         }
       });
-      oneTurn = this.text(this.x(1.5), this.y(0), '1↺0');
-      point = this.circle(this.x(1), this.y(0), 2, {
+      oneTurn = this.text([this.x(1.3), this.y(0)], '1↺0');
+      point = this.circle([this.x(1), this.y(0)], 2, {
         "class": 'colored'
       });
       initial = [
@@ -550,17 +499,17 @@
           }
         ]
       ], 10000, 'linear', Infinity);
-      this.recipe(initial, [go]).triggerOnView();
+      this.recipe(initial, [go]).trigger();
     }
 
     OnePlane.prototype.magnitude = function(len) {
-      return this.circle(this.x0, this.y0, len * this.unit, {
+      return this.circle([this.x0, this.y0], len * this.unit, {
         "class": 'colored line'
       });
     };
 
     OnePlane.prototype.guide = function(len) {
-      return this.circle(this.x0, this.y0, len * this.unit, {
+      return this.circle([this.x0, this.y0], len * this.unit, {
         "class": 'guide'
       });
     };
