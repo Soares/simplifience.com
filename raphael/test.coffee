@@ -1,5 +1,7 @@
-class Test extends Diagram
-  start: =>
-    Axis(@paper, 250, 250)
+class Test extends Uriel.Diagram
+  constructor: ->
+    super
+    @x = @axis 50, @height / 2, unit: 40
 
-$ -> diagram('test', Test, 500, 500)
+
+$ -> Uriel.diagram('test', Test)

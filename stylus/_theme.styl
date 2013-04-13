@@ -118,8 +118,11 @@ theme-meditation(color, complement)
 
 theme-diagram(color, complement)
 	.colored
-		fill $light(color)
 		stroke $dark(color)
+	.colored:not(.line)
+		fill $light(color)
+	.colored.line
+		fill None
 	path.solid
 		fill $dark(color)
 	path.axis
@@ -139,7 +142,7 @@ theme(class, color, complement)
 			theme-nav(color, complement)
 		footer
 			theme-footer(color, complement)
-		svg
+		#main svg
 			theme-diagram(color, complement)
 	body #main aside.{class}, body.{class} #main aside.info,
 	body #main div.{class}, body.{class} div.info

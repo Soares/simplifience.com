@@ -134,17 +134,22 @@ body.main footer aside a.stub {
 body.main footer aside a.stub:visited {
   color: #ffb273;
 }
-body.main svg .colored {
-  fill: #3cc;
+body.main #main svg .colored {
   stroke: #006363;
 }
-body.main svg path.solid {
+body.main #main svg .colored:not(.line) {
+  fill: #3cc;
+}
+body.main #main svg .colored.line {
+  fill: None;
+}
+body.main #main svg path.solid {
   fill: #006363;
 }
-body.main svg path.axis {
+body.main #main svg path.axis {
   stroke: #000;
 }
-body.main svg path.axis.arrow {
+body.main #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.main,
@@ -361,17 +366,22 @@ body.rules footer aside a.stub {
 body.rules footer aside a.stub:visited {
   color: #ffd073;
 }
-body.rules svg .colored {
-  fill: #4671d5;
+body.rules #main svg .colored {
   stroke: #06266f;
 }
-body.rules svg path.solid {
+body.rules #main svg .colored:not(.line) {
+  fill: #4671d5;
+}
+body.rules #main svg .colored.line {
+  fill: None;
+}
+body.rules #main svg path.solid {
   fill: #06266f;
 }
-body.rules svg path.axis {
+body.rules #main svg path.axis {
   stroke: #000;
 }
-body.rules svg path.axis.arrow {
+body.rules #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.rules,
@@ -588,17 +598,22 @@ body.rigor footer aside a.stub {
 body.rigor footer aside a.stub:visited {
   color: #ffe773;
 }
-body.rigor svg .colored {
-  fill: #6a48d7;
+body.rigor #main svg .colored {
   stroke: #200772;
 }
-body.rigor svg path.solid {
+body.rigor #main svg .colored:not(.line) {
+  fill: #6a48d7;
+}
+body.rigor #main svg .colored.line {
+  fill: None;
+}
+body.rigor #main svg path.solid {
   fill: #200772;
 }
-body.rigor svg path.axis {
+body.rigor #main svg path.axis {
   stroke: #000;
 }
-body.rigor svg path.axis.arrow {
+body.rigor #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.rigor,
@@ -815,17 +830,22 @@ body.simplifience footer aside a.stub {
 body.simplifience footer aside a.stub:visited {
   color: #ffff73;
 }
-body.simplifience svg .colored {
-  fill: #9f3ed5;
+body.simplifience #main svg .colored {
   stroke: #48036f;
 }
-body.simplifience svg path.solid {
+body.simplifience #main svg .colored:not(.line) {
+  fill: #9f3ed5;
+}
+body.simplifience #main svg .colored.line {
+  fill: None;
+}
+body.simplifience #main svg path.solid {
   fill: #48036f;
 }
-body.simplifience svg path.axis {
+body.simplifience #main svg path.axis {
   stroke: #000;
 }
-body.simplifience svg path.axis.arrow {
+body.simplifience #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.simplifience,
@@ -1042,17 +1062,22 @@ body.knowledge footer aside a.stub {
 body.knowledge footer aside a.stub:visited {
   color: #ffe773;
 }
-body.knowledge svg .colored {
-  fill: #e6399b;
+body.knowledge #main svg .colored {
   stroke: #85004b;
 }
-body.knowledge svg path.solid {
+body.knowledge #main svg .colored:not(.line) {
+  fill: #e6399b;
+}
+body.knowledge #main svg .colored.line {
+  fill: None;
+}
+body.knowledge #main svg path.solid {
   fill: #85004b;
 }
-body.knowledge svg path.axis {
+body.knowledge #main svg path.axis {
   stroke: #000;
 }
-body.knowledge svg path.axis.arrow {
+body.knowledge #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.knowledge,
@@ -1269,17 +1294,22 @@ body.rant footer aside a.stub {
 body.rant footer aside a.stub:visited {
   color: #a68900;
 }
-body.rant svg .colored {
-  fill: #ff4040;
+body.rant #main svg .colored {
   stroke: #a60000;
 }
-body.rant svg path.solid {
+body.rant #main svg .colored:not(.line) {
+  fill: #ff4040;
+}
+body.rant #main svg .colored.line {
+  fill: None;
+}
+body.rant #main svg path.solid {
   fill: #a60000;
 }
-body.rant svg path.axis {
+body.rant #main svg path.axis {
   stroke: #000;
 }
-body.rant svg path.axis.arrow {
+body.rant #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.rant,
@@ -1496,17 +1526,22 @@ body.stub footer aside a.stub {
 body.stub footer aside a.stub:visited {
   color: #006363;
 }
-body.stub svg .colored {
-  fill: #ff9640;
+body.stub #main svg .colored {
   stroke: #a64b00;
 }
-body.stub svg path.solid {
+body.stub #main svg .colored:not(.line) {
+  fill: #ff9640;
+}
+body.stub #main svg .colored.line {
+  fill: None;
+}
+body.stub #main svg path.solid {
   fill: #a64b00;
 }
-body.stub svg path.axis {
+body.stub #main svg path.axis {
   stroke: #000;
 }
-body.stub svg path.axis.arrow {
+body.stub #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.stub,
@@ -1723,17 +1758,22 @@ body.caution footer aside a.stub {
 body.caution footer aside a.stub:visited {
   color: #200772;
 }
-body.caution svg .colored {
-  fill: #ffff40;
+body.caution #main svg .colored {
   stroke: #a6a600;
 }
-body.caution svg path.solid {
+body.caution #main svg .colored:not(.line) {
+  fill: #ffff40;
+}
+body.caution #main svg .colored.line {
+  fill: None;
+}
+body.caution #main svg path.solid {
   fill: #a6a600;
 }
-body.caution svg path.axis {
+body.caution #main svg path.axis {
   stroke: #000;
 }
-body.caution svg path.axis.arrow {
+body.caution #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.caution,
@@ -1950,17 +1990,22 @@ body.define footer aside a.stub {
 body.define footer aside a.stub:visited {
   color: #48036f;
 }
-body.define svg .colored {
-  fill: #39e639;
+body.define #main svg .colored {
   stroke: #008500;
 }
-body.define svg path.solid {
+body.define #main svg .colored:not(.line) {
+  fill: #39e639;
+}
+body.define #main svg .colored.line {
+  fill: None;
+}
+body.define #main svg path.solid {
   fill: #008500;
 }
-body.define svg path.axis {
+body.define #main svg path.axis {
   stroke: #000;
 }
-body.define svg path.axis.arrow {
+body.define #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.define,
@@ -2177,17 +2222,22 @@ body.computer footer aside a.stub {
 body.computer footer aside a.stub:visited {
   color: #2aa198;
 }
-body.computer svg .colored {
-  fill: #2aa198;
+body.computer #main svg .colored {
   stroke: #586e75;
 }
-body.computer svg path.solid {
+body.computer #main svg .colored:not(.line) {
+  fill: #2aa198;
+}
+body.computer #main svg .colored.line {
+  fill: None;
+}
+body.computer #main svg path.solid {
   fill: #586e75;
 }
-body.computer svg path.axis {
+body.computer #main svg path.axis {
   stroke: #000;
 }
-body.computer svg path.axis.arrow {
+body.computer #main svg path.axis.arrow {
   fill: #000;
 }
 body #main aside.computer,
@@ -2769,6 +2819,20 @@ hr.mark {
   font-size: 10px;
   line-height: normal;
   font-family: MathJax_Math Arial;
+}
+#main svg text {
+  font-family: MathJax_Math;
+}
+#main svg path.arc {
+  fill: none;
+}
+#main svg path {
+  stroke: #000;
+}
+#main svg .guide {
+  stroke: #ccc;
+  stroke-dasharray: 5, 5;
+  fill: none;
 }
 #main svg .teal {
   fill: #099;

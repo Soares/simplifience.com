@@ -1,101 +1,148 @@
-width = 500
-height = 200
-radius = 45
-padding = 5
-
-circumference = τ * radius
-middle = height / 2
-zx = padding + radius
-zy = middle + radius
-tx = width - 2 * radius
-ty = radius
+# Draw an arc partway around a circle
+partialCircle = (cx, cy, r, turns, yaw) ->
+  yaw = yaw || 0
+  x1 = cx + (r * Math.cos(yaw * τ))
+  y1 = cy - (r * Math.sin(yaw * τ))
+  x2 = cx + (r * Math.cos((yaw + turns) * τ))
+  y2 = cy - (r * Math.sin((yaw + turns) * τ))
+  path: ['M', x1, y1, 'A', r, r, 0, +(turns > 0.5), 0, x2, y2]
 
 
-class Unroller extends Diagram
-  start: =>
-    @isDiameterLine = @elem.data('diameter') || false
-    @stopEarly = @elem.data('pistop') || false
-    @lineLength = if @isDiameterLine then 2 * radius else radius
-    counter = @elem.data('counter') || false
+# Turn and rotate at the same time, not one after the other.
+turnRotate = (cx, cy, toplen, botlen, turns) ->
+  h = Math.cos(τ * turns)
+  v = -Math.sin(τ * turns)
+  x1 = cx + toplen * h
+  y1 = cy + toplen * v
+  x2 = cx - botlen * h
+  y2 = cy - botlen * v
+  path: ['M', x1, y1, 'L', x2, y2]
+
+
+# Draws a horizontal line plus half a pixel at the end.
+# Corrects a rounding error in the laid line.
+horizontal = (x, y, distance) ->
+  if distance == 0
+  then path: ['M', x, y, 'l', 0.001, 0]
+  else path: ['M', x, y, 'l', distance + 0.5, 0]
+
+
+turnText = (turns) ->
+  text: (τ * turns).toFixed(6)
+
+
+class Unroller extends Uriel.Diagram
+  constructor: (elem, width=500, height=200, radius=45, padding=5) ->
+    super elem, width, height
+    @register
+      partialCircle: partialCircle
+      turnRotate: turnRotate
+      horizontal: horizontal
+      turnText: turnText
+
+    middle = height / 2
+    zx = padding + radius
+    zy = middle + radius
+
+    isDiameterLine = @elem.data('diameter') || false
+    stopEarly = @elem.data('pistop') || false
+    unit = if isDiameterLine then 2 * radius else radius
+
     @axis zx, zy + 0.5,
-      unit: @lineLength,
-      to: if @isDiameterLine then 4 else 8
-      capLength: if @isDiameterLine then 1/2 else 1
-    @circle = @circle class: 'colored'
-    @outline = @path 'stroke-width': 2, class: 'colored', style: 'fill:none'
-    @laid = @path 'stroke-width': 2, class: 'colored'
-    @line = @path 'stroke-width': 1, class: 'colored'
-    @counter = if counter then @text(tx, ty, 0.toFixed 6) else false
-    # @laid doesn't quite match @outline. Add half a pixel to the end.
-    @paper.customAttributes.drawX = (x, y, distance) ->
-      if distance == 0
-      then path: ['M', x, y, 'l', 0.001, 0]
-      else path: ['M', x, y, 'l', distance, 0, 'l', 0.5, 0]
-    @reset()
-    setTimeout @begin, 3000
+      unit: unit,
+      to: if isDiameterLine then 4 else 8
+      capLength: if isDiameterLine then 1/2 else 1
 
-  reset: =>
-    @circle.attr
-      cx: zx
-      cy: zy - radius
-      r: radius
-      opacity: 0
-      'stroke-width': 2
-      transform: ''
-    @outline.attr
-      partialCircle: [zx, zy - radius, radius, .9999, -1/4]
-      opacity: 0
-    @laid.attr drawX: [zx, zy, 0]
-    @line.attr
-      opacity: 1
-      path: new Path(zx, zy).draw(@lineLength, 0).string
-    @counter?.attr?(turnText: 0, opacity: 0)
+    circle = @circle zx, zy - radius, radius, class: 'colored'
+    outline = @path null, 'stroke-width': 2, class: 'colored line'
+    laid = @path null, 'stroke-width': 2, class: 'colored'
+    line = @path null, 'stroke-width': 1, class: 'colored'
+    counter = if @elem.data('counter')
+    then @text(width - 2 * radius, radius, 0.toFixed 6)
+    else false
 
-  begin: =>
-    @reset()
-    @line.animate transform: "r-90 #{zx} #{zy}", 1000, '<>', @fadeIn
+    # Length of the inner-circle line beyond the centerpoint.
+    toplen = if isDiameterLine then radius else 0
+    rollEase = if stopEarly then '<' else '<>'
+    rollDuration = if stopEarly then 2500 else 5000
+    rollTurns = if stopEarly then 1/2 else 1
+    rollDistance = rollTurns * τ * radius
 
-  fadeIn: =>
-    a = @circle.animate opacity: 1, 1000, '<', @roll
-    @counter?.animateWith?(@circle, a, opacity: 1, 1000, '<')
-    uplen = if @isDiameterLine then radius else 0
-    @line.attr
+    initial = [
+      [circle,
+        opacity: 0
+        'stroke-width': 2
+        transform: '']
+      [outline,
+        partialCircle: [zx, zy - radius, radius, .9999, -1/4]
+        opacity: 0]
+      [laid,
+        horizontal: [zx, zy, 0]]
+      [line,
+        opacity: 1
+        path: ['M', zx, zy, 'l', unit, 0]]
+      [counter,
+        turnText: 0
+        opacity: 0]
+    ]
+
+    standUp = @animate([
+      [line, transform: ['r', -90, zx, zy]]
+    ], 1000, '<>')
+
+    turnRotateShuffle = @animate([
+      [line,
         transform: ''
-        turnRotate: [zx, zy - radius, radius, uplen, -1/4]
+        turnRotate: [zx, zy - radius, radius, toplen, -1/4]]
+    ])
 
-  roll: =>
-    @circle.attr 'stroke-width': 0
-    @outline.attr opacity: 1
-    @laid.attr opacity: 1
+    fadeIn = @animate([
+      [circle, opacity: 1]
+      [counter, opacity: 1]
+    ], 1000, '<')
 
-    ease = if @stopEarly then '<' else '<>'
-    duration = if @stopEarly then 2500 else 5000
-    uplen = if @isDiameterLine then radius else 0
-    turns = if @stopEarly then 1/2 else 1
-    distance = turns * circumference
-    fader = callbackAfter(@fadeOut, if @stopEarly then 5500 else 3000)
+    preRollShuffle = @animate([
+      [circle, 'stroke-width': 0]
+      [outline, opacity: 1]
+      [laid, opacity: 1]
+    ])
 
-    a = @circle.animate transform: "t#{distance} 0", duration, ease, fader
-    @line.animateWith(
-        @circle, a
-        turnRotate: [zx + distance, zy - radius, radius + 1, uplen, -1/4 - turns]
-        duration, ease)
-    @outline.animateWith(
-        @circle, a
-        partialCircle: [zx + distance, middle, radius, 1 - turns, -1/4]
-        duration, ease)
-    @laid.animateWith(
-        @circle, a, drawX: [zx, zy, distance], duration, ease)
-    @counter?.animateWith?(@circle, a, turnText: turns, duration, ease)
+    roll = @animate([
+      [circle, transform: ['t', rollDistance, 0]]
+      [line, turnRotate: [
+        zx + rollDistance
+        zy - radius
+        radius + 1
+        toplen
+        -1/4 - rollTurns]]
+      [outline, partialCircle: [
+        zx + rollDistance
+        middle
+        radius
+        1 - rollTurns
+        -1/4]]
+      [laid, horizontal: [zx, zy, rollDistance]]
+      [counter, turnText: rollTurns]
+    ], rollDuration, rollEase)
 
-  fadeOut: =>
-    a = @circle.animate opacity: 0, 1000, '<', @wait
-    @laid.animateWith @circle, a, opacity: 0, 1000, '<'
-    @line.animateWith @circle, a, opacity: 0, 1000, '<'
-    @outline.animateWith @circle, a, opacity: 0, 1000, '<'
-    @couter?.animateWith @circle, a, opacity: 0, 1000, '<'
+    fadeOut = @animate([
+      [circle, opacity: 0]
+      [laid, opacity: 0]
+      [line, opacity: 0]
+      [outline, opacity: 0]
+      [counter, opacity: 0]
+    ], 1000, '<')
 
-  wait: => setTimeout @begin, 1000
+    @recipe(initial, [
+      standUp
+      turnRotateShuffle
+      fadeIn
+      preRollShuffle
+      roll
+      if stopEarly then 5500 else 3000
+      fadeOut
+      initial
+    ], 1000).trigger(3000)
 
 
-$ -> diagram('unroll', Unroller, width, height)
+$ -> Uriel.diagram('unroll', Unroller)

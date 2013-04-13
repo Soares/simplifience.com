@@ -11,7 +11,7 @@ post:
     - '/js/jquery.js'
     - '/js/raphael.js'
     - '/js/waypoints.js'
-    - '@coffee/util'
+    - '@coffee/uriel'
     - '@coffee/post'
 mathbox:
   compiler: flow
@@ -20,3 +20,4 @@ images: copy to images
 stylus: css
 coffee: js
 static: copy to .
+diagram: true
