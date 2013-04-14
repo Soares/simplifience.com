@@ -37,24 +37,25 @@ class NumberPlane extends Uriel.Diagram
       tickType: 'top'
       adjustTick: (num) -> num isnt 0
       labels: (num) -> if num is 0 then false else '?'
-    initial = [
+    initial = @animation(
       [imaginary.elements.geometry, transform: '', opacity: 1]
       [imaginary.elements.labels, transform: '', opacity: 0]
-      [zero, transform: '']
-    ]
-    expand = @animate([
+      [zero, transform: ''])
+    expand = @animation(
       [zero, transform: ['t', -8, 0]]
       [imaginary.elements.geometry, transform: ['r', -90, zx, zy]]
-      [imaginary.elements.labels, {
+      [imaginary.elements.labels,
         transform: ['r', -90, zx, zy, 'r', 90, 't', 0]
-        opacity: 1}]
-    ], 1500, '<')
-    close = @animate(initial, 750, '>')
-    @recipe(initial, [1000, expand, 5000, close], 8000).triggerOnView(1000)
+        opacity: 1])
+    @recipe(initial(), [
+      1000, expand(1500, '<')
+      5000, initial(750, '>')
+    ], 8000).triggerOnView()
 
 class ComplexPlane extends Uriel.Plane
-  constructor: (elem) ->
-    super elem, width: LARGE, height: LARGE, unit: UNIT
+  constructor: (elem) -> super elem, unit: UNIT
+
+  setup: =>
     @rule [2, 3], [0, 3]
     @rule [2, 3], [2, 0]
     @text [2.6, 3.2], ['2 + 3', {text: 'i', 'font-style': 'italic'}]
@@ -69,152 +70,121 @@ class ComplexPlane extends Uriel.Plane
       labels: (num) ->
         if num is 0 then false else [num, {text: 'i', 'font-style': 'italic'}]
 
-  point: (pt, color) =>
-    @line [0, 0], pt, class: color
-    @circle pt, 4, class: color
+class PolarPlane extends Uriel.Plane
+  constructor: (elem) -> super elem, unit: UNIT / 2
 
-class PolarPlane extends Uriel.Diagram
-  constructor: (elem, width=LARGE, height=LARGE) ->
-    super elem, width, height
-    @x0 = width / 2
-    @y0 = height / 2
-    @unit = UNIT / 2
+  makeHorizontalAxis: =>
+    super
+      from: -10
+      to: 10
+      step: 2
+
+  makeVerticalAxis: =>
+    super
+      from: -10
+      to: 10
+      step: 2
+      textOffset: 10
+      labels: (num) ->
+        if num is 0 then false else [num, {text: 'i', 'font-style': 'italic'}]
+
+  drawGuides: =>
     @guide(2)
     @guide(4)
     @guide(6)
     @guide(8)
     @guide(10)
-    @real = @axis [@x0, @y0],
-      unit: @unit
-      from: -10
-      to: 10
-      step: 2
-      labels: (num) -> if num is 0 then false else num
-    @imaginary = @axis [@x0, @y0],
-      unit: @unit
-      from: -10
-      to: 10
-      step: 2
-      labels: (num) -> if num is 0 then false else [num, {text: 'i', 'font-style': 'italic'}]
-      turns: 1/4
-      tickType: 'top'
-      textOffset: 10
-    @point(3, 0, 'red')
-    @point(0, 2, 'blue')
 
-    [rpath, rdot] = @point 3, 0, 'violet'
-    commentary = @text [@x(9), @y(9)], ''
-    result = @group([rpath, rdot])
+  setup: =>
+    @point [3, 0], 'red'
+    @point [0, 2], 'blue'
+    result = @point [3, 0], 'violet'
+    commentary = @text [9, 9]
 
-    initial = [
+    initial = @animation(
+      result.moveTo([3, 0])
       [result, transform: '', opacity: 0]
-      [commentary, text: '']
-      [rdot, cx: @x(3), cy: @y(0)]
-      [rpath, path: ['M', @x0, @y0, 'l', 3 * @unit, 0]]
-    ]
-    problem = [
-      [commentary, text: '3 ↺ zero × 2 ↺ quarter']
-    ]
-    fadeIn = @animate([
+      [commentary, text: '3↺0 ∗ 2↺¼', opacity: 0]
+    )
+    problem = @animation(
+      [commentary, opacity: 1]
+    )
+    fadeIn = @animation(
       [result, opacity: 1]
-    ], 300, '<>')
-    preScale = [
       [commentary, text: '3 × 2']
-    ]
-    scale = @animate([
-      [rdot, transform: ['t', 3 * @unit, 0]]
-      [rpath, path: ['M', @x0, @y0, 'l', 6 * @unit, 0]]
-    ], 1000, '<>')
-    preTurn = [
-      [commentary, text: 'zero turns + a quarter turn']
-      [rdot, transform: '', cx: @x(6)]
-    ]
-    turn = @animate([
-      [result, transform: ['r', -90, @x0, @y0]]
-    ], 2000, '<>')
-    hold = [
-      [commentary, text: '= 6 ↺ ¼']
-      [result, transform: ''],
-      [rdot, cx: @x(0), cy: @y(6)]
-      [rpath, path: ['M', @x0, @y0, 'L', @x(0), @y(6)]]
-    ]
-    preFallDown = [
-      [commentary, text: '']
-    ]
-    fallDown = @animate([
-      [result, transform: ['t', 0, 6 * @unit], opacity: .8]
-    ], 500, 'backOut')
-    fadeOut = @animate([[result, opacity: 0]], 200)
-    recipe = @recipe(initial, [
-      1000, problem, 3000, fadeIn, 1000, preScale, 500, scale, 1500, preTurn, 500, turn, 500, hold, 5000, preFallDown, fallDown, fadeOut
-    ], 1000)
-    recipe.triggerOnView()
+    )
+    scale = @animation(
+      result.moveTo([6, 0])
+    )
+    rotate = @animation(
+      [result, transform: "R-90 #{@origin}", delay: 1/2]
+      [commentary, text: '0 turns rotated ¼ turns']
+    )
+    answer = @animation(
+      [commentary, text: '= 6↺¼']
+      [result, transform: '']
+      result.moveTo([0, 6])
+    )
+    drop = @animation(
+      result.moveTo([0, 0])
+      [result, opacity: 0]
+      [commentary, opacity: 0]
+    )
 
-  guide: (len) =>
-    @circle [@x0, @y0], len * @unit, class: 'guide'
-
-  # TODO: factor these out. They're duplicated.
-  x: (x) => @x0 + x * @unit
-  y: (y) => @y0 - y * @unit
-
-  point: (x, y, color) =>
-    path = @path ['M', @x0, @y0, 'l', x * @unit, -y * @unit], class: color
-    dot = @circle [@x0 + x * @unit, @y0 - y * @unit], 4, class: color
-    [path, dot]
+    @recipe(initial(), [
+      1000
+      problem(500)
+      2000
+      fadeIn(500)
+      scale(1000, '<')
+      1000
+      rotate(1000, '<')
+      1000
+      answer()
+      4000
+      drop(750, 'backOut')
+    ], 2000).triggerOnView()
 
 
-class OnePlane extends Uriel.Diagram
-  constructor: (elem, width=LARGE, height=LARGE) ->
-    super elem, width, height
-    @x0 = width / 2
-    @y0 = height / 2
-    @unit = UNIT * 1.5
-    @guide(2)
-    @guide(3)
-    @real = @axis [@x0, @y0],
-      unit: @unit
+class OnePlane extends Uriel.Plane
+  constructor: (elem) ->
+    super elem, unit: UNIT * 1.5
+
+  makeHorizontalAxis: =>
+    super
       from: -3
       to: 3
       labels: (num) -> if num > 1 then num else false
       adjustTick: (num) -> if num > 1 then true else false
-    @imaginary = @axis [@x0, @y0],
-      unit: @unit
+
+  makeVerticalAxis: =>
+    super
       from: -3
       to: 3
-      turns: 1/4
       labels: false
       tickType: false
-    @magnitude(1)
-    @register
-      oneTurn: (turns) =>
-        if turns == 1
-          return {oneTurn: 0}
-        x = @x(1.5 * Math.cos(τ * turns))
-        y = @y(1.5 * Math.sin(τ * turns))
-        {
-          x: x
-          y: y
-          text: "1↺#{turns.toFixed(2)}"
-        }
 
-    oneTurn = @text [@x(1.3), @y(0)], '1↺0'
-    point = @circle [@x(1), @y(0)], 2, class: 'colored'
+  drawGuides: =>
+    @guide 2
+    @guide 3
 
-    initial = [[oneTurn, oneTurn: 0]]
-    go = @animate([
-      [oneTurn, oneTurn: 1]
-      [point, transform: ['R', -360, @x0, @y0]]
-    ], 10000, 'linear', Infinity)
-    @recipe(initial, [go]).trigger()
+  setup: =>
+    @circle [0, 0], @unit, class: 'colored line'
+    ot = ((turns) =>
+      return ot(0) if turns is 1
+      [x, y] = @pt([1.5 * Math.cos(τ * turns), 1.5 * Math.sin(τ * turns)])
+      {x: x, y: y, text: "1↺#{turns.toFixed(2)}"}
+    )
+    @register oneTurn: ot
 
+    oneTurn = @text [1.3, 0], '1↺0'
+    point = @circle [1, 0], 2, class: 'colored'
 
-  magnitude: (len) =>
-    @circle [@x0, @y0], len * @unit, class: 'colored line'
-
-  # TODO: Copied.
-  guide: (len) => @circle [@x0, @y0], len * @unit, class: 'guide'
-  x: (x) => @x0 + x * @unit
-  y: (y) => @y0 - y * @unit
+    oneTurn.apply oneTurn: 0
+    oneTurnAnim = Raphael.animation(oneTurn: 1, 10000, 'linear').repeat(Infinity)
+    pointAnim = Raphael.animation(transform: "R-360 #{@origin}", 10000, 'linear').repeat(Infinity)
+    oneTurn.element.animate(oneTurnAnim)
+    point.element.animateWith(oneTurn.element, oneTurnAnim, pointAnim)
 
 $ ->
   Uriel.diagram('number-line', NumberLine)

@@ -53,7 +53,7 @@ class Unroller extends Uriel.Diagram
       to: if isDiameterLine then 4 else 8
       capLength: if isDiameterLine then 1/2 else 1
 
-    circle = @circle [zx, zy] - radius, radius, class: 'colored'
+    circle = @circle [zx, zy - radius], radius, class: 'colored'
     outline = @path null, 'stroke-width': 2, class: 'colored line'
     laid = @path null, 'stroke-width': 2, class: 'colored'
     line = @path null, 'stroke-width': 1, class: 'colored'
@@ -68,7 +68,7 @@ class Unroller extends Uriel.Diagram
     rollTurns = if stopEarly then 1/2 else 1
     rollDistance = rollTurns * τ * radius
 
-    initial = [
+    initial = @animation(
       [circle,
         opacity: 0
         'stroke-width': 2
@@ -84,30 +84,30 @@ class Unroller extends Uriel.Diagram
       [counter,
         turnText: 0
         opacity: 0]
-    ]
+    )
 
-    standUp = @animate([
+    standUp = @animation(
       [line, transform: ['r', -90, zx, zy]]
-    ], 1000, '<>')
+    )
 
-    turnRotateShuffle = @animate([
+    turnRotateShuffle = @animation(
       [line,
         transform: ''
         turnRotate: [zx, zy - radius, radius, toplen, -1/4]]
-    ])
+    )
 
-    fadeIn = @animate([
+    fadeIn = @animation(
       [circle, opacity: 1]
       [counter, opacity: 1]
-    ], 1000, '<')
+    )
 
-    preRollShuffle = @animate([
+    preRollShuffle = @animation(
       [circle, 'stroke-width': 0]
       [outline, opacity: 1]
       [laid, opacity: 1]
-    ])
+    )
 
-    roll = @animate([
+    roll = @animation(
       [circle, transform: ['t', rollDistance, 0]]
       [line, turnRotate: [
         zx + rollDistance
@@ -123,25 +123,25 @@ class Unroller extends Uriel.Diagram
         -1/4]]
       [laid, horizontal: [zx, zy, rollDistance]]
       [counter, turnText: rollTurns]
-    ], rollDuration, rollEase)
+    )
 
-    fadeOut = @animate([
+    fadeOut = @animation(
       [circle, opacity: 0]
       [laid, opacity: 0]
       [line, opacity: 0]
       [outline, opacity: 0]
       [counter, opacity: 0]
-    ], 1000, '<')
+    )
 
-    @recipe(initial, [
-      standUp
-      turnRotateShuffle
-      fadeIn
-      preRollShuffle
-      roll
+    @recipe(initial(), [
+      standUp(1000)
+      turnRotateShuffle()
+      fadeIn(1000)
+      preRollShuffle()
+      roll(rollDuration, rollEase)
       if stopEarly then 5500 else 3000
-      fadeOut
-      initial
+      fadeOut(1000, '<')
+      initial()
     ], 1000).trigger(3000)
 
 

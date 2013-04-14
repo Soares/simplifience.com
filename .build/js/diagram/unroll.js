@@ -83,7 +83,7 @@
         to: isDiameterLine ? 4 : 8,
         capLength: isDiameterLine ? 1 / 2 : 1
       });
-      circle = this.circle([zx, zy] - radius, radius, {
+      circle = this.circle([zx, zy - radius], radius, {
         "class": 'colored'
       });
       outline = this.path(null, {
@@ -104,122 +104,108 @@
       rollDuration = stopEarly ? 2500 : 5000;
       rollTurns = stopEarly ? 1 / 2 : 1;
       rollDistance = rollTurns * τ * radius;
-      initial = [
-        [
-          circle, {
-            opacity: 0,
-            'stroke-width': 2,
-            transform: ''
-          }
-        ], [
-          outline, {
-            partialCircle: [zx, zy - radius, radius, .9999, -1 / 4],
-            opacity: 0
-          }
-        ], [
-          laid, {
-            horizontal: [zx, zy, 0]
-          }
-        ], [
-          line, {
-            opacity: 1,
-            path: ['M', zx, zy, 'l', unit, 0]
-          }
-        ], [
-          counter, {
-            turnText: 0,
-            opacity: 0
-          }
-        ]
-      ];
-      standUp = this.animate([
-        [
-          line, {
-            transform: ['r', -90, zx, zy]
-          }
-        ]
-      ], 1000, '<>');
-      turnRotateShuffle = this.animate([
-        [
-          line, {
-            transform: '',
-            turnRotate: [zx, zy - radius, radius, toplen, -1 / 4]
-          }
-        ]
+      initial = this.animation([
+        circle, {
+          opacity: 0,
+          'stroke-width': 2,
+          transform: ''
+        }
+      ], [
+        outline, {
+          partialCircle: [zx, zy - radius, radius, .9999, -1 / 4],
+          opacity: 0
+        }
+      ], [
+        laid, {
+          horizontal: [zx, zy, 0]
+        }
+      ], [
+        line, {
+          opacity: 1,
+          path: ['M', zx, zy, 'l', unit, 0]
+        }
+      ], [
+        counter, {
+          turnText: 0,
+          opacity: 0
+        }
       ]);
-      fadeIn = this.animate([
-        [
-          circle, {
-            opacity: 1
-          }
-        ], [
-          counter, {
-            opacity: 1
-          }
-        ]
-      ], 1000, '<');
-      preRollShuffle = this.animate([
-        [
-          circle, {
-            'stroke-width': 0
-          }
-        ], [
-          outline, {
-            opacity: 1
-          }
-        ], [
-          laid, {
-            opacity: 1
-          }
-        ]
+      standUp = this.animation([
+        line, {
+          transform: ['r', -90, zx, zy]
+        }
       ]);
-      roll = this.animate([
-        [
-          circle, {
-            transform: ['t', rollDistance, 0]
-          }
-        ], [
-          line, {
-            turnRotate: [zx + rollDistance, zy - radius, radius + 1, toplen, -1 / 4 - rollTurns]
-          }
-        ], [
-          outline, {
-            partialCircle: [zx + rollDistance, middle, radius, 1 - rollTurns, -1 / 4]
-          }
-        ], [
-          laid, {
-            horizontal: [zx, zy, rollDistance]
-          }
-        ], [
-          counter, {
-            turnText: rollTurns
-          }
-        ]
-      ], rollDuration, rollEase);
-      fadeOut = this.animate([
-        [
-          circle, {
-            opacity: 0
-          }
-        ], [
-          laid, {
-            opacity: 0
-          }
-        ], [
-          line, {
-            opacity: 0
-          }
-        ], [
-          outline, {
-            opacity: 0
-          }
-        ], [
-          counter, {
-            opacity: 0
-          }
-        ]
-      ], 1000, '<');
-      this.recipe(initial, [standUp, turnRotateShuffle, fadeIn, preRollShuffle, roll, stopEarly ? 5500 : 3000, fadeOut, initial], 1000).trigger(3000);
+      turnRotateShuffle = this.animation([
+        line, {
+          transform: '',
+          turnRotate: [zx, zy - radius, radius, toplen, -1 / 4]
+        }
+      ]);
+      fadeIn = this.animation([
+        circle, {
+          opacity: 1
+        }
+      ], [
+        counter, {
+          opacity: 1
+        }
+      ]);
+      preRollShuffle = this.animation([
+        circle, {
+          'stroke-width': 0
+        }
+      ], [
+        outline, {
+          opacity: 1
+        }
+      ], [
+        laid, {
+          opacity: 1
+        }
+      ]);
+      roll = this.animation([
+        circle, {
+          transform: ['t', rollDistance, 0]
+        }
+      ], [
+        line, {
+          turnRotate: [zx + rollDistance, zy - radius, radius + 1, toplen, -1 / 4 - rollTurns]
+        }
+      ], [
+        outline, {
+          partialCircle: [zx + rollDistance, middle, radius, 1 - rollTurns, -1 / 4]
+        }
+      ], [
+        laid, {
+          horizontal: [zx, zy, rollDistance]
+        }
+      ], [
+        counter, {
+          turnText: rollTurns
+        }
+      ]);
+      fadeOut = this.animation([
+        circle, {
+          opacity: 0
+        }
+      ], [
+        laid, {
+          opacity: 0
+        }
+      ], [
+        line, {
+          opacity: 0
+        }
+      ], [
+        outline, {
+          opacity: 0
+        }
+      ], [
+        counter, {
+          opacity: 0
+        }
+      ]);
+      this.recipe(initial(), [standUp(1000), turnRotateShuffle(), fadeIn(1000), preRollShuffle(), roll(rollDuration, rollEase), stopEarly ? 5500 : 3000, fadeOut(1000, '<'), initial()], 1000).trigger(3000);
     }
 
     return Unroller;

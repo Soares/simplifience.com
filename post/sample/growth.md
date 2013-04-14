@@ -21,67 +21,90 @@ We'll move quickly through the derivation of $e$ This sequence is about $e^{\pi 
 
 $p * e^x$ is math notation for figuring out how much stuff you get if you start with $p$ and grow it at rate $x$.
 
-Picture a colony of bacteria where each bacteria reproduces once a day. If you start with 100 bacteria and leave them for 10 days you'll have $100 * e^{10} ≈$ <span class="info" markdown="inline">$2,200,000$ bacteria</span>. That's exponential growth for you.
+Imagine you have a colony of 100 bacteria. They each reproduce once per day. At the end of ten days, <span class="info" markdown="inline">how many bacteria</span> are there?
 
 <aside class="info" markdown="block">
-You'll probably have fewer, actually: bacteria aren't immortal and don't really reproduce continuously.
-</aside>
+Assume that they have adequate resources and a lifespan longer than 10 days.
 
-How do we calculate that growth? We start by imagining non-continuous growth. Consider, for example, your bank account. Say you get $5\%$ interest on your money, to keep things simple. This interest is paid out to you every year. If you start with $100$ dollars in the bank, at the end of the year you'll have $105$ dollars.
-
-| Time                |                         $ |
-|:--------------------|--------------------------:|
-| January 1st, Year 1 |                     $100$ |
-| January 1st, Year 2 | $100 + (100 * 5\%) = 105$ |
-
-<aside class="info" markdown="block">
-Notice that adding $5\%$ is the same as multiplying by $1.05$.
+All hail the immortal super-bacteria!
 </aside>
 
 
 
-Now imagine that the bank starts paying interest every six months instead of every year. What happens? Instead of adding 5% once, we add 2.5% twice throughout the year.
+At a first glance, it looks like you'll end up with about $100 * 2^{10} = 102,400$ bacteria. You'll actually find over $100 * e^{10} = 2,200,000$ bacteria -- more than twice as much!
 
-| Time                |                                    $ |
-|:--------------------|-------------------------------------:|
-| January 1st, Year 1 |                                $100$ |
-| June 1st, Year 1    |       $100 + (100 * 2.5\%) = 102.50$ |
-| January 1st, Year 2 | $102.50 + (102.50 * 2.5\%) = 105.06$ |
+Why? Because the bacteria aren't all kind and orderly. They don't all suddenly reproduce in the last minute of the day. Some reproduce hours before midnight. Others reproduce at noon, and still others reproduce in the morning. These new bacteria start reproducing *immediately*. Some of them manage to squeeze out a child before midnight! Before the end of the first day, you already have a couple *third-generation* bacteria floating around. Not many, but enough to throw off the numbers.
 
-The second scenario makes more money. A <span class="info" markdown="inline">whole 6¢</span>! We're rich!
+This is called "continuous growth". It happens to anything that grows so long as the new growths also grow. How do we calculate it? We start by calculating something easier: non-continuous growth.
+
+Consider your bank account. Imagine you get $10\%$ interest per year, to keep things simple. If you start with $100$ dollars in the bank, at the end of the year you'll have $105$ dollars.
+
+| Time                |                          $ |
+|:--------------------|---------------------------:|
+| January 1st, Year 1 |                      $100$ |
+| January 1st, Year 2 | $100 + (100 * 10\%) = 110$ |
+
+Now imagine that the bank starts paying interest every six months instead of every year. What happens? Instead of adding 10% once, we add 5% twice throughout the year.
+
+| Time                |                            $ |
+|:--------------------|-----------------------------:|
+| January 1st, Year 1 |                        $100$ |
+| June 1st, Year 1    |    $100 + (100 * 5\%) = 105$ |
+| January 1st, Year 2 | $105 + (105 * 5\%) = 110.25$ |
 
 <aside class="info" markdown="block">
-6.25¢, if you count quarter-pennies.
+Notice how adding $5\%$ is the same as multiplying by $1.05$.
 </aside>
 
-This happens because the second interest payment includes a little bit of interest on the 2.50\$ added on June 1st.
+The second scenario makes more money. A whole $25¢$! We're rich!
 
-We can repeat this to get more money. If we pay out 1.25% interest four times a year we end up with $((((100 * 1.0125) * 1.0125) * 1.0125) * 1.0125) =$ <span class="info">$105.09$</span> dollars at the end of the year. That's $100$ (the principle) multiplied by <span class="info" markdown="inline">$1.0125$</span> four times (once for each quarter).
+This happens because the second interest payment includes a little bit of interest on the 5\$ added on June 1st.
+
+We can repeat this to get more money. If we pay out $2.5\%$ interest four times a year we end up with $((((100 * 1.025) * 1.025) * 1.025) * 1.025) =$ $110.38$ dollars at the end of the year. That's $100$ (the principle) multiplied by <span class="info" markdown="inline">$1.025$</span> four times (once for each quarter).
 
 <aside class="info" markdown="block">
-Rounding down to the penny.
+$1.025$ is $100\%$ of the principle plus $2.5\%$.
+
+$\displaystyle \frac{10\%\ per\ year}{4\ quarters\ per\ year} = 2.5\%\ per\ quarter$
 </aside>
-
-<aside class="info" markdown="block">
-$1.0125$ is $100\%$ of the principle $+ 1.25\%$ which is the quarterly interest.
-
-$\displaystyle \frac{5\%\ per\ year}{4\ quarters\ per\ year} = 1.25\%\ per\ quarter$
-</aside>
-
-<div class="growth"></div>
 
 If you generalize this to any principle and interest rate you can calculate the growth of your money with the formula $principle * (1 + \frac{rate}{n})^n$, where $n$ is the number of times you compound the money.
 
-$e$ is what happens when you compound your interest lots and lots of times (in other words, when you let $n$ get really really big). We denote this with the following formula:
+Let's see it in action with some simpler numbers. In order to visualize the interest, I want you to pretend that your bank pays you <span class="info" markdown="inline">$100\%$ interest per year</span>.
+
+<div class="growth" data-compounds="1"></div>
+<aside class="info" markdown="block">
+Your money doubles every time period.
+
+It's compounded once, so you end up with twice as much money.
+</aside>
+
+Now watch what happens when we keep the interest rate the same but compound *twice* every time period:
+
+<div class="growth" data-compounds="2"></div>
+
+You get the same amount of interest on the principle (shown by the teal blocks) but it's split into two payments. Then you also get *interest on your interest* (the blue block). This is the mechanism by which continuous growth can make you rich.
+
+Unfortunately, it can't make you infinitely rich. Compounding gives diminishing returns.
+
+<div class="growth" data-compounds="[3, 4, 5, 6, 7]"></div>
+
+There's a cap on how much interest your interest can generate, even if you compound with infinitely fine granularity. If you want more you'll have to increase either your interest rate or your time period.
+
+<div class="growth" data-compounds="0"></div>
+
+<aside class="info" markdown="block">
+The maximum amount of growth for $100\%$ interest (doubling) over one time period is a bit less than three.
+</aside>
+
+This maximum amount of growth (in a fixed rate and time) is $e$. Remember that the growth of $p$ at rate $x$ compounded $n$ times can be calculated by $p * (1 + \frac{x}{n})^n$, which means "increase $p$ by an $n^{th}$ fraction of your interest rate ($x$), $n$ times". $e$ is a name for what happens when we let $n$ get really really large:
 
 $\displaystyle p * e^x = \lim\_{n \to \infty} p * (1 + \frac{x}{n})^n$
 
-In other words, you start with your principle $p$ and expand it by an <span class="info" markdown="inline">$n^{th}$ fraction of your interest rate ($x$)</span>, $n$ times.
-
-$p * e^x$ is math shorthand for saying "start with $p$ and grow it for $x$". To keep things clear, we'll use the notation $(grow\ p\ x)$ instead. When you see $(grow\ p\ x)$ it means "however much stuff you have if you start with $p$ and grow it continuously <span class="info" markdown="inline">for $x$</span>".
+$p * e^x$ is math shorthand for saying "start with $p$ and grow it continuously for $x$". To keep things clear, we'll use the notation $(grow\ p\ x)$ instead. When you see $(grow\ p\ x)$ it means "however much stuff you have if you start with $p$ and grow it continuously <span class="info" markdown="inline">for $x$</span>".
 
 <aside class="info" markdown="block">
-$x$ is of the form $rate * time$. If you grow 100 dollars continuously at $5\%$ a year then you'll have $(grow\ 100\ 15\%) ≈ 116.18$ dollars after three years.
+$x$ is of the form $rate * time$. If you grow $100$ dollars continuously at $5\%$ a year then you'll have $(grow\ 100\ 15\%) ≈ 116.18$ dollars after three years.
 </aside>
 
-Instead of writing $e^{\pi i}$ we write $e^{\pi i} = 1 * e^{\pi i} = (grow\ 1\ i)$, @post[whatever that means]sample/identity.
+This is all you need to know about $e$ in order to understand @post[Euler's identity]sample/identity, which is much easier to understand once you know that $e^{\pi i}$ means $(grow\ 1\ i)$.

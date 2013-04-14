@@ -3,7 +3,8 @@
   var SVG_DOCTYPE,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; },
     __hasProp = {}.hasOwnProperty,
-    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    __slice = [].slice;
 
   SVG_DOCTYPE = 'http://www.w3.org/2000/svg';
 
@@ -59,7 +60,6 @@
           delete attrs[underlying];
         }
       }
-      delete attrs.delay;
       this.element.attr(attrs);
       return this;
     };
@@ -70,8 +70,8 @@
         controls = {};
       }
       if (attrs.delay != null) {
-        delay = attrs.delay;
         attrs = _.extend({}, attrs);
+        delay = controls.duration * attrs.delay;
         delete attrs.delay;
       } else {
         delay = 0;
@@ -86,11 +86,12 @@
         anim = anim.repeat(controls.repeat);
       }
       if (controls.master) {
-        return this.element.animateWith(controls.master[0], controls.master[1], anim);
+        this.element.animateWith(controls.master[0], controls.master[1], anim);
       } else {
         this.element.animate(anim);
-        return controls.master = [this.element, anim];
+        controls.master = [this.element, anim];
       }
+      return this;
     };
 
     return Element;
@@ -148,9 +149,14 @@
     function Text(paper, _arg, text, attrs) {
       var element, fontSize, i, part, x, y, _i, _len;
       x = _arg[0], y = _arg[1];
+      if (text == null) {
+        text = '';
+      }
       if (attrs == null) {
         attrs = {};
       }
+      this.animate = __bind(this.animate, this);
+
       this.tspan = __bind(this.tspan, this);
 
       element = paper.text(x, y, '');
@@ -198,6 +204,20 @@
         tspan.setAttribute('dy', fontSize / 4);
       }
       return tspan;
+    };
+
+    Text.prototype.animate = function(attrs, controls) {
+      var delay,
+        _this = this;
+      if (attrs.text != null) {
+        delay = attrs.delay ? attrs.delay * attrs.duration : 0;
+        setTimeout((function() {
+          return _this.apply({
+            text: attrs.text
+          });
+        }), delay);
+      }
+      return Text.__super__.animate.call(this, attrs, controls);
     };
 
     return Text;
@@ -521,36 +541,67 @@
   Uriel.Animation = (function() {
 
     function Animation(description, duration, easing, repeat) {
-      this.description = description;
-      this.duration = duration != null ? duration : 0;
-      this.easing = easing != null ? easing : '<>';
-      this.repeat = repeat != null ? repeat : false;
+      var add,
+        _this = this;
+      this.duration = duration;
+      this.easing = easing;
+      this.repeat = repeat;
       this.run = __bind(this.run, this);
 
+      this.description = [];
+      add = function(item) {
+        var i, _i, _len, _results;
+        if (_.isFunction(item)) {
+          return _this.description.push(item);
+        }
+        if (_.isNumber(item)) {
+          throw "Animations can't be numbers: " + item;
+        }
+        if (_.isString(item)) {
+          throw "Animations can't be strings: " + item;
+        }
+        if (!_.isArray(item)) {
+          throw "Animations can't be objects:  " + item;
+        }
+        if (!(item.length && item[0])) {
+          return;
+        }
+        if (_.isArray(item[0])) {
+          _results = [];
+          for (_i = 0, _len = item.length; _i < _len; _i++) {
+            i = item[_i];
+            _results.push(add(i));
+          }
+          return _results;
+        } else {
+          return _this.description.push(item);
+        }
+      };
+      add(description);
     }
 
-    Animation.prototype.run = function(callback, delay) {
+    Animation.prototype.run = function(callback) {
       var attributes, controls, object, _i, _len, _ref, _ref1;
-      if (delay == null) {
-        delay = null;
-      }
       controls = {
-        delay: delay,
         callback: callback,
         duration: this.duration,
         easing: this.easing,
         repeat: this.repeat,
         master: null
       };
+      if (_.isFunction(this.description)) {
+        return this.description(controls);
+      }
       _ref = this.description;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         _ref1 = _ref[_i], object = _ref1[0], attributes = _ref1[1];
-        if (object) {
-          object.animate(attributes, controls);
+        if (!object) {
+          throw "I thought we filtered out null objects?";
         }
+        object.animate(attributes, controls);
       }
       if (callback && _.isEmpty(this.description)) {
-        return setTimeout(callback, this.duration + (delay || 0));
+        return setTimeout(callback, this.duration);
       }
     };
 
@@ -558,15 +609,12 @@
 
   })();
 
-  Uriel.Recipe = (function() {
+  Uriel.LinearRecipe = (function() {
 
-    function Recipe(initial, description, loop, elem) {
+    function LinearRecipe(elem, initial, description, loop) {
       this.initial = initial;
       this.description = description;
       this.loop = loop != null ? loop : false;
-      if (elem == null) {
-        elem = null;
-      }
       this.reset = __bind(this.reset, this);
 
       this.executeFrom = __bind(this.executeFrom, this);
@@ -578,30 +626,10 @@
       this.trigger = __bind(this.trigger, this);
 
       this.elem = $(elem);
-      this["do"](this.initial);
+      this.initial.run();
     }
 
-    Recipe.prototype["do"] = function(description, callback) {
-      var attrs, obj, _i, _len, _ref;
-      if (callback == null) {
-        callback = null;
-      }
-      if (_.isArray(description)) {
-        for (_i = 0, _len = description.length; _i < _len; _i++) {
-          _ref = description[_i], obj = _ref[0], attrs = _ref[1];
-          if (obj) {
-            obj.apply(attrs);
-          }
-        }
-        if (callback != null) {
-          return callback();
-        }
-      } else {
-        return description.run(callback);
-      }
-    };
-
-    Recipe.prototype.trigger = function(delay) {
+    LinearRecipe.prototype.trigger = function(delay) {
       var proceed;
       if (delay == null) {
         delay = null;
@@ -614,7 +642,7 @@
       }
     };
 
-    Recipe.prototype.triggerOnView = function(delay, options) {
+    LinearRecipe.prototype.triggerOnView = function(delay, options) {
       var _this = this;
       if (delay == null) {
         delay = null;
@@ -631,7 +659,7 @@
       }), options);
     };
 
-    Recipe.prototype.first = function() {
+    LinearRecipe.prototype.first = function() {
       if (_.isNumber(this.description[0])) {
         return 1;
       } else {
@@ -639,7 +667,7 @@
       }
     };
 
-    Recipe.prototype.executeFrom = function(i) {
+    LinearRecipe.prototype.executeFrom = function(i) {
       var _this = this;
       return function(delay) {
         var proceed;
@@ -656,7 +684,7 @@
           if (i >= _this.description.length) {
             return _this.reset();
           }
-          return _this["do"](_this.description[i], _this.executeFrom(i + 1));
+          return _this.description[i].run(_this.executeFrom(i + 1));
         };
         if (delay != null) {
           return setTimeout(proceed, delay);
@@ -666,15 +694,15 @@
       };
     };
 
-    Recipe.prototype.reset = function() {
+    LinearRecipe.prototype.reset = function() {
       if (!_.isNumber(this.loop)) {
         return;
       }
-      this["do"](this.initial);
+      this.initial.run();
       return this.trigger(this.loop);
     };
 
-    return Recipe;
+    return LinearRecipe;
 
   })();
 
@@ -684,6 +712,8 @@
       this.elem = elem;
       this.width = width != null ? width : 500;
       this.height = height != null ? height : 300;
+      this.onView = __bind(this.onView, this);
+
       this.group = __bind(this.group, this);
 
       this.text = __bind(this.text, this);
@@ -696,7 +726,7 @@
 
       this.recipe = __bind(this.recipe, this);
 
-      this.animate = __bind(this.animate, this);
+      this.animation = __bind(this.animation, this);
 
       this.register = __bind(this.register, this);
 
@@ -716,24 +746,29 @@
       return _results;
     };
 
-    Diagram.prototype.animate = function(description, duration, easing, repeat) {
-      if (duration == null) {
-        duration = null;
-      }
-      if (easing == null) {
-        easing = null;
-      }
-      if (repeat == null) {
-        repeat = null;
-      }
-      return new Uriel.Animation(description, duration, easing, repeat);
+    Diagram.prototype.animation = function() {
+      var description,
+        _this = this;
+      description = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+      return function(duration, easing, repeat) {
+        if (duration == null) {
+          duration = 0;
+        }
+        if (easing == null) {
+          easing = '<>';
+        }
+        if (repeat == null) {
+          repeat = false;
+        }
+        return new Uriel.Animation(description, duration, easing, repeat);
+      };
     };
 
     Diagram.prototype.recipe = function(initial, description, loopAfter) {
       if (loopAfter == null) {
         loopAfter = null;
       }
-      return new Uriel.Recipe(initial, description, loopAfter, this.elem);
+      return new Uriel.LinearRecipe(this.elem, initial, description, loopAfter);
     };
 
     Diagram.prototype.circle = function(center, r, attrs) {
@@ -762,7 +797,76 @@
       return new Uriel.Group(this.paper, objects, attrs);
     };
 
+    Diagram.prototype.onView = function(callback, delay, options) {
+      var cb;
+      if (delay == null) {
+        delay = 0;
+      }
+      if (options == null) {
+        options = {};
+      }
+      _.defaults(options, {
+        offset: 'bottom-in-view',
+        triggerOnce: true
+      });
+      cb = (function() {
+        if (delay) {
+          return setTimeout(callback, delay);
+        } else {
+          return callback();
+        }
+      });
+      return $(this.elem).waypoint(cb, options);
+    };
+
     return Diagram;
+
+  })();
+
+  Uriel.OriginPoint = (function() {
+
+    function OriginPoint(canvas, position, color) {
+      var path;
+      this.canvas = canvas;
+      if (color == null) {
+        color = 'red';
+      }
+      this.moveTo = __bind(this.moveTo, this);
+
+      this.animate = __bind(this.animate, this);
+
+      path = "M" + this.canvas.origin + " L" + (this.canvas.pt(position));
+      this.line = this.canvas.path(path, {
+        "class": color
+      });
+      this.dot = this.canvas.circle(position, 4, {
+        "class": color
+      });
+    }
+
+    OriginPoint.prototype.animate = function(attrs, controls) {
+      this.line.animate(attrs, controls);
+      return this.dot.animate(attrs, controls);
+    };
+
+    OriginPoint.prototype.moveTo = function(position) {
+      var end;
+      end = this.canvas.pt(position);
+      return [
+        [
+          this.dot, {
+            cx: end[0],
+            cy: end[1]
+          }
+        ], [
+          this.line, {
+            path: "M" + this.canvas.origin + " L" + end
+          }
+        ]
+      ];
+    };
+
+    return OriginPoint;
 
   })();
 
@@ -776,6 +880,8 @@
       if (options == null) {
         options = {};
       }
+      this.point = __bind(this.point, this);
+
       this.line = __bind(this.line, this);
 
       this.circle = __bind(this.circle, this);
@@ -794,20 +900,29 @@
 
       this.makeHorizontalAxis = __bind(this.makeHorizontalAxis, this);
 
+      this.setupAnimations = __bind(this.setupAnimations, this);
+
+      this.addComponents = __bind(this.addComponents, this);
+
       this.labelZero = __bind(this.labelZero, this);
 
       this.width = (_ref = options.width) != null ? _ref : 500;
       this.height = (_ref1 = options.height) != null ? _ref1 : 500;
-      this.unit = (_ref2 = options.unit) != null ? _ref2 : 45;
+      this.unit = (_ref2 = options.unit) != null ? _ref2 : 35;
       this.origin = (_ref3 = options.origin) != null ? _ref3 : [this.width / 2, this.height / 2];
       Plane.__super__.constructor.call(this, this.elem, this.width, this.height);
       this.makeHorizontalAxis();
       this.makeVerticalAxis();
       this.labelZero();
       this.drawGuides();
+      this.setup();
     }
 
     Plane.prototype.labelZero = function() {};
+
+    Plane.prototype.addComponents = function() {};
+
+    Plane.prototype.setupAnimations = function() {};
 
     Plane.prototype.makeHorizontalAxis = function(options) {
       var _ref, _ref1, _ref2, _ref3;
@@ -873,7 +988,7 @@
       if (start == null) {
         start = [0, 0];
       }
-      return this.path(['M'] + this.pt(start) + ['L'] + this.pt(end), {
+      return this.path("M" + (this.pt(start)) + " L" + (this.pt(end)), {
         "class": 'guide'
       });
     };
@@ -882,7 +997,7 @@
       if (center == null) {
         center = [0, 0];
       }
-      return this.circle(this.pt(center), radius, {
+      return this.circle(center, radius * this.unit, {
         "class": 'guide'
       });
     };
@@ -903,6 +1018,13 @@
 
     Plane.prototype.line = function(start, end, attrs) {
       return this.path(['M'] + this.pt(start) + ['L'] + this.pt(end), attrs);
+    };
+
+    Plane.prototype.point = function(pt, color) {
+      if (color == null) {
+        color = 'red';
+      }
+      return new Uriel.OriginPoint(this, pt, color);
     };
 
     return Plane;

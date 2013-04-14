@@ -2820,6 +2820,9 @@ hr.mark {
   line-height: normal;
   font-family: MathJax_Math Arial;
 }
+#main .inactive {
+  opacity: 0.3;
+}
 #main svg text {
   font-family: MathJax_Math;
 }
@@ -2871,8 +2874,8 @@ hr.mark {
   stroke: #a68900;
 }
 #main svg .yellow {
-  fill: #f00;
-  stroke: #a60000;
+  fill: #ff0;
+  stroke: #a6a600;
 }
 #main svg .celadon {
   fill: #9fee00;

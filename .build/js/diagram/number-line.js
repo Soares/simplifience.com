@@ -50,7 +50,7 @@
     __extends(NumberPlane, _super);
 
     function NumberPlane(elem, width, height) {
-      var close, expand, imaginary, initial, real, zero, zx, zy, _ref;
+      var expand, imaginary, initial, real, zero, zx, zy, _ref;
       if (width == null) {
         width = LARGE;
       }
@@ -88,41 +88,36 @@
           }
         }
       });
-      initial = [
-        [
-          imaginary.elements.geometry, {
-            transform: '',
-            opacity: 1
-          }
-        ], [
-          imaginary.elements.labels, {
-            transform: '',
-            opacity: 0
-          }
-        ], [
-          zero, {
-            transform: ''
-          }
-        ]
-      ];
-      expand = this.animate([
-        [
-          zero, {
-            transform: ['t', -8, 0]
-          }
-        ], [
-          imaginary.elements.geometry, {
-            transform: ['r', -90, zx, zy]
-          }
-        ], [
-          imaginary.elements.labels, {
-            transform: ['r', -90, zx, zy, 'r', 90, 't', 0],
-            opacity: 1
-          }
-        ]
-      ], 1500, '<');
-      close = this.animate(initial, 750, '>');
-      this.recipe(initial, [1000, expand, 5000, close], 8000).triggerOnView(1000);
+      initial = this.animation([
+        imaginary.elements.geometry, {
+          transform: '',
+          opacity: 1
+        }
+      ], [
+        imaginary.elements.labels, {
+          transform: '',
+          opacity: 0
+        }
+      ], [
+        zero, {
+          transform: ''
+        }
+      ]);
+      expand = this.animation([
+        zero, {
+          transform: ['t', -8, 0]
+        }
+      ], [
+        imaginary.elements.geometry, {
+          transform: ['r', -90, zx, zy]
+        }
+      ], [
+        imaginary.elements.labels, {
+          transform: ['r', -90, zx, zy, 'r', 90, 't', 0],
+          opacity: 1
+        }
+      ]);
+      this.recipe(initial(), [1000, expand(1500, '<'), 5000, initial(750, '>')], 8000).triggerOnView();
     }
 
     return NumberPlane;
@@ -134,16 +129,17 @@
     __extends(ComplexPlane, _super);
 
     function ComplexPlane(elem) {
-      this.point = __bind(this.point, this);
-
       this.makeVerticalAxis = __bind(this.makeVerticalAxis, this);
 
       this.labelZero = __bind(this.labelZero, this);
+
+      this.setup = __bind(this.setup, this);
       ComplexPlane.__super__.constructor.call(this, elem, {
-        width: LARGE,
-        height: LARGE,
         unit: UNIT
       });
+    }
+
+    ComplexPlane.prototype.setup = function() {
       this.rule([2, 3], [0, 3]);
       this.rule([2, 3], [2, 0]);
       this.text([2.6, 3.2], [
@@ -152,8 +148,8 @@
           'font-style': 'italic'
         }
       ]);
-      this.point([2, 3], 'red');
-    }
+      return this.point([2, 3], 'red');
+    };
 
     ComplexPlane.prototype.labelZero = function() {
       return this.text([-0.33, -0.4], 0);
@@ -177,15 +173,6 @@
       });
     };
 
-    ComplexPlane.prototype.point = function(pt, color) {
-      this.line([0, 0], pt, {
-        "class": color
-      });
-      return this.circle(pt, 4, {
-        "class": color
-      });
-    };
-
     return ComplexPlane;
 
   })(Uriel.Plane);
@@ -194,49 +181,33 @@
 
     __extends(PolarPlane, _super);
 
-    function PolarPlane(elem, width, height) {
-      var commentary, fadeIn, fadeOut, fallDown, hold, initial, preFallDown, preScale, preTurn, problem, rdot, recipe, result, rpath, scale, turn, _ref;
-      if (width == null) {
-        width = LARGE;
-      }
-      if (height == null) {
-        height = LARGE;
-      }
-      this.point = __bind(this.point, this);
+    function PolarPlane(elem) {
+      this.setup = __bind(this.setup, this);
 
-      this.y = __bind(this.y, this);
+      this.drawGuides = __bind(this.drawGuides, this);
 
-      this.x = __bind(this.x, this);
+      this.makeVerticalAxis = __bind(this.makeVerticalAxis, this);
 
-      this.guide = __bind(this.guide, this);
-
-      PolarPlane.__super__.constructor.call(this, elem, width, height);
-      this.x0 = width / 2;
-      this.y0 = height / 2;
-      this.unit = UNIT / 2;
-      this.guide(2);
-      this.guide(4);
-      this.guide(6);
-      this.guide(8);
-      this.guide(10);
-      this.real = this.axis([this.x0, this.y0], {
-        unit: this.unit,
-        from: -10,
-        to: 10,
-        step: 2,
-        labels: function(num) {
-          if (num === 0) {
-            return false;
-          } else {
-            return num;
-          }
-        }
+      this.makeHorizontalAxis = __bind(this.makeHorizontalAxis, this);
+      PolarPlane.__super__.constructor.call(this, elem, {
+        unit: UNIT / 2
       });
-      this.imaginary = this.axis([this.x0, this.y0], {
-        unit: this.unit,
+    }
+
+    PolarPlane.prototype.makeHorizontalAxis = function() {
+      return PolarPlane.__super__.makeHorizontalAxis.call(this, {
+        from: -10,
+        to: 10,
+        step: 2
+      });
+    };
+
+    PolarPlane.prototype.makeVerticalAxis = function() {
+      return PolarPlane.__super__.makeVerticalAxis.call(this, {
         from: -10,
         to: 10,
         step: 2,
+        textOffset: 10,
         labels: function(num) {
           if (num === 0) {
             return false;
@@ -248,192 +219,104 @@
               }
             ];
           }
-        },
-        turns: 1 / 4,
-        tickType: 'top',
-        textOffset: 10
-      });
-      this.point(3, 0, 'red');
-      this.point(0, 2, 'blue');
-      _ref = this.point(3, 0, 'violet'), rpath = _ref[0], rdot = _ref[1];
-      commentary = this.text([this.x(9), this.y(9)], '');
-      result = this.group([rpath, rdot]);
-      initial = [
-        [
-          result, {
-            transform: '',
-            opacity: 0
-          }
-        ], [
-          commentary, {
-            text: ''
-          }
-        ], [
-          rdot, {
-            cx: this.x(3),
-            cy: this.y(0)
-          }
-        ], [
-          rpath, {
-            path: ['M', this.x0, this.y0, 'l', 3 * this.unit, 0]
-          }
-        ]
-      ];
-      problem = [
-        [
-          commentary, {
-            text: '3 ↺ zero × 2 ↺ quarter'
-          }
-        ]
-      ];
-      fadeIn = this.animate([
-        [
-          result, {
-            opacity: 1
-          }
-        ]
-      ], 300, '<>');
-      preScale = [
-        [
-          commentary, {
-            text: '3 × 2'
-          }
-        ]
-      ];
-      scale = this.animate([
-        [
-          rdot, {
-            transform: ['t', 3 * this.unit, 0]
-          }
-        ], [
-          rpath, {
-            path: ['M', this.x0, this.y0, 'l', 6 * this.unit, 0]
-          }
-        ]
-      ], 1000, '<>');
-      preTurn = [
-        [
-          commentary, {
-            text: 'zero turns + a quarter turn'
-          }
-        ], [
-          rdot, {
-            transform: '',
-            cx: this.x(6)
-          }
-        ]
-      ];
-      turn = this.animate([
-        [
-          result, {
-            transform: ['r', -90, this.x0, this.y0]
-          }
-        ]
-      ], 2000, '<>');
-      hold = [
-        [
-          commentary, {
-            text: '= 6 ↺ ¼'
-          }
-        ], [
-          result, {
-            transform: ''
-          }
-        ], [
-          rdot, {
-            cx: this.x(0),
-            cy: this.y(6)
-          }
-        ], [
-          rpath, {
-            path: ['M', this.x0, this.y0, 'L', this.x(0), this.y(6)]
-          }
-        ]
-      ];
-      preFallDown = [
-        [
-          commentary, {
-            text: ''
-          }
-        ]
-      ];
-      fallDown = this.animate([
-        [
-          result, {
-            transform: ['t', 0, 6 * this.unit],
-            opacity: .8
-          }
-        ]
-      ], 500, 'backOut');
-      fadeOut = this.animate([
-        [
-          result, {
-            opacity: 0
-          }
-        ]
-      ], 200);
-      recipe = this.recipe(initial, [1000, problem, 3000, fadeIn, 1000, preScale, 500, scale, 1500, preTurn, 500, turn, 500, hold, 5000, preFallDown, fallDown, fadeOut], 1000);
-      recipe.triggerOnView();
-    }
-
-    PolarPlane.prototype.guide = function(len) {
-      return this.circle([this.x0, this.y0], len * this.unit, {
-        "class": 'guide'
+        }
       });
     };
 
-    PolarPlane.prototype.x = function(x) {
-      return this.x0 + x * this.unit;
+    PolarPlane.prototype.drawGuides = function() {
+      this.guide(2);
+      this.guide(4);
+      this.guide(6);
+      this.guide(8);
+      return this.guide(10);
     };
 
-    PolarPlane.prototype.y = function(y) {
-      return this.y0 - y * this.unit;
-    };
-
-    PolarPlane.prototype.point = function(x, y, color) {
-      var dot, path;
-      path = this.path(['M', this.x0, this.y0, 'l', x * this.unit, -y * this.unit], {
-        "class": color
-      });
-      dot = this.circle([this.x0 + x * this.unit, this.y0 - y * this.unit], 4, {
-        "class": color
-      });
-      return [path, dot];
+    PolarPlane.prototype.setup = function() {
+      var answer, commentary, drop, fadeIn, initial, problem, result, rotate, scale;
+      this.point([3, 0], 'red');
+      this.point([0, 2], 'blue');
+      result = this.point([3, 0], 'violet');
+      commentary = this.text([9, 9]);
+      initial = this.animation(result.moveTo([3, 0]), [
+        result, {
+          transform: '',
+          opacity: 0
+        }
+      ], [
+        commentary, {
+          text: '3↺0 ∗ 2↺¼',
+          opacity: 0
+        }
+      ]);
+      problem = this.animation([
+        commentary, {
+          opacity: 1
+        }
+      ]);
+      fadeIn = this.animation([
+        result, {
+          opacity: 1
+        }
+      ], [
+        commentary, {
+          text: '3 × 2'
+        }
+      ]);
+      scale = this.animation(result.moveTo([6, 0]));
+      rotate = this.animation([
+        result, {
+          transform: "R-90 " + this.origin,
+          delay: 1 / 2
+        }
+      ], [
+        commentary, {
+          text: '0 turns rotated ¼ turns'
+        }
+      ]);
+      answer = this.animation([
+        commentary, {
+          text: '= 6↺¼'
+        }
+      ], [
+        result, {
+          transform: ''
+        }
+      ], result.moveTo([0, 6]));
+      drop = this.animation(result.moveTo([0, 0]), [
+        result, {
+          opacity: 0
+        }
+      ], [
+        commentary, {
+          opacity: 0
+        }
+      ]);
+      return this.recipe(initial(), [1000, problem(500), 2000, fadeIn(500), scale(1000, '<'), 1000, rotate(1000, '<'), 1000, answer(), 4000, drop(750, 'backOut')], 2000).triggerOnView();
     };
 
     return PolarPlane;
 
-  })(Uriel.Diagram);
+  })(Uriel.Plane);
 
   OnePlane = (function(_super) {
 
     __extends(OnePlane, _super);
 
-    function OnePlane(elem, width, height) {
-      var go, initial, oneTurn, point,
-        _this = this;
-      if (width == null) {
-        width = LARGE;
-      }
-      if (height == null) {
-        height = LARGE;
-      }
-      this.y = __bind(this.y, this);
+    function OnePlane(elem) {
+      this.setup = __bind(this.setup, this);
 
-      this.x = __bind(this.x, this);
+      this.drawGuides = __bind(this.drawGuides, this);
 
-      this.guide = __bind(this.guide, this);
+      this.makeVerticalAxis = __bind(this.makeVerticalAxis, this);
 
-      this.magnitude = __bind(this.magnitude, this);
+      this.makeHorizontalAxis = __bind(this.makeHorizontalAxis, this);
+      OnePlane.__super__.constructor.call(this, elem, {
+        unit: UNIT * 1.5
+      });
+    }
 
-      OnePlane.__super__.constructor.call(this, elem, width, height);
-      this.x0 = width / 2;
-      this.y0 = height / 2;
-      this.unit = UNIT * 1.5;
-      this.guide(2);
-      this.guide(3);
-      this.real = this.axis([this.x0, this.y0], {
-        unit: this.unit,
+    OnePlane.prototype.makeHorizontalAxis = function() {
+      return OnePlane.__super__.makeHorizontalAxis.call(this, {
         from: -3,
         to: 3,
         labels: function(num) {
@@ -451,80 +334,63 @@
           }
         }
       });
-      this.imaginary = this.axis([this.x0, this.y0], {
-        unit: this.unit,
+    };
+
+    OnePlane.prototype.makeVerticalAxis = function() {
+      return OnePlane.__super__.makeVerticalAxis.call(this, {
         from: -3,
         to: 3,
-        turns: 1 / 4,
         labels: false,
         tickType: false
       });
-      this.magnitude(1);
-      this.register({
-        oneTurn: function(turns) {
-          var x, y;
-          if (turns === 1) {
-            return {
-              oneTurn: 0
-            };
-          }
-          x = _this.x(1.5 * Math.cos(τ * turns));
-          y = _this.y(1.5 * Math.sin(τ * turns));
-          return {
-            x: x,
-            y: y,
-            text: "1↺" + (turns.toFixed(2))
-          };
-        }
-      });
-      oneTurn = this.text([this.x(1.3), this.y(0)], '1↺0');
-      point = this.circle([this.x(1), this.y(0)], 2, {
-        "class": 'colored'
-      });
-      initial = [
-        [
-          oneTurn, {
-            oneTurn: 0
-          }
-        ]
-      ];
-      go = this.animate([
-        [
-          oneTurn, {
-            oneTurn: 1
-          }
-        ], [
-          point, {
-            transform: ['R', -360, this.x0, this.y0]
-          }
-        ]
-      ], 10000, 'linear', Infinity);
-      this.recipe(initial, [go]).trigger();
-    }
+    };
 
-    OnePlane.prototype.magnitude = function(len) {
-      return this.circle([this.x0, this.y0], len * this.unit, {
+    OnePlane.prototype.drawGuides = function() {
+      this.guide(2);
+      return this.guide(3);
+    };
+
+    OnePlane.prototype.setup = function() {
+      var oneTurn, oneTurnAnim, ot, point, pointAnim,
+        _this = this;
+      this.circle([0, 0], this.unit, {
         "class": 'colored line'
       });
-    };
-
-    OnePlane.prototype.guide = function(len) {
-      return this.circle([this.x0, this.y0], len * this.unit, {
-        "class": 'guide'
+      ot = (function(turns) {
+        var x, y, _ref;
+        if (turns === 1) {
+          return ot(0);
+        }
+        _ref = _this.pt([1.5 * Math.cos(τ * turns), 1.5 * Math.sin(τ * turns)]), x = _ref[0], y = _ref[1];
+        return {
+          x: x,
+          y: y,
+          text: "1↺" + (turns.toFixed(2))
+        };
       });
-    };
-
-    OnePlane.prototype.x = function(x) {
-      return this.x0 + x * this.unit;
-    };
-
-    OnePlane.prototype.y = function(y) {
-      return this.y0 - y * this.unit;
+      this.register({
+        oneTurn: ot
+      });
+      oneTurn = this.text([1.3, 0], '1↺0');
+      point = this.circle([1, 0], 2, {
+        "class": 'colored'
+      });
+      oneTurn.apply({
+        oneTurn: 0
+      });
+      oneTurnAnim = Raphael.animation({
+        oneTurn: 1
+      }, 10000, 'linear').repeat(Infinity);
+      pointAnim = Raphael.animation({
+        transform: "R-360 " + this.origin
+      }, 10000, 'linear').repeat(Infinity);
+      oneTurn.element.animate(oneTurnAnim);
+      return point.element.animateWith(oneTurn.element, oneTurnAnim, pointAnim);
     };
 
     return OnePlane;
 
-  })(Uriel.Diagram);
+  })(Uriel.Plane);
 
   $(function() {
     Uriel.diagram('number-line', NumberLine);

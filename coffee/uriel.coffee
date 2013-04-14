@@ -28,16 +28,13 @@ class Uriel.Element
       if attrs[underlying]?
         @element.node.setAttribute(underlying, attrs[underlying])
         delete attrs[underlying]
-    # Ignored by apply, used by animations.
-    # We ignore it here so that animation setups can be run in reverse.
-    delete attrs.delay
     @element.attr(attrs)
     this
 
   animate: (attrs, controls={}) =>
     if attrs.delay?
-      delay = attrs.delay
-      attrs = _.extend({}, attrs)
+      attrs = _.extend {}, attrs
+      delay = controls.duration * attrs.delay
       delete attrs.delay
     else delay = 0
     callback = unless controls.master then controls.callback else null
@@ -50,6 +47,7 @@ class Uriel.Element
     else
       @element.animate(anim)
       controls.master = [@element, anim]
+    this
 
 
 class Uriel.Path extends Uriel.Element
@@ -76,7 +74,7 @@ class Uriel.Text extends Uriel.Element
   # Raphael makes some stupid choices with its text elements.
   # SVG makes some stupid choices about text-anchoring in the middle.
   # As a result, make sure you change fonts-size with attrs instead of CSS!
-  constructor: (paper, [x, y], text, attrs={}) ->
+  constructor: (paper, [x, y], text='', attrs={}) ->
     element = paper.text x, y, ''
     # Destroy empty tspan. We'll make our own.
     element.node.removeChild(element.node.lastChild)
@@ -108,6 +106,12 @@ class Uriel.Text extends Uriel.Element
     # See raphael issue #491.
     tspan.setAttribute('dy', fontSize / 4) if index is 0
     return tspan
+
+  animate: (attrs, controls) =>
+    if attrs.text?
+      delay = if attrs.delay then (attrs.delay * attrs.duration) else 0
+      setTimeout (=> @apply text: attrs.text), delay
+    super attrs, controls
 
 
 class Uriel.Axis
@@ -344,33 +348,37 @@ class Uriel.Group extends Uriel.Element
 
 
 class Uriel.Animation
-  constructor: (@description, @duration=0, @easing='<>', @repeat=false) ->
+  constructor: (description, @duration, @easing, @repeat) ->
+    @description = []
+    add = (item) =>
+      return @description.push item if _.isFunction item
+      throw "Animations can't be numbers: " + item if _.isNumber item
+      throw "Animations can't be strings: " + item if _.isString item
+      throw "Animations can't be objects:  " + item unless _.isArray item
+      return unless item.length and item[0]
+      if _.isArray item[0]
+      then add i for i in item
+      else @description.push item
+    add description
 
-  run: (callback, delay=null) =>
+  run: (callback) =>
     controls =
-      delay: delay
       callback: callback
       duration: @duration
       easing: @easing
       repeat: @repeat
       master: null
+    return @description controls if _.isFunction @description
     for [object, attributes] in @description
-      # object can be null/false in the case of optional objects.
-      object.animate(attributes, controls) if object
-    if callback and _.isEmpty(@description)
-      setTimeout callback, @duration + (delay or 0)
+      throw "I thought we filtered out null objects?" unless object
+      object.animate(attributes, controls)
+    setTimeout(callback, @duration) if callback and _.isEmpty @description
 
 
-class Uriel.Recipe
-  constructor: (@initial, @description, @loop=false, elem=null) ->
+class Uriel.LinearRecipe
+  constructor: (elem, @initial, @description, @loop=false) ->
     @elem = $(elem)
-    @do @initial
-
-  do: (description, callback=null) ->
-    if _.isArray(description)
-      obj.apply(attrs) for [obj, attrs] in description when obj
-      callback() if callback?
-    else description.run callback
+    @initial.run()
 
   trigger: (delay=null) =>
     proceed = @executeFrom 0
@@ -393,12 +401,12 @@ class Uriel.Recipe
     proceed = =>
       return @reset() if i >= @description.length
       # Assumes that there aren't two numbers in a row.
-      @do @description[i], @executeFrom(i + 1)
+      @description[i].run(@executeFrom(i + 1))
     if delay? then setTimeout(proceed, delay) else proceed()
 
   reset: =>
     return unless _.isNumber @loop
-    @do @initial
+    @initial.run()
     @trigger @loop
 
 
@@ -412,11 +420,11 @@ class Uriel.Diagram
   register: (object) =>
     @paper.ca[key] = value for key, value of object
 
-  animate: (description, duration=null, easing=null, repeat=null) =>
+  animation: (description...) => (duration=0, easing='<>', repeat=false) =>
     new Uriel.Animation(description, duration, easing, repeat)
 
   recipe: (initial, description, loopAfter=null) =>
-    new Uriel.Recipe(initial, description, loopAfter, @elem)
+    new Uriel.LinearRecipe(@elem, initial, description, loopAfter)
 
   circle: (center, r, attrs={}) =>
     new Uriel.Circle(@paper, center, r, attrs)
@@ -433,20 +441,48 @@ class Uriel.Diagram
   group: (objects, attrs) =>
     new Uriel.Group(@paper, objects, attrs)
 
+  onView: (callback, delay=0, options={}) =>
+    _.defaults options,
+      offset: 'bottom-in-view'
+      triggerOnce: true
+    cb = (-> if delay then setTimeout(callback, delay) else callback())
+    $(@elem).waypoint cb, options
+
+
+class Uriel.OriginPoint
+  constructor: (@canvas, position, color='red') ->
+    path = "M#{@canvas.origin} L#{@canvas.pt(position)}"
+    @line = @canvas.path path, class: color
+    @dot = @canvas.circle position, 4, class: color
+
+  animate: (attrs, controls) =>
+    @line.animate(attrs, controls)
+    @dot.animate(attrs, controls)
+
+  moveTo: (position) =>
+    end = @canvas.pt(position)
+    [
+      [@dot, cx: end[0], cy: end[1]]
+      [@line, path: "M#{@canvas.origin} L#{end}"]
+    ]
+
 
 class Uriel.Plane extends Uriel.Diagram
   constructor: (@elem, options={}) ->
     @width = options.width ? 500
     @height = options.height ? 500
-    @unit = options.unit ? 45
+    @unit = options.unit ? 35
     @origin = options.origin ? [@width / 2, @height / 2]
     super @elem, @width, @height
     @makeHorizontalAxis()
     @makeVerticalAxis()
     @labelZero()
     @drawGuides()
+    @setup()
 
   labelZero: =>
+  addComponents: =>
+  setupAnimations: =>
 
   makeHorizontalAxis: (options={}) =>
     options.unit ?= @unit
@@ -467,10 +503,10 @@ class Uriel.Plane extends Uriel.Diagram
   drawGuides: =>
 
   rule: (end, start=[0, 0]) =>
-    @path ['M'] + @pt(start) + ['L'] + @pt(end), class: 'guide'
+    @path "M#{@pt(start)} L#{@pt(end)}", class: 'guide'
 
   guide: (radius, center=[0, 0]) =>
-    @circle @pt(center), radius, class: 'guide'
+    @circle center, radius * @unit, class: 'guide'
 
   pt: ([x, y]) =>
     # Assumes that x is horizontal and y is vertical.
@@ -480,3 +516,4 @@ class Uriel.Plane extends Uriel.Diagram
   text: (pt, text, attrs) => super @pt(pt), text, attrs
   circle: (pt, r, attrs) => super @pt(pt), r, attrs
   line: (start, end, attrs) => @path ['M'] + @pt(start) + ['L'] + @pt(end), attrs
+  point: (pt, color='red') => new Uriel.OriginPoint this, pt, color
