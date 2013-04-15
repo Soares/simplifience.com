@@ -359,7 +359,7 @@ class Uriel.Animation
       if _.isArray item[0]
       then add i for i in item
       else @description.push item
-    add description
+    add d for d in description
 
   run: (callback) =>
     controls =
@@ -368,11 +368,17 @@ class Uriel.Animation
       easing: @easing
       repeat: @repeat
       master: null
-    return @description controls if _.isFunction @description
-    for [object, attributes] in @description
-      throw "I thought we filtered out null objects?" unless object
-      object.animate(attributes, controls)
-    setTimeout(callback, @duration) if callback and _.isEmpty @description
+    calledback = false
+    for description in @description
+      if _.isArray description
+        [object, attributes] = description
+        throw "I thought we filtered out null objects?" unless object
+        object.animate(attributes, controls)
+        calledback = true
+      else if _.isFunction description
+        description(controls)
+      else throw "What even is this? #{description}"
+    setTimeout(callback, @duration) unless calledback
 
 
 class Uriel.LinearRecipe

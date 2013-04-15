@@ -82,6 +82,21 @@
       if (!_.isArray(this.compounds)) {
         this.compounds = [this.compounds];
       }
+      if (this.compounds[0] === 0) {
+        this.label = this.text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [
+          {
+            text: 'n',
+            'font-style': 'italic'
+          }, " = ∞"
+        ]);
+      } else {
+        this.label = this.text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [
+          {
+            text: 'n',
+            'font-style': 'italic'
+          }, " = " + this.compounds[0]
+        ]);
+      }
       this.axis([X0, Y0], {
         unit: UNIT,
         to: new Uriel.Bound(1, false),
@@ -164,7 +179,7 @@
     };
 
     Growth.prototype["do"] = function(index) {
-      var elem, execute, m, _i, _len, _ref,
+      var elem, execute, m, _i, _len, _ref, _ref1, _ref2,
         _this = this;
       index = index % this.compounds.length;
       m = this.compounds[index];
@@ -178,6 +193,27 @@
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
         elem = _ref[_i];
         elem.remove();
+      }
+      if (m === 0 && this.label) {
+        if ((_ref1 = this.label.element) != null) {
+          _ref1.remove();
+        }
+        this.label = this.text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [
+          {
+            text: 'n',
+            'font-style': 'italic'
+          }, ' = ∞'
+        ]);
+      } else if (this.label) {
+        if ((_ref2 = this.label.element) != null) {
+          _ref2.remove();
+        }
+        this.label = this.text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [
+          {
+            text: 'n',
+            'font-style': 'italic'
+          }, " = " + m
+        ]);
       }
       execute = function() {
         if (m === 0) {
@@ -241,10 +277,7 @@
       myY = me.attr('y');
       myNewY = myY - this.accumulator;
       yourIndex = myIndex + 1;
-      if (yourIndex >= PROGRESSION.length) {
-        throw "Can't compound that much!";
-      }
-      yourClass = PROGRESSION[yourIndex];
+      yourClass = PROGRESSION[yourIndex % PROGRESSION.length];
       yourHeight = myHeight / m;
       yourStartY = myY;
       yourEndY = myNewY - yourHeight;

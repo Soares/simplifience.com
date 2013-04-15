@@ -8,7 +8,7 @@ members:
 - imagine
 - aftermath
 scripts:
-- '@raphael/imagine'
+- '@raphael/identity'
 - '/js/complex.js'
 ---
 
@@ -107,7 +107,7 @@ This property is sufficient to define circles.
 Circles are like a bunch of infinitely short right triangles all stacked atop each other.
 </aside>
 
-Now let's compound three times. We start with principle $1$ and grow it by $1\_↻\frac{1}{4}$, compounding thrice. The magnitude of growth is $1$ and each new growth adds a quarter-turn. When we compound thrice we'll add three payments of $\frac{1}{3}$, adding a quarter turn each time.
+Now let's compound three times. We start with principle $1$ and grow it by $1\_↺\frac{1}{4}$, compounding thrice. The magnitude of growth is $1$ and each new growth adds a quarter-turn. When we compound thrice we'll add three payments of $\frac{1}{3}$, adding a quarter turn each time.
 
 <div class="compound" data-n="3"></div>
 

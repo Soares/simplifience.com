@@ -71,7 +71,7 @@
 
 <p>This is called &#8220;continuous growth&#8221;. It happens to anything that grows so long as the new growths also grow. How do we calculate it? We start by calculating something easier: non-continuous growth.</p>
 
-<p>Consider your bank account. Imagine you get $10\%$ interest per year, to keep things simple. If you start with $100$ dollars in the bank, at the end of the year you&#8217;ll have $105$ dollars.</p>
+<p>Consider your bank account. Imagine you get $10\%$ interest per year, to keep things simple. If you start with $100$ dollars in the bank, at the end of the year you&#8217;ll have <span>$</span>105.</p>
 
 <table>
   <thead>
@@ -121,11 +121,11 @@
   <p>Notice how adding $5\%$ is the same as multiplying by $1.05$.</p>
 </aside>
 
-<p>The second scenario makes more money. A whole $25¢$! We&#8217;re rich!</p>
+<p>The second scenario makes more money. A whole 25¢! We&#8217;re rich!</p>
 
-<p>This happens because the second interest payment includes a little bit of interest on the 5$ added on June 1st.</p>
+<p>This happens because the second interest payment includes a little bit of interest on the <span>$</span>5 added on June 1st.</p>
 
-<p>We can repeat this to get more money. If we pay out $2.5\%$ interest four times a year we end up with $((((100 * 1.025) * 1.025) * 1.025) * 1.025) =$ $110.38$ dollars at the end of the year. That&#8217;s $100$ (the principle) multiplied by <span class="info">$1.025$</span> four times (once for each quarter).</p>
+<p>We can repeat this to get more money. If we pay out $2.5\%$ interest four times a year we end up with $((((100 * 1.025) * 1.025) * 1.025) * 1.025) =$ <span>$</span>110.38 at the end of the year. That&#8217;s $100$ (the principle) multiplied by <span class="info">$1.025$</span> four times (once for each quarter).</p>
 
 <aside class="info">
   <p>$1.025$ is $100\%$ of the principle plus $2.5\%$.</p>
@@ -154,22 +154,24 @@
 
 <div class="growth" data-compounds="[3, 4, 5, 6, 7]"></div>
 
-<p>There&#8217;s a cap on how much interest your interest can generate, even if you compound with infinitely fine granularity. If you want more you&#8217;ll have to increase either your interest rate or your time period.</p>
+<p>There&#8217;s a cap on how much interest your interest can generate, even if you compound with infinitely fine granularity.</p>
 
 <div class="growth" data-compounds="0"></div>
 
 <aside class="info">
-  <p>The maximum amount of growth for $100\%$ interest (doubling) over one time period is a bit less than three.</p>
+  <p>If you want more you&#8217;ll have to increase either your interest rate or your time period.</p>
 </aside>
 
-<p>This maximum amount of growth (in a fixed rate and time) is $e$. Remember that the growth of $p$ at rate $x$ compounded $n$ times can be calculated by $p * (1 + \frac{x}{n})^n$, which means &#8220;increase $p$ by an $n^{th}$ fraction of your interest rate ($x$), $n$ times&#8221;. $e$ is a name for what happens when we let $n$ get really really large:</p>
+<p>It turns out that the maximum amount of growth you can get from <em>continuously doubling</em> for one time period is $≈ 271.8\%$ growth. We call this $e$, and we&#8217;ll learn <em>why</em> it&#8217;s roughly $2.718$ in later simplifience articles.</p>
+
+<p>Remember that the growth of $p$ at rate $x$ compounded $n$ times can be calculated by $p * (1 + \frac{x}{n})^n$, which means &#8220;increase $p$ by an $n^{th}$ fraction of your interest rate $x$, $n$ times&#8221;. $e$ is a name for what happens when we let $n$ get really large:</p>
 
 <p>$\displaystyle p * e^x = \lim_{n \to \infty} p * (1 + \frac{x}{n})^n$</p>
 
 <p>$p * e^x$ is math shorthand for saying &#8220;start with $p$ and grow it continuously for $x$&#8221;. To keep things clear, we&#8217;ll use the notation $(grow\ p\ x)$ instead. When you see $(grow\ p\ x)$ it means &#8220;however much stuff you have if you start with $p$ and grow it continuously <span class="info">for $x$</span>&#8221;.</p>
 
 <aside class="info">
-  <p>$x$ is of the form $rate * time$. If you grow $100$ dollars continuously at $5\%$ a year then you&#8217;ll have $(grow\ 100\ 15\%) ≈ 116.18$ dollars after three years.</p>
+  <p>$x$ is of the form $rate * time$. If you grow <span>$</span>100 continuously at $25\%$ for two years then you&#8217;ll have $(grow\ 100\ 50\%) ≈$ <span>$</span>164.87.</p>
 </aside>
 
 <p>This is all you need to know about $e$ in order to understand <a href="/sample/identity.html" target="_blank">Euler&#8217;s identity</a>, which is much easier to understand once you know that $e^{\pi i}$ means $(grow\ 1\ i)$.</p>
@@ -233,6 +235,7 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
+					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {

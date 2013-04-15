@@ -48,7 +48,7 @@ class NumberPlane extends Uriel.Diagram
         transform: ['r', -90, zx, zy, 'r', 90, 't', 0]
         opacity: 1])
     @recipe(initial(), [
-      1000, expand(1500, '<')
+      expand(1500, '<')
       5000, initial(750, '>')
     ], 8000).triggerOnView()
 
@@ -99,42 +99,49 @@ class PolarPlane extends Uriel.Plane
     @point [3, 0], 'red'
     @point [0, 2], 'blue'
     result = @point [3, 0], 'violet'
-    commentary = @text [9, 9]
 
     initial = @animation(
       result.moveTo([3, 0])
       [result, transform: '', opacity: 0]
-      [commentary, text: '3↺0 ∗ 2↺¼', opacity: 0]
     )
-    problem = @animation(
-      [commentary, opacity: 1]
+    engage = @animation(
+      (-> $('.tick.zero').addClass('active'))
     )
     fadeIn = @animation(
+      (->
+        $('.tick').removeClass('active')
+        $('.tick.one').addClass('active')
+      )
       [result, opacity: 1]
-      [commentary, text: '3 × 2']
     )
     scale = @animation(
       result.moveTo([6, 0])
     )
     rotate = @animation(
       [result, transform: "R-90 #{@origin}", delay: 1/2]
-      [commentary, text: '0 turns rotated ¼ turns']
+      (->
+        $('.tick').removeClass('active')
+        $('.tick.two').addClass('active')
+      )
     )
     answer = @animation(
-      [commentary, text: '= 6↺¼']
       [result, transform: '']
       result.moveTo([0, 6])
+      (->
+        $('.tick').removeClass('active')
+        $('.tick.three').addClass('active')
+      )
     )
     drop = @animation(
       result.moveTo([0, 0])
       [result, opacity: 0]
-      [commentary, opacity: 0]
+      (-> $('.tick').removeClass('active'))
     )
 
     @recipe(initial(), [
-      1000
-      problem(500)
-      2000
+      500
+      engage()
+      2500
       fadeIn(500)
       scale(1000, '<')
       1000
@@ -165,15 +172,15 @@ class OnePlane extends Uriel.Plane
       tickType: false
 
   drawGuides: =>
-    @guide 2
-    @guide 3
+    @guide(2).element.toBack()
+    @guide(3).element.toBack()
 
   setup: =>
     @circle [0, 0], @unit, class: 'colored line'
     ot = ((turns) =>
       return ot(0) if turns is 1
       [x, y] = @pt([1.5 * Math.cos(τ * turns), 1.5 * Math.sin(τ * turns)])
-      {x: x, y: y, text: "1↺#{turns.toFixed(2)}"}
+      {x: x, y: y, text: "1 ↺ #{turns.toFixed(2)}"}
     )
     @register oneTurn: ot
 

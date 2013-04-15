@@ -117,7 +117,7 @@
           opacity: 1
         }
       ]);
-      this.recipe(initial(), [1000, expand(1500, '<'), 5000, initial(750, '>')], 8000).triggerOnView();
+      this.recipe(initial(), [expand(1500, '<'), 5000, initial(750, '>')], 8000).triggerOnView();
     }
 
     return NumberPlane;
@@ -232,34 +232,25 @@
     };
 
     PolarPlane.prototype.setup = function() {
-      var answer, commentary, drop, fadeIn, initial, problem, result, rotate, scale;
+      var answer, drop, engage, fadeIn, initial, result, rotate, scale;
       this.point([3, 0], 'red');
       this.point([0, 2], 'blue');
       result = this.point([3, 0], 'violet');
-      commentary = this.text([9, 9]);
       initial = this.animation(result.moveTo([3, 0]), [
         result, {
           transform: '',
           opacity: 0
         }
-      ], [
-        commentary, {
-          text: '3↺0 ∗ 2↺¼',
-          opacity: 0
-        }
       ]);
-      problem = this.animation([
-        commentary, {
-          opacity: 1
-        }
-      ]);
-      fadeIn = this.animation([
+      engage = this.animation((function() {
+        return $('.tick.zero').addClass('active');
+      }));
+      fadeIn = this.animation((function() {
+        $('.tick').removeClass('active');
+        return $('.tick.one').addClass('active');
+      }), [
         result, {
           opacity: 1
-        }
-      ], [
-        commentary, {
-          text: '3 × 2'
         }
       ]);
       scale = this.animation(result.moveTo([6, 0]));
@@ -268,30 +259,26 @@
           transform: "R-90 " + this.origin,
           delay: 1 / 2
         }
-      ], [
-        commentary, {
-          text: '0 turns rotated ¼ turns'
-        }
-      ]);
+      ], (function() {
+        $('.tick').removeClass('active');
+        return $('.tick.two').addClass('active');
+      }));
       answer = this.animation([
-        commentary, {
-          text: '= 6↺¼'
-        }
-      ], [
         result, {
           transform: ''
         }
-      ], result.moveTo([0, 6]));
+      ], result.moveTo([0, 6]), (function() {
+        $('.tick').removeClass('active');
+        return $('.tick.three').addClass('active');
+      }));
       drop = this.animation(result.moveTo([0, 0]), [
         result, {
           opacity: 0
         }
-      ], [
-        commentary, {
-          opacity: 0
-        }
-      ]);
-      return this.recipe(initial(), [1000, problem(500), 2000, fadeIn(500), scale(1000, '<'), 1000, rotate(1000, '<'), 1000, answer(), 4000, drop(750, 'backOut')], 2000).triggerOnView();
+      ], (function() {
+        return $('.tick').removeClass('active');
+      }));
+      return this.recipe(initial(), [500, engage(), 2500, fadeIn(500), scale(1000, '<'), 1000, rotate(1000, '<'), 1000, answer(), 4000, drop(750, 'backOut')], 2000).triggerOnView();
     };
 
     return PolarPlane;
@@ -346,8 +333,8 @@
     };
 
     OnePlane.prototype.drawGuides = function() {
-      this.guide(2);
-      return this.guide(3);
+      this.guide(2).element.toBack();
+      return this.guide(3).element.toBack();
     };
 
     OnePlane.prototype.setup = function() {
@@ -365,7 +352,7 @@
         return {
           x: x,
           y: y,
-          text: "1↺" + (turns.toFixed(2))
+          text: "1 ↺ " + (turns.toFixed(2))
         };
       });
       this.register({

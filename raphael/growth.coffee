@@ -42,6 +42,11 @@ class Growth extends Uriel.Diagram
 
     @compounds = @elem.data('compounds') ? 1
     @compounds = [@compounds] unless _.isArray @compounds
+    if @compounds[0] == 0
+      @label = @text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [{text: 'n', 'font-style': 'italic'}, " = ∞"])
+    else
+      @label = @text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [{text: 'n', 'font-style': 'italic'}, " = #{@compounds[0]}"])
+
     @axis [X0, Y0], unit: UNIT, to: new Uriel.Bound(1, false), labels: false, tickType: false
     @guides= @paper.set @guide(1), @guide(2), @guide(3)
     @principle = @paper.rect(X0, Y0 - HEIGHTUNIT, RECTWIDTH, HEIGHTUNIT)
@@ -86,6 +91,12 @@ class Growth extends Uriel.Diagram
     @principle.attr x: X0
     @dollars.attr x: X0 + RECTWIDTH / 2
     elem.remove() for elem in @interest
+    if m == 0 and @label
+      @label.element?.remove()
+      @label = @text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [{text: 'n', 'font-style': 'italic'}, ' = ∞'])
+    else if @label
+      @label.element?.remove()
+      @label = @text([X0 + DISTANCE + RECTWIDTH / 2, Y0 - 2.82 * HEIGHTUNIT], [{text: 'n', 'font-style': 'italic'}, " = #{m}"])
     execute = => if m == 0 then @continuous() else @tick(0, m)
     @timeouts.push setTimeout(execute, SEQUENCE_DELAY)
 
@@ -115,8 +126,7 @@ class Growth extends Uriel.Diagram
     myNewY = myY - @accumulator
 
     yourIndex = myIndex + 1
-    throw "Can't compound that much!" if yourIndex >= PROGRESSION.length
-    yourClass = PROGRESSION[yourIndex]
+    yourClass = PROGRESSION[yourIndex % PROGRESSION.length]
     yourHeight = myHeight / m
     yourStartY = myY
     yourEndY = myNewY - yourHeight

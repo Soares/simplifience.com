@@ -541,7 +541,7 @@
   Uriel.Animation = (function() {
 
     function Animation(description, duration, easing, repeat) {
-      var add,
+      var add, d, _i, _len,
         _this = this;
       this.duration = duration;
       this.easing = easing;
@@ -577,11 +577,14 @@
           return _this.description.push(item);
         }
       };
-      add(description);
+      for (_i = 0, _len = description.length; _i < _len; _i++) {
+        d = description[_i];
+        add(d);
+      }
     }
 
     Animation.prototype.run = function(callback) {
-      var attributes, controls, object, _i, _len, _ref, _ref1;
+      var attributes, calledback, controls, description, object, _i, _len, _ref;
       controls = {
         callback: callback,
         duration: this.duration,
@@ -589,18 +592,24 @@
         repeat: this.repeat,
         master: null
       };
-      if (_.isFunction(this.description)) {
-        return this.description(controls);
-      }
+      calledback = false;
       _ref = this.description;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        _ref1 = _ref[_i], object = _ref1[0], attributes = _ref1[1];
-        if (!object) {
-          throw "I thought we filtered out null objects?";
+        description = _ref[_i];
+        if (_.isArray(description)) {
+          object = description[0], attributes = description[1];
+          if (!object) {
+            throw "I thought we filtered out null objects?";
+          }
+          object.animate(attributes, controls);
+          calledback = true;
+        } else if (_.isFunction(description)) {
+          description(controls);
+        } else {
+          throw "What even is this? " + description;
         }
-        object.animate(attributes, controls);
       }
-      if (callback && _.isEmpty(this.description)) {
+      if (!calledback) {
         return setTimeout(callback, this.duration);
       }
     };
