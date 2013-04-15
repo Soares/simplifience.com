@@ -6,9 +6,7 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience article. It provides minimal intuition for $e$ necessary to understand @post[Euler's identity]sample/identity. Both $e$ and Euler's identity are @post[contrives]intro/contrives. As a @post[matter of policy]intro/taboo contrives are not mentioned.
-
-This article is an exception to that rule. It's part of an sequence designed to show how "difficult" math can be intuitive when taught from a different point of view. If you already have a good intuition for $e$ you're encouraged to skip this article.
+This is not a standard simplifience article. It provides minimal intuition for $e$ necessary to understand @post[Euler's identity]sample/identity. Both $e$ and Euler's identity are @post[contrives]intro/contrives, which are normally @post[avoided]intro/taboo.
 </div>
 
 You've probably been taught that $e$ is $2.718...$ and you might know it has something to do with logarithms. This is a poor way to look at $e$. The true nature of $e$ is simple:
@@ -24,20 +22,20 @@ $p * e^x$ is math notation for figuring out how much stuff you get if you start 
 Imagine you have a colony of 100 bacteria. They each reproduce once per day. At the end of ten days, <span class="info" markdown="inline">how many bacteria</span> are there?
 
 <aside class="info" markdown="block">
-Assume that they have adequate resources and a lifespan longer than 10 days.
-
-All hail the immortal super-bacteria!
+Assume immortal super-bacteria.
 </aside>
 
+At a first glance, it looks like you'll end up with about $100 * 2^{10} = 102,400$ bacteria, because the population doubles ten times. You'll actually find over $100 * e^{10} = 2,200,000$ bacteria -- more than twice as much!
 
+Why? Because the bacteria don't reproduce in an orderly fashion. They don't all suddenly reproduce in the last minute of the day. Some reproduce hours before midnight. Others reproduce at noon, and still others reproduce in the morning.
 
-At a first glance, it looks like you'll end up with about $100 * 2^{10} = 102,400$ bacteria. You'll actually find over $100 * e^{10} = 2,200,000$ bacteria -- more than twice as much!
+The new second-generation bacteria born throughout day 1 start reproducing *immediately*. Some of them manage to squeeze out a child of their own before midnight. Before the end of the first day, you already have a bunch of second-generation and even a handful of *third-generation* bacteria floating around. Not many, but enough to throw off the numbers. When you compound this effect for ten days, the impact is enormous.
 
-Why? Because the bacteria aren't all kind and orderly. They don't all suddenly reproduce in the last minute of the day. Some reproduce hours before midnight. Others reproduce at noon, and still others reproduce in the morning. These new bacteria start reproducing *immediately*. Some of them manage to squeeze out a child before midnight! Before the end of the first day, you already have a couple *third-generation* bacteria floating around. Not many, but enough to throw off the numbers.
+This is called "continuous growth". It happens when something grows and the new growths also start growing. How much impact does continuous growth have? If the growth is continuous enough, can you get *infinite* growth? If not, what's the cutoff?
 
-This is called "continuous growth". It happens to anything that grows so long as the new growths also grow. How do we calculate it? We start by calculating something easier: non-continuous growth.
+These are good questions. In order to answer them we'll start with something simpler: non-continuous growth.
 
-Consider your bank account. Imagine you get $10\%$ interest per year, to keep things simple. If you start with $100$ dollars in the bank, at the end of the year you'll have <span>$</span>105.
+Consider your bank account. Imagine you get $10\%$ interest per year, to keep things simple. If you start with $100$ dollars in the bank, at the end of the year you'll have <span>$</span>110.
 
 | Time                |                          $ |
 |:--------------------|---------------------------:|
@@ -68,7 +66,7 @@ $1.025$ is $100\%$ of the principle plus $2.5\%$.
 $\displaystyle \frac{10\%\ per\ year}{4\ quarters\ per\ year} = 2.5\%\ per\ quarter$
 </aside>
 
-If you generalize this to any principle and interest rate you can calculate the growth of your money with the formula $principle * (1 + \frac{rate}{n})^n$, where $n$ is the number of times you compound the money.
+If you generalize this to any principle and interest rate you can calculate the growth of your money with the formula $principle * (1 + \frac{rate}{n})^n$, where $n$ is the number of times you compound the money. This reads as "Take your principle and increase it by an $n^{th}$ fraction of the interest rate, $n$ times."
 
 Let's see it in action with some simpler numbers. In order to visualize the interest, I want you to pretend that your bank pays you <span class="info" markdown="inline">$100\%$ interest per year</span>.
 
@@ -94,7 +92,7 @@ There's a cap on how much interest your interest can generate, even if you compo
 <div class="growth" data-compounds="0"></div>
 
 <aside class="info" markdown="block">
-If you want more you'll have to increase either your interest rate or your time period.
+If you want more you'll have to increase either your interest rate or your time period: $p * 2.718...$ is the maximum amount of money you can in a year at an interest rate of $100\%$ per year.
 </aside>
 
 It turns out that the maximum amount of growth you can get from *continuously doubling* for one time period is $≈ 271.8\%$ growth. We call this $e$, and we'll learn *why* it's roughly $2.718$ in later simplifience articles.

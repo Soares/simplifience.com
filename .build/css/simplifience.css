@@ -2656,21 +2656,24 @@ div.cap footer .logo a:hover {
   padding-left: 1em;
   padding-right: 1em;
 }
-#main article p.big,
 #main article p.number {
   line-height: 2em;
+  font-size: 6em;
   text-align: center;
   margin-bottom: 24px;
-}
-#main article p.number {
-  font-size: 6em;
 }
 #main article p.number .MathJax_Preview {
   font-size: 0.25em;
 }
+#main article p.number:empty {
+  font-size: 2em;
+}
 #main article p.big {
   font-size: 4em;
   font-family: 'Sonsie One', serif;
+  line-height: 2em;
+  text-align: center;
+  margin-bottom: 24px;
 }
 #main img {
   display: block;

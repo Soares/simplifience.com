@@ -133,11 +133,13 @@
       this.points = this.paper.set();
       this.rules = this.paper.set();
       this.lines = this.paper.set();
+      this.timeouts = [];
       this.n = this.elem.data('n');
+      this.current_index = false;
       if (_.isArray(this.n)) {
         this.draw(0);
         doAll = (function() {
-          return setTimeout(_this.drawAll, 1000);
+          return _this.timeouts.push(setTimeout(_this.drawAll, 1000));
         });
         this.elem.waypoint(doAll, {
           triggerOnce: true,
@@ -161,43 +163,36 @@
     };
 
     Compound.prototype.drawAll = function() {
-      var draw,
-        _this = this;
-      draw = function(i) {
-        var m, next, t, t2;
-        m = _this.n[i];
-        next = i + 1;
-        if (next >= _this.n.length) {
-          next = 0;
-        }
-        _this.draw(i);
-        t = m >= 50 ? 30 : 100;
-        t2 = 2000;
-        if (i === _this.n.length - 1) {
-          t2 += 1000;
-        }
-        return setTimeout((function() {
-          return draw(next);
-        }), (t * _this.n[i]) + t2);
-      };
-      return draw(1);
+      var i;
+      if (!_.isNumber(this.current_index)) {
+        this.current_index = 1;
+      }
+      i = this.current_index;
+      this.current_index = (this.current_index + 1) % this.n.length;
+      return this.draw(i);
     };
 
     Compound.prototype.draw = function(i) {
-      var elem, m, _i, _j, _k, _len, _len1, _len2, _ref, _ref1, _ref2, _ref3;
-      _ref = this.points;
+      var elem, m, t, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3, _ref4;
+      _ref = this.timeouts;
       for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        elem = _ref[_i];
-        elem.remove();
+        t = _ref[_i];
+        clearTimeout(t);
       }
-      _ref1 = this.rules;
+      this.timeouts = [];
+      _ref1 = this.points;
       for (_j = 0, _len1 = _ref1.length; _j < _len1; _j++) {
         elem = _ref1[_j];
         elem.remove();
       }
-      _ref2 = this.lines;
+      _ref2 = this.rules;
       for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
         elem = _ref2[_k];
+        elem.remove();
+      }
+      _ref3 = this.lines;
+      for (_l = 0, _len3 = _ref3.length; _l < _len3; _l++) {
+        elem = _ref3[_l];
         elem.remove();
       }
       if (this.label) {
@@ -205,7 +200,7 @@
       }
       if (_.isArray(this.n)) {
         m = this.n[i];
-        if ((_ref3 = this.scales) != null ? _ref3[i] : void 0) {
+        if ((_ref4 = this.scales) != null ? _ref4[i] : void 0) {
           this.scale(this.scales[i]);
         } else if (this.scales) {
           this.scale(1);
@@ -237,12 +232,25 @@
       point = this.point([current.real, current.im], progression[index]);
       this.points.push(point.dot.element);
       this.lines.push(point.line.element);
-      doNext = function() {
-        return _this.doPoint(n + 1, current, point.dot.element, m);
-      };
       t = m >= 50 ? 30 : 100;
+      if (!_.isNumber(this.current_index)) {
+        t = 0;
+      }
       if (n < m) {
-        return setTimeout(doNext, t);
+        doNext = (function() {
+          return _this.doPoint(n + 1, current, point.dot.element, m);
+        });
+      } else if (_.isNumber(this.current_index)) {
+        doNext = this.drawAll;
+        t += 500;
+        if (this.current_index === 0) {
+          t += 2000;
+        }
+      } else {
+        doNext = false;
+      }
+      if (doNext) {
+        return this.timeouts.push(setTimeout(doNext, t));
       }
     };
 

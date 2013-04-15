@@ -103,17 +103,21 @@ div.cap
 			margin 0
 			padding-left 1em
 			padding-right 1em
-		p.big, p.number
+		p.number
 			line-height 2em
+			font-size 6em
 			text-align center
 			margin-bottom $text-size * 1.5
-		p.number
 			.MathJax_Preview
 				font-size .25em
-			font-size 6em
+			&:empty
+				font-size 2em
 		p.big
 			font-size 4em
 			font-family $uncomfortable
+			line-height 2em
+			text-align center
+			margin-bottom $text-size * 1.5
 	img
 		display block
 		margin 0 auto

@@ -6,9 +6,7 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience article. It provides a brief view of the nature of $\pi$ as is necessary to understand @post[Euler's identity]sample/identity. Both $\pi$ and Euler's identity are @post[contrives]intro/contrives. As a @post[matter of policy]intro/taboo contrives are not mentioned.
-
-This article is an exception to that rule. It's part of an sequence designed to show how "difficult", when taught from a different point of view, feels intuitive. If you already have a good intuition for $\pi$ you're encouraged to skip this article.
+This is not a standard simplifience article. It provides a brief view of the nature of $\pi$ as is necessary to understand @post[Euler's identity]sample/identity. Both $\pi$ and Euler's identity are @post[contrives]intro/contrives, which are normally @post[avoided]intro/taboo.
 </div>
 
 You've probably been taught that $\pi ≈ 3.14$. You might know it has something to do with circles. More specifically, $\pi$ is the ratio of a circle's circumference to it's diameter. If you walk $\pi$ diameters around a circle you'll come all the way around.
@@ -20,9 +18,9 @@ Measuring the circumference of a circle on a ruler where the diameter of the cir
 </aside>
 
 
-As it turns out, circles with *radius* $1$ are way more useful than circles with diameter $1$. Both reality and mathematics (Euler's identity included) are littered with circles where the radius is the natural unit. In radius-based circles $\pi$ isn't an important number. What we actually care about is the number of <span class="info" markdown="inline">radius lengths</span> in the circumference of a circle.
+As it turns out, circles with *radius* $1$ are far more useful than circles with diameter $1$. Both reality and mathematics (Euler's identity included) are littered with circles where the radius is the natural unit. In radius-based circles $\pi$ isn't an important number. What we actually care about is the number of <span class="info" markdown="inline">radius lengths</span> in the circumference of a circle.
 
-<div class="unroll" data-counter="on"></div>
+<div class="unroll"></div>
 <aside class="info" markdown="block">
 A circle's circumference is $\tau ≈ 6.28$ radius lengths. A radius length is called a "radian".
 </aside>

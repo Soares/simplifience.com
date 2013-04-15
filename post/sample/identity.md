@@ -13,11 +13,9 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience sequence. It is an intuitive explanation of a formula commonly considered difficult to understand.
+This is not a standard simplifience sequence. It is a sample designed to show how difficult concepts can be intuitive with a good explanation.
 
-This sequence demonstrates how difficult concepts can be made intuitive with the right explanation. The articles here breaks many @post[simplifience policies]intro/taboo. We'll encounter @post[contrives]intro/contrives without fixing them and we'll refer to concepts by their common names instead of making up @post[better ones]intro/names.
-
-All of the concepts covered here show up in greater detail in mainstream simplifience sequences.
+The articles here break many @post[simplifience policies]intro/taboo. All of the concepts covered here show up in greater detail in mainstream simplifience sequences.
 </div>
 
 Math is obfuscated by its archaic notation and its clumsy presentation. Take, for example, the strange equation known as "Euler's Identity":
@@ -33,19 +31,19 @@ This is a mind-bending assertion. One irrational raised to the power of an *imag
 
 > Gentlemen, that is surely true, it is absolutely paradoxical; we cannot understand it, and we don't know what it means. But we have proved it, and therefore we know it must be the truth.
 
-That's Benjamin Peirce, an American mathematician and Harvard professor failing to understand the identity.
+That's Benjamin Peirce, an American mathematician and Harvard professor failing to understand Euler's identity.
 
 This is exactly how math shouldn't be.
 
 Euler's identity, it turns out, is easy to understand intuitively, as long as you understand the three building blocks.
 
-<aside class="info" markdown="block">
-Follow the links to build up intuitive understandings of $e$, $\pi$, and $i$. Euler's identity will follow.
-</aside>
-
 * @post[$e$ is growth]sample/growth.
 * @post[$\pi$ is half the circumference of a circle]sample/semicircle.
 * @post[$i$ is the number one rotated a quarter turn]sample/imagine.
+
+<aside class="info" markdown="block">
+Follow the links to build up intuitive understandings of $e$, $\pi$, and $i$. Understanding of Euler's identity will follow.
+</aside>
 
 Once you understand $e$, $\pi$, and $i$ there is only one more @post[contrive]intro/contrives standing in the way of understanding the identity.
 
@@ -53,27 +51,29 @@ You've been taught that $x^5$ means $x\*x\*x\*x\*x$: five $x$s multiplied togeth
 
 Remember that $i$ is no more nor less imaginary than $1$. In fact, $i$ is just $1$ rotated $\frac{1}{4}$ turns. So then $x^i$ is $x$ times itself one time but that one time is rotated? That doesn't make sense.
 
-The contrive here is *exponentiation* -- when you have a number plane instead of a number line, exponentiation isn't just repeated multiplication. The true nature of exponentiation will be revealed in other simplifience sequences. For now, we're going to dodge the problem.
+The contrive here is *exponentiation* -- when you have a number plane instead of a number line, exponentiation isn't just repeated multiplication. How do you repeat something a turned number of times? What does that even mean?
 
-$p * e^x$ is just notation for $(grow\ p\ x)$: grow principle $p$ at rate $x$ compounding continuously. You'll remember that the formula to calculate the end result is <span class="info" markdown="inline">$\displaystyle \lim\_{n \to \infty} p * (1 + \frac{x}{n})^n$</span>.
+The true nature of exponentiation will be revealed in other simplifience sequences. For now, we're going to dodge the problem.
+
+$p * e^x$ is just notation for $(grow\ p\ x)$: grow principle $p$ at rate $x$ compounding continuously. You'll remember that the formula to calculate the end result is <span class="info" markdown="inline">$\displaystyle p * e^x = \lim\_{n \to \infty} p * (1 + \tfrac{x}{n})^n$</span>.
 
 <aside class="info" markdown="block">
 $(1 + \frac{x}{n})$ is amount you grow each time you compound: $100\%$ plus an $n^{th}$ fraction of the interest rate ($x$).
 
 You scale the principle ($p$) by this amount $n$ times.
 
-Continuous growth is growth compounded an infinite number of times. Hence the $\displaystyle \lim\_{n \to \infty}$.
+Continuous growth is growth compounded an infinite number of times ($n \to \infty$).
 </aside>
 
-Using this formula we have a way to figure out what imaginary exponents mean. At least, we can figure out one particular imaginary exponent: $\displaystyle e^i = 1 * e^i = (grow\ 1\ i) = \lim\_{n \to \infty} 1 * (1 + \frac{i}{n})^n$
+Using this formula we have a way to figure out what imaginary exponents mean. At least, we can figure out one particular imaginary exponent: $\displaystyle p * e^i = (grow\ p\ i) = \lim\_{n \to \infty} p * (1 + \tfrac{i}{n})^n$
 
-The interesting part is this: $e^i = (grow\ 1\ i)$. This is the core of Euler's identity. $(grow\ p\ 1)$ has an obvious meaning: take $p$ and grow it by $100\%$ every time period. But what in the blazes does $(grow\ p\ i)$ mean?
+The interesting part is this: $p * e^i = (grow\ p\ i)$. This is the core of Euler's identity. $(grow\ p\ 1)$ has an obvious meaning: take $p$ and grow it by $100\%$ every time period. But what in the blazes does $(grow\ p\ i)$ mean?
 
 $i$ is just $1$ rotated a quarter turn. So what $(grow\ p\ i)$ means is this:
 
 > Take the principle and grow it by $100\%$ per time period, making the interest perpendicular to the principle.
 
-Remember that the use of $i$ puts us on a number plane, not a number line. It's not enough to say that we add $100\%$ interest: we also have to specify which direction the interest is added in. In the case of $e^i$ the interest is rotated a quarter turn away from the principle.
+Remember that the use of $i$ puts us on a number plane, not a number line. It's not enough to say that we add $100\%$ interest: we also have to specify which direction the interest is added in. Growing $i$ is the same as growing $100\%$ except that the interest is paid out a quarter turn away from the principle.
 
 To see how this works, let's consider growing 1 by $i$, compounding <span class="info" markdown="inline">only once</span>. This is just $1 * (1 + i)^1$ = $1 + i$. You start at one, and then all of the interest is vertical.
 
@@ -83,7 +83,7 @@ We've stepped off of the number line and onto the number plane: when you grow a 
 
 What if we compound twice? We start with $1$. Then our first interest payment is $\frac{i}{2}$, so we're at $1 + \frac{i}{2}$.
 
-The second interest payment *isn't $\frac{i}{2}$* -  the second interest payment still has a *magnitude* of one half, but remember that all interest payments are <span class="info" markdown="inline">*perpindicular to the principle*</span>, and the principle is now $1 + \frac{i}{2}$. The new interest has a magnitude of $\frac{1}{2}$ but it's given at a right angle to the principle.
+The second interest payment *isn't $\frac{i}{2}$* -  the second interest payment still scales the principle by, but remember that all interest payments are <span class="info" markdown="inline">*perpindicular to the principle*</span>, and the principle is now $1 + \frac{i}{2}$. The result is $1 \frac{1}{2}$ times the principle, with gains paid *at a right angle* to the principle.
 
 <aside class="info" markdown="block">
 I'm going to abuse the term "principle" here to mean "the result of the previous step".
@@ -107,7 +107,7 @@ This property is sufficient to define circles.
 Circles are like a bunch of infinitely short right triangles all stacked atop each other.
 </aside>
 
-Now let's compound three times. We start with principle $1$ and grow it by $1\_↺\frac{1}{4}$, compounding thrice. The magnitude of growth is $1$ and each new growth adds a quarter-turn. When we compound thrice we'll add three payments of $\frac{1}{3}$, adding a quarter turn each time.
+Keep that in mind while we compound three times. We'll compound thrice, scaling the principle by $1 \frac{1}{3}$ each time, adding a quarter turn at each payment.
 
 <div class="compound" data-n="3"></div>
 
@@ -127,6 +127,8 @@ $(1 + \frac{i}{n})^n$ for $n$ from $1$ to $30$.
 The more we compound the more the growth goes towards rotating the principle instead of extending it.
 </aside>
 
+We're creating shorter and shorter right triangles and stacking them on top of each other. Sound familiar?
+
 > Continuous growth which is always perpendicular to the principle is just another way to say "circular motion".
 
 Woah. That's pretty cool. $e^i = (grow\ 1\ i)$ describes circular motion. How much circular motion? One radius distance. The original principle ($1$) is acting as the radius of the circular motion. The growth rate is $i$ which is just another name for $1$ at a quarter turn. In circular growth the interest never accumulates, it only rotates. $(grow\ 1\ i)$ is one radius-distance of circular movement, also known as "rotation by one radian".
@@ -136,10 +138,10 @@ $e^{2i} = (grow\ 1\ 2i)$ is twice as much circular motion: rotation by two radia
 <div class="compound" data-n="[1, 2, 3, 4, 5, 6, 7, 10, 25, 50, 100]" data-circle="true" data-factor="pi"></div>
 
 <aside class="info" markdown="block">
-$e^{\pi i} = (grow\ 1\ \pi i) = (rotate\ 1\ \pi) = (1 + \frac{i}{n})^n$ shown for $n$ from $1$ to $100$.
+$e^{\pi i} = (grow\ 1\ \pi i) = (rotate\ 1\ \pi)$
+
+Calculated by $\displaystyle \lim\_{n \to \infty} (1 + \tfrac{\pi\ i}{n})^n$.
 </aside>
-
-
 
 It's $\pi$ radian distances of rotation, which is a walk halfway around the circle.
 

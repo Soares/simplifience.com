@@ -63,10 +63,12 @@ class Compound extends ComplexPlane
     @points = @paper.set()
     @rules = @paper.set()
     @lines = @paper.set()
+    @timeouts = []
     @n = @elem.data('n')
+    @current_index = false
     if _.isArray @n
       @draw(0)
-      doAll = (=> setTimeout(@drawAll, 1000))
+      doAll = (=> @timeouts.push(setTimeout(@drawAll, 1000)))
       @elem.waypoint(doAll, triggerOnce: true, offset: 'bottom-in-view')
     else @draw(@n)
     @scale(@scales[0]) if @scales?[0]
@@ -79,18 +81,14 @@ class Compound extends ComplexPlane
     @paper.setViewBox(x, y, width, height)
 
   drawAll: () =>
-    draw = (i) =>
-      m = @n[i]
-      next = i + 1
-      next = 0 if next >= @n.length
-      @draw(i)
-      t = if m >= 50 then 30 else 100
-      t2 = 2000
-      t2 += 1000 if i == @n.length - 1
-      setTimeout((=> draw(next)), (t * @n[i]) + t2)
-    draw(1)
+    @current_index = 1 unless _.isNumber @current_index
+    i = @current_index
+    @current_index = (@current_index + 1) % @n.length
+    @draw(i)
 
   draw: (i) =>
+    clearTimeout(t) for t in @timeouts
+    @timeouts = []
     elem.remove() for elem in @points
     elem.remove() for elem in @rules
     elem.remove() for elem in @lines
@@ -112,9 +110,16 @@ class Compound extends ComplexPlane
     point = @point([current.real, current.im], progression[index])
     @points.push point.dot.element
     @lines.push point.line.element
-    doNext = => @doPoint(n+1, current, point.dot.element, m)
     t = if m >= 50 then 30 else 100
-    setTimeout(doNext, t) if n < m
+    t = 0 unless _.isNumber @current_index
+    if n < m
+      doNext = (=> @doPoint(n+1, current, point.dot.element, m))
+    else if _.isNumber(@current_index)
+      doNext = @drawAll
+      t += 500
+      t += 2000 if @current_index is 0
+    else doNext = false
+    @timeouts.push(setTimeout(doNext, t)) if doNext
 
   setup: =>
 

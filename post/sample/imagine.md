@@ -6,27 +6,23 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience article. It provides minimal intuition for $i$ necessary to understand @post[Euler's identity]sample/identity. Both $i$ and Euler's identity are @post[contrives]intro/contrives. As a @post[matter of policy]intro/taboo contrives are not mentioned.
-
-This article is an exception to that rule. It's part of an sequence designed to show how "difficult" math can be intuitive when taught from a different point of view. If you already have a good intuition for the complex plane you're encouraged to skip this article.
+This is not a standard simplifience article. It provides minimal intuition for $i$ necessary to understand @post[Euler's identity]sample/identity. Both $i$ and Euler's identity are @post[contrives]intro/contrives, which are normally @post[avoided]intro/taboo.
 </div>
 
 $i$ is called the "imaginary number", as if all numbers aren't imaginary. Let's correct that misconception now: $i$ is no more <span class="info" markdown="inline">nor less</span> imaginary than any other number.
 
 <aside class="info" markdown="block">
-Note that all numbers are imaginary. Have you ever seen a seven? You can search the deepest reaches of outer space, but you'll never find a wild eight.
+Note that all numbers are imaginary. Have you ever seen a seven? I'm not asking about @post[the symbol]reality/symbology, but the thing which it represents. You can search the deepest reaches of outer space, but you'll never find a wild seven.
 </aside>
 
 Consider the number line. We've been filling it in for millennia.
 
-First there were only whole numbers. At that point it wasn't so much a number line as a collection of number points.
+First there were only whole numbers. You can't really even call it a number line: it's more of a collection of number dots.
 
 <div class="number-line" data-only-numbers="yes" data-positives="yes"></div>
 <aside class="info" markdown="block">
 The number line in ancient times
 </aside>
-
-
 
 There was nothing in between the numbers, which were whole and pure. Fractions came as a shock to everybody and really started filling things in:
 
@@ -42,7 +38,7 @@ But it didn't stop there. A man was allegedly [murdered](http://www.youtube.com/
 A number line circa 1759CE, riddled with those absurd "negative numbers".
 </aside>
 
-We've been filling in the number line for millenia. It's important to remember that discovering new types of Number doesn't make the *old* types of Number stop working: fractions are useful, but if you if you cut a living friend in half you won't have <span class="info" markdown="inline">half a living friend</span>.
+It's important to remember that discovering new types of Number doesn't make the *old* types of Number stop working: fractions are useful, but if you if you cut a living friend in half you won't have <span class="info" markdown="inline">half a living friend</span>.
 
 <aside class="info" markdown="block">
 If you cut your friends in half I doubt you'll have *any* living friends.
@@ -50,7 +46,7 @@ If you cut your friends in half I doubt you'll have *any* living friends.
 
 The new features of the number line are only useful *when they apply*. Negative numbers are great for counting money, but I bet you've never seen a negative cow. Before you use numbers you have to figure out how much Number applies to your specific situation.
 
-We've been jamming new features into the term "Number" for ages. It should come as no surprise that there are yet more features we can shove into the overburdened number line.
+We've been jamming new features into the term "Number" for millennia. It should come as no surprise that there are yet more features we can shove into the overburdened number line.
 
 The so called "imaginary numbers" are a fairly modern extension. They take the boring old number line and extend it into a *number plane*.
 
@@ -59,7 +55,7 @@ The so called "imaginary numbers" are a fairly modern extension. They take the b
 There are many ways to turn the number line into a number plane. You've already encountered number planes for things like graphs and charts where you write points in the form $(1, 2)$ or $(x, y)$. Using imaginary numbers is just like using $(x, y)$ pairs. The confusing part of imaginary numbers is that we refer to a point on the number plane as *a single <span class="info" markdown="inline">two-dimensional number</span>*.
 
 <aside class="info" markdown="block">
-You don't have to stop there. You can invent 3D numbers, too! Or even 4D numbers. You can make up all sorts of crazy new numbers. "Number" is a very loose term.
+You don't have to stop there. You can invent 3D numbers too. Or even 4D numbers. You can make up all sorts of crazy features. "Number" is a very loose term.
 </aside>
 
 The "imaginary numbers" you've heard so much about are just the vertical axis of the number plane. Together with the original ("real") number line this creates the <span class="info" markdown="inline">complex plane</span>. Points on this plane are two-dimensional numbers.
@@ -72,10 +68,10 @@ The 'complex plane' is another poorly named @post[contrive]intro/contrives ignor
 
 The entity $2 + 3i$ is written in two parts. Don't let the notation confuse you: though disjoint, it is @post[describing]reality/symbology a single unified 2D number (marked by the red dot). Why do we write one number in two parts? Don't ask me. It's a silly convention.
 
-There are a few different ways that you can construct two-dimensional numbers. The complex plane is a type of 2D number that is really good at talking about rotation. Rotation, as it happens, is prevalent in reality.
+There are a few different ways that you can construct two-dimensional numbers. The complex plane is a type of 2D number that is really good at talking about rotation. Rotation, as it happens, is <span class="info" markdown="inline">prevalent in reality</span>.
 
 <aside class="info" markdown="block">
-These particular 2D numbers are also really good at describing oscillation.
+It's how you get from one dimension to another dimension.
 </aside>
 
 In the interest of clarity we'll introduce a new syntax for these 2D numbers that makes it easy to see their rotation. We'll write them like $3\_{↺\frac{1}{8}}$, where $3$ is the size of the number and $\frac{1}{8}$ is how much it's rotated.
@@ -120,7 +116,7 @@ Every point on that solid circle is a different variant of $1$, ranging from $1\
 
 
 
-By <span class="info" markdown="inline">convention</span>, we still refer to the original one $(1\_{↺0})$ as "one". We have a special name for the vertical one $(1\_{↺\frac{1}{4}})$. That special name is $i$.
+By <span class="info" markdown="inline">convention</span>, we still refer to the original one $(1\_{↺0})$ as "one" and the half-turned one $(1\_{↺\frac{1}{2}})$ as "negative one". We have a special name for the vertical one $(1\_{↺\frac{1}{4}})$. That special name is $i$.
 
 <aside class="info" markdown="block">
 A rather ridiculous convention which mainstream simplifience disregards.
