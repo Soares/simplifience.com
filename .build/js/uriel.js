@@ -816,7 +816,7 @@
           return callback();
         }
       });
-      return $(this.elem).waypoint(cb, options);
+      return this.elem.waypoint(cb, options);
     };
 
     return Diagram;

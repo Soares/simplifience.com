@@ -147,10 +147,10 @@ body.main #main svg path.solid {
   fill: #006363;
 }
 body.main #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.main #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.main,
 body.main #main aside.info,
@@ -379,10 +379,10 @@ body.rules #main svg path.solid {
   fill: #06266f;
 }
 body.rules #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.rules #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.rules,
 body.rules #main aside.info,
@@ -611,10 +611,10 @@ body.rigor #main svg path.solid {
   fill: #200772;
 }
 body.rigor #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.rigor #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.rigor,
 body.rigor #main aside.info,
@@ -843,10 +843,10 @@ body.simplifience #main svg path.solid {
   fill: #48036f;
 }
 body.simplifience #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.simplifience #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.simplifience,
 body.simplifience #main aside.info,
@@ -1075,10 +1075,10 @@ body.knowledge #main svg path.solid {
   fill: #85004b;
 }
 body.knowledge #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.knowledge #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.knowledge,
 body.knowledge #main aside.info,
@@ -1307,10 +1307,10 @@ body.rant #main svg path.solid {
   fill: #a60000;
 }
 body.rant #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.rant #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.rant,
 body.rant #main aside.info,
@@ -1539,10 +1539,10 @@ body.stub #main svg path.solid {
   fill: #a64b00;
 }
 body.stub #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.stub #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.stub,
 body.stub #main aside.info,
@@ -1771,10 +1771,10 @@ body.caution #main svg path.solid {
   fill: #a6a600;
 }
 body.caution #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.caution #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.caution,
 body.caution #main aside.info,
@@ -2003,10 +2003,10 @@ body.define #main svg path.solid {
   fill: #008500;
 }
 body.define #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.define #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.define,
 body.define #main aside.info,
@@ -2235,10 +2235,10 @@ body.computer #main svg path.solid {
   fill: #586e75;
 }
 body.computer #main svg path.axis {
-  stroke: #000;
+  stroke: #555;
 }
 body.computer #main svg path.axis.arrow {
-  fill: #000;
+  fill: #555;
 }
 body #main aside.computer,
 body.computer #main aside.info,
@@ -2664,6 +2664,9 @@ div.cap footer .logo a:hover {
 }
 #main article p.number {
   font-size: 6em;
+}
+#main article p.number .MathJax_Preview {
+  font-size: 0.25em;
 }
 #main article p.big {
   font-size: 4em;

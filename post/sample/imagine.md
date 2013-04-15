@@ -76,7 +76,7 @@ There are a few different ways that you can construct two-dimensional numbers. T
 These particular 2D numbers are also really good at describing oscillation.
 </aside>
 
-Because the complex plane is especially good at expressing rotation we'll use a different syntax for these 2D numbers. Specifically, we'll write them like $3\_{↺\frac{1}{8}}$, where $3$ is the length of the number and $\frac{1}{8}$ is how much it's rotated.
+In the interest of clarity we'll introduce a new syntax for these 2D numbers that makes it easy to see their rotation. We'll write numbers like $3\_{↺\frac{1}{8}}$, where $3$ is the size of the number and $\frac{1}{8}$ is how much it's rotated.
 
 The complex plane acts how you'd expect a number plane to act, with one stipulation: multiplication of "complex numbers" works by multiplying the lengths and adding the rotations.
 

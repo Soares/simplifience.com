@@ -446,7 +446,7 @@ class Uriel.Diagram
       offset: 'bottom-in-view'
       triggerOnce: true
     cb = (-> if delay then setTimeout(callback, delay) else callback())
-    $(@elem).waypoint cb, options
+    @elem.waypoint cb, options
 
 
 class Uriel.OriginPoint

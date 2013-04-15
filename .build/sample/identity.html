@@ -79,33 +79,37 @@
 
 <p>Once you understand $e$, $\pi$, and $i$ there is only one more <a href="/intro/contrives.html" target="_blank" class="stub">contrive</a> standing in the way of understanding the identity.</p>
 
-<p>You&#8217;ve been taught that $x^5$ means $x*x*x*x*x$: five $x$s multiplied together. What is $x^i$? $x$ times itself an imaginary number of times? Remember that $i$ is no more nor less imaginary than $1$. In fact, $i$ is just $1$ rotated $\frac{1}{4}$ turns. So then $x^i$ is $x$ times itself once where the &#8216;once&#8217; is itself rotated? That doesn&#8217;t make sense.</p>
+<p>You&#8217;ve been taught that $x^5$ means $x*x*x*x*x$: five $x$s multiplied together. But what&#8217;s $x^i$? $x$ times itself an imaginary number of times?</p>
+
+<p>Remember that $i$ is no more nor less imaginary than $1$. In fact, $i$ is just $1$ rotated $\frac{1}{4}$ turns. So then $x^i$ is $x$ times itself one time but that one time is rotated? That doesn&#8217;t make sense.</p>
 
 <p>The contrive here is <em>exponentiation</em> &#8211; when you have a number plane instead of a number line, exponentiation isn&#8217;t just repeated multiplication. The true nature of exponentiation will be revealed in other simplifience sequences. For now, we&#8217;re going to dodge the problem.</p>
 
-<p>You should understand intuitively from the link above that $p * e^x$ is just notation for $(grow\ p\ x)$: grow principle $p$ at rate $x$ compounding continuously. You&#8217;ll remember that the formula to calculate the end result is <span class="info">$\displaystyle \lim_{n \to \infty} p * (1 + \frac{x}{n})^n$</span>.</p>
+<p>$p * e^x$ is just notation for $(grow\ p\ x)$: grow principle $p$ at rate $x$ compounding continuously. You&#8217;ll remember that the formula to calculate the end result is <span class="info">$\displaystyle \lim_{n \to \infty} p * (1 + \frac{x}{n})^n$</span>.</p>
 
 <aside class="info">
   <p>$(1 + \frac{x}{n})$ is amount you grow each time you compound: $100\%$ plus an $n^{th}$ fraction of the interest rate ($x$).</p>
 
-  <p>You raise it to the power $n$ because the principle is compounded $n$ times.</p>
+  <p>You scale the principle ($p$) by this amount $n$ times.</p>
 
-  <p>Continuous growth is when you compound an infinite number of times. Hence the $\displaystyle \lim_{n \to \infty}$.</p>
+  <p>Continuous growth is growth compounded an infinite number of times. Hence the $\displaystyle \lim_{n \to \infty}$.</p>
 </aside>
 
-<p>Using this formula we have a way to figure out what imaginary exponents mean. $\displaystyle e^i = 1 * e^i = (grow\ 1\ i) = \lim_{n \to \infty} 1 * (1 + \frac{i}{n})^n$.</p>
+<p>Using this formula we have a way to figure out what imaginary exponents mean. At least, we can figure out one particular imaginary exponent: $\displaystyle e^i = 1 * e^i = (grow\ 1\ i) = \lim_{n \to \infty} 1 * (1 + \frac{i}{n})^n$</p>
 
-<p>The interesting part in that jumble of math is this: $e^i = (grow\ 1\ i)$. This is the core of Euler&#8217;s identity.</p>
+<p>The interesting part is this: $e^i = (grow\ 1\ i)$. This is the core of Euler&#8217;s identity. $(grow\ p\ 1)$ has an obvious meaning: take $p$ and grow it by $100\%$ every time period. But what in the blazes does $(grow\ p\ i)$ mean?</p>
 
-<p>$e^i$ means &#8220;take $1$ and grow it perpendicularly&#8221;. Remember that $i$ is just $1$ rotated a quarter turn. $(grow\ 1\ 1)$ has an obvious meaning: take a principle of $1$ and grow it by $100\%$ every time period. What does $(grow\ 1\ i)$ mean? It means</p>
+<p>$i$ is just $1$ rotated a quarter turn. So what $(grow\ p\ i)$ means is this:</p>
 
 <blockquote>
-  <p>Take the principle and grow it by 100% a time period, <strong>making the interest perpindicular to the principle</strong>.</p>
+  <p>Take the principle and grow it by $100\%$ per time period, making the interest perpendicular to the principle.</p>
 </blockquote>
 
-<p>If we only compound once, $(grow\ 1\ i) = 1 * (1 + i) = 1 + i$.</p>
+<p>Remember that the use of $i$ puts us on a number plane, not a number line. It&#8217;s not enough to say that we add $100\%$ interest: we also have to specify which direction the interest is added in. In the case of $e^i$ the interest is rotated a quarter turn away from the principle.</p>
 
-<!--TODO: Graph-->
+<p>To see how this works, let&#8217;s consider growing 1 by $i$, compounding <span class="info">only once</span>. This is just $1 * (1 + i)^1$ = $1 + i$. You start at one, and then all of the interest is vertical.</p>
+
+<div class="complex-plane"></div>
 
 <p>We&#8217;ve stepped off of the number line and onto the number plane: when you grow a number by $i$, you&#8217;re going perpindicular.</p>
 
@@ -117,43 +121,57 @@
   <p>I&#8217;m going to abuse the term &#8220;principle&#8221; here to mean &#8220;the result of the previous step&#8221;.</p>
 </aside>
 
-<!--TODO: Graph-->
+<div class="compound" data-n="2"></div>
 
-<p>Now let&#8217;s compound three times. Each time we add interest of magnitude $\frac{1}{3}$ and make sure that each payment is perpendicular to the last.</p>
+<aside class="info">
+  <p>Between each point, the distance is $\frac{1}{2}$ and the angle of rotation is $\frac{1}{4}$.</p>
+</aside>
 
-<!--TODO: Graph-->
-
-<p>Do you see what&#8217;s going on here? The more we compound the interest payments, the less it goes into <em>increasing</em> the principle and the more it goes into <em>turning</em> the principle.</p>
-
-<p>Notice how at any point along the edge of a circle the circle is <em>locally straight</em> &#8211; the line tangent to a circle at every point is <span class="info">perpendicular to the line from the center to that point</span>.</p>
+<p>Take a moment to look at a circle. Notice how at any point along the edge of a circle the circle is <em>locally straight</em>. If you zoom in where the circle intercepts the horizontal axis, the circle looks vertical. In other words, the line tangent to a circle is <span class="info">perpendicular to the radius</span>.</p>
 
 <aside class="info">
   <p>This property is sufficient to define circles.</p>
 </aside>
 
-<!--TODO: Graph-->
-
-<p>Multiplying by $(1 + \frac{i}{n})$ <span class="info">is the same</span> as multiplying by $(1 + \frac{1}{n})$ and then rotating by $\frac{1}{4*n}$ turns (remember $i$ is $1$ at $\frac{1}{4}$ turns). As $n$ gets large the triangles at $1 + \frac{i}{n}$ gets closer and closer to being on the circle.</p>
+<div class="tangents"></div>
 
 <aside class="info">
-  <p>Multiplying numbers on the complex plane is multiplication of the magnitudes and addition of the angles.</p>
+  <p>Circles are like a bunch of infinitely short right triangles all stacked atop each other.</p>
 </aside>
 
-<!--TODO: Graph-->
+<p>Now let&#8217;s compound three times. We start with principle $1$ and grow it by $1_↻\frac{1}{4}$, compounding thrice. The magnitude of growth is $1$ and each new growth adds a quarter-turn. When we compound thrice we&#8217;ll add three payments of $\frac{1}{3}$, adding a quarter turn each time.</p>
+
+<div class="compound" data-n="3"></div>
+
+<aside class="info">
+  <p>It&#8217;s like making three right triangles with height $\frac{1}{3}$ and stacking them atop each other.</p>
+</aside>
+
+<p>Do you see what&#8217;s going on here? The more we compound the interest payments, the less it goes into <em>increasing</em> the principle and the more it goes into <em>turning</em> the principle.</p>
 
 <p>When the perpendicular growth is compounded continuously (as $n \to \infty$), <em>all</em> of the growth goes towards pushing the principle onto a new axis, and <em>none</em> of it goes towards growth. Check it out:</p>
 
-<!--TODO: Graph-->
+<div class="compound" data-n="[1, 2, 3, 4, 5, 6, 7, 10, 20, 30]" data-circle="true"></div>
+
+<aside class="info">
+  <p>$(1 + \frac{i}{n})^n$ for $n$ from $1$ to $30$.</p>
+
+  <p>The more we compound the more the growth goes towards rotating the principle instead of extending it.</p>
+</aside>
 
 <blockquote>
   <p>Continuous growth which is always perpendicular to the principle is just another way to say &#8220;circular motion&#8221;.</p>
 </blockquote>
 
-<p>Woah. That&#8217;s pretty cool. $e^i = (grow\ 1\ i)$ is circular motion. How much circular motion? One radius distance. The original principle ($1$) is acting as the radius of the circular motion. The growth rate is $i = (1$ at $\frac{1}{4}$ turns$)$. In circular growth, the interest never accumulates, because it&#8217;s always perpendicular: the magnitude of the growth is $1$. $(grow\ 1\ i)$ is one radius of circular movement, also known as &#8220;rotation by one radian&#8221;.</p>
+<p>Woah. That&#8217;s pretty cool. $e^i = (grow\ 1\ i)$ describes circular motion. How much circular motion? One radius distance. The original principle ($1$) is acting as the radius of the circular motion. The growth rate is $i$ which is just another name for $1$ at a quarter turn. In circular growth the interest never accumulates, it only rotates. $(grow\ 1\ i)$ is one radius-distance of circular movement, also known as &#8220;rotation by one radian&#8221;.</p>
 
 <p>$e^{2i} = (grow\ 1\ 2i)$ is twice as much circular motion: rotation by two radians. And $e^{\pi i} = (grow\ 1\ \pi i)$?</p>
 
-<!--TODO: Graph-->
+<div class="compound" data-n="[1, 2, 3, 4, 5, 6, 7, 10, 25, 50, 100]" data-circle="true" data-factor="pi"></div>
+
+<aside class="info">
+  <p>$e^{\pi i} = (grow\ 1\ \pi i) = (rotate\ 1\ \pi) = (1 + \frac{i}{n})^n$ shown for $n$ from $1$ to $100$.</p>
+</aside>
 
 <p>It&#8217;s $\pi$ radian distances of rotation, which is a walk halfway around the circle.</p>
 
@@ -247,6 +265,10 @@
 	<script type="text/javascript" src="/js/uriel.js"></script>
 	
 	<script type="text/javascript" src="/js/post.js"></script>
+	
+	<script type="text/javascript" src="/js/diagram/imagine.js"></script>
+	
+	<script type="text/javascript" src="/js/complex.js"></script>
 	
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
