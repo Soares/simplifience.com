@@ -32,7 +32,7 @@ blocks:
       <ul>
         <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
         <li>{{ 'foundations/unlearn'|post_anchor }}</li>
-        <li>{{ 'reality/welcome'|post_anchor }}</li>
+        <!--<li>{{ 'reality/welcome'|post_anchor }}</li>-->
       </ul>
     </aside>
   </div>
@@ -61,10 +61,8 @@ It doesn't have to be like this.
 
 This is simplifience. It is not math, it is not science. It is more and it is less.
 
-<aside class="info" markdown="block">
-It's also still under construction.
-
-We'll have an RSS feed soon.
+<aside class="caution" markdown="block">
+It's also still under construction. We'll have an RSS feed soon.
 </aside>
 
 It is an attempt to explain what we know of reality in simple terms. It is a quest to understand the universe.
