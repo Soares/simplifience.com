@@ -2532,7 +2532,7 @@ aside.define em:first-of-type:after {
 }
 html,
 body {
-  font: 16px/1.5em 'Enriqueta', arial, sans-serif;
+  font: 14px/1.5em 'Enriqueta', arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -2561,7 +2561,7 @@ div.cap {
 div.cap h1 {
   font-family: 'Sonsie One', serif;
   font-weight: normal;
-  font-size: 35.2px;
+  font-size: 30.800000000000004px;
 }
 div.cap h1.title {
   float: left;
@@ -2619,12 +2619,12 @@ div.cap footer a.author {
   clear: right;
 }
 div.cap footer h1.logo {
-  font-size: 32px;
+  font-size: 28px;
   margin-bottom: 0;
 }
 div.cap footer a.author {
   display: block;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 div.cap footer a.author,
 div.cap footer .logo a {
@@ -2643,7 +2643,7 @@ div.cap footer .logo a:hover {
   margin-bottom: 1.5em;
 }
 #main article h1 {
-  font-size: 32px;
+  font-size: 28px;
 }
 #main article ul,
 #main article ol {
@@ -2677,7 +2677,7 @@ div.cap footer .logo a:hover {
   font-family: 'Sonsie One', serif;
   line-height: 2em;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
 }
 #main img {
   display: block;
@@ -2770,7 +2770,7 @@ div.computer ol {
 }
 #main div.nav h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
   cursor: default;
 }
 #main div.nav aside ul {
@@ -2780,7 +2780,7 @@ div.computer ol {
   padding: 0;
 }
 #main div.nav a {
-  font-size: 19.2px;
+  font-size: 16.8px;
   line-height: 1.7999999999999998em;
   text-decoration: none;
 }
@@ -2987,7 +2987,7 @@ body #main > article form.meditate a.close {
   border: none;
   background: none;
   background-image: url("/icons/lightx.png");
-  margin-top: 8px;
+  margin-top: 7px;
 }
 body #main > article form.meditate a.close:hover {
   background-image: url("/icons/darkx.png");
