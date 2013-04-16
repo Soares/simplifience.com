@@ -27,7 +27,7 @@ You may have stumbled across this identity before. If you haven't, take a moment
 
 This formula claims that $e$ (the base of the natural logarithm, an irrational number) raised to the power $\pi$ (relating circle circumference to diameter, also irrational) times *an imaginary number* is not only *meaningful*, but it's a real whole number: negative one.
 
-This is a mind-bending assertion. One irrational raised to the power of an *imaginary irrational* somehow equal to negative one? This identity surprised and confounded many when it was first discovered.
+This is a mind-bending assertion. An irrational raised to the power of an *imaginary irrational* is somehow equal to negative one? This identity surprised and confounded many when it was first discovered.
 
 > Gentlemen, that is surely true, it is absolutely paradoxical; we cannot understand it, and we don't know what it means. But we have proved it, and therefore we know it must be the truth.
 
