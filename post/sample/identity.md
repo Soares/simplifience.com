@@ -9,6 +9,7 @@ members:
 - aftermath
 scripts:
 - '@raphael/identity'
+- '/js/Complex.js'
 - '/js/complex.js'
 ---
 
