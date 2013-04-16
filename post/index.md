@@ -32,7 +32,7 @@ blocks:
       <ul>
         <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
         <li>{{ 'foundations/unlearn'|post_anchor }}</li>
-        <li>{{ 'reality/welcome'|post_anchor }}</li>
+        <!--<li>{{ 'reality/welcome'|post_anchor }}</li>-->
       </ul>
     </aside>
   </div>
