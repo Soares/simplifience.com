@@ -1,15 +1,15 @@
 ---
 title: Math is Archaic
 type: rules
-sequence: Abandonding Math
-members:
-- ../foundations/mathematics
-- ../intro/formal-notation
-- ../intro/rules
-- explore
-- education
-- trailblazing
-- resources
+# sequence: Abandonding Math
+# members:
+# - ../foundations/mathematics
+# - ../intro/formal-notation
+# - ../intro/rules
+# - explore
+# - education
+# - trailblazing
+# - resources
 ---
 The modern <span class="info" markdown="inline">language</span> of mathematics is archaic. It is thousands upon thousands of years old, and it is stale.
 

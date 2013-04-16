@@ -5,16 +5,16 @@ members:
 - mathematics
 - number
 ---
-Simplifience is a @post[simpler way to look at reality]intro/motivation. In the normal course of simplifience articles, when we come across a concept that has a confusing representation in mainstream science I will ignore the mainstream entirely until I've built up a solid foundation of intuition. When I introduce the concept, you get to skip the mainstream confusion.
-
-If I do my job right, you don't even notice what I've done until I point it out. Then, suddenly, everything clicks.
+Simplifience is a @post[simpler way to look at reality]intro/motivation. In the normal course of simplifience articles the mainstream representation of math and science is @post[ignored]intro/contrives until you've built up a solid intuition. You get to avoid the mainstream confusion entirely.
 
 Unfortunately, there are a couple of mainstream confusions that are too large for me to dance around, too broad for me to avoid while I build up your intuition.
 
 These confusions go straight to the core of our culture. They're embedded in the language. They've already infected your mind, and there's no way I can avoid them.
 
-The first order of business is confronting these confusions <span class="info" markdown="inline">head on</span>.
+Since I can't avoid them, I'll have to root them out completely before we begin. We have to confront them directly.
 
 <aside class="info" markdown="block">
-Normally we'll be more subtle. In this case, confrontation is unavoidable. Brace yourself.
+Use the links below to navigate to the next article in the sequence.
 </aside>
+
+

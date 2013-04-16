@@ -232,7 +232,7 @@
       point = this.point([current.real, current.im], progression[index]);
       this.points.push(point.dot.element);
       this.lines.push(point.line.element);
-      t = m >= 50 ? 30 : 100;
+      t = 500 / m;
       if (!_.isNumber(this.current_index)) {
         t = 0;
       }

@@ -15,7 +15,7 @@ scripts:
 <div class="caution" markdown="block">
 This is not a standard simplifience sequence. It is a sample designed to show how difficult concepts can be intuitive with a good explanation.
 
-The articles here break many @post[simplifience policies]intro/taboo. All of the concepts covered here show up in greater detail in mainstream simplifience sequences.
+The articles here break many @post[simplifience policies]intro/taboo. All of the concepts covered here will show up in greater detail in later articles.
 </div>
 
 Math is obfuscated by its archaic notation and its clumsy presentation. Take, for example, the strange equation known as "Euler's Identity":
@@ -83,16 +83,12 @@ We've stepped off of the number line and onto the number plane: when you grow a 
 
 What if we compound twice? We start with $1$. Then our first interest payment is $\frac{i}{2}$, so we're at $1 + \frac{i}{2}$.
 
-The second interest payment *isn't $\frac{i}{2}$* -  the second interest payment still scales the principle by, but remember that all interest payments are <span class="info" markdown="inline">*perpindicular to the principle*</span>, and the principle is now $1 + \frac{i}{2}$. The result is $1 \frac{1}{2}$ times the principle, with gains paid *at a right angle* to the principle.
-
-<aside class="info" markdown="block">
-I'm going to abuse the term "principle" here to mean "the result of the previous step".
-</aside>
+The second interest payment isn't $\frac{i}{2}$ -- the second interest payment is $50\%$, but remember that all interest payments are *perpendicular to the value*, and the value is now $1 + \frac{i}{2}$. We pay out $50\%$ of the magnitude of the new value, paid with a $\frac{1}{4}$ turn. Check it out:
 
 <div class="compound" data-n="2"></div>
 
 <aside class="info" markdown="block">
-Between each point, the distance is $\frac{1}{2}$ and the angle of rotation is $\frac{1}{4}$.
+Interest payments are the dashed lines. They are $50\%$ of the current value in magnitude and $\frac{1}{4}$ of a turn rotated.
 </aside>
 
 Take a moment to look at a circle. Notice how at any point along the edge of a circle the circle is *locally straight*. If you zoom in where the circle intercepts the horizontal axis, the circle looks vertical. In other words, the line tangent to a circle is <span class="info" markdown="inline">perpendicular to the radius</span>.
@@ -107,12 +103,12 @@ This property is sufficient to define circles.
 Circles are like a bunch of infinitely short right triangles all stacked atop each other.
 </aside>
 
-Keep that in mind while we compound three times. We'll compound thrice, scaling the principle by $1 \frac{1}{3}$ each time, adding a quarter turn at each payment.
+Keep that in mind while we compound three times, paying a third of the value each time and paying out at right angles.
 
 <div class="compound" data-n="3"></div>
 
 <aside class="info" markdown="block">
-It's like making three right triangles with height $\frac{1}{3}$ and stacking them atop each other.
+Make three right triangles where the height is $\frac{1}{3}$ of the previous hypotenuse and stack them atop each other.
 </aside>
 
 Do you see what's going on here? The more we compound the interest payments, the less it goes into *increasing* the principle and the more it goes into *turning* the principle.
@@ -148,12 +144,6 @@ It's $\pi$ radian distances of rotation, which is a walk halfway around the circ
 $e^{\pi i} = \text{--}1$
 {:.number}
 
-You should now have a better understanding not only of Euler's identity but of $e$, $i$, and $pi$. Hopefully this explanation has left you with a number of <span class="info" markdown="inline">questions</span>. A common one is @post[why has nobody told me this]sample/aftermath? In fact, there are a number of ways to make this explanation even more obvious and intuitive. For that, we'll need to dig a little deeper and correct a number of unmentioned @post[contrives]intro/contrives.
-
 <aside class="info" markdown="block">
-Why is $\pi$ half a circle?
-
-Why don't we write $1\_{↺\frac{1}{4}}$ instead of $i$?
+Don't forget to read the @post[aftermath]sample/aftermath.
 </aside>
-
-For that, we'll need @post[simplifience]intro/motivation.

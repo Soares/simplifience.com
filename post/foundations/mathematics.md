@@ -12,15 +12,15 @@ $\sum\limits\_{n=0}^\infty x_n$
 {:.number}
 
 <aside class="info" markdown="block">
-Out-dated notation from ancient times.
+Math is outdated notation from ancient times.
 </aside>
 
-If you ask someone who has studied engineering or the sciences what they think of mathematics, they will tell you that math is not something which can be loved or hated, for math is simply the rules. It is any pattern, any symmetry, any abstraction. You can no more hate math than you can hate the fact that @post[reality is ordered]reality/unordered. Sure, the *language* of math is a bit old, but @post[symbols are not symbology]reality/symbology. Math is not the language, it's *what the language says*.
+If you ask someone who has studied engineering or the sciences what they think of mathematics, they will tell you that math is not something which can be loved or hated, for math is simply <span class="simplifience" markdown="inline">the rules</span>. It is any pattern, any symmetry, any abstraction. You can no more hate math than you can hate the fact that @post[reality is ordered]reality/unordered. Sure, the *language* of math is a bit old, but @post[symbols are not symbology]reality/symbology. Math is not the language, it's *what the language says*.
 
 ![Blue Flower](/images/blue-flower.jpg)
 
 <aside class="info" markdown="block">
-Mathematics stands behind all that we find beautiful. It is symmetry and it is patterns.
+Math stands behind all that we find beautiful. It is symmetry and it is patterns.
 </aside>
 
 If you ask a mathematician what they think of mathematics, they will answer that math is the @post[exploration]math/explore of the rules. Given any axioms, math is about plumbing the logical depths that those axioms imply. It's about listening to what the rules say, and discovering new true things. It requires incredible creativity and modesty and the rewards are boundless, but it's not for everyone.
@@ -57,6 +57,10 @@ The exploration of the rules, the pursuit of truth, is @post[not a part]math/exp
 Simplifience covers the rules we've already discovered. With luck simplifience will leave you inquisitive about what truths lie beyond.
 </aside>
 
-Once you realize that 'mathematics' was a @post[contrive]intro/contrives the problem is easily solved. Having shattered mathematics we are free to describe the same *underlying rules* with a better *formal notation* and without the exploratory overtones latent in standard @post[mathematics education]math/education.md.
+Math is not a single word: it is one label trying to mean too many things.
 
-We now leave this cumbersome word behind and step to the second confusion that permeates our formalisms, our language, and our culture. I'm afraid the second confusion will not fall quite so easily.
+Once you realize that 'mathematics' was a @post[contrive]intro/contrives the problem is easily solved. We simply shatter the word and move on.
+
+After breaking up the word we are free to describe the same *underlying rules* with a better *formal notation* and without the exploratory overtones latent in standard @post[mathematics education]math/education.md.
+
+We now leave this cumbersome word behind and step to the second confusion that permeates our formalisms, our language, and our culture. I'm afraid the second confusion will not fall quite so easily as did Mathematics.

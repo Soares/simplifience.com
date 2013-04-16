@@ -1,25 +1,29 @@
 ---
 title: Motivation
-sequence: Ground Rules
+sequence: Introductions
+members:
+- contrives
 ---
 
 Math and Science are wrong.
 
+<!--TODO:
 <aside class="computer" markdown="block">
 There's a special version of this article for @post[computer programmers]computation/motivation.
 </aside>
+-->
 
-They're not incorrect, but there are other ways to be wrong.
+They're not incorrect. There are other ways to be wrong.
 
 Math makes @post[three grievous mistakes]math/archaic. Science inherits all the same mistakes and adds @post[two of its own]science/mire. Math and science are riddled with @post[contrives]intro/contrives: confusing names, stale concepts, and viewpoints grown twisted over the millennia.
 
-The net result is a confusing bloated mess. The true nature of existence is obfuscated by archaic languages. The secrets of reality are locked in textbooks guarded by a @post[personhood cult]intro/names.
+The net result is a confusing bloated mess. The nature of existence is obfuscated by archaic languages. The secrets of reality are locked in textbooks guarded by a @post[personhood cult]intro/names.
 
 It doesn't have to be like this. Math and science can be much simpler if you sidestep the cruft of history.
 
 Words are cheap: try an @post[introductory sequence]sample/identity of simplifience if you aren't convinced.
 
-Simplifience is here to teach you about the true nature of existence. Popular culture holds that reality is a very difficult place to understand. Quantum mechanics has a reputation similar to magic and the average physics textbook won't get within ten chapters of general relativity. This is not because the concepts are *intrinsically difficult* -- it's because their presentation is twisted and confused.
+Simplifience is here to teach you about the nature of existence. Popular culture holds that reality is a very difficult place to understand. Quantum mechanics has a reputation similar to magic and the average physics textbook won't get within ten chapters of general relativity. This is not because the concepts are *intrinsically difficult* -- it's because their presentation is twisted and confused.
 
 We can do better.
 

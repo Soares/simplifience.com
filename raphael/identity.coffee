@@ -110,7 +110,7 @@ class Compound extends ComplexPlane
     point = @point([current.real, current.im], progression[index])
     @points.push point.dot.element
     @lines.push point.line.element
-    t = if m >= 50 then 30 else 100
+    t = 500 / m
     t = 0 unless _.isNumber @current_index
     if n < m
       doNext = (=> @doPoint(n+1, current, point.dot.element, m))
