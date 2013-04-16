@@ -47,9 +47,9 @@ Mathematics suffers the [compression fallacy](http://lesswrong.com/lw/nw/fallaci
 
 Simplifience discards the term "Mathematics". We shatter it into its component parts and use those instead.
 
-The *underlying rules of any system* will be referred to simply as "@post[the rules]intro/rules".
+The *underlying rules of any system* will be referred to simply as "@post[the rules]reality/rules".
 
-The *language and notation* used to describe such rules will be referred to as "@post[formal notation]intro/formal-notation" or sometimes just "formalization". We will be rigorous, formal, and well-defined, but we will not be beholden to history.
+The *language and notation* used to describe such rules will be referred to as "@post[formal notation]reality/formal-notation" or sometimes just "formalization". We will be rigorous, formal, and well-defined, but we will not be beholden to history.
 
 The exploration of the rules, the pursuit of truth, is @post[not a part]math/explore of simplifience. Exploration of the rules is among the noblest of pursuits. It leads to deep and unexpected truths which greatly expand our knowledge of the universe. It is the realm of those who wish to step beyond simplifience and <span class="info" markdown="inline">discover new rules</span>.
 

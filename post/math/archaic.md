@@ -4,8 +4,8 @@ type: rules
 # sequence: Abandonding Math
 # members:
 # - ../foundations/mathematics
-# - ../intro/formal-notation
-# - ../intro/rules
+# - ../reality/formal-notation
+# - ../reality/rules
 # - explore
 # - education
 # - trailblazing
@@ -25,7 +25,7 @@ The second problem sprouted when the old names outgrew. Wide swaths of mathemati
 
 The third problem is the massive corpus of mathematical rules, properties, theories, and ideas named after dead mathematicians in a pompous act of @post[self-congratulatory vanity]intro/names.
 
-All of these things conspire to hide the true, underlying beauty of @post[the rules]intro/rules.
+All of these things conspire to hide the true, underlying beauty of @post[the rules]reality/rules.
 
 Simplifience disregards the mistakes of old. We'll avoid archaic notation and the mistakes of the ancients. We won't use the stale names. We'll reject the personhood cult. In fact, we'll do away with Mathematics entirely. We'll @post[shatter the word]foundations/mathematics and distinguish between its components.
 

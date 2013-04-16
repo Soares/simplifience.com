@@ -1,4 +1,3 @@
-root: kramer to .
 post:
   compiler: kramer
   to: .
@@ -20,4 +19,3 @@ images: copy to images
 stylus: css
 coffee: js
 static: copy to .
-diagram: true
