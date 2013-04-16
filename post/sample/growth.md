@@ -6,7 +6,7 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience article. It provides minimal intuition for $e$ necessary to understand @post[Euler's identity]sample/identity. Both $e$ and Euler's identity are @post[contrives]intro/contrives, which are normally @post[avoided]intro/taboo.
+This is not a standard simplifience article. It provides minimal intuition for $e$ necessary to understand @post[Euler's identity]sample/identity. Both $e$ and Euler's identity are @post[contrives]intro/contrives, which are normally avoided.
 </div>
 
 You've probably been taught that $e$ is $2.718...$ and you might know it has something to do with logarithms. This is a poor way to look at $e$. The true nature of $e$ is simple:

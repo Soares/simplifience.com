@@ -30,11 +30,11 @@ All of these things conspire to hide the true, underlying beauty of @post[the ru
 Simplifience disregards the mistakes of old. We'll avoid archaic notation and the mistakes of the ancients. We won't use the stale names. We'll reject the personhood cult. In fact, we'll do away with Mathematics entirely. We'll @post[shatter the word]foundations/mathematics and distinguish between its components.
 
 <aside class="caution" markdown="block">
-It's policy to @post[avoid mentioning]intro/taboo specific @post[contrives]intro/contrives until an alternative is provided. For that reason, I have avoided @post[specific gripes]math/gripes.
+It's policy to avoid mentioning specific @post[contrives]intro/contrives until an alternative is provided. For that reason, I have avoided @post[specific gripes]math/gripes.
 </aside>
 
-Many claim that the problems with math aren't so bad, @post[forgetting]intro/not-good-enough how difficult it was to learn the cultish customs.
+Many claim that the problems with math aren't so bad, @post[forgetting]intro/good-enough how difficult it was to learn the cultish customs.
 
-Others claim that it's @post[too late]intro/not-too-late, as if that helps matters.
+Others claim that it's @post[too late]intro/too-late, as if that helps matters.
 
 We'll do it anyway, for such is the road to simplifience.

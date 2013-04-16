@@ -1,8 +1,6 @@
 ---
 layout: post
 title: Symbols are not Symbology
-stub: |
-  The symbols are not the symbolized.
 ---
 
 This is not a pipe.
@@ -16,13 +14,17 @@ $1$
 
 This is a *symbol* which evokes the <span class="info">number one</span> in your mind.
 
+<!--TODO:
 <aside class="info" markdown="block">
 @post[Which one]number/schism does it invoke for you?
 </aside>
+-->
 
-Similarly, these scribbles on the screen that you are reading are not words. The *true* words are a sentiment being passed between you and I. They are qualia, something which these squiggles strive for and fail to fully capture.
+Human language is historically bad at making this distinction. $1 \frac{2}{3}$ is written using three numbers, but those symbols describe a single unified number lying somewhere between $1$ and $2$.
 
-It is <span class="info">easy to forget</span> this distinction. It is easy to say "zero is nothing" rather than "zero means nothing". Blurring this line is a road filled with [land mines](http://en.wikipedia.org/wiki/Trivialism). Do not mix up the word "truth" with @post[that which it symbolizes]reality/truth.
+Similarly, these scribbles on the screen that you are reading are not words. The *true* words are a sentiment being passed between you and I. They are qualia, something which these squiggles strive, but fail, to fully capture.
+
+It is <span class="info">easy to forget</span> this distinction. It is easy to say "zero is nothing" rather than "zero means nothing". Blurring this line is a road filled with [land mines](http://en.wikipedia.org/wiki/Trivialism). Do not mix up the word "truth" with <!--TODO: @post[that which it symbolizes]reality/truth -->[that which it symbolizes](http://yudkowsky.net/rational/the-simple-truth){:target="\_blank"}.
 
 <aside class="info" markdown="block">
 Surely an error in how our minds work.
@@ -32,15 +34,15 @@ Surely an error in how our minds work.
 
 <iframe width="640" height="360" src="http://youtube.googleapis.com/v/WkmPDOq2WfA?start=19&end=67&version=3&autoplay=0" frameborder="0" allowfullscreen></iframe>
 
-There are two ways that this knowledge should make you very, very cautious.
+If this is new to you, this should make you feel very cautious for two reasons.
 
-1. Be wary of your symbols. It is possible (in fact, almost certain) that some symbols which you hold dear are @post[housing multiple meanings]number/schism. Don't be fooled into thinking that all things represented by the same symbol must be the same thing! When your symbols don't quite correspond to that which you're trying to describe it is very easy to get confused. Try to look past the symbol itself and see that which it symbolizes.
-2. The letters and symbols which we use to convey *true* ideas, *real* words: these are imperfect. The same word may evoke something entirely different in the two of us. Don't fall into the trap of thinking that because you're saying the same words or reading the same page you must both be thinking the same thing! Humans tend to think that everyone thinks like they do, but that is [usually not the case](http://lesswrong.com/lw/dr/generalizing_from_one_example/). Words and numbers are, at their core, imperfect.
+1. Be wary of your symbols. It is possible (in fact, almost certain) that some symbols which you hold dear are @post[housing multiple meanings]foundations/mathematics. Don't be fooled into thinking that all things represented by the same symbol must be the same thing! When your symbols don't quite correspond to that which you're trying to describe it is very easy to get confused. Try to look past the symbol itself and see that which it symbolizes.
+2. The letters and symbols which we use to convey ideas are imperfect. A single word evokes something completely different in the two of us. Don't fall into the trap of thinking that saying the same words or reading the same page means you are both thinking the same thoughts.
 
-I leave you with some wise words from a man who proved himself very good at both learning and teaching:
+Humans tend to think that everyone thinks like they do, but that is [usually not the case](http://lesswrong.com/lw/dr/generalizing_from_one_example/). Language and symbols are, at their core, imperfect. I leave you with some wise words from a man who proved himself very good at both learning and teaching:
 
 <iframe width="640" height="360" src="http://youtube.googleapis.com/v/Cj4y0EUlU-Y?start=135&version=3&autoplay=0" frameborder="0" allowfullscreen></iframe>
 
 <aside class="info" markdown="block">
-If you want to better understand the distinction between symbols and symbolized and where the lines begin to blur, I recommend [Gödel, Escher, Bach: An Eternal Golden Braid](https://www.google.com/search?q=godel+escher+bach+an+eternal+golden+braid&tbm=shop).
+If you want to better understand the distinction between symbols and symbolized and where the lines begin to blur, try [Gödel, Escher, Bach: An Eternal Golden Braid](https://www.google.com/search?q=godel+escher+bach+an+eternal+golden+braid&tbm=shop).
 </aside>

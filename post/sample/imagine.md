@@ -6,7 +6,7 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience article. It provides minimal intuition for $i$ necessary to understand @post[Euler's identity]sample/identity. Both $i$ and Euler's identity are @post[contrives]intro/contrives, which are normally @post[avoided]intro/taboo.
+This is not a standard simplifience article. It provides minimal intuition for $i$ necessary to understand @post[Euler's identity]sample/identity. Both $i$ and Euler's identity are @post[contrives]intro/contrives, which are normally avoided.
 </div>
 
 $i$ is called the "imaginary number", as if all numbers aren't imaginary. Let's correct that misconception now: $i$ is no more <span class="info" markdown="inline">nor less</span> imaginary than any other number.

@@ -15,7 +15,7 @@ scripts:
 <div class="caution" markdown="block">
 This is not a standard simplifience sequence. It is a sample designed to show how difficult concepts can be intuitive with a good explanation.
 
-The articles here break many @post[simplifience policies]intro/taboo. All of the concepts covered here will show up in greater detail in later articles.
+The articles here break many @post[simplifience policies]intro/contrives. All of the concepts covered here will show up in greater detail in later articles.
 </div>
 
 Math is obfuscated by its archaic notation and its clumsy presentation. Take, for example, the strange equation known as "Euler's Identity":

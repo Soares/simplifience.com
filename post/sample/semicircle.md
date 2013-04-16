@@ -6,7 +6,7 @@ scripts:
 ---
 
 <div class="caution" markdown="block">
-This is not a standard simplifience article. It provides a brief view of the nature of $\pi$ as is necessary to understand @post[Euler's identity]sample/identity. Both $\pi$ and Euler's identity are @post[contrives]intro/contrives, which are normally @post[avoided]intro/taboo.
+This is not a standard simplifience article. It provides a brief view of the nature of $\pi$ as is necessary to understand @post[Euler's identity]sample/identity. Both $\pi$ and Euler's identity are @post[contrives]intro/contrives, which are normally avoided.
 </div>
 
 You've probably been taught that $\pi ≈ 3.14$. You might know it has something to do with circles. More specifically, $\pi$ is the ratio of a circle's circumference to it's diameter. If you walk $\pi$ diameters around a circle you'll come all the way around.
