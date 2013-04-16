@@ -35,7 +35,7 @@ That's Benjamin Peirce, an American mathematician and Harvard professor failing 
 
 This is exactly how math shouldn't be.
 
-Euler's identity, it turns out, is easy to understand intuitively, as long as you understand the three building blocks.
+Euler's identity, it turns out, is easy to understand intuitively once you understand the three building blocks.
 
 * @post[$e$ is growth]sample/growth.
 * @post[$\pi$ is half the circumference of a circle]sample/semicircle.
