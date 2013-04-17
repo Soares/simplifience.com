@@ -9,8 +9,7 @@ members:
 - aftermath
 scripts:
 - '@raphael/identity'
-- '/js/Complex.js'
-- '/js/complex.js'
+- '/js/complex-number.js'
 ---
 
 <div class="caution" markdown="block">
@@ -76,7 +75,7 @@ $i$ is just $1$ rotated a quarter turn. So what $(grow\ p\ i)$ means is this:
 
 Remember that the use of $i$ puts us on a number plane, not a number line. It's not enough to say that we add $100\%$ interest: we also have to specify which direction the interest is added in. Growing $i$ is the same as growing $100\%$ except that the interest is paid out a quarter turn away from the principle.
 
-To see how this works, let's consider growing 1 by $i$, compounding <span class="info" markdown="inline">only once</span>. This is just $1 * (1 + i)^1$ = $1 + i$. You start at one, and then all of the interest is vertical.
+To see how this works, let's consider growing 1 by $i$, compounding only once. This is just $1 * (1 + i)^1$ = $1 + i$. You start at one, and then all of the interest is vertical.
 
 <div class="complex-plane"></div>
 
