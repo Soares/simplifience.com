@@ -23,6 +23,7 @@ blocks:
         {% endfor %}
       </ul>
     </aside>
+    <h1 class="logo"><a href="/">Simplifience</a></h1>
 ---
 
 <div class="nav asides">
@@ -36,16 +37,9 @@ blocks:
       </ul>
     </aside>
   </div>
-  <div class="block" style="display: none">
-    <h3>What's new</h3>
-    <aside class="info">
-      <ul>
-        {% for page in new %}
-        <li>{{ page|post_anchor }}</li>
-        {% endfor %}
-      </ul>
-    </aside>
-  </div>
+  <aside class="info">
+    Watch the <a href="http://blog.simplifience.com">simplifience blog</a> for news and updates.
+  </aside>
 </div>
 
 Why is the sky blue? Why do objects fall? Why are we here? *Why?*
@@ -57,12 +51,6 @@ It's hidden deep inside textbooks obscured by an ancient and @post[archaic]math/
 It doesn't have to be like this.
 
 This is simplifience. It is not math, it is not science. It is more and it is less.
-
-<aside class="info" markdown="block">
-It's also still under construction.
-
-We'll have an RSS feed soon.
-</aside>
 
 It is an attempt to explain what we know of reality in simple terms. It is a quest to understand the universe.
 

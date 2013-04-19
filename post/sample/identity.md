@@ -10,6 +10,7 @@ members:
 scripts:
 - '@raphael/identity'
 - '/js/complex-number.js'
+blog: 'http://blog.simplifience.com/post/48229170259/eulers-identity'
 ---
 
 <div class="caution" markdown="block">

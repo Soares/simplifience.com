@@ -4,8 +4,8 @@ theme-body(color, complement)
 	background $pure(color)
 	color $text(color)
 	::selection
-			background-color $pale(color)
-			color $text(color)
+		background-color $pale(color)
+		color $text(color)
 	#main-container
 		border-color $dark(color)
 
@@ -44,36 +44,33 @@ theme-nav(color, complement)
 theme-notice(color, complement)
 	color $pure(color)
 
-theme-commentary(color, complement)
+theme-commentary(color, complement, analog)
 	background $pure(color)
 	border-color $dark(color)
 	color $text(color)
+	::selection
+		background-color $text(color)
+		color $pure(color)
 	h1, h2, h3, h4, h5, h6
 		color $contrast(color, complement)
 	.MathJax span
 		color $text(color)
 	a
-		color $text(color)
+		color $pure(analog)
 		&:hover
-			color $text(color)
-		if $isdark(color)
-			text-shadow 1px 1px 1px $dark(color)
-		else
-			text-shadow 1px 1px 1px $light(color)
+			color $pure(analog)
 		&:visited, &:visited:hover
 			.MathJax span
-				color $contrast(color)
-			color $contrast(color)
-		&.stub
+				color $text(color)
+			color $text(color)
+		&.stub, &.stub:visited, &.stub:hover
 			color $pure(complement)
 			&.missing
 				background $pure(complement)
 				color $pure(color)
-			&:visited, &:visited:hover
-				color $contrast(color, complement)
 
 theme-footer(color, complement)
-	h1.logo a, a.author
+	h1.logo a, a.author, a.blog
 		color $dark(color)
 	aside
 		h3
@@ -88,10 +85,8 @@ theme-footer(color, complement)
 				color $contrast(color)
 			&:hover
 				text-decoration underline
-			&.stub
+			&.stub, &.stub:visited
 				color $pure(complement)
-				&:visited
-					color $contrast(color, complement)
 
 theme-meditation(color, complement)
 	#meditating
@@ -130,14 +125,14 @@ theme-diagram(color, complement)
 	path.axis.arrow
 		fill #555555
 
-theme(class, color, complement)
+theme(class, color, complement, analog)
 	body.{class}
 		theme-body(color, complement)
 		theme-meditation(color, complement)
 		#header
 			theme-header(color, complement)
 		#main a
-			theme-links(color, complement)
+			theme-links(color, complement, analog)
 		#main div.nav
 			theme-nav(color, complement)
 		footer
@@ -146,7 +141,7 @@ theme(class, color, complement)
 			theme-diagram(color, complement)
 	body #main aside.{class}, body.{class} #main aside.info,
 	body #main div.{class}, body.{class} div.info
-		theme-commentary(color, complement)
+		theme-commentary(color, complement, analog)
 	body span.{class}, body.{class} span.info,
 	body strong.{class}, body.{class} strong.info,
 	body em.{class}, body.{class} em.info
@@ -156,51 +151,41 @@ main = $teal
 complement = $orange
 
 // Color themes
-theme('main', $teal, $orange)
-theme('rules', $blue, $gold)
-theme('rigor', $navy, $amber)
-theme('simplifience', $violet, $yellow)
-theme('knowledge', $magenta, $amber)
-theme('rant', $red, $amber)
-theme('stub', $orange, $teal)
-theme('caution', $yellow, $navy)
-theme('define', $green, $violet)
-theme('computer', $solarized, $solarized-hi)
+theme('main', $teal, $orange, $blue)
+theme('rules', $blue, $gold, $teal)
+theme('rigor', $navy, $amber, $teal)
+theme('simplifience', $violet, $yellow, $magenta)
+theme('knowledge', $magenta, $amber, $violet)
+theme('rant', $red, $gold, $violet)
+theme('stub', $orange, $teal, $blue)
+theme('caution', $yellow, $navy, $blue)
+theme('define', $green, $violet, $blue)
+theme('computer', $solarized, $solarized-hi, $teal)
 
 // Red logo is white.
 body.rant #header h1.title a
 	color white
 
-// Red stubs look bad.
-body.rant #main a.stub
-body.rant #main aside.info a.stub
-body.rant #main div.info a.stub
-body #main aside.rant a.stub
-body #main div.rant a.stub
-	color $pure($gold)
-	&:visited
-		color $pale($gold)
-
 
 // Yellow text is too light.
-span.caution, body.caution span.info,
-strong.caution, body.caution strong.info,
-em.caution, body.caution em.info
+body span.caution, body.caution span.info,
+body strong.caution, body.caution strong.info,
+body em.caution, body.caution em.info
 	color $dark($yellow)
 
 
 // Blue text is too dark.
-span.rules, body.rules span.info,
-strong.rules, body.rules strong.info,
-em.rules, body.rules em.info
+body span.rules, body.rules span.info,
+body strong.rules, body.rules strong.info,
+body em.rules, body.rules em.info
 	color $light($blue)
 
 // Computer text is monospaced.
-span.computer, body.computer span.info,
-strong.computer, body.computer strong.info,
-em.computer, body.computer em.info
-#main aside.computer, body.computer #main aside.info,
-#main div.computer, body.computer div.info,
+body span.computer, body.computer span.info,
+body strong.computer, body.computer strong.info,
+body em.computer, body.computer em.info
+body #main aside.computer, body.computer #main aside.info,
+body #main div.computer, body.computer div.info,
 body.computer #header .definition,
 body.computer #main article > p a
 	font-family 'PT Mono', monospace
@@ -210,10 +195,6 @@ body.computer #main article > p a
 	color $pale($solarized-hi)
 	&.stub
 		color $pure($solarized-hi)
-		&:visited
-			color $light($solarized-hi)
-	&:visited
-		color $pale($solarized)
 
 // Computer text shadow is gray.
 body #main aside.computer, html body.computer #main aside.info,
@@ -224,14 +205,10 @@ body #main div.computer, html body.computer div.info
 // Simplifience unvisited stubs are too light.
 body.simplifience #main a.stub
 	color $pure($gold)
-	&:visited
-		color $dark($gold)
 
 // Science unvisited stubs are too light.
 body.knowledge #main a.stub
 	color $pure($gold)
-	&:visited
-		color $dark($gold)
 
 // Definitions have a line break after the first <em>.
 aside.define

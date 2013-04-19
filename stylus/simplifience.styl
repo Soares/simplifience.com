@@ -74,16 +74,15 @@ div.cap
 				list-style none
 				li.current
 					list-style-type disc
-		h1.logo, a.author
+		h1.logo, a.author, a.blog
 			float right
 			clear right
 		h1.logo
 			font-size $text-size * 2
-			margin-bottom 0
-		a.author
+			margin-bottom $text-size * .5
+		a.author, a.blog
 			display block
-			margin-top $text-size * .5
-		a.author, .logo a
+		a.author, a.blog, .logo a
 			opacity .4
 			text-decoration none
 			&:hover
@@ -149,7 +148,7 @@ p
 // pretty frequently and would rather save the typing those many times than
 // this once.
 aside,
-div.info, div.rules, div.rigor,
+div.main, div.info, div.rules, div.rigor,
 div.simplifience, div.knowledge, div.stub
 div.rant, div.caution, div.define, div.computer
 	padding $commentary-padding
@@ -164,7 +163,7 @@ div.rant, div.caution, div.define, div.computer
 		margin 0
 		padding 0
 
-#main div.nav
+#main div.nav div.block
 	text-align right
 	h3
 		margin 0
