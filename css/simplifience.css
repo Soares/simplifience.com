@@ -108,7 +108,8 @@ body.main #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.main footer h1.logo a,
-body.main footer a.author {
+body.main footer a.author,
+body.main footer a.blog {
   color: #006363;
 }
 body.main footer aside h3 {
@@ -128,11 +129,9 @@ body.main footer aside a:visited {
 body.main footer aside a:hover {
   text-decoration: underline;
 }
-body.main footer aside a.stub {
-  color: #ff7400;
-}
+body.main footer aside a.stub,
 body.main footer aside a.stub:visited {
-  color: #ffb273;
+  color: #ff7400;
 }
 body.main #main svg .colored {
   stroke: #006363;
@@ -159,6 +158,13 @@ body.main div.info {
   background: #099;
   border-color: #006363;
   color: #fff;
+}
+body #main aside.main ::selection,
+body.main #main aside.info ::selection,
+body #main div.main ::selection,
+body.main div.info ::selection {
+  background-color: #fff;
+  color: #099;
 }
 body #main aside.main h1,
 body.main #main aside.info h1,
@@ -196,14 +202,13 @@ body #main aside.main a,
 body.main #main aside.info a,
 body #main div.main a,
 body.main div.info a {
-  color: #fff;
-  text-shadow: 1px 1px 1px #006363;
+  color: #1240ab;
 }
 body #main aside.main a:hover,
 body.main #main aside.info a:hover,
 body #main div.main a:hover,
 body.main div.info a:hover {
-  color: #fff;
+  color: #1240ab;
 }
 body #main aside.main a:visited,
 body.main #main aside.info a:visited,
@@ -213,7 +218,7 @@ body #main aside.main a:visited:hover,
 body.main #main aside.info a:visited:hover,
 body #main div.main a:visited:hover,
 body.main div.info a:visited:hover {
-  color: #5ccccc;
+  color: #fff;
 }
 body #main aside.main a:visited .MathJax span,
 body.main #main aside.info a:visited .MathJax span,
@@ -223,30 +228,36 @@ body #main aside.main a:visited:hover .MathJax span,
 body.main #main aside.info a:visited:hover .MathJax span,
 body #main div.main a:visited:hover .MathJax span,
 body.main div.info a:visited:hover .MathJax span {
-  color: #5ccccc;
+  color: #fff;
 }
 body #main aside.main a.stub,
 body.main #main aside.info a.stub,
 body #main div.main a.stub,
-body.main div.info a.stub {
+body.main div.info a.stub,
+body #main aside.main a.stub:visited,
+body.main #main aside.info a.stub:visited,
+body #main div.main a.stub:visited,
+body.main div.info a.stub:visited,
+body #main aside.main a.stub:hover,
+body.main #main aside.info a.stub:hover,
+body #main div.main a.stub:hover,
+body.main div.info a.stub:hover {
   color: #ff7400;
 }
 body #main aside.main a.stub.missing,
 body.main #main aside.info a.stub.missing,
 body #main div.main a.stub.missing,
-body.main div.info a.stub.missing {
+body.main div.info a.stub.missing,
+body #main aside.main a.stub:visited.missing,
+body.main #main aside.info a.stub:visited.missing,
+body #main div.main a.stub:visited.missing,
+body.main div.info a.stub:visited.missing,
+body #main aside.main a.stub:hover.missing,
+body.main #main aside.info a.stub:hover.missing,
+body #main div.main a.stub:hover.missing,
+body.main div.info a.stub:hover.missing {
   background: #ff7400;
   color: #099;
-}
-body #main aside.main a.stub:visited,
-body.main #main aside.info a.stub:visited,
-body #main div.main a.stub:visited,
-body.main div.info a.stub:visited,
-body #main aside.main a.stub:visited:hover,
-body.main #main aside.info a.stub:visited:hover,
-body #main div.main a.stub:visited:hover,
-body.main div.info a.stub:visited:hover {
-  color: #ffb273;
 }
 body span.main,
 body.main span.info,
@@ -340,7 +351,8 @@ body.rules #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.rules footer h1.logo a,
-body.rules footer a.author {
+body.rules footer a.author,
+body.rules footer a.blog {
   color: #06266f;
 }
 body.rules footer aside h3 {
@@ -360,11 +372,9 @@ body.rules footer aside a:visited {
 body.rules footer aside a:hover {
   text-decoration: underline;
 }
-body.rules footer aside a.stub {
-  color: #fa0;
-}
+body.rules footer aside a.stub,
 body.rules footer aside a.stub:visited {
-  color: #ffd073;
+  color: #fa0;
 }
 body.rules #main svg .colored {
   stroke: #06266f;
@@ -391,6 +401,13 @@ body.rules div.info {
   background: #1240ab;
   border-color: #06266f;
   color: #fff;
+}
+body #main aside.rules ::selection,
+body.rules #main aside.info ::selection,
+body #main div.rules ::selection,
+body.rules div.info ::selection {
+  background-color: #fff;
+  color: #1240ab;
 }
 body #main aside.rules h1,
 body.rules #main aside.info h1,
@@ -428,14 +445,13 @@ body #main aside.rules a,
 body.rules #main aside.info a,
 body #main div.rules a,
 body.rules div.info a {
-  color: #fff;
-  text-shadow: 1px 1px 1px #06266f;
+  color: #099;
 }
 body #main aside.rules a:hover,
 body.rules #main aside.info a:hover,
 body #main div.rules a:hover,
 body.rules div.info a:hover {
-  color: #fff;
+  color: #099;
 }
 body #main aside.rules a:visited,
 body.rules #main aside.info a:visited,
@@ -445,7 +461,7 @@ body #main aside.rules a:visited:hover,
 body.rules #main aside.info a:visited:hover,
 body #main div.rules a:visited:hover,
 body.rules div.info a:visited:hover {
-  color: #6c8cd5;
+  color: #fff;
 }
 body #main aside.rules a:visited .MathJax span,
 body.rules #main aside.info a:visited .MathJax span,
@@ -455,30 +471,36 @@ body #main aside.rules a:visited:hover .MathJax span,
 body.rules #main aside.info a:visited:hover .MathJax span,
 body #main div.rules a:visited:hover .MathJax span,
 body.rules div.info a:visited:hover .MathJax span {
-  color: #6c8cd5;
+  color: #fff;
 }
 body #main aside.rules a.stub,
 body.rules #main aside.info a.stub,
 body #main div.rules a.stub,
-body.rules div.info a.stub {
+body.rules div.info a.stub,
+body #main aside.rules a.stub:visited,
+body.rules #main aside.info a.stub:visited,
+body #main div.rules a.stub:visited,
+body.rules div.info a.stub:visited,
+body #main aside.rules a.stub:hover,
+body.rules #main aside.info a.stub:hover,
+body #main div.rules a.stub:hover,
+body.rules div.info a.stub:hover {
   color: #fa0;
 }
 body #main aside.rules a.stub.missing,
 body.rules #main aside.info a.stub.missing,
 body #main div.rules a.stub.missing,
-body.rules div.info a.stub.missing {
+body.rules div.info a.stub.missing,
+body #main aside.rules a.stub:visited.missing,
+body.rules #main aside.info a.stub:visited.missing,
+body #main div.rules a.stub:visited.missing,
+body.rules div.info a.stub:visited.missing,
+body #main aside.rules a.stub:hover.missing,
+body.rules #main aside.info a.stub:hover.missing,
+body #main div.rules a.stub:hover.missing,
+body.rules div.info a.stub:hover.missing {
   background: #fa0;
   color: #1240ab;
-}
-body #main aside.rules a.stub:visited,
-body.rules #main aside.info a.stub:visited,
-body #main div.rules a.stub:visited,
-body.rules div.info a.stub:visited,
-body #main aside.rules a.stub:visited:hover,
-body.rules #main aside.info a.stub:visited:hover,
-body #main div.rules a.stub:visited:hover,
-body.rules div.info a.stub:visited:hover {
-  color: #ffd073;
 }
 body span.rules,
 body.rules span.info,
@@ -572,7 +594,8 @@ body.rigor #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.rigor footer h1.logo a,
-body.rigor footer a.author {
+body.rigor footer a.author,
+body.rigor footer a.blog {
   color: #200772;
 }
 body.rigor footer aside h3 {
@@ -592,11 +615,9 @@ body.rigor footer aside a:visited {
 body.rigor footer aside a:hover {
   text-decoration: underline;
 }
-body.rigor footer aside a.stub {
-  color: #ffd300;
-}
+body.rigor footer aside a.stub,
 body.rigor footer aside a.stub:visited {
-  color: #ffe773;
+  color: #ffd300;
 }
 body.rigor #main svg .colored {
   stroke: #200772;
@@ -623,6 +644,13 @@ body.rigor div.info {
   background: #3914af;
   border-color: #200772;
   color: #fff;
+}
+body #main aside.rigor ::selection,
+body.rigor #main aside.info ::selection,
+body #main div.rigor ::selection,
+body.rigor div.info ::selection {
+  background-color: #fff;
+  color: #3914af;
 }
 body #main aside.rigor h1,
 body.rigor #main aside.info h1,
@@ -660,14 +688,13 @@ body #main aside.rigor a,
 body.rigor #main aside.info a,
 body #main div.rigor a,
 body.rigor div.info a {
-  color: #fff;
-  text-shadow: 1px 1px 1px #200772;
+  color: #099;
 }
 body #main aside.rigor a:hover,
 body.rigor #main aside.info a:hover,
 body #main div.rigor a:hover,
 body.rigor div.info a:hover {
-  color: #fff;
+  color: #099;
 }
 body #main aside.rigor a:visited,
 body.rigor #main aside.info a:visited,
@@ -677,7 +704,7 @@ body #main aside.rigor a:visited:hover,
 body.rigor #main aside.info a:visited:hover,
 body #main div.rigor a:visited:hover,
 body.rigor div.info a:visited:hover {
-  color: #876ed7;
+  color: #fff;
 }
 body #main aside.rigor a:visited .MathJax span,
 body.rigor #main aside.info a:visited .MathJax span,
@@ -687,30 +714,36 @@ body #main aside.rigor a:visited:hover .MathJax span,
 body.rigor #main aside.info a:visited:hover .MathJax span,
 body #main div.rigor a:visited:hover .MathJax span,
 body.rigor div.info a:visited:hover .MathJax span {
-  color: #876ed7;
+  color: #fff;
 }
 body #main aside.rigor a.stub,
 body.rigor #main aside.info a.stub,
 body #main div.rigor a.stub,
-body.rigor div.info a.stub {
+body.rigor div.info a.stub,
+body #main aside.rigor a.stub:visited,
+body.rigor #main aside.info a.stub:visited,
+body #main div.rigor a.stub:visited,
+body.rigor div.info a.stub:visited,
+body #main aside.rigor a.stub:hover,
+body.rigor #main aside.info a.stub:hover,
+body #main div.rigor a.stub:hover,
+body.rigor div.info a.stub:hover {
   color: #ffd300;
 }
 body #main aside.rigor a.stub.missing,
 body.rigor #main aside.info a.stub.missing,
 body #main div.rigor a.stub.missing,
-body.rigor div.info a.stub.missing {
+body.rigor div.info a.stub.missing,
+body #main aside.rigor a.stub:visited.missing,
+body.rigor #main aside.info a.stub:visited.missing,
+body #main div.rigor a.stub:visited.missing,
+body.rigor div.info a.stub:visited.missing,
+body #main aside.rigor a.stub:hover.missing,
+body.rigor #main aside.info a.stub:hover.missing,
+body #main div.rigor a.stub:hover.missing,
+body.rigor div.info a.stub:hover.missing {
   background: #ffd300;
   color: #3914af;
-}
-body #main aside.rigor a.stub:visited,
-body.rigor #main aside.info a.stub:visited,
-body #main div.rigor a.stub:visited,
-body.rigor div.info a.stub:visited,
-body #main aside.rigor a.stub:visited:hover,
-body.rigor #main aside.info a.stub:visited:hover,
-body #main div.rigor a.stub:visited:hover,
-body.rigor div.info a.stub:visited:hover {
-  color: #ffe773;
 }
 body span.rigor,
 body.rigor span.info,
@@ -804,7 +837,8 @@ body.simplifience #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.simplifience footer h1.logo a,
-body.simplifience footer a.author {
+body.simplifience footer a.author,
+body.simplifience footer a.blog {
   color: #48036f;
 }
 body.simplifience footer aside h3 {
@@ -824,11 +858,9 @@ body.simplifience footer aside a:visited {
 body.simplifience footer aside a:hover {
   text-decoration: underline;
 }
-body.simplifience footer aside a.stub {
-  color: #ff0;
-}
+body.simplifience footer aside a.stub,
 body.simplifience footer aside a.stub:visited {
-  color: #ffff73;
+  color: #ff0;
 }
 body.simplifience #main svg .colored {
   stroke: #48036f;
@@ -855,6 +887,13 @@ body.simplifience div.info {
   background: #7109aa;
   border-color: #48036f;
   color: #fff;
+}
+body #main aside.simplifience ::selection,
+body.simplifience #main aside.info ::selection,
+body #main div.simplifience ::selection,
+body.simplifience div.info ::selection {
+  background-color: #fff;
+  color: #7109aa;
 }
 body #main aside.simplifience h1,
 body.simplifience #main aside.info h1,
@@ -892,14 +931,13 @@ body #main aside.simplifience a,
 body.simplifience #main aside.info a,
 body #main div.simplifience a,
 body.simplifience div.info a {
-  color: #fff;
-  text-shadow: 1px 1px 1px #48036f;
+  color: #cd0074;
 }
 body #main aside.simplifience a:hover,
 body.simplifience #main aside.info a:hover,
 body #main div.simplifience a:hover,
 body.simplifience div.info a:hover {
-  color: #fff;
+  color: #cd0074;
 }
 body #main aside.simplifience a:visited,
 body.simplifience #main aside.info a:visited,
@@ -909,7 +947,7 @@ body #main aside.simplifience a:visited:hover,
 body.simplifience #main aside.info a:visited:hover,
 body #main div.simplifience a:visited:hover,
 body.simplifience div.info a:visited:hover {
-  color: #ad66d5;
+  color: #fff;
 }
 body #main aside.simplifience a:visited .MathJax span,
 body.simplifience #main aside.info a:visited .MathJax span,
@@ -919,30 +957,36 @@ body #main aside.simplifience a:visited:hover .MathJax span,
 body.simplifience #main aside.info a:visited:hover .MathJax span,
 body #main div.simplifience a:visited:hover .MathJax span,
 body.simplifience div.info a:visited:hover .MathJax span {
-  color: #ad66d5;
+  color: #fff;
 }
 body #main aside.simplifience a.stub,
 body.simplifience #main aside.info a.stub,
 body #main div.simplifience a.stub,
-body.simplifience div.info a.stub {
+body.simplifience div.info a.stub,
+body #main aside.simplifience a.stub:visited,
+body.simplifience #main aside.info a.stub:visited,
+body #main div.simplifience a.stub:visited,
+body.simplifience div.info a.stub:visited,
+body #main aside.simplifience a.stub:hover,
+body.simplifience #main aside.info a.stub:hover,
+body #main div.simplifience a.stub:hover,
+body.simplifience div.info a.stub:hover {
   color: #ff0;
 }
 body #main aside.simplifience a.stub.missing,
 body.simplifience #main aside.info a.stub.missing,
 body #main div.simplifience a.stub.missing,
-body.simplifience div.info a.stub.missing {
+body.simplifience div.info a.stub.missing,
+body #main aside.simplifience a.stub:visited.missing,
+body.simplifience #main aside.info a.stub:visited.missing,
+body #main div.simplifience a.stub:visited.missing,
+body.simplifience div.info a.stub:visited.missing,
+body #main aside.simplifience a.stub:hover.missing,
+body.simplifience #main aside.info a.stub:hover.missing,
+body #main div.simplifience a.stub:hover.missing,
+body.simplifience div.info a.stub:hover.missing {
   background: #ff0;
   color: #7109aa;
-}
-body #main aside.simplifience a.stub:visited,
-body.simplifience #main aside.info a.stub:visited,
-body #main div.simplifience a.stub:visited,
-body.simplifience div.info a.stub:visited,
-body #main aside.simplifience a.stub:visited:hover,
-body.simplifience #main aside.info a.stub:visited:hover,
-body #main div.simplifience a.stub:visited:hover,
-body.simplifience div.info a.stub:visited:hover {
-  color: #ffff73;
 }
 body span.simplifience,
 body.simplifience span.info,
@@ -1036,7 +1080,8 @@ body.knowledge #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.knowledge footer h1.logo a,
-body.knowledge footer a.author {
+body.knowledge footer a.author,
+body.knowledge footer a.blog {
   color: #85004b;
 }
 body.knowledge footer aside h3 {
@@ -1056,11 +1101,9 @@ body.knowledge footer aside a:visited {
 body.knowledge footer aside a:hover {
   text-decoration: underline;
 }
-body.knowledge footer aside a.stub {
-  color: #ffd300;
-}
+body.knowledge footer aside a.stub,
 body.knowledge footer aside a.stub:visited {
-  color: #ffe773;
+  color: #ffd300;
 }
 body.knowledge #main svg .colored {
   stroke: #85004b;
@@ -1087,6 +1130,13 @@ body.knowledge div.info {
   background: #cd0074;
   border-color: #85004b;
   color: #fff;
+}
+body #main aside.knowledge ::selection,
+body.knowledge #main aside.info ::selection,
+body #main div.knowledge ::selection,
+body.knowledge div.info ::selection {
+  background-color: #fff;
+  color: #cd0074;
 }
 body #main aside.knowledge h1,
 body.knowledge #main aside.info h1,
@@ -1124,14 +1174,13 @@ body #main aside.knowledge a,
 body.knowledge #main aside.info a,
 body #main div.knowledge a,
 body.knowledge div.info a {
-  color: #fff;
-  text-shadow: 1px 1px 1px #85004b;
+  color: #7109aa;
 }
 body #main aside.knowledge a:hover,
 body.knowledge #main aside.info a:hover,
 body #main div.knowledge a:hover,
 body.knowledge div.info a:hover {
-  color: #fff;
+  color: #7109aa;
 }
 body #main aside.knowledge a:visited,
 body.knowledge #main aside.info a:visited,
@@ -1141,7 +1190,7 @@ body #main aside.knowledge a:visited:hover,
 body.knowledge #main aside.info a:visited:hover,
 body #main div.knowledge a:visited:hover,
 body.knowledge div.info a:visited:hover {
-  color: #e667af;
+  color: #fff;
 }
 body #main aside.knowledge a:visited .MathJax span,
 body.knowledge #main aside.info a:visited .MathJax span,
@@ -1151,30 +1200,36 @@ body #main aside.knowledge a:visited:hover .MathJax span,
 body.knowledge #main aside.info a:visited:hover .MathJax span,
 body #main div.knowledge a:visited:hover .MathJax span,
 body.knowledge div.info a:visited:hover .MathJax span {
-  color: #e667af;
+  color: #fff;
 }
 body #main aside.knowledge a.stub,
 body.knowledge #main aside.info a.stub,
 body #main div.knowledge a.stub,
-body.knowledge div.info a.stub {
+body.knowledge div.info a.stub,
+body #main aside.knowledge a.stub:visited,
+body.knowledge #main aside.info a.stub:visited,
+body #main div.knowledge a.stub:visited,
+body.knowledge div.info a.stub:visited,
+body #main aside.knowledge a.stub:hover,
+body.knowledge #main aside.info a.stub:hover,
+body #main div.knowledge a.stub:hover,
+body.knowledge div.info a.stub:hover {
   color: #ffd300;
 }
 body #main aside.knowledge a.stub.missing,
 body.knowledge #main aside.info a.stub.missing,
 body #main div.knowledge a.stub.missing,
-body.knowledge div.info a.stub.missing {
+body.knowledge div.info a.stub.missing,
+body #main aside.knowledge a.stub:visited.missing,
+body.knowledge #main aside.info a.stub:visited.missing,
+body #main div.knowledge a.stub:visited.missing,
+body.knowledge div.info a.stub:visited.missing,
+body #main aside.knowledge a.stub:hover.missing,
+body.knowledge #main aside.info a.stub:hover.missing,
+body #main div.knowledge a.stub:hover.missing,
+body.knowledge div.info a.stub:hover.missing {
   background: #ffd300;
   color: #cd0074;
-}
-body #main aside.knowledge a.stub:visited,
-body.knowledge #main aside.info a.stub:visited,
-body #main div.knowledge a.stub:visited,
-body.knowledge div.info a.stub:visited,
-body #main aside.knowledge a.stub:visited:hover,
-body.knowledge #main aside.info a.stub:visited:hover,
-body #main div.knowledge a.stub:visited:hover,
-body.knowledge div.info a.stub:visited:hover {
-  color: #ffe773;
 }
 body span.knowledge,
 body.knowledge span.info,
@@ -1247,15 +1302,15 @@ body.rant #main a:active {
 }
 body.rant #main a.stub,
 body.rant #main a.stub:visited {
-  color: #ffd300;
+  color: #fa0;
 }
 body.rant #main a.stub.missing,
 body.rant #main a.stub:visited.missing {
-  background: #ffd300;
+  background: #fa0;
   color: #f00;
 }
 body.rant #main div.nav h3 {
-  color: #ffd300;
+  color: #fa0;
 }
 body.rant #main div.nav aside.info a {
   color: #000;
@@ -1268,11 +1323,12 @@ body.rant #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.rant footer h1.logo a,
-body.rant footer a.author {
+body.rant footer a.author,
+body.rant footer a.blog {
   color: #a60000;
 }
 body.rant footer aside h3 {
-  color: #ffd300;
+  color: #fa0;
   text-shadow: 1px 1px 1px #a60000;
 }
 body.rant footer aside li {
@@ -1288,11 +1344,9 @@ body.rant footer aside a:visited {
 body.rant footer aside a:hover {
   text-decoration: underline;
 }
-body.rant footer aside a.stub {
-  color: #ffd300;
-}
+body.rant footer aside a.stub,
 body.rant footer aside a.stub:visited {
-  color: #a68900;
+  color: #fa0;
 }
 body.rant #main svg .colored {
   stroke: #a60000;
@@ -1320,6 +1374,13 @@ body.rant div.info {
   border-color: #a60000;
   color: #000;
 }
+body #main aside.rant ::selection,
+body.rant #main aside.info ::selection,
+body #main div.rant ::selection,
+body.rant div.info ::selection {
+  background-color: #000;
+  color: #f00;
+}
 body #main aside.rant h1,
 body.rant #main aside.info h1,
 body #main div.rant h1,
@@ -1344,7 +1405,7 @@ body #main aside.rant h6,
 body.rant #main aside.info h6,
 body #main div.rant h6,
 body.rant div.info h6 {
-  color: #a68900;
+  color: #a66f00;
 }
 body #main aside.rant .MathJax span,
 body.rant #main aside.info .MathJax span,
@@ -1356,14 +1417,13 @@ body #main aside.rant a,
 body.rant #main aside.info a,
 body #main div.rant a,
 body.rant div.info a {
-  color: #000;
-  text-shadow: 1px 1px 1px #ff4040;
+  color: #7109aa;
 }
 body #main aside.rant a:hover,
 body.rant #main aside.info a:hover,
 body #main div.rant a:hover,
 body.rant div.info a:hover {
-  color: #000;
+  color: #7109aa;
 }
 body #main aside.rant a:visited,
 body.rant #main aside.info a:visited,
@@ -1373,7 +1433,7 @@ body #main aside.rant a:visited:hover,
 body.rant #main aside.info a:visited:hover,
 body #main div.rant a:visited:hover,
 body.rant div.info a:visited:hover {
-  color: #a60000;
+  color: #000;
 }
 body #main aside.rant a:visited .MathJax span,
 body.rant #main aside.info a:visited .MathJax span,
@@ -1383,30 +1443,36 @@ body #main aside.rant a:visited:hover .MathJax span,
 body.rant #main aside.info a:visited:hover .MathJax span,
 body #main div.rant a:visited:hover .MathJax span,
 body.rant div.info a:visited:hover .MathJax span {
-  color: #a60000;
+  color: #000;
 }
 body #main aside.rant a.stub,
 body.rant #main aside.info a.stub,
 body #main div.rant a.stub,
-body.rant div.info a.stub {
-  color: #ffd300;
-}
-body #main aside.rant a.stub.missing,
-body.rant #main aside.info a.stub.missing,
-body #main div.rant a.stub.missing,
-body.rant div.info a.stub.missing {
-  background: #ffd300;
-  color: #f00;
-}
+body.rant div.info a.stub,
 body #main aside.rant a.stub:visited,
 body.rant #main aside.info a.stub:visited,
 body #main div.rant a.stub:visited,
 body.rant div.info a.stub:visited,
-body #main aside.rant a.stub:visited:hover,
-body.rant #main aside.info a.stub:visited:hover,
-body #main div.rant a.stub:visited:hover,
-body.rant div.info a.stub:visited:hover {
-  color: #a68900;
+body #main aside.rant a.stub:hover,
+body.rant #main aside.info a.stub:hover,
+body #main div.rant a.stub:hover,
+body.rant div.info a.stub:hover {
+  color: #fa0;
+}
+body #main aside.rant a.stub.missing,
+body.rant #main aside.info a.stub.missing,
+body #main div.rant a.stub.missing,
+body.rant div.info a.stub.missing,
+body #main aside.rant a.stub:visited.missing,
+body.rant #main aside.info a.stub:visited.missing,
+body #main div.rant a.stub:visited.missing,
+body.rant div.info a.stub:visited.missing,
+body #main aside.rant a.stub:hover.missing,
+body.rant #main aside.info a.stub:hover.missing,
+body #main div.rant a.stub:hover.missing,
+body.rant div.info a.stub:hover.missing {
+  background: #fa0;
+  color: #f00;
 }
 body span.rant,
 body.rant span.info,
@@ -1500,7 +1566,8 @@ body.stub #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.stub footer h1.logo a,
-body.stub footer a.author {
+body.stub footer a.author,
+body.stub footer a.blog {
   color: #a64b00;
 }
 body.stub footer aside h3 {
@@ -1520,11 +1587,9 @@ body.stub footer aside a:visited {
 body.stub footer aside a:hover {
   text-decoration: underline;
 }
-body.stub footer aside a.stub {
-  color: #099;
-}
+body.stub footer aside a.stub,
 body.stub footer aside a.stub:visited {
-  color: #006363;
+  color: #099;
 }
 body.stub #main svg .colored {
   stroke: #a64b00;
@@ -1551,6 +1616,13 @@ body.stub div.info {
   background: #ff7400;
   border-color: #a64b00;
   color: #000;
+}
+body #main aside.stub ::selection,
+body.stub #main aside.info ::selection,
+body #main div.stub ::selection,
+body.stub div.info ::selection {
+  background-color: #000;
+  color: #ff7400;
 }
 body #main aside.stub h1,
 body.stub #main aside.info h1,
@@ -1588,14 +1660,13 @@ body #main aside.stub a,
 body.stub #main aside.info a,
 body #main div.stub a,
 body.stub div.info a {
-  color: #000;
-  text-shadow: 1px 1px 1px #ff9640;
+  color: #1240ab;
 }
 body #main aside.stub a:hover,
 body.stub #main aside.info a:hover,
 body #main div.stub a:hover,
 body.stub div.info a:hover {
-  color: #000;
+  color: #1240ab;
 }
 body #main aside.stub a:visited,
 body.stub #main aside.info a:visited,
@@ -1605,7 +1676,7 @@ body #main aside.stub a:visited:hover,
 body.stub #main aside.info a:visited:hover,
 body #main div.stub a:visited:hover,
 body.stub div.info a:visited:hover {
-  color: #a64b00;
+  color: #000;
 }
 body #main aside.stub a:visited .MathJax span,
 body.stub #main aside.info a:visited .MathJax span,
@@ -1615,30 +1686,36 @@ body #main aside.stub a:visited:hover .MathJax span,
 body.stub #main aside.info a:visited:hover .MathJax span,
 body #main div.stub a:visited:hover .MathJax span,
 body.stub div.info a:visited:hover .MathJax span {
-  color: #a64b00;
+  color: #000;
 }
 body #main aside.stub a.stub,
 body.stub #main aside.info a.stub,
 body #main div.stub a.stub,
-body.stub div.info a.stub {
+body.stub div.info a.stub,
+body #main aside.stub a.stub:visited,
+body.stub #main aside.info a.stub:visited,
+body #main div.stub a.stub:visited,
+body.stub div.info a.stub:visited,
+body #main aside.stub a.stub:hover,
+body.stub #main aside.info a.stub:hover,
+body #main div.stub a.stub:hover,
+body.stub div.info a.stub:hover {
   color: #099;
 }
 body #main aside.stub a.stub.missing,
 body.stub #main aside.info a.stub.missing,
 body #main div.stub a.stub.missing,
-body.stub div.info a.stub.missing {
+body.stub div.info a.stub.missing,
+body #main aside.stub a.stub:visited.missing,
+body.stub #main aside.info a.stub:visited.missing,
+body #main div.stub a.stub:visited.missing,
+body.stub div.info a.stub:visited.missing,
+body #main aside.stub a.stub:hover.missing,
+body.stub #main aside.info a.stub:hover.missing,
+body #main div.stub a.stub:hover.missing,
+body.stub div.info a.stub:hover.missing {
   background: #099;
   color: #ff7400;
-}
-body #main aside.stub a.stub:visited,
-body.stub #main aside.info a.stub:visited,
-body #main div.stub a.stub:visited,
-body.stub div.info a.stub:visited,
-body #main aside.stub a.stub:visited:hover,
-body.stub #main aside.info a.stub:visited:hover,
-body #main div.stub a.stub:visited:hover,
-body.stub div.info a.stub:visited:hover {
-  color: #006363;
 }
 body span.stub,
 body.stub span.info,
@@ -1732,7 +1809,8 @@ body.caution #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.caution footer h1.logo a,
-body.caution footer a.author {
+body.caution footer a.author,
+body.caution footer a.blog {
   color: #a6a600;
 }
 body.caution footer aside h3 {
@@ -1752,11 +1830,9 @@ body.caution footer aside a:visited {
 body.caution footer aside a:hover {
   text-decoration: underline;
 }
-body.caution footer aside a.stub {
-  color: #3914af;
-}
+body.caution footer aside a.stub,
 body.caution footer aside a.stub:visited {
-  color: #200772;
+  color: #3914af;
 }
 body.caution #main svg .colored {
   stroke: #a6a600;
@@ -1783,6 +1859,13 @@ body.caution div.info {
   background: #ff0;
   border-color: #a6a600;
   color: #000;
+}
+body #main aside.caution ::selection,
+body.caution #main aside.info ::selection,
+body #main div.caution ::selection,
+body.caution div.info ::selection {
+  background-color: #000;
+  color: #ff0;
 }
 body #main aside.caution h1,
 body.caution #main aside.info h1,
@@ -1820,14 +1903,13 @@ body #main aside.caution a,
 body.caution #main aside.info a,
 body #main div.caution a,
 body.caution div.info a {
-  color: #000;
-  text-shadow: 1px 1px 1px #ffff40;
+  color: #1240ab;
 }
 body #main aside.caution a:hover,
 body.caution #main aside.info a:hover,
 body #main div.caution a:hover,
 body.caution div.info a:hover {
-  color: #000;
+  color: #1240ab;
 }
 body #main aside.caution a:visited,
 body.caution #main aside.info a:visited,
@@ -1837,7 +1919,7 @@ body #main aside.caution a:visited:hover,
 body.caution #main aside.info a:visited:hover,
 body #main div.caution a:visited:hover,
 body.caution div.info a:visited:hover {
-  color: #a6a600;
+  color: #000;
 }
 body #main aside.caution a:visited .MathJax span,
 body.caution #main aside.info a:visited .MathJax span,
@@ -1847,30 +1929,36 @@ body #main aside.caution a:visited:hover .MathJax span,
 body.caution #main aside.info a:visited:hover .MathJax span,
 body #main div.caution a:visited:hover .MathJax span,
 body.caution div.info a:visited:hover .MathJax span {
-  color: #a6a600;
+  color: #000;
 }
 body #main aside.caution a.stub,
 body.caution #main aside.info a.stub,
 body #main div.caution a.stub,
-body.caution div.info a.stub {
+body.caution div.info a.stub,
+body #main aside.caution a.stub:visited,
+body.caution #main aside.info a.stub:visited,
+body #main div.caution a.stub:visited,
+body.caution div.info a.stub:visited,
+body #main aside.caution a.stub:hover,
+body.caution #main aside.info a.stub:hover,
+body #main div.caution a.stub:hover,
+body.caution div.info a.stub:hover {
   color: #3914af;
 }
 body #main aside.caution a.stub.missing,
 body.caution #main aside.info a.stub.missing,
 body #main div.caution a.stub.missing,
-body.caution div.info a.stub.missing {
+body.caution div.info a.stub.missing,
+body #main aside.caution a.stub:visited.missing,
+body.caution #main aside.info a.stub:visited.missing,
+body #main div.caution a.stub:visited.missing,
+body.caution div.info a.stub:visited.missing,
+body #main aside.caution a.stub:hover.missing,
+body.caution #main aside.info a.stub:hover.missing,
+body #main div.caution a.stub:hover.missing,
+body.caution div.info a.stub:hover.missing {
   background: #3914af;
   color: #ff0;
-}
-body #main aside.caution a.stub:visited,
-body.caution #main aside.info a.stub:visited,
-body #main div.caution a.stub:visited,
-body.caution div.info a.stub:visited,
-body #main aside.caution a.stub:visited:hover,
-body.caution #main aside.info a.stub:visited:hover,
-body #main div.caution a.stub:visited:hover,
-body.caution div.info a.stub:visited:hover {
-  color: #200772;
 }
 body span.caution,
 body.caution span.info,
@@ -1964,7 +2052,8 @@ body.define #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.define footer h1.logo a,
-body.define footer a.author {
+body.define footer a.author,
+body.define footer a.blog {
   color: #008500;
 }
 body.define footer aside h3 {
@@ -1984,11 +2073,9 @@ body.define footer aside a:visited {
 body.define footer aside a:hover {
   text-decoration: underline;
 }
-body.define footer aside a.stub {
-  color: #7109aa;
-}
+body.define footer aside a.stub,
 body.define footer aside a.stub:visited {
-  color: #48036f;
+  color: #7109aa;
 }
 body.define #main svg .colored {
   stroke: #008500;
@@ -2015,6 +2102,13 @@ body.define div.info {
   background: #0c0;
   border-color: #008500;
   color: #000;
+}
+body #main aside.define ::selection,
+body.define #main aside.info ::selection,
+body #main div.define ::selection,
+body.define div.info ::selection {
+  background-color: #000;
+  color: #0c0;
 }
 body #main aside.define h1,
 body.define #main aside.info h1,
@@ -2052,14 +2146,13 @@ body #main aside.define a,
 body.define #main aside.info a,
 body #main div.define a,
 body.define div.info a {
-  color: #000;
-  text-shadow: 1px 1px 1px #39e639;
+  color: #1240ab;
 }
 body #main aside.define a:hover,
 body.define #main aside.info a:hover,
 body #main div.define a:hover,
 body.define div.info a:hover {
-  color: #000;
+  color: #1240ab;
 }
 body #main aside.define a:visited,
 body.define #main aside.info a:visited,
@@ -2069,7 +2162,7 @@ body #main aside.define a:visited:hover,
 body.define #main aside.info a:visited:hover,
 body #main div.define a:visited:hover,
 body.define div.info a:visited:hover {
-  color: #008500;
+  color: #000;
 }
 body #main aside.define a:visited .MathJax span,
 body.define #main aside.info a:visited .MathJax span,
@@ -2079,30 +2172,36 @@ body #main aside.define a:visited:hover .MathJax span,
 body.define #main aside.info a:visited:hover .MathJax span,
 body #main div.define a:visited:hover .MathJax span,
 body.define div.info a:visited:hover .MathJax span {
-  color: #008500;
+  color: #000;
 }
 body #main aside.define a.stub,
 body.define #main aside.info a.stub,
 body #main div.define a.stub,
-body.define div.info a.stub {
+body.define div.info a.stub,
+body #main aside.define a.stub:visited,
+body.define #main aside.info a.stub:visited,
+body #main div.define a.stub:visited,
+body.define div.info a.stub:visited,
+body #main aside.define a.stub:hover,
+body.define #main aside.info a.stub:hover,
+body #main div.define a.stub:hover,
+body.define div.info a.stub:hover {
   color: #7109aa;
 }
 body #main aside.define a.stub.missing,
 body.define #main aside.info a.stub.missing,
 body #main div.define a.stub.missing,
-body.define div.info a.stub.missing {
+body.define div.info a.stub.missing,
+body #main aside.define a.stub:visited.missing,
+body.define #main aside.info a.stub:visited.missing,
+body #main div.define a.stub:visited.missing,
+body.define div.info a.stub:visited.missing,
+body #main aside.define a.stub:hover.missing,
+body.define #main aside.info a.stub:hover.missing,
+body #main div.define a.stub:hover.missing,
+body.define div.info a.stub:hover.missing {
   background: #7109aa;
   color: #0c0;
-}
-body #main aside.define a.stub:visited,
-body.define #main aside.info a.stub:visited,
-body #main div.define a.stub:visited,
-body.define div.info a.stub:visited,
-body #main aside.define a.stub:visited:hover,
-body.define #main aside.info a.stub:visited:hover,
-body #main div.define a.stub:visited:hover,
-body.define div.info a.stub:visited:hover {
-  color: #48036f;
 }
 body span.define,
 body.define span.info,
@@ -2196,7 +2295,8 @@ body.computer #main div.nav aside.info a:hover {
   text-decoration: underline;
 }
 body.computer footer h1.logo a,
-body.computer footer a.author {
+body.computer footer a.author,
+body.computer footer a.blog {
   color: #586e75;
 }
 body.computer footer aside h3 {
@@ -2216,11 +2316,9 @@ body.computer footer aside a:visited {
 body.computer footer aside a:hover {
   text-decoration: underline;
 }
-body.computer footer aside a.stub {
-  color: #dc322f;
-}
+body.computer footer aside a.stub,
 body.computer footer aside a.stub:visited {
-  color: #2aa198;
+  color: #dc322f;
 }
 body.computer #main svg .colored {
   stroke: #586e75;
@@ -2247,6 +2345,13 @@ body.computer div.info {
   background: #002b36;
   border-color: #586e75;
   color: #839496;
+}
+body #main aside.computer ::selection,
+body.computer #main aside.info ::selection,
+body #main div.computer ::selection,
+body.computer div.info ::selection {
+  background-color: #839496;
+  color: #002b36;
 }
 body #main aside.computer h1,
 body.computer #main aside.info h1,
@@ -2284,14 +2389,13 @@ body #main aside.computer a,
 body.computer #main aside.info a,
 body #main div.computer a,
 body.computer div.info a {
-  color: #839496;
-  text-shadow: 1px 1px 1px #586e75;
+  color: #099;
 }
 body #main aside.computer a:hover,
 body.computer #main aside.info a:hover,
 body #main div.computer a:hover,
 body.computer div.info a:hover {
-  color: #839496;
+  color: #099;
 }
 body #main aside.computer a:visited,
 body.computer #main aside.info a:visited,
@@ -2301,7 +2405,7 @@ body #main aside.computer a:visited:hover,
 body.computer #main aside.info a:visited:hover,
 body #main div.computer a:visited:hover,
 body.computer div.info a:visited:hover {
-  color: #268bd2;
+  color: #839496;
 }
 body #main aside.computer a:visited .MathJax span,
 body.computer #main aside.info a:visited .MathJax span,
@@ -2311,30 +2415,36 @@ body #main aside.computer a:visited:hover .MathJax span,
 body.computer #main aside.info a:visited:hover .MathJax span,
 body #main div.computer a:visited:hover .MathJax span,
 body.computer div.info a:visited:hover .MathJax span {
-  color: #268bd2;
+  color: #839496;
 }
 body #main aside.computer a.stub,
 body.computer #main aside.info a.stub,
 body #main div.computer a.stub,
-body.computer div.info a.stub {
+body.computer div.info a.stub,
+body #main aside.computer a.stub:visited,
+body.computer #main aside.info a.stub:visited,
+body #main div.computer a.stub:visited,
+body.computer div.info a.stub:visited,
+body #main aside.computer a.stub:hover,
+body.computer #main aside.info a.stub:hover,
+body #main div.computer a.stub:hover,
+body.computer div.info a.stub:hover {
   color: #dc322f;
 }
 body #main aside.computer a.stub.missing,
 body.computer #main aside.info a.stub.missing,
 body #main div.computer a.stub.missing,
-body.computer div.info a.stub.missing {
+body.computer div.info a.stub.missing,
+body #main aside.computer a.stub:visited.missing,
+body.computer #main aside.info a.stub:visited.missing,
+body #main div.computer a.stub:visited.missing,
+body.computer div.info a.stub:visited.missing,
+body #main aside.computer a.stub:hover.missing,
+body.computer #main aside.info a.stub:hover.missing,
+body #main div.computer a.stub:hover.missing,
+body.computer div.info a.stub:hover.missing {
   background: #dc322f;
   color: #002b36;
-}
-body #main aside.computer a.stub:visited,
-body.computer #main aside.info a.stub:visited,
-body #main div.computer a.stub:visited,
-body.computer div.info a.stub:visited,
-body #main aside.computer a.stub:visited:hover,
-body.computer #main aside.info a.stub:visited:hover,
-body #main div.computer a.stub:visited:hover,
-body.computer div.info a.stub:visited:hover {
-  color: #2aa198;
 }
 body span.computer,
 body.computer span.info,
@@ -2347,45 +2457,31 @@ body.computer em.info {
 body.rant #header h1.title a {
   color: #fff;
 }
-body.rant #main a.stub,
-body.rant #main aside.info a.stub,
-body.rant #main div.info a.stub,
-body #main aside.rant a.stub,
-body #main div.rant a.stub {
-  color: #fa0;
-}
-body.rant #main a.stub:visited,
-body.rant #main aside.info a.stub:visited,
-body.rant #main div.info a.stub:visited,
-body #main aside.rant a.stub:visited,
-body #main div.rant a.stub:visited {
-  color: #ffd073;
-}
-span.caution,
+body span.caution,
 body.caution span.info,
-strong.caution,
+body strong.caution,
 body.caution strong.info,
-em.caution,
+body em.caution,
 body.caution em.info {
   color: #a6a600;
 }
-span.rules,
+body span.rules,
 body.rules span.info,
-strong.rules,
+body strong.rules,
 body.rules strong.info,
-em.rules,
+body em.rules,
 body.rules em.info {
   color: #4671d5;
 }
-span.computer,
+body span.computer,
 body.computer span.info,
-strong.computer,
+body strong.computer,
 body.computer strong.info,
-em.computer,
+body em.computer,
 body.computer em.info,
-#main aside.computer,
+body #main aside.computer,
 body.computer #main aside.info,
-#main div.computer,
+body #main div.computer,
 body.computer div.info,
 body.computer #header .definition,
 body.computer #main article > p a {
@@ -2397,12 +2493,6 @@ body.computer #main article > p a {
 body.computer #main article > p a.stub {
   color: #dc322f;
 }
-body.computer #main article > p a.stub:visited {
-  color: #d33682;
-}
-body.computer #main article > p a:visited {
-  color: #268bd2;
-}
 body #main aside.computer a,
 html body.computer #main aside.info a,
 body #main div.computer a,
@@ -2412,14 +2502,8 @@ html body.computer div.info a {
 body.simplifience #main a.stub {
   color: #fa0;
 }
-body.simplifience #main a.stub:visited {
-  color: #a66f00;
-}
 body.knowledge #main a.stub {
   color: #fa0;
-}
-body.knowledge #main a.stub:visited {
-  color: #a66f00;
 }
 aside.define em:first-of-type:after {
   content: "\a";
@@ -2614,24 +2698,27 @@ div.cap footer aside ol li.current {
   list-style-type: disc;
 }
 div.cap footer h1.logo,
-div.cap footer a.author {
+div.cap footer a.author,
+div.cap footer a.blog {
   float: right;
   clear: right;
 }
 div.cap footer h1.logo {
   font-size: 28px;
-  margin-bottom: 0;
-}
-div.cap footer a.author {
-  display: block;
-  margin-top: 7px;
+  margin-bottom: 7px;
 }
 div.cap footer a.author,
+div.cap footer a.blog {
+  display: block;
+}
+div.cap footer a.author,
+div.cap footer a.blog,
 div.cap footer .logo a {
   opacity: 0.4;
   text-decoration: none;
 }
 div.cap footer a.author:hover,
+div.cap footer a.blog:hover,
 div.cap footer .logo a:hover {
   opacity: 1;
 }
@@ -2710,6 +2797,7 @@ p {
   margin-top: 0;
 }
 aside,
+div.main,
 div.info,
 div.rules,
 div.rigor,
@@ -2727,6 +2815,7 @@ div.computer {
   overflow: auto;
 }
 aside p:last-child,
+div.main p:last-child,
 div.info p:last-child,
 div.rules p:last-child,
 div.rigor p:last-child,
@@ -2740,6 +2829,7 @@ div.computer p:last-child {
   margin-bottom: 0;
 }
 aside ul,
+div.main ul,
 div.info ul,
 div.rules ul,
 div.rigor ul,
@@ -2751,6 +2841,7 @@ div.caution ul,
 div.define ul,
 div.computer ul,
 aside ol,
+div.main ol,
 div.info ol,
 div.rules ol,
 div.rigor ol,
@@ -2765,26 +2856,26 @@ div.computer ol {
   margin: 0;
   padding: 0;
 }
-#main div.nav {
+#main div.nav div.block {
   text-align: right;
 }
-#main div.nav h3 {
+#main div.nav div.block h3 {
   margin: 0;
   font-size: 14px;
   cursor: default;
 }
-#main div.nav aside ul {
+#main div.nav div.block aside ul {
   font-family: 'Marko One', serif;
   text-align: left;
   margin: 0;
   padding: 0;
 }
-#main div.nav a {
+#main div.nav div.block a {
   font-size: 16.8px;
   line-height: 1.7999999999999998em;
   text-decoration: none;
 }
-#main div.nav a:hover {
+#main div.nav div.block a:hover {
   text-decoration: underline;
 }
 #main > article > div.asides > aside {
