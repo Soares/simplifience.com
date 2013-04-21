@@ -20,7 +20,7 @@ This is wrong in so many ways it's going to be difficult to enumerate them in a 
 
 For starters, the knee-jerk response to this drivel is "well then I'll never play your stupid game" -- and that's exactly what four out of five students do. They avoid science, engineering, math, and technology because they were forced to learn the boring cheat codes for those games, and they sounded repetitive, so the games must be dull.
 
-This is a rational response to the <span class="info" markdown="block">atrocious education</span> that we provide.
+This is a rational response to the <span class="info" markdown="inline">atrocious education</span> that we provide.
 
 <aside class="info" markdown="block">
 Suggestions come later.
