@@ -1,7 +1,7 @@
 ---
 title: Math Class
+type: rules
 ---
-
 Schools shouldn't have math classes.
 
 Math classes are detrimental to our students. Hear me out.
@@ -35,8 +35,6 @@ Teaching math is like teaching @post[door-opening]allegory/doors. Opening doors 
 Just like everyone needs to know what $7$ means, and that $7 + 3$ is $10$.
 </aside>
 
-
-
 Some people need to know how to open space shuttle doors or military bunker doors, and some people will need to pick locks when they lock themselves out of the house. This doesn't mean we should teach door-opening class.
 
 Advanced door-opening can teach important skills. Students who are good at picking locks will learn patience and a subtle precision that can be invaluable later in life, but that *still* doesn't mean we should teach a door-opening class.
@@ -59,31 +57,31 @@ Do this, and mathematics is what falls out of the process. It's is everything st
 
 Math is just another name for problem-solving techniques. Modern math classes force students to memorize specific techniques. That's not the same thing as teaching students to solve problems.
 
-@post[Math equations are like cheat codes]math/codes to a game that most people don't play. Forcing students to memorize formulas is not mathematics. It helps them through the state exams, but it isn't mathematics.
+@post[Math equations are like cheat codes]math/codes to a game that most people don't play. Forcing students to memorize formulas is not mathematics. It helps them through standardized exams, but it isn't mathematics.
 
-Mathematics is the realization that techniques used to solve a problem once can solve the problem anywhere. If we want students to realize that, we need to keep giving them similar problems until they start to see the patterns and realize that they can invent shortcuts on their own.
+Math isn't about the equations. Mathematics is the realization that techniques used to solve a problem once can solve the problem anywhere. If we want students to realize that, we need to keep giving them similar problems until they start to see the patterns and realize that they can invent shortcuts on their own.
 
 ---
 
 It used to be enough for students to memorize and apply techniques handed down by the ancients. It used to be acceptable to memorize a bunch of derivative laws instead of really *knowing* calculus.
 
-Students who memorized the rules could turn the cranks and solve calculus problems. Schools pumped out graduates who knew just enough to turn the cranks. Only the best and brightest ever invented new techniques, and that was fine -- whenever one person invented a new technique, hundreds were necessary to calculate the results. Calculus problems weren't going to solve themselves.
+Students who memorized the rules could turn the cranks and solve calculus problems. Schools pumped out graduates who knew just enough to turn the cranks. Only the best and brightest ever invented new techniques, and that was fine -- whenever one person invented a new technique, hundreds were necessary to calculate the results. For every Maxwell we needed thousands of people to apply Maxwell's equations and get real answers. Calculus problems weren't going to solve themselves.
 
 Those days are behind us. In this day and age we teach computers to apply formulas. Calculus problems *can* solve themselves. One computer programmer isn't worth ten number crankers, nor even one hundred: one computer programmer is worth *all* of the number crankers.
 
-When you program a computer to solve a problem once, it can solve that problem a billion times per second, forever.
+When you program a computer to solve a problem once, it can solve that problem a billion times per second forever.
 
 We don't need people who can apply calculus equations anymore. We need people who can invent calculus.
 
 ---
 
-It is not important that our students know algebra -- it is important that our students have the reasoning skills to *invent* algebra. It doesn't matter whether they've memorized a particular algebraic syntax. What matters is being able to confront new algebra-level problems and solve them without help. What matters is teaching our students to problem solve on their own.
+It is not important that our students know algebra -- it is important that our students have the reasoning skills to *invent* algebra. It doesn't matter whether they've memorized a particular algebraic syntax. What matters is being able to confront new algebra-level problems (in *any* domain) and solve them without help. What matters is teaching our students to solve problems on their own.
 
 We shouldn't be satisfied until our students have invented their own techniques akin to algebra in response to the problems that we throw at them.
 
-This skill is hard to teach, and yet this single skill is more important than calculus, trigonometry, and algebra combined.
+This skill is hard to teach, and yet this single skill is more important than algebra, trigonometry, and calculus combined.
 
-We don't need everyone to know calculus. We don't need everyone to know trigonometry. We don't need everyone to know *any* specific techniques. Instead, we need everyone to know that *there are techniques*. We need people to realize that math isn't about solving problems: math is about *eliminating* problems.
+We don't need everyone to know calculus. We don't need everyone to know *any* specific techniques. Instead, we need everyone to know that *there are techniques*. We need people to realize that math isn't about solving problems: math is about *eliminating* problems.
 
 Math is about solving a problem so hard than next time you come across something that looks even remotely similar, <span class="info" markdown="inline">it's already solved</span>.
 

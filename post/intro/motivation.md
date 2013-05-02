@@ -7,12 +7,6 @@ members:
 
 Math and Science are wrong.
 
-<!--TODO:
-<aside class="computer" markdown="block">
-There's a special version of this article for @post[computer programmers]computation/motivation.
-</aside>
--->
-
 They're not incorrect. There are other ways to be wrong.
 
 Math makes @post[three grievous mistakes]math/archaic. Science inherits all the same mistakes and adds @post[two of its own]science/mire. Math and science are riddled with @post[contrives]intro/contrives: confusing names, stale concepts, and viewpoints grown twisted over the millennia.
@@ -21,9 +15,11 @@ The net result is a confusing bloated mess. The nature of existence is obfuscate
 
 It doesn't have to be like this. Math and science can be much simpler if you sidestep the cruft of history.
 
+<aside class="info" markdown="block">
 Words are cheap: try an @post[introductory sequence]sample/identity of simplifience if you aren't convinced.
+</aside>
 
-Simplifience is here to teach you about the nature of existence. Popular culture holds that reality is a very difficult place to understand. Quantum mechanics has a reputation similar to magic and the average physics textbook won't get within ten chapters of general relativity. This is not because the concepts are *intrinsically difficult* -- it's because their presentation is twisted and confused.
+Simplifience is here to teach you about the nature of existence. Popular culture holds that reality is a very difficult place to understand. Quantum mechanics is treated like a dark branch of magic and the average physics textbook won't get within ten chapters of general relativity. This is not because the concepts are *intrinsically difficult* -- it's because their presentation is twisted and confused.
 
 We can do better.
 

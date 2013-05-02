@@ -1,13 +1,15 @@
 ---
 title: Formal Notation
 ---
-@post[Words are powerful]language/scope. @post[Many words are needed to say simple things]language/simplicity.  @post[Reality has rules]reality/rules.
+@post[Words are powerful]language/scope. @post[Many words are needed to say simple things]language/simplicity.  @post[Reality has simple rules]reality/rules.
 
-Those rules happen to be fairly simple. Put these facts together and you'll realize that English is ill-equipped to discuss the rules of reality: the rules of reality are simple, and simple things take lots of language to pin down exactly.
+Put these facts together and you'll realize that English is ill-equipped to discuss the rules of reality: the rules of reality are simple, and simple things take lots of language to pin down exactly.
 
-If we're going to discuss the rules of reality we must do so unambiguously. There should be no wiggle room in our descriptions that does not also exist in reality. Insofar as the rules of reality are absolute, our expression of the rules must be absolute.
+The key word here is "exactly". It's easy to give hand-wavy explanations that gloss over the details and can be easily miss-interpreted. This might provide a glimpse into the workings of reality, but it certainly won't help you *understand* them.
 
-An unambiguous expression of a truth is called a <span class="define" markdown="inline">formalization</span> of that truth. We need formalizations if we hope to express the rules.
+If you want to actually know the rules, we must discuss them unambiguously. There should be no wiggle room in our descriptions that does not also exist in reality. Insofar as the rules of reality are absolute, our expression of the rules must be absolute.
+
+An unambiguous expression of a truth is called a <span class="define" markdown="inline">formalization</span> of that truth. We need formalizations if we hope to accurately express the rules.
 
 <aside class="define" markdown="block">
 __Formalization__ *n.*
@@ -16,9 +18,9 @@ Any unambiguous expression of a thing which is true.
 
 This does not mean that we should use mathematics instead of English. Mathematics is not the only formalization available. The notation used is not important. What is important is that the notation is unambiguous.
 
-It does no good to convince your friend that addition combines numbers if they leave believing that $1 + 2 = 12$. When discussing the actual way reality works it is important to be exact.
+It does no good to convince your friend that addition combines numbers if they leave the conversation believing that $1 + 2 = 12$.
 
-For this reason, you must be presented with the equations that govern the rules of reality.
+When discussing the actual way reality works it is important to be exact. For this reason, you must be presented with the equations that govern the rules of reality.
 
 Simplifience will not use the @post[archaic]math/archaic notation of mathematics, preferring a @post[simplified version]intro/notation. But you must be presented with equations all the same.
 

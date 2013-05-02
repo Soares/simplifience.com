@@ -68,14 +68,12 @@ Math is a human reaction to boring problems. When faced with a repetitive task y
 Subverting repetitive tasks is the primary motivator of technological discovery.
 </aside>
 
-
-
 Problem-solving techniques are named "mathematics".
 
 Math is cheat codes for problems that show up all over the place. If you show students the cheat codes *first*, before they know the problems, then the codes are boring. It's like teaching students music by forcing them to <span class="info" markdown="inline">read the sheet music</span> for Beethoven's $5^{th}$ before ever hearing an instrument.
 
 <aside class="info" markdown="block">
-You can learn a lot about fugues and music from Beethoven's $5^{th}$, but reading the sheet music is nothing compared to the power of song.
+You can learn a lot about fugues and music from Beethoven's $5^{th}$, but reading the sheet music is nothing compared to the power of a song.
 </aside>
 
 When we teach ancient techniques before people have faced the problems, the techniques look contrived and pointless. More often than not, the techniques *are* contrived -- my methods of problem-solving may @post[not make any sense]reality/translation to you.
