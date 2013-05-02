@@ -46,14 +46,15 @@
 			<article>
 				
 				
+				
 				<div class="nav asides">
   <div class="block">
     <!--<h3>Start here</h3>-->
     <aside class="info">
       <ul>
-        <li><a href="/intro/motivation.html" target="_blank">Introductions</a></li>
-        <li><a href="/foundations/unlearn.html" target="_blank">Correct your confusions</a></li>
-        <!--<li><a href="/reality/welcome.html" class="stub" target="_blank">Welcome to Reality</a></li>-->
+        <li><a href="/intro/motivation.html">Introductions</a></li>
+        <li><a href="/foundations/unlearn.html">Correct your confusions</a></li>
+        <!--<li><a href="/reality/welcome.html" class="stub">Welcome to Reality</a></li>-->
       </ul>
     </aside>
   </div>
@@ -66,7 +67,7 @@
 
 <p>This question has been asked since the dawn of thought, and it will haunt us until the end of time. Humankind has made incredible progress in the quest to figure out why. We know more about the nature of existence now than ever before. Yet this knowledge is not readily taught.</p>
 
-<p>It&#8217;s hidden deep inside textbooks obscured by an ancient and <a href="/math/archaic.html" target="_blank">archaic</a> language. Students are dragged through the <a href="/science/wrong.html" target="_blank">historical mire</a>, subjected to the same confusion that our forebearers faced.</p>
+<p>It&#8217;s hidden deep inside textbooks obscured by an ancient and <a href="/math/archaic.html">archaic</a> language. Students are dragged through the <a href="/science/wrong.html">historical mire</a>, subjected to the same confusion that our forebearers faced.</p>
 
 <p>It doesn&#8217;t have to be like this.</p>
 
@@ -85,6 +86,8 @@
 		<aside class="sequences">
   <h3>Sequences</h3>
   <ul>
+    
+    <li><a target="_blank" href="/foundations/mathematics.html">Abandonding Math</a></li>
     
     <li><a target="_blank" href="/foundations/unlearn.html">Foundations</a></li>
     
@@ -107,12 +110,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

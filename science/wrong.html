@@ -39,6 +39,7 @@
 			<article>
 				
 				
+				
 				<p>Science is thrice wrong.</p>
 
 <p>It&#8217;s not wrong as in <span class="info">incorrect</span>. Science is trustworthy, but it is still wrong in three fashions.</p>
@@ -47,13 +48,13 @@
   <p>Though it sometimes draws incorrect conclusions for brief periods of time.</p>
 </aside>
 
-<p>The first wrong is not with science itself, but with the way science is taught. Students are dragged through the <a href="/science/history.html" target="_blank" class="stub">historical mire</a>, made to suffer the same confusion that our forebearers faced. We do students disservice by teaching them science in the order we discovered it. We teach students a <a href="/science/wrong-first.html" target="_blank" class="stub">dozen wrong ways</a> before showing them the <a href="/science/right-first.html" target="_blank" class="stub">right one</a>.</p>
+<p>The first wrong is not with science itself, but with the way science is taught. Students are dragged through the <a href="/science/history.html" class="stub">historical mire</a>, made to suffer the same confusion that our forebearers faced. We do students disservice by teaching them science in the order we discovered it. We teach students a <a href="/science/wrong-first.html" class="stub">dozen wrong ways</a> before showing them the <a href="/science/right-first.html" class="stub">right one</a>.</p>
 
-<p>The second wrong is not with the scientific method, but with how we name things that the scientific method has forged. We name phenomena after scientists instead of naming them after the parts of reality which they describe. Even phenomena not named for humans are named long <a href="/science/misnomers.html" target="_blank" class="stub">before they are understood</a>. Many have outgrown their old names. These shoddy names tie science tightly to its history and place an <a href="/intro/names.html" target="_blank">unnecessary burden</a> of memorization upon students of the sciences.</p>
+<p>The second wrong is not with the scientific method, but with how we name things that the scientific method has forged. We name phenomena after scientists instead of naming them after the parts of reality which they describe. Even phenomena not named for humans are named long <a href="/science/misnomers.html" class="stub">before they are understood</a>. Many have outgrown their old names. These shoddy names tie science tightly to its history and place an <a href="/intro/names.html">unnecessary burden</a> of memorization upon students of the sciences.</p>
 
-<p>The third and final wrong <em>is</em> a wrong within science itself. Science is naught but a <a href="/science/method.html" target="_blank" class="stub">method of thinking</a>. That method is better than what came before, but it is <a href="/science/failings.html" target="_blank" class="stub">not strong enough</a>. Like many of the models that science has produced, science itself is correct but not complete.</p>
+<p>The third and final wrong <em>is</em> a wrong within science itself. Science is naught but a <a href="/science/method.html" class="stub">method of thinking</a>. That method is better than what came before, but it is <a href="/science/failings.html" class="stub">not strong enough</a>. Like many of the models that science has produced, science itself is correct but not complete.</p>
 
-<p>For these reasons, simplifience must be both more and less than science: less than science because it refuses to teach you the wrongs before it tells you the truth, and more because it <a href="/science/beyond.html" target="_blank" class="stub">steps beyond</a>.</p>
+<p>For these reasons, simplifience must be both more and less than science: less than science because it refuses to teach you the wrongs before it tells you the truth, and more because it <a href="/science/beyond.html" class="stub">steps beyond</a>.</p>
 				
 			</article>
 
@@ -80,12 +81,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

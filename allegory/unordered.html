@@ -6,7 +6,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Trailblazing</title>
+	<title>Totally Unpredictable</title>
 	<script src="/js/modernizr.js"></script>
 	<meta name="author" content="So8res">
 	<meta name="description" content="Simplified science">
@@ -27,7 +27,7 @@
 	<header id="header" class="wrapper clearfix">
 		
 		<h1 class="title" title="Simplifience">
-			<a href="/">Trailblazing</a>
+			<a href="/">Totally Unpredictable</a>
 		</h1>
 		
 	</header>
@@ -39,11 +39,12 @@
 			<article>
 				
 				<section id="stub">
-					Math has always been one step ahead of our understanding of the universe. Every time we've made new discoveries about how things work, a speculative branch of mathematics has existed that better describes reality.
+					Here will lie an allegory of an unpredictable universe, growing more unpredictable as the allegory progressess, with the moral being that our universe runs on rules and we couldn't exist if it didn't.
 				</section>
 				<aside class="stub">
 					This page is a stub!<br>Check back later for more conent.
 				</aside>
+				
 				
 				
 			</article>
@@ -71,12 +72,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

@@ -39,7 +39,8 @@
 			<article>
 				
 				
-				<p>$e^{\pi i}$ is a silly notation for <a href="/sample/growth.html" target="_blank">$(grow\ 1\ \pi i)$</a>. Growth by $i$ is perpendicular growth. Perpendicular growth is circular motion on the <a href="/sample/imagine.html" target="_blank">complex plane</a>. $\pi$ is the number of radian-lengths in <a href="/sample/semicircle.html" target="_blank">half a circle</a>.</p>
+				
+				<p>$e^{\pi i}$ is a silly notation for <a href="/sample/growth.html">$(grow\ 1\ \pi i)$</a>. Growth by $i$ is perpendicular growth. Perpendicular growth is circular motion on the <a href="/sample/imagine.html">complex plane</a>. $\pi$ is the number of radian-lengths in <a href="/sample/semicircle.html">half a circle</a>.</p>
 
 <p>Once you know all that, $e^{\pi i}$ translates to &#8220;rotate half a turn on the complex plane&#8221;. When you start at $1$ and you rotate half a turn you end up at $\text{&#8211;}1$.</p>
 
@@ -55,11 +56,11 @@
 
 <p>You&#8217;re beginning to see the problems with mainstream mathematics. The first problem is that common math education doesn&#8217;t teach you things the easy way. Most people have had to memorize $i$ and learn that $i = \sqrt{-1}$ without ever being taught that the complex number plane is just another add-on to the number line that&#8217;s particularly useful for talking about rotation.</p>
 
-<p>The second problem is that the things you&#8217;re taught the hard way are themselves <a href="/intro/contrives.html" target="_blank">contrived</a>. It would be nice if someone had taught you explicitly that $\pi$ is the number of radiuses it takes to go halfway around a circle. It would be <em>better</em> if you never learned $\pi$ at all and just learned everything in turns. Why do you need a special symbol for &#8220;half a turn&#8221;?</p>
+<p>The second problem is that the things you&#8217;re taught the hard way are themselves <a href="/intro/contrives.html">contrived</a>. It would be nice if someone had taught you explicitly that $\pi$ is the number of radiuses it takes to go halfway around a circle. It would be <em>better</em> if you never learned $\pi$ at all and just learned everything in turns. Why do you need a special symbol for &#8220;half a turn&#8221;?</p>
 
 <p>This is what&#8217;s wrong with mathematics. The symbols are needlessly complicated <em>and</em> you&#8217;re taught them in a counter-intuitive manner.</p>
 
-<p>This is why we need <a href="/intro/motivation.html" target="_blank">simplifience</a>.</p>
+<p>This is why we need <a href="/intro/motivation.html">simplifience</a>.</p>
 				
 			</article>
 
@@ -123,12 +124,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

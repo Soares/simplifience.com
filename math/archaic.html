@@ -39,33 +39,34 @@
 			<article>
 				
 				
-				<p>The modern <span class="info">language</span> of mathematics is archaic. It is thousands upon thousands of years old, and it is stale.</p>
+				
+				<p>The modern <span class="info">language</span> of mathematics is archaic. The notation that we use to describe The Rules are confusing. The names we assign to them are poor. The whole language was made up as humanity went along, and it&#8217;s poorly thought out. It&#8217;s two millennia old, and it is stale.</p>
 
 <aside class="info">
-  <p>Math is <a href="/reality/symbology.html" target="_blank">more than the symbols</a>.</p>
+  <p>Math is <a href="/reality/symbology.html">more than the symbols</a>.</p>
 </aside>
 
-<p>The problem with mathematics is threefold.</p>
-
-<p>The first problem set root thousands of years ago when the ancients named things that they did not fully understand. Now we&#8217;re <a href="/allegory/trunk.html" target="_blank">stuck with those names</a>.</p>
-
-<p>The second problem sprouted when the old names outgrew. Wide swaths of mathematics are outdated and counter-intuitive thanks to stale names.</p>
-
-<p>The third problem is the massive corpus of mathematical rules, properties, theories, and ideas named after dead mathematicians in a pompous act of <a href="/intro/names.html" target="_blank">self-congratulatory vanity</a>.</p>
-
-<p>All of these things conspire to hide the true, underlying beauty of <a href="/reality/rules.html" target="_blank" class="stub">the rules</a>.</p>
-
-<p>Simplifience disregards the mistakes of old. We&#8217;ll avoid archaic notation and the mistakes of the ancients. We won&#8217;t use the stale names. We&#8217;ll reject the personhood cult. In fact, we&#8217;ll do away with Mathematics entirely. We&#8217;ll <a href="/foundations/mathematics.html" target="_blank">shatter the word</a> and distinguish between its components.</p>
+<p>The problem with math notation is threefold.</p>
 
 <aside class="caution">
-  <p>It&#8217;s policy to avoid mentioning specific <a href="/intro/contrives.html" target="_blank">contrives</a> until an alternative is provided. For that reason, I have avoided <a href="/math/gripes.html" target="_blank" class="stub">specific gripes</a>.</p>
+  <p>It&#8217;s policy to avoid mentioning specific <a href="/intro/contrives.html">contrives</a> until an alternative is provided. For that reason, I have avoided <a href="/math/gripes.html" class="stub">specific gripes</a>.</p>
 </aside>
 
-<p>Many claim that the problems with math aren&#8217;t so bad, <a href="/intro/good-enough.html" target="_blank">forgetting</a> how difficult it was to learn the cultish customs.</p>
+<p>The first problem set root thousands of years ago when the ancients named things that they did not fully understand. Now we&#8217;re <a href="/allegory/trunk.html">stuck with those names</a>.</p>
 
-<p>Others claim that it&#8217;s <a href="/intro/too-late.html" target="_blank">too late</a>, as if that helps matters.</p>
+<p>The second problem sprouted when the old names outgrew their labels. Many labels in mathematics, like <a href="/foundations/mathematics.html">mathematics itself</a>, call similar things by the same name. This hides differences. Concepts which are simple separately are made confusing when you think they&#8217;re the same thing.</p>
 
-<p>We&#8217;ll do it anyway, for such is the road to simplifience.</p>
+<p>The third problem is the massive corpus of mathematical rules, properties, theories, and ideas which are named after dead mathematicians in a pompous act of <a href="/intro/names.html">self-congratulatory vanity</a>.</p>
+
+<p>All of these mistakes conspire to hide the true, underlying beauty of <a href="/reality/rules.html">the rules</a>.</p>
+
+<p>Simplifience disregards the mistakes of old. We&#8217;ll avoid archaic notation and the mistakes of the ancients. We won&#8217;t use the stale names. We&#8217;ll reject the personhood cult. In fact, we&#8217;ll do away with Mathematics entirely. We&#8217;ll <a href="/foundations/mathematics.html">shatter the word</a> and distinguish between its components.</p>
+
+<p>Many claim that the problems with math aren&#8217;t so bad. Most of those people are mathematicians and engineers who were particularly adept or who have <a href="/intro/good-enough.html">forgotten</a> how difficult it was to learn the cultish customs.</p>
+
+<p>Others claim that it&#8217;s <a href="/intro/too-late.html">too late</a> to change, as if that helps.</p>
+
+<p>We&#8217;ll change anyway, for such is the road to simplifience.</p>
 				
 			</article>
 
@@ -76,6 +77,59 @@
 <div id="footer-container" class="cap">
 	<footer class="wrapper">
 		
+		
+		<aside class="sequence">
+			<h3>Abandonding Math</h3>
+			<ol>
+				
+					
+					<li>
+						<a href="/foundations/mathematics.html">Discarding Mathematics</a>
+					</li>
+					
+				
+					
+					<li class="current">Math is Archaic</li>
+					
+				
+					
+					<li>
+						<a href="/reality/axioms.html">Axioms</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/reality/formalization.html">Formal Notation</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/reality/rules.html">The Rules</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/math/explore.html">Trailblazing</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/math/codes.html">Math Codes</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/math/education.html">Math Class</a>
+					</li>
+					
+				
+			</ol>
+		</aside>
 		
 		
 		<h1 class="logo"><a href="/">Simplifience</a></h1>
@@ -92,12 +146,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

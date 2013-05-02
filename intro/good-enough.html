@@ -39,13 +39,14 @@
 			<article>
 				
 				
+				
 				<p>Some people say that math is good enough.</p>
 
 <p>They argue that $\pi$ is fine, even though it&#8217;s half the circle constant. They argue that using dead people&#8217;s names for constants isn&#8217;t that bad an idea, because it&#8217;s easy to get what it means.</p>
 
 <p>You&#8217;ll notice that these people are almost exclusively scientists, mathematicians, and engineers.</p>
 
-<p>These are people who have above-average ability to see <a href="/reality/symbology.html" target="_blank">past the symbols</a> and understand the meaning. They navigated the minefield of mainstream mathematics with ease and now they can stand on the other side and claim that it wasn&#8217;t so hard.</p>
+<p>These are people who have above-average ability to see <a href="/reality/symbology.html">past the symbols</a> and understand the meaning. They navigated the minefield of mainstream mathematics with ease and now they can stand on the other side and claim that it wasn&#8217;t so hard.</p>
 
 <p>The people you don&#8217;t hear from are everybody who hates math, everybody who failed science. Some of these people just didn&#8217;t like the subjects: but many more were confused by strange notation and confounded by lost purposes. They beheld a twisted bloated mess that they&#8217;d just have to memorize if they wanted to pass the class, and they hated it, and they never came back.</p>
 
@@ -82,12 +83,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

@@ -39,6 +39,7 @@
 			<article>
 				
 				
+				
 				<p>There are many concepts in science and mathematics which correct, strictly speaking, but which are still wrong. They&#8217;re technically correct but confusing and occlusive. Here at simplifience we refer to such concepts as <span class="define">contrives</span>.</p>
 
 <aside class="define">
@@ -46,7 +47,7 @@
 A thought, label, or concept which hides what it means to describe.</p>
 </aside>
 
-<p>Sometimes contrives place <a href="/foundations/mathematics.html" target="_blank">many concepts under the same label</a>. You don&#8217;t notice that there are two concepts: you think the contrive is one single confusion.</p>
+<p>Sometimes contrives place <a href="/foundations/mathematics.html">many concepts under the same label</a>. You don&#8217;t notice that there are two concepts: you think the contrive is one single confusion.</p>
 
 <p>Sometimes contrives label an incomplete concept in a way that makes it sound whole, preventing you from reaching full understanding.</p>
 
@@ -108,12 +109,27 @@ A thought, label, or concept which hides what it means to describe.</p>
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	
