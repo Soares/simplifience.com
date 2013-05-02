@@ -39,7 +39,8 @@
 			<article>
 				
 				
-				<p>Simplifience is a <a href="/intro/motivation.html" target="_blank">simpler way to look at reality</a>. In the normal course of simplifience articles the mainstream representation of math and science is <a href="/intro/contrives.html" target="_blank">ignored</a> until you&#8217;ve built up a solid intuition. You get to avoid the mainstream confusion entirely.</p>
+				
+				<p>Simplifience is a <a href="/intro/motivation.html">simpler way to look at reality</a>. In the normal course of simplifience articles the mainstream representation of math and science is <a href="/intro/contrives.html">ignored</a> until you&#8217;ve built up a solid intuition. You get to avoid the mainstream confusion entirely.</p>
 
 <p>Unfortunately, there are a couple of mainstream confusions that are too large for me to dance around, too broad for me to avoid while I build up your intuition.</p>
 
@@ -99,12 +100,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

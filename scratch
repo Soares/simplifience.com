@@ -1,0 +1,123 @@
+
+Simplifience won't be using math equations.
+
+This is in part due to the fact that @post[math is not a thing]foundations/mathematics.
+
+Mostly it's because @post[math is archaic]math/archaic. The syntax of mathematics is old and poorly thought out. It is confusing and intimidating to newcomers. It doesn't display nicely on computer screens.
+
+I don't mean to discourage you from using math equations: if you are already comfortable with the syntax, then by all means, continue using it. It is quite terse and compact.
+
+Terseness and compactness are not the allies of education.
+
+Compare the following:
+
+$\displaystyle \lim\_{n\to\infty} p * (1 + \frac{r}{n})^n$
+
+$(principle\textbf{ scaled by }(1\textbf{ plus }(rate\textbf{ divided by }n))\textbf{ }n\textbf{ times})\textbf{ as }n\textbf{ approaches }\infty$
+
+These equations say the same things. The first is far denser and is intuitive only if you have already internalized the quirks and customs of mathematics. The other is simple to understand for anyone who speaks English.
+
+Both equations have the same level of rigor. Language is @post[a powerful tool]language/scope, and it is @post[difficult to say simple things]language/simplicity -- English is not a good medium for discussing how the universe works. In order to describe the universe, we must use a notation that leaves no room for misinterpretation: *but that language need not be mathematics*.
+
+Simplifience will use a language @post[more suited to newcomers]intro/notation.
+
+
+
+@post[Words are powerful]language/scope.
+
+@post[Many words are needed to say simple things]language/simplicity.
+
+@post[Reality has rules]reality/rules, and learning those rules gives us power.
+
+When you put all these things together, you'll find that the rules of reality are difficult to describe in English. English just says too much. It can be interpreted too many ways.
+
+This is why humans developed the formal notation known as mathematics: strange symbols which say a lot once you understand what they mean. It looks something like this:
+
+> $\displaystyle \sum\limits\_{n=1}^N x\_n^2$
+
+While well-intentioned, this is not far from gibberish. It is compact, surely, but it is far from an ideal representation of what is going on. For instance, the above equation can be better described thus:
+
+> Sum the squares of all $x$s (there are $N$ of them).
+
+Among professionals, the former style is preferred for its compactness. The former style, though cryptic, has one other advantage as well: it's unambiguous. Many sentences have multiple meanings. Remember that it is @post[hard to say simple things]language/simplicity.
+
+Simplifience will prefer the second method, the spoken explanations. However, simplifience will also provide equations. They will not look quite so forbidding as the one above, and they will follow simpler rules, but we must provide unambiguous equations for the rules of nature.
+
+Simplifience equations will look more like this:
+
+> $(\textbf{Sum }(\textbf{area of a square with side }x)\textbf{ for each }x\textbf{ in }xs)$
+
+This is more verbose, surely, but also unambiguous.
+
+This is necessary because my sentences can be misinterpreted. There are corners that my words will fail to cover. Every analogy that I make will break down at the edges.
+
+The equations describe how the universe really works. I hope that my words will as well, but words are much harder to tie down. The equations are provided so that when you find any ambiguities, you can sate your curiosity by examining the equations.
+
+That said, the equations need not look scary. They need not be intimidating. The rules of the universe are actually pretty simple. If you're comfortable with a more compact syntax like the math equation above, that is great: but when you're learning something, be careful not to sacrifice clarity for compactness.
+
+
+
+
+
+
+Some parts of reality don't change, though. $2 + 3 = 5$, and we expect that to remain true indefinitely. It's hard to imagine a world where you have $\|\|$ things in your left hand and $\|\|\|$ things in your right hand, and all together there are not $\|\|\|\|\|$ things.
+
+We have words for such properties of the universe. Words like "addition". These words, like any other, are malleable. You can say "add me to the list" without implying that you and the list are numbers to be summed.
+
+The deep underlying rules of the universe can be described in English, but it is difficult. It is not difficult to completely define addition because addition is a difficult concept. Quite the opposite. It is difficult to use English words to define addition because addition is *simple*. Words are powerful. They say many things. The difficulty in describing addition stems from narrowing down the meaning. You must use many words to make sure you are specifying the single, simple rule that is addition.
+
+It is easy to say "addition is about combining numbers" -- but an alien might hear this and conclude that $1 + 2 = 12$. We must use many words to narrow down a very specific thing that happens in reality: the property that $\|\|$ things plus $\|\|\|$ things is $\|\|\|\|\|$ things, assuming that the things @post[act like numbers]foundations/number.
+
+
+
+
+
+
+It's also bad at expressing rules.
+
+Imagine teaching addition to an alien who knows English but not mathematics. You could say "addition is for combining numbers". They'll nod and conclude that 1 + 2 = 12.
+
+<!--TODO: Add a link to the operator sequence ADDITION definition here.-->
+The problem isn't that you can't describe addition in English. You surely can. It turns out it's a bit difficult to unambiguously define addition from scratch, but you can do it in English. Once you do, you can give that operation a name (addition). You can make up a symbol which carries the meaning ($+$).
+
+Once this word and this symbol end up in the language, they become part of modern parlance. They become malleable, just like the rest of language. You can say things like "add me to the list" without meaning $me + list =\ ???$.
+
+And that's fine too. Malleable language is good. However, there is some part of addition, some part of $+$, that is not malleable. There is some part of reality that *acts like addition*. Whenever you have this many things on your left:
+
+> $\|\|$
+
+and this many things on your right:
+
+> $\|\|\|$
+
+you have this many things in total:
+
+> $\|\|\|\|\|$
+
+This is a <span class="info" markdown="inline">*truth*</span>. It's a way that reality always acts. It is a fairly self-evident truth, but it is a truth all the same. And this truth, @post[no matter what you call it]reality/symbology, is not malleable. Any symbol which we attach to this truth, any word about this truth that enters our language, can be twisted: but the underlying truth cannot.
+
+<aside class="info" markdown="block">
+We happen to write this truth $2 + 3 = 5$, but it's true no matter what symbols you use to write it down.
+</aside>
+
+This truth seems self evident and perhaps not worth articulating. However, it's much less self-evident that $\|\|\|\|\|\|\|\|\|\|\|\|\| + \|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\| = \|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|$. If you ever have a warehouse with more than $\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|$ things then you'd best start figuring out the rules.
+
+There are two very interesting takeaways here. One is that @post[there are ways reality always acts]reality/rules. There are things that are true, and we can figure them out. The second takeaway is that figuring out the rules in simple cases lets us figure things out that are *way* @post[beyond our level]math/explore. If you try to add 16347 tick marks to 2857 tick marks, you'll almost certainly make a mistake. But, *because I know the rules that reality follows*, I can tell you right now that if you do it right you'll get $16347 + 2857 = 19204$ tick marks.
+
+Also, unlocking the secrets of the universe is the only way to sate your burning drive to discover the true nature of existence.
+
+When we discover or discuss rules of reality, we can't really use language. At least, we can't use the social languages. Social languages are varied and dynamic, for good reason. The rules of the universe are <span class="info" markdown="inline">completely unchanging</span>. We still use words and symbols, just like a social language, but we draw clear boundaries between the spoken language and the formal notation which describes truths.
+
+<aside class="info" markdown="block">
+If something that we thought was a rule ends up changing, then it turns out that it wasn't really a rule and we have to go back and figure out how and why it changed.
+</aside>
+
+The word "addition" in English is malleable. It can evolve over time. You can say "add me to the list" without wanting to be literally combined with a single list. But the *actual plus*, the rule that $\|\| + \|\|\| = \|\|\|\|\|$, is unchanging. "Add one to two" has holes in it. It can conceivably mean $1 + 2 = 12$. I'm allowed to form that sentence.
+
+But if we say it in formal notation, once we've defined all our axioms, then $1 + 2 = 3$. In the context of formal notation, $1 + 2 = 12$ is *wrong* -- once you've accepted the meaning of the symbols and acknowledged the axioms of arithmetic.
+
+We *can* describe the rules of the universe in English, but such descriptions usually leave holes for misinterpretation. The formal notation can only be interpreted one way, and that is its strength.
+
+The formal notation that we'll be using isn't the mainstream mathematics taught in schools, though it is something of a descendant. We'll be describing the equations in English as much as possible.
+
+The important thing to remember is that words are full of ambiguities and hand-waving. The formal notation is correct, regardless of what the sentences imply.

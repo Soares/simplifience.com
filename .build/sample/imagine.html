@@ -39,14 +39,15 @@
 			<article>
 				
 				
+				
 				<div class="caution">
-  <p>This is not a standard simplifience article. It provides minimal intuition for $i$ necessary to understand <a href="/sample/identity.html" target="_blank">Euler&#8217;s identity</a>. Both $i$ and Euler&#8217;s identity are <a href="/intro/contrives.html" target="_blank">contrives</a>, which are normally avoided.</p>
+  <p>This is not a standard simplifience article. It provides minimal intuition for $i$ necessary to understand <a href="/sample/identity.html">Euler&#8217;s identity</a>. Both $i$ and Euler&#8217;s identity are <a href="/intro/contrives.html">contrives</a>, which are normally avoided.</p>
 </div>
 
 <p>$i$ is called the &#8220;imaginary number&#8221;, as if all numbers aren&#8217;t imaginary. Let&#8217;s correct that misconception now: $i$ is no more <span class="info">nor less</span> imaginary than any other number.</p>
 
 <aside class="info">
-  <p>Note that all numbers are imaginary. Have you ever seen a seven? I&#8217;m not asking about <a href="/reality/symbology.html" target="_blank">the symbol</a>, but the thing which it represents. You can search the deepest reaches of outer space, but you&#8217;ll never find a wild seven.</p>
+  <p>Note that all numbers are imaginary. Have you ever seen a seven? I&#8217;m not asking about <a href="/reality/symbology.html">the symbol</a>, but the thing which it represents. You can search the deepest reaches of outer space, but you&#8217;ll never find a wild seven.</p>
 </aside>
 
 <p>Consider the number line. We&#8217;ve been filling it in for millennia.</p>
@@ -95,12 +96,12 @@
 <p>The &#8220;imaginary numbers&#8221; you&#8217;ve heard so much about are just the vertical axis of the number plane. Together with the original (&#8220;real&#8221;) number line this creates the <span class="info">complex plane</span>. Points on this plane are two-dimensional numbers.</p>
 
 <aside class="info">
-  <p>The &#8216;complex plane&#8217; is another poorly named <a href="/intro/contrives.html" target="_blank">contrive</a> ignored by simplifience.</p>
+  <p>The &#8216;complex plane&#8217; is another poorly named <a href="/intro/contrives.html">contrive</a> ignored by simplifience.</p>
 </aside>
 
 <div class="complex-plane"></div>
 
-<p>The entity $2 + 3i$ is written in two parts. Don&#8217;t let the notation confuse you: though disjoint, it is <a href="/reality/symbology.html" target="_blank">describing</a> a single unified 2D number (marked by the red dot). Why do we write one number in two parts? Don&#8217;t ask me. It&#8217;s a silly convention.</p>
+<p>The entity $2 + 3i$ is written in two parts. Don&#8217;t let the notation confuse you: though disjoint, it is <a href="/reality/symbology.html">describing</a> a single unified 2D number (marked by the red dot). Why do we write one number in two parts? Don&#8217;t ask me. It&#8217;s a silly convention.</p>
 
 <p>There are a few different ways that you can construct two-dimensional numbers. The complex plane is a type of 2D number that is really good at talking about rotation. Rotation, as it happens, is <span class="info">prevalent in reality</span>.</p>
 
@@ -156,7 +157,7 @@
 
 <p>There&#8217;s nothing special about imaginaries or complex numbers. Whenever we use imaginary numbers, we&#8217;re using a <em>number plane</em> instead of a <em>number line</em>. On this particular number plane, multiplication is scaling rotation.</p>
 
-<p>There are some more subtleties to the complex number plane, but that&#8217;s all you need to know about $i$ in order to understand <a href="/sample/identity.html" target="_blank">Euler&#8217;s identity</a>.</p>
+<p>There are some more subtleties to the complex number plane, but that&#8217;s all you need to know about $i$ in order to understand <a href="/sample/identity.html">Euler&#8217;s identity</a>.</p>
 				
 			</article>
 
@@ -220,12 +221,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

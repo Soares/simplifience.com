@@ -40,13 +40,14 @@
 				
 				<section id="stub">
 					This is the other half of my simplifience test.
-(See [Color Scheme Test](/test/theme.html){:target="_blank" .stub}.) I must never load this page in my browser:
+(See [Color Scheme Test](/test/theme.html){: .stub}.) I must never load this page in my browser:
 It's what I link to when I want to check the 'unvisited but existing stub'
 link style.
 				</section>
 				<aside class="stub">
 					This page is a stub!<br>Check back later for more conent.
 				</aside>
+				
 				
 				
 				
@@ -76,12 +77,27 @@ link style.
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

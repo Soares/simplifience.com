@@ -25,6 +25,11 @@
 					This page is a stub!<br>Check back later for more conent.
 				</aside>
 				{% endif %}
+				{% if type == 'rant' %}
+				<aside class="info">
+					This article is a rant. It may contain harsh language and hyperbole.
+				</aside>
+				{% endif %}
 				{% if developing or (not stub) %}
 				{% block content %}
 				{% endblock %}

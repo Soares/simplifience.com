@@ -46,6 +46,7 @@
 				</aside>
 				
 				
+				
 				<!--TODO: Address "this statement is false"-->
 
 <aside class="info inline">
@@ -64,7 +65,7 @@
   <p>Probably.</p>
 </aside>
 
-<p>Truth exists. We can argue over the word itself all you want, but <a href="/reality/symbology.html" target="_blank">the symbol is not the symbolized</a>. And at the end of the day, no matter what you call it or how much you <a href="http://en.wikipedia.org/wiki/Trivialism">insist otherwise</a>, <a href="http://lesswrong.com/lw/eqn/the_useful_idea_of_truth/">there is something that acts like truth</a>.</p>
+<p>Truth exists. We can argue over the word itself all you want, but <a href="/reality/symbology.html">the symbol is not the symbolized</a>. And at the end of the day, no matter what you call it or how much you <a href="http://en.wikipedia.org/wiki/Trivialism">insist otherwise</a>, <a href="http://lesswrong.com/lw/eqn/the_useful_idea_of_truth/">there is something that acts like truth</a>.</p>
 
 <p>No matter how hard you believe you will fly if you jump naked off of a cliff, you won&#8217;t. There is <a href="http://yudkowsky.net/rational/the-simple-truth">something out there</a> that distinguishes between what you believe is true and what actually is true in reality.</p>
 
@@ -99,12 +100,27 @@
 			tex2jax: {
 				inlineMath: [
 					['$', '$'],
-					['@@', '@@'],
 				]
 			},
 			"HTML-CSS": {
 				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
 			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
 		});
 	</script>
 	

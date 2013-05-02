@@ -7,41 +7,30 @@ This is not a pipe.
 
 ![Not a pipe](/images/not-a-pipe.jpg){:title="R. Magritte - Ceci n'est pas une pipe."}
 
-This is an image of a pipe. Similarly, this is not the number one:
+This is a depiction of a pipe.
+
+Similarly, this is not the number one:
 
 $1$
 {:.number}
 
-This is a *symbol* which evokes the <span class="info">number one</span> in your mind.
+This is a *symbol* which evokes the <span class="info">number one</span> in your mind. The true number one is our name for an abstract concept. It is how many noses you have on your face. It is how many biological fathers you have. It is not some frail collection of pixels on a screen.
 
-<!--TODO:
-<aside class="info" markdown="block">
-@post[Which one]number/schism does it invoke for you?
-</aside>
--->
-
-Human language is historically bad at making this distinction. $1 \frac{2}{3}$ is written using three numbers, but those symbols describe a single unified number lying somewhere between $1$ and $2$.
+Human language is historically bad at making this distinction. We say htat $1 \frac{2}{3}$ is written using three numbers. Yet we also say that $1 \frac{2}{3}$ is *one number* found partway between $1$ and $3$. It is very easy for humans to mix up the symbol with what the symbol means.
 
 Similarly, these scribbles on the screen that you are reading are not words. The *true* words are a sentiment being passed between you and I. They are qualia, something which these squiggles strive, but fail, to fully capture.
 
-It is <span class="info">easy to forget</span> this distinction. It is easy to say "zero is nothing" rather than "zero means nothing". Blurring this line is a road filled with [land mines](http://en.wikipedia.org/wiki/Trivialism). Do not mix up the word "truth" with <!--TODO: @post[that which it symbolizes]reality/truth -->[that which it symbolizes](http://yudkowsky.net/rational/the-simple-truth){:target="\_blank"}.
+It is easy to forget this distinction. It is easy to say "zero is nothing" rather than "zero means nothing". Blurring this line is a road filled with [land mines](http://en.wikipedia.org/wiki/Trivialism). Do not mix up the word "truth" with @post[that which it symbolizes]reality/truth.
 
-<aside class="info" markdown="block">
-Surely an error in how our minds work.
-</aside>
-
-[Vi Hart](http://vihart.com/) does a tremendous job explaining this in the midst of a fun video about cutting spacetime:
+[Vi Hart](http://vihart.com/) explains this in the midst of a fun video about cutting space and time:
 
 <iframe width="640" height="360" src="http://youtube.googleapis.com/v/WkmPDOq2WfA?start=19&end=67&version=3&autoplay=0" frameborder="0" allowfullscreen></iframe>
 
-If this is new to you, this should make you feel very cautious for two reasons.
+It is evolutionarily advantageous for a human mind to blur these lines. When you hear someone shout "Tiger!", you shouldn't have to try and remember what sort of real thing your friend associates with those particular syllables. When your friend shout's "Tiger" you'd better [feel the meaning](http://lesswrong.com/lw/nq/feel_the_meaning/) and run.
 
-1. Be wary of your symbols. It is possible (in fact, almost certain) that some symbols which you hold dear are @post[housing multiple meanings]foundations/mathematics. Don't be fooled into thinking that all things represented by the same symbol must be the same thing! When your symbols don't quite correspond to that which you're trying to describe it is very easy to get confused. Try to look past the symbol itself and see that which it symbolizes.
-2. The letters and symbols which we use to convey ideas are imperfect. A single word evokes something completely different in the two of us. Don't fall into the trap of thinking that saying the same words or reading the same page means you are both thinking the same thoughts.
+This is great for surviving the ancestral savannah but confusing when you're trying to understand how reality works. It's easy to think that physics is about manipulating symbols in equations, when actually the equations are just one particular representation of the *real* rules. It's easy to believe that $2$ *is* two, instead of remembering that $2$ is a symbol. The real two is how many eyes you have. The real two is how many parents it takes to make a child.
 
-Humans tend to think that everyone thinks like they do, but that is [usually not the case](http://lesswrong.com/lw/dr/generalizing_from_one_example/). Language and symbols are, at their core, imperfect. I leave you with some wise words from a man who proved himself very good at both learning and teaching:
-
-<iframe width="640" height="360" src="http://youtube.googleapis.com/v/Cj4y0EUlU-Y?start=135&version=3&autoplay=0" frameborder="0" allowfullscreen></iframe>
+Two is a name for an abstract property -- $2$ is just the symbol. Don't mix up symbols with that which they symbolize.
 
 <aside class="info" markdown="block">
 If you want to better understand the distinction between symbols and symbolized and where the lines begin to blur, try [Gödel, Escher, Bach: An Eternal Golden Braid](https://www.google.com/search?q=godel+escher+bach+an+eternal+golden+braid&tbm=shop).

@@ -1,102 +1,89 @@
 ---
 title: Math Class
-type: rant
 ---
 
-Math is like cheat codes.
+Schools shouldn't have math classes.
 
-&uarr; &uarr; &darr; &darr; &larr; &rarr; &larr; &rarr; $\beta$ $\alpha$
-{:style="font-size: 3em; text-align: center"}
+Math classes are detrimental to our students. Hear me out.
 
-I'm not here to garner appreciation for mathematics. I'm not implying that math allows you to hack reality and make your life better. Quite the opposite: Math is like cheat codes *for a game you aren't playing*.
+First and foremost, you've got to understand that @post[math isn't a thing]foundations/mathematics. 'Math' is a word that means too much. Some parts of it are socially universal: everyone needs to know what $7$ means. Other parts of it are pretty useless: practically nobody needs to know how to take the derivative of the product of two functions.
 
-Sure, sometimes you're playing the right game and you know the right codes. Then math is great. But most of the time, nobody's playing the game.
+If we lump all of these terms under the same umbrella of "mathematics" then it's hard to talk about education. Here's a challenge for you: Get a pencil and paper and write down the things that math class should teach without using any of the following words:
 
-Math education is forcing students to memorize the cheat codes for a game that they don't care about. Students -- often smarter than we give them credit for -- are aware that these boring equations are useless to them. But whenever they ask for purpose, teachers respond
-
-> Well, you might play this particular game one day. When you do, it's important to know the cheat codes.
-
-This is wrong in so many ways it's going to be difficult to enumerate them in a single narrative.
-
-For starters, the knee-jerk response to this drivel is "well then I'll never play your stupid game" -- and that's exactly what <span class="knowledge" markdown="inline">four out of five</span> students do. They avoid science, engineering, math, and technology because they were forced to learn the boring cheat codes for those games, and they sounded repetitive, so the games must be dull.
-
-<aside class="knowledge" markdown="block">
-Of the [$60\%$ of students who go to college](http://www.higheredinfo.org/dbrowser/index.php?submeasure=63&year=2008&level=nation&mode=graph&state=0), [less than a third](http://www.nsf.gov/nsb/sei/edTool/28X.xml) get [STEM](http://en.wikipedia.org/wiki/STEM_fields) degrees.
-</aside>
-
-This is a rational response to the <span class="info" markdown="inline">atrocious education</span> that we provide.
+* Math
+* Formula
+* Equation
+* Function
+* Algebra
+* Trigonometry
+* Geometry
+* Calculus
 
 <aside class="info" markdown="block">
-Suggestions come later.
+No synonyms, either.
 </aside>
 
-But the problem is worse than that. Imagine a situation where our math education works perfectly. Imagine a student who has memorized all of the right cheat codes and who's stumbled into exactly the right game. When this happens, we measure success by how quickly the student cheats their way through the game without ever actually playing.
+What we want out of math class isn't specific formulas or equations. Rather, we want our students to learn problem solving skills and general reasoning techniques. Math class is a poor way to fulfil that goal.
 
-The ability to memorize and apply formulas is not mathematics! It allows you to solve math problems in specific scenarios when you recognize that your memorized formula can be used, but that's all. Being able to do calculus doesn't make you Newton.
+Math classes are not without value, but the word "mathematics" is a confusion that hides what we're trying to teach.
 
-A student hasn't learned calculus when they can derive an equation. A student has learned calculus when I can walk into the school and erase calculus from their mind completely and *then they rebuild it*.
+***
 
-The big insight of mathematics is that certain types of problem show up everywhere -- biology, statistics, music, economics -- and if you can solve the problem once then you can use the same method to solve it anywhere. It doesn't matter what method you use. It doesn't matter what syntax or terminology you use. What matters is looking at a problem and saying "I've solved something like this elsewhere, can I use the same techniques here?"
-
-If you learn economics and then try to learn biology, it's easier because lots of problems are the same. It doesn't matter if you're asking how money grows or if you're asking how populations grow, understanding one makes it easier to understand the other.
-
-And yet we teach students calculus *first*. We tell them to <span class="info" markdown="inline">memorize these abstract formulas</span> that they don't understand the need for and *then* we show them biology problems and say "just apply that formula you memorized". Sure, it's easier: they apply a stored formula and the "right answer" (as determined by how the teacher grades it) comes out. But they don't understand *why*. If I erase the equations from their brain then they can't solve the problems any more.
+Teaching math is like teaching @post[door-opening]allegory/doors. Opening doors is surely a life skill. <span class="info" markdown="inline">Everyone needs to know</span> how to open front doors and car doors.
 
 <aside class="info" markdown="block">
-Because physics is far easier to cheat through if you've memorized calculus.
+Just like everyone needs to know what $7$ means, and that $7 + 3$ is $10$.
 </aside>
 
-The way we *should* teach calculus is by teaching biology and chemistry and physics and economics and throwing the same problem at students in each of their classes. Make them struggle with the same problem in ten guises until they start to see the pattern.
 
-Solving it once will be hard. The second time will be easier. Once they've solved the problem thrice, they'll be able to apply their techniques and solve it anywhere. *Now* they're starting to learn calculus.
 
-Throw the problem at them in ten new contexts to test their resolve. Once they start breezing through, throw it at them ten more ways. By the time they're done they'll know their technique so well that they can write it down. Take a look at what they wrote down. *That's* calculus. It's *their* calculus. If I erase the equations from their mind they'll be able to reconstruct it with ease: because it's an encoding of their own problem solving method.
+Some people need to know how to open space shuttle doors or military bunker doors, and some people will need to pick locks when they lock themselves out of the house. This doesn't mean we should teach door-opening class.
 
-Once you know calculus, the equations don't matter. You don't know mathematics until you can reconstruct the equations on your own.
+Advanced door-opening can teach important skills. Students who are good at picking locks will learn patience and a subtle precision that can be invaluable later in life, but that *still* doesn't mean we should teach a door-opening class.
 
-Math is just a collection of techniques. It's cheat codes for solving problems that show up all over the place. If you show students the cheat codes *first*, before they see the problems, then the codes are boring. It's like teaching students music by forcing them to <span class="info" markdown="inline">read the sheet music</span> for Beethoven's $5^{th}$ before ever hearing an instrument.
+Instead, we should teach reasoning and dexterity. With reasoning and dexterity you can open <span class="info" markdown="inline">almost any door</span>, but more importantly, you can do anything else that requires reasoning and dexterity. You aren't limited to doors.
 
 <aside class="info" markdown="block">
-You can learn a lot about fugues and music from Beethoven's $5^{th}$, but reading the sheet music is nothing compared to the power of song.
+If you get a job that requires you to open specialized doors, you learn how to open those doors on the job.
 </aside>
 
-Make them play the game first. Make them live through the repetition until they make up their own codes. When the students see the patterns they'll <span class="info" markdown="inline">exploit them on their own</span>. Then their techniques won't be cheat codes: they'll be shortcuts.
+Math works the same way. We shouldn't have "math" classes. There are parts of math that everyone needs to know, but we shouldn't have math classes. There are subtle skills and invaluable lessons that math teaches you, but we shouldn't have math classes. Instead, we should teach reasoning, abstraction, and generality.
 
-<aside class="info" markdown="block">
-It's human nature. When faced with a repetitive task you'll develop a technique to manage it. Problem-solving techniques are called 'math'.
-</aside>
+If you want students to know math, teach them everything else. Teach them how big things work and how small things work. Teach them how populations act and how governments react. Teach them how muscles move and how molecules form and where the rain comes from. Don't just make them memorize these things: make them predict. Give them problems to solve.
 
-It used to be good enough for students to memorize and apply the techniques handed down by the ancients. It used to be acceptable to memorize a bunch of derivative laws instead of really *knowing* calculus. Such students could turn the cranks and solve calculus problems, which weren't going to solve themselves.
+Synchronize classes so that each class gives students the same problem in different guises. Have them calculate population growth in one class and monetary growth in another. Have them balance utilities in one class and balance energies in another. Show them the same problem again and again in different clothing.
 
-Those days are behind us. Now we can teach computers to apply formulas. Calculus problems *can* solve themselves. One computer programmer isn't worth ten number crankers, nor even one hundred: one computer programmer is worth *all* of the number crankers. Programming a computer to solve a problem once allows computers to solve that problem a billion times per second, forever.
+Do this, and mathematics is what falls out of the process. It's is everything students take from one class and use in another.
 
-We don't need people who can apply calculus any more. We need people who can *invent* calculus.
+> Math should be taught indirectly.
 
-## What can we do about it?
+Math is just another name for problem-solving techniques. Modern math classes force students to memorize specific techniques. That's not the same thing as teaching students to solve problems.
 
-Math class is like @post[door-opening]allegory/doors class. Opening doors is surely a life skill. Everyone should know how to open front doors and car doors.
+@post[Math equations are like cheat codes]math/codes to a game that most people don't play. Forcing students to memorize formulas is not mathematics. It helps them through the state exams, but it isn't mathematics.
 
-Some people need to know how to open space shuttle doors or military bunker doors, and some people will need to pick locks when they lock themselves out of the house. This doesn't mean we should teach door-opening: instead, we should teach reasoning and dexterity. With reasoning and dexterity people can get through all of the doors they'll usually encounter (and do much more besides). If they get a job with specialized doors, they'll learn how to open them on the job.
+Mathematics is the realization that techniques used to solve a problem once can solve the problem anywhere. If we want students to realize that, we need to keep giving them similar problems until they start to see the patterns and realize that they can invent shortcuts on their own.
 
-Math is the same way. We shouldn't have "math" classes. Math is just techniques for solving problems. Instead, we should teach students many other subjects. Teach them how big things work and how small things work. Teach them how populations act and how governments react. Teach them how muscles work and how molecules work and where the rain comes from. But don't just make them memorize these things: make them predict. Give them problems to solve.
+---
 
-Do this, and math is whatever falls out of the process. Math is everything that they take from one class and use in another class.
+It used to be enough for students to memorize and apply techniques handed down by the ancients. It used to be acceptable to memorize a bunch of derivative laws instead of really *knowing* calculus.
 
-This amount of math is enough for the average person, and it's far more important than <span class="info" markdown="inline">trigonometry</span>. The ability to look at a problem and develop your own methods of finding a solution, instead of memorizing the teacher's solution, is an incredibly important skill.
+Students who memorized the rules could turn the cranks and solve calculus problems. Schools pumped out graduates who knew just enough to turn the cranks. Only the best and brightest ever invented new techniques, and that was fine -- whenever one person invented a new technique, hundreds were necessary to calculate the results. Calculus problems weren't going to solve themselves.
 
-<aside class="info" markdown="block">
-With sufficient reasoning skills you can *invent* trigonometry. If you memorize trigonometry then it's next to useless.
-</aside>
+Those days are behind us. In this day and age we teach computers to apply formulas. Calculus problems *can* solve themselves. One computer programmer isn't worth ten number crankers, nor even one hundred: one computer programmer is worth *all* of the number crankers.
 
-Being able to create problem-solving techniques is more important that calculus, trigonometry, and algebra combined.
+When you program a computer to solve a problem once, it can solve that problem a billion times per second, forever.
 
-It is not important that our students know algebra -- it is important that our students have the reasoning skills to *invent* algebra. We shouldn't be satisfied when they memorize a particular algebraic syntax. We should be satisfied only when they've invented something akin to algebra for solving the problems that we throw at them.
+We don't need people who can apply calculus equations anymore. We need people who can invent calculus.
 
-<!--TODO: Suggest abstraction classes for advanced students.-->
+---
 
-Mathematics should be taught indirectly.
+It is not important that our students know algebra -- it is important that our students have the reasoning skills to *invent* algebra. It doesn't matter whether they've memorized a particular algebraic syntax. What matters is being able to confront new algebra-level problems and solve them without help. What matters is teaching our students to problem solve on their own.
 
-We don't need everyone to know calculus. We don't need everyone to know trigonometry. We don't need everyone to know *any* specific techniques. What we need everyone to know is that *there are techniques*. We need people to realize that math isn't about solving problems: math is about *eliminating* problems.
+We shouldn't be satisfied until our students have invented their own techniques akin to algebra in response to the problems that we throw at them.
+
+This skill is hard to teach, and yet this single skill is more important than calculus, trigonometry, and algebra combined.
+
+We don't need everyone to know calculus. We don't need everyone to know trigonometry. We don't need everyone to know *any* specific techniques. Instead, we need everyone to know that *there are techniques*. We need people to realize that math isn't about solving problems: math is about *eliminating* problems.
 
 Math is about solving a problem so hard than next time you come across something that looks even remotely similar, <span class="info" markdown="inline">it's already solved</span>.
 
@@ -104,15 +91,13 @@ Math is about solving a problem so hard than next time you come across something
 The ability to eliminate whole swaths of problem in one fell swoop is a driving force behind technology.
 </aside>
 
-What matters is understanding that problems have patterns to them. If you develop a method to solve one, you can solve them all. Newton, Einstein, and Maxwell weren't people who were especially good at remembering the product rule. They didn't discover laws of the universe by being really good at memorizing trigonometry. They did their work by inventing new ways to solve problems.
+What matters is understanding that problems have patterns to them. If you develop a method to solve one, you can solve them all. Newton, Maxwell, and Einstein weren't people who were especially good at remembering the product rule. They didn't discover laws of the universe by being really good at memorizing trigonometry. They advanced humanity by *inventing new ways to solve problems*.
 
-After students understand how to make their own techniques, once they prove that they can look at problems and find their own ways to solve them, *then* we can start <span class="info" markdown="inline">giving them the cheat codes</span>. We can rush them through the problems that humanity has already solved in order to get their minds to the forefront of our understanding.
+We can't teach students how to handle every problem that they will ever face. Instead, we must teach them how to stare a problem in the eyes and invent their own solution. This lesson is the single most important lesson that we can teach schoolchildren.
 
-<aside class="info" markdown="block">
-At that point they may not want the cheat codes. Few feelings compare to discovering new truths. Some people won't want spoilers.
-</aside>
+After students understand how to make their own techniques, once they prove they can confront problems and find their own ways to solve them, *then* we can show them all of the ancient formulas. *Then* we can rush them through the problems we've already solved and bring their minds to the forefront of our understanding.
 
-We should only do this once we're convinced that they can invent mathematics on their own. That skill, *not the specific equations*, is the important part of math.
+We must not do this until we're convinced they can invent mathematics on their own. That skill, *not the specific equations*, is the important part of math.
 
 We have no shortage of equation solvers. What we need are people who can walk out to the very edge of human knowledge, stare into the wild unknown, and say
 

@@ -94,6 +94,9 @@ body.main #main a.stub:visited.missing {
   background: #ff7400;
   color: #099;
 }
+body.main #main hr {
+  border-color: #006363;
+}
 body.main #main div.nav h3 {
   color: #ff7400;
 }
@@ -336,6 +339,9 @@ body.rules #main a.stub.missing,
 body.rules #main a.stub:visited.missing {
   background: #fa0;
   color: #1240ab;
+}
+body.rules #main hr {
+  border-color: #06266f;
 }
 body.rules #main div.nav h3 {
   color: #fa0;
@@ -580,6 +586,9 @@ body.rigor #main a.stub:visited.missing {
   background: #ffd300;
   color: #3914af;
 }
+body.rigor #main hr {
+  border-color: #200772;
+}
 body.rigor #main div.nav h3 {
   color: #ffd300;
 }
@@ -822,6 +831,9 @@ body.simplifience #main a.stub.missing,
 body.simplifience #main a.stub:visited.missing {
   background: #ff0;
   color: #7109aa;
+}
+body.simplifience #main hr {
+  border-color: #48036f;
 }
 body.simplifience #main div.nav h3 {
   color: #ff0;
@@ -1066,6 +1078,9 @@ body.knowledge #main a.stub:visited.missing {
   background: #ffd300;
   color: #cd0074;
 }
+body.knowledge #main hr {
+  border-color: #85004b;
+}
 body.knowledge #main div.nav h3 {
   color: #ffd300;
 }
@@ -1308,6 +1323,9 @@ body.rant #main a.stub.missing,
 body.rant #main a.stub:visited.missing {
   background: #fa0;
   color: #f00;
+}
+body.rant #main hr {
+  border-color: #a60000;
 }
 body.rant #main div.nav h3 {
   color: #fa0;
@@ -1552,6 +1570,9 @@ body.stub #main a.stub:visited.missing {
   background: #099;
   color: #ff7400;
 }
+body.stub #main hr {
+  border-color: #a64b00;
+}
 body.stub #main div.nav h3 {
   color: #099;
 }
@@ -1794,6 +1815,9 @@ body.caution #main a.stub.missing,
 body.caution #main a.stub:visited.missing {
   background: #3914af;
   color: #ff0;
+}
+body.caution #main hr {
+  border-color: #a6a600;
 }
 body.caution #main div.nav h3 {
   color: #3914af;
@@ -2038,6 +2062,9 @@ body.define #main a.stub:visited.missing {
   background: #7109aa;
   color: #0c0;
 }
+body.define #main hr {
+  border-color: #008500;
+}
 body.define #main div.nav h3 {
   color: #7109aa;
 }
@@ -2280,6 +2307,9 @@ body.computer #main a.stub.missing,
 body.computer #main a.stub:visited.missing {
   background: #dc322f;
   color: #002b36;
+}
+body.computer #main hr {
+  border-color: #586e75;
 }
 body.computer #main div.nav h3 {
   color: #dc322f;
@@ -2729,16 +2759,25 @@ div.cap footer .logo a:hover {
   clear: both;
   margin-bottom: 1.5em;
 }
+#main article hr {
+  border: none;
+  border-top-width: 1px;
+  border-top-style: solid;
+  height: 1px;
+  background: none;
+  margin-bottom: 1.5em;
+  margin-top: 0.75em;
+}
 #main article h1 {
   font-size: 28px;
 }
 #main article ul,
 #main article ol {
   margin: 0;
-  margin-bottom: 1.5em;
   padding-left: 2.5em;
   padding-right: 1em;
   box-sizing: border-box;
+  margin-bottom: 7px;
 }
 #main article blockquote {
   box-sizing: border-box;

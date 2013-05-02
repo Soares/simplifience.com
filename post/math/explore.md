@@ -1,119 +1,81 @@
 ---
-title: Exploring the Rules
-stub: |
-  Exploring the rules is fun and awe inspiring.
+title: Trailblazing
+type: rules
+scripts:
+- '@raphael/parallel'
 ---
-Mathematics is a beautiful thing.
+Many millennia ago, at the dawn of math, a man called Euclid laid out the foundations of geometry.
 
-I'm sure you've heard that before. You likely don't believe it. Most of you have been poorly introduced to mathematics by a teacher who was *also* poorly introduced to mathematics, and you didn't get a good first impression.
+He derived his geometry from @post[axioms]reality/axioms. Given any situation where those five axioms, all the tools of geometry could be used. Knowledge of architecture and engineering flowed from these five postulates which Euclid used to construct his geometry:
 
-Modern math education is akin to teaching music by forcing students to memorize Beethoven's fugues. It's a disgrace and a tragedy, considering the beauty of the subject.
+1. You can draw a straight line between any two points.
+2. Any such line can be extended in a straight line indefinitely.
+3. Given any line segment you can make a circle with one point in the center and the line segment as the radius.
+4. All right angles are identical.
+5. If a line segment intersects two straight lines forming two interior angles on the same side that sum to less than two right angles, then the two lines, if extended indefinitely, meet on that side on which the angles sum to less than two right angles.
 
-![Fractal](/images/julia.png)
+One of these things is not like the other.
 
-Mathematics can be used to generate pretty images as seen above, or beautiful <span class="info" markdown="inline">flowers and sunsets</span> as found in nature. And yet, these do not possess the true beauty of mathematics. Mathematics is found in the structure of beauty, surely, but the beautiful things themselves are not math. A song is beautiful when you listen to it, but you cannot listen to math.
+Four of these postulates are dirt simple -- you can draw lines, you can extend them, you can draw circles, and right angles are all the same.
 
-<aside class="info" markdown="block">
-The human concept of beauty is tightly intertwined with math and symmetry.
-</aside>
+Most people need a pen and paper to figure out what the fifth postulate is trying to say.
 
-But if the beauty of math is not the beauty of a power, then whence math's power?
+What it's trying to say is that parallel straight lines don't intersect.
 
-It helps to understand what I mean when I say the word "mathematics". The word means different things to different people. To you it may evoke simple arithmetic, memorized multiplication tables, or the triangles and circles of geometry. It may invoke statistics, graphs, or fractals such as the one pictured above. Or perhaps it means absent-minded professors and people who sit around thinking all day.
+This simple concept is intuitive: if you draw straight lines on a piece of paper, it's obvious they don't intersect. However, this postulate was difficult to formalize in a way that didn't overlap with the other four postulates.
 
-These are things that the word "math" evokes. But what *is* mathematics?
+If two of your postulates overlap, that's a sign they aren't good axioms: there's a simpler way to express them without overlap. It perturbed Euclid that the parallel postulate was so difficult to describe without overlap.
 
-{% call post.meditation(url, 'What is mathematics?', 'what-is-math') %}
-What is it really? Define it in your own words.
-{% endcall %}
+The problem wasn't that the fifth postulate was hard to come by. It's not difficult in and of itself. The problem was that if you put the fifth postulate next to statements like "you can draw lines", it seems very out of place.
 
-![Blue Flower](/images/blue-flower.jpg)
+The problem was worse than that, though. These five axioms are the *assumptions* of geometry. They're the foundations. They're like the definitions of angles, lines, and circles.
 
-Mathematics is a simple thing. Mathematics is *the rules*.
+The fact that parallel lines don't intersect doesn't feel like it should be an *assumption* of geometry. The parallel postulate feels like it should be a *result* of geometry.
 
-The universe we live in is ordered. There are things that we expect to happen, and things which we do not expect to happen.
+If I'm teaching you geometry, I shouldn't have to show you two lines and say "assume they never intersect". I should say "they *don't* intersect, and I can prove it."
 
-There is quite a bit of chaos in our universe, of course: but our expectations are dominated by order. We believe that tomorrow will follow today. We believe that the sun will continue shining, the plants continue growing. We *don't* believe that a pink elephant will pop out of the sky, the world will be made of bananas, and the sun will turn out to be a chocolate cake.
+With the parallel postulate, mathematicians couldn't prove that straight lines don't intersect. They could only *assume* it to be true. This tiny little postulate, the parallel postulate, was unprovable.
 
-When we wake up in the morning we expect to find ourselves in a universe still ordered very much like the universe we went to sleep in. Consider how extraordinary that belief is! There are mind-bogglingly many configurations of all of the matter in the universe. If you were to pick a state of the universe at random, it would almost certainly be a crazy incoherent mess of all the energy. When you wake up in the morning, you don't expect the molecules in your arm to be floating near Venus. You don't expect your mother to be spread in tiny pieces across the stars.
+<div class="parallel"></div>
 
-*You expect tomorrow to be <span class="info" markdown="inline">very similar</span> to today.* These are *rules*. And when there's rules, it's helpful to know what they are. When humans were growing up on the ancestral savannas, they had to know that when rocks went up they eventually came down. They had to know how to throw a spear. They had to learn the rules of hunting, the rules of socializing, the rules of politicking. The world is dependable, and it's much easier to survive if you know exactly what you can depend upon.
+For centuries, mathematicians frothed. The postulate was termed "the wart on geometry". Cultured society agreed that there *must* be a way to derive the fifth postulate from the other four postulates. The rich, the bored, and the intellectual all tried their hands where Euclid himself had failed. They all tried to rid geometry of its single flaw.
 
-<aside class="info" markdown="block">
-In the grand scheme of things. Even if the world is wiped out by an asteroid tomorrow, it's still more similar than a random distribution of all matter throughout the entire universe.
-</aside>
+[Many](http://en.wikipedia.org/wiki/Proclus) [a](http://en.wikipedia.org/wiki/Omar_Khayy%C3%A1m) [mathematician](http://en.wikipedia.org/wiki/Nasir_al-Din_al-Tusi) tried their hand at this problem over the centuries. Many a proof was found and later found faulty.
 
-In fact, understanding the rules of the universe is the primary tool of humanity. It allowed us to build everything from simple tools to grand coliseums to space ships and computers. When you know the rules you can find their edges and push the limits of the possible.
+They tried everything they could think of. When all of that failed, they tried the impossible. They assumed that the fifth postulate was false -- that straight parallel lines *do* intersect or diverge. They adopted these absurd postulates and explored the absurd implications looking for contradictions -- for if they found a contradiction, they could reverse it into a proof.
 
-Mathematics is the art of studying the rules.
+Yet despite all the absurdities of a geometry where parallel lines intersect, there were no contradictions.
 
-Any time you write the rules down, that's mathematics. Here's the beautiful thing about mathematics:
+<div class="bent"></div>
 
-<!--TODO: Cool geometry problem-->
+Finally, *more than two millenia later*, Albert Einstein discovered that the fifth postulate does not hold.
 
-The answer doesn't matter right now. The beauty of mathematics is that *there is an answer*.
+In our universe, *parallel lines can intersect and diverge.*
 
-The answer is not up for debate. It does not care what I believe. *Once I have laid down the rules*, I have narrowed down the answer.
+There are places in reality where parallel lines converge, counter to our intuition. We, intuitive beasts that we are, see convergence where we expect lines to remain parallel and conclude that there is a mysterious invisible force drawing the lines together.
 
-And here's the second beauty of mathematics: Even when it is I who laid down the rules, and even if I understand them perfectly, *I can ask questions of those rules of which I do not know the answer*. The rules can teach me things. Knowing the rules does not automatically allow me to know what the rules say: but they allow me to find out.
-
-This is <span class="define" markdown="inline">mathematics</span>. Any time you find something with rules and you write those rules down, that's mathematics. This is how mathematics reveals itself in music and flowers and fractals: mathematics is just *rules*. It is a formal description of anything ordered.
-
-<aside class="define" markdown="block">
-__Mathematics__ *n.* Formalized rules.
-</aside>
-
-I grow confused when people say that they do not like mathematics. This is akin to saying that they do not like order, that they do not like living in a universe that follows rules. Unfortunately, our education system teaches mathematics by making students memorize boring rules. Unfortunately, the language by which we commonly formalize our rules is old and crufty and full of gotchas.
-
-But *mathematics is not arithmetic*, and *mathematics is not the crusty symbols we use to describe it*. Mathematics is *any* rules that describe a system.
-
-
-
-
-
-Don't shirk from mathematics. *Any time you describe how anything works*, you've just used mathematics. Don't be confused by the <span class="info" markdown="inline">silly symbols</span> that you often find in textbooks. @post[These symbols are not mathematics]reality/symbology!
-
-They are <span class="info" markdown="inline">one notation</span> for mathematics: a notation that we will oft ignore.
+But there is not. In our universe, lines can be straight, parallel, and convergent. This ghost force which we think is drawing them together is called "<span class="info" markdown="inline">gravity</span>".
 
 <aside class="info" markdown="block">
-An old notation invented long before anyone @post[knew what they were doing]math/archaic.
+This is a rather simplified explanation missing a number of key points. We'll re-visit gravity later.
 </aside>
 
-Hate the silly old math notation, if you like. Hate "math" education that thinks memorization of the rules is a good substitute for exploring them. But don't hate math itself.
+When Einstein discovered the true nature of gravity, *the formalizations were already there*. Centuries of labor had produced hundreds of books trying to prove the fifth postulate, never imagining that they were laying down formulae describing the nature of the universe.
 
-<span class="define" markdown="inline">Mathematics</span> is just a description of anything which works.
+Meditate on that for a moment. Ancient humans in millennia past felt vaguely dissatisfied with a postulate that they felt was out of place. In trying to formulate the rules of their surroundings, they found that something "obvious" -- that parallel lines don't converge -- couldn't be proven. They had to write it down as an assumption.
 
-<aside class="define" markdown="block">
-__Mathematics__ *n.* Formalized rules.
-</aside>
+This failure bothered them. In their attempts to fix their formulations, they stumbled upon the nature of reality: that their intuition was faulty all along.
 
+This is the power of mathematics. We live in a universe that @post[follows rules]reality/rules, and those rules happen to be beautiful. By investigating our assumptions carefully and refusing to ignore discrepancies we can discover the underlying laws of nature.
 
+The above story is not a localized example. Time and time again, scientists find that their new discoveries are *already* supported by formalizations, that the work was done for them centuries ago by curious mathematicians striving to sate their curiosity.
 
-
-
-
-Some people like making up their own rules and then seeing what happens.
-
-![Fractal](/images/julia.png)
-
-This can be both fun and rewarding in its own right, and it's what math professors do. Simplifience is mostly concerned with the real world, so we'll be exploring the rules that apply to reality.
-
-Don't shirk from mathematics. *Any time you describe how anything works*, you've just used mathematics. Don't be confused by the <span class="info" markdown="inline">silly symbols</span> that you often find in textbooks. @post[These symbols are not mathematics]reality/symbology!
+<span class="info" markdown="inline">Math</span> isn't about memorizing the rules of geometry very well. Math isn't about being really really good at solving geometry problems.
 
 <aside class="info" markdown="block">
-Like $\Sigma$, $\Pi$, $\sqrt{}$ and $i$.
+Here I'm talking about "math" in the context of "exploring the rules of a system". Math has @post[many meanings]foundations/mathematics.
 </aside>
 
-They are <span class="info" markdown="inline">one notation</span> for mathematics: a notation that we will oft ignore.
+Math is about looking at the rules and saying "hey, that's not quite right." Math is about chasing down that dissatisfaction and stumbling across the true nature of reality.
 
-<aside class="info" markdown="block">
-An old notation invented long before anyone @post[knew what they were doing]math/archaic.
-</aside>
-
-Hate the silly old math notation, if you like. Hate "math" education that thinks memorization of the rules is a good substitute for exploring them. But don't hate math itself.
-
-<span class="define" markdown="inline">Mathematics</span> is just a description of anything which works.
-
-<aside class="define" markdown="block">
-__Mathematics__ *n.* Formalized rules.
-</aside>
+Reality follows rules. There are a few people who learn to listen to rules, and fewer still who strive to simplify them, who seek the beauty beneath them. These people blaze the trail that leads to understanding.

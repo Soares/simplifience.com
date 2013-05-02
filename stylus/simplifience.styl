@@ -93,14 +93,22 @@ div.cap
 	article
 		clear both
 		margin-bottom $line-size
+		hr
+			border none
+			border-top-width 1px
+			border-top-style solid
+			height 1px
+			background none
+			margin-bottom $line-margin * 2
+			margin-top $line-margin
 		h1
 			font-size $content-header-size
 		ul, ol
 			margin 0
-			margin-bottom $line-size
 			padding-left 2.5em
 			padding-right 1em
 			box-sizing border-box
+			margin-bottom $text-size * .5
 		blockquote
 			box-sizing border-box
 			font-style italic

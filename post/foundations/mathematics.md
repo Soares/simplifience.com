@@ -1,12 +1,21 @@
 ---
 title: Discarding Mathematics
 name_in: {Foundations: The First Confusion}
+sequence: Abandonding Math
+members:
+- ../math/archaic
+- ../reality/axioms
+- ../reality/formalization
+- ../reality/rules
+- ../math/explore
+- ../math/codes
+- ../math/education
 ---
-There is a major confusion embedded in your mind, a term that is trying to do too much.
+There is a major confusion embedded in your mind, a term that is trying to mean too much.
 
 That term is "Mathematics".
 
-If you ask the average layperson what they think of mathematics, their reaction will likely range from pure hatred to mild distaste. When these people hear the term "mathematics", they think of theorems and proofs that they were forced to memorize. They think of the strange and @post[archaic]math/archaic symbols used to express @post[obvious-in-retrospect]reality/obvious ideas.
+If you ask the average layperson what they think of mathematics, their reaction will likely range from pure hatred to mild distaste. The word "mathematics" elicits theorems and proofs that they were forced to memorize. They think of the strange and @post[archaic]math/archaic symbols used to express @post[obvious-in-retrospect]reality/obvious ideas.
 
 $\sum\limits\_{n=0}^\infty x_n$
 {:.number}
@@ -15,7 +24,7 @@ $\sum\limits\_{n=0}^\infty x_n$
 Math is outdated notation from ancient times.
 </aside>
 
-If you ask someone who has studied engineering or the sciences what they think of mathematics, they will tell you that math is not something which can be loved or hated, for math is simply <span class="simplifience" markdown="inline">the rules</span>. It is any pattern, any symmetry, any abstraction. You can no more hate math than you can hate the fact that @post[reality is ordered]reality/unordered. Sure, the *language* of math is a bit old, but @post[symbols are not symbology]reality/symbology. Math is not the language, it's *what the language says*.
+If you ask someone who has studied engineering or the sciences what they think of mathematics, they will tell you that math is not something which can be loved or hated, for math is simply The Rules. It is any pattern, any symmetry, any abstraction. You can no more hate math than you can hate the fact that @post[reality is ordered]allegory/unordered. Sure, the *language* of math is a bit old, but @post[symbols are not symbology]reality/symbology. Math is not the language, it's *what the language says*.
 
 ![Blue Flower](/images/blue-flower.jpg)
 
@@ -23,7 +32,7 @@ If you ask someone who has studied engineering or the sciences what they think o
 Math stands behind all that we find beautiful. It is symmetry and it is patterns.
 </aside>
 
-If you ask a mathematician what they think of mathematics, they will answer that math is the @post[exploration]math/explore of the rules. Given any axioms, math is about plumbing the logical depths that those axioms imply. It's about listening to what the rules say, and discovering new true things. It requires incredible creativity and modesty and the rewards are boundless, but it's not for everyone.
+If you ask a mathematician what they think of mathematics, they will answer that math is the @post[exploration]math/explore of the rules. Given any axioms, math is about plumbing the logical depths that those axioms imply. It's about listening to what the rules say and discovering new true things. It requires incredible creativity and modesty and the rewards are boundless, but it's not for everyone.
 
 ![Julia](/images/julia.png)
 
@@ -31,13 +40,13 @@ If you ask a mathematician what they think of mathematics, they will answer that
 Simple axioms can lead to incredible beauty.
 </aside>
 
-These are three wildly different definitions for "mathematics". So what *is* mathematics, really?
+These are three wildly different definitions for "mathematics". Which is it?
 
 Is it $\Sigma$ and $+$ and $\frac{1}{4}$ and the other cumbersome notation?
 
-Is it the underlying rules of any system, regardless of the notation used?
+Is it the underlying truths of any system, regardless of the notation used?
 
-Or is it instead the exploration of those sets of rules, the pursuit of truth?
+Or is it the exploration of underlying rules, the pursuit of truth?
 
 Mathematics is *all of these things*. It is a word that <span class="info" markdown="inline">means too much</span>.
 
@@ -47,20 +56,14 @@ Mathematics suffers the [compression fallacy](http://lesswrong.com/lw/nw/fallaci
 
 Simplifience discards the term "Mathematics". We shatter it into its component parts and use those instead.
 
-The *underlying rules of any system* will be referred to simply as "@post[the rules]reality/rules".
+The *underlying rules of any system* don't need a special name. They're just @post[The Rules]reality/rules which flow from @post[The Axioms]reality/axioms.
 
-The *language and notation* used to describe such rules will be referred to as "@post[formal notation]reality/formal-notation" or sometimes just "formalization". We will be rigorous, formal, and well-defined, but we will not be beholden to history.
+The *language and notation* used to describe such rules will be referred to as the "@post[formalization]reality/formalization". Models and systems have formalizations. If they work, you can figure out how and write it down. The specific squiggles that you use are inconsequential.
 
-The exploration of the rules, the pursuit of truth, is @post[not a part]math/explore of simplifience. Exploration of the rules is among the noblest of pursuits. It leads to deep and unexpected truths which greatly expand our knowledge of the universe. It is the realm of those who wish to step beyond simplifience and <span class="info" markdown="inline">discover new rules</span>.
+The exploration of rules in pursuit of new truths is not within our scope. Exploration of underlying rules is among the @post[noblest of pursuits]math/explore. It leads to deep and unexpected revelations which greatly expand our knowledge of the universe. It is the realm of those who wish to step beyond simplifience and <span class="info" markdown="inline">discover new laws of reality</span>.
 
 <aside class="info" markdown="block">
-Simplifience covers the rules we've already discovered. With luck simplifience will leave you inquisitive about what truths lie beyond.
+Simplifience covers rules we've already discovered. With luck simplifience will leave you inquisitive about what truths lie beyond.
 </aside>
 
-Math is not a single word: it is one label trying to mean too many things.
-
-Once you realize that 'mathematics' was a @post[contrive]intro/contrives the problem is easily solved. We simply shatter the word and move on.
-
-After breaking up the word we are free to describe the same *underlying rules* with a better *formal notation* and without the exploratory overtones latent in standard @post[mathematics education]math/education.md.
-
-We now leave this cumbersome word behind and step to the second confusion that permeates our formalisms, our language, and our culture. I'm afraid the second confusion will not fall quite so easily as did Mathematics.
+Math is not a single word: it is one label trying to mean too many things. It is a @post[contrive]intro/contrives. We should not use the word: we should shatter it and move on.
