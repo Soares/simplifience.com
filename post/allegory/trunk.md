@@ -37,9 +37,25 @@ Within one scant generation, the blind scientists discovered that the Trunk was 
 
 ![Seven Blind Monks and an Elephant](/images/elephant.png)
 
-To this day, the blind scientists teach their children about the great elephant called "The Trunk". In one such classroom, upon this very morning, a curious child raised her hand.
+Unfortunately, the revelation got muddled as it trickled down from the scientists to the general population. The entire language of science -- and indeed, the colloquial language of their culture -- focused around trees, roots, boughs, and leaves. The language could express elephants, but the laypeople had difficulty setting down their floral allegories and idioms.
 
-"Why do we call it the trunk", this student piped up, "if it's an elephant?"
+Elephant biology proved far more complex than the study of the bark (now known to be skin) of the Trunk. Teachers avoided introducing students to the idea of the Elephant until they'd mastered knowledge of the World Tree. For if you couldn't understand the Elephant's leg, what chance did you have understating the entire Elephant?
+
+With only the best and brightest ever told about the elephant, the message that reached the laypeople was sorely distorted. Pop scientists grabbed at headlines that scientists technically couldn't distpute:
+
+> **Scientists discover there are four world trees!**
+
+The laypeople spoke among themselves in awed confusion, repeating statements that seemed to them to be nonsensical:
+
+> The *true* Trunk isn't in any of the for World Trees. They say the true trunk is somewhere *beyond*.
+
+The laypeople shook their heads and wondered. How could the trunk of the World Tree not be in the tree? Surely, the realm of science was beyond their simple minds.
+
+Of the few students who could master elementary Trunk theory (the study of the elephant's leg), fewer still went on to advanced trunk theory. Those that finally learned of the elephant were awed by the beautiful simplicity of the theory, by how it explained away the absurdities on the lips of the laypeople.
+
+One such student in an advanced trunk theory class raised her hand and asked a question of her teacher.
+
+"Why do we still call it the Trunk", this student chimed, "if it's really an elephant?"
 
 "Well", the teacher said, "we've always called it the Trunk, since time unremembered."
 

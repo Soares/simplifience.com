@@ -16,6 +16,8 @@ This is getting ridiculous. Names are powerful things. They shape how we think a
 
 Don't get me wrong. Discovering new things is great. But if you want to make students learn who discovered which constants, put it in a "History of Math and Science" class.
 
+Names should give you a feeling for what something is. When you hear a name for a new concept, the name should prepare you for the meaning. If the name is taken after an old dead person, all it can do is put your mind in a historical context. The names of scientists are opaque. They tell us nothing about the nature of that which they label.
+
 The names of scientists have no place in the rules of reality. When the goal is understanding, we must call things what they are.
 
 <aside class="info" markdown="block">

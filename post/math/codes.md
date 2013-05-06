@@ -1,5 +1,5 @@
 ---
-title: Math Codes
+title: Cheat Codes
 type: rant
 ---
 

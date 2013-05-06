@@ -121,3 +121,52 @@ We *can* describe the rules of the universe in English, but such descriptions us
 The formal notation that we'll be using isn't the mainstream mathematics taught in schools, though it is something of a descendant. We'll be describing the equations in English as much as possible.
 
 The important thing to remember is that words are full of ambiguities and hand-waving. The formal notation is correct, regardless of what the sentences imply.
+
+
+
+
+
+As science grew up, it got better at avoiding these pitfalls. Humans got better at going out to reality and checking their claims. Humans got better at demanding theories which *actually said things* instead of just shuffling labels around. The impact on science was *enormous* -- we had an industrial revolution, landed people on the moon, and invented the internet. Science got far better at avoiding the obvious mistakes.
+
+<aside class="info" markdown="block">
+We got *better* at avoiding these mistakes, but we certainly haven't eliminated them. Humans are easy to mislead and slow to learn the lessons of history.
+</aside>
+
+Though science got better at avoiding the obvious errors, humanity recently stumbled upon a completely new class of scientific error: we discovered that sometimes the models we make are only *mostly* right. The old absolute physics was completely overturned by the discoveries of relativity. The absolute models of motion were superseded by relativistic models.
+
+This was a special new kind of wrong. The absolute models were still correct in most cases. They helped build airplanes and skyscrapers. They were worth believing: they made real predictions, and reality bore those predictions out, and the predictions allowed humanity to do incredible things.
+
+*And they were still wrong.*
+
+Absolute physics worked in most applications that common engineers could think up, but the absolute model of motion assumed axioms that reality does not follow. Absolute physics is right in some cases. In fact, it's right in most common cases that a human will think up. But it's not right in *all* cases -- as soon as you ask the right questions, absolute physics shatters like glass.
+
+---
+
+We don't teach students about the five elements. Oh, sure, we might *mention* the five elements. We say things like "the silly Greeks thought the world was made of only air, fire, earth, and water". We <span class="info" markdown="inline">scoff</span> at such a delusion. We never teach it as truth.
+
+<aside class="info" markdown="block">
+It is easy to forget the difficulty of @post[having obvious ideas]reality/obvious.
+</aside>
+
+We don't teach élan vital or phlogiston, either. They don't belong in science classes. History of science, perhaps, but not science.
+
+Why, then, do we still teach absolute physics?
+
+Absolute models of motion are wrong. They're a good approximation for most motion in small spaces, but they're wrong. Why, then, do physics classes *start* by teaching outdated Newtonian mechanics?
+
+There are two major justifications for this madness which don't hold up under pressure.
+
+
+* Newtonian mechanics is simpler. Students just aren't ready to learn relativistic mechanics when they're in high school.
+
+---
+
+Who in their right mind would try to teach Newtonian mechanics before relativistic mechanics? I can think of two possible justifications for this madness:
+
+* Newtonian mechanics is more useful. Relativity and quantum mechanics might be the truth, but neither will tell you how to build an airplane. If you live on earth, you need to know earth-centric simplifications.
+
+This argument sure made a lot of sense, *two hundred years ago*. We used to need engineers who could crunch the numbers and build bridges that didn't fall down. We used to need aeronautical engineers who could turn the cranks and make airplanes a little better. Now we have computers.
+
+@post[We don't need crank-turners any more]math/education. Newtonian mechanics is a good approximation of motion in the common ranges that humans usually see them. But humans don't *need* to know those equations any more. The pool champions of the world aren't really really good at solving differential equations in their heads. You don't need to know the laws of gravity before you can play catch. Your brain already approximates the rules that you need to know in your everyday life, and computers already calculate them with precision for engineers.
+
+---

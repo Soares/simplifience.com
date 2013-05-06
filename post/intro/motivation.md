@@ -9,7 +9,7 @@ Math and Science are wrong.
 
 They're not incorrect. There are other ways to be wrong.
 
-Math makes @post[three grievous mistakes]math/archaic. Science inherits all the same mistakes and adds @post[two of its own]science/mire. Math and science are riddled with @post[contrives]intro/contrives: confusing names, stale concepts, and viewpoints grown twisted over the millennia.
+Math makes @post[three grievous mistakes]math/archaic. Science inherits all the same mistakes and adds @post[two of its own]science/wrongs. Math and science are riddled with @post[contrives]intro/contrives: confusing names, stale concepts, and viewpoints grown twisted over the millennia.
 
 The net result is a confusing bloated mess. The nature of existence is obfuscated by archaic languages. The secrets of reality are locked in textbooks guarded by a @post[personhood cult]intro/names.
 

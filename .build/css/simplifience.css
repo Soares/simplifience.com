@@ -825,18 +825,18 @@ body.simplifience #main a:active {
 }
 body.simplifience #main a.stub,
 body.simplifience #main a.stub:visited {
-  color: #ff0;
+  color: #fa0;
 }
 body.simplifience #main a.stub.missing,
 body.simplifience #main a.stub:visited.missing {
-  background: #ff0;
+  background: #fa0;
   color: #7109aa;
 }
 body.simplifience #main hr {
   border-color: #48036f;
 }
 body.simplifience #main div.nav h3 {
-  color: #ff0;
+  color: #fa0;
 }
 body.simplifience #main div.nav aside.info a {
   color: #fff;
@@ -854,7 +854,7 @@ body.simplifience footer a.blog {
   color: #48036f;
 }
 body.simplifience footer aside h3 {
-  color: #ff0;
+  color: #fa0;
   text-shadow: 1px 1px 1px #48036f;
 }
 body.simplifience footer aside li {
@@ -872,7 +872,7 @@ body.simplifience footer aside a:hover {
 }
 body.simplifience footer aside a.stub,
 body.simplifience footer aside a.stub:visited {
-  color: #ff0;
+  color: #fa0;
 }
 body.simplifience #main svg .colored {
   stroke: #48036f;
@@ -931,7 +931,7 @@ body #main aside.simplifience h6,
 body.simplifience #main aside.info h6,
 body #main div.simplifience h6,
 body.simplifience div.info h6 {
-  color: #ffff73;
+  color: #ffd073;
 }
 body #main aside.simplifience .MathJax span,
 body.simplifience #main aside.info .MathJax span,
@@ -983,7 +983,7 @@ body #main aside.simplifience a.stub:hover,
 body.simplifience #main aside.info a.stub:hover,
 body #main div.simplifience a.stub:hover,
 body.simplifience div.info a.stub:hover {
-  color: #ff0;
+  color: #fa0;
 }
 body #main aside.simplifience a.stub.missing,
 body.simplifience #main aside.info a.stub.missing,
@@ -997,7 +997,7 @@ body #main aside.simplifience a.stub:hover.missing,
 body.simplifience #main aside.info a.stub:hover.missing,
 body #main div.simplifience a.stub:hover.missing,
 body.simplifience div.info a.stub:hover.missing {
-  background: #ff0;
+  background: #fa0;
   color: #7109aa;
 }
 body span.simplifience,
@@ -1071,18 +1071,18 @@ body.knowledge #main a:active {
 }
 body.knowledge #main a.stub,
 body.knowledge #main a.stub:visited {
-  color: #ffd300;
+  color: #fa0;
 }
 body.knowledge #main a.stub.missing,
 body.knowledge #main a.stub:visited.missing {
-  background: #ffd300;
+  background: #fa0;
   color: #cd0074;
 }
 body.knowledge #main hr {
   border-color: #85004b;
 }
 body.knowledge #main div.nav h3 {
-  color: #ffd300;
+  color: #fa0;
 }
 body.knowledge #main div.nav aside.info a {
   color: #fff;
@@ -1100,7 +1100,7 @@ body.knowledge footer a.blog {
   color: #85004b;
 }
 body.knowledge footer aside h3 {
-  color: #ffd300;
+  color: #fa0;
   text-shadow: 1px 1px 1px #85004b;
 }
 body.knowledge footer aside li {
@@ -1118,7 +1118,7 @@ body.knowledge footer aside a:hover {
 }
 body.knowledge footer aside a.stub,
 body.knowledge footer aside a.stub:visited {
-  color: #ffd300;
+  color: #fa0;
 }
 body.knowledge #main svg .colored {
   stroke: #85004b;
@@ -1177,7 +1177,7 @@ body #main aside.knowledge h6,
 body.knowledge #main aside.info h6,
 body #main div.knowledge h6,
 body.knowledge div.info h6 {
-  color: #ffe773;
+  color: #ffd073;
 }
 body #main aside.knowledge .MathJax span,
 body.knowledge #main aside.info .MathJax span,
@@ -1229,7 +1229,7 @@ body #main aside.knowledge a.stub:hover,
 body.knowledge #main aside.info a.stub:hover,
 body #main div.knowledge a.stub:hover,
 body.knowledge div.info a.stub:hover {
-  color: #ffd300;
+  color: #fa0;
 }
 body #main aside.knowledge a.stub.missing,
 body.knowledge #main aside.info a.stub.missing,
@@ -1243,7 +1243,7 @@ body #main aside.knowledge a.stub:hover.missing,
 body.knowledge #main aside.info a.stub:hover.missing,
 body #main div.knowledge a.stub:hover.missing,
 body.knowledge div.info a.stub:hover.missing {
-  background: #ffd300;
+  background: #fa0;
   color: #cd0074;
 }
 body span.knowledge,
@@ -2528,12 +2528,6 @@ html body.computer #main aside.info a,
 body #main div.computer a,
 html body.computer div.info a {
   text-shadow: 1px 1px 1px #002b36;
-}
-body.simplifience #main a.stub {
-  color: #fa0;
-}
-body.knowledge #main a.stub {
-  color: #fa0;
 }
 aside.define em:first-of-type:after {
   content: "\a";

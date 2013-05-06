@@ -156,8 +156,8 @@ complement = $orange
 theme('main', $teal, $orange, $blue)
 theme('rules', $blue, $gold, $teal)
 theme('rigor', $navy, $amber, $teal)
-theme('simplifience', $violet, $yellow, $magenta)
-theme('knowledge', $magenta, $amber, $violet)
+theme('simplifience', $violet, $gold, $magenta)
+theme('knowledge', $magenta, $gold, $violet)
 theme('rant', $red, $gold, $violet)
 theme('stub', $orange, $teal, $blue)
 theme('caution', $yellow, $navy, $blue)
@@ -203,14 +203,6 @@ body #main aside.computer, html body.computer #main aside.info,
 body #main div.computer, html body.computer div.info
 	a
 		text-shadow 1px 1px 1px $pure($solarized)
-
-// Simplifience unvisited stubs are too light.
-body.simplifience #main a.stub
-	color $pure($gold)
-
-// Science unvisited stubs are too light.
-body.knowledge #main a.stub
-	color $pure($gold)
 
 // Definitions have a line break after the first <em>.
 aside.define
