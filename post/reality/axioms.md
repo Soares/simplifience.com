@@ -63,6 +63,9 @@ Fortunately, all is not lost. Even when reality doesn't *completely* obey our ax
 
 If you try to add a trillion apples to a trillion apples, you won't end up with two trillion apples. You'll end up with a tiny planet made from the crushed remains of two trillion apples. Addition doesn't apply to apples in the long term, because apples don't follow all the axioms. Apples can get crushed into a tiny planet. Numbers can't.
 
+> As far as the propositions of mathematics refer to reality, they are not certain; and as far as they are certain, they do not refer to reality.
+{:title="Albert Einstein"}
+
 But we don't need an "if" for the model to work. We need a "when".
 
 *When* apples follow the axioms of addition -- when you kid isn't eating them, and you friend isn't picking more, and they aren't crushing themselves into a tiny planet -- *then* the discoveries of addition apply to apples.
