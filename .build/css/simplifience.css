@@ -2939,6 +2939,28 @@ hr.mark {
 #stub {
   margin-bottom: 0.75em;
 }
+div.video-container {
+  padding: 0 2%;
+  margin-bottom: 0.75em;
+}
+div.video {
+  position: relative;
+  padding-bottom: 56.25%;
+/* 16:9 */
+  padding-top: 30px;
+/* IE6 hack */
+  height: 0;
+  overflow: hidden;
+}
+div.video iframe,
+div.video object,
+div.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 #main svg {
   display: block;
   margin-bottom: 0.75em;
