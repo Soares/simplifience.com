@@ -15,6 +15,7 @@ blocks:
 
 <div class="nav asides">
   <div class="block">
+    <!--The Lay of the Land, Formal Foundations, Intuitive Explanations-->
     <!--<h3>Start here</h3>-->
     <aside class="info">
       <ul>
