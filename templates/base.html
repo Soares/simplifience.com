@@ -57,6 +57,7 @@
 	{% for script in scripts %}
 	<script type="text/javascript" src="{{ script }}"></script>
 	{% endfor %}
+	{% block inlinejs %}{% endblock %}
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-30196171-1']);

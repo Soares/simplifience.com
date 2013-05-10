@@ -15,7 +15,7 @@ All of those feelings can be traced back to electrochemical signals in your brai
 
 But they are not *just* the result of neurons firing. They are not *merely* the firing neurons. Your awareness *is* the result of neurons firing. It is extraordinary, awe-inspiring, and beautiful. And it is neurons firing.
 
-Your consciousness, your awareness, is founded in the laws of physics -- *and that does not detract from your experiences*. If anything, it makes them @post[more beautiful]reality/beauty. The fact that your awareness can be understood @post[does not make it worse]reality/magic. You've got to @post[learn to live in a lawful universe]reality/understand, because you do.
+Your consciousness, your awareness, is founded in the laws of physics -- *and that does not detract from your experiences*. If anything, it makes them @post[more beautiful]reality/beauty. The fact that your awareness can be understood @post[does not make it worse]reality/magic. You've got to learn to live in a lawful universe, because you do.
 
 Reality is all there is. Anything that is real, is part of reality. Everything that is not a part of reality, is not real. @post[Reality can be understood]reality/simple. That does not make reality mere.
 
@@ -31,7 +31,7 @@ All those beautiful thoughts, all those beautiful sights, all those beautiful fe
 
 Science can explain them, but explaining something does not take it away.
 
-You do not have to understand your mind. @post[Understanding gives you super powers]reality/super-powers. Those who come to understand their own selves are better able to @post[steer the future]reality/mind. But the road to understanding is not an easy one, and there is no dishonor in choosing a different path.
+You do not have to understand your mind. @post[Understanding gives you super powers]reality/knowledge. Those who come to understand their own selves are better able to @post[steer the future]reality/mind. But the road to understanding is not an easy one, and there is no dishonor in choosing a different path.
 
 That said, you must know that the mind can be understood, even if you choose not to understand it. It can be understood, even if no one understands it yet. Even if you decide not to seek understanding, please promise me that you will not feel betrayed when somebody else attains it.
 

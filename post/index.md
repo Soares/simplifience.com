@@ -6,7 +6,7 @@ blocks:
       <h3>Sequences</h3>
       <ul>
         {% for name, members in allsequences.items() %}
-        <li><a target="_blank" href="{{ members[0] }}">{{ name }}</a></li>
+        <li><a href="{{ members[0] }}">{{ name }}</a></li>
         {% endfor %}
       </ul>
     </aside>

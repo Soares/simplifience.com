@@ -1,5 +1,17 @@
 ---
 title: Totally Unpredictable
+blocks:
+  inlinejs: |
+    <script type="text/javascript">
+    $(window).load(function() {
+      $('#noise').waypoint(function(direction) {
+        if (direction != 'down') {
+          return;
+        }
+        alert("Error. Nothin̹g̉ e̥͉ͤx͈̅i͖ș͑ ͈t̆  s");
+      }, {offset: 'bottom-in-view'});
+    });
+    </script>
 ---
 You snorted with concept as you walked home. @post[Reality follows rules]reality/order -- how boring. Who thought that one up? If reality was just a little less lax about all those cold hard rules, maybe there would be @post[fairies]reality/beauty and dragons and unicorns and stuff, instead of just @post[boring old rainbows]reality/magic.
 
@@ -33,6 +45,6 @@ f̴͑acͩ͵t PrͶ̤in̥͆cị̷pl
 asͧ̒
 </div>
 
-<img src="/images/noise.png" style="position: relative; left: 0; 100; width: 100%; max-width: 100%; height: auto; margin-top: -40em; z-index: 1;"/>
+<img id="noise" src="/images/noise.png" style="position: relative; left: 0; 100; width: 100%; max-width: 100%; height: auto; margin-top: -40em; z-index: 1;"/>
 
 <div style="height: 1000em"> </div>

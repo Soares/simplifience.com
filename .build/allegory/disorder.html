@@ -72,7 +72,7 @@ f̴͑acͩ͵t PrͶ̤in̥͆cị̷pl
 asͧ̒
 </div>
 
-<p><img src="/images/noise.png" style="position: relative; left: 0; 100; width: 100%; max-width: 100%; height: auto; margin-top: -40em; z-index: 1;" /></p>
+<p><img id="noise" src="/images/noise.png" style="position: relative; left: 0; 100; width: 100%; max-width: 100%; height: auto; margin-top: -40em; z-index: 1;" /></p>
 
 <div style="height: 1000em"> </div>
 				
@@ -137,6 +137,16 @@ asͧ̒
 	
 	<script type="text/javascript" src="/js/post.js"></script>
 	
+	<script type="text/javascript">
+$(window).load(function() {
+  $('#noise').waypoint(function(direction) {
+    if (direction != 'down') {
+      return;
+    }
+    alert("Error. Nothin̹g̉ e̥͉ͤx͈̅i͖ș͑ ͈t̆  s");
+  }, {offset: 'bottom-in-view'});
+});
+</script>
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', 'UA-30196171-1']);
