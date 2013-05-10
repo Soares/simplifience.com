@@ -38,4 +38,3 @@ This is humbling. Reality didn't have to be like this. We can imagine universes 
 But *ours are simple*. The rules that we've found so far have been simpler than the complexities they allow. Our universe is a place that lends itself well to understanding.
 
 So let's go out there and understand it.
-

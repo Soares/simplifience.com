@@ -15,4 +15,4 @@ When you've obtained understanding of a concept, the concept feels obvious. The 
 
 $2 + 3 = 5$ not because that's what the symbols tell you when you torture them. $2 + 3 = 5$ because if you put $&bull;&bull;$ with $&bull;&bull;&bull;$ then you have $&bull;&bull;&bull;&bull;&bull;$.
 
-When you understand something, it doesn't feel like a memorized set of symbols and formulae and equations. When you truly understand something, it feels like the truth.
+When you understand something, it doesn't feel like a memorized set of symbols and formulae and equations. When you truly understand something, it feels like the gut-level intuitive truth.
