@@ -21,6 +21,8 @@ But it's not science that stole the fairies from the sky. That was done by reali
 
 Fairies don't actually exist. Science did not kill them: *they were never there*. Reality is the one that stripped them, by dint of non-existence.
 
+Perhaps it would have been fun to live in a world with fairies and dragons and gods: but we do not. We do not get to choose the universe we are born into. We only get to choose what to do now that we're here.
+
 Hercules is not in the stars. Rainbows are not fairy roads to leprechaun gold. There are no gnomes in the gardens. *This is not the fault of science* -- this is the way things are. This is how reality turned out to be.
 
-Science doesn't strip the beauty from the world. Science didn't strip the constellations from the sky. Science didn't empty Mount Olympus of its gods. Quite the opposite: when reality began to look like it had no magic, @post[science restored the wonder]reality/beauty.
+Science doesn't strip the beauty from the world. Science didn't strip the constellations from the sky. Science didn't empty Mount Olympus of its gods. Quite the opposite: whenever reality began to look like it has @post[no magic]reality/magic, @post[science restores the wonder]reality/beauty.

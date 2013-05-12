@@ -19,10 +19,13 @@ colored(color)
 	fill $pure(color)
 	stroke $dark(color)
 
+colored-text(color)
+	color $pure(color)
+	stroke-width 0
+
+
 #main svg
-	text
-		font-family: MathJax_Math
-	path.arc
+	path.arc, path.line, circle.line
 		fill none
 	path
 		stroke black
@@ -54,3 +57,29 @@ colored(color)
 		colored($celadon)
 	.green
 		colored($green)
+	text
+		font-family: MathJax_Math
+		&.teal
+			colored-text($teal)
+		&.blue
+			colored-text($blue)
+		&.navy
+			colored-text($navy)
+		&.violet
+			colored-text($violet)
+		&.magenta
+			colored-text($magenta)
+		&.red
+			colored-text($red)
+		&.orange
+			colored-text($orange)
+		&.gold
+			colored-text($gold)
+		&.amber
+			colored-text($amber)
+		&.yellow
+			colored-text($yellow)
+		&.celadon
+			colored-text($celadon)
+		&.green
+			colored-text($green)

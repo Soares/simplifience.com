@@ -2533,6 +2533,42 @@ aside.define em:first-of-type:after {
   content: "\a";
   white-space: pre;
 }
+span.teal {
+  color: #099;
+}
+span.blue {
+  color: #1240ab;
+}
+span.navy {
+  color: #3914af;
+}
+span.violet {
+  color: #7109aa;
+}
+span.migenta {
+  color: $migenta;
+}
+span.red {
+  color: #f00;
+}
+span.orange {
+  color: #ff7400;
+}
+span.gold {
+  color: #fa0;
+}
+span.amber {
+  color: #ffd300;
+}
+span.yellow {
+  color: #ff0;
+}
+span.celadon {
+  color: #9fee00;
+}
+span.green {
+  color: #0c0;
+}
 .ie7 #title {
   padding-top: 20px;
 }
@@ -2980,10 +3016,9 @@ div.video embed {
 #main .inactive {
   opacity: 0.3;
 }
-#main svg text {
-  font-family: MathJax_Math;
-}
-#main svg path.arc {
+#main svg path.arc,
+#main svg path.line,
+#main svg circle.line {
   fill: none;
 }
 #main svg path {
@@ -3041,6 +3076,57 @@ div.video embed {
 #main svg .green {
   fill: #0c0;
   stroke: #008500;
+}
+#main svg text {
+  font-family: MathJax_Math;
+}
+#main svg text.teal {
+  color: #099;
+  stroke-width: 0;
+}
+#main svg text.blue {
+  color: #1240ab;
+  stroke-width: 0;
+}
+#main svg text.navy {
+  color: #3914af;
+  stroke-width: 0;
+}
+#main svg text.violet {
+  color: #7109aa;
+  stroke-width: 0;
+}
+#main svg text.magenta {
+  color: #cd0074;
+  stroke-width: 0;
+}
+#main svg text.red {
+  color: #f00;
+  stroke-width: 0;
+}
+#main svg text.orange {
+  color: #ff7400;
+  stroke-width: 0;
+}
+#main svg text.gold {
+  color: #fa0;
+  stroke-width: 0;
+}
+#main svg text.amber {
+  color: #ffd300;
+  stroke-width: 0;
+}
+#main svg text.yellow {
+  color: #ff0;
+  stroke-width: 0;
+}
+#main svg text.celadon {
+  color: #9fee00;
+  stroke-width: 0;
+}
+#main svg text.green {
+  color: #0c0;
+  stroke-width: 0;
 }
 @media only screen {
   div.cap .definition {
