@@ -1,7 +1,6 @@
 ---
 title: Scientific Missteps
 type: knowledge
-stub: Some mistakes of science, and some tips for avoiding them.
 ---
 Science has been wrong before.
 

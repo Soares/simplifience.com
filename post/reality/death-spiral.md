@@ -34,7 +34,7 @@ Rather, those are images of chairs. If we were in person, I would point out a ch
 
 Do you start to see what chairs are?
 
-Chairs are not an exact cluster of objects. There are objects that straddle the line between chair and stool, or chair and tree-stump, or chair and rotted wooden wreckage. But you are not the chair-arbiter, and @post[the edges of the group are not important]reality/edges. If someone asks what a chair is, they don't need detailed rules for how to distinguish between a chair, a broken chair, and scrap wood. They need you to direct them towards the [cluster of things](http://lesswrong.com/lw/nl/the_cluster_structure_of_thingspace/) to which you attach the "chair" label.
+Chairs are not an exact cluster of objects. There are objects that straddle the line between chair and stool, or chair and tree-stump, or chair and rotted wooden wreckage. But you are not the chair-arbiter, and @post[the edges of the group are not important]language/edges. If someone asks what a chair is, they don't need detailed rules for how to distinguish between a chair, a broken chair, and scrap wood. They need you to direct them towards the [cluster of things](http://lesswrong.com/lw/nl/the_cluster_structure_of_thingspace/) to which you attach the "chair" label.
 
 If you can only describe a word in terms of other words, then that's a good sign that either you don't quite understand the word, or the word isn't connected to reality. Show, don't tell. Give examples. *Point me towards* the cluster of things that fall under your label. Use descriptions to help me narrow down the cluster if I become confused. But as a rule of thumb, show first and tell later.
 

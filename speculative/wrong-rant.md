@@ -3,7 +3,6 @@ title: Stop teaching the wrongs first
 type: rant
 stub: We teach wrong things first. We shouldn't.
 ---
-
 JESUS MAN STOP WITH THE ITALICS
 
 Science textbooks make it a habit to teach you the wrong things first.
