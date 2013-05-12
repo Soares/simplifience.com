@@ -7,7 +7,7 @@ Many have written extensively on this topic. I try not to repeat them. Follow th
 
 > "But how can you say what's really *true*? Your truth is no better than my truth!"
 
-A question asked far too often. This question is what you get when you combine the @post[impossibility of certainty]reality/proof with a @post[philosophical death spiral]reality/death-spiral.
+A question asked far too often. This question is what you get when you combine the @post[impossibility of certainty]reality/certainty with a @post[philosophical death spiral]reality/death-spiral.
 
 I'm nearly positive that you can never be certain of anything. That does not mean that there's no such thing as "truth".
 
