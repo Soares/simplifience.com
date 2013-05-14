@@ -20,7 +20,7 @@ Perhaps the most famous contrive is $\pi$, the radius lengths in half a turn.
 
 <div class="unroll" data-counter="on" data-pistop="on"></div>
 
-$\pi$ alone, while relatively harmless, makes it harder to see the truth in any formula involving circles. Every time you want to describe a turn you have to add an extra factor of two. $\frac{\pi}{2}$ radians is a quarter circle, not a half circle.
+$\pi$ alone, while relatively harmless, makes it harder to see the truth in any formula involving circles. Every time you want to describe a turn you have to add an extra factor of two. $\frac{\pi}{2}$ radians is a quarter turn, not a half turn.
 
 I mention $\pi$ because it is a [hotly contested](http://tauday.com/tau-manifesto){:target="\_blank"} contrive with [popular support](http://www.youtube.com/watch?v=jG7vhMMXagQ){:target="\_blank"}. Yet even poor contrived $\pi$ has its advocates. The other contrives lurking in your brain are far less visible than $\pi$. They hardly seem to matter when taken individually.
 
