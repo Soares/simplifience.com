@@ -7,8 +7,7 @@ Seems obvious, right? During a recession, you can't save as much. Salaries stagn
 
 Like the results of all psychology experiments, the results of this experiment were obvious. It's not entirely clear why psychologists spent the money during the study, when the answer could have easily been predicted in advance.
 
-{% call post.meditation('income-portion-prediction', 'What are the chances you would have predicted this in advance?') %}
-{% endcall %}
+{% call post.meditation('income-portion-prediction', 'What are the chances you would have predicted this in advance?') %}{% endcall %}
 
 ![Dollar](/images/dollar.jpg)
 

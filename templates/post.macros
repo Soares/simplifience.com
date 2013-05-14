@@ -9,11 +9,12 @@
 <form class="meditate" method="post" action="http://meditate.simplifience.com/meditate">
   <input type="hidden" name="u" value="{{ url }}#{{ name }}" />
   <div class="text">
-    <a class="meditation stub" href="post/meditate.html">Meditation:</a>
+    <a class="meditation" href="http://wiki.lesswrong.com/wiki/Meditation">Meditation:</a>
     <span class="question">{{ question }}</span>
-    <div class="description">
-      {{ caller() }}
-    </div>
+    {% set text = caller() %}
+    {% if text %}
+    <div class="description">{{ text }}</div>
+    {% endif %}
   </div>
   <textarea name="m" placeholder="Type your thoughts."></textarea>
   <button type="submit" class="proceed">Done</button>
