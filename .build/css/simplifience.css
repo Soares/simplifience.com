@@ -51,7 +51,7 @@ body.main #main p a.meditation:hover,
 body.main #main form.meditate button.proceed:hover {
   background: #006363;
   border-color: #099;
-  color: #5ccccc;
+  color: #3cc;
 }
 body.main #main p a.meditation:active,
 body.main #main form.meditate button.proceed:active {
@@ -297,7 +297,7 @@ body.rules #main p a.meditation:hover,
 body.rules #main form.meditate button.proceed:hover {
   background: #06266f;
   border-color: #1240ab;
-  color: #6c8cd5;
+  color: #4671d5;
 }
 body.rules #main p a.meditation:active,
 body.rules #main form.meditate button.proceed:active {
@@ -543,7 +543,7 @@ body.rigor #main p a.meditation:hover,
 body.rigor #main form.meditate button.proceed:hover {
   background: #200772;
   border-color: #3914af;
-  color: #876ed7;
+  color: #6a48d7;
 }
 body.rigor #main p a.meditation:active,
 body.rigor #main form.meditate button.proceed:active {
@@ -789,7 +789,7 @@ body.simplifience #main p a.meditation:hover,
 body.simplifience #main form.meditate button.proceed:hover {
   background: #48036f;
   border-color: #7109aa;
-  color: #ad66d5;
+  color: #9f3ed5;
 }
 body.simplifience #main p a.meditation:active,
 body.simplifience #main form.meditate button.proceed:active {
@@ -1035,7 +1035,7 @@ body.knowledge #main p a.meditation:hover,
 body.knowledge #main form.meditate button.proceed:hover {
   background: #85004b;
   border-color: #cd0074;
-  color: #e667af;
+  color: #e6399b;
 }
 body.knowledge #main p a.meditation:active,
 body.knowledge #main form.meditate button.proceed:active {
@@ -1281,7 +1281,7 @@ body.rant #main p a.meditation:hover,
 body.rant #main form.meditate button.proceed:hover {
   background: #a60000;
   border-color: #f00;
-  color: #a60000;
+  color: #ff4040;
 }
 body.rant #main p a.meditation:active,
 body.rant #main form.meditate button.proceed:active {
@@ -1527,7 +1527,7 @@ body.stub #main p a.meditation:hover,
 body.stub #main form.meditate button.proceed:hover {
   background: #a64b00;
   border-color: #ff7400;
-  color: #a64b00;
+  color: #ff9640;
 }
 body.stub #main p a.meditation:active,
 body.stub #main form.meditate button.proceed:active {
@@ -1773,7 +1773,7 @@ body.caution #main p a.meditation:hover,
 body.caution #main form.meditate button.proceed:hover {
   background: #a6a600;
   border-color: #ff0;
-  color: #a6a600;
+  color: #ffff40;
 }
 body.caution #main p a.meditation:active,
 body.caution #main form.meditate button.proceed:active {
@@ -2019,7 +2019,7 @@ body.define #main p a.meditation:hover,
 body.define #main form.meditate button.proceed:hover {
   background: #008500;
   border-color: #0c0;
-  color: #008500;
+  color: #39e639;
 }
 body.define #main p a.meditation:active,
 body.define #main form.meditate button.proceed:active {
@@ -2265,7 +2265,7 @@ body.computer #main p a.meditation:hover,
 body.computer #main form.meditate button.proceed:hover {
   background: #586e75;
   border-color: #002b36;
-  color: #268bd2;
+  color: #2aa198;
 }
 body.computer #main p a.meditation:active,
 body.computer #main form.meditate button.proceed:active {
@@ -3183,6 +3183,7 @@ body.meditating #meditating {
   display: block;
 }
 body #main > article p a.meditation {
+  overflow: auto;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -3243,6 +3244,7 @@ body #main > article form.meditate textarea {
 body #main > article form.meditate .disclaimer {
   opacity: 0.2;
   font-size: 0.75em;
+  line-height: 0.75em;
 }
 body #main > article form.meditate .proceed {
   float: right;

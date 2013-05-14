@@ -22,7 +22,7 @@ Science is about figuring out how things *actually work*.
 
 When you're trying to understand a complex process, you can't just stick a label on the confusing parts and pretend it's explained. You've got to break it down and figure out what is actually going on.
 
-These were not the <span class="info" markdown="inline">only mistakes</span> of science. History is littered with them. Humans are biased. We're notoriously bad at letting go of our ego and actually *listening to reality*. We love to clutch our comfortable preferred world views and look for reasons that they must be true, instead of opening up our ears. We're only taught the right answers and the path @post[looks clear in retrospect]reality/obvious, but it was not so easy to forge.
+These were not the <span class="info" markdown="inline">only mistakes</span> of science. History is littered with them. Humans are biased. We're notoriously bad at letting go of our ego and actually *listening to reality*. We love to clutch our comfortable preferred world views and look for reasons that they must be true, instead of opening up our ears. We're only taught the right answers and the path @post[looks clear in retrospect]bias/hindsight, but it was not so easy to forge.
 
 <aside class="info" markdown="block">
 Another common mistake is @post[forgetting science's domain]science/purview.

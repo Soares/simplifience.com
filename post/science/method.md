@@ -34,7 +34,7 @@ A scientific theory must be [falsifiable](http://en.wikipedia.org/wiki/Falsifiab
 
 The revelation of science was that you can't figure out how reality works by sitting in your armchair arguing philosophy. If you want to actually understand reality, you have to go outside and *ask reality*.
 
-This sounds @post[obvious in retrospect]reality/obvious, but it was a big deal at the time. The idea that theology and philosophy have less say over how reality works than reality itself was neigh heretical for the majority of human history.
+This sounds @post[obvious in retrospect]bias/hindsight, but it was a big deal at the time. The idea that theology and philosophy have less say over how reality works than reality itself was neigh heretical for the majority of human history.
 
 This promotion of reality over human stories triggered the scientific revolution. It led to radios and space ships and medicine and computers. It's one of the most important ideas in history.
 

@@ -18,7 +18,7 @@
   <textarea name="m" placeholder="Type your thoughts."></textarea>
   <button type="submit" class="proceed">Done</button>
   <span class="disclaimer">
-    You're more likely to remember solutions if you try to solve the problem first yourself.
+    You're more likely to remember solutions if you give your own answer first.
   </span>
 </form>
 

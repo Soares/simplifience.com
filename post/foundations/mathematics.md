@@ -15,7 +15,7 @@ There is a major confusion embedded in your mind, a term that is trying to mean 
 
 That term is "Mathematics".
 
-If you ask the average layperson what they think of mathematics, their reaction will range from mild distaste to pure hatred. The word "mathematics" evokes boring theorems and arduously memorized proofs. It brings to mind the strange and @post[archaic]math/archaic symbols used to express @post[obvious-in-retrospect]reality/obvious ideas.
+If you ask the average layperson what they think of mathematics, their reaction will range from mild distaste to pure hatred. The word "mathematics" evokes boring theorems and arduously memorized proofs. It brings to mind the strange and @post[archaic]math/archaic symbols used to express @post[obvious-in-retrospect]bias/hindsight ideas.
 
 $\sum\limits\_{n=0}^\infty x_n$
 {:.number}
