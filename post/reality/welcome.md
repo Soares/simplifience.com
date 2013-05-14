@@ -3,7 +3,6 @@ title: Welcome to Reality
 sequence: Reality for Beginners
 members:
 - order
-- rules
 - strip
 - magic
 - beauty
