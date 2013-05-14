@@ -60,44 +60,48 @@ We no longer need people who can recite Maxwell's equations. We need people who 
 
 Science is not for everyone. There are people who simply don't posses curiosity for the fundamental nature of the universe, and that's fine. It's wonderful. The world needs people interested in different things, and science is only a thin slice of human endeavor.
 
-But everyone needs to learn to listen to evidence, which is the voice of the truth. Everyone needs to be able to change their mind, in light of biases which cloud our judgement. Everyone needs to know how to avoid the pitfalls of the mind, with knowledge of the traps in the human psyche.
+But everyone needs to learn to listen to evidence, which is the voice of the truth. Everyone needs to be able to change their mind, in light of biases which cloud our judgement.
 
 No one will ever be absolutely right, but everyone needs to know how to become [less wrong](http://lesswrong.com/).
 
-This is what we should teach students explicitly, instead of the equations of science. Forcing people to memorize equations runs counter to the core of science. Don't teach physics -- teach rationality.
+Forcing people to memorize equations runs counter to the core of science. Don't teach physics -- teach rationality.
 
-Some people will have no curiosity about how the rain works or what goes on inside the body. That's fine: if you teach them how to think, they'll know that their lack of knowledge doesn't give them license to make up their own answers. They'll know that despite there ignorance, there is an answer out there. Most importantly, they'll know how to find the answer if their curiosity gets the better of them.
+Some people will have no curiosity about how the rain works or what goes on inside the body. That's fine: if you teach them how to think, they'll know that their lack of knowledge doesn't give them license to make up their own answers. They'll know that despite there ignorance, there is an answer out there. Most importantly, they'll know how to find the answer when their curiosity gets the better of them.
 
-Such a world is far superior to a world where everyone half-believes the incomplete description of evolution that they've been forced to memorize. Such a world is far better than one where quantum physics is surrounded by a strange aura of fear. Such a world is superior to one where people glory in their ignorance, a world where "science doesn't know everything" is an excuse to believe anything at all.
+Such a world is far superior to a world where everyone half-believes the incomplete description of evolution that they've been forced to memorize. Such a world is far better than one where quantum physics is surrounded by a strange aura of fear and mystery. Such a world is superior to one where people glory in their ignorance, a world where "science doesn't know everything" is an excuse to believe anything at all.
 
 ---
 
-Many will not choose the sciences. They will be drawn to other paths. That is right and good. No matter what, there will always be some people with the curiosity. People who want to learn how the world works. People who wonder at the beauty of reality and struggle to hear its voice and listen to its answers.
+Many will not choose the sciences. They will be drawn to other paths. That is right and good. Not everybody should be a scientist.
+
+By the same token, there will always be some people with the Curiosity. People who want to learn how the world works. People who wonder at the beauty of reality and struggle to hear its voice and listen to its answers.
 
 These are the scientists. These are the children who are going to save the world, the students who will crack the mysteries of the universe. Nurture them.
 
-When they wonder about rainbows, point them towards prisms. When they wonder about the nature of life, teach them how to use a microscope and provide them with specimens.
+When they wonder about rainbows, point them towards prisms. When they wonder about the nature of life, teach them how to use a microscope. Provide them with specimens.
 
 But don't hand them the answers. Never ever say "see, they're made of cells!"
 
 Don't say "look, the heart pumps the blood".
 
-Don't even confirm or deny them when they draw their own conclusions: just keep pointing them towards the next experiment that will show them something new.
+Don't even confirm or deny their conclusions, when they draw them: just keep pointing them towards the next experiment that will show them something new.
 
 You don't hand them a microscope so that they can verify your words. You hand them a microscope so that they can *discover reality for themselves*.
 
 We don't need students who can verify what you tell them. We need students who can think up solutions on their own.
 
-Only once they've proven they possess this capacity can we tell them all the answers. Once they've show themselves capable we can rush them to the forefront of our knowledge, if that is the path they choose. Only in the name of human progress should we @post[spoil all the mysteries]reality/magical, and even then we must only do so when we know they have the curiosity burning inside them.
+Only once they've proven they possess this capacity can we tell them all the answers. Once they've show themselves capable we can rush them to the forefront of our knowledge, if that is the path they choose. Only in the name of human progress should we @post[spoil all the mysteries]reality/magical.
 
 Because out there on the edge, where scientists face down the unknown, we don't need students who can recite memorized equations. We need students who can step out into the darkness and, blinded by their ignorance, listen for the faintest whisper of the truth.
 
 ---
 
-These few will become scientists. These few will advance the knowledge of humanity. And yet it's important to remember that science is not all there is. Only the curious need the knowledge of humanity, but *everyone* needs our tools.
+Those few are the exception. We should nurture them, but we must never forget that the majority of humanity does not seek that knowledge. Most people do not want to hold our knowledge of the universe.
 
-It is important that we separate our knowledge from the tools that allowed us to gain that knowledge. We cannot force the rules of the universe into people's minds, for not everyone wants to learn them. But we don't need everyone to know the knowledge: we just need everybody to hold the tools.
+But *everybody* should hold our tools.
 
-We just need to teach everybody to think. To think, and then ask reality, and then *listen*.
+We don't need to teach everybody everything that we know. We just need to teach everybody our tools. We need to teach everybody to overcome their biases. We need to teach everybody to avoid the traps in the human psyche. Above all, we need to teach everybody to think.
+
+To think, and then ask reality, and then *listen*.
 
 That's the most important thing of all.
