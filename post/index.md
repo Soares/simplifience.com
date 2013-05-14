@@ -22,7 +22,7 @@ blocks:
         <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
         <li>{{ 'reality/welcome'|post_anchor }}</li>
         <li>{{ 'foundations/mathematics'|post_anchor('Abandoning Mathematics') }}</li>
-        <li>{{ 'science/wrongs'|post_anchor('Stepping Beyond Science') }}</li>
+        <li>{{ 'science/image'|post_anchor('Stepping Beyond Science') }}</li>
         <li>{{ 'foundations/unlearn'|post_anchor('Correcting Confusions') }}</li>
       </ul>
     </aside>
