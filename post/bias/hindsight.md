@@ -48,7 +48,7 @@ It was so obvious when you knew it, but I have stripped that knowledge from you.
 Yes or no? With what probability?
 {% endcall %}
 
-Contrast this answer with your answer above. Notice the difference between this feeling and the feeling you had before. Do people actually spend a larger portion of their income in recessions, or don't they? In order to find out you have to actually check. You have to actually @post[ask reality]science/method.
+Contrast this answer with your answer above. Notice the difference between this feeling and the feeling you had before. Do people actually spend a larger portion of their income in recessions? In order to find out you have to actually check. You have to actually @post[ask reality]science/method.
 
 When you know, it's easy to feel like you knew it all along. [*You didn't know it all along*](http://csml.som.ohio-state.edu/Music829C/hindsight.bias.html). [Knowing the result alters what you think would have been obvious](http://lesswrong.com/lw/il/hindsight_bias/).
 
@@ -68,6 +68,6 @@ In retrospect, it feels obvious that the Earth follows the same laws as the Heav
 
 __These discoveries are only obvious in hindsight.__ They're not obvious when you're out there in the fray trying to discover them.
 
-All of human human progress hangs on obvious discoveries. A thousand years of stagnant silence can be shattered by a single idea, a single thought which seems oh so obvious in retrospect.
+A thousand years of stagnant silence can be shattered by a single idea. All of human progress can hang on a single thought that will seem oh-so-obvious in retrospect.
 
 Never underestimate the difficulty of having obvious ideas.
