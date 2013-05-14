@@ -19,25 +19,24 @@ Which makes sense, now that you know it. This is a consumerist culture. When tim
 
 It should be obvious, now that you know.
 
-.
-
-.
-
-.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Except that I'm lying to you again.
 
-.
-
-.
-
-.
-
-.
-
-.
-
-.
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 Or am I?
 

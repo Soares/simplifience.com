@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Understand this</title>
+	<script src="/js/modernizr.js"></script>
+	<meta name="author" content="So8res">
+	<meta name="description" content="Simplified science">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
+
+	
+	<link id="favicon" rel="icon" type="image/png" href="/icons/main.png">
+</head>
+<body class="main">
+	
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		
+		<h1 class="title" title="Simplifience">
+			<a href="/">Understand this</a>
+		</h1>
+		
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		
+		<div id="meditating"></div>
+			<article>
+				
+				
+				
+				<p>Picture someone who believes in the Norse gods.</p>
+
+<p>To them, their belief does not feel like a belief. It feels like <em>the way the world is</em>.</p>
+
+<p>They don&#8217;t feel like they live in a world where they believe in Odin. They feel like they live in a world where <em>Odin is real</em>. They feel like they live in a world where Odin <em>did</em> hang from the world tree to gain his wisdom over the nine worlds. They feel like they live in a world where Asgard actually exists.</p>
+
+<p>When you believe something, it doesn&#8217;t feel like believing it. It feels like <em>living in that world.</em></p>
+
+<p>Similarly, when you truly understand something, it doesn&#8217;t feel like understanding it. <a href="/math/education.html">Memorizing calculus equations is not the same thing as understanding calculus</a>, no matter how many state exams you can pass.</p>
+
+<p>When you&#8217;ve obtained understanding of a concept, the concept feels obvious. The answers are self evident, and you don&#8217;t see how they could be another way.</p>
+
+<p>$2 + 3 = 5$ not because that&#8217;s what the symbols tell you when you torture them. $2 + 3 = 5$ because if you put $&bull;&bull;$ with $&bull;&bull;&bull;$ then you have $&bull;&bull;&bull;&bull;&bull;$.</p>
+
+<p>When you understand something, it doesn&#8217;t feel like a memorized set of symbols and formulae and equations. When you truly understand something, it feels like the gut-level intuitive truth.</p>
+				
+			</article>
+
+			
+		
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		
+		
+		
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		
+		
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+
+
+	<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS_HTML">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [
+					['$', '$'],
+				]
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
+			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
+		});
+	</script>
+	
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	
+	<script type="text/javascript" src="/js/raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/waypoints.js"></script>
+	
+	<script type="text/javascript" src="/js/uriel.js"></script>
+	
+	<script type="text/javascript" src="/js/post.js"></script>
+	
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30196171-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ?
+				'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
