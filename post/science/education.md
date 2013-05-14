@@ -2,58 +2,102 @@
 title: Science Class
 type: knowledge
 ---
-Science education is broken in much the same way that @post[math education is broken]math/education.
+We teach science completely wrong.
 
-The sentiment is very similar: it is much more valuable for students to learn how to do science than it is for them to learn the results of science.
+We teach science like it's a @post[narrative of resolved confusions]science/mire. We @post[spoil the magic]reality/magical and make reality sound dull. We sit students down in classrooms and tell them "this is what you have to believe", and then we make them memorize dull equations.
 
-Unfortunately, the conclusions are not so clear cut. While it's easy to say
+This is the antithesis of science. Even though the equations are correct, this is wrong. Science is not about accepting established knowledge. Science is about doubting tradition, overturning the status quo, and actually @post[listening to reality]science/method.
 
-> We don't need people who can apply calculus. We need people who can **invent** calculus.
+At first glance, this seems contradictory. Science is the art of letting reality speak for itself, but reality is vast and varied. No one person can possibly reconstruct millennia of human knowledge on their own, no matter how well we train them to seek the truth.
 
-It's much harder to justify the scientific analog, something like "We don't need people who know how precipitation works. We need people who can *figure out* how precipitation works." This statement is false. Schools should teach students how the world works.
+But the road to knowledge was paved with misunderstanding. Time and again, science shook our worldview by destroying assumptions we didn't know we were making. Time and again, science forced us to reshape our intuition, too look at the world through a new lens.
 
-People are inherently curious. We want to know why the rain happens, where thunder comes from, and what the other planets look like. After a long hard battle against the unknown, wielding the tools of science, we know the answers to these questions. We should teach them to our students.
+We can destroy assumptions, reshape intuitions, and switch lenses all without teaching the equations that science discovered. We don't need to tell anyone what to believe in order to teach them how to think.
 
-That said, it is *much more important* that our students learn the <span class="info" markdown="inline">methods of science</span>. It is nice for our students to know the names of the elements. However, it's far more important that they learn how to query reality. And it's *absolutely essential* that they learn how to listen to reality's response.
+Every science teacher knows that most students will not learn Maxwell's equations of electricity. Some will fail, but many more will memorize the equations without knowing what they mean. Only a rare few students will glimpse the truth behind the equations they're told they must believe… and that's fine. We shouldn't teach electricity to everybody. Science isn't about telling students what to believe.
 
-<aside class="info" markdown="block">
-We would do well to teach not only the scientific method but @post[the method that supersedes it]science/beyond.
-</aside>
+Science is about learning to shut your mouth and listen to the universe. It's about how to separate truth from fiction. It's about how to listen when evidence comes knocking. Those skills should be taught to everyone.
 
-That's the true message of science. That's the philosophy that shook the world.
+It's OK if a student doesn't like science. It's fine if Maxwell's equations are not for you. You don't have to care how planes fly or why boats float.
 
-> If you want to know how reality works, you have to listen to reality.
+But every student should learn how to discover the truth.
 
-You can't draw a map of a city by sitting in your room with the blinds closed and thinking really hard about it. [In order to draw a map, you have to go outside and look at the territory](http://lesswrong.com/lw/gv/outside_the_laboratory/). This is perhaps the most important lesson of all.
+_Every student should learn how to discover the truth._
 
-You don't get to decide what is true. Reality gets to decide that. It's up to you to listen so that you can believe what is true.
+If you want to teach science, teach thinking. Don't make them learn the answers: put them in situations where they have to find the answers on their own. If you want to teach science, teach students how to avoid bias. Teach them how @post[their brain can explain anything]bias/explanation, and explanation does not equate to truth. Teach them how quickly their mind @post[jumps to conclusions]bias/decision without their consent. Teach them how easy it is for a mind to compartmentalize. Teach them how to listen to those niggling doubts. Teach them how to let go of false beliefs.
 
-This skill is far more difficult than it sounds, and it's the skill that we completely miss when we teach students things like precipitation and convection. We teach them to memorize the results of science, but the results aren't the important part.
+Learning that you are wrong should feel good -- because now you are less wrong.
 
-I'm not suggesting that we stop teaching the results of science. The results of science are interesting, and it's important that everyone has a good feel for how the universe works. We don't need everyone to be a chemist, but everyone should know about molecules. We don't need everyone to be a biologist, but everyone should know about DNA.
+Learning the truth cannot hurt -- no matter how much you deny it, you are already enduring the truth.
 
-*That said*, the results aren't the important part. In this respect science is like math: the part that we really want to teach must be taught indirectly.
+But do not just tell them these things: show them these things. Put them in situations where their biases bite back. Put them in situations where the obvious answers are wrong and they have to learn how to let go. Put them in situations where their mind explains the inexplicable, then confront them with reality.
 
-If you want to teach science start by teaching rationality. Don't just tell them about mental biases, make them *experience* mental biases. Demonstrate the @post[hindsight bias]bias/hindsight in person. Don't warn them about [fake explanations](http://lesswrong.com/lw/gv/outside_the_laboratory/), show them directly how seductive the trap is.
+Teach them how to distrust the status quo, how to distrust the things their taught, and above all, teach them to distrust their own mind. Put them in situations where everything they're told is wrong and all of their assumptions are false, where the only way out is to put your ear to the ground and listen to the whispers of the evidence.
 
-Only once they're fully skeptical of their intuitions are they ready to begin.
+And then when they start to see how coy nature can be, reach in and correct their intuitions. Every grand mystery of science, every surprising revelation, has ousted a bad intuition. Science progresses by putting scientists in situations where their intuitions fail them. We can speed that process up.
 
-Then, they're going to have to do experiments.
+Now that we know which intuitions are false, we can break them early. We can construct exercises where intuition is self-defeating and repeat them until the intuition begins to change.
 
-If you want a student to be able to recite the rules of physics then by all means lecture them in physics. But if you want them to *learn* physics they're going to have to figure it out themselves.
+This will be enough for most students. When they leave the walls of our schools and go out to face their lives, solid intuition and the ability to hear the truth will serve them far better than any of Newton's revelations. These students will have science within them, even if they do not know its results.
 
-In order to teach students the results of science, have them do science. Don't tell them the answers and make them take notes. Make them discover the answers for themselves. Give them mysteries and ask them to explain.
+---
 
-The role of the teacher should be to nudge the student in the right direction. We needn't @post[drag them through the historical mire]science/mire. If a student starts down the wrong path, a teacher can point them towards an experiment that falsifies their budding theory. If a student gets stuck, a teacher can point them towards an experiment that will yield a surprising insight.
+Teach like this, and there will be some few students who are curious. Some students who take these lessons and apply them to the world around them. Some students who ask why.
 
-Reality was not nearly so kind to humanity. We've been side tracked for decades or centuries at a time. A smart teacher directing the experiments can help the students skip all that. With the right pointed questions students should be able to hit all the high points in a few short years.
+Education must not answer those whys. To answer would be to snuff out the curiosity, to sate it before it has a chance to grow. Science should not snuff out curiosity: science should feed it.
 
-Misconceptions could be squashed before they took root. Students wouldn't just know the theories, they'd know why all the alternatives failed. They'd have tried the obvious solutions and seen the fall flat.
+When these students ask after the workings of a lightbulb, the construction of a car, or the nature of a rainbow, it is not the place of school to give the answers. It is the place of schools to say "@post[That is your mystery]reality/magical -- figure it out".
 
-They wouldn't be subjected to misinformation fueled by misinterpretation: they'd know exactly what the theory said and what it didn't say, because they discovered it on their own. They wouldn't misinterpret the @post[malleable words]language/scope, because they'd've seen @post[the thing that the words describe]reality/symbology.
+Armed with the tools of the ancients, they will be prepared to answer. It is true that one student cannot recreate the knowledge of a species, but these students are far more lucky. They've been trained to avoid the detours. When they start down the wrong path, they have teachers who point to an experiment that invalidates their whole line of reasoning. When they get stuck, they have teachers who point to an experiment that yields an insight. They don't have to struggle blindly in the darkness.
 
-Most importantly, they'd learn to ask reality for answers. Instead of listening to lectures, they'd have to design experiments. Instead of taking notes, they'd watch while their broken intuitions were torn asunder. In order to actually understand the phenomena they explored, they'd have no choice but to listen to actual reality.
+But they do have to learn to navigate the darkness on their own.
 
-When their experiments succeeded, they'd experience the elation of discovery which is so absent from science classrooms. And when their experiments failed, they'd have no choice but to discard their pet theories, to let go of their false beliefs.
+We live in the modern world, now. There was a time where for every Maxwell you needed a thousand scientists who could recite his equations and interpret the results. That era died the day computers were born.
 
-This skill, more than any other, is the most important thing that a science education can teach.
+We no longer need people who can recite Maxwell's equations. We need people who can invent them.
+
+---
+
+Science is not for everyone. There are people who simply don't posses curiosity for the fundamental nature of the universe, and that's fine. It's wonderful. The world needs people interested in different things, and science is only a thin slice of human endeavor.
+
+But everyone needs to learn to listen to evidence, which is the voice of the truth. Everyone needs to be able to change their mind, in light of biases which cloud our judgement. Everyone needs to know how to avoid the pitfalls of the mind, with knowledge of the traps in the human psyche.
+
+No one will ever be absolutely right, but everyone needs to know how to become [less wrong](http://lesswrong.com/).
+
+This is what we should teach students explicitly, instead of the equations of science. Forcing people to memorize equations runs counter to the core of science. Don't teach physics -- teach rationality.
+
+Some people will have no curiosity about how the rain works or what goes on inside the body. That's fine: if you teach them how to think, they'll know that their lack of knowledge doesn't give them license to make up their own answers. They'll know that despite there ignorance, there is an answer out there. Most importantly, they'll know how to find the answer if their curiosity gets the better of them.
+
+Such a world is far superior to a world where everyone half-believes the incomplete description of evolution that they've been forced to memorize. Such a world is far better than one where quantum physics is surrounded by a strange aura of fear. Such a world is superior to one where people glory in their ignorance, a world where "science doesn't know everything" is an excuse to believe anything at all.
+
+---
+
+Many will not choose the sciences. They will be drawn to other paths. That is right and good. No matter what, there will always be some people with the curiosity. People who want to learn how the world works. People who wonder at the beauty of reality and struggle to hear its voice and listen to its answers.
+
+These are the scientists. These are the children who are going to save the world, the students who will crack the mysteries of the universe. Nurture them.
+
+When they wonder about rainbows, point them towards prisms. When they wonder about the nature of life, teach them how to use a microscope and provide them with specimens.
+
+But don't hand them the answers. Never ever say "see, they're made of cells!"
+
+Don't say "look, the heart pumps the blood".
+
+Don't even confirm or deny them when they draw their own conclusions: just keep pointing them towards the next experiment that will show them something new.
+
+You don't hand them a microscope so that they can verify your words. You hand them a microscope so that they can *discover reality for themselves*.
+
+We don't need students who can verify what you tell them. We need students who can think up solutions on their own.
+
+Only once they've proven they possess this capacity can we tell them all the answers. Once they've show themselves capable we can rush them to the forefront of our knowledge, if that is the path they choose. Only in the name of human progress should we @post[spoil all the mysteries]reality/magical, and even then we must only do so when we know they have the curiosity burning inside them.
+
+Because out there on the edge, where scientists face down the unknown, we don't need students who can recite memorized equations. We need students who can step out into the darkness and, blinded by their ignorance, listen for the faintest whisper of the truth.
+
+---
+
+These few will become scientists. These few will advance the knowledge of humanity. And yet it's important to remember that science is not all there is. Only the curious need the knowledge of humanity, but *everyone* needs our tools.
+
+It is important that we separate our knowledge from the tools that allowed us to gain that knowledge. We cannot force the rules of the universe into people's minds, for not everyone wants to learn them. But we don't need everyone to know the knowledge: we just need everybody to hold the tools.
+
+We just need to teach everybody to think. To think, and then ask reality, and then *listen*.
+
+That's the most important thing of all.

@@ -2,36 +2,42 @@
 title: The Historical Mire
 type: knowledge
 ---
-The discovery of the rules of the universe has been an arduous process. We humans interact with a very narrow portion of reality. We only get to see the earth, and we only get to feel the narrow region of the earth that sits enormously high above the world of molecules and enormously far below the world of stars.
+Discovering the rules of the universe has been an arduous process. We humans interact with a very @post[narrow]reality/narrow portion of reality. We only get to feel the tiny region of realty that sits high above the molecules and far below the stars.
 
-The discovery of the rules of the universe has followed a somewhat meandering path. We only get to look at a tiny segment of the middle range of the universe, and we discovered the middle of the rules first. Nine times out of ten, even after we really nailed a rule down we ended up finding a contradiction that sent us back to square one.
+We took a garden path on the road to discovery. We took many a detour, lingering for centuries before reality finally turned us back.
 
-Don't get me wrong. It's a slow and arduous process, but it works. It's like seven blind monks discovering an elephant. We may be momentarily confused when one feels the tusks and another feels the leg, but eventually we're able to put it all together.
+The process worked. It was slow and arduous, but it worked. Inch by inch, we began to understand this strange and beautiful place.
 
-![Seven Blind Monks and an Elephant](/images/elephant.png)
+We gained our knowledge in a slow, meandering fashion. Do not delude yourself into thinking that the order we discovered science is the order we should teach it.
 
-That said, don't delude yourself into thinking that the order we discovered science is the order we should teach it.
+---
 
-We discovered science backwards. We started from the middle and worked our way towards the ends. We spent decades confused. We made completely wrong conclusions, and it took us decades to turn ourselves around.
+We discovered science backwards. We started from the middle and we're still working our way towards the ends. We spent decades mired in confusion. We made bad assumptions and were diverted for centuries at a time. Even in modern maturity, science has been led astray for decades upon decades.
 
-There have been periods of more than thirty years where we have made models and equations that *work*, but we have no idea why. There was a time when the mantra of scientists was "shut up an calculate". We have been very confused by our models before, and it often takes a long time to make sense of what's actually going on.
+We have been very confused by our models before, and it often takes a long time to for us to make sense of what's actually going on.
 
-Once we figure it out, everything falls into place. It all looks simple in retrospect. It fits cleanly into textbooks. Everyone who spent thirty years confused shouts "eureka!" and it feels like a great mystery was solved. Everyone wants to immortalize the mystery and the solution in the history books.
+Once we figure it out, everything falls into place. It all looks simple in retrospect. It fits cleanly into textbooks. Everyone who spent thirty years confused shouts "eureka!" and it feels like a great mystery was solved.
 
-The solvers of mysteries teach the mystery and the resolution in the same way they experienced it: a whole lot of confusion followed by a clever resolution. Everyone else keeps teaching science the same way they learned it. Before you know it, a hundred years have passed and we're *still* dragging students through artificial mysteries.
+But there was no mystery. Nothing has been solved. @post[Mystery is not a property of reality]reality/mystery. The mystery was in the minds of the scientist, who were looking at reality backwards. The mystery was latent in their misinterpretation of the universe.
 
-The mystery was not in the phenomena that seemed mysterious. @post[Mystery is not a property of reality]reality/mystery. The mystery was in the minds of the scientists. The mystery was that we were looking at things backwards. The mystery was our misinterpretation of the nature of the universe.
+And yet, that's not what it feels like to them. To them, it feels like a great confusion has been resolved. They jump to immortalize their victory in the textbooks, to tell the tale of the horrible confusion and its brilliant conclusion.
 
-*Once we solve the mystery we shouldn't teach it*. The mysteries and solutions of science belong in a @post[history of science]science/history class. They have no place in the annals of science.
+Every teacher loves to drag their students through the ritual mire, confusing the students with baffling data and surprising them with counter-intuitive answers. And so the confusions spread and proliferate.
 
-The fact that human scientists misinterpreted the facts for a few decades is not a feature of the universe. It is a feature of the scientists.
+But it doesn't have to be this way.
 
-There is no need to drag students of science through the mire of history when we're teaching them science.
+*Once we solve a mystery, we shouldn't teach it.*
 
-In fact, the mysteries of science are far easier to understand, far more intuitive, far more obvious, if we correct the misconception before we show them the theories.
+Reality is not a mysterious place. Mysteries are not a reflection of reality: they are a lesson in how little we understood.
 
-In fact, schools should teach all students -- not just science students -- how to avoid the famous misconceptions of science. Even if they don't learn the specific scientific theory we can teach them how to avoid the pitfalls of human bias. If we eliminate their bias well enough, the "hard" discoveries of science will never appear mysterious. They won't even seem hard. They'll seem intuitive.
+When we solve a mystery, we learn the truth, but we also learn many other things. @post[We learn from our mistakes]science/mistakes. We learn how the mystery happened. We learn how our broken worldview led us astray. We learn to discard assumptions that we didn't even realize we made.
 
-Our scientific knowledge was hard to discover. It required a lot of effort. @post[Never underestimate the difficulty of coming up with obvious ideas]reality/obvious. It wasn't enough to learn the rules: we also had to learn how to think about the rules. We had to learn what the rules looked like. We had to learn how to interpret what we were seeing. We had to learn to speak our unspoken assumptions. We had to learn to overcome our biases.
+These are the most important things. When we solve a mystery, we don't just learn the solution to the mystery: we learn how to better understand reality on its own terms.
 
-It was hard to discover, but that doesn't mean it needs to be hard to learn.
+Teach *that* to students. Long before they encounter your great mystery, address their false assumptions. Train them to notice the fallacies that led history astray. Fix their intuitions before they know that they're broken. Demonstrate their bias before they have a chance to succumb.
+
+Don't limit these lessons to the sciences. Students don't need to have scientific aspirations in order to benefit from learning how to hear the truth. They don't need to be a physicist to benefit from better intuitions. Everyone alive can benefit from overcoming bias.
+
+But if your students do grow curious about the universe, if they do stumble upon the great mysteries of old, they will be prepared. They will not need to take the garden path to discovery.
+
+If we do our jobs right, the ancient mysteries won't be mysterious. They won't even seem hard. They'll just be intuitive.

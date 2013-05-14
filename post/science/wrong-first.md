@@ -2,50 +2,56 @@
 title: Teaching Wrongs
 type: knowledge
 ---
-Humanity discovered science in a manner analogous to @post[a blind monk discovering an elephant]allegory/trunk. We stumbled across an extraordinarily <span class="info" markdown="inline">narrow part</span> of the universe and ran smack dab into a big thick cylinder that felt like a tree trunk. Imagine our surprise when it turned out to be the leg of an elephant elephant.
-
-<aside class="info" markdown="block">
-I'm not talking about Earth, the tiny spec in the middle of an astronomically large universe. I'm talking about the narrow region which towers above the foundational atoms and cowers below the sweep of the stars.
-</aside>
+Humanity discovered science like a @post[blind monk discovering an elephant]allegory/trunk. We stumbled across an extraordinarily @post[narrow]reality/narrow part of the universe and ran smack dab into a big thick cylinder that felt like a tree trunk. We thought it was the World Tree. Imagine our surprise when we discovered its true nature.
 
 ![Seven Blind Monks and an Elephant](/images/elephant.png)
 
-The science of the Great Trunk was difficult enough when we thought it was just a tree, when we only studied the skin (and thought it to be bark). If the laws of the universe were complex when we only glimpsed the leg of the elephant, imagine the difficulties of learning elephant biology. No child could *possibly* be ready to learn elephant-theory until college.
+For hundreds of years we studied the science of the elephant's leg, thinking it was a tree trunk. We studied the skin, thinking it was bark. We had a whole complex field of dendrology surrounding the Word Tree. Tree-physics was intricate and complicated.
 
-Only the brightest students are ever introduced to elephant theory, and when they are, it's harder than they imagined. Circulatory systems and nervous systems and optical systems are just too complex for most of them, and only the best of the best manage to master the theory.
+If students thought tree-physics was hard, imagine trying to teach them elephant biology. Skin is simple compared to brains. Studying the toenails simply can't prepare you for the circulatory system. No child could *possibly* be ready for elephant theory until college at the earliest. Can you imagine trying to learn elephant digestive theory at a young age? Impossible.
 
-The average layperson sees only their brightest friends attempt elephant theory. Most of them struggle and fail. "What chance does a layperson like me have?", they conclude with despair. "Reality is just too hard for me to understand."
+And so elephant theory is only taught to the most advanced students. Of those students, only a handful are prepared for elephant neurology. The laypeople see their brightest friends attempt elephant theory.
 
-And so the majority of society still believe that the Great Trunk is a tree. Only the best and brightest know it's an elephant.
+The laypeople see the brightest of their friends attempt elephant theory. Most of them struggle and fail. "What chance do I have", the layperson wonders, "if even the brightest have trouble understanding this strange theory?"
+
+"Surely", they conclude, "the secrets of science are beyond my grasp".
+
+And so the majority of society goes on believing that the Great Trunk is a tree. Only the best of the best ever learn that it's an elephant.
 
 ---
 
-Reality is hard to understand. Learning the details can be tough. Training your mind to be precise is difficult.
+Our society is in a very similar situation. Fundamental physics has destroyed the classical wordlview. Quantum physics and relativity have exposed @post[deep connections]reality/connected that we didn't expect. And yet, scientists haven't managed to convey the news.
 
-Even though the underlying rules are simple, incredible complexity flows from those rules. Biology and weather and astronomy all flow from the rules about the underlying physical fields, and knowing how the physical fields work doesn't help you build an airplane. Even if you learn the rules, you still have to learn about circulatory systems if you want to be a biologist, or monetary systems if you want to be an economist. Mastering any particular theory is hard, whether it's sociology or fluid dynamics.
+The equations of quantum mechanics and relativity are difficult to learn. The complexity that flows from these models describe the entire universe. These theories don't just have broad implications: they have all implications. To say they are difficult subjects is an understatement.
 
-But you don't need to master any subjects before you can be told the true nature of the universe.
+And yet, you don't need to be a elephantine neuroscientist in order to be told that the World Tree is actually the leg of the elephant.
 
-You don't need to master leg-theory before you can be told that the world tree is actually an elephant.
+Relativity is hard to master. So is quantum physics. But you don't need to be a master in order to understand the implications.
 
-*Yes*, the universe is difficult to understand. It is complex, just as an elephant's brain is complex. But *you don't need to master leg-theory before you can be told that the world tree is actually an elephant.*
+We can teach the new worldview without requiring students to master the models.
 
-This is the grandest confusion in modern science education. Relativity and Quantum Mechanics have shattered the old world-view. We've discovered that the *background of reality* isn't what we assumed it was.
+We're stuck in a weird point in history where education subtly reinforces the classical worldview throughout early education, which makes the real (quantum relativistic) worldview seem foreign. Only once we've firmly cemented the classical view heads do we start to tear down the misconceptions.
 
-Quantum mechanics equations are difficult to reason about. They're very abstract and the interesting edge cases concern tiny objects that are seldom visible.
+The aura of fear and mystery surrounding quantum mechanics should come as no surprise.
 
-Relativistic equations are very difficult to reason about. They're extraordinarily generalized and the interesting edge cases occur in situations far more extreme than anything found on earth.
+It doesn't have to be like this. We don't need to wait until students are prepared for neuroscience before we teach them that the world tree is actually the leg of an elephant, and we don't need to wait until students are capable of mastering relativity and quantum mechanics before teaching them the new worldview.
 
-I'm not proposing that everybody should learn the strange edge cases where quantum mechanics and relativity <span class="info" markdown="inline">deviate</span> from classical physics. I'm not advocating that everybody should learn to apply the equations of relativity and quantum mechanics any more than I'd argue that everybody should know elephantine neuroscience.
+---
 
-<aside class="info" markdown="block">
-Remember, quantum mechanics isn't only about the tiny and relativity isn't only about the large. These two theories describe *everything*. You don't need to focus on the large to learn relativity.
-</aside>
+This sounds nice, but unfortunately it's not so easy. Our very language works against us -- we call the skin of the elephant bark, we call knees knots. The concept we must describe is simple, but we lack lack the words. The labels that we have for physics are wrong. They are less connected than reality is.
 
-Relativity and quantum mechanics shifted our understanding of the background of reality. They showed that there is no such thing as absolute motion -- only relative motion. They showed that there is no such thing as absolute position -- position is a fuzzy distribution.
+Remember the @post[allegory of the axe]allegory/axe: If all you ever see are three points labeled The Handle, The Blade, and The Axe, you will wonder why the axe cannot be removed from its handle and its blade. You will rebel when told that such a thing is impossible, because your labels allow you to imagine a freedom which does not exist. Science is ridden with bad labels, labels which reinforce the classical mindset.
 
-These facts about our reality are not broadly understood. They trickle down imperfectly to the masses. Our teachings of science assume absolute particles absolutely positioned on an absolute backdrop, even though we now know that there are no absolutes. Science education reinforces the shattered world-view because only the best and brightest ever learn the truth.
+It's easy to ask disjoint questions like "Can things go faster than light". Too often, the answer is "no, it's just impossible", or "no, according to what we've observed". The true answer is that you're trying to remove the axe from the handle and the blade. The labels "faster" and "light speed" are connected in a way that you do not understand. Your words have a separation that reality does not. Once you understand your labels, the question will dissolve.
 
-You shouldn't need to wait until people are neurosurgeons to teach them that the world tree is an elephant's leg, and you shouldn't wait until people master classical mechanics before you teach them that the universe has no absolutes.
+It's hard to get there. It's hard to break our worldviews. The language is against us. Our words were poorly chosen. Our labels feel looser than the things they label.
 
-This demands more than a change in science education. This demands a change in culture and language as well. But science is where it starts, and it's high time we teach students -- even the youngest of them -- that the world tree is actually an elephant.
+If we're going to correct our errors, we'll need to change our vocabulary. We'll have to throw out some words and make new ones. We'll have to take care to keep our words connected to the universe.
+
+We must stop locking the true nature of the universe away in incomprehensible tomes. We must dispel the myth that students need to be able to master the secrets of the universe before they can learn its nature.
+
+We need a clean break with the past with all its poorly chosen labels.
+
+We need a new introduction to the universe with the confusion stripped away.
+
+We need Simplifience.

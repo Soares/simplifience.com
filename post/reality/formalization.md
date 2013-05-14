@@ -16,7 +16,11 @@ __Formalization__ *n.*
 Any unambiguous expression of a thing which is true.
 </aside>
 
-This does not mean that we should use mathematics instead of English. Mathematics is not the only formalization available. The notation used is not important. What is important is that the notation is unambiguous.
+This does not mean that we should use mathematics instead of English. <span class="info" markdown="inline">Mathematics is not the only formalization available</span>. The notation used is not important. What is important is that the notation is unambiguous.
+
+<aside class="info" markdown="block">
+Many people talk like it's a @post[miracle]math/description that the universe can be described in math. Nonsense. Things which work can be formalized, and math is a formal notation. Nothing surprising about it.
+</aside>
 
 It does no good to convince your friend that addition combines numbers if they leave the conversation believing that $1 + 2 = 12$.
 
