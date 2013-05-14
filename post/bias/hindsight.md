@@ -1,11 +1,11 @@
 ---
 title: Obviously
 ---
-During recessions, people spend a larger portion of their income than in prosperous times.
+People spend a larger portion of their income during recessions.
 
-Seems obvious, right? During a recession, you can't save as much. Salaries stagnate while prices rise. Even if people cut down on spending, they end up spending a greater portion of their income just to stay afloat. Unemployment raises, and the unemployed have to dig into their savings -- if they have any.
+Seems obvious, right? During a recession, you can't save as much. Salaries stagnate while prices rise. You've got to spend a larger portion of your income just to stay afloat. Sometimes people have to dig into their savings -- if they have any.
 
-Like the results of all psychology experiments, the results of this experiment were obvious. It's not entirely clear why psychologists wasted money to perform the study, when the answer could have easily been predicted in advance.
+Like the all psychology experiments, the results of this experiment was obvious. It's not entirely clear why psychologists wasted money performing the study when the answer could have easily been predicted in advance.
 
 {% call post.meditation('income-portion-prediction', 'What are the chances you would have predicted this in advance?') %}{% endcall %}
 
@@ -15,7 +15,7 @@ Most people think they would have predicted this result -- until they learn that
 
 Actually, people spend a larger portion of their income in prosperous times.
 
-Which makes sense, now that you know it. This is a consumerist culture. When times are good, we buy houses and put down money on cars and indulge in excess. We try to keep up with the Joneses. We don't have the forethought to worry about savings, except when times are tough.
+Which makes sense, now that you know it. This is a consumerist culture. When times are good, we buy houses and put down money on cars and indulge in excess. We try to keep up with the Joneses. We're a paycheck-to-paycheck nation. When the money's rolling in, there's no need to worry about the future. We only worry about saving when the times get tough.
 
 It should be obvious, now that you know.
 
