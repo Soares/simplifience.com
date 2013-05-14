@@ -4,20 +4,31 @@ sequence: Reality for Beginners
 members:
 - order
 - rules
+- strip
 - magic
 - beauty
 - magical
 ---
 Welcome to reality!
 
-Take a look around. Gaze up at the stars. Find a rainbow, if you can. This place is pretty nice, don't you think? I mean, it has it's ups and downs, but in the end, it's all there is. This place, reality, contains everything. It contains the ground and the stars and you, and it contains your emotions and your connections and your feelings. Reality is all that is.
+Take a look around. Gaze up at the stars. Appreciate some sunshine. This place is pretty nice, don't you think?
 
-This sequence is going to get a little meta. It's going to talk about how reality is an @post[ordered place]reality/order that @post[has rules]reality/rules. It's going to talk about how everything in the universe can be understood -- even the things that you might think are sacred, like your consciousness. Don't worry! @post[Understanding does not detract from beauty]reality/beauty. Take a deep breath. Feel like you're alive. That feeling is real, and no argument can make it less so.
+![Summer Field](/images/summer-field.jpg){:title="© Luke Vaitour, http://commons.wikimedia.org/wiki/User:Lviatour"}
 
-This sequence is about learning that reality does have rules that humans can understand, and ensuring that you're ready to enjoy it. It's popular today to feel existential crisis because "nothing has meaning" -- for doesn't science say that everything is merely made of smaller parts?
+I mean, it has it's ups and downs, but in the end, it's all there is. This place, reality, contains everything. It contains the ground and the stars and you. It contains your family and your feelings and your friends. It's everything.
 
-If everything is just made of atoms, and atoms can't feel, then is there any point to feeling?
+Reality is all that is.
 
-The answer, of course, is an emphatic *yes*. The universe is made of smaller parts, but @post[it is not mere]reality/mere.
+I have some good news for you: reality can be understood. It is a mysterious place, but that mystery can be dispelled. Even the sacred mysteries, even the things that we don't yet understand (such as human consciousness), *can be understood*. Don't panic! That's not a bad thing. It's a cause for celebration. @post[Understanding does not detract from beauty]reality/beauty.
 
-This sequence isn't essential to understanding the nature of the universe, but it might help prevent an existential crisis. Yes, we're going to describe existence with equations -- but that's not a loss. It's a victory.
+Take a deep breath. Listen to your heartbeat, and feel the thoughts in your head. Feel like you're alive. That feeling is real, and no logical argument can take it from you.
+
+This set of articles is about learning that reality does have rules that humans can understand. It's about learning that we can turn over the rocks and decode the great mysteries without stealing anything from the universe. It's about ensuring that you're able to enjoy reality, even though everything is "just" things.
+
+It's popular today to feel existential panic because "nothing has meaning" -- for doesn't science say that everything is made of smaller parts? If everything is made of mere atoms, and atoms can't feel, then do our feelings have any meaning?
+
+The answer, of course, is an emphatic *yes*. Everything is made of something, but @post[nothing is mere]reality/mere. You are made of atoms, but that does not make your feelings any less real.
+
+The fact that your feelings are real things in your real head does not make them any less felt.
+
+This sequence isn't essential to understanding the nature of the universe, but it might help to prevent an existential crisis. Yes, we're going to describe existence with equations -- but that's not a loss. It's a victory.

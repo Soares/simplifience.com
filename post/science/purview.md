@@ -2,13 +2,17 @@
 title: The Domain of Science
 type: knowledge
 ---
-Science is not the name of our accumulated knowledge of @post[the rules of reality]reality/rules. Science is what brought us The Rules, but science is not the rules themselves. Science is a @post[method of thinking]science/method. Science is how we uncover The Rules.
+Let's clear up a few misconceptions.
 
-It is common knowledge that science is biology, and physics, and chemistry, and all those boring subjects that we already know. Never mind that these fields were extraordinary and awe-inspiring when their foundations were first uncovered. Once everybody knows them -- or, at least, once everybody can know them -- the @post[luster is gone]reality/strip.
+Science is not the accumulated knowledge of @post[the rules of reality]reality/rules. We know a lot of things about space and earthquakes, but the things that we know are not science. Science is the method that brought us those things.
+
+Science is not The Rules: science is @post[how we uncover the rules]science/method.
+
+Common parlance holds that science is biology, physics, chemistry, and all those boring subjects that we already know. Never mind that these fields were extraordinary and awe-inspiring when they were first discovered. Once everybody knows them -- less, once everyone *can* know them -- the @post[luster is gone]reality/strip.
 
 It's also common knowledge that certain domains lie outside the purview of science. Intelligence. Awareness. The nature of consciousness. Why being alive feels like this -- why anyone feels anything at all.
 
-This is faulty thinking. The domain of science is not the things that we already know. Such things are called "knowledge". Science's purview, science's domain, is everything else.
+This is faulty thinking. The domain of science is not the things that we already know. That's "knowledge". Science's purview, science's domain, is everything else.
 
 Remember the mistakes of [Vitalism](http://en.wikipedia.org/wiki/Vitalism). The vitalists believed that you couldn't explain animate life. They believed that the body's animation stems from the intangible vitality of the spirit, "Élan Vital". After all, your muscles were just flesh, just muscle and bone. Complex, yes, but it doesn't matter how complex you make a lump of clay: it will still just sit there. What gave them movement? It must be none other than life. Human willpower incarnate.
 
@@ -34,7 +38,7 @@ We act like we've accepted science into the fold, because it has helped us uncov
 {:title="Lord Kelvin"}
 
 <aside class="info" markdown="block">
-This was spoken in 1900, shortly before the relativistic revolution:
+This was spoken in 1900, shortly before the relativistic revolution.
 </aside>
 
 Every generation must come to terms with two facts. First, @post[things are not mundane just because we know them]reality/magic. Second, science isn't about the mundane: it's about the mysteries. Everything you think science can't explain is exactly what it must explain next.
