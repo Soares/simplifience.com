@@ -52,7 +52,7 @@ Contrast this answer with your answer above. Notice the difference between this 
 
 When you know, it's easy to feel like you knew it all along. [*You didn't know it all along*](http://csml.som.ohio-state.edu/Music829C/hindsight.bias.html). [Knowing the result alters what you think would have been obvious](http://lesswrong.com/lw/il/hindsight_bias/).
 
-Humans have a strong tendency to believe that the results are obvious *after they know them*. This is called hindsight bias, and [it's dangerous](http://lesswrong.com/lw/im/hindsight_devalues_science/). It's one of the reasons that Simplifience has those little meditation boxes.
+Humans have a strong tendency to believe that the results are obvious *after they know them*. This is called hindsight bias, and [it's dangerous](http://lesswrong.com/lw/im/hindsight_devalues_science/). It's one of the reasons why those meditation boxes are important: they help you see the distinction.
 
 You no longer know whether people a larger or smaller share of their income during recessions. You've just felt a tiny unknown. Perhaps it doesn't disturb you very much: if you're still curious when you finish this article you can Google the answer. But before you do that, I want you to inspect your bewilderment.
 
