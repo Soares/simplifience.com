@@ -51,7 +51,7 @@ body.main #main p a.meditation:hover,
 body.main #main form.meditate button.proceed:hover {
   background: #006363;
   border-color: #099;
-  color: #5ccccc;
+  color: #3cc;
 }
 body.main #main p a.meditation:active,
 body.main #main form.meditate button.proceed:active {
@@ -297,7 +297,7 @@ body.rules #main p a.meditation:hover,
 body.rules #main form.meditate button.proceed:hover {
   background: #06266f;
   border-color: #1240ab;
-  color: #6c8cd5;
+  color: #4671d5;
 }
 body.rules #main p a.meditation:active,
 body.rules #main form.meditate button.proceed:active {
@@ -543,7 +543,7 @@ body.rigor #main p a.meditation:hover,
 body.rigor #main form.meditate button.proceed:hover {
   background: #200772;
   border-color: #3914af;
-  color: #876ed7;
+  color: #6a48d7;
 }
 body.rigor #main p a.meditation:active,
 body.rigor #main form.meditate button.proceed:active {
@@ -789,7 +789,7 @@ body.simplifience #main p a.meditation:hover,
 body.simplifience #main form.meditate button.proceed:hover {
   background: #48036f;
   border-color: #7109aa;
-  color: #ad66d5;
+  color: #9f3ed5;
 }
 body.simplifience #main p a.meditation:active,
 body.simplifience #main form.meditate button.proceed:active {
@@ -825,18 +825,18 @@ body.simplifience #main a:active {
 }
 body.simplifience #main a.stub,
 body.simplifience #main a.stub:visited {
-  color: #ff0;
+  color: #fa0;
 }
 body.simplifience #main a.stub.missing,
 body.simplifience #main a.stub:visited.missing {
-  background: #ff0;
+  background: #fa0;
   color: #7109aa;
 }
 body.simplifience #main hr {
   border-color: #48036f;
 }
 body.simplifience #main div.nav h3 {
-  color: #ff0;
+  color: #fa0;
 }
 body.simplifience #main div.nav aside.info a {
   color: #fff;
@@ -854,7 +854,7 @@ body.simplifience footer a.blog {
   color: #48036f;
 }
 body.simplifience footer aside h3 {
-  color: #ff0;
+  color: #fa0;
   text-shadow: 1px 1px 1px #48036f;
 }
 body.simplifience footer aside li {
@@ -872,7 +872,7 @@ body.simplifience footer aside a:hover {
 }
 body.simplifience footer aside a.stub,
 body.simplifience footer aside a.stub:visited {
-  color: #ff0;
+  color: #fa0;
 }
 body.simplifience #main svg .colored {
   stroke: #48036f;
@@ -931,7 +931,7 @@ body #main aside.simplifience h6,
 body.simplifience #main aside.info h6,
 body #main div.simplifience h6,
 body.simplifience div.info h6 {
-  color: #ffff73;
+  color: #ffd073;
 }
 body #main aside.simplifience .MathJax span,
 body.simplifience #main aside.info .MathJax span,
@@ -983,7 +983,7 @@ body #main aside.simplifience a.stub:hover,
 body.simplifience #main aside.info a.stub:hover,
 body #main div.simplifience a.stub:hover,
 body.simplifience div.info a.stub:hover {
-  color: #ff0;
+  color: #fa0;
 }
 body #main aside.simplifience a.stub.missing,
 body.simplifience #main aside.info a.stub.missing,
@@ -997,7 +997,7 @@ body #main aside.simplifience a.stub:hover.missing,
 body.simplifience #main aside.info a.stub:hover.missing,
 body #main div.simplifience a.stub:hover.missing,
 body.simplifience div.info a.stub:hover.missing {
-  background: #ff0;
+  background: #fa0;
   color: #7109aa;
 }
 body span.simplifience,
@@ -1035,7 +1035,7 @@ body.knowledge #main p a.meditation:hover,
 body.knowledge #main form.meditate button.proceed:hover {
   background: #85004b;
   border-color: #cd0074;
-  color: #e667af;
+  color: #e6399b;
 }
 body.knowledge #main p a.meditation:active,
 body.knowledge #main form.meditate button.proceed:active {
@@ -1071,18 +1071,18 @@ body.knowledge #main a:active {
 }
 body.knowledge #main a.stub,
 body.knowledge #main a.stub:visited {
-  color: #ffd300;
+  color: #ff7400;
 }
 body.knowledge #main a.stub.missing,
 body.knowledge #main a.stub:visited.missing {
-  background: #ffd300;
+  background: #ff7400;
   color: #cd0074;
 }
 body.knowledge #main hr {
   border-color: #85004b;
 }
 body.knowledge #main div.nav h3 {
-  color: #ffd300;
+  color: #ff7400;
 }
 body.knowledge #main div.nav aside.info a {
   color: #fff;
@@ -1100,7 +1100,7 @@ body.knowledge footer a.blog {
   color: #85004b;
 }
 body.knowledge footer aside h3 {
-  color: #ffd300;
+  color: #ff7400;
   text-shadow: 1px 1px 1px #85004b;
 }
 body.knowledge footer aside li {
@@ -1118,7 +1118,7 @@ body.knowledge footer aside a:hover {
 }
 body.knowledge footer aside a.stub,
 body.knowledge footer aside a.stub:visited {
-  color: #ffd300;
+  color: #ff7400;
 }
 body.knowledge #main svg .colored {
   stroke: #85004b;
@@ -1177,7 +1177,7 @@ body #main aside.knowledge h6,
 body.knowledge #main aside.info h6,
 body #main div.knowledge h6,
 body.knowledge div.info h6 {
-  color: #ffe773;
+  color: #ffb273;
 }
 body #main aside.knowledge .MathJax span,
 body.knowledge #main aside.info .MathJax span,
@@ -1229,7 +1229,7 @@ body #main aside.knowledge a.stub:hover,
 body.knowledge #main aside.info a.stub:hover,
 body #main div.knowledge a.stub:hover,
 body.knowledge div.info a.stub:hover {
-  color: #ffd300;
+  color: #ff7400;
 }
 body #main aside.knowledge a.stub.missing,
 body.knowledge #main aside.info a.stub.missing,
@@ -1243,7 +1243,7 @@ body #main aside.knowledge a.stub:hover.missing,
 body.knowledge #main aside.info a.stub:hover.missing,
 body #main div.knowledge a.stub:hover.missing,
 body.knowledge div.info a.stub:hover.missing {
-  background: #ffd300;
+  background: #ff7400;
   color: #cd0074;
 }
 body span.knowledge,
@@ -1281,7 +1281,7 @@ body.rant #main p a.meditation:hover,
 body.rant #main form.meditate button.proceed:hover {
   background: #a60000;
   border-color: #f00;
-  color: #a60000;
+  color: #ff4040;
 }
 body.rant #main p a.meditation:active,
 body.rant #main form.meditate button.proceed:active {
@@ -1527,7 +1527,7 @@ body.stub #main p a.meditation:hover,
 body.stub #main form.meditate button.proceed:hover {
   background: #a64b00;
   border-color: #ff7400;
-  color: #a64b00;
+  color: #ff9640;
 }
 body.stub #main p a.meditation:active,
 body.stub #main form.meditate button.proceed:active {
@@ -1773,7 +1773,7 @@ body.caution #main p a.meditation:hover,
 body.caution #main form.meditate button.proceed:hover {
   background: #a6a600;
   border-color: #ff0;
-  color: #a6a600;
+  color: #ffff40;
 }
 body.caution #main p a.meditation:active,
 body.caution #main form.meditate button.proceed:active {
@@ -2019,7 +2019,7 @@ body.define #main p a.meditation:hover,
 body.define #main form.meditate button.proceed:hover {
   background: #008500;
   border-color: #0c0;
-  color: #008500;
+  color: #39e639;
 }
 body.define #main p a.meditation:active,
 body.define #main form.meditate button.proceed:active {
@@ -2265,7 +2265,7 @@ body.computer #main p a.meditation:hover,
 body.computer #main form.meditate button.proceed:hover {
   background: #586e75;
   border-color: #002b36;
-  color: #268bd2;
+  color: #2aa198;
 }
 body.computer #main p a.meditation:active,
 body.computer #main form.meditate button.proceed:active {
@@ -2529,15 +2529,45 @@ body #main div.computer a,
 html body.computer div.info a {
   text-shadow: 1px 1px 1px #002b36;
 }
-body.simplifience #main a.stub {
-  color: #fa0;
-}
-body.knowledge #main a.stub {
-  color: #fa0;
-}
 aside.define em:first-of-type:after {
   content: "\a";
   white-space: pre;
+}
+span.teal {
+  color: #099;
+}
+span.blue {
+  color: #1240ab;
+}
+span.navy {
+  color: #3914af;
+}
+span.violet {
+  color: #7109aa;
+}
+span.migenta {
+  color: $migenta;
+}
+span.red {
+  color: #f00;
+}
+span.orange {
+  color: #ff7400;
+}
+span.gold {
+  color: #fa0;
+}
+span.amber {
+  color: #ffd300;
+}
+span.yellow {
+  color: #ff0;
+}
+span.celadon {
+  color: #9fee00;
+}
+span.green {
+  color: #0c0;
 }
 .ie7 #title {
   padding-top: 20px;
@@ -2945,6 +2975,28 @@ hr.mark {
 #stub {
   margin-bottom: 0.75em;
 }
+div.video-container {
+  padding: 0 2%;
+  margin-bottom: 0.75em;
+}
+div.video {
+  position: relative;
+  padding-bottom: 56.25%;
+/* 16:9 */
+  padding-top: 30px;
+/* IE6 hack */
+  height: 0;
+  overflow: hidden;
+}
+div.video iframe,
+div.video object,
+div.video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 #main svg {
   display: block;
   margin-bottom: 0.75em;
@@ -2964,10 +3016,9 @@ hr.mark {
 #main .inactive {
   opacity: 0.3;
 }
-#main svg text {
-  font-family: MathJax_Math;
-}
-#main svg path.arc {
+#main svg path.arc,
+#main svg path.line,
+#main svg circle.line {
   fill: none;
 }
 #main svg path {
@@ -3026,6 +3077,57 @@ hr.mark {
   fill: #0c0;
   stroke: #008500;
 }
+#main svg text {
+  font-family: MathJax_Math;
+}
+#main svg text.teal {
+  color: #099;
+  stroke-width: 0;
+}
+#main svg text.blue {
+  color: #1240ab;
+  stroke-width: 0;
+}
+#main svg text.navy {
+  color: #3914af;
+  stroke-width: 0;
+}
+#main svg text.violet {
+  color: #7109aa;
+  stroke-width: 0;
+}
+#main svg text.magenta {
+  color: #cd0074;
+  stroke-width: 0;
+}
+#main svg text.red {
+  color: #f00;
+  stroke-width: 0;
+}
+#main svg text.orange {
+  color: #ff7400;
+  stroke-width: 0;
+}
+#main svg text.gold {
+  color: #fa0;
+  stroke-width: 0;
+}
+#main svg text.amber {
+  color: #ffd300;
+  stroke-width: 0;
+}
+#main svg text.yellow {
+  color: #ff0;
+  stroke-width: 0;
+}
+#main svg text.celadon {
+  color: #9fee00;
+  stroke-width: 0;
+}
+#main svg text.green {
+  color: #0c0;
+  stroke-width: 0;
+}
 @media only screen {
   div.cap .definition {
     display: none;
@@ -3081,6 +3183,7 @@ body.meditating #meditating {
   display: block;
 }
 body #main > article p a.meditation {
+  overflow: auto;
   text-decoration: none;
   cursor: pointer;
   display: block;
@@ -3131,8 +3234,10 @@ body #main > article form.meditate .question {
   margin-bottom: 1em;
   display: inline-block;
 }
+body #main > article form.meditate .description {
+  margin-bottom: 1.5em;
+}
 body #main > article form.meditate textarea {
-  margin-top: 1.5em;
   padding: 0.5em;
   width: 100%;
   height: 8em;
@@ -3141,6 +3246,7 @@ body #main > article form.meditate textarea {
 body #main > article form.meditate .disclaimer {
   opacity: 0.2;
   font-size: 0.75em;
+  line-height: 0.75em;
 }
 body #main > article form.meditate .proceed {
   float: right;
