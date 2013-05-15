@@ -70,6 +70,6 @@ In retrospect, it feels obvious that the Earth follows the same laws as the Heav
 
 __These discoveries are only obvious in hindsight.__ They're not obvious when you're out there in the fray struggling to discover them.
 
-A thousand years of stagnant silence can be shattered by a single thought. All of human progress can hang on a single idea that will seem oh-so-obvious in retrospect.
+A thousand years of stagnant silence can be shattered by a single thought. Civilization hangs on ideas that will seem oh-so-obvious in retrospect.
 
 Never underestimate the difficulty of having obvious ideas.
