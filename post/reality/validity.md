@@ -1,6 +1,6 @@
 ---
 title: Validity
-stub: Logic preserves truth
+stub: Logic is not about finding truth. Logic is about preserving truth.
 ---
 $2 + 2 = 4$. This is true. But then again, so is this:
 
@@ -14,6 +14,10 @@ Truth is just @post[that which reality enforces]reality/truth. How, then, do we 
 
 ![Elephant Sketch](/images/elephant-sketch.png)
 
-Logical truths are not necessarily truths that may be found in reality. Rather, logical truths are truths that must be enforced by *every reality*.
+Logical truths are not necessarily truths that may be found in reality. The statement above is true, even though we have no purple elephants. Logical truths are not bound to this reality.
+
+Logical truths are that which must hold in *every reality*.
+
+How can we know this to be so?
 
 > Logic doesn't create truth. Logic preserves truth.

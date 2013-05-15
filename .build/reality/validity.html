@@ -1,0 +1,169 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Validity</title>
+	<script src="/js/modernizr.js"></script>
+	<meta name="author" content="So8res">
+	<meta name="description" content="Simplified science">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
+
+	
+	<link id="favicon" rel="icon" type="image/png" href="/icons/stub.png">
+</head>
+<body class="stub">
+	
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		
+		<h1 class="title" title="Simplifience">
+			<a href="/">Validity</a>
+		</h1>
+		
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		
+		<div id="meditating"></div>
+			<article>
+				
+				<section id="stub">
+					Logic is not about finding truth. Logic is about preserving truth.
+				</section>
+				<aside class="stub">
+					This page is a stub!<br>Check back later for more conent.
+				</aside>
+				
+				
+				
+				<p>$2 + 2 = 4$. This is true. But then again, so is this:</p>
+
+<blockquote>
+  <p>If all elephants are purple and all purple elephants have penguin riders, then all elephants have penguin riders.</p>
+</blockquote>
+
+<p>One of these truths seems a bit more useful than the other.</p>
+
+<p>Truth is just <a href="/reality/truth.html">that which reality enforces</a>. How, then, do we conclude that the above statement is true? There are few purple elephants to check.</p>
+
+<p>
+  <a class="meditation">
+    How can we say that logical truths are true, if they do not relate to reality? <em>click to open</em>
+  </a>
+</p>
+
+<form class="meditate" method="post" action="http://meditate.simplifience.com/meditate">
+  <input type="hidden" name="u" value="logical-truths#" />
+  <div class="text">
+    <a class="meditation" href="http://wiki.lesswrong.com/wiki/Meditation">Meditation:</a>
+    <span class="question">How can we say that logical truths are true, if they do not relate to reality?</span>
+    
+    
+  </div>
+  <textarea name="m" placeholder="Type your thoughts."></textarea>
+  <button type="submit" class="proceed">Done</button>
+  <span class="disclaimer">
+    You're more likely to remember solutions if you give your own answer first.
+  </span>
+</form>
+
+<p><img src="/images/elephant-sketch.png" alt="Elephant Sketch" /></p>
+
+<p>Logical truths are not necessarily truths that may be found in reality. The statement above is true, even though we have no purple elephants. Logical truths are not bound to this reality.</p>
+
+<p>Logical truths are that which must hold in <em>every reality</em>.</p>
+
+<p>How can we know this to be so?</p>
+
+<blockquote>
+  <p>Logic doesn&#8217;t create truth. Logic preserves truth.</p>
+</blockquote>
+				
+			</article>
+
+			
+		
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		
+		
+		
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		
+		
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+
+
+	<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS_HTML">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [
+					['$', '$'],
+				]
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
+			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
+		});
+	</script>
+	
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	
+	<script type="text/javascript" src="/js/raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/waypoints.js"></script>
+	
+	<script type="text/javascript" src="/js/uriel.js"></script>
+	
+	<script type="text/javascript" src="/js/post.js"></script>
+	
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30196171-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ?
+				'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>

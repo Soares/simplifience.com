@@ -1,0 +1,165 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Contrives</title>
+	<script src="/js/modernizr.js"></script>
+	<meta name="author" content="So8res">
+	<meta name="description" content="Simplified science">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
+
+	
+	<link id="favicon" rel="icon" type="image/png" href="/icons/main.png">
+</head>
+<body class="main">
+	
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		
+		<h1 class="title" title="Simplifience">
+			<a href="/">Contrives</a>
+		</h1>
+		
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		
+		<div id="meditating"></div>
+			<article>
+				
+				
+				
+				<p>There are many concepts in science and mathematics which correct, strictly speaking, but which are still wrong. They&#8217;re technically correct but confusing and occlusive. Here at simplifience we refer to such concepts as <span class="define">contrives</span>.</p>
+
+<aside class="define">
+  <p><strong>Contrive</strong> <em>n.</em>
+A thought, label, or concept which hides what it means to describe.</p>
+</aside>
+
+<p>Sometimes contrives place <a href="/foundations/mathematics.html">many concepts under the same label</a>. You don&#8217;t notice that there are two concepts: you think the contrive is one single confusion.</p>
+
+<p>Sometimes contrives label an incomplete concept in a way that makes it sound whole, preventing you from reaching full understanding.</p>
+
+<p>Universally, contrives make simple concepts difficult to understand.</p>
+
+<p>Perhaps the most famous contrive is $\pi$, the radius lengths in half a turn.</p>
+
+<div class="unroll" data-counter="on" data-pistop="on"></div>
+
+<p>$\pi$ alone, while relatively harmless, makes it harder to see the truth in any formula involving circles. Every time you want to describe a turn you have to add an extra factor of two. $\frac{\pi}{2}$ radians is a quarter turn, not a half turn.</p>
+
+<p>I mention $\pi$ because it is a <a href="http://tauday.com/tau-manifesto" target="\_blank">hotly contested</a> contrive with <a href="http://www.youtube.com/watch?v=jG7vhMMXagQ" target="\_blank">popular support</a>. Yet even poor contrived $\pi$ has its advocates. The other contrives lurking in your brain are far less visible than $\pi$. They hardly seem to matter when taken individually.</p>
+
+<p>Most contrives cannot be attacked head-on. They are familiar and safe and everyone knows what they mean, even if they hide deeper knowledge. When arguing against a contrive the burden of proof is placed upon the challenger. You fight an uphill battle. The contrive is safe and comfortable. Everyone&#8217;s so used to it that they hardly notice their own efforts to route around the damage. You face the inertia of an entire culture. You&#8217;re ravaged by a bias in favor of the status quo.</p>
+
+<p>Simplifience takes a different approach: we don&#8217;t mention contrives. We don&#8217;t give them the power they&#8217;re used to. We ignore them.</p>
+
+<p>We do the math and science in the simplest form. We discard the historical cruft. Once you&#8217;ve built up a solid intuition for the subject, once you really understand what&#8217;s going on, it doesn&#8217;t matter what notation you use.</p>
+				
+			</article>
+
+			
+		
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		
+		
+		<aside class="sequence">
+			<h3>Introductions</h3>
+			<ol>
+				
+					
+					<li>
+						<a href="/intro/motivation.html">Motivation</a>
+					</li>
+					
+				
+					
+					<li class="current">Contrives</li>
+					
+				
+			</ol>
+		</aside>
+		
+		
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		
+		
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+
+
+	<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS_HTML">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [
+					['$', '$'],
+				]
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
+			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
+		});
+	</script>
+	
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	
+	<script type="text/javascript" src="/js/raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/waypoints.js"></script>
+	
+	<script type="text/javascript" src="/js/uriel.js"></script>
+	
+	<script type="text/javascript" src="/js/post.js"></script>
+	
+	<script type="text/javascript" src="/js/diagram/unroll.js"></script>
+	
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30196171-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ?
+				'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>

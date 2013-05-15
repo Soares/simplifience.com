@@ -15,7 +15,7 @@ Most people think they would have predicted this result -- until they learn that
 
 Actually, people spend a larger portion of their income in times of *prosperity*.
 
-Which makes sense, now that you know it. This is a consumerist culture. When times are good, we buy houses and put down money on cars and indulge in excess. We try to keep up with the Joneses. We're a paycheck-to-paycheck nation. When the money's rolling in there's no need to worry about the future. We save when the times get tough.
+Which makes sense, now that you know it. This is a consumerist culture. When times are good, we buy cars and put down money on houses and indulge in excess. We try to keep up with the Joneses. We're a paycheck-to-paycheck nation. When the money's rolling in there's no need to worry about the future. We only save when the times get tough.
 
 It should be obvious, now that you know.
 
