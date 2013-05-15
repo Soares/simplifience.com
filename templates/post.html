@@ -45,12 +45,14 @@
 <div id="footer-container" class="cap">
 	<footer class="wrapper">
 		{% block footer %}
+		{% set islast = [] %}
 		{% for name, members in sequences.items() %}
 		<aside class="sequence">
 			<h3>{{ name }}</h3>
 			<ol>
 				{% for member in members %}
 					{% if member|post_is(url) %}
+					{% if loop.last %}{% do islast.append(1) %}{% endif %}
 					<li class="current">{{ url|post_sequence_name(name) }}</li>
 					{% else %}
 					<li>
@@ -61,6 +63,20 @@
 			</ol>
 		</aside>
 		{% endfor %}
+		{% if islast or not sequences %}
+    <aside class="sequences">
+      <h3>Sequences</h3>
+      <ul>
+        {% for name, members in allsequences.items() %}
+				{% if islast and members|post_in(url) %}
+        <li class="current"><a href="{{ members[0] }}">{{ name }}</a></li>
+				{% else %}
+        <li><a href="{{ members[0] }}">{{ name }}</a></li>
+				{% endif %}
+        {% endfor %}
+      </ul>
+    </aside>
+		{% endif %}
 		{% if related %}
 		<aside class="related">
 			<h3>Related</h3>

@@ -31,7 +31,7 @@ Unfortunately, the method of applying these tools in tandem does not have a shor
 Nobody sounded the horns when science was eclipsed: the new method crept up slowly and took over. Now it rules, though the rest of the world does not yet know it. Science has been overtaken, and the successor <span class="info" markdown="inline">has not even been named</span>.
 
 <aside class="info" markdown="block">
-There are some who call the movement "[Bayesianism](http://lesswrong.com/lw/1to/what_is_bayesianism/)". Simplifience avoids this term in part because it neglects the import of information theory, but mostly because it's derived from @post[the name of a dead man]intro/names.
+There are some who call the movement [Bayesianism](http://lesswrong.com/lw/1to/what_is_bayesianism/). Simplifience avoids this term in part because it neglects the import of information theory, but mostly because it's derived from @post[the name of a dead man]intro/names.
 </aside>
 
 Henceforth, this post-scientific method shall be knows as <span class="define" markdown="inline">ratience</span>. Science led us out of our confusion and into the enlightenment. Ratience is the next step.

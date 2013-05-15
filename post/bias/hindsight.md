@@ -56,9 +56,9 @@ When you know, it's easy to feel like you knew it all along. [*You didn't know i
 
 Humans have a strong tendency to believe that the results are obvious *after they know them*. This is called hindsight bias, and [it's dangerous](http://lesswrong.com/lw/im/hindsight_devalues_science/).
 
-You've just felt a tiny unknown. Perhaps it doesn't disturb you very much: you can always Google it. But before you do that, I want you to inspect your bewilderment.
+You've just felt a tiny unknown. Perhaps it doesn't disturb you very much: you can look up the answer when you're done reading this article. But before you do that, I want you to inspect your bewilderment.
 
-Imagine you can't Google the answer. Imagine that the question has never been investigated. Imagine that the only way to find out is to perform the study. That's what an easy question feels like. The answer is not obvious, but you know where to find it.
+Imagine you can't Google it. Imagine that the question has never been investigated. Imagine that the only way to find out is to perform the study. That's what an easy question feels like. The answer is not obvious, but you know where to find it.
 
 Now imagine a hard question. Imagine a question where nobody even knowns what the answer will look like, never mind where to find it. Imagine not even knowing if your @post[question is connected to reality]reality/connected.
 
@@ -66,7 +66,7 @@ Imagine standing on the brink of human knowledge and staring out into the wild u
 
 If you ever manage to find an answer in that darkness, everyone will say it was obvious. But *everything* seem obvious in retrospect. When you're standing out there facing the unknown, there are a thousand paths before you and each leads to a conclusion that everyone will say was obvious. Which path do you choose?
 
-In retrospect, it feels obvious that the Earth follows the same laws as the Heavens. It feels obvious that the earth is round. It feels obvious that we should invent bows and arrows. It feels obvious that we should sharpen rocks and attach them to sticks.
+In retrospect, it feels obvious that rats are not spontaneously generated. That the Earth is governed by the same laws as the Heavens. That we can sharpen rocks and attach them to sticks.
 
 __These discoveries are only obvious in hindsight.__ They're not obvious when you're out there in the fray struggling to discover them.
 

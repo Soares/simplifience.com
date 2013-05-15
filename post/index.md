@@ -1,18 +1,6 @@
 ---
 title: Simplifience
-blocks:
-  footer: |
-    <aside class="sequences">
-      <h3>Sequences</h3>
-      <ul>
-        {% for name, members in allsequences.items() %}
-        <li><a href="{{ members[0] }}">{{ name }}</a></li>
-        {% endfor %}
-      </ul>
-    </aside>
-    <h1 class="logo"><a href="/">Simplifience</a></h1>
 ---
-
 <div class="nav asides">
   <div class="block">
     <!--The Lay of the Land, Formal Foundations, Intuitive Explanations-->
@@ -21,7 +9,7 @@ blocks:
       <ul>
         <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
         <li>{{ 'reality/welcome'|post_anchor }}</li>
-        <li>{{ 'foundations/mathematics'|post_anchor('Abandoning Mathematics') }}</li>
+        <li>{{ 'foundations/mathematics'|post_anchor('Abandoning Math') }}</li>
         <li>{{ 'science/image'|post_anchor('Stepping Beyond Science') }}</li>
         <li>{{ 'foundations/unlearn'|post_anchor('Correcting Confusions') }}</li>
       </ul>
