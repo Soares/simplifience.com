@@ -1,0 +1,302 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Euler's Identity</title>
+	<script src="/js/modernizr.js"></script>
+	<meta name="author" content="So8res">
+	<meta name="description" content="Simplified science">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
+
+	
+	<link id="favicon" rel="icon" type="image/png" href="/icons/simplifience.png">
+</head>
+<body class="simplifience">
+	
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		
+		<h1 class="title" title="Simplifience">
+			<a href="/">Euler's Identity</a>
+		</h1>
+		
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		
+		<div id="meditating"></div>
+			<article>
+				
+				
+				
+				<div class="caution">
+  <p>This is not a standard simplifience sequence. It is a sample designed to show how difficult concepts can be intuitive with a good explanation.</p>
+
+  <p>The articles here break many <a href="/intro/contrives.html">simplifience policies</a>. All of the concepts covered here will show up in greater detail in later articles.</p>
+</div>
+
+<p>Math is obfuscated by its archaic notation and its clumsy presentation. Take, for example, the strange equation known as &#8220;Euler&#8217;s Identity&#8221;:</p>
+
+<p class="number">$e^{\pi i} = \text{&#8211;}1$</p>
+
+<p>You may have stumbled across this identity before. If you haven&#8217;t, take a moment to really look at it and realize how extraordinary this is.</p>
+
+<p>This formula claims that $e$ (the base of the natural logarithm, an irrational number) raised to the power $\pi$ (relating circle circumference to diameter, also irrational) times <em>an imaginary number</em> is not only <em>meaningful</em>, but it&#8217;s a real whole number: negative one.</p>
+
+<p>This is a mind-bending assertion. An irrational raised to the power of an <em>imaginary irrational</em> is somehow equal to negative one? This identity surprised and confounded many when it was first discovered.</p>
+
+<blockquote>
+  <p>Gentlemen, that is surely true, it is absolutely paradoxical; we cannot understand it, and we don&#8217;t know what it means. But we have proved it, and therefore we know it must be the truth.</p>
+</blockquote>
+
+<p>That&#8217;s Benjamin Peirce, an American mathematician and Harvard professor failing to understand Euler&#8217;s identity.</p>
+
+<p>This is exactly how math shouldn&#8217;t be.</p>
+
+<p>Euler&#8217;s identity, it turns out, is easy to understand intuitively once you understand the three building blocks.</p>
+
+<ul>
+  <li><a href="/sample/growth.html">$e$ is growth</a>.</li>
+  <li><a href="/sample/semicircle.html">$\pi$ is half the circumference of a circle</a>.</li>
+  <li><a href="/sample/imagine.html">$i$ is the number one rotated a quarter turn</a>.</li>
+</ul>
+
+<aside class="info">
+  <p>Follow the links to build up intuitive understandings of $e$, $\pi$, and $i$. Understanding of Euler&#8217;s identity will follow.</p>
+</aside>
+
+<p>Once you understand $e$, $\pi$, and $i$ there is only one more <a href="/intro/contrives.html">contrive</a> standing in the way of understanding the identity.</p>
+
+<p>You&#8217;ve been taught that $x^5$ means $x*x*x*x*x$: five $x$s multiplied together. But what&#8217;s $x^i$? $x$ times itself an imaginary number of times?</p>
+
+<p>Remember that $i$ is no more nor less imaginary than $1$. In fact, $i$ is just $1$ rotated $\frac{1}{4}$ turns. So then $x^i$ is $x$ times itself one time but that one time is rotated? That doesn&#8217;t make sense.</p>
+
+<p>The contrive here is <em>exponentiation</em> &#8211; when you have a number plane instead of a number line, exponentiation isn&#8217;t just repeated multiplication. How do you repeat something a turned number of times? What does that even mean?</p>
+
+<p>The true nature of exponentiation will be revealed in other simplifience sequences. For now, we&#8217;re going to dodge the problem.</p>
+
+<p>$p * e^x$ is just notation for $(grow\ p\ x)$: grow principle $p$ at rate $x$ compounding continuously. You&#8217;ll remember that the formula to calculate the end result is <span class="info">$\displaystyle p * e^x = \lim_{n \to \infty} p * (1 + \tfrac{x}{n})^n$</span>.</p>
+
+<aside class="info">
+  <p>$(1 + \frac{x}{n})$ is amount you grow each time you compound: $100\%$ plus an $n^{th}$ fraction of the interest rate ($x$).</p>
+
+  <p>You scale the principle ($p$) by this amount $n$ times.</p>
+
+  <p>Continuous growth is growth compounded an infinite number of times ($n \to \infty$).</p>
+</aside>
+
+<p>Using this formula we have a way to figure out what imaginary exponents mean. At least, we can figure out one particular imaginary exponent: $\displaystyle p * e^i = (grow\ p\ i) = \lim_{n \to \infty} p * (1 + \tfrac{i}{n})^n$</p>
+
+<p>The interesting part is this: $p * e^i = (grow\ p\ i)$. This is the core of Euler&#8217;s identity. $(grow\ p\ 1)$ has an obvious meaning: take $p$ and grow it by $100\%$ every time period. But what in the blazes does $(grow\ p\ i)$ mean?</p>
+
+<p>$i$ is just $1$ rotated a quarter turn. So what $(grow\ p\ i)$ means is this:</p>
+
+<blockquote>
+  <p>Take the principle and grow it by $100\%$ per time period, making the interest perpendicular to the principle.</p>
+</blockquote>
+
+<p>Remember that the use of $i$ puts us on a number plane, not a number line. It&#8217;s not enough to say that we add $100\%$ interest: we also have to specify which direction the interest is added in. Growing $i$ is the same as growing $100\%$ except that the interest is paid out a quarter turn away from the principle.</p>
+
+<p>To see how this works, let&#8217;s consider growing 1 by $i$, compounding only once. This is just $1 * (1 + i)^1$ = $1 + i$. You start at one, and then all of the interest is vertical.</p>
+
+<div class="complex-plane"></div>
+
+<p>We&#8217;ve stepped off of the number line and onto the number plane: when you grow a number by $i$, you&#8217;re going perpindicular.</p>
+
+<p>What if we compound twice? We start with $1$. Then our first interest payment is $\frac{i}{2}$, so we&#8217;re at $1 + \frac{i}{2}$.</p>
+
+<p>The second interest payment isn&#8217;t $\frac{i}{2}$ &#8211; the second interest payment is $50\%$, but remember that all interest payments are <em>perpendicular to the value</em>, and the value is now $1 + \frac{i}{2}$. We pay out $50\%$ of the magnitude of the new value, paid with a $\frac{1}{4}$ turn. Check it out:</p>
+
+<div class="compound" data-n="2"></div>
+
+<aside class="info">
+  <p>Interest payments are the dashed lines. They are $50\%$ of the current value in magnitude and $\frac{1}{4}$ of a turn rotated.</p>
+</aside>
+
+<p>Take a moment to look at a circle. Notice how at any point along the edge of a circle the circle is <em>locally straight</em>. If you zoom in where the circle intercepts the horizontal axis, the circle looks vertical. In other words, the line tangent to a circle is <span class="info">perpendicular to the radius</span>.</p>
+
+<aside class="info">
+  <p>This property is sufficient to define circles.</p>
+</aside>
+
+<div class="tangents"></div>
+
+<aside class="info">
+  <p>Circles are like a bunch of infinitely short right triangles all stacked atop each other.</p>
+</aside>
+
+<p>Keep that in mind while we compound three times, paying a third of the value each time and paying out at right angles.</p>
+
+<div class="compound" data-n="3"></div>
+
+<aside class="info">
+  <p>Make three right triangles where the height is $\frac{1}{3}$ of the previous hypotenuse and stack them atop each other.</p>
+</aside>
+
+<p>Do you see what&#8217;s going on here? The more we compound the interest payments, the less it goes into <em>increasing</em> the principle and the more it goes into <em>turning</em> the principle.</p>
+
+<p>When the perpendicular growth is compounded continuously (as $n \to \infty$), <em>all</em> of the growth goes towards pushing the principle onto a new axis, and <em>none</em> of it goes towards growth. Check it out:</p>
+
+<div class="compound" data-n="[1, 2, 3, 4, 5, 6, 7, 10, 20, 30]" data-circle="true"></div>
+
+<aside class="info">
+  <p>$(1 + \frac{i}{n})^n$ for $n$ from $1$ to $30$.</p>
+
+  <p>The more we compound the more the growth goes towards rotating the principle instead of extending it.</p>
+</aside>
+
+<p>We&#8217;re creating shorter and shorter right triangles and stacking them on top of each other. Sound familiar?</p>
+
+<blockquote>
+  <p>Continuous growth which is always perpendicular to the principle is just another way to say &#8220;circular motion&#8221;.</p>
+</blockquote>
+
+<p>Woah. That&#8217;s pretty cool. $e^i = (grow\ 1\ i)$ describes circular motion. How much circular motion? One radius distance. The original principle ($1$) is acting as the radius of the circular motion. The growth rate is $i$ which is just another name for $1$ at a quarter turn. In circular growth the interest never accumulates, it only rotates. $(grow\ 1\ i)$ is one radius-distance of circular movement, also known as &#8220;rotation by one radian&#8221;.</p>
+
+<p>$e^{2i} = (grow\ 1\ 2i)$ is twice as much circular motion: rotation by two radians. And $e^{\pi i} = (grow\ 1\ \pi i)$?</p>
+
+<div class="compound" data-n="[1, 2, 3, 4, 5, 6, 7, 10, 25, 50, 100]" data-circle="true" data-factor="pi"></div>
+
+<aside class="info">
+  <p>$e^{\pi i} = (grow\ 1\ \pi i) = (rotate\ 1\ \pi)$</p>
+
+  <p>Calculated by $\displaystyle \lim_{n \to \infty} (1 + \tfrac{\pi\ i}{n})^n$.</p>
+</aside>
+
+<p>It&#8217;s $\pi$ radian distances of rotation, which is a walk halfway around the circle.</p>
+
+<p class="number">$e^{\pi i} = \text{&#8211;}1$</p>
+
+<aside class="info">
+  <p>Don&#8217;t forget to read the <a href="/sample/aftermath.html">aftermath</a>.</p>
+</aside>
+				
+			</article>
+
+			
+		
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		
+		
+		<aside class="sequence">
+			<h3>Imaginary Powers</h3>
+			<ol>
+				
+					
+					<li class="current">Euler's Identity</li>
+					
+				
+					
+					<li>
+						<a href="/sample/growth.html">Growth</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/sample/semicircle.html">Semi-circle</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/sample/imagine.html">Imagine</a>
+					</li>
+					
+				
+					
+					<li>
+						<a href="/sample/aftermath.html">Aftermath</a>
+					</li>
+					
+				
+			</ol>
+		</aside>
+		
+		
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		
+		
+		<a class="blog" href="http://blog.simplifience.com/post/48229170259/eulers-identity">Discuss</a>
+		
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+
+
+	<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS_HTML">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [
+					['$', '$'],
+				]
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
+			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
+		});
+	</script>
+	
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	
+	<script type="text/javascript" src="/js/raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/waypoints.js"></script>
+	
+	<script type="text/javascript" src="/js/uriel.js"></script>
+	
+	<script type="text/javascript" src="/js/post.js"></script>
+	
+	<script type="text/javascript" src="/js/diagram/identity.js"></script>
+	
+	<script type="text/javascript" src="/js/complex-number.js"></script>
+	
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30196171-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ?
+				'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
