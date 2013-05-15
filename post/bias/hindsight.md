@@ -5,7 +5,7 @@ During recessions, people spend a larger portion of their income.
 
 Seems obvious, right? During a recession, you can't save as much. Salaries stagnate while prices rise. You've got to spend a larger portion of your income just to stay afloat. Sometimes income runs out and people have to dig into their savings -- if they have any.
 
-Like the all psychology experiments, the result was obvious. It's not clear why psychologists wasted money on study when anybody could have told you the answer in advance.
+Like the all psychology experiments, the result was obvious. It's not clear why psychologists wasted money on study when anybody could have predicted the answer in advance.
 
 {% call post.meditation('income-portion-prediction', 'What are the chances you would have predicted this in advance?') %}{% endcall %}
 
@@ -70,6 +70,6 @@ In retrospect, it feels obvious that the Earth follows the same laws as the Heav
 
 __These discoveries are only obvious in hindsight.__ They're not obvious when you're out there in the fray struggling to discover them.
 
-A thousand years of stagnant silence can be shattered by a single thought. Civilization hangs on ideas that will seem oh-so-obvious in retrospect.
+Civilization runs on ideas that seem oh-so-obvious in retrospect. A thousand years of stagnant silence can be shattered by a single thought.
 
 Never underestimate the difficulty of having obvious ideas.
