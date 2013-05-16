@@ -1,0 +1,181 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Simpliquations</title>
+	<script src="/js/modernizr.js"></script>
+	<meta name="author" content="So8res">
+	<meta name="description" content="Simplified science">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/css/simplifience.css">
+	
+	<link rel="stylesheet" type="text/css" href="/css/post.css">
+	
+
+	
+	<link id="favicon" rel="icon" type="image/png" href="/icons/stub.png">
+</head>
+<body class="stub">
+	
+<div id="header-container" class="cap">
+	<header id="header" class="wrapper clearfix">
+		
+		<h1 class="title" title="Simplifience">
+			<a href="/">Simpliquations</a>
+		</h1>
+		
+	</header>
+</div>
+<div id="main-container" class="content">
+	<div id="main" class="wrapper clearfix content">
+		
+		<div id="meditating"></div>
+			<article>
+				
+				<section id="stub">
+					Simplifience equation notation explained explicitly.
+				</section>
+				<aside class="stub">
+					This page is a stub!<br>Check back later for more conent.
+				</aside>
+				
+				
+				
+				<p>Simplifience won&#8217;t be using math equations.</p>
+
+<p>This is in part due to the fact that <a href="/foundations/mathematics.html">math is not a thing</a>.</p>
+
+<p>Mostly it&#8217;s because <a href="/math/archaic.html">math is archaic</a>. The syntax of mathematics is old and poorly thought out. It is confusing and intimidating to newcomers. It doesn&#8217;t display nicely on computer screens.</p>
+
+<p>I don&#8217;t mean to discourage you from using math equations: if you are already comfortable with the syntax, then by all means, continue using it. It is quite terse and compact.</p>
+
+<p>Terseness and compactness are not the allies of education.</p>
+
+<p>Compare the following:</p>
+
+<p>$\displaystyle \lim_{n\to\infty} p * (1 + \frac{r}{n})^n$</p>
+
+<p>$(principle\textbf{ scaled by }(1\textbf{ plus }(rate\textbf{ divided by }n))\textbf{ }n\textbf{ times})\textbf{ as }n\textbf{ approaches }\infty$</p>
+
+<p>These equations say the same things. The first is far denser and is intuitive only if you have already internalized the quirks and customs of mathematics. The other is simple to understand for anyone who speaks English.</p>
+
+<p>Both equations have the same level of rigor. Language is <a href="/language/scope.html">a powerful tool</a>, and it is <a href="/language/simplicity.html">difficult to say simple things</a> &#8211; English is not a good medium for discussing how the universe works. In order to describe the universe, we must use a notation that leaves no room for misinterpretation: <em>but that language need not be mathematics</em>.</p>
+
+<p>Simplifience will use a language <a href="/intro/notation.html" class="stub">more suited to newcomers</a>.</p>
+				
+			</article>
+
+			
+		
+	</div>
+</div>
+<div id="footer-container" class="cap">
+	<footer class="wrapper">
+		
+		
+		
+		
+    <aside class="sequences">
+      <h3>Sequences</h3>
+      <ul>
+        
+				
+        <li><a href="/foundations/mathematics.html">Abandonding Math</a></li>
+				
+        
+				
+        <li><a href="/science/image.html">Beyond Science</a></li>
+				
+        
+				
+        <li><a href="/foundations/unlearn.html">Foundations</a></li>
+				
+        
+				
+        <li><a href="/sample/identity.html">Imaginary Powers</a></li>
+				
+        
+				
+        <li><a href="/intro/motivation.html">Introductions</a></li>
+				
+        
+				
+        <li><a href="/reality/welcome.html">Reality for Beginners</a></li>
+				
+        
+      </ul>
+    </aside>
+		
+		
+		<h1 class="logo"><a href="/">Simplifience</a></h1>
+		
+		
+		<a class="author" target="_blank" href="http://so8r.es">So8res</a>
+	</footer>
+</div>
+
+
+	<script type="text/javascript"
+		src="http://cdn.mathjax.org/mathjax/2.1-latest/MathJax.js?config=TeX-AMS_HTML">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [
+					['$', '$'],
+				]
+			},
+			"HTML-CSS": {
+				availableFonts: ["TeX"]
+			},
+			TeX: {
+				Macros: {
+					tooltip: ['\\tooltip{\#1}{\#2}', 2]
+				}
+			}
+		});
+
+		MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+			var TEX = MathJax.InputJax.TeX, MML = MathJax.ElementJax.mml;
+			TEX.Definitions.macros.tooltip = 'tooltip';
+			TEX.Parse.Augment({
+				tooltip: function (args) {
+					var name = this.ParseArg(args), tip = this.ParseArg(args);
+					this.Push(MML.maction(name, tip).With({actiontype: MML.ACTIONTYPE.TOOLTIP}));
+				}
+			});
+		});
+	</script>
+	
+	<script type="text/javascript" src="/js/underscore.js"></script>
+	
+	<script type="text/javascript" src="/js/jquery.js"></script>
+	
+	<script type="text/javascript" src="/js/raphael.js"></script>
+	
+	<script type="text/javascript" src="/js/waypoints.js"></script>
+	
+	<script type="text/javascript" src="/js/uriel.js"></script>
+	
+	<script type="text/javascript" src="/js/post.js"></script>
+	
+	
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-30196171-1']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script');
+			ga.type = 'text/javascript';
+			ga.async = true;
+			ga.src = ('https:' == document.location.protocol ?
+				'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</body>
