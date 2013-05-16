@@ -3027,6 +3027,9 @@ div.video embed {
   opacity: 0.18;
   font-style: italic;
 }
+#main article .automatic.title a {
+  color: black;
+}
 #main article .automatic.title.img {
   width: 100%;
   text-align: right;
