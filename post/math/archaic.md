@@ -2,17 +2,17 @@
 title: Math is Archaic
 type: rules
 ---
-The modern <span class="info" markdown="inline">language</span> of mathematics is archaic. The notation that we use to describe The Rules are confusing. The names we assign to them are poor. The whole language was made up as humanity went along, and it's poorly thought out. It's two millennia old, and it is stale.
-
-<aside class="info" markdown="block">
-Math is @post[more than the symbols]reality/symbology.
-</aside>
-
-The problem with math notation is threefold.
+The modern language of mathematics is archaic. The notation that we use to describe @post[The Rules]reality/rules is confusing. The names we assign to the symbols are poor. The whole language was made up as humanity went along. It's poorly thought out. It's two millennia old, and it has grown stale.
 
 <aside class="caution" markdown="block">
-It's policy to avoid mentioning specific @post[contrives]intro/contrives until an alternative is provided. For that reason, I have avoided @post[specific gripes]math/gripes.
+It's policy to avoid mentioning specific @post[contrives]intro/decontriving until an alternative is understood. For that reason I have avoided @post[specific gripes]math/gripes.
 </aside>
+
+The problem with mathematics is in the names.
+
+Names are important. They drive our thoughts. When our names become disconnected with the things they describe, @post[we become confused]reality/connected. It is easy to forget that the @post[symbols are separate from the substance]reality/symbology.
+
+The problem with the language of mathematics is threefold.
 
 The first problem set root thousands of years ago when the ancients named things that they did not fully understand. Now we're @post[stuck with those names]allegory/trunk.
 

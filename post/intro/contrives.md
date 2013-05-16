@@ -1,31 +1,31 @@
 ---
 title: Contrives
-scripts:
-- '@raphael/unroll'
 ---
-There are many concepts in science and mathematics which correct, strictly speaking, but which are still wrong. They're technically correct but confusing and occlusive. Here at simplifience we refer to such concepts as <span class="define" markdown="inline">contrives</span>.
+Names are powerful things. They direct our thoughts. They drive our speech. If we're not careful, names can do more harm than good.
+
+There are many ways that names can be wrong. Unfortunately, names seldom feel wrong. Our labels for reality feel like the way that reality is. The word "tiger" doesn't feel like the letters. It doesn't evoke squiggly lines or spoken phonemes in your mind. The word "tiger" invokes a tiger.
+
+![Tiger](/images/tiger.jpg)
+
+It's easy to forget that @post[the symbols are not the substance]reality/symbology. When the symbols don't match the substance, subtle errors arise.
+
+Sometimes our labels are @post[too large]foundations/mathematics. Sometimes words bite off more than they can chew and one word labels many concepts. But it doesn't feel like one word labeling many things: [it feels like just one confusing thing](http://lesswrong.com/lw/nw/fallacies_of_compression/). If we have no words for the constituent parts then we have to struggle to even think of them, because the broken words direct our thoughts.
+
+Sometimes our labels are @post[disconnected from reality]reality/connected. When there are too many labels, it's easy to imagine disjoint possibilities. If you think that "the Handle", "the Blade", and "the Axe" are three unrelated labels then you might try to @post[remove the axe from its handle and its blade]allegory/axe. When our labels are poorly connected, confusion reins.
+
+The rot goes deeper than the words. Poorly chosen words [privilege the wrong questions](http://lesswrong.com/lw/hba/privileging_the_question/). Poorly worded concepts @post[reinforce shattered worldviews]science/wrong-first.
+
+Tangled labels are the seeds of confusion -- and there are many tangles. Some are big, some are small. All are dangerous. Here at simplifience we unify these misconceptions under a common name: <span class="define" markdown="inline">contrives</span>.
 
 <aside class="define" markdown="block">
 __Contrive__ *n.*
-A thought, label, or concept which hides what it means to describe.
+A word, thought, or concept which hides what it means to describe.
 </aside>
 
-Sometimes contrives place @post[many concepts under the same label]foundations/mathematics. You don't notice that there are two concepts: you think the contrive is one single confusion.
+Contrives are prevalent in the realm of math and science. Words are like the boundaries in our minds, human-drawn borders on the territory of reality. Among things we can touch and feel, it was easy to draw the right boundaries. The word "tiger" labels a distinct clump of real things.
 
-Sometimes contrives label an incomplete concept in a way that makes it sound whole, preventing you from reaching full understanding.
+We were not so lucky in the realm of the abstract. Mathematics and science were organically grown. The words were chosen before the terrain was understood. The boundaries that were drawn are awkward. They do not cut reality at its seams.
 
-Universally, contrives make simple concepts difficult to understand.
+With every scientific and mathematical revolution, our understanding of the world changes deeply. Our labels become connected in surprising ways. Words that we thought were distinct become linked, concepts which we thought were unified are decomposed. And yet, we keep the old words. We add new words and we draw new boundaries, but we seldom discard the old. This yields an understanding of reality that is technically correct, but very difficult to understand.
 
-Perhaps the most famous contrive is $\pi$, the radius lengths in half a turn.
-
-<div class="unroll" data-counter="on" data-pistop="on"></div>
-
-$\pi$ alone, while relatively harmless, makes it harder to see the truth in any formula involving circles. Every time you want to describe a turn you have to add an extra factor of two. $\frac{\pi}{2}$ radians is a quarter turn, not a half turn.
-
-I mention $\pi$ because it is a [hotly contested](http://tauday.com/tau-manifesto){:target="\_blank"} contrive with [popular support](http://www.youtube.com/watch?v=jG7vhMMXagQ){:target="\_blank"}. Yet even poor contrived $\pi$ has its advocates. The other contrives lurking in your brain are far less visible than $\pi$. They hardly seem to matter when taken individually.
-
-Most contrives cannot be attacked head-on. They are familiar and safe and everyone knows what they mean, even if they hide deeper knowledge. When arguing against a contrive the burden of proof is placed upon the challenger. You fight an uphill battle. The contrive is safe and comfortable. Everyone's so used to it that they hardly notice their own efforts to route around the damage. You face the inertia of an entire culture. You're ravaged by a bias in favor of the status quo.
-
-Simplifience takes a different approach: we don't mention contrives. We don't give them the power they're used to. We ignore them.
-
-We do the math and science in the simplest form. We discard the historical cruft. Once you've built up a solid intuition for the subject, once you really understand what's going on, it doesn't matter what notation you use.
+The terrain beneath our tattered labels is simple and beautiful. But in order to see it, we have to discard our old words. We have to do away with our old labels, erase the silly boundaries. We must only use words that cut reality at its seams.

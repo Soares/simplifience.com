@@ -7,7 +7,7 @@ members:
 
 Math and Science are wrong.
 
-They're not incorrect. There are other ways to be wrong.
+They're not incorrect, but there are other ways to be wrong.
 
 Math makes @post[three grievous mistakes]math/archaic. Science inherits all the same mistakes and adds @post[two of its own]science/wrongs. Math and science are riddled with @post[contrives]intro/contrives: confusing names, stale concepts, and viewpoints grown twisted over the millennia.
 
