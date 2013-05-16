@@ -5,16 +5,16 @@ title: Symbols are not Symbology
 
 This is not a pipe.
 
-![Not a pipe](/images/not-a-pipe.jpg){:title="R. Magritte - Ceci n'est pas une pipe."}
+![Not a pipe](/images/pipe.jpg){:title="http://commons.wikimedia.org/wiki/User:Arz / CC-BY-SA-3.0"}
 
-This is a depiction of a pipe.
+It's an image of a pipe.
 
 Similarly, this is not the number one:
 
 $1$
-{:.number}
+{:.big}
 
-This is a *symbol* which evokes the <span class="info">number one</span> in your mind. The true number one is our name for an abstract concept. It is how many noses you have on your face. It is how many biological fathers you have. It is not some frail collection of pixels on a screen.
+This is a *symbol* which evokes the number one in your mind. The true number one is our name for an abstract concept. It is how many noses you have on your face. It is how many biological fathers you have. It is not some frail collection of pixels on a screen.
 
 Human language is historically bad at making this distinction. We say htat $1 \frac{2}{3}$ is written using three numbers. Yet we also say that $1 \frac{2}{3}$ is *one number* found partway between $1$ and $3$. It is very easy for humans to mix up the symbol with what the symbol means.
 

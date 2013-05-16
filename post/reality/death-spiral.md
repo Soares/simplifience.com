@@ -26,7 +26,7 @@ No, if you want to actually explain a real concept, the way to do it is to *poin
 
 What is a chair? These are chairs:
 
-![Chairs](/images/windsor-chairs.jpg){:title="© Fred_J, http://commons.wikimedia.org/wiki/User:Fred_J"}
+![Chairs](/images/windsor-chairs.jpg){:title="http://commons.wikimedia.org/wiki/User:Fred_J / CC-BY-SA-1.0"}
 
 Rather, those are images of chairs. If we were in person, I would point out a chair for you. Here's another picture of a chair:
 

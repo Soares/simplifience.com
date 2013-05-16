@@ -15,7 +15,7 @@ Science has an image problem.
 
 The view on science is [starting](http://www.haydenplanetarium.org/tyson/) to [change](https://www.facebook.com/IFeakingLoveScience), but scientists themselves are in a bind.
 
-![Scteriotype](/images/scteriotype.png){:title="© Viktorvoigt, http://commons.wikimedia.org/wiki/User:Viktorvoigt"}
+![Scteriotype](/images/scteriotype.png){:title="http://commons.wikimedia.org/wiki/User:Viktorvoigt / CC-BY-SA-3.0"}
 
 This image problem is exemplified in the [Dresden files](http://www.jim-butcher.com/books/dresden), a book series centered around a professional wizard in Chicago. In Harry Dresden's world, magic is real. Nobody notices, because whenever someone encounters the supernatural they rationalize it away, preferring the comfort of their normal lives.
 

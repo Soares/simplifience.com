@@ -17,3 +17,20 @@ $ ->
       close()
       return false
     $('a.close', meditation).on 'click', close
+
+  $('#main article [title]').each ->
+    elem = $(this)
+    tooltip = $('<p class="automatic title"></p>')
+    tooltip.addClass elem.prop('tagName').toLowerCase()
+    title = elem.attr('title')
+      .replace('CC-BY-SA-3.0', '<a href="http://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA-3.0</a>')
+      .replace('CC-BY-SA-2.5', '<a href="http://creativecommons.org/licenses/by-sa/2.5/deed.en">CC-BY-SA-2.5</a>')
+      .replace('CC-BY-SA-2.0', '<a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en">CC-BY-SA-2.0</a>')
+      .replace('CC-BY-SA-1.0', '<a href="http://creativecommons.org/licenses/by-sa/1.0/deed.en">CC-BY-SA-1.0</a>')
+      .replace(/(http:\/\/commons.wikimedia.org\/wiki\/User:)(\S+)/, '<a href="$1$2">$2</a>')
+      .replace(/(http:\/\/www.flickr.com\S+)/, '<a href="$1">flickr</a>')
+    short = elem.attr('title')
+      .replace(/http:\/\/commons.wikimedia.org\/wiki\/User:(\S+)/, '$1')
+    tooltip.html title
+    elem.attr 'title', short
+    elem.after tooltip

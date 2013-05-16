@@ -6,7 +6,7 @@ Science has been wrong before.
 
 Science in its infancy was just blatantly wrong. Existence is not forged from four elements bound together by spirit, which became readily apparent when we started actually taking things apart.
 
-![Five Elements](/images/elements.png){:title="© Nyo / http://commons.wikimedia.org/wiki/User:Nyo"}
+![Five Elements](/images/elements.png){:title="http://commons.wikimedia.org/wiki/User:Nyo / CC-BY-SA-2.0"}
 
 We can forgive the philosophers of old because they did not really *have* science -- @post[the method]science/method -- and didn't understand that @post[mysterious answers aren't answers]reality/mystery.
 

@@ -9,7 +9,7 @@ But it's not always true. If you have two apples in a bowl, and then you go out 
 
 Sometimes a kid will have eaten an apple while you were gone, and you'll only have three apples. Sometimes your friend picked one too, and you'll have five. Sometimes it takes you a hundred years to pick the apples, and when you get back, your original apples have rotted away. Sometimes they've grown into trees, and now you have a hundred apples.
 
-![Five apples in a bowl](/images/apples.jpg){:title="© Anish.rocsta, Wikimedia Commons"}
+![Five apples in a bowl](/images/apples.jpg){:title="Anish.rocsta / CC-BY-SA-3.0"}
 
 In these cases we don't say that $2 + 2 \ne 4$. We say that *the apples weren't acting like numbers*. In order for the rules of numbers to apply, your apples can't disappear into the mouths of children or appear in the hands of your friend. If they do, they aren't acting like numbers. Numbers can't be eaten. Numbers can't rot away. Numbers can't sprout trees.
 

@@ -5,7 +5,7 @@ An [ancient philosopher](http://en.wikipedia.org/wiki/Sorites_paradox) once aske
 
 Obviously, this single grain of sand is not a heap of sand. But it also seems obvious that no heap of sand can be reduced to a non-heap by the removal of a single grain. Which grain of sand, precisely, demoted the heap?
 
-![Sand](/images/sand.jpg){:title="© Solipsist, http://commons.wikimedia.org/wiki/User:Solipsist"}
+![Sand](/images/sand.jpg){:title="Solipsist / CC-BY-SA-2.0"}
 
 Eubulides thought he had devised quite the paradox. Unfortunately, Eubulides had a poor grasp on the @post[difference between his labels and the things they label]reality/symbology.
 

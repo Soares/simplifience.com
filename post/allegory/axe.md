@@ -33,4 +33,4 @@ Experiment after experiment, reality thwarted our alien friend. The blue dot ref
 
 No matter how swift or clever was our alien, it never did manage to separate the axe from its handle and its blade.
 
-![Axe](/images/axe.jpg){:title="© B.gliwa, http://commons.wikimedia.org/wiki/User:B.gliwa"}
+![Axe](/images/axe.jpg){:title="Axe for cutting, handicraft; oak handle by http://commons.wikimedia.org/wiki/User:B.gliwa / CC-BY-SA-2.5"}

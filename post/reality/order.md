@@ -17,7 +17,7 @@ We know such rules exist, because reality exists. At minimum, we can point and s
 
 If you want to know exactly what happens when you throw a rock off of a cliff, there is a *perfect* model you can use which will never lie: pick up a rock and toss it off a cliff.
 
-![Cliff](/images/cliff.jpg){:title="© Pumbaa80, http://commons.wikimedia.org/wiki/User:Pumbaa80"}
+![Cliff](/images/cliff.jpg){:title="http://commons.wikimedia.org/wiki/User:Pumbaa80 / CC-BY-SA-3.0"}
 
 Reality acts however reality acts. <span class="info" markdown="inline">There are constraints</span> on how reality acts: these are the rules. At the very least, reality can be expressed in terms of reality itself.
 

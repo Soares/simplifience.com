@@ -41,7 +41,7 @@ There is a tiny chance that your mind is being manipulated, and there's a tiny c
 
 One possible reaction to this fact is to never use definitives in speech. This is a pretty silly solution, and hobbles our ability to communicate. We wouldn't be able to say "Sally is going to the movies" any more. We'd have to say things like "Sally wants to go to the movies", or "Sally has stated her intent to attend the movies", and even then we run into trouble. By the time we utter "I am reasonably certain that I heard Sally state her intent to attend the movies", we're missing the point.
 
-![Movie Theater](/images/movies.jpg){:title="© Pumain, Base Mérimée, French Ministry of Culture"}
+![Movie Theater](/images/movies.jpg){:title="© Pumain / http://www.pumain.fr / CC-BY-SA-3.0"}
 
 It is stupid to throw out definitives in our language. Rather, since the word "is" or the phrase "will be" *cannot* be certainties, we use them to express things that *we, the speaker* believe are true with a reasonable degree of certainty.
 

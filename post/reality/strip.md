@@ -3,7 +3,7 @@ title: Stripped of Fairies
 ---
 Suppose your child asks you what a rainbow is. Do you resort to cold, boring science and answer "diffraction through raindrops"? Or do you give her a hint of magic while she's still young, and tell her that rainbows are fairy roads to leprechaun gold?
 
-![Rainbow](/images/rainbow.jpg){:title="© Marcin Klapczynski, Wikimedia Commons"}
+![Rainbow](/images/rainbow.jpg){:title="Wing-Chi Poon / http://commons.wikimedia.org/wiki/User:Wingchi / CC-BY-SA-2.0"}
 
 @post[Science has an image problem]science/image. In the modern era, it feels like science is the boring old authority that tells you the way things are. "Rainbows are just diffraction", science insists, and you're not allowed to argue. There are no fairies -- science has stripped the world of them.
 

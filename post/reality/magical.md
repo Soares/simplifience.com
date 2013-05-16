@@ -31,7 +31,7 @@ So perhaps a better answer is "it's a mystery -- what do you think a rainbow is?
 
 Actually *understanding* how a rainbow works feels amazing. Discovering that you can split white light into an array of colors is surprising, if you haven't had the surprise spoiled. It explains a dozen other phenomena, like your red shirt looking black under blue light, and leads to a hundred new questions. It's a window to the workings of the universe. And most importantly, it doesn't go away when you grow up.
 
-![Prism](/images/prism.jpg){:title="© Spigget, http://commons.wikimedia.org/wiki/File:Dispersive_Prism_Illustration_by_Spigget.jpg"}
+![Prism](/images/prism.jpg){:title="Spigget / CC-BY-SA-3.0"}
 
 @post[Leprechauns and fairies were not so lucky]reality/strip.
 

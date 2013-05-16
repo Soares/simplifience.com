@@ -12,7 +12,7 @@ Welcome to reality!
 
 Take a look around. Gaze up at the stars. Appreciate some sunshine. This place is pretty nice, don't you think?
 
-![Summer Field](/images/summer-field.jpg){:title="© Luke Vaitour, http://commons.wikimedia.org/wiki/User:Lviatour"}
+![Summer Field](/images/summer-field.jpg){:title="Luc Vaitour / http://commons.wikimedia.org/wiki/User:Lviatour / CC-BY-SA-3.0"}
 
 I mean, it has it's ups and downs, but in the end, it's all there is. This place, reality, contains everything. It contains the ground and the stars and you. It contains your family and your feelings and your friends. It's everything.
 
