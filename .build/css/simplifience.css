@@ -3048,6 +3048,12 @@ div.video embed {
 #main article .automatic.title.blockquote:before {
   content: "— ";
 }
+span.exciting {
+  font-family: 'Marko One', serif;
+}
+span.uncomfortable {
+  font-family: 'Sonsie One', serif;
+}
 #main svg {
   display: block;
   margin-bottom: 0.75em;

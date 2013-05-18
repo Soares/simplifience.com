@@ -1,32 +1,32 @@
 ---
 title: Motivation
-sequence: Introductions
+sequence: What is Simplifience?
 members:
+- what
+- trust
+- knowledge
 - contrives
+- decontriving
+- names
+- good-enough
+- too-late
+- faq
 ---
 
-Math and Science are wrong.
+Math and Science are wrong. They're not incorrect, but there are other ways to be wrong.
 
-They're not incorrect, but there are other ways to be wrong.
+Math notation is an inconsistent @post[relic]foundations/mathematics organically grown over the course of two millennia, and while the concepts that it describes are beautiful, the notation is far from optimal.
 
-Math makes @post[three grievous mistakes]math/archaic. Science inherits all the same mistakes and adds @post[two of its own]science/wrongs. Math and science are riddled with @post[contrives]intro/contrives: confusing names, stale concepts, and viewpoints grown twisted over the millennia.
+Science education is intent on @post[reinforcing shattered woldviews]science/wrong-first with its @post[narrative of resolved confusion]science/mire. It obscures the deep secrets of reality and locks them in textbooks guarded by a @post[personhood cult]intro/names.
 
-The net result is a confusing bloated mess. The nature of existence is obfuscated by archaic languages. The secrets of reality are locked in textbooks guarded by a @post[personhood cult]intro/names.
+The result is a world where math and advanced science are surrounded by an aura of fear and awe, where revelations of the last century are only shown to those with the mathematical acumen to prove them.
 
-It doesn't have to be like this. Math and science can be much simpler if you sidestep the cruft of history.
+It doesn't have to be like this. Math and science are much simpler if you drop the baggage of history.
 
-<aside class="info" markdown="block">
-Words are cheap: try an @post[introductory sequence]sample/identity of simplifience if you aren't convinced.
-</aside>
-
-Simplifience is here to teach you about the nature of existence. Popular culture holds that reality is a very difficult place to understand. Quantum mechanics is treated like a dark branch of magic and the average physics textbook won't get within ten chapters of general relativity. This is not because the concepts are *intrinsically difficult* -- it's because their presentation is twisted and confused.
+Simplifience is here to teach you about the nature of existence. Popular culture holds that reality is a very difficult place to understand. Quantum mechanics is treated like a dark magic and the average physics textbook won't get within ten chapters of general relativity. This is not because the concepts are *intrinsically difficult* -- it's because their presentation is twisted and confused.
 
 We can do better.
 
-Simplifience doesn't assume any particular level of education. It's here for everyone. It's for people who barely passed their high school physics courses but have never lost their curiosity. It's for people who's ears perk up when they hear "quantum teleportation" and "entanglement" and have always wondered what secrets existence is hiding from them. It's for people who took a bunch of physics courses and were good at solving all of the equations the way the teacher wanted, but never really *understood* the motions they dutifully carried out. It's for everyone who's done the math but doesn't understand the *meaning*.
+Simplifience doesn't assume any level of education. It's for everyone. It's for people who barely passed their high school physics courses but have never lost their curiosity. It's for people who perk their ears at the words "quantum teleportation" and "entanglement" and have always wondered what secrets reality is hiding from them. It's for people who took a bunch of physics courses and were good at solving all of the equations but never really *understood* the motions they dutifully carried out. It's for everyone who's heard the math but didn't understand the *meaning*.
 
-It's a quest to understand the universe.
-
-If you can't wait to start, begin by @post[correcting a few confusions]foundations/unlearn that you aren't aware you have.
-
-Otherwise it's useful to read about @post[how to use this site]intro/site.
+Simplifience is a quest to understand the universe.

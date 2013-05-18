@@ -1,14 +1,7 @@
 ---
 title: Color Scheme Test
 stub: |
-  This is an internal tool that I use for some simplifience.com tests.
-  I test all of the possible themes here (existing and new), hence the name.
-  I also test the stub framework, which you're seeing now.
-  <br/>
-  <br/>
-  Internally, I see the post that I'm working on.
-  Externally, you see only this.
-type: stub
+  This page is used to test the possible color schemes (internally) and the stub framework (externally).
 scripts:
 - '@coffee/theme'
 ---
