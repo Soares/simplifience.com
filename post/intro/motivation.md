@@ -2,15 +2,15 @@
 title: Motivation
 sequence: What is Simplifience?
 members:
-- what
-- trust
+- philosophy
 - knowledge
 - contrives
 - decontriving
 - names
 - good-enough
 - too-late
-- faq
+- trust
+- answers
 ---
 
 Math and Science are wrong. They're not incorrect, but there are other ways to be wrong.

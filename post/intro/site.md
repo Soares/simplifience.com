@@ -5,7 +5,7 @@ Welcome to simplifience.
 
 If you get lost, click on the title of the article or the big <span class="uncomfortable">simplifience</span> logo at the bottom of the page. It will take you back to [simplifience.com](/).
 
-Articles are grouped into sequences. You can find a list of all the articles in the sequence at the bottom of the page. Those are links, use them to navigate. Sometimes one article appears in multiple sequences. Keep track of which sequence you're reading when you navigate. Once you reach the end of a sequence you'll see a bunch of other sequences at the bottom of the page.
+Articles are grouped in sequences. You can navigate a sequence using the links at the bottom of a page. Sometimes one article appears in multiple sequences: keep track of which sequence you're reading when you navigate. Once you reach the end of a sequence you'll see a bunch of other sequences at the bottom of the page.
 
 Within each article, there are <span class="info" markdown="inline">side commentaries</span>, which expand on colored text. <span class="info" markdown="inline">Teal</span> is the standard simplifience color. Other colors have different meanings:
 
@@ -22,7 +22,7 @@ Navy blue for pedantic clarifications.
 </div>
 
 <div class="simplifience" markdown="block">
-Purple as a secondary voice in example conversations or for elegant revelations.
+Purple as a secondary voice, often antithetical.
 </div>
 
 <div class="knowledge" markdown="block">
