@@ -35,7 +35,7 @@ Even if I am honest, and I understood correctly, and I express my knowledge well
 
 Whenever we communicate, there are a dozen ways to transmit the wrong information. I cannot open your mind and pour my knowledge in. *Even if I could*, you should treat it with caution: my knowledge is incomplete, perhaps dangerously so.
 
-Verify what I tell you. Question the parts that sound questionable. Convince yourself, and don't be satisfied until you do. The important thing is not that you believe me: the important thing is that you learn doubt the status quo and question everything.
+Verify what I tell you. Question the parts that sound questionable. Convince yourself, and don't be satisfied until you do. The important thing is not that you believe me: the important thing is that you learn to question everything. @post[Question everything, and then listen to reality when it answers]science/education.
 
 In the end, you can only trust the things you've found to be true for yourself.
 

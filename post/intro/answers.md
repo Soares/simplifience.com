@@ -2,6 +2,9 @@
 title: Preemptive Answers
 ---
 
+###What do all the different colors mean?
+See the @post[site mechanics]intro/site page.
+
 ###Are you serious about this?
 Incredibly. Math and science are far harder to learn than they have to be.
 
@@ -10,6 +13,3 @@ Nobody. But math and science were grown organically over the course of millennia
 
 ###Your way isn't compatible with the mainstream. Isn't it detrimental to aspiring scientists?
 No. If you're memorizing simplifience notation, you might have trouble with mainstream notation. However, the entire point of simplifience is to help you see past the notation to understand the underlying reality. The notation should disappear. Once you understand the @post[that which the symbols symbolize]reality/symbology, you'll be able to use notation you like.
-
-###What do all the different colors mean?
-See the @post[site mechanics]intro/site page.

@@ -7,7 +7,7 @@ title: Simplifience
     <!--<h3>Start here</h3>-->
     <aside class="info">
       <ul>
-        <li>{{ 'intro/motivation'|post_anchor('What is Simplifience?') }}</li>
+        <li>{{ 'intro/motivation'|post_anchor('Introductions') }}</li>
         <li>{{ 'reality/welcome'|post_anchor }}</li>
         <li>{{ 'foundations/mathematics'|post_anchor('Abandoning Math') }}</li>
         <li>{{ 'science/image'|post_anchor('Stepping Beyond Science') }}</li>

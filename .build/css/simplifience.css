@@ -3032,7 +3032,6 @@ div.video embed {
   text-align: right;
   font-style: italic;
   color: #e0e0e0;
-  font-size: 0.8em;
 }
 #main article .automatic.title a {
   color: #e0e0e0;
@@ -3041,13 +3040,18 @@ div.video embed {
   width: 100%;
   text-align: right;
   padding-right: 10%;
+  font-size: 0.8em;
 }
 #main article .automatic.title.blockquote {
+  color: #c0c0c0;
   font-family: "Times New Roman", serif;
   font-size: 0.8;
   margin-top: -1.25em;
   padding-right: 5%;
   text-align: right;
+}
+#main article .automatic.title.blockquote a {
+  color: #c0c0c0;
 }
 #main article .automatic.title.blockquote:before {
   content: "— ";
