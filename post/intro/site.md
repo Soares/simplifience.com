@@ -47,6 +47,6 @@ Green to define new terminology.
 
 Don't memorize these. @post[Don't memorize anything]intro/knowledge. The meaning will be obvious in context.
 
-Some articles will take on one of these colors entirely. For example, articles on the @post[nature of science]science/method take on the magenta color. Such articles are introductions to different subjects such as <span class="knowledge" markdown="inline">science</span> and <span class="rules" markdown="inline">mathematics</span>. They're useful articles, but all discussions of the workings of reality will occur in the <span class="info" markdown="block">teal</span> articles.
+Some articles will take on one of these colors entirely. For example, articles on the @post[nature of science]science/method take on the magenta color. Such articles are introductions to different subjects such as <span class="knowledge" markdown="inline">science</span> and <span class="rules" markdown="inline">mathematics</span>. They're useful articles, but all discussions of the workings of reality will occur in the <span class="info" markdown="inline">teal</span> articles.
 
 Articles will have many links in them. [Links](/) will be blue if you haven't visited the linked page and purple if you have. You'll also see some @post[orange links]intro/stub. These link to stubs of articles that are planned but not yet completed.
