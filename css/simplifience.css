@@ -2803,6 +2803,9 @@ div.cap footer .logo a:hover {
 #main article h1 {
   font-size: 28px;
 }
+#main article h3 {
+  margin-bottom: 0.5em;
+}
 #main article ul,
 #main article ol {
   margin: 0;
@@ -3022,28 +3025,42 @@ div.video embed {
   width: 100%;
   height: 100%;
 }
+#main article img:not([title]) {
+  margin-bottom: 1.5em;
+}
 #main article .automatic.title {
   text-align: right;
-  opacity: 0.18;
   font-style: italic;
+  color: #e0e0e0;
 }
 #main article .automatic.title a {
-  color: black;
+  color: #e0e0e0;
 }
 #main article .automatic.title.img {
   width: 100%;
   text-align: right;
   padding-right: 10%;
+  font-size: 0.8em;
 }
 #main article .automatic.title.blockquote {
+  color: #c0c0c0;
   font-family: "Times New Roman", serif;
   font-size: 0.8;
   margin-top: -1.25em;
   padding-right: 5%;
   text-align: right;
 }
+#main article .automatic.title.blockquote a {
+  color: #c0c0c0;
+}
 #main article .automatic.title.blockquote:before {
   content: "— ";
+}
+span.exciting {
+  font-family: 'Marko One', serif;
+}
+span.uncomfortable {
+  font-family: 'Sonsie One', serif;
 }
 #main svg {
   display: block;
