@@ -50,14 +50,14 @@ Yet despite all the absurdities of a geometry where parallel lines intersect, th
 
 Finally, *more than two millenia later*, Albert Einstein discovered that the fifth postulate does not hold.
 
-In our universe, *parallel lines can intersect and diverge.*
+In our universe, *parallel lines can intersect or diverge.*
 
-There are places in reality where parallel lines converge. Your intuition protests, but your intuition betrays you: parallel lines can converge in our reality.
+There are places in reality where parallel lines converge. Your intuition protests, but your intuition betrays you. The geometry of this universe does not adhere to the fifth postulate.
 
 Given our faulty intuition, we like to deny this. When we see parallel lines converging, we deny that both are straight and claim there is a mysterious invisible force that must be pulling them together. This ghost force which we think we see is called "<span class="info" markdown="inline">gravity</span>".
 
 <aside class="info" markdown="block">
-This is a rather simplified explanation missing a number of key points. We'll re-visit gravity later.
+This is a gross simplification missing a number of key points. We'll re-visit gravity in some depth.
 </aside>
 
 When Einstein discovered the true nature of gravity, *the formalizations were already there*. Centuries of labor had produced hundreds of books trying to prove the fifth postulate by assuming it was wrong, never imagining that they were laying down formulae describing the nature of the universe.
