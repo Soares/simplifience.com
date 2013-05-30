@@ -24,7 +24,7 @@ $\sum\limits\_{n=0}^\infty x_n$
 Math is outdated notation from ancient times.
 </aside>
 
-If you ask someone who has studied engineering or the sciences what they think of mathematics, they will tell you that math is not something which can be loved or hated, for math is simply The Rules. It is any pattern, any symmetry, any abstraction. You can no more hate math than you can hate the fact that @post[reality is ordered]allegory/disorder. Sure, the *language* of math is a bit old, but @post[symbols are not symbology]reality/symbology. Math is not the language, it's *what the language says*.
+If you ask someone who has studied engineering or the sciences what they think of mathematics, they will tell you that math is not something which can be loved or hated, for math is simply The Rules. It is any pattern, any symmetry, any abstraction. You can no more hate math than you can hate the fact that @post[reality is ordered]allegory/disorder. Sure, the *language* of math is a bit old, but @post[symbols are not symbolism]reality/symbology. Math is not the language, it's *what the language says*.
 
 ![Blue Flower](/images/blue-flower.jpg)
 

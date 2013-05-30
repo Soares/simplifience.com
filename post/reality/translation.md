@@ -1,8 +1,7 @@
 ---
 title: Lost in Translation
 ---
-
-@post[Symbols are not symbology]reality/symbology. Zero is not nothing -- zero is a symbol with *means* nothing.
+@post[Symbols are not what they symbolize]reality/symbology. Zero is not nothing -- zero is a symbol with *means* nothing.
 
 @post[Language is powerful]language/scope. My words can hold many meanings.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Symbols are not Symbology
+title: Symbols are not what they symbolize
 ---
 
 This is not a pipe.
