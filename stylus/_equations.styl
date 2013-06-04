@@ -1,0 +1,11 @@
+.equation
+  font-family Math
+
+  .variable
+    font-style italic
+  .operation
+    font-weight bold
+
+  for $color in $colors
+    .{$color}
+      color $pure(color)

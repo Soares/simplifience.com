@@ -8,7 +8,7 @@ This is in part due to the fact that @post[math is not a thing]foundations/mathe
 
 Mostly it's because @post[math is archaic]math/archaic. The syntax of mathematics is old and poorly thought out. It is confusing and intimidating to newcomers. It doesn't display nicely on computer screens.
 
-I don't mean to discourage you from using math equations: if you are already comfortable with the syntax, then by all means, continue using it. It is quite terse and compact.
+I don't mean to discourage you from using math equations: if you are already comfortable with math syntax, then by all means, continue using it. It is quite terse and compact.
 
 Terseness and compactness are not the allies of education.
 
@@ -16,7 +16,18 @@ Compare the following:
 
 $\displaystyle \lim\_{n\to\infty} p * (1 + \frac{r}{n})^n$
 
-$(principle\textbf{ scaled by }(1\textbf{ plus }(rate\textbf{ divided by }n))\textbf{ }n\textbf{ times})\textbf{ as }n\textbf{ approaches }\infty$
+<div class="equation">
+<span class="blue parenthesis">(</span><span class="teal variable">principle</span>
+<span class="operation">increased by</span>
+<span class="violet parenthesis">(</span><span class="red variable">rate</span>
+<span class="operation">divided by</span>
+<span class="orange variable">n</span><span class="violet parenthesis">)</span>
+<span class="orange variable">n</span>
+<span class="operation">times</span><span class="blue parenthesis">)</span>
+<span class="operation">as</span>
+<span class="orange variable">n</span>
+<span class="operation">approaches infinity</span>
+</div>
 
 These equations say the same things. The first is far denser and is intuitive only if you have already internalized the quirks and customs of mathematics. The other is simple to understand for anyone who speaks English.
 

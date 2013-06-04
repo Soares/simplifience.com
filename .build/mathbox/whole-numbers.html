@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <title>Whole Numbers</title>
+	</head>
+	<body>
+	  <script src="/js/domready.js"></script>
+	  <script src="/js/MathBox-bundle.js"></script>
+	  <script src="/js/Complex.js"></script>
+	  <script type="text/javascript" charset="utf-8">
+		DomReady.ready(function() {
+			ThreeBox.preload(
+				[ '/shaders/snippets.glsl.html' ],
+				function () { var mathbox = window.mathbox = mathBox({
+	cameraControls: false,
+	cursor:			false,
+	elementResize:	true,
+	fullscreen:		true,
+	screenshot:		true,
+	stats:			false,
+	scale:			1,
+}).start();
+
+
+mathbox
+	.viewport({
+		type: 'polar',
+		polar: 0,
+		range: [[0, 10.8], [-2, 2]],
+		scale: [1.6, 1.6, 1],
+	})
+	.camera({
+		orbit: 3.5,
+		phi: τ/4,
+		theta: 0,
+	})
+	.axis({
+		id: 'a0',
+		axis: 0,
+		color: 0xa0a0a0,
+		lineWidth: 1,
+		size: .1,
+		labels: true,
+		ticks: 10,
+	})
+	.axis({
+		id: 'a0',
+		axis: 0,
+		color: 0xffffff,
+		lineWidth: 1,
+		arrow: false,
+		size: .1,
+		labels: true,
+		ticks: 10,
+	})
+	.curve({
+		id: 't0',
+		n: 2,
+		data: [[0, .05], [0, -.05]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't1',
+		n: 2,
+		data: [[1, 0.03], [1, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't2',
+		n: 2,
+		data: [[2, 0.03], [2, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't3',
+		n: 2,
+		data: [[3, 0.03], [3, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't4',
+		n: 2,
+		data: [[4, 0.03], [4, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't5',
+		n: 2,
+		data: [[5, 0.03], [5, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't6',
+		n: 2,
+		data: [[6, 0.03], [6, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't7',
+		n: 2,
+		data: [[7, 0.03], [7, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't8',
+		n: 2,
+		data: [[8, 0.03], [8, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't9',
+		n: 2,
+		data: [[9, 0.03], [9, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 't10',
+		n: 2,
+		data: [[10, 0.03], [10, -0.03]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+	.curve({
+		id: 'tCover',
+		n: 2,
+		data: [[10.58, 0], [10.8, 0]],
+		color: 0xa0a0a0,
+		points: false,
+		line: true,
+		lineWidth: 2,
+	})
+; }
+			);
+		});
+	  </script>
+	</body>
+</html>
