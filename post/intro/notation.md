@@ -16,6 +16,10 @@ Compare the following:
 
 $\displaystyle \lim\_{n\to\infty} p * (1 + \frac{r}{n})^n$
 
+
+
+<paren><v>principle</v><func>increased by</func>
+
 <div class="equation">
 <span class="blue parenthesis">(</span><span class="teal variable">principle</span>
 <span class="operation">increased by</span>
