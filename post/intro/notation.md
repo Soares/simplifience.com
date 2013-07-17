@@ -39,3 +39,44 @@ Both equations have the same level of rigor. Language is @post[a powerful tool]l
 
 Simplifience will use a language @post[more suited to newcomers]intro/notation.
 
+
+
+Notation may look something like:
+
+@@
+=|is
+⩤|increased by
+⋯|repeated
+÷|divided by
+p:principle
+r:rate
+o:output
+n:count
+@@
+
+@@
+n:number of compoundings
+o = p [⩤ ⋯ n] (r ÷ n)
+@@
+
+In english, the output is the principle increased by an n<sup>th</sup> of the rate, n times, where n is the number of compoundings.
+
+<div class="equation">
+  <span class="variable o" data-symbol="o">output</span>
+  <span class="operator is" data-symbol="=">is</span>
+  <span class="variable p" data-symbol="p">principle</span>
+  <div class="brackets one">
+    <span class="open">[</span>
+    <span class="operator increasedBy" data-symbol="⩤">increased</span>
+    <span class="operator repeated" data-symbol="⋯">repeated</span>
+    <span class="variable n" data-symbol="n">compoundings</span>
+    <span class="close">]</span>
+  </div>
+  <div class="parenthesis two">
+    <span class="open">(</span>
+    <span class="variable r" data-symbol="r">rate</span>
+    <span class="operator dividedBy" data-symbol="÷">divided by</span>
+    <span class="variable n" data-symbol="n">compoundings</span>
+    <span class="close">)</span>
+  </div>
+</div>
