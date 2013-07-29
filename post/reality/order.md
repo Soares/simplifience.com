@@ -22,7 +22,7 @@ If you want to know exactly what happens when you throw a rock off of a cliff, t
 Reality acts however reality acts. <span class="info" markdown="inline">There are constraints</span> on how reality acts: these are the rules. At the very least, reality can be expressed in terms of reality itself.
 
 <aside class="info" markdown="block">
-The fact that reality is constrained @post[does not diminish it]reality/beauty.
+Reality's constraints @post[do not diminish it]reality/beauty.
 </aside>
 
 It might seem optimistic to hope that reality can be expressed in simpler terms. It may seem impossible to simulate a rock thrown off a cliff, without possessing at least a rock and a cliff.

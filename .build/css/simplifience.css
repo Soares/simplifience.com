@@ -229,13 +229,13 @@ body #main aside.main a,
 body.main #main aside.info a,
 body #main div.main a,
 body.main div.info a {
-  color: #1240ab;
+  color: #fff;
 }
 body #main aside.main a:hover,
 body.main #main aside.info a:hover,
 body #main div.main a:hover,
 body.main div.info a:hover {
-  color: #1240ab;
+  color: #fff;
 }
 body #main aside.main a:visited,
 body.main #main aside.info a:visited,
@@ -475,13 +475,13 @@ body #main aside.rules a,
 body.rules #main aside.info a,
 body #main div.rules a,
 body.rules div.info a {
-  color: #099;
+  color: #fff;
 }
 body #main aside.rules a:hover,
 body.rules #main aside.info a:hover,
 body #main div.rules a:hover,
 body.rules div.info a:hover {
-  color: #099;
+  color: #fff;
 }
 body #main aside.rules a:visited,
 body.rules #main aside.info a:visited,
@@ -721,13 +721,13 @@ body #main aside.rigor a,
 body.rigor #main aside.info a,
 body #main div.rigor a,
 body.rigor div.info a {
-  color: #099;
+  color: #fff;
 }
 body #main aside.rigor a:hover,
 body.rigor #main aside.info a:hover,
 body #main div.rigor a:hover,
 body.rigor div.info a:hover {
-  color: #099;
+  color: #fff;
 }
 body #main aside.rigor a:visited,
 body.rigor #main aside.info a:visited,
@@ -967,13 +967,13 @@ body #main aside.simplifience a,
 body.simplifience #main aside.info a,
 body #main div.simplifience a,
 body.simplifience div.info a {
-  color: #cd0074;
+  color: #fff;
 }
 body #main aside.simplifience a:hover,
 body.simplifience #main aside.info a:hover,
 body #main div.simplifience a:hover,
 body.simplifience div.info a:hover {
-  color: #cd0074;
+  color: #fff;
 }
 body #main aside.simplifience a:visited,
 body.simplifience #main aside.info a:visited,
@@ -1213,13 +1213,13 @@ body #main aside.knowledge a,
 body.knowledge #main aside.info a,
 body #main div.knowledge a,
 body.knowledge div.info a {
-  color: #7109aa;
+  color: #fff;
 }
 body #main aside.knowledge a:hover,
 body.knowledge #main aside.info a:hover,
 body #main div.knowledge a:hover,
 body.knowledge div.info a:hover {
-  color: #7109aa;
+  color: #fff;
 }
 body #main aside.knowledge a:visited,
 body.knowledge #main aside.info a:visited,
@@ -1459,13 +1459,13 @@ body #main aside.rant a,
 body.rant #main aside.info a,
 body #main div.rant a,
 body.rant div.info a {
-  color: #7109aa;
+  color: #000;
 }
 body #main aside.rant a:hover,
 body.rant #main aside.info a:hover,
 body #main div.rant a:hover,
 body.rant div.info a:hover {
-  color: #7109aa;
+  color: #000;
 }
 body #main aside.rant a:visited,
 body.rant #main aside.info a:visited,
@@ -1705,13 +1705,13 @@ body #main aside.stub a,
 body.stub #main aside.info a,
 body #main div.stub a,
 body.stub div.info a {
-  color: #1240ab;
+  color: #000;
 }
 body #main aside.stub a:hover,
 body.stub #main aside.info a:hover,
 body #main div.stub a:hover,
 body.stub div.info a:hover {
-  color: #1240ab;
+  color: #000;
 }
 body #main aside.stub a:visited,
 body.stub #main aside.info a:visited,
@@ -1951,13 +1951,13 @@ body #main aside.caution a,
 body.caution #main aside.info a,
 body #main div.caution a,
 body.caution div.info a {
-  color: #1240ab;
+  color: #000;
 }
 body #main aside.caution a:hover,
 body.caution #main aside.info a:hover,
 body #main div.caution a:hover,
 body.caution div.info a:hover {
-  color: #1240ab;
+  color: #000;
 }
 body #main aside.caution a:visited,
 body.caution #main aside.info a:visited,
@@ -2197,13 +2197,13 @@ body #main aside.define a,
 body.define #main aside.info a,
 body #main div.define a,
 body.define div.info a {
-  color: #1240ab;
+  color: #000;
 }
 body #main aside.define a:hover,
 body.define #main aside.info a:hover,
 body #main div.define a:hover,
 body.define div.info a:hover {
-  color: #1240ab;
+  color: #000;
 }
 body #main aside.define a:visited,
 body.define #main aside.info a:visited,
@@ -2443,13 +2443,13 @@ body #main aside.computer a,
 body.computer #main aside.info a,
 body #main div.computer a,
 body.computer div.info a {
-  color: #099;
+  color: #839496;
 }
 body #main aside.computer a:hover,
 body.computer #main aside.info a:hover,
 body #main div.computer a:hover,
 body.computer div.info a:hover {
-  color: #099;
+  color: #839496;
 }
 body #main aside.computer a:visited,
 body.computer #main aside.info a:visited,
