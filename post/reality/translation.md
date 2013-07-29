@@ -15,4 +15,4 @@ Remember that even if we're saying the same words and nodding our heads we might
 
 Here's an anecdote from a wise man with more than his fair share of exchanging ideas.
 
-<iframe width="600" height="400" src="http://youtube.googleapis.com/v/Cj4y0EUlU-Y?start=135&amp;version=3&amp;autoplay=0" frameborder="0" allowfullscreen="" style="z-index: 1000"></iframe>
+<iframe width="600" height="400" src="http://youtube.googleapis.com/v/Cj4y0EUlU-Y?start=135&amp;version=3&amp;autoplay=0?html5=1" frameborder="0" allowfullscreen="" style="z-index: 1000"></iframe>
