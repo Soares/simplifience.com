@@ -26,7 +26,7 @@
       });
       return $('a.close', meditation).on('click', close);
     });
-    return $('#main article [title]').each(function() {
+    $('#main article [title]').each(function() {
       var elem, short, title, tooltip;
       elem = $(this);
       tooltip = $('<p class="automatic title"></p>');
@@ -36,6 +36,27 @@
       tooltip.html(title);
       elem.attr('title', short);
       return elem.after(tooltip);
+    });
+    return $('#main article .embed').each(function() {
+      var elem, end, height, iframe, start, vars, video, width;
+      elem = $(this);
+      video = elem.data('video');
+      start = elem.data('start') || false;
+      end = elem.data('end') || false;
+      width = elem.data('width') || 600;
+      height = elem.data('height') || 400;
+      vars = '?autoplay=0&amp;html5=1';
+      if (start) {
+        vars += '&amp;start=' + start;
+      }
+      if (end) {
+        vars += '&amp;end=' + end;
+      }
+      if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+        vars = '';
+      }
+      iframe = $("<iframe width='" + width + "' height='" + height + "' src='http://youtube.com/embed/" + video + vars + "' frameborder='0' allowfullscreen=''></iframe>");
+      return elem.replaceWith(iframe);
     });
   });
 

@@ -34,3 +34,17 @@ $ ->
     tooltip.html title
     elem.attr 'title', short
     elem.after tooltip
+
+  $('#main article .embed').each ->
+    elem = $(this)
+    video = elem.data('video')
+    start = elem.data('start') || false
+    end = elem.data('end') || false
+    width = elem.data('width') || 600
+    height = elem.data('height') || 400
+    vars = '?autoplay=0&amp;html5=1'
+    vars += '&amp;start=' + start if start
+    vars += '&amp;end=' + end if end
+    vars = '' if navigator.userAgent.match(/(iPod|iPhone|iPad)/i)
+    iframe = $("<iframe width='#{width}' height='#{height}' src='http://youtube.com/embed/#{video}#{vars}' frameborder='0' allowfullscreen=''></iframe>")
+    elem.replaceWith(iframe)
