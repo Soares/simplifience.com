@@ -6,9 +6,9 @@ We teach science completely wrong.
 
 We teach science like it's a @post[narrative of resolved confusions]science/mire. We @post[spoil the magic]reality/magical and make reality sound dull. We sit students down in classrooms and tell them "this is what you have to believe", and then we make them memorize dull equations.
 
-This is the antithesis of science. Even though the equations are correct, this is wrong. Science is not about accepting established knowledge. Science is about doubting tradition, overturning the status quo, and actually @post[listening to reality]science/method.
+This is the antithesis of science. Even though the equations are correct, the method is wrong. Science is not about accepting established knowledge. Science is about doubting tradition, overturning the status quo, and actually @post[listening to reality]science/method.
 
-At first glance, this seems contradictory. Science is the art of letting reality speak for itself, but reality is vast and varied. No one person can possibly reconstruct millennia of human knowledge on their own, no matter how well we train them to seek the truth.
+This may seem idealist and naïve. Science is the art of letting reality speak for itself, but reality is vast and varied. No one person can possibly reconstruct millennia of human knowledge on their own, no matter how well we train them to seek the truth.
 
 But the road to knowledge was paved with misunderstanding. Time and again, science shook our worldview by destroying assumptions we didn't know we were making. Time and again, science forced us to reshape our intuition, too look at the world through a new lens.
 
@@ -16,7 +16,7 @@ We can destroy assumptions, reshape intuitions, and switch lenses all without te
 
 Every science teacher knows that most students will not learn Maxwell's equations of electricity. Some will fail, but many more will memorize the equations without knowing what they mean. Only a rare few students will glimpse the truth behind the equations they're told they must believe… and that's fine. We shouldn't teach electricity to everybody. Science isn't about telling students what to believe.
 
-Science is about learning to shut your mouth and listen to the universe. It's about how to separate truth from fiction. It's about how to listen when evidence comes knocking. Those skills should be taught to everyone.
+Science is about learning to shut your mouth and listen to the universe. It's about separating truth from fiction. It's about listening when evidence comes knocking. Those skills should be taught to everyone.
 
 It's OK if a student doesn't like science. It's fine if Maxwell's equations are not for you. You don't have to care how planes fly or why boats float.
 
@@ -24,15 +24,15 @@ But every student should learn how to discover the truth.
 
 _Every student should learn how to discover the truth._
 
-If you want to teach science, teach thinking. Don't make them learn the answers: put them in situations where they have to find the answers on their own. If you want to teach science, teach students how to avoid bias. Teach them how @post[their brain can explain anything]bias/explanation, and explanation does not equate to truth. Teach them how quickly their mind @post[jumps to conclusions]bias/decision without their consent. Teach them how easy it is for a mind to compartmentalize. Teach them how to listen to those niggling doubts. Teach them how to let go of false beliefs.
+If you want to teach science, teach thinking. Don't make them learn the answers: put them in situations where they have to find the answers on their own. If you want to teach science, teach students how to avoid bias. Teach them how @post[their brain can explain anything]bias/explanation, and explanation does not equate to truth. Teach them how quickly their mind @post[jumps to conclusions]bias/decision without their consent. Teach them how easy it is for a mind to compartmentalize. Teach them how to listen to those niggling doubts. Teach them how to let go of false beliefs. Teach them how to be wrong.
 
-Learning that you are wrong should feel good -- because now you are less wrong.
+Learning that you are wrong should feel good -- only after you learn your errors can you become less wrong.
 
 Learning the truth cannot hurt -- no matter how much you deny it, you are already enduring the truth.
 
-But do not just tell them these things: show them these things. Put them in situations where their biases bite back. Put them in situations where the obvious answers are wrong and they have to learn how to let go. Put them in situations where their mind explains the inexplicable, then confront them with reality.
+Do not just recite these facts: demonstrate them. Put students in situations where their biases bite back. Put them in situations where the obvious answers are wrong and they have to learn how to let go. Put them in situations where their mind explains the inexplicable, then confront them with reality.
 
-Teach them how to distrust the status quo, how to distrust the things their taught, and above all, teach them to distrust their own mind. Put them in situations where everything they're told is wrong and all of their assumptions are false, where the only way out is to put your ear to the ground and listen to the whispers of the evidence.
+Teach them how to distrust the status quo, how to distrust the things they're taught, and above all, teach them to distrust their own mind. Put them in situations where everything they're told is wrong and all of their assumptions are false, where the only way out is to put your ear to the ground and listen to the whispers of the evidence.
 
 And then when they start to see how coy nature can be, reach in and correct their intuitions. Every grand mystery of science, every surprising revelation, has ousted a bad intuition. Science progresses by putting scientists in situations where their intuitions fail them. We can speed that process up.
 
@@ -42,7 +42,7 @@ This will be enough for most students. When they leave the walls of our schools 
 
 ---
 
-Teach like this, and there will be some few students who are curious. Some students who take these lessons and apply them to the world around them. Some students who ask why.
+Teach like this, and there will be some few students who are curious, who take these lessons and apply them to the world around them, who ask *why*.
 
 Education must not answer those whys. To answer would be to snuff out the curiosity, to sate it before it has a chance to grow. Science should not snuff out curiosity: science should feed it.
 
@@ -52,9 +52,9 @@ Armed with the tools of the ancients, they will be prepared to answer. It is tru
 
 But they do have to learn to navigate the darkness on their own.
 
-We live in the modern world, now. There was a time where for every Maxwell you needed a thousand scientists who could recite his equations and interpret the results. That era died the day computers were born.
+---
 
-We no longer need people who can recite Maxwell's equations. We need people who can invent them.
+There was a time where for every Maxwell you needed a thousand scientists who could recite his equations and interpret the results. That era died the day computers were born. We no longer need people who can recite Maxwell's equations. We need people who can invent them.
 
 ---
 
@@ -92,7 +92,7 @@ We don't need students who can verify what you tell them. We need students who c
 
 Only once they've proven they possess this capacity can we tell them all the answers. Once they've show themselves capable we can rush them to the forefront of our knowledge, if that is the path they choose. Only in the name of human progress should we @post[spoil all the mysteries]reality/magical.
 
-Because out there on the edge, where scientists face down the unknown, we don't need students who can recite memorized equations. We need students who can step out into the darkness and, blinded by their ignorance, listen for the faintest whisper of the truth.
+Because out there on the edge, where scientists face down the unknown, we don't need people who can recite memorized equations. We need people who can step out into the darkness and, blinded by their ignorance, listen for the faintest whisper of the truth.
 
 ---
 
@@ -100,7 +100,7 @@ Those few are the exception. We should nurture them, but we must never forget th
 
 But *everybody* should hold our tools.
 
-We don't need to teach everybody everything that we know. We just need to teach everybody our tools. We need to teach everybody to overcome their biases. We need to teach everybody to avoid the traps in the human psyche. Above all, we need to teach everybody to think.
+We need to teach everybody to overcome their biases. We need to teach everybody to avoid the traps in the human psyche. Above all, we need to teach everybody to think.
 
 To think, and then ask reality, and then *listen*.
 

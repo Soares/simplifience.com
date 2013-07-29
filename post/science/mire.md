@@ -6,13 +6,13 @@ Discovering the rules of the universe has been an arduous process. We humans int
 
 We took a garden path on the road to discovery. We took many a detour, lingering for centuries before reality finally turned us back.
 
-The process worked. It was slow and arduous, but it worked. Inch by inch, we began to understand this strange and beautiful place.
+The journey was slow and arduous, but it worked. Inch by inch, we began to understand this strange and beautiful place.
 
-We gained our knowledge in a slow, meandering fashion. Do not delude yourself into thinking that the order we discovered science is the order we should teach it.
+Yet we gained our knowledge at a slow, meandering pace. Do not delude yourself into thinking that the order we discovered science is the order we should teach it.
 
 ---
 
-We discovered science backwards. We started from the middle and we're still working our way towards the ends. We spent decades mired in confusion. We made bad assumptions and were diverted for centuries at a time. Even in modern maturity, science has been led astray for decades upon decades.
+We discovered science backwards. We started from the middle and we're still working our way towards the ends. We spent decades mired in confusion. We made bad assumptions and were diverted for centuries at a time. Even in modernity, science has been led astray for decades upon decades.
 
 We have been very confused by our models before, and it often takes a long time to for us to make sense of what's actually going on.
 
@@ -20,7 +20,7 @@ Once we figure it out, everything falls into place. It all looks simple in retro
 
 But there was no mystery. Nothing has been solved. @post[Mystery is not a property of reality]reality/mystery. The mystery was in the minds of the scientist, who were looking at reality backwards. The mystery was latent in their misinterpretation of the universe.
 
-And yet, that's not what it feels like to them. To them, it feels like a great confusion has been resolved. They jump to immortalize their victory in the textbooks, to tell the tale of the horrible confusion and its brilliant conclusion.
+And yet, that's not what it feels like to them. To them, it feels like a great confusion has been resolved. They jump to immortalize their victory in the textbooks, to tell the tale of the Horrible Confusion and its Brilliant Conclusion.
 
 Every teacher loves to drag their students through the ritual mire, confusing the students with baffling data and surprising them with counter-intuitive answers. And so the confusions spread and proliferate.
 
@@ -36,8 +36,8 @@ These are the most important things. When we solve a mystery, we don't just lear
 
 Teach *that* to students. Long before they encounter your great mystery, address their false assumptions. Train them to notice the fallacies that led history astray. Fix their intuitions before they know that they're broken. Demonstrate their bias before they have a chance to succumb.
 
-Don't limit these lessons to the sciences. Students don't need to have scientific aspirations in order to benefit from learning how to hear the truth. They don't need to be a physicist to benefit from better intuitions. Everyone alive can benefit from overcoming bias.
+Don't limit these lessons to the sciences. Students don't need scientific aspirations in order to learn how to hear the truth. They don't need to be a physicist to benefit from better intuitions. Everyone alive can benefit from overcoming bias.
 
-But if your students do grow curious about the universe, if they do stumble upon the great mysteries of old, they will be prepared. They will not need to take the garden path to discovery.
+So don't teach the mysteries: fix the assumptions that caused the mystery in the first place. Then, when students come across the stumbling blocks of old, they will be prepared. They will not trip. They will not need to take the garden path.
 
-If we do our jobs right, the ancient mysteries won't be mysterious. They won't even seem hard. They'll just be intuitive.
+If we do our jobs right, the ancient mysteries won't seem mysterious. They won't even seem hard. They'll just be intuitive.

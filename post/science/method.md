@@ -12,9 +12,9 @@ Science has had many meanings throughout the ages, sometimes multiple at once. I
 
 The scientific way of thinking *brought* us knowledge of refrigerators and radios and space, but those things are not science. Science is a way of looking at the world.
 
-Humans have always tried to explain the world by making up stories that fit our observations. Some of these stories are, in retrospect, silly. Due to quirks in human minds, @post[a thunder god feels more likely than the equations of electricity]bias/agent. It feels easy to imagine a thunder-god, because human brains are specialized for thinking about other agents. It feels hard to learn the equations of electricity, because or minds simply aren't built for calculus.
+Humans have always tried to explain the world by making up stories to fit the observations. Some of these stories are, in retrospect, silly. Due to quirks in human minds, @post[a thunder god feels more likely than the equations of electricity]bias/agent. It feels easy to imagine a thunder-god, because human brains are specialized for thinking about the motivations of people. It feels hard to learn the equations of electricity, because or minds simply aren't built for calculus.
 
-So we made up stories. Stories filled with Zeus and Thor. We ran with them. The stories took on a life of their own, growing into religions that dictated not only thunder, but law and morality and legend.
+So we made up stories and filled them with thunder gods. We ran with them. The stories took on a life of their own, growing into religions that dictated not only thunder, but law and morality and legend.
 
 Yet the old explanations failed to impress. Alchemy remained forever beyond our reach. Astrology could make only vague predictions. The old stories did not help us understand the world around us, they did not teach us the secrets of the universe. And yet, the stories could not be discarded. The ego of humans had given them life. Thor did not bring any understanding of the rain, but once created he could not be destroyed. Human religions gained too much power. We forgot that they were supposed to explain, not prescribe. When reality came knocking, humanity sided with their gods.
 

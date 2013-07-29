@@ -21,7 +21,7 @@ This image problem is exemplified in the [Dresden files](http://www.jim-butcher.
 
 Fantasy scientists are particularly good at explaining away all the evidence of magic in favor of their cold precise models and a world that works according to the rules they learned in school. They *know* how reality is, because it says so in their textbooks. They aren't able to lift up their noses long enough to see the magic in the world around them.
 
-It's a prevalent sentiment. Spock is cold and calculating, his rationality depriving him emotion. Muggles in the world of Hogwarts are none the wiser. This is the Hollywood misconception of scientists: cold, rational men turning the cranks on their cold, rational formulas.
+It's a prevalent sentiment. Star Trek's Spock is cold and calculating, his rationality depriving him emotion. Muggle scientists in the world of Hogwarts are none the wiser. This is the Hollywood misconception of scientists: cold, rational men turning the cranks on their cold, rational formulas.
 
 Nothing could be further from the truth.
 
@@ -33,9 +33,9 @@ Science isn't about memorizing the rules of reality. Science isn't about applyin
 
 Science has *never* been about maintaining the status quo. Science began its life as a rebellion against authority. The scientists said the earth revolved around the sun, when everybody else thought otherwise. The scientists discovered how muscles work, when everyone thought they were driven by human will.
 
-Science is about bucking the status quo, dropping the blinders of tradition, and actually *looking* at reality. Science is about listening to the evidence, not to the established 'common sense'.
+Science is about dropping the blinders of tradition and actually *looking* at reality. Science is about listening to the evidence, not to the established 'common sense'.
 
-If you want to be a scientist you have to learn how to listen to reality, *even when it sounds ridiculous*. You have to listen to the universe, *even when everybody else things you're crazy*. When the rest of the world ignored the facts beneath their noses and hallucinated that the world was flat, scientists pierced the veil and caught a glimpse of true reality.
+If you want to be a scientist you have to learn how to listen to reality, *even when it sounds ridiculous*. You have to listen to the universe, *even when everybody else things you're crazy*. When the rest of the world hallucinated that the sun circled the earth, scientists alone caught a glimpse of the truth.
 
 In a world of magic, scientists aren't cold men cooped up in offices clutching their models and ignoring the @post[magic of the universe]reality/magic. Scientists aren't the people in lab coats who rationalize away any evidence that doesn't seem to fit. Scientists aren't the ones screwing their eyes shut and making up excuses.
 
