@@ -24,7 +24,7 @@ It is easy to forget this distinction. It is easy to say "zero is nothing" rathe
 
 [Vi Hart](http://vihart.com/) explains this in the midst of a fun video about cutting space and time:
 
-<iframe width="640" height="360" src="http://youtube.googleapis.com/v/WkmPDOq2WfA?start=19&end=67&version=3&autoplay=0&html5=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://youtube.com/embed/WkmPDOq2WfA?start=19&amp;end=67&amp;autoplay=0&amp;html5=1" frameborder="0" allowfullscreen></iframe>
 
 It is evolutionarily advantageous for a human mind to blur these lines. When you hear someone shout "Tiger!", you shouldn't have to try and remember what sort of real thing your friend associates with those particular syllables. When your friend shout's "Tiger" you'd better [feel the meaning](http://lesswrong.com/lw/nq/feel_the_meaning/) and run.
 
