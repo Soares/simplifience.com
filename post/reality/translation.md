@@ -15,9 +15,4 @@ Remember that even if we're saying the same words and nodding our heads we might
 
 Here's an anecdote from a wise man with more than his fair share of exchanging ideas.
 
-<object width="420" height="315">
-<param name="movie" value="//www.youtube.com/v/Cj4y0EUlU-Y?hl=en_US&amp;version=3"/>
-<param name="allowFullScreen" value="true"/>
-<param name="allowscriptaccess" value="always"/>
-<embed src="//www.youtube.com/v/Cj4y0EUlU-Y?hl=en_US&amp;version=3&amp;autoplay=0&amp;start=135" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true"/>
-</object>
+<iframe width="600" height="400" src="http://youtube.googleapis.com/v/Cj4y0EUlU-Y?start=135&amp;version=3&amp;autoplay=0" frameborder="0" allowfullscreen="" style="z-index: 1000"></iframe>
