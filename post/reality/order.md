@@ -9,11 +9,11 @@ We can look at the universe and recognized the patterns, deduce the structure. W
 
 Everything ordered has rules. The rules don't have to be @post[simple]reality/simple, they don't have to be understandable, but they have to be present. Even if they were complicated beyond human comprehension, they would be present. @post[There is no such thing as mystery]reality/mystery: even if we can't *discover* the structure behind reality's patterns, we know that reality does have structured patterns.
 
-The order of reality fallows laws without exception. Any law that operates *with* exception isn't a @post[true law of reality]reality/verities -- if reality breaks the laws that you think govern the universe, then it turns out they didn't govern the universe after all. If reality breaks what you thought was a rule then the *true* rule includes that exception.
+The order of reality follows laws without exception. Any law that operates *with* exception isn't a @post[true law of reality]reality/verities -- if reality breaks the laws that you think govern the universe, then it turns out they didn't govern the universe after all. If reality breaks what you thought was a rule then the *true* rule includes that exception.
 
 The Rules of reality are the ones that fully describe how reality works. Reality can't break those rules, because reality is *contained within* those rules. Whatever reality breaks out of is not reality's container.
 
-We know such rules exist, because reality exists. At minimum, we can point and say "reality works like that". There's an upper bound for how complicated reality can be, and tha upper bound is reality itself.
+We know such rules exist, because reality exists. At minimum, we can point and say "reality works like that". There's an upper bound for how complicated reality can be, and that upper bound is reality itself.
 
 If you want to know exactly what happens when you throw a rock off of a cliff, there is a *perfect* model you can use which will never lie: pick up a rock and toss it off a cliff.
 
