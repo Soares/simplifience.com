@@ -16,7 +16,7 @@ $1$
 
 This is a *symbol* which evokes the number one in your mind. The true number one is our name for an abstract concept. It is how many noses you have on your face. It is how many biological fathers you have. It is not some frail collection of pixels on a screen.
 
-Human language is historically bad at making this distinction. We say htat $1 \frac{2}{3}$ is written using three numbers. Yet we also say that $1 \frac{2}{3}$ is *one number* found partway between $1$ and $3$. It is very easy for humans to mix up the symbol with what the symbol means.
+Human language is historically bad at making this distinction. We say that $1 \frac{2}{3}$ is written using three numbers. Yet we also say that $1 \frac{2}{3}$ is *one number* found partway between $1$ and $3$. It is very easy for humans to mix up the symbol with what the symbol means.
 
 Similarly, these scribbles on the screen that you are reading are not words. The *true* words are a sentiment being passed between you and I. They are qualia, something which these squiggles strive, but fail, to fully capture.
 

@@ -8,7 +8,7 @@ Science is not the accumulated knowledge of @post[the rules of reality]reality/r
 
 Science is not The Rules: science is @post[how we uncover the rules]science/method.
 
-Common parlance holds that science is biology, physics, chemistry, and all those boring subjects that we already know. Never mind that these fields were extraordinary and awe-inspiring when they were first discovered. Once everybody knows them -- less, once everyone *can* know them -- the @post[luster is gone]reality/strip.
+Common parlance holds that science is biology, physics, chemistry, and all those stuffy subjects that we already know. Never mind that these fields were extraordinary and awe-inspiring when they were first discovered. Once everybody knows them -- less, once everyone *can* know them -- the @post[luster is gone]reality/strip.
 
 It's also common knowledge that certain domains lie outside the purview of science. Intelligence. Awareness. The nature of consciousness. Why being alive feels like this -- why anyone feels anything at all.
 
@@ -18,13 +18,13 @@ Remember the mistakes of [Vitalism](http://en.wikipedia.org/wiki/Vitalism). The 
 
 This wasn't really an explanation. It didn't tell you how your muscles moved. It didn't lead to antibiotics or dietary techniques. It sure *felt* like an explanation, but @post[science isn't about feeling like you have answers]science/mistakes.
 
-Vitalism was popular in the early 1900s. Surely, science could explain the mechanical motion of objects. It could explain electric shocks and light beams and the action of molecules. But it couldn't explain *animation*. It couldn't explain *life*. Life jumped at the behest of concious thought, at science couldn't explain that.
+Vitalism was popular in the early 1900s. Surely, science could explain the mechanical motion of objects. It could explain electric shocks and light beams and the action of molecules. But it couldn't explain *animation*. It couldn't explain *life*. Life jumped at the behest of concious thought, and science couldn't explain that.
 
 Until scientists synthesized urea, a component of urine, showing that the actions of bodies are not exempt from science. The walls began to crumble. Within a few short decades we began to understand how muscles *actually* move. We began to understand how the interactions of individual cells create muscle contractions. We discovered how your nerves transmit pain. We asked reality how life is animated, and we figured it out, and it led to huge improvements in medicine and longevity.
 
 The vitalists did not understand the purview of science. To them, science was for the stars and the planets and the rocks, but it couldn't explain animate life. Life was a sacred mystery.
 
-But they misunderstood science. Mystery is not a property of reality: @post[mystery is in your mind]reality/mystery. The domain of science is not the things we already know. Science helped us uncover those things once, but science has since departed.
+But they misunderstood science. Mystery is not a property of reality: @post[mystery is in your mind]reality/mystery. The domain of science is not the things we already know. Science helped us uncover those things once, but science never lingers long after a mystery is solved.
 
 The domain of science is everything which we *don't* know. It is all the mysteries which remain.
 
