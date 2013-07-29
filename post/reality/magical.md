@@ -39,7 +39,7 @@ Our great mysteries don't *feel* like mysteries. When we see a florescent light 
 
 So we don't.
 
-Somehow, the fact that somebody else has soled a mystery is all it takes for us to lose interest.
+Somehow, the fact that somebody else has solved a mystery is all it takes for us to lose interest.
 
 That's not how it should be. Just because rockets are understood by someone else doesn't mean they're understood by you.
 

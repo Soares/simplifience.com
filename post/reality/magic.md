@@ -9,12 +9,12 @@ Yet somehow our real magic doesn't satisfy the imagination. It feels too… mund
 
 Perhaps it feels mundane because it's merely real. Except @post[reality is not mere]reality/mere! Being real does not deprive a thing of impact. Indeed, a thing *must* be real to have impact. If you cannot be satisfied with all that *is*, you'd better get used to dissatisfaction.
 
-Or perhaps our magic feels mundane because it can be understood. It can be understood by <span class="info" markdown="inline">anyone</span>, no less. Anyone could pick up a textbook and learn how a light bulb works, if they wanted to. And if anyone can learn it, it must not be that interesting. Right?
+Or perhaps our magic feels mundane because it can be understood. It can be understood by <span class="info" markdown="inline">anyone</span>, no less. A child could pick up a textbook and learn how a light bulb works, if they wanted to. And if anyone can learn it, it must not be that interesting. Right?
 
 <aside class="info" markdown="block">
-Who doesn't want to be chosen to wield the exclusive mysterious powers of humanity?
+Many dream of holding exclusive dominion over great and powerful secret magicks, over being the lone hero who can weild the sword of justice.
 
-I don't. I, for one, am glad we live in a world where *everyone* can know humanity's greatest secrets.
+I don't. I, for one, am glad we live in a world where anyone can learn humanity's greatest secrets.
 </aside>
 
 Doesn't the fact that it *can* be understood detract from the mystery?
@@ -31,15 +31,13 @@ I hope not.
 
 Imagine a world where we *did* discover magic. "True magic", as a modern youth might claim, raised on Harry Potter books and completely devoid of empathy for medieval peasants. Magic where you can wave a wand and say a word and levitate through the roof.
 
-If that actually happened in this world, we wouldn't all throw down our scientific models and shout "magic is real!". We wouldn't burn down the discoveries we've already made. No, we'd say "well isn't that funny". We'd scratch our heads and wonder "hey, how did that work?"
+If that actually happened in this world, we wouldn't all throw down our scientific models and shout "magic is real!". We wouldn't burn down the discoveries we've already made and start over. No, we'd say "well isn't that funny". We'd scratch our heads and wonder "hey, how did that work?"
 
 If hard magic was discovered, we @post[wouldn't try to hide it]science/image. We wouldn't try to rationalize it away. Rationality can't make things go away: rationality uncovers the truth. If you could wave a wand and levitate, we'd be *very very confused* -- and then we'd figure out how you did that.
 
 If we found magic, we wouldn't label it "magic" and give up. We'd approach this new mystery like we've approached all other mysteries in the past. We'd figure it out.
 
-Once we'd figured it out, it would be just another domain of science. For science is the study of what is real: if magic were real, it would be science.
-
-Being a part of science is not degrading! Being a part of science only means that the thing is real: for science is the study of what's really there.
+Once we'd figured it out, it would be just another domain of science. For science is the study of all that is.
 
 If something must be mysterious in order to earn your wonder, then you aren't pining for a world with magic: you're pining for a world with stupider humans. No matter what reality looks like, humans will try to understand how it works -- whether you think it's magic or not.
 
