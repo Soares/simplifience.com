@@ -10,7 +10,7 @@ It's policy to avoid mentioning specific @post[contrives]intro/decontriving unti
 
 The problem with mathematics is in the names.
 
-Names are important. They drive our thoughts. When our names become disconnected with the things they describe, @post[we become confused]reality/connected. It is easy to forget that the @post[symbols are separate from the substance]reality/symbology.
+Names are important. They drive our thoughts. When our names become disconnected with the things they describe, @post[we become confused]reality/connected. It is easy to forget that the @post[symbols are separate from the substance]reality/symbolism.
 
 The problem with the language of mathematics is threefold.
 

@@ -37,7 +37,7 @@ The word "impossible" implies that a thing is conceivably possible in the first 
 
 You may shake your head and laugh at the alien, but be warned: you are not so different. Humans are quick to stick @post[contrived]intro/contrives labels on things that they do not understand. Our words are often @post[too powerful]language/scope for what they mean to say. It's easy to recognize the alien's mistake in a world where you get to actually see an axe, where you get to feel the wood and the metal in your hands. This mistake is not so easy to avoid when you step outside your @post[narrow]reality/narrow comfort zone.
 
-Reality is tightly connected -- more tightly connected than it appears on the surface. @post[A label is not the thing it labels]reality/symbology. Our labels for the universe were invented long before we understood the connections. Our labels are less tightly coupled than reality itself.
+Reality is tightly connected -- more tightly connected than it appears on the surface. @post[A label is not the thing it labels]reality/symbolism. Our labels for the universe were invented long before we understood the connections. Our labels are less tightly coupled than reality itself.
 
 You may find it easy to imagine magnetism in the absence of electricity. You may be able to picture heat in the absence of motion. You probably think it makes sense to imagine speeds faster than the speed of light. But remember, when you imagine these things, that the alien thinks it makes sense to imagine an axe separating from its handle and its blade.
 

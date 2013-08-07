@@ -12,7 +12,7 @@ This is not a standard simplifience article. It provides minimal intuition for $
 $i$ is called the "imaginary number", as if all numbers aren't imaginary. Let's correct that misconception now: $i$ is no more <span class="info" markdown="inline">nor less</span> imaginary than any other number.
 
 <aside class="info" markdown="block">
-Note that all numbers are imaginary. Have you ever seen a seven? I'm not asking about @post[the symbol]reality/symbology, but the thing which it represents. You can search the deepest reaches of outer space, but you'll never find a wild seven.
+Note that all numbers are imaginary. Have you ever seen a seven? I'm not asking about @post[the symbol]reality/symbolism, but the thing which it represents. You can search the deepest reaches of outer space, but you'll never find a wild seven.
 </aside>
 
 Consider the number line. We've been filling it in for millennia.
@@ -66,7 +66,7 @@ The 'complex plane' is another poorly named @post[contrive]intro/contrives ignor
 
 <div class="complex-plane"></div>
 
-The entity $2 + 3i$ is written in two parts. Don't let the notation confuse you: though disjoint, it is @post[describing]reality/symbology a single unified 2D number (marked by the red dot). Why do we write one number in two parts? Don't ask me. It's a silly convention.
+The entity $2 + 3i$ is written in two parts. Don't let the notation confuse you: though disjoint, it is @post[describing]reality/symbolism a single unified 2D number (marked by the red dot). Why do we write one number in two parts? Don't ask me. It's a silly convention.
 
 There are a few different ways that you can construct two-dimensional numbers. The complex plane is a type of 2D number that is really good at talking about rotation. Rotation, as it happens, is <span class="info" markdown="inline">prevalent in reality</span>.
 

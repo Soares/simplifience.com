@@ -24,7 +24,7 @@ The result is a world where math and advanced science stand cloaked in an aura o
 
 It doesn't have to be like this. Math and science are far simpler if you drop the baggage of history.
 
-Simplifience is about teaching you those secrets without the historical baggage. Popular culture insists that reality is a difficult place to understand. Quantum physics is treated like a branch of dark magic, and the average physics textbook won't get within ten chapters of general relativity. Yet these subjects are not *intrinsically difficult*. [Mystery is in your mind, not in the world]reality/mystery. Deep physics is scary because its presentation is twisted and confused.
+Simplifience is about teaching you those secrets without the historical baggage. Popular culture insists that reality is a difficult place to understand. Quantum physics is treated like a branch of dark magic, and the average physics textbook won't get within ten chapters of general relativity. Yet these subjects are not *intrinsically difficult*. @post[Mystery is in your mind, not in the world]reality/mystery. Deep physics is scary because its presentation is twisted and confused.
 
 We can do better.
 

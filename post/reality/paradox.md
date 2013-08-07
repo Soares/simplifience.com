@@ -12,7 +12,7 @@ Is the above sentence true or false?
 
 The above sentence is a sentence.
 
-Sentences don't need to be true or false. Remember the [parable of the dagger](http://lesswrong.com/lw/ne/the_parable_of_the_dagger/). Remember to @post[separate the symbols from the meaning]reality/symbology. Sentences don't *need* to be true or false. They can just be.
+Sentences don't need to be true or false. Remember the [parable of the dagger](http://lesswrong.com/lw/ne/the_parable_of_the_dagger/). Remember to @post[separate the symbols from the meaning]reality/symbolism. Sentences don't *need* to be true or false. They can just be.
 
 The paradoxical sentence tricks you into thinking it should be true or false. It *asks* to be true or false. When you're asked a question, it feels like you have to answer it. It's easy to forget that the sentence is just symbols. It doesn't need any more truth or falsehood than "Let's go get some pizza".
 

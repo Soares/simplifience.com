@@ -7,7 +7,7 @@ Obviously, this single grain of sand is not a heap of sand. But it also seems ob
 
 ![Sand](/images/sand.jpg){:title="Solipsist / CC-BY-SA-2.0"}
 
-Eubulides thought he had devised quite the paradox. Unfortunately, Eubulides had a poor grasp on the @post[difference between his labels and the things they label]reality/symbology.
+Eubulides thought he had devised quite the paradox. Unfortunately, Eubulides had a poor grasp on the @post[difference between his labels and the things they label]reality/symbolism.
 
 The label "heap" is an arbitrary word that humans may or may not choose to apply to the grains of sand. Whether or not they choose to apply the label has no bearing upon how reality *actually works*. Reality does not care about your labels. Labels are prescriptive rules which you attach. There is no guarantee that reality matches your labels. Indeed, it @post[often doesn't]reality/connected.
 

@@ -7,7 +7,7 @@ They argue that $\pi$ @post[is fine]intro/decontriving, even though it's [half t
 
 You'll notice that these people are almost exclusively scientists, mathematicians, and engineers.
 
-These are people who have above-average ability to see @post[past the symbols]reality/symbology and understand the meaning. They navigated the minefield of mainstream mathematics with ease and now they can stand on the other side and claim that it wasn't so hard.
+These are people who have above-average ability to see @post[past the symbols]reality/symbolism and understand the meaning. They navigated the minefield of mainstream mathematics with ease and now they can stand on the other side and claim that it wasn't so hard.
 
 The people you don't hear from are everybody who hates math, everybody who failed science. Some of these people just didn't like the subjects, but many more were confused by strange notation and confounded by [lost purposes](http://lesswrong.com/lw/le/lost_purposes/). They beheld a twisted bloated mess that they'd just have to memorize if they wanted to pass the class, and they hated it, and they never came back.
 

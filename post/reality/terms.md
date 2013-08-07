@@ -19,8 +19,8 @@ If you want to learn how the universe works, you have to come to the universe on
 
 This is your reality. You live here. *You already are a native*. It's time to think like one.
 
-> Since the beginning<br>
-> Not one unusual thing<br>
+> Since the beginning<br/>
+> Not one unusual thing<br/>
 > Has ever happened
 {:style="text-align: center"}
 

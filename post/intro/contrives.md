@@ -7,7 +7,7 @@ There are many ways that names can be wrong: but they seldom *feel* wrong. Our l
 
 ![Tiger](/images/tiger.jpg)
 
-Our labels feel like the thing they label. It's easy to forget that @post[the symbols are not the substance]reality/symbology. When the symbols don't match the substance, subtle errors arise.
+Our labels feel like the thing they label. It's easy to forget that @post[the symbols are not the substance]reality/symbolism. When the symbols don't match the substance, subtle errors arise.
 
 Sometimes our labels are @post[too large]foundations/mathematics. Sometimes words bite off more than they can chew. One word struggles to label many concepts. It doesn't feel like one word labeling many things: [it feels like just one confusing thing](http://lesswrong.com/lw/nw/fallacies_of_compression/). When we lack the words for the constituent parts we must struggle to even consider them. Broken words build a broken frame of mind.
 

@@ -12,7 +12,7 @@ Or do you?
 All you've shown is that you know the *accepted answer* to the question. You know the word that gets me to stop checking whether you actually know why things fall. You know an agreed-upon <span class="info" markdown="inline">label</span> for a powerful concept -- but do you actually know the concept?
 
 <aside class="info" markdown="block">
-Remember that @post[the label is not the thing]reality/symbology.
+Remember that @post[the label is not the thing]reality/symbolism.
 </aside>
 
 If you ask why objects fall, and I say "gravity", do you know any more than you did before? Or do you just have a new @post[name for your confusion]science/mistakes?

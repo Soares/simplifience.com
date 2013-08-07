@@ -5,7 +5,7 @@ Perhaps it's too late to change.
 
 Math and science are wrought with @post[contrives]intro/contrives, and perhaps these contrives stand in the way of understanding. But they are centuries, sometimes *millennia* old. Isn't it too late to change?
 
-No, it is not too late. You must understand that the point is not to teach the weird symbols that currently describe math and science. The point is to teach you @post[the things those symbols symbolize]reality/symbology. Once you @post[understand the concepts behind the words]math/education, it doesn't matter what formulas you use to describe them.
+No, it is not too late. You must understand that the point is not to teach the weird symbols that currently describe math and science. The point is to teach you @post[the things those symbols symbolize]reality/symbolism. Once you @post[understand the concepts behind the words]math/education, it doesn't matter what formulas you use to describe them.
 
 In other words, once you know math it's trivial to shuffle your notation: which is why many mathematicians think that math is @post[good enough]intro/good-enough. Once you know math and science, the symbols don't matter.
 
