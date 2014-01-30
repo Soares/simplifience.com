@@ -29,4 +29,8 @@ This is simplifience. It is not math, it is not science. It is more and it is le
 
 It is an attempt to explain what we know of reality in simple terms. It is a quest to understand the universe.
 
-Choose a sequence and start reading. Follow the [Simplifience blog](http://blog.simplifience.com) for updates.
+Choose a sequence and start reading.
+
+---
+
+Simplifience is unfinished and currently on hiatus. See the [LessWrong Sequences](http://wiki.lesswrong.com/wiki/Sequences#Major_Sequences) for something similar but more complete.
