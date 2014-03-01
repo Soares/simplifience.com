@@ -1,28 +1,10 @@
 /* Many thanks to Jonathan Verrecchia & initializr's template.
  * http://verekia.com/initializr/responsive-template */
 @font-face {
-  font-family: 'Sonsie One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Sonsie One'), url("fonts/sonsie-one.woff") format('woff');
-}
-@font-face {
   font-family: 'Marko One';
   font-style: normal;
   font-weight: 400;
   src: local('Marko One'), url("fonts/marko-one.woff") format('woff');
-}
-@font-face {
-  font-family: 'Enriqueta';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Enriqueta'), url("fonts/enriqueta.woff") format('woff');
-}
-@font-face {
-  font-family: 'Enriqueta';
-  font-style: bold;
-  font-weight: 700;
-  src: local('Enriqueta Bold'), url("fonts/enriqueta-bold.woff") format('woff');
 }
 @font-face {
   font-family: 'Math';
@@ -47,6 +29,48 @@
   font-style: italic;
   font-weight: 700;
   src: local('Math Bold Italic'), url("fonts/MathJax_Main-BoldItalic.otf") format('opentype');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Serif'), local('NotoSerif'), url("fonts/NotoSerif.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Serif Bold'), local('NotoSerif-Bold'), url("fonts/NotoSerif-bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Noto Serif Italic'), local('NotoSerif-Italic'), url("fonts/NotoSerif-italic.woff") format('woff');
+}
+@font-face {
+  font-family: 'Noto Serif';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Noto Serif Bold Italic'), local('NotoSerif-BoldItalic'), url("fonts/NotoSerif-bold-italic.woff") format('woff');
+}
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Alegreya Sans SC Bold'), local('AlegreyaSansSC-Bold'), url("fonts/AlegreyaSansSC-bold.woff") format('woff');
+}
+@font-face {
+  font-family: 'Niconne';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Niconne'), local('Niconne-Regular'), url("fonts/Niconne.woff") format('woff');
+}
+@font-face {
+  font-family: 'Revalia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Revalia-Regular'), url("fonts/Revalia.woff") format('woff');
 }
 body.main {
   background: #099;
@@ -2700,7 +2724,7 @@ span.green {
 }
 html,
 body {
-  font: 14px/1.5em 'Enriqueta', arial, sans-serif;
+  font: 14px/1.5em 'Noto Serif', arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -2727,9 +2751,10 @@ div.cap {
   text-align: center;
 }
 div.cap h1 {
-  font-family: 'Sonsie One', serif;
-  font-weight: normal;
-  font-size: 30.800000000000004px;
+  font-family: 'Revalia', serif;
+  font-size: 42px;
+  line-height: 42px;
+  margin: 0.17em 0 0.67em 0;
 }
 div.cap h1.title {
   float: left;
@@ -2800,12 +2825,22 @@ div.cap footer a.blog {
 div.cap footer a.author,
 div.cap footer a.blog,
 div.cap footer .logo a {
-  opacity: 0.4;
   text-decoration: none;
+  opacity: 0.4;
+}
+div.cap footer a.author .wtf,
+div.cap footer a.blog .wtf,
+div.cap footer .logo a .wtf {
+  opacity: 0.4;
 }
 div.cap footer a.author:hover,
 div.cap footer a.blog:hover,
 div.cap footer .logo a:hover {
+  opacity: 1;
+}
+div.cap footer a.author:hover .wtf,
+div.cap footer a.blog:hover .wtf,
+div.cap footer .logo a:hover .wtf {
   opacity: 1;
 }
 #main {
@@ -2860,7 +2895,7 @@ div.cap footer .logo a:hover {
   display: block;
   content: "\201C";
   font-size: 4em;
-  font-family: 'Enriqueta', arial, sans-serif;
+  font-family: 'Noto Serif', arial, sans-serif;
   font-weight: 300;
   position: absolute;
   left: -0.2em;
@@ -2881,7 +2916,7 @@ div.cap footer .logo a:hover {
 }
 #main article p.big {
   font-size: 4em;
-  font-family: 'Sonsie One', serif;
+  font-family: 'Revalia', serif;
   line-height: 2em;
   text-align: center;
   margin-bottom: 21px;
@@ -2986,13 +3021,13 @@ div.computer ol {
   cursor: default;
 }
 #main div.nav div.block aside ul {
-  font-family: 'Marko One', serif;
+  font-family: 'Niconne', serif;
   text-align: left;
   margin: 0;
   padding: 0;
 }
 #main div.nav div.block a {
-  font-size: 16.8px;
+  font-size: 21px;
   line-height: 1.7999999999999998em;
   text-decoration: none;
 }
@@ -3081,10 +3116,10 @@ div.video embed {
   content: "— ";
 }
 span.exciting {
-  font-family: 'Marko One', serif;
+  font-family: 'Niconne', serif;
 }
 span.uncomfortable {
-  font-family: 'Sonsie One', serif;
+  font-family: 'Revalia', serif;
 }
 #main svg {
   display: block;

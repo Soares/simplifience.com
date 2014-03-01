@@ -171,5 +171,5 @@ class Tangents extends Uriel.Plane
 
 $ ->
   Uriel.diagram('complex-plane', ComplexPlane)
-  Uriel.diagram('compound', Compound)
-  Uriel.diagram('tangents', Tangents)
+  # Uriel.diagram('compound', Compound)
+  # Uriel.diagram('tangents', Tangents)

@@ -75,6 +75,7 @@ class Uriel.Text extends Uriel.Element
   # SVG makes some stupid choices about text-anchoring in the middle.
   # As a result, make sure you change fonts-size with attrs instead of CSS!
   constructor: (paper, [x, y], text='', attrs={}) ->
+    window.console.log('made text', text, 'at', x, y)
     element = paper.text x, y, ''
     # Destroy empty tspan. We'll make our own.
     element.node.removeChild(element.node.lastChild)
@@ -442,6 +443,7 @@ class Uriel.Diagram
     new Uriel.Axis(@paper, origin, attrs)
 
   text: (position, text, attrs) =>
+    window.console.log('Diagram method called to make', text, 'at', position)
     new Uriel.Text(@paper, position, text, attrs)
 
   group: (objects, attrs) =>
@@ -459,7 +461,7 @@ class Uriel.OriginPoint
   constructor: (@canvas, position, color='red') ->
     path = "M#{@canvas.origin} L#{@canvas.pt(position)}"
     @line = @canvas.path path, class: color
-    @dot = @canvas.circle position, 4, class: color
+    @dot = @canvas.circle @canvas.pt(position), 4, class: color
 
   animate: (attrs, controls) =>
     @line.animate(attrs, controls)
@@ -519,7 +521,9 @@ class Uriel.Plane extends Uriel.Diagram
     # Override if you use weird axis.
     return [@origin[0] + x * @unit, @origin[1] - y * @unit]
 
-  text: (pt, text, attrs) => super @pt(pt), text, attrs
+  text: (pt, text, attrs) =>
+    window.console.log('Correct method called to make', text, 'at', pt, '(', @pt(pt), ')')
+    super @pt(pt), text, attrs
   circle: (pt, r, attrs) => super @pt(pt), r, attrs
   line: (start, end, attrs) => @path ['M'] + @pt(start) + ['L'] + @pt(end), attrs
   point: (pt, color='red') => new Uriel.OriginPoint this, pt, color

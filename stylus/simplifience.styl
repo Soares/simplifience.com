@@ -35,8 +35,9 @@ div.cap
 	text-align center
 	h1
 		font-family $uncomfortable
-		font-weight normal
 		font-size $main-header-size
+		line-height $main-header-size
+		margin 0.17em 0 0.67em 0
 		&.title
 			float left
 		a
@@ -83,10 +84,14 @@ div.cap
 		a.author, a.blog
 			display block
 		a.author, a.blog, .logo a
-			opacity .4
 			text-decoration none
+			opacity .4
+			.wtf
+				opacity .4
 			&:hover
 				opacity 1
+				.wtf
+					opacity 1
 
 #main
 	padding 30px 0
@@ -206,7 +211,7 @@ div.rant, div.caution, div.define, div.computer
 		margin 0
 		padding 0
 	a
-		font-size $text-size * 1.2
+		font-size $text-size * 1.5
 		line-height $line-size * 1.2
 		text-decoration none
 		&:hover

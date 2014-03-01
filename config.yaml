@@ -19,3 +19,4 @@ images: copy to images
 stylus: css
 coffee: js
 static: copy to .
+css: copy to css

@@ -1,7 +1,7 @@
 ---
 title: Euler's Identity
 type: simplifience
-sequence: Imaginary Powers
+sequence: Euler's Identity
 members:
 - growth
 - semicircle
