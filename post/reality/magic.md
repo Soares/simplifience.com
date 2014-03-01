@@ -3,7 +3,7 @@ title: Real Magic
 ---
 We live in a world full of magic and nobody seems to notice. Humans fly through the skies. We send thoughts halfway around the world in the space of a second. We possess miracle cures for aging and ailments. And somehow we don't think it's magic.
 
-Our spells don't look quite like the spells you'll find in storybooks. Constructing the grand factories necessary to build airplanes was no easy task, and it feels like magic shouldn't require such busywork. But find me any wizard in the storybooks, be they Merlin or Dumbledore, and they'll surely tell you that creating a new spell is no easy task. The magic happens after the spell is established. It takes a lot of elbow grease to *make* a spell, but once you're done anyone can flick their wrist and invoke your magic. There's a *snap* and a flash of light and suddenly -- you've captured a perfect image of the world on your cell phone.
+Our spells don't look quite like the spells you'll find in storybooks. Constructing the grand factories necessary to build airplanes was no easy task, and it feels like magic shouldn't require such busywork. But find me any wizard in the storybooks, be they Merlin or Dumbledore, and they'll surely tell you that creating a new spell is no walk in the park. The magic happens after the spell is established. It takes a lot of elbow grease to *make* a spell, but once you're done anyone can flick their wrist and invoke your magic. There's a *snap* and a flash of light and suddenly -- you've captured a perfect image of the world on your cell phone.
 
 Yet somehow our real magic doesn't satisfy the imagination. It feels too… mundane.
 
