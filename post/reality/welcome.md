@@ -14,7 +14,7 @@ Take a look around. Gaze up at the stars. Appreciate some sunshine. This place i
 
 ![Summer Field](/images/summer-field.jpg){:title="Luc Vaitour / http://commons.wikimedia.org/wiki/User:Lviatour / CC-BY-SA-3.0"}
 
-I mean, it has it's ups and downs, but in the end, it's all there is. This place, reality, contains everything. It's all that is.
+I mean, it has it's ups and downs, but in the end, it's all there is. This place, reality, contains everything.
 
 I have some good news for you: reality can be understood. It may seem a mysterious place, but that mystery can be dispelled. Even the sacred mysteries, even the things that we don't yet understand (such as human consciousness), *can be understood*. Don't panic! That's not a bad thing. It's a cause for celebration. @post[Understanding does not detract from beauty]reality/beauty.
 
