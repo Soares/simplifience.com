@@ -335,7 +335,9 @@
   })(Uriel.Plane);
 
   $(function() {
-    return Uriel.diagram('complex-plane', ComplexPlane);
+    Uriel.diagram('complex-plane', ComplexPlane);
+    Uriel.diagram('compound', Compound);
+    return Uriel.diagram('tangents', Tangents);
   });
 
 }).call(this);

@@ -150,7 +150,6 @@
       }
       this.animate = __bind(this.animate, this);
       this.tspan = __bind(this.tspan, this);
-      window.console.log('made text', text, 'at', x, y);
       element = paper.text(x, y, '');
       element.node.removeChild(element.node.lastChild);
       element.node.removeAttribute('style');
@@ -763,7 +762,6 @@
     };
 
     Diagram.prototype.text = function(position, text, attrs) {
-      window.console.log('Diagram method called to make', text, 'at', position);
       return new Uriel.Text(this.paper, position, text, attrs);
     };
 
@@ -810,7 +808,7 @@
       this.line = this.canvas.path(path, {
         "class": color
       });
-      this.dot = this.canvas.circle(this.canvas.pt(position), 4, {
+      this.dot = this.canvas.circle(position, 4, {
         "class": color
       });
     }
@@ -964,7 +962,6 @@
     };
 
     Plane.prototype.text = function(pt, text, attrs) {
-      window.console.log('Correct method called to make', text, 'at', pt, '(', this.pt(pt), ')');
       return Plane.__super__.text.call(this, this.pt(pt), text, attrs);
     };
 
