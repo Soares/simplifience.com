@@ -41,7 +41,7 @@ Once we'd figured it out, it would be another domain of science. For science is 
 
 If something must be mysterious in order to earn your wonder, then you aren't pining for a world with magic: you're pining for a world with stupider humans. No matter what reality looks like, humans will try to understand how it works -- whether you think it's magic or not.
 
-Here's the kicker: *we found magic*. We can wiggle special substances in special patterns on one side of the world in order to send messages to the other side of the world. We've discovered miraculous healing techniques. We have unfettered access to the combined knowledge of our ancestors. We found the magics of reality, and we understood them — and so we call them science.
+Here's the kicker: *we found magic*. We can wiggle special substances in special patterns in order to send messages to the other side of the world. We've discovered miraculous healing techniques. We have unfettered access to the combined knowledge of our ancestors. We found the magics of reality, and we understood them — and so we call them science.
 
 In the real world, magic doesn't get labeled as such. We study it, and it becomes a science. *That doesn't make it any less magical.* If you actually look at our world, you'll realize that magic is real. We found it. It lets us build buildings that scrape the very skies. It lets us explore the depths of the oceans. It lets us *stand on the moon.*
 
