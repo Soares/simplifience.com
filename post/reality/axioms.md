@@ -30,7 +30,7 @@ $2 + 2 = 4$ is a true statement, but it's not necessarily helpful. This is also 
 
 > If all elephants are purple, and all purple elephants have penguin riders, then all elephants have penguin riders.
 
-Here the axioms are
+Here the axioms (if we may abuse the term) are
 
 * All elephants are purple
 * All purple elephants have penguin riders
@@ -47,27 +47,29 @@ We can easily prove that *if* the axioms of addition apply to reality *then* two
 
 It seems intuitive to us that apples follow the rules, and thus we feel like we can take the deductions of addition and apply them to apples without hesitation. But human intuition has been wrong before. How do you know that apples *actually* act like numbers?
 
-Two apples plus two apples is four apples. You can go test that if you don't believe me. But what about $179,482,000$ apples plus $3$ apples?
+Two apples plus two apples is four apples. You can go test that if you don't believe me. But what about $107,179,482,832,000$ apples plus $3$ apples?
 
-You've been taught since childhood that this yields $179,482,003$ apples. But are you sure? You haven't tried it. You haven't put a hundred and seventy nine hundred thousand, four hundred and eighty two thousand apples in one place, added three more apples, and then counted them up. You've never seen it done. You're just blindly trusting that apples work like numbers and then manipulating the numbers.
+You've been taught since childhood that this yields $107,179,482,832,003$ apples. But are you sure? You haven't tried it. You haven't put one hundred and seven trillion, one hundred and seventy nine billion, four hundred eighty two million, eight hundred and thirty two thousand apples in one place, added three more apples, and then counted them up. You've never seen it done. You're just trusting that apples work like numbers and then manipulating the numbers.
 
 > What if real things don't actually follow the axioms of addition?
 
-What if in the *real* world, $179,482,000$ apples added to $3$ apples is actually $179,482,009$ apples? What if apples don't *quite* follow the axioms of addition? What if there's some tiny subtlety where our axioms aren't consistent with reality, a tiny difference that we don't notice for small numbers but which shows up when you try to add big amounts of real things?
+What if in the *real* world, $107,179,482,832,000$ apples added to $3$ apples is actually $107,179,482,832,001$ apples? What if apples don't *quite* follow the axioms of addition? What if there's some tiny subtlety where our axioms aren't consistent with reality, a tiny difference that we don't notice for small numbers but which shows up when you try to add big amounts of real things?
 
-Stranger things have happened. Solid laws of physics have been shattered upon the discovery that reality doesn't *completely* obey axioms which we thought were obvious.
+It wouldn't be the first time that seemingly simple laws were demolished upon the discovery that reality doesn't *quite* follow the 'obvious' axioms: 30 meters per second plus 30 meters per second yields a speed *slightly less* than 60 meters per second.
 
 With formal notation and rational thought we can prove how things work *given* a set of axioms -- but you can @post[never be certain]reality/certainty that reality follows your rules.
 
 Fortunately, all is not lost. Even when reality doesn't *completely* obey our axioms, our axioms are not useless. Our models don't need to be perfect in order to be useful.
 
-If you try to add a trillion apples to a trillion apples, you won't end up with two trillion apples. You'll end up with a tiny planet made from the crushed remains of two trillion apples. Addition doesn't apply to apples in the long term, because apples don't follow all the axioms. Apples can get crushed into a tiny planet. Numbers can't.
+As it turns out, if you try to add a trillion apples to a trillion apples, you won't end up with two trillion apples. You'll end up with a tiny planet made from the crushed remains of two trillion apples.
+
+Addition doesn't apply to apples in the long term, because apples don't follow all the axioms. Apples can get crushed into a tiny planet. Numbers can't.
 
 > As far as the propositions of mathematics refer to reality, they are not certain; and as far as they are certain, they do not refer to reality.
 {:title="Albert Einstein"}
 
 But we don't need an "if" for the model to work. We need a "when".
 
-*When* apples follow the axioms of addition -- when you kid isn't eating them, and you friend isn't picking more, and they aren't crushing themselves into a tiny planet -- *then* the discoveries of addition apply to apples.
+*When* apples follow the axioms of addition -- when your kid isn't eating them, and your friend isn't gathering more, and they aren't crushing themselves into a tiny planet -- *then* the discoveries of addition apply to apples.
 
 We can never prove that reality follows our axioms all the time, in all possible scenarios. But *when it does*, the models that flow from our axioms are like windows into the workings of the world.
