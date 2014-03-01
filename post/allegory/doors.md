@@ -40,9 +40,13 @@ Mary rolled her eyes. "You can't just always rely on technology, Sarah. You've g
 
 Rose snorted. "Yeah, like they're ever going to accept an astronaut that doesn't know how to open space shuttle hatches."
 
-Sarah stomped her foot. "Then I won't be an astronaut."
+Sarah shrugged. "They can teach me on the job."
 
-Mary rolled her eyes. "We've still got to prepare people."
+"They won't."
+
+"Then I won't be an astronaut."
+
+"We've still got to *prepare* people."
 
 "It's stupid and boring and we're never going to need to know this stuff."
 
@@ -60,7 +64,7 @@ Mary rolled her eyes. "We've still got to prepare people."
 
 "Or one of those old garage doors with a string on it", Rose chimed. "Those ones are a doozy. And you can't really teach that to little kids, they're just not tall enough to open them."
 
-"So what!" Sara shouted. "You teach them to open those doors when they're tall enough. They can learn as they go along."
+"So what?" Sara cried. "You teach them to open those doors when they're tall enough. They can learn as they go along."
 
 "You think we should spend the first half of shop class teaching kids how to open the garage door?" Rose protested. "That's not fair to the kids who can already open garage doors by the time they get to shop class."
 
@@ -94,6 +98,6 @@ Mary rolled her eyes. "We've still got to prepare people."
 
 "It's a life skill", Mary shrugged.
 
-"It is *not* a life skill!" Sarah shouted. "Memorizing all of the different types of doors that the school thinks are important doesn't teach you *anything* about really getting yourself from point A to point B. If we just taught people good motor skills, a bit of dexterity, and a touch of cunning then they'll be able to open any door that's in their way and they'll *also* be able to climb through windows, hop over puddles, and cross bridges."
+"It is *not* a life skill! Memorizing all of the different types of doors that the school thinks are important doesn't teach you *anything* about really getting yourself from point A to point B. If we just taught people good motor skills, a bit of dexterity, and a touch of cunning then they'll be able to open any door that's in their way and they'll *also* be able to climb through windows, hop over puddles, and cross bridges."
 
 "Woah there", Rose said. "I think you give people too much credit. Those are like, Masters level subjects. At least."
