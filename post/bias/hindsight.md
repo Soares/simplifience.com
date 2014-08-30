@@ -15,7 +15,7 @@ Most people think they would have predicted this result -- until they learn that
 
 Actually, people spend a larger portion of their income in times of *prosperity*.
 
-Which makes sense, now that you know it. This is a consumerist culture. When times are good, we buy cars and put down money on houses and indulge in excess. We try to keep up with the Joneses. We're a paycheck-to-paycheck nation. When the money's rolling in there's no need to worry about the future. We only save when the times get tough.
+Which makes sense, now that you know it. When times are good, we buy cars and put down money on houses and indulge in excess. We try to keep up with the Joneses. We're a paycheck-to-paycheck nation. When the money's rolling in there's no need to worry about the future. We only save when the times get tough, and, in fact, recessions happen *precisely* when everybody is being too stingy with their money: that's how the economy gets depressed in the first place.
 
 It should be obvious, now that you know.
 
@@ -64,12 +64,12 @@ Now imagine a hard question. Imagine a question where nobody even knowns what th
 
 Imagine standing on the brink of human knowledge and staring out into the wild unknown. Imagine trying to make sense of the chaos, without Google by your side.
 
-If you ever manage to find an answer in that darkness, everyone will say it was obvious. But *everything* seem obvious in retrospect. When you're standing out there facing the unknown, there are a thousand paths before you and each leads to a conclusion that everyone will say was obvious. Which path do you choose?
+If you ever manage to find an answer in that darkness, everyone will say it was obvious. But *everything* seems obvious in retrospect. When you're standing out there facing the unknown, there are a thousand paths before you and each leads to a conclusion that everyone will say was obvious. Which path do you choose?
 
-In retrospect, it feels obvious that rats are not spontaneously generated. That the Earth is governed by the same laws as the Heavens. That we can sharpen rocks and attach them to sticks.
+In retrospect, it feels obvious that rats are not spontaneously generated from piles of dirty rags. That the Earth is governed by the same laws as the Heavens. That we can sharpen rocks and attach them to sticks.
 
 __These discoveries are only obvious in hindsight.__ They're not obvious when you're out there in the fray struggling to discover them.
 
 Civilization runs on ideas that seem oh-so-obvious in retrospect. A thousand years of stagnant silence can be shattered by a single thought.
 
-Never underestimate the difficulty of having obvious ideas.
+Never underestimate the power of an obvious idea.
